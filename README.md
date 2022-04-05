@@ -1,2 +1,0 @@
-# inexdocs-repo
-INEX documents
