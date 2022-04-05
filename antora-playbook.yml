@@ -1,4 +1,5 @@
 site:
+  // here is a new comment //
   title: Antora Docs
   start_page: component-b::index.adoc
 content:
