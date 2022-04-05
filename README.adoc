@@ -1,2 +1,3 @@
-= inexdocs-repo
+== inexdocs-repo
+
 INEX documents
