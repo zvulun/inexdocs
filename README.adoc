@@ -1,4 +1,12 @@
-= INEX Documents Repository
+= INEX Documents Playbook Repository
 
 == INEX Documents
-This is the project for publishing INEX documentation using Asciidoc and Antora.
+This is the repository holding the antora-playbook.yml file project for publishing INEX documentation using Asciidoc and Antora.
+The repository also holds:
+
+- The .gitignore file, which designates which folders and file extensions and specific files to be ignored when pushing the local repo to the remote repo
+- The node_modules folder (which is set to be ignored); contains the node.js files used to run the Java code that Antora uses
+- A couple of json files Antora uses - package-lock and package
+- The build folder (which is set to be ignored; where the local output of the site will be stored so you can view it)
+- The README.adoc file for the overall project
+
