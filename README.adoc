@@ -1,3 +1,4 @@
-== inexdocs-repo
+= INEX Documents Repository
 
-INEX documents
+== INEX Documents
+This is the project for publishing INEX documentation using Asciidoc and Antora.
