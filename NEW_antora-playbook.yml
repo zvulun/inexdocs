@@ -1,0 +1,13 @@
+site:
+  # here is a new comment
+  title: INEX Documents
+  start_page: index.adoc
+content:
+  sources:
+  - url: https://github.com/zvulun/cameras-repo/.git
+    branches: HEAD
+    start_path: docs
+ui:
+  bundle:
+    url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable
+    snapshot: true
