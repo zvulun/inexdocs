@@ -1,7 +1,7 @@
 site:
   # here is a new comment
   title: INEX Documents
-  start_page: IZA500G-user-guide::index.adoc
+  start_page: index.adoc
 content:
   sources:
   - url: https://github.com/zvulun/cameras-repo.git
