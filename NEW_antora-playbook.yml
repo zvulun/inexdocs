@@ -1,7 +1,7 @@
 site:
   # here is a new comment
   title: INEX Documents
-  start_page: cameras-repo::index.adoc
+  start_page: cameras-repo:ROOT:index.adoc
 content:
   sources:
   - url: https://github.com/zvulun/cameras-repo.git
