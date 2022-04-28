@@ -12,12 +12,12 @@ content:
   - url: https://github.com/zvulun/cameras-repo.git
     branches: HEAD
     start_path: docs
-    version:
+    version: [Latest]
 
   - url: https://github.com/zvulun/illums-repo.git
     branches: HEAD
     start_path: docs
-    version:
+    version: [Latest]
 
 ui:
   bundle:
