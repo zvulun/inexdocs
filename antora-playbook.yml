@@ -6,7 +6,7 @@ site:
   # the latest version
 
   title: INEX Documents
-  start_page: index.adoc
+  start_page: Cameras::index.adoc
 content:
   sources:
   - url: https://github.com/zvulun/cameras-repo.git
