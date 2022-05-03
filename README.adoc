@@ -12,4 +12,4 @@ The repository also holds:
 Folders in the local version of the repository which are not pushed to GitHub are:
 
 - The node_modules folder (which is set to be ignored); contains the node.js files used to run the Java code that Antora uses
-- The build folder (which is set to be ignored; where the local output of the site will be stored so you can view it)
+- The build folder (which optionally can be set to be ignored when doing a lot of edits; where the local output of the site will be stored so you can view it)
