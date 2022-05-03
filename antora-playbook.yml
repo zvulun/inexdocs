@@ -1,4 +1,5 @@
 site:
+  url: /
   # the Cameras name in the start_page is the
   # name: attribute in the playbook of the
   # component (repository) of the cameras
