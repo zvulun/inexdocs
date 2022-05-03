@@ -5,6 +5,7 @@ site:
   # component (repository) of the cameras
   # The format of the start_page will give
   # the latest version
+  #
 
   title: INEX Documents
   start_page: Cameras::index.adoc
@@ -30,4 +31,3 @@ ui:
       static_files:
       - .nojekyll
   - path: .nojekyll
-  
