@@ -1,3 +1,3 @@
 # ignore node dependency directories and build (local build of site)
 /node_modules/
-# /build/
+/build/
