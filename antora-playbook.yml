@@ -19,8 +19,8 @@ ui:
     snapshot: true
   supplemental_files:
   - path: ./supplemental_ui
-  - path: ui.yml
-    contents: |
-      static_files:
-      - .nojekyll
+  # - path: ui.yml
+    # contents: |
+      # static_files:
+      # - .nojekyll
   - path: .nojekyll
