@@ -7,7 +7,7 @@ content:
   - url: https://github.com/zvulun/inexsources-repo.git
     branches: HEAD
     start_path: docs
-    version:
+    version: [Latest]
 
 antora:
   extensions:
