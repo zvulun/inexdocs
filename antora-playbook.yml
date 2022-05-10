@@ -1,6 +1,6 @@
 site:
   
-  title: INEX Documents
+  title: Documents
   start_page: Documents::index.adoc
 content:
   sources:
