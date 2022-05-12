@@ -4,3 +4,10 @@
 .white {
     color: white
 }
+.doc .imageblock.text-left {
+    align-items: flex-start;
+  }
+.doc .imageblock.text-right {
+    align-items: flex-end;
+  }
+  
