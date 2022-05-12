@@ -1,9 +1,16 @@
 .red {
     color: red
 }
+/* This is used to make the name of the product*/
+/* in white invisible text just below the page title*/
+/* so the lunr search will find as the first hit*/
+/* when you search on a product name*/
 .white {
     color: white
 }
+/* This is code from Dan Allen that activates the */
+/* align="left" or "right" parameter in block image specifications */
+/* Leave align= out if you want centering */
 .doc .imageblock.text-left {
     align-items: flex-start;
 }
