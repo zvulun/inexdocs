@@ -4,7 +4,7 @@
 /* This is used to make the name of the product*/
 /* in white invisible text just below the page title*/
 /* so the lunr search will find as the first hit*/
-/* when you search on a product name*/
+/* when you search on a product name */
 .white {
     color: white
 }
