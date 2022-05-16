@@ -24,14 +24,6 @@
     text-decoration: underline;
   }
   
-  table  {
-    border: 1px, solid black;
-  }
-
-  th  {
-    border: 1px, solid black;
-  }
-
-  td  {
-    border: 1px, solid black;
+  table, th, td  {
+    border: 10px, solid black;
   }
