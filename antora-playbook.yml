@@ -15,10 +15,11 @@ antora:
 
 asciidoc:
   attributes:
-    sectnums: all
+    sectnums:
     sectnumlevels: 4
     toclevels: 3
     xrefstyle: full
+    toc:
     
 
 ui:
