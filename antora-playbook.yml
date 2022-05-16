@@ -13,6 +13,14 @@ antora:
   extensions:
     - '@antora/lunr-extension'
 
+asciidoc:
+  attributes:
+    :sectnums:
+    :sectnumlevels: 4
+    :toclevels: 3
+    :xrefstyle: full
+    :toc:
+
 ui:
   bundle:
     url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable
