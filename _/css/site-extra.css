@@ -17,10 +17,5 @@
 .doc .imageblock.text-right {
     align-items: flex-end;
 }
-/* This is used to make underlines, especially in table headers */
-/* of complex IZA-series tables where one character is underlined */
-
-  
-  table, th, td  {
-    border: 10px, solid black;
-  }
+ 
+ 
