@@ -18,7 +18,7 @@
     align-items: flex-end;
 }
 
-/* this controls all the table borders  */
+/* this controls all the table borders */
 table, th, td {
   border: 1px solid black !important;
 }
