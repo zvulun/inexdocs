@@ -10,7 +10,7 @@
 }
 /* This is code from Dan Allen that activates the */
 /* align="left" or "right" parameter in block image specifications */
-/* Leave align= out if you want centering  */
+/* For centering, Leave align= out or use align=center  */
 .doc .imageblock.text-left {
     align-items: flex-start;
 }
