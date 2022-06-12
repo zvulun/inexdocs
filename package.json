@@ -4,6 +4,7 @@
     "@antora/site-generator": "3.0.0"
   },
   "dependencies": {
-    "@antora/lunr-extension": "^1.0.0-alpha.6"
+    "@antora/lunr-extension": "^1.0.0-alpha.6",
+    "antora": "^3.0.1"
   }
 }
