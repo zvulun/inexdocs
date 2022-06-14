@@ -5,6 +5,9 @@
 /* in white invisible text just below the page title*/
 /* so the lunr search will find as the first hit*/
 /* when you search on a product name */
+/* IMPORTANT: Must be placed after any major front matter */
+/* including variable definitions, :toc:, :!sectnums: */
+/* and ifndef statements */
 .white {
     color: white
 }
