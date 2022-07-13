@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Untitled :: Documents</title>
+    <title>IZA800G/GW :: Documents</title>
     <meta name="generator" content="Antora 3.0.0">
 <link rel="stylesheet" href="../../../_/css/site.css">
 <link rel="stylesheet" href="../../../_/css/site-extra.css">
@@ -156,6 +156,122 @@
   <div class="toc-menu"></div>
 </aside>
 <article class="doc">
+<h1 class="page">IZA800G/GW</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p><span class="white">IZA800G</span></p>
+</div>
+<h2 id="_alpr_all_in_one_ai_camera_system" class="discrete">ALPR All-in-one AI Camera System</h2>
+<h3 id="_installation_and_calibration_guide" class="discrete">Installation and Calibration Guide</h3>
+<div class="paragraph">
+<p>Doc. No. IZA800G-GW-MAN-002</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="../_images/IZA500G-FIG-001e_FrontPagePhoto.png" alt="Picture of Camera" width="400"></span> <span class="image"><img src="../_images/NVIDIA_LOGO.png" alt="NVIDIA Logo"></span> <span class="image"><img src="../_images/LINUX_LOGO.png" alt="LINUX Logo"></span></p>
+</div>
+<div id="toc" class="toc">
+<div id="toctitle" class="title">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#_about_this_document">1. About this Document</a>
+<ul class="sectlevel2">
+<li><a href="#_who_should_read_this_document">1.1. Who Should Read this Document</a></li>
+<li><a href="#s_Related-Documents">1.2. Recommended Reading/Related Documents</a></li>
+<li><a href="#_support">1.3. Support</a></li>
+</ul>
+</li>
+<li><a href="#_quick_installation_overview">2. Quick Installation Overview</a></li>
+<li><a href="#_camera_system_overview">3. Camera System Overview</a>
+<ul class="sectlevel2">
+<li><a href="#s_Package-Contents">3.1. Package Contents</a></li>
+<li><a href="#_camera_system_details_and_dimensions">3.2. Camera System Details and Dimensions</a></li>
+<li><a href="#_multi_flash_technology">3.3. Multi-flash Technology</a></li>
+<li><a href="#s_Built-in-White-LEDs-IZA800GW">3.4. Built-in White LEDs (IZA800GW)</a></li>
+<li><a href="#_specifications">3.5. Specifications</a></li>
+</ul>
+</li>
+<li><a href="#s_ReqOptnlAccessories">4. Required/Optional Accessories (Not Included)</a>
+<ul class="sectlevel2">
+<li><a href="#s_Required-Accessories">4.1. Required Accessories</a></li>
+<li><a href="#_optional_accessories">4.2. Optional Accessories</a></li>
+</ul>
+</li>
+<li><a href="#ps_Plan-Installation">5. Planning Your Installation</a>
+<ul class="sectlevel2">
+<li><a href="#_horizontal_field_of_view_capture_line">5.1. Horizontal Field of View (Capture Line)</a></li>
+<li><a href="#_angles_and_distances">5.2. Angles and Distances</a></li>
+<li><a href="#_position_of_the_sun_in_relation_to_the_camera_system">5.3. Position of the Sun in Relation to the Camera System</a></li>
+<li><a href="#_optimizing_nighttime_vehicle_overview_images_using_external_illuminators">5.4. Optimizing Nighttime Vehicle Overview Images (using External Illuminators)</a>
+<ul class="sectlevel3">
+<li><a href="#_matching_your_camera_system_to_an_inex_illuminator">5.4.1. Matching Your Camera System to an INEX Illuminator</a></li>
+<li><a href="#_illuminator_triggering_and_pulse_width">5.4.2. Illuminator Triggering and Pulse Width</a></li>
+<li><a href="#_illuminator_mounting_and_aiming">5.4.3. Illuminator Mounting and Aiming</a></li>
+<li><a href="#_verifying_infrared_type_illuminator_operation">5.4.4. Verifying Infrared-type Illuminator Operation</a></li>
+</ul>
+</li>
+<li><a href="#_additional_installation_considerations">5.5. Additional Installation Considerations</a></li>
+</ul>
+</li>
+<li><a href="#s_Hardware-Installation">6. Hardware Installation</a>
+<ul class="sectlevel2">
+<li><a href="#s_Typical-Wiring-Diagram">6.1. Typical Wiring Diagram</a></li>
+<li><a href="#_mounting_the_camera_system">6.2. Mounting the Camera System</a></li>
+<li><a href="#ps_Construct-Pwr-Signals-Cable">6.3. Constructing the Power/Signals Cable</a></li>
+<li><a href="#ps_Construct-LAN-Cable">6.4. Constructing the LAN Cable</a></li>
+<li><a href="#s_Connecting-System-Components">6.5. Connecting the Camera System, Illuminator, Power Supply and Network</a></li>
+<li><a href="#_connecting_the_ac_electricity">6.6. Connecting the AC Electricity</a></li>
+</ul>
+</li>
+<li><a href="#ps_Reserve-IP-Addrs">7. Reserving IP Addresses in your Network</a></li>
+<li><a href="#ps_Recognize-IZ-Discovery">8. Recognizing Devices with IZ Discovery</a>
+<ul class="sectlevel2">
+<li><a href="#_installing_and_using_iz_discovery">8.1. Installing and Using IZ Discovery</a></li>
+<li><a href="#s_Changing-IP-Address">8.2. Changing a Device&#8217;s IP Address and Network Settings</a></li>
+</ul>
+</li>
+<li><a href="#_configuring_a_camera">9. Configuring a Camera</a>
+<ul class="sectlevel2">
+<li><a href="#ps_Logging-In-to-Camera">9.1. Logging In to the Camera</a></li>
+<li><a href="#ps_Changing-Camera-IP">9.2. Changing a Camera&#8217;s IP Address</a></li>
+<li><a href="#_logging_out_of_the_camera">9.3. Logging Out of the Camera</a></li>
+</ul>
+</li>
+<li><a href="#s_Calibrating-Cameras">10. Calibrating the Cameras</a>
+<ul class="sectlevel2">
+<li><a href="#_preparing_a_vehiclelicense_plate">10.1. Preparing a Vehicle/License Plate</a></li>
+<li><a href="#s_Calibrating-Cameras-RoadView">10.2. Calibrating the Cameras Using RoadView</a></li>
+</ul>
+</li>
+<li><a href="#s_Determining-IP-of-RoadView">11. Determining the IP Address of the RoadView Computer with IZ Discovery</a></li>
+<li><a href="#ps_Using-RoadView">12. Using RoadView</a>
+<ul class="sectlevel2">
+<li><a href="#_logging_in">12.1. Logging In</a></li>
+<li><a href="#_verifying_the_installation">12.2. Verifying the Installation</a></li>
+<li><a href="#_logging_out">12.3. Logging Out</a></li>
+</ul>
+</li>
+<li><a href="#s_Troubleshooting-and-Maintenance">13. Troubleshooting and Maintenance</a>
+<ul class="sectlevel2">
+<li><a href="#_troubleshooting">13.1. Troubleshooting</a></li>
+<li><a href="#_checking_mounting_screws">13.2. Checking Mounting Screws</a></li>
+<li><a href="#_cleaning_the_alpr_camera_system">13.3. Cleaning the ALPR Camera System</a></li>
+</ul>
+</li>
+<li><a href="#_notices_safety_precautions_and_certifications">14. Notices, Safety Precautions and Certifications</a>
+<ul class="sectlevel2">
+<li><a href="#_notice">14.1. Notice</a></li>
+<li><a href="#_safety_precautions">14.2. Safety Precautions</a></li>
+<li><a href="#_legal_disclaimer">14.3. Legal Disclaimer</a></li>
+<li><a href="#_regulatory_notices">14.4. Regulatory Notices</a></li>
+<li><a href="#_training">14.5. Training</a></li>
+<li><a href="#_support_2">14.6. Support</a></li>
+</ul>
+</li>
+<li><a href="#_appendix_a_document_change_history">15. Appendix A - Document Change History</a></li>
+</ul>
+</div>
+</div>
+</div>
 <div class="sect1">
 <h2 id="_about_this_document"><a class="anchor" href="#_about_this_document"></a>1. About this Document</h2>
 <div class="sectionbody">
@@ -164,35 +280,97 @@
 <div class="paragraph">
 <p>This document is for:</p>
 </div>
-<div class="ulist">
-<ul>
+<div class="ulist square">
+<ul class="square">
 <li>
 <p><strong>Technical personnel</strong> who need to install IZA Camera Systems.</p>
 </li>
 </ul>
 </div>
-<div class="paragraph">
-<p>[Note]</p>
-</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
 <div class="paragraph">
 <p>This document does not take the place of training by INEX Technologies' certified specialists. Contact INEX Technologies to schedule training.</p>
 </div>
+</td>
+</tr>
+</table>
+</div>
 </div>
 <div class="sect2">
-<h3 id="_recommended_readingrelated_documentss_related_documents"><a class="anchor" href="#_recommended_readingrelated_documentss_related_documents"></a>1.2. Recommended Reading/Related Documents[#s_Related-Documents]</h3>
+<h3 id="s_Related-Documents"><a class="anchor" href="#s_Related-Documents"></a>1.2. Recommended Reading/Related Documents</h3>
 <div class="paragraph">
 <p>Contact INEX Technologies for document ordering information.</p>
 </div>
-<div class="paragraph">
-<div class="title">Related Documents</div>
-<p><strong><em>\{Zvulun: make related docs table here - get from IZA800G sample doc}</em></strong></p>
-</div>
+<table id="t_related_documents" class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 1. Related Documents</caption>
+<colgroup>
+<col style="width: 35%;">
+<col style="width: 65%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-middle" style="background-color: #c0c0c0;">Doc. No.</th>
+<th class="tableblock halign-left valign-middle" style="background-color: #c0c0c0;">Title</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><a href="https://drive.google.com/drive/folders/1410KtXUpOb7x1wR1-f3LX61AtWi1_2f8?usp=sharing" target="read-later">IZA800G-REV-x-TDSHEET</a></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">IZA800G Technical Data Sheet</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><a href="https://drive.google.com/drive/folders/1_KQljIK6EJjLCeCxkYGaj5Ou48xkl80L?usp=sharing" target="read-later">IZA800GW-REV-x-TDSHEET</a></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">IZA800GW Technical Data Sheet</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><a href="../Product-to-Mount-Mapping/MOUNT-MAP-PRSNT-011_ProductToMountMapping.html" class="xref page" target="read-later">MOUNT-MAP-PRSNT-011</a></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Product-to-Mount Mapping</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><a href="../Product-to-Mount-Mapping/MOUNT-MAP-PRSNT-011_ProductToMountMapping.html" class="xref page" target="read-later">Mounts</a></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Mounting Hardware documentation</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><a href="https://drive.google.com/open?id=1s3pU0ZGS9QmaJ5KHYNnu1wWxeCLzpNQq" target="read-later">IZ Discovery Utility</a></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">IZ Discovery Utility software components</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><a href="../RoadViewALPR-user-guide/RV-ALPR-MAN-001_RV_ALPR_User_Guide_Release_1x.html" class="xref page" target="read-later">RV-ALPR-MAN-001</a></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">RoadView ALPR User Guide</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><a href="../IZS-user-guide/IZS-S-MAN-002_Illuminator_User_Guide.html" class="xref page" target="read-later">IZS-S-MAN-002</a></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">IZS Illuminator Series User Guide</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><a href="https://drive.google.com/drive/folders/0B3mb9ZzMk00OSmZNS21UeEZzRjg?resourcekey=0-3a07-3tXvASZ8GCt7Knpqg&amp;usp=sharing" target="read-later">IZPWRSRFC-REV-x-TDSHEET</a></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">IZPWR Surface Mount Power Supplies Technical Data Sheet</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><a href="https://drive.google.com/drive/folders/0B3mb9ZzMk00OSmZNS21UeEZzRjg?resourcekey=0-3a07-3tXvASZ8GCt7Knpqg&amp;usp=sharing" target="read-later">IZPWRDIN-REV-x-TDSHEET</a></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">IZPWR DIN Rail Mount Power Supplies Technical Data Sheet</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><a href="../IZIO-install-guide/IZIO-6060-MAN-001_Digital_IO_Controller.html" class="xref page" target="read-later">IZIO-6060-MAN-001</a></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">IZIO Digital I/O Controller Installation and User Guide</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><a href="https://drive.google.com/drive/folders/190lmdZ4xQSpx2Ksn-XVgOINE6D14rhSv?usp=sharing" target="read-later">NDAA-NB-COC-001</a></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">NDAA Section 889 Certification of Compliance</p></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="sect2">
 <h3 id="_support"><a class="anchor" href="#_support"></a>1.3. Support</h3>
 <div class="paragraph">
-<p>If you have any questions, please contact our support team via our website:<br>
-http://</p>
+<p>If you have any questions, please contact our support team via our <a href="http://www.inextechnologies.com" target="read-later">INEX Technologies Website</a>.</p>
 </div>
 </div>
 </div>
@@ -203,37 +381,37 @@ http://</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Unpack the Camera System - see <a href="#s_Package-Contents">[s_Package-Contents]</a> .</p>
+<p>Unpack the Camera System - see <a href="#s_Package-Contents">Section 3.1, &#8220;Package Contents&#8221;</a> .</p>
 </li>
 <li>
-<p>Gather any additional items needed - see <a href="#s_ReqOptnlAccessories">[s_ReqOptnlAccessories]</a> .</p>
+<p>Gather any additional items needed - see <a href="#s_ReqOptnlAccessories">Section 4, &#8220;Required/Optional Accessories (Not Included)&#8221;</a> .</p>
 </li>
 <li>
-<p>Plan your physical installation - see <a href="#ps_Plan-Installation">[ps_Plan-Installation]</a> .</p>
+<p>Plan your physical installation - see <a href="#ps_Plan-Installation">Section 5, &#8220;Planning Your Installation&#8221;</a> .</p>
 </li>
 <li>
-<p>Install the hardware (including cable construction) - see <a href="#s_Hardware-Installation">[s_Hardware-Installation]</a> .</p>
+<p>Install the hardware (including cable construction) - see <a href="#s_Hardware-Installation">Section 6, &#8220;Hardware Installation&#8221;</a> .</p>
 </li>
 <li>
-<p>Reserve IP addresses for the components in your ALPR system - RoadView computer(s) and camera(s) - see <a href="#s_Reserve-IP-Addrs">[s_Reserve-IP-Addrs]</a></p>
+<p>Reserve IP addresses for the components in your ALPR system - RoadView computer(s) and camera(s) - see <a href="#ps_Reserve-IP-Addrs">Section 7, &#8220;Reserving IP Addresses in your Network&#8221;</a></p>
 </li>
 <li>
-<p>Use IZ Discovery to find the initial IP Addresses of the cameras connected to your network - see <a href="#s_Recognize-IZ-Discovery">[s_Recognize-IZ-Discovery]</a> .</p>
+<p>Use IZ Discovery to find the initial IP Addresses of the cameras connected to your network - see <a href="#ps_Recognize-IZ-Discovery">Section 8, &#8220;Recognizing Devices with IZ Discovery&#8221;</a> .</p>
 </li>
 <li>
-<p>Log into each camera, and change its IP address according to the requirements of your network. Use fixed addresses. Record these new addresses for use in RoadView configuration - see <a href="#ps_Logging-In-to-Camera ">[ps_Logging-In-to-Camera ]</a> and <a href="#ps_Changing-Camera-IP">[ps_Changing-Camera-IP]</a> .</p>
+<p>Log into each camera, and change its IP address according to the requirements of your network. Use fixed addresses. Record these new addresses for use in RoadView configuration - see <a href="#ps_Logging-In-to-Camera">Section 9.1, &#8220;Logging In to the Camera&#8221;</a> and <a href="#ps_Changing-Camera-IP">Section 9.2, &#8220;Changing a Camera&#8217;s IP Address&#8221;</a> .</p>
 </li>
 <li>
-<p>Calibrate the cameras - see <a href="#s_Calibrating-Cameras">[s_Calibrating-Cameras]</a> .</p>
+<p>Calibrate the cameras - see <a href="#s_Calibrating-Cameras">Section 10, &#8220;Calibrating the Cameras&#8221;</a> .</p>
 </li>
 <li>
-<p>Use IZ Discovery to find the IP address of the RoadView computer. Change the computer&#8217;s IP address according to the requirements of your network. See <a href="#s_Determining-IP-of-RoadView">[s_Determining-IP-of-RoadView]</a> and the <strong><em>\{Zvulun: need link here - get from related documents table}</em></strong> RoadView ALPR User Guide.</p>
+<p>Use IZ Discovery to find the IP address of the RoadView computer. Change the computer&#8217;s IP address according to the requirements of your network. See <a href="#s_Determining-IP-of-RoadView">Section 11, &#8220;Determining the IP Address of the RoadView Computer with IZ Discovery&#8221;</a> and the <strong><em>\{Zvulun: need link here - get from related documents table}</em></strong> RoadView ALPR User Guide.</p>
 </li>
 <li>
-<p>Log in to RoadView, and configure RoadView, including adding the connected cameras - see <a href="#ps_Using-RoadView">[ps_Using-RoadView]</a> and the <strong><em>\{Zvulun: need link here get from related documents table }</em></strong> RoadView ALPR User Guide.</p>
+<p>Log in to RoadView, and configure RoadView, including adding the connected cameras - see <a href="#ps_Using-RoadView">Section 12, &#8220;Using RoadView&#8221;</a> and the <strong><em>\{Zvulun: need link here get from related documents table }</em></strong> RoadView ALPR User Guide.</p>
 </li>
 <li>
-<p>On the Journal tab, verify that Events are being generated for each vehicle passing each camera, and that the recognition has sufficient accuracy and confidence. See <a href="#ps_Using-RoadView">[ps_Using-RoadView]</a> and the <strong><em>\{Zvulun: need link here get from related documents table }</em></strong> RoadView ALPR User Guide.</p>
+<p>On the Journal tab, verify that Events are being generated for each vehicle passing each camera, and that the recognition has sufficient accuracy and confidence. See <a href="#ps_Using-RoadView">Section 12, &#8220;Using RoadView&#8221;</a> and the <strong><em>\{Zvulun: need link here get from related documents table }</em></strong> RoadView ALPR User Guide.</p>
 </li>
 </ul>
 </div>
@@ -242,33 +420,22 @@ http://</p>
 <div class="sect1">
 <h2 id="_camera_system_overview"><a class="anchor" href="#_camera_system_overview"></a>3. Camera System Overview</h2>
 <div class="sectionbody">
-<div class="paragraph">
-<p>[#s_Package-Contents]</p>
-</div>
 <div class="sect2">
-<h3 id="_package_contents"><a class="anchor" href="#_package_contents"></a>3.1. Package Contents</h3>
+<h3 id="s_Package-Contents"><a class="anchor" href="#s_Package-Contents"></a>3.1. Package Contents</h3>
 <div class="paragraph">
 <p>Carefully unpack the contents of the ALPR Camera System package.</p>
-</div>
-<div class="quoteblock">
-<blockquote>
-
-</blockquote>
 </div>
 <div class="imageblock">
 <div class="content">
 <img src="_images/image1.png" alt="image" width="460" height="345">
 </div>
-</div>
-<div class="quoteblock">
-<blockquote>
-
-</blockquote>
+<div class="title">Figure 1. Package Contents</div>
 </div>
 <div class="imageblock">
 <div class="content">
 <img src="_images/image2.png" alt="image" width="349" height="199">
 </div>
+<div class="title">Figure 2. Mounting Adapter Plate</div>
 </div>
 <div class="paragraph">
 <p>The package includes:</p>
@@ -276,7 +443,7 @@ http://</p>
 <div class="ulist">
 <ul>
 <li>
-<p>{shortprodname}, ALPR All-in-one AI Camera System</p>
+<p>IZA800G, ALPR All-in-one AI Camera System</p>
 </li>
 <li>
 <p>LAN cable connector (field-mountable)</p>
@@ -289,33 +456,35 @@ http://</p>
 </li>
 </ul>
 </div>
-<div class="paragraph">
-<p><strong>[Note]</strong></p>
-</div>
-<div class="paragraph">
-<p>If any parts are missing or damaged, please contact INEX Technologies.</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+If any parts are missing or damaged, please contact INEX Technologies.
+</td>
+</tr>
+</table>
 </div>
 </div>
 <div class="sect2">
 <h3 id="_camera_system_details_and_dimensions"><a class="anchor" href="#_camera_system_details_and_dimensions"></a>3.2. Camera System Details and Dimensions</h3>
 <div class="paragraph">
-<p>The {shortprodname} ALPR All-in-one AI Camera System is suitable for tolling and ITS applications, with different models available for different distances and illumination requirements. <strong><em>\{Zvulun: partial}</em></strong> It has a rugged, all-weather, IP67-compliant, waterproof housing and a protective sunshade. The system consists of a black and white License Plate Recognition (LPR) camera, a color Overview (OV) camera, and an integrated, LED-based illumination system. A computer running license plate recognition software is also built in.</p>
-</div>
-<div class="quoteblock">
-<blockquote>
-
-</blockquote>
+<p>The IZA800G ALPR All-in-one AI Camera System is suitable for tolling and ITS applications, with different models available for different distances and illumination requirements. <strong><em>\{Zvulun: partial}</em></strong> It has a rugged, all-weather, IP67-compliant, waterproof housing and a protective sunshade. The system consists of a black and white License Plate Recognition (LPR) camera, a color Overview (OV) camera, and an integrated, LED-based illumination system. A computer running license plate recognition software is also built in.</p>
 </div>
 <div class="imageblock">
 <div class="content">
 <img src="_images/image3.png" alt="image" width="566" height="280">
 </div>
+<div class="title">Figure 3. Front View of the ALPR Camera System</div>
 </div>
 <div class="imageblock">
 <div class="content">
 <img src="_images/image4.png" alt="image" width="624" height="236">
 </div>
-<div class="title">Figure 1. Underside of the ALPR Camera System</div>
+<div class="title">Figure 4. Underside of the ALPR Camera System</div>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -327,18 +496,14 @@ http://</p>
 <img src="_images/image6.png" alt="image" width="463" height="224">
 </div>
 </div>
-<div class="quoteblock">
-<blockquote>
-
-</blockquote>
-</div>
 <div class="imageblock">
 <div class="content">
 <img src="_images/image7.png" alt="image" width="489" height="252">
 </div>
+<div class="title">Figure 5. Dimensions</div>
 </div>
 <div class="paragraph">
-<p><strong><em>\{Zvulun: front and side view of dimensions are partials}</em></strong></p>
+<p><strong><em>\{Zvulun: front and side view of dimensions should be converted to partials}</em></strong></p>
 </div>
 </div>
 <div class="sect2">
@@ -346,69 +511,632 @@ http://</p>
 <div class="paragraph">
 <p><strong><em>\{Zvulun: possible partial, along with the picture}</em></strong> The Camera System&#8217;s illuminators project different light intensities in a sequence (also called multi-flash technology). This produces a series of video frames with varying degrees of illumination, which helps to determine the best possible recognition.</p>
 </div>
-<div class="quoteblock">
-<blockquote>
-
-</blockquote>
-</div>
 <div class="imageblock">
 <div class="content">
 <img src="_images/image8.png" alt="image" width="524" height="75">
 </div>
-</div>
-<div class="paragraph">
-<p>[#s_Built-in-White-LEDs-IZA800GW]</p>
+<div class="title">Figure 6. Frames with Different Illumination Intensities</div>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_built_in_white_leds_shortprodname2"><a class="anchor" href="#_built_in_white_leds_shortprodname2"></a>3.4. Built-in White LEDs ({shortprodname2})</h3>
+<h3 id="s_Built-in-White-LEDs-IZA800GW"><a class="anchor" href="#s_Built-in-White-LEDs-IZA800GW"></a>3.4. Built-in White LEDs (IZA800GW)</h3>
 <div class="paragraph">
 <p><strong><em>\{Zvulun: text and picture could be a partial for other camera models with white LEDs}</em></strong></p>
 </div>
 <div class="paragraph">
-<p>Some of the built-in LEDs of the {shortprodname2} are white. They are used for overview image illumination.</p>
-</div>
-<div class="quoteblock">
-<blockquote>
-
-</blockquote>
+<p>Some of the built-in LEDs of the IZA800GW are white. They are used for overview image illumination.</p>
 </div>
 <div class="imageblock">
 <div class="content">
 <img src="_images/image9.png" alt="image" width="279" height="215">
 </div>
+<div class="title">Figure 7. IZA800GW LED Positions</div>
 </div>
 </div>
 <div class="sect2">
 <h3 id="_specifications"><a class="anchor" href="#_specifications"></a>3.5. Specifications</h3>
-<div class="paragraph">
-<p>[#t_Technical-Specifications]</p>
-</div>
-<div class="paragraph">
-<div class="title">Technical Specifications</div>
-<p><strong><em>\{Zvulun: make spec table here; this text is immediately after the table}</em></strong></p>
-</div>
-<div class="ulist">
+<table id="t_Technical-Specifications" class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 2. Technical Specifications</caption>
+<colgroup>
+<col style="width: 21%;">
+<col style="width: 18%;">
+<col style="width: 30%;">
+<col style="width: 31%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-middle" colspan="2" style="background-color: #c0c0c0;">Item</th>
+<th class="tableblock halign-center valign-middle" style="background-color: #c0c0c0;">IZA800<u>G</u></th>
+<th class="tableblock halign-center valign-middle" style="background-color: #c0c0c0;">IZA800<u>GW</u></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-middle" colspan="2"><p class="tableblock">Hardware Revision</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">F1</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">F1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle" rowspan="7"><p class="tableblock">Supported Analytics</p></td>
+<td class="tableblock halign-left valign-middle" rowspan="3"><p class="tableblock">LPR Analytics</p></td>
+<td class="tableblock halign-center valign-middle" colspan="2"><p class="tableblock">Plate Recognition</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-middle" colspan="2"><p class="tableblock">Plate State of Issue</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-middle" colspan="2"><p class="tableblock">Plate Type</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle" rowspan="4"><p class="tableblock">Vehicle Analytics</p></td>
+<td class="tableblock halign-center valign-middle" colspan="2"><p class="tableblock">Vehicle Detection</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-middle" colspan="2"><p class="tableblock">Vehicle Classification</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-middle" colspan="2"><p class="tableblock">Vehicle Color</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-middle" colspan="2"><p class="tableblock">Vehicle Make</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle" colspan="2"><p class="tableblock">Lanes Covered</p></td>
+<td class="tableblock halign-center valign-middle" colspan="2"><p class="tableblock">One</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle" colspan="2"><p class="tableblock">Max Vehicle Speed</p></td>
+<td class="tableblock halign-center valign-middle" colspan="2"><p class="tableblock">Up to 120 mph (193 km/h)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle" colspan="2" rowspan="3"><p class="tableblock">LPR Capture Distance* (for U.S.A. plates)</p></td>
+<td class="tableblock halign-left valign-middle" colspan="2"><div class="content"><div class="ulist">
 <ul>
 <li>
-<p>LPR Capture Distance is measured from camera to plate</p>
+<p>G/GW-S-XX - 16-39 ft (5-12 m)</p>
 </li>
 </ul>
-</div>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle" colspan="2"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>G/GW-L-XX - 33-65 ft (10-20 m)</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle" colspan="2"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>G/GW-XL-XX - 33-80 ft (10-24 m)</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle" rowspan="7"><p class="tableblock">LPR Illumination</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Number of LEDs</p></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>15 (same ones as for OV illumination)</p>
+</li>
+</ul>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>10</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle" rowspan="3"><p class="tableblock">Wavelength</p></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>G-XX-DR - Deep Red</p>
+</li>
+</ul>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>GW-XX-DR - Deep Red</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>G-XX-IR - Infrared</p>
+</li>
+</ul>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>GW-XX-IR - Infrared</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>G-XX-IL - Invisible Infrared</p>
+</li>
+</ul>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>GW-XX-IL - Invisible Infrared</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle" rowspan="3"><p class="tableblock">Beam Angle</p></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>G-S-XX - 40°x16°</p>
+</li>
+</ul>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>GW-S-XX - 40°x16°</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>G-L-XX - 15°x15°</p>
+</li>
+</ul>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>GW-L-XX - 15°x15°</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>G-XL-XX - 15°x15°</p>
+</li>
+</ul>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>GW-XL-XX - 15°x15°</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle" rowspan="8"><p class="tableblock">LPR Camera</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Shutter Type</p></td>
+<td class="tableblock halign-center valign-middle" colspan="2"><p class="tableblock">Global</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Sensor</p></td>
+<td class="tableblock halign-center valign-middle" colspan="2"><p class="tableblock">Sony IMX265</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Resolution</p></td>
+<td class="tableblock halign-center valign-middle" colspan="2"><p class="tableblock">2mp - 1920 (H) x 1080 (V)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle" rowspan="3"><p class="tableblock">Lens</p></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>G-S-XX - 12-40 mm; Motorized Zoom and Auto-focus</p>
+</li>
+</ul>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>GW-S-XX - 12-40 mm; Motorized Zoom and Auto-focus</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>G-L-XX - 12-40 mm; Motorized Zoom and Auto-focus</p>
+</li>
+</ul>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>GW-L-XX - 12-40 mm; Motorized Zoom and Auto-focus</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>G-XL-XX - 12-50 mm; Manual Zoom and Focus</p>
+</li>
+</ul>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>GW-XL-XX - 12-50 mm; Manual Zoom and Focus</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Video Compression</p></td>
+<td class="tableblock halign-center valign-middle" colspan="2"><p class="tableblock">MJPEG, H.264, H.265</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Video Streaming</p></td>
+<td class="tableblock halign-center valign-middle" colspan="2"><p class="tableblock">RTSP Protocol</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle" rowspan="7"><p class="tableblock">OV Illumination</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Number of LEDs</p></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>15 (same ones as for LPR illumination)</p>
+</li>
+</ul>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>5</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle" rowspan="3"><p class="tableblock">Wavelength</p></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>G-XX-DR - Deep Red</p>
+</li>
+</ul>
+</div></div></td>
+<td class="tableblock halign-left valign-middle" rowspan="3"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>Visible, Warm White</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>G-XX-IR - Infrared</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>G-XX-IL - Invisible Infrared</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle" rowspan="3"><p class="tableblock">Beam Angle</p></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>G-S-XX - 40°x16°</p>
+</li>
+</ul>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>GW-S-XX - 40°x16°</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>G-L-XX - 15°x15°</p>
+</li>
+</ul>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>GW-L-XX - 15°x15°</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>G-XL-XX - 15°x15°</p>
+</li>
+</ul>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>GW-XL-XX - 15°x15°</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle" rowspan="8"><p class="tableblock">OV Camera</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Shutter Type</p></td>
+<td class="tableblock halign-center valign-middle" colspan="2"><p class="tableblock">Global</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Sensor</p></td>
+<td class="tableblock halign-center valign-middle" colspan="2"><p class="tableblock">Sony IMX265</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Resolution</p></td>
+<td class="tableblock halign-center valign-middle" colspan="2"><p class="tableblock">2mp - 1920 (H) x 1080 (V)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle" rowspan="3"><p class="tableblock">Lens</p></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>G-S-XX - 12-40 mm; Motorized Zoom and Auto-focus</p>
+</li>
+</ul>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>GW-S-XX - 12-40 mm; Motorized Zoom and Auto-focus</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>G-L-XX - 12-40 mm; Motorized Zoom and Auto-focus</p>
+</li>
+</ul>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>GW-L-XX - 12-40 mm; Motorized Zoom and Auto-focus</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>G-XL-XX - 12-50 mm; Manual Zoom and Focus</p>
+</li>
+</ul>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>GW-XL-XX - 12-50 mm; Manual Zoom and Focus</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Video Compression</p></td>
+<td class="tableblock halign-left valign-middle" colspan="2"><p class="tableblock">MJPEG, H.264, H.265</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Video Streaming</p></td>
+<td class="tableblock halign-left valign-middle" colspan="2"><p class="tableblock">RTSP Protocol</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle" rowspan="2"><p class="tableblock">Supported Protocols (for additional protocols, see the RoadView ALPR User Guide)</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">INEX HTTP API</p></td>
+<td class="tableblock halign-left valign-middle" colspan="2"><p class="tableblock">LPR Events are reported to IZCentral, or a 3rd party system via protocols such as the INEX HTTP API protocol. Each LPR Event includes metadata and associated images.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">INEX Discovery</p></td>
+<td class="tableblock halign-left valign-middle" colspan="2"><p class="tableblock">The INEX Discovery Protocol is used by the IZ Discovery utility to find all devices connected to the LAN. IZ Discovery also enables display and editing of each device&#8217;s network settings.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle" rowspan="8"><p class="tableblock">AI Processor</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">GPU</p></td>
+<td class="tableblock halign-center valign-middle" colspan="2"><p class="tableblock">NVIDIA Maxwell architecture with 128 CUDA® cores</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">CPU</p></td>
+<td class="tableblock halign-center valign-middle" colspan="2"><p class="tableblock">Quad-core ARM Cortex-A57 MPCore processor</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">RAM</p></td>
+<td class="tableblock halign-center valign-middle" colspan="2"><p class="tableblock">4 GB 64-bit LPDDR4, 1600MHz 25.6 GB/s</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">System Storage</p></td>
+<td class="tableblock halign-center valign-middle" colspan="2"><p class="tableblock">MicroSD, 64 Gb</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Data Storage</p></td>
+<td class="tableblock halign-center valign-middle" colspan="2"><p class="tableblock">128 Gb</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle" rowspan="2"><p class="tableblock">RTC Battery</p></td>
+<td class="tableblock halign-center valign-middle" colspan="2"><p class="tableblock">Maintains real-time clock date and time for 4-6 hours</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-middle" colspan="2"><p class="tableblock">Rechargeable; Full charge-up time: 12 hours</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">OS</p></td>
+<td class="tableblock halign-center valign-middle" colspan="2"><p class="tableblock">Linux Ubuntu 18.04</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle" rowspan="4"><p class="tableblock">Environmental</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Ingress Protection</p></td>
+<td class="tableblock halign-center valign-middle" colspan="2"><p class="tableblock">IP67</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Operating Temperature</p></td>
+<td class="tableblock halign-center valign-middle" colspan="2"><p class="tableblock">-22°F to 140°F (-30°C to 60°C)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Storage Temperature</p></td>
+<td class="tableblock halign-center valign-middle" colspan="2"><p class="tableblock">-22°F to 158°F (-30°C to 70°C)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Humidity</p></td>
+<td class="tableblock halign-center valign-middle" colspan="2"><p class="tableblock">0% - 90% RH, non-condensing</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle" rowspan="6"><p class="tableblock">Certifications</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">EMC</p></td>
+<td class="tableblock halign-center valign-middle" colspan="2"><p class="tableblock">FCC Class B/CE</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Interoperability</p></td>
+<td class="tableblock halign-center valign-middle" colspan="2"><p class="tableblock">ONVIF compliant, Profile S</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">RoHS</p></td>
+<td class="tableblock halign-center valign-middle" colspan="2"><p class="tableblock">RoHS</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Impact Protection</p></td>
+<td class="tableblock halign-center valign-middle" colspan="2"><p class="tableblock">IK10 (Vandal-proof)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Eye Safety</p></td>
+<td class="tableblock halign-center valign-middle" colspan="2"><p class="tableblock">IEC62471 Group 1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">NDAA</p></td>
+<td class="tableblock halign-center valign-middle" colspan="2"><p class="tableblock">NDAA Section 889 compliant</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle" rowspan="3"><p class="tableblock">Physical</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Dimensions</p></td>
+<td class="tableblock halign-center valign-middle" colspan="2"><p class="tableblock">(W x H x D) 6.7” x 4.7” x 17.7” (171 mm x 119 mm x 451 mm)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Weight</p></td>
+<td class="tableblock halign-center valign-middle" colspan="2"><p class="tableblock">9.0 lbs (4.1 kg)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Color</p></td>
+<td class="tableblock halign-center valign-middle" colspan="2"><p class="tableblock">White</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle" rowspan="5"><p class="tableblock">Interface</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Ethernet</p></td>
+<td class="tableblock halign-center valign-middle" colspan="2"><p class="tableblock">10/100 BaseT</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle" rowspan="2"><p class="tableblock">Connectors</p></td>
+<td class="tableblock halign-center valign-middle" colspan="2"><p class="tableblock">LAN - Waterproof outdoor RJ-45 connector</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-middle" colspan="2"><p class="tableblock">Power/Signals - Waterproof outdoor M12 connector</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle" rowspan="2"><p class="tableblock">Digital Outputs</p></td>
+<td class="tableblock halign-center valign-middle" colspan="2"><p class="tableblock">LPR Strobe (&#43;/-): 5 V isolated</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-middle" colspan="2"><p class="tableblock">OV Strobe (&#43;/-): 5 V isolated</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle" rowspan="2"><p class="tableblock">Power</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Input Voltage</p></td>
+<td class="tableblock halign-center valign-middle" colspan="2"><p class="tableblock">24 VDC &#43;/- 10%, Class 2 Low-Voltage</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Power Consumption</p></td>
+<td class="tableblock halign-center valign-middle" colspan="2"><p class="tableblock">25 W</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle" colspan="2" rowspan="3"><p class="tableblock">Accessories Included</p></td>
+<td class="tableblock halign-center valign-middle" colspan="2"><p class="tableblock">Sunshade</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-middle" colspan="2"><p class="tableblock">Waterproof outdoor RJ-45 cable connector</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-middle" colspan="2"><p class="tableblock">Waterproof outdoor M12 cable connector</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle" colspan="2" rowspan="5"><p class="tableblock">Accessories Available</p></td>
+<td class="tableblock halign-center valign-middle" colspan="2"><p class="tableblock">Power Supply</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-middle" colspan="2"><p class="tableblock">IZIO Digital I/O Controller</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-middle" colspan="2"><p class="tableblock">Different lengths of prefabricated power/signals cables</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-middle" colspan="2"><p class="tableblock">Different mount options available</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-middle" colspan="2"><p class="tableblock">External Illuminator (IZS Series)</p></td>
+</tr>
+</tbody>
+</table>
 <div class="paragraph">
-<p>[#s_ReqOptnlAccessories]</p>
+<p>* LPR Capture Distance is measured from camera to plate</p>
 </div>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_requiredoptional_accessories_not_included"><a class="anchor" href="#_requiredoptional_accessories_not_included"></a>4. Required/Optional Accessories (Not Included)</h2>
+<h2 id="s_ReqOptnlAccessories"><a class="anchor" href="#s_ReqOptnlAccessories"></a>4. Required/Optional Accessories (Not Included)</h2>
 <div class="sectionbody">
-<div class="paragraph">
-<p>[#s_Required-Accessories]</p>
-</div>
 <div class="sect2">
-<h3 id="_required_accessories"><a class="anchor" href="#_required_accessories"></a>4.1. Required Accessories</h3>
+<h3 id="s_Required-Accessories"><a class="anchor" href="#s_Required-Accessories"></a>4.1. Required Accessories</h3>
 <div class="paragraph">
 <p><strong><em>\{Zvulun: some of these are possible partials}</em></strong></p>
 </div>
@@ -418,38 +1146,48 @@ http://</p>
 <p>An Allen wrench used to attach the mounting adapter plate to the housing (if applicable); size 3/16" (4.76 mm)</p>
 </li>
 <li>
-<p>8-wire cable for power/signals; recommended to use E119932-1/LL84201, 24 gauge (size of each wire); see <a href="#ps_Construct-Pwr-Signals-Cable">[ps_Construct-Pwr-Signals-Cable]</a> .</p>
+<p>8-wire cable for power/signals; recommended to use E119932-1/LL84201, 24 gauge (size of each wire); see <a href="#ps_Construct-Pwr-Signals-Cable">Section 6.3, &#8220;Constructing the Power/Signals Cable&#8221;</a> .</p>
 </li>
 <li>
-<p>2 mm flat screwdriver for tightening the screw terminals of the power/signals connector (see <a href="#ps_Construct-Pwr-Signals-Cable">[ps_Construct-Pwr-Signals-Cable]</a>).</p>
+<p>2 mm flat screwdriver for tightening the screw terminals of the power/signals connector (see <a href="#ps_Construct-Pwr-Signals-Cable">Section 6.3, &#8220;Constructing the Power/Signals Cable&#8221;</a>).</p>
 </li>
 <li>
 <p>16 mm torque wrench for tightening the nuts of the power/signals connector, and for attaching the connector to the Camera System.</p>
 </li>
 <li>
-<p>Network (LAN) cabling (typically CAT 5e/6 cable) with metal-body RJ45 connectors. The total length of the cable should not exceed 328 feet (100 meters). See <a href="#ps_Construct-LAN-Cable">[ps_Construct-LAN-Cable]</a> for important LAN cable information.</p>
+<p>Network (LAN) cabling (typically CAT 5e/6 cable) with metal-body RJ45 connectors. The total length of the cable should not exceed 328 feet (100 meters). See <a href="#ps_Construct-LAN-Cable">Section 6.4, &#8220;Constructing the LAN Cable&#8221;</a> for important LAN cable information.</p>
 </li>
 <li>
 <p>Tools for building LAN cables (wire stripper, crimp tool, etc.) and RJ45 connectors with metal bodies.</p>
 </li>
 </ul>
 </div>
-<div class="paragraph">
-<p>[IMPORTANT]</p>
-</div>
-<div class="paragraph">
-<p>All network cable extensions and repeaters must be shielded.</p>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+All network cable extensions and repeaters must be shielded.
+</td>
+</tr>
+</table>
 </div>
 <div class="ulist">
 <ul>
 <li>
 <p>You will need to provide a laptop computer to use for configuration. If you will be using the laptop outdoors, the screen must be able to be seen in strong sunlight. Required software:</p>
-</li>
+<div class="ulist">
+<ul>
 <li>
 <p>Windows 10 or above - with .NET 4.5 enabled in "Windows Features"</p>
 </li>
 <li>
 <p>Internet Explorer browser version 11 or higher</p>
+</li>
+</ul>
+</div>
 </li>
 <li>
 <p>The following accessories can be supplied by INEX/TECH:</p>
@@ -457,7 +1195,7 @@ http://</p>
 </ul>
 </div>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 1. Required Accessories</caption>
+<caption class="title">Table 3. Required Accessories</caption>
 <colgroup>
 <col style="width: 33%;">
 <col style="width: 67%;">
@@ -483,13 +1221,14 @@ http://</p>
 <div class="sect2">
 <h3 id="_optional_accessories"><a class="anchor" href="#_optional_accessories"></a>4.2. Optional Accessories</h3>
 <div class="paragraph">
-<p><strong><em>\{Zvulun the last two bullets are a partial – p-optional_acces_illum.adoc}</em></strong></p>
+<p><strong><em>\{Zvulun the last two bullets are a partial - p-optional_acces_illum.adoc}</em></strong></p>
 </div>
 <div class="ulist">
 <ul>
 <li>
 <p>External Illuminator - Can be used to enhance overview vehicle image quality, for front and/or rear capture. It is recommended to use an illuminator power supply separate from the Camera System&#8217;s supply.</p>
-</li>
+<div class="ulist">
+<ul>
 <li>
 <p>Mount illuminators at an appropriate distance away from their associated Camera System(s), according to the objectives of your project. Contact INEX for guidance/training about this subject.</p>
 </li>
@@ -498,11 +1237,14 @@ http://</p>
 </li>
 </ul>
 </div>
+</li>
+</ul>
+</div>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_planning_your_installationps_plan_installation"><a class="anchor" href="#_planning_your_installationps_plan_installation"></a>5. Planning Your Installation[#ps_Plan-Installation]</h2>
+<h2 id="ps_Plan-Installation"><a class="anchor" href="#ps_Plan-Installation"></a>5. Planning Your Installation</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p><strong><em>\{Zvulun: entire section is a possible partial}</em></strong></p>
@@ -512,73 +1254,69 @@ http://</p>
 <div class="paragraph">
 <p>Your Camera System&#8217;s Field of View (FOV) is the area that the camera can "see". You can think of this area as an imaginary rectangle rising from the lane upwards. The width of this area is called the horizontal FOV or "capture line".</p>
 </div>
-<div class="quoteblock">
-<blockquote>
-
-</blockquote>
-</div>
 <div class="imageblock">
 <div class="content">
 <img src="_images/image10.png" alt="image" width="634" height="194">
 </div>
+<div class="title">Figure 8. Field of View (Capture Line)</div>
 </div>
 <div class="paragraph">
-<p>One of the specifications of your Camera System (see <a href="#t_Technical-Specifications">[t_Technical-Specifications]</a>) is the sensor resolution width, in pixels.</p>
+<p>One of the specifications of your Camera System (see <a href="#t_Technical-Specifications">Table 2, &#8220;Technical Specifications&#8221;</a>) is the sensor resolution width, in pixels.</p>
 </div>
 <div class="paragraph">
-<p>Another important specification is the number of pixels needed to recognize a license plate. For example, this is typically {recognitionpixels} for a U.S. plate image captured at the middle of the capture line.</p>
+<p>Another important specification is the number of pixels needed to recognize a license plate. For example, this is typically 150 for a U.S. plate image captured at the middle of the capture line.</p>
 </div>
 <div class="paragraph">
-<p>The factor determining the number of plate widths that can fit in the camera sensor&#8217;s Field of View is the resolution width divided by the plate pixels. For a Camera System with a resolution width of {resolutionwidth} pixels, this would be {resolutionwidth}/{recognitionpixels} = {FOVplatewidths}</p>
+<p>The factor determining the number of plate widths that can fit in the camera sensor&#8217;s Field of View is the resolution width divided by the plate pixels. For a Camera System with a resolution width of 1920 pixels, this would be 1920/150 = 12.8</p>
 </div>
 <div class="paragraph">
-<p>Multiplying this factor by the width of a plate in your location will give you the length of the capture line. For a U.S. plate {platewidthfeet} foot wide, the width of the capture line will be approximately {capturelinefeet} feet ({capturelinemeters} meters).</p>
+<p>Multiplying this factor by the width of a plate in your location will give you the length of the capture line. For a U.S. plate 1 foot wide, the width of the capture line will be approximately 12 feet (3.7 meters).</p>
 </div>
 <div class="paragraph">
 <p>Select your Camera System&#8217;s position so that license plates are always within the capture line and parallel to it, with the Camera System facing as straight at the plates as possible - as shown in the following diagrams:</p>
 </div>
-<div class="quoteblock">
-<blockquote>
 <div class="imageblock">
 <div class="content">
 <img src="_images/image11.png" alt="image" width="247" height="411">
 </div>
-<div class="title">Figure 2. Plates Within Capture Line</div>
-</div>
-</blockquote>
+<div class="title">Figure 9. Plates Within Capture Line</div>
 </div>
 <div class="imageblock">
 <div class="content">
 <img src="_images/image12.png" alt="image" width="503" height="314">
 </div>
-<div class="title">Figure 3. Plates Parallel to Capture Line - Away from Road Curves</div>
+<div class="title">Figure 10. Plates Parallel to Capture Line - Away from Road Curves</div>
 </div>
 </div>
 <div class="sect2">
 <h3 id="_angles_and_distances"><a class="anchor" href="#_angles_and_distances"></a>5.2. Angles and Distances</h3>
-<div class="paragraph">
-<p>[IMPORTANT]</p>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+Installations that position the camera at significant angles in relation to the plates will reduce the line-of-sight distances specified.
+</td>
+</tr>
+</table>
 </div>
-<div class="paragraph">
-<p>Installations that position the camera at significant angles in relation to the plates will reduce the line-of-sight distances specified.</p>
-</div>
-<div class="quoteblock">
-<blockquote>
 <div class="imageblock">
 <div class="content">
 <img src="_images/image13.png" alt="image" width="310" height="332">
 </div>
-<div class="title">Figure 4. Horizontal Camera Angle (Pan Angle)</div>
+<div class="title">Figure 11. Horizontal Camera Angle (Pan Angle)</div>
 </div>
-</blockquote>
-</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
 <div class="paragraph">
-<p>[Note]</p>
-</div>
-<div class="exampleblock">
-<div class="content">
-<div class="paragraph">
-<p>The maximum horizontal angle allowed is <strong><em>\{Zvulun: be sure degree symbol shows up in Asciidoc}</em></strong> 30° (to the farthest point at the end of the capture line).</p>
+<p>The maximum horizontal angle allowed is 30° (to the farthest point at the end of the capture line).</p>
 </div>
 <div class="paragraph">
 <p>If you must capture plates on a curve, place the Camera System on the side of the road that minimizes the horizontal angle.</p>
@@ -589,19 +1327,23 @@ http://</p>
 <div class="paragraph">
 <p>For plates whose characters are very shiny (for example, silvery), the <strong>weighted</strong> angle must be less than 20 degrees. The weighted angle is the angle between a line from the camera to the plate, and a line running straight ahead from the car.</p>
 </div>
-<div class="exampleblock">
-<div class="content">
+</td>
+</tr>
+</table>
+</div>
 <div class="imageblock">
 <div class="content">
 <img src="_images/image14.png" alt="image" width="626" height="194">
 </div>
-<div class="title">Figure 5. Vertical Camera Angle (Tilt Angle) and Line-of-Sight Distance from Plate</div>
+<div class="title">Figure 12. Vertical Camera Angle (Tilt Angle) and Line-of-Sight Distance from Plate</div>
 </div>
-<div class="paragraph">
-<p>[Note]</p>
-</div>
-<div class="exampleblock">
-<div class="content">
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
 <div class="paragraph">
 <p>The distance from the Camera System to the capture line must be within the viewing range of the LPR camera.</p>
 </div>
@@ -609,7 +1351,7 @@ http://</p>
 <p>Adjust the vertical angle so that the Camera System can read plates at all of their expected heights from the road.</p>
 </div>
 <div class="paragraph">
-<p>The maximum vertical angle allowed is <strong><em>\{Zvulun: be sure degree symbol shows up in asciidoc}</em></strong> 30°.</p>
+<p>The maximum vertical angle allowed is 30°.</p>
 </div>
 <div class="paragraph">
 <p>Larger angles and/or greater mounting heights may be required in order to recognize plates on vehicles close to each other (such as in slow/congested traffic).</p>
@@ -620,11 +1362,13 @@ http://</p>
 <div class="paragraph">
 <p>For plates whose characters are very shiny (for example, silvery), the <strong>weighted</strong> angle must be less than 20 degrees. The weighted angle is the angle between a line from the camera to the plate, and a line running straight ahead from the car.</p>
 </div>
+</td>
+</tr>
+</table>
 </div>
 </div>
-<div class="paragraph">
-<p>=== Position of the Sun in Relation to the Camera System</p>
-</div>
+<div class="sect2">
+<h3 id="_position_of_the_sun_in_relation_to_the_camera_system"><a class="anchor" href="#_position_of_the_sun_in_relation_to_the_camera_system"></a>5.3. Position of the Sun in Relation to the Camera System</h3>
 <div class="paragraph">
 <p>The Camera System should not be positioned so that the rays of the sun behind the Camera System shine along the camera-to-plate axis. Reflective plates will cause severe glare to be reflected back to the camera, obscuring the image of the plate&#8217;s characters.</p>
 </div>
@@ -651,11 +1395,11 @@ http://</p>
 <div class="content">
 <img src="_images/image15.png" alt="image" width="628" height="232">
 </div>
-<div class="title">Figure 6. Sun Behind Camera System (on Same Axis as Line-of-Sight from Camera to Plate)</div>
+<div class="title">Figure 13. Sun Behind Camera System (on Same Axis as Line-of-Sight from Camera to Plate)</div>
 </div>
-<div class="paragraph">
-<p>=== Optimizing Nighttime Vehicle Overview Images (using External Illuminators)</p>
 </div>
+<div class="sect2">
+<h3 id="_optimizing_nighttime_vehicle_overview_images_using_external_illuminators"><a class="anchor" href="#_optimizing_nighttime_vehicle_overview_images_using_external_illuminators"></a>5.4. Optimizing Nighttime Vehicle Overview Images (using External Illuminators)</h3>
 <div class="paragraph">
 <p><strong><em>\{Zvulun: possible partials in this section}</em></strong></p>
 </div>
@@ -663,22 +1407,27 @@ http://</p>
 <div class="content">
 <img src="_images/image16.png" alt="image" width="136" height="121">
 </div>
-<div class="title">Figure 7. External Illuminator</div>
+<div class="title">Figure 14. External Illuminator</div>
 </div>
-<div class="paragraph">
-<p>==== Matching Your Camera System to an INEX Illuminator</p>
-</div>
+<div class="sect3">
+<h4 id="_matching_your_camera_system_to_an_inex_illuminator"><a class="anchor" href="#_matching_your_camera_system_to_an_inex_illuminator"></a>5.4.1. Matching Your Camera System to an INEX Illuminator</h4>
 <div class="paragraph">
 <p><strong><em>\{Zvulun: the following important note could be a partial - but so small so may not be worth it?}</em></strong></p>
 </div>
-<div class="paragraph">
-<p>[IMPORTANT]</p>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+The wavelength of an external illuminator must be compatible with the wavelength of the internal illuminators of the INEX Camera System. See the appropriate Illuminator Series User Guide(s) for compatibility information.
+</td>
+</tr>
+</table>
 </div>
 <div class="paragraph">
-<p>The wavelength of an external illuminator must be compatible with the wavelength of the internal illuminators of the INEX Camera System. See the appropriate Illuminator Series User Guide(s) for compatibility information.</p>
-</div>
-<div class="paragraph">
-<p><strong>The INEX {shortprodname} Camera Systems are typically used with the <em>\{Zvulun: needs link – get from related docs table}</em> IZS series strobe illuminators.</strong></p>
+<p><strong>The INEX IZA800G Camera Systems are typically used with the <em>\{Zvulun: needs link - get from related docs table}</em> IZS series strobe illuminators.</strong></p>
 </div>
 <div class="paragraph">
 <p>By using the following guidelines, you can match the illuminator you need to the INEX Camera System being used.</p>
@@ -686,11 +1435,12 @@ http://</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Infrared-type illuminators are typically synchronized with the LPR sensor, and white illuminators are typically synchronized with the OV sensor. You can choose which sensor to trigger from (LPR or OV) by using appropriate wiring (see <a href="#s_Typical-Wiring-Diagram">[s_Typical-Wiring-Diagram]</a>).</p>
+<p>Infrared-type illuminators are typically synchronized with the LPR sensor, and white illuminators are typically synchronized with the OV sensor. You can choose which sensor to trigger from (LPR or OV) by using appropriate wiring (see <a href="#s_Typical-Wiring-Diagram">Section 6.1, &#8220;Typical Wiring Diagram&#8221;</a>).</p>
 </li>
 <li>
 <p>The number of illuminator LEDs and beam angle must match the distance type (long or short) of the Camera System being used, as follows:</p>
-</li>
+<div class="ulist">
+<ul>
 <li>
 <p>Fewer LEDs and wider beam angles are used for short distances</p>
 </li>
@@ -699,18 +1449,21 @@ http://</p>
 </li>
 </ul>
 </div>
+</li>
+</ul>
+</div>
 <div class="paragraph">
 <p>The results of applying these guidelines can be found in the appropriate Illuminator Series User Guide(s)</p>
 </div>
-<div class="paragraph">
-<p>==== Illuminator Triggering and Pulse Width</p>
 </div>
+<div class="sect3">
+<h4 id="_illuminator_triggering_and_pulse_width"><a class="anchor" href="#_illuminator_triggering_and_pulse_width"></a>5.4.2. Illuminator Triggering and Pulse Width</h4>
 <div class="paragraph">
-<p>You can choose which camera to trigger from (LPR or OV) by using appropriate wiring (see <a href="#s_Typical-Wiring-Diagram">[s_Typical-Wiring-Diagram]</a>). The pulse width and other parameters that affect illuminator operation are pre-configured according to your project&#8217;s requirements.</p>
+<p>You can choose which camera to trigger from (LPR or OV) by using appropriate wiring (see <a href="#s_Typical-Wiring-Diagram">Section 6.1, &#8220;Typical Wiring Diagram&#8221;</a>). The pulse width and other parameters that affect illuminator operation are pre-configured according to your project&#8217;s requirements.</p>
 </div>
-<div class="paragraph">
-<p>==== Illuminator Mounting and Aiming</p>
 </div>
+<div class="sect3">
+<h4 id="_illuminator_mounting_and_aiming"><a class="anchor" href="#_illuminator_mounting_and_aiming"></a>5.4.3. Illuminator Mounting and Aiming</h4>
 <div class="paragraph">
 <p><strong><em>\{Zvulun: partial called p-optional_acces_illum.adoc}</em></strong></p>
 </div>
@@ -727,20 +1480,21 @@ http://</p>
 </li>
 </ul>
 </div>
-<div class="paragraph">
-<p>==== Verifying Infrared-type Illuminator Operation</p>
 </div>
+<div class="sect3">
+<h4 id="_verifying_infrared_type_illuminator_operation"><a class="anchor" href="#_verifying_infrared_type_illuminator_operation"></a>5.4.4. Verifying Infrared-type Illuminator Operation</h4>
 <div class="paragraph">
 <p>You can look at an infrared-type illuminator with a smartphone camera to see if it is working.</p>
 </div>
-<div class="paragraph">
-<p>=== Additional Installation Considerations</p>
 </div>
+</div>
+<div class="sect2">
+<h3 id="_additional_installation_considerations"><a class="anchor" href="#_additional_installation_considerations"></a>5.5. Additional Installation Considerations</h3>
 <div class="paragraph">
 <p><strong><em>\{Zvulun: many parts of this table are possible partials}</em></strong></p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 2. Additional Installation Considerations</caption>
+<caption class="title">Table 4. Additional Installation Considerations</caption>
 <colgroup>
 <col style="width: 40%;">
 <col style="width: 60%;">
@@ -779,11 +1533,17 @@ http://</p>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><strong>Cable Extensions</strong> <em>\{Zvulun: be sure the following note stays within the table cell}</em></p>
 </div>
-<div class="paragraph">
-<p>[IMPORTANT]</p>
-</div>
-<div class="paragraph">
-<p>All network cable extensions and repeaters must be shielded.</p>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+All network cable extensions and repeaters must be shielded.
+</td>
+</tr>
+</table>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
 <ul>
@@ -854,7 +1614,7 @@ http://</p>
 <p>Weather - snow, heavy rain, dust storms</p>
 </li>
 <li>
-<p>Dirt on front window (see <a href="#s_Troubleshooting-and-Maintenance">[s_Troubleshooting-and-Maintenance]</a>)</p>
+<p>Dirt on front window (see <a href="#s_Troubleshooting-and-Maintenance">Section 13, &#8220;Troubleshooting and Maintenance&#8221;</a>)</p>
 </li>
 </ul>
 </div></div></td>
@@ -874,145 +1634,138 @@ http://</p>
 </tr>
 </tbody>
 </table>
-<div class="paragraph">
-<p>[#s_Hardware-Installation]</p>
 </div>
-<div class="paragraph">
-<p>== Hardware Installation</p>
 </div>
-<div class="paragraph">
-<p>[#s_Typical-Wiring-Diagram]</p>
 </div>
-<div class="paragraph">
-<p>=== Typical Wiring Diagram</p>
-</div>
+<div class="sect1">
+<h2 id="s_Hardware-Installation"><a class="anchor" href="#s_Hardware-Installation"></a>6. Hardware Installation</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="s_Typical-Wiring-Diagram"><a class="anchor" href="#s_Typical-Wiring-Diagram"></a>6.1. Typical Wiring Diagram</h3>
 <div class="paragraph">
 <p>Here is a typical wiring diagrams for capturing license plate images. Note that the type and configuration of the power supply may be different than the one you are using at your site.</p>
 </div>
-<div class="quoteblock">
-<blockquote>
-<div class="paragraph">
-<p>[#f_Typical-Wiring-Diagram]</p>
-</div>
-</blockquote>
-</div>
-<div class="imageblock">
+<div id="f_Typical-Wiring-Diagram" class="imageblock">
 <div class="content">
 <img src="_images/image17.png" alt="image" width="624" height="446">
 </div>
+<div class="title">Figure 15. Typical Wiring Diagram</div>
 </div>
-<div class="paragraph">
-<p>[IMPORTANT]</p>
-</div>
-<div class="exampleblock">
-<div class="content">
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
 <div class="paragraph">
 <p>All network cable extensions and repeaters must be shielded.</p>
 </div>
 <div class="paragraph">
 <p>After mounting, remove the protective film from the front window of the Camera System.</p>
 </div>
+</td>
+</tr>
+</table>
 </div>
 </div>
-<div class="paragraph">
-<p>=== Mounting the Camera System</p>
-</div>
+<div class="sect2">
+<h3 id="_mounting_the_camera_system"><a class="anchor" href="#_mounting_the_camera_system"></a>6.2. Mounting the Camera System</h3>
 <div class="paragraph">
 <p>Secure the Camera System to the appropriate mounting hardware (see the <strong><em>\{Zvulun: needs link}</em></strong> Mounting Hardware documentation).</p>
 </div>
-<div class="paragraph">
-<p>=== Constructing the Power/Signals Cable[#ps_Construct-Pwr-Signals-Cable]</p>
 </div>
+<div class="sect2">
+<h3 id="ps_Construct-Pwr-Signals-Cable"><a class="anchor" href="#ps_Construct-Pwr-Signals-Cable"></a>6.3. Constructing the Power/Signals Cable</h3>
 <div class="paragraph">
 <p><strong><em>\{Zvulun: possible partial section}</em></strong></p>
 </div>
-<div class="paragraph">
-<p>[IMPORTANT]</p>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+At the end of this procedure, you will need to check that there is conductivity from the shield wire (at the power supply end of the cable) to the body of the connector that will be connected to the camera.
+</td>
+</tr>
+</table>
 </div>
 <div class="paragraph">
-<p>At the end of this procedure, you will need to check that there is conductivity from the shield wire (at the power supply end of the cable) to the body of the connector that will be connected to the camera.</p>
+<p>Use the cable type recommended in the Required Accessories section (see <a href="#s_Required-Accessories">Section 4.1, &#8220;Required Accessories&#8221;</a>).</p>
 </div>
-<div class="paragraph">
-<p>Use the cable type recommended in the Required Accessories section (see <a href="#s_Required-Accessories">[s_Required-Accessories]</a>).</p>
-</div>
-<div class="paragraph">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
 <p>Lay out the parts from the power connector package.</p>
-</div>
 <div class="imageblock">
 <div class="content">
 <img src="_images/image18.png" alt="image" width="494" height="203">
 </div>
-<div class="title">Figure 8. Power/Signals Cable: Laying Out Connector Parts</div>
+<div class="title">Figure 16. Power/Signals Cable: Laying Out Connector Parts</div>
 </div>
-<div class="paragraph">
+</li>
+<li>
 <p>Thread the cable through the sealing nut and rubber seal.</p>
-</div>
 <div class="imageblock">
 <div class="content">
 <img src="_images/image19.jpg" alt="image" width="507" height="128">
 </div>
-<div class="title">Figure 9. Power/Signals Cable: Threading Cable Through Sealing Nut and Rubber Seal</div>
+<div class="title">Figure 17. Power/Signals Cable: Threading Cable Through Sealing Nut and Rubber Seal</div>
 </div>
-<div class="paragraph">
+</li>
+<li>
 <p>Prepare the cable shielding:</p>
-</div>
-<div class="paragraph">
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
 <p>Thread the cable all the way through the clamp cage body. Strip off the outer insulation of the cable, leaving the individual insulated wires exposed to a length of 18mm. <strong>Be careful not to cut into the inner foil and plastic sheaths (casings) surrounding the individual insulated wires.</strong></p>
-</div>
-<div class="paragraph">
+</li>
+<li>
 <p>Slit the foil sheath, and bend it back onto the outer insulation.</p>
-</div>
-<div class="paragraph">
+</li>
+<li>
 <p>Carefully cut away the plastic sheath enclosing the individual insulated wires.</p>
-</div>
-<div class="paragraph">
+</li>
+<li>
 <p>Wrap the shield wire (the one without insulation) 1-2 times around the foil sheath that you bent back.</p>
-</div>
-<div class="quoteblock">
-<div class="title">Power/Signals Cable: Stripping Off the Outer Insulation</div>
-<blockquote>
 <div class="imageblock">
 <div class="content">
 <img src="_images/image20.png" alt="image" width="467" height="197">
 </div>
+<div class="title">Figure 18. Power/Signals Cable: Stripping Off the Outer Insulation</div>
 </div>
-</blockquote>
+</li>
+</ol>
 </div>
-<div class="paragraph">
+</li>
+<li>
 <p>Peel the backing off of the conductive foil to expose the adhesive.</p>
-</div>
-<div class="quoteblock">
-<div class="title">Power/Signals Cable: Peeling Backing off Conductive Foil</div>
-<blockquote>
 <div class="imageblock">
 <div class="content">
 <img src="_images/image21.png" alt="image" width="159" height="179">
 </div>
+<div class="title">Figure 19. Power/Signals Cable: Peeling Backing off Conductive Foil</div>
 </div>
-</blockquote>
-</div>
-<div class="paragraph">
+</li>
+<li>
 <p>Wrap the conductive foil around the point at which the outer insulation was stripped, to cover and make contact with the shield wire and foil sheath.</p>
-</div>
-<div class="quoteblock">
-<div class="title">Power/Signals Cable: Wrapping Conductive Foil Around Shield Wire and Sheath</div>
-<blockquote>
 <div class="imageblock">
 <div class="content">
 <img src="_images/image22.png" alt="image" width="307" height="194">
 </div>
+<div class="title">Figure 20. Power/Signals Cable: Wrapping Conductive Foil Around Shield Wire and Sheath</div>
 </div>
-</blockquote>
-</div>
-<div class="paragraph">
+</li>
+<li>
 <p>Strip off 5 mm from each individual wire. Insert each wire into its appropriate screw terminal, and tighten with a 2 mm flat screwdriver.<br>
 The suggested wire colors and pinouts are shown in the following Figures. The notch between pins 1 and 2 on the face of the connector corresponds to the notch on the circular body of the screw terminals.</p>
-</div>
 <div class="imageblock">
 <div class="content">
 <img src="_images/image23.png" alt="image" width="363" height="224">
 </div>
-<div class="title">Figure 10. Power/Signals Cable: Power/Signals Pinouts</div>
+<div class="title">Figure 21. Power/Signals Cable: Power/Signals Pinouts</div>
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
@@ -1031,7 +1784,7 @@ The suggested wire colors and pinouts are shown in the following Figures. The no
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Black</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">24 VDC –</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">24 VDC -</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">5</p></td>
@@ -1041,7 +1794,7 @@ The suggested wire colors and pinouts are shown in the following Figures. The no
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">White</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">OV Strobe –</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">OV Strobe -</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">8</p></td>
@@ -1051,7 +1804,7 @@ The suggested wire colors and pinouts are shown in the following Figures. The no
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">4</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Blue</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">LPR Strobe –</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LPR Strobe -</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
@@ -1080,88 +1833,102 @@ The suggested wire colors and pinouts are shown in the following Figures. The no
 </tr>
 </tbody>
 </table>
-<div class="quoteblock">
-<div class="title">Power/Signals Cable: Attaching the Wires to the Screw Terminals</div>
-<blockquote>
 <div class="imageblock">
 <div class="content">
 <img src="_images/image24.png" alt="image" width="173" height="213">
 </div>
+<div class="title">Figure 22. Power/Signals Cable: Attaching the Wires to the Screw Terminals</div>
 </div>
-</blockquote>
-</div>
-<div class="paragraph">
+</li>
+<li>
 <p>Insert the screw terminals body into the clamp cage housing. Note how the tabs on the screw terminals fit into the grooves in the clamp cage housing.</p>
-</div>
-<div class="quoteblock">
-<div class="title">Power/Signals Cable: Inserting Screw Terminals' Tabs into Clamp Cage Housing</div>
-<blockquote>
 <div class="imageblock">
 <div class="content">
 <img src="_images/image25.png" alt="image" width="421" height="295">
 </div>
+<div class="title">Figure 23. Power/Signals Cable: Inserting Screw Terminals' Tabs into Clamp Cage Housing</div>
 </div>
-</blockquote>
-</div>
-<div class="paragraph">
+</li>
+<li>
 <p>Verify that the conductive foil is now making contact with the spring sleeve protrusions inside the clamp cage housing. Use a 16 mm torque wrench to tighten the nut that fastens the clamp cage housing to the screw terminals body (torque 4-6 kgf.cm / 0.39-0.59 N.m.).</p>
-</div>
 <div class="imageblock">
 <div class="content">
 <img src="_images/image26.png" alt="image" width="520" height="285">
 </div>
-<div class="title">Figure 11. Power/Signals Cable: Foil in Contact with Spring Inside Clamp Cage Housing</div>
+<div class="title">Figure 24. Power/Signals Cable: Foil in Contact with Spring Inside Clamp Cage Housing</div>
 </div>
-<div class="paragraph">
+</li>
+<li>
 <p>Slide the sealing nut along the cable, and insert it in between the clamp cage protrusions.</p>
-</div>
-<div class="quoteblock">
-<div class="title">Power Cable: Inserting the Sealing Nut into the Clamp Cage</div>
-<blockquote>
 <div class="imageblock">
 <div class="content">
 <img src="_images/image27.png" alt="image" width="202" height="254">
 </div>
+<div class="title">Figure 25. Power Cable: Inserting the Sealing Nut into the Clamp Cage</div>
 </div>
-</blockquote>
-</div>
-<div class="paragraph">
+</li>
+<li>
 <p>Using a 16 mm wrench, tighten the nut that seals the end of the clamp cage housing. (torque 4-6 kgf.cm / 0.39-0.59 N.m.). Verify that the sealing nut is in tight contact with the inner body of the nut (to provide insulation against moisture). The sealing nut may pucker a bit due to the pressure of the nut; this is normal.</p>
-</div>
-<div class="quoteblock">
-<div class="title">Power Cable: Tightening the Nut to Seal the Clamp Cage</div>
-<blockquote>
 <div class="imageblock">
 <div class="content">
 <img src="_images/image28.png" alt="image" width="445" height="201">
 </div>
+<div class="title">Figure 26. Power Cable: Tightening the Nut to Seal the Clamp Cage</div>
 </div>
-</blockquote>
-</div>
-<div class="paragraph">
+</li>
+<li>
 <p>The point in the cable at which you will be connecting the power wires (+, - and ground) to the power supply may be in the middle of the cable. (This part of the cable is typically inside a connection box to seal all connections from moisture.)</p>
-</div>
-<div class="paragraph">
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
 <p>Strip off a portion of outer insulation of the cable at the end you will be connecting to the power supply. Remove enough insulation so the shield wire will be long enough to wrap several times around the foil sheath (see next steps) and come out of the cable to reach the power supply ground wire. <strong>Be careful not to cut into the inner foil and plastic sheaths (casings) surrounding the individual insulated wires.</strong></p>
-</div>
-<div class="paragraph">
+</li>
+<li>
 <p>Slit the foil sheath, and bend it back onto the outer insulation. Leave enough foil exposed so the shield wire can be wrapped several times around the foil.</p>
-</div>
-<div class="paragraph">
+</li>
+<li>
 <p>Carefully cut away the plastic sheath enclosing the individual insulated wires.</p>
-</div>
-<div class="paragraph">
+</li>
+<li>
 <p>Wrap the shield wire (the one without insulation) several times around the foil sheath that you bent back. There must be a tight contact between the shield wire and the foil.</p>
-</div>
-<div class="quoteblock">
-<div class="title">Power Cable: Wrapping the Shield Wire at Power Supply End</div>
-<blockquote>
 <div class="imageblock">
 <div class="content">
 <img src="_images/image29.png" alt="image" width="478" height="194">
 </div>
+<div class="title">Figure 27. Power Cable: Wrapping the Shield Wire at Power Supply End</div>
 </div>
-</blockquote>
+</li>
+<li>
+<p>IMPORTANT: Check that there is conductivity from the shield wire (at the power supply end of the cable) to the body of the connector that will be connected to the camera.</p>
+</li>
+<li>
+<p>You can seal the shield wire wrapping on the cable with insulation tape or heat shrink tubing.</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Connect the shield wire to the ground wire of the power supply. You may need to extend the shield wire by soldering an additional wire on to it.</p>
+</li>
+<li>
+<p>Connect the (+) and (-) wires from the cable to the power supply.</p>
+<div class="imageblock">
+<div class="content">
+<img src="_images/image30.png" alt="image" width="350" height="196">
+</div>
+<div class="title">Figure 28. Power Cable: Connecting the Cable Wires to the Power Supply</div>
+</div>
+</li>
+<li>
+<p>Connect the remaining signal wires (see <a href="#s_Connecting-System-Components">Section 6.5, &#8220;Connecting the Camera System, Illuminator, Power Supply and Network&#8221;</a>).</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="ps_Construct-LAN-Cable"><a class="anchor" href="#ps_Construct-LAN-Cable"></a>6.4. Constructing the LAN Cable</h3>
+<div class="paragraph">
+<p><strong><em>\{Zvulun: possible partial section}</em></strong></p>
 </div>
 <div class="admonitionblock important">
 <table>
@@ -1170,47 +1937,6 @@ The suggested wire colors and pinouts are shown in the following Figures. The no
 <i class="fa icon-important" title="Important"></i>
 </td>
 <td class="content">
-Check that there is conductivity from the shield wire (at the power supply end of the cable) to the body of the connector that will be connected to the camera.
-</td>
-</tr>
-</table>
-</div>
-<div class="paragraph">
-<p>You can seal the shield wire wrapping on the cable with insulation tape or heat shrink tubing.</p>
-</div>
-<div class="paragraph">
-<p>Connect the shield wire to the ground wire of the power supply. You may need to extend the shield wire by soldering an additional wire on to it.</p>
-</div>
-<div class="paragraph">
-<p>Connect the (+) and (-) wires from the cable to the power supply.</p>
-</div>
-<div class="quoteblock">
-<div class="title">Power Cable: Connecting the Cable Wires to the Power Supply</div>
-<blockquote>
-<div class="imageblock">
-<div class="content">
-<img src="_images/image30.png" alt="image" width="350" height="196">
-</div>
-</div>
-</blockquote>
-</div>
-<div class="paragraph">
-<p>Connect the remaining signal wires (see <a href="#s_Connecting-System-Components">[s_Connecting-System-Components]</a>).</p>
-</div>
-<div class="paragraph">
-<p>[#s_Construct-LAN-Cable]</p>
-</div>
-<div class="paragraph">
-<p>=== Constructing the LAN Cable</p>
-</div>
-<div class="paragraph">
-<p><strong><em>\{Zvulun: possible partial section}</em></strong></p>
-</div>
-<div class="paragraph">
-<p>[IMPORTANT]</p>
-</div>
-<div class="exampleblock">
-<div class="content">
 <div class="paragraph">
 <p>If you are building your own LAN cables, you must use RJ45 connectors with metal bodies. You must ensure that there is conductivity between the bodies of the connectors at each end of the cable. You can do this by extracting the cable&#8217;s shield wire before attaching the connector to the cable, and then soldering the shield wire to the body of the connector (see the following Figures).</p>
 </div>
@@ -1220,128 +1946,101 @@ Check that there is conductivity from the shield wire (at the power supply end o
 <div class="paragraph">
 <p>If you are using prefabricated CAT 5e/6 cables with metal-body RJ45 connectors, the shield wires have typically already been connected to each connector body. However, you must still check that there is conductivity between the bodies of the connectors at each end of the cable.</p>
 </div>
+</td>
+</tr>
+</table>
 </div>
-</div>
-<div class="quoteblock">
-<div class="title">LAN Cable: Extracting the Shield Wire</div>
-<blockquote>
 <div class="imageblock">
 <div class="content">
 <img src="_images/image31.png" alt="image" width="302" height="211">
 </div>
+<div class="title">Figure 29. LAN Cable: Extracting the Shield Wire</div>
 </div>
 <div class="imageblock">
 <div class="content">
 <img src="_images/image32.png" alt="image" width="305" height="228">
 </div>
-<div class="title">Figure 12. LAN Cable: Shield Wire Soldered to Connector Body</div>
+<div class="title">Figure 30. LAN Cable: Shield Wire Soldered to Connector Body</div>
 </div>
-</blockquote>
-</div>
-<div class="paragraph">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
 <p>Lay out the parts from the network (LAN) connector package.</p>
-</div>
-<div class="quoteblock">
-<div class="title">LAN Cable: Connector Parts</div>
-<blockquote>
 <div class="imageblock">
 <div class="content">
 <img src="_images/image33.png" alt="image" width="437" height="178">
 </div>
+<div class="title">Figure 31. LAN Cable: Connector Parts</div>
 </div>
-</blockquote>
-</div>
-<div class="paragraph">
+</li>
+<li>
 <p>Slip the sealing nut over the RJ45 connector onto the LAN cable, with the inner threads in the direction of the RJ45 connector.</p>
-</div>
-<div class="quoteblock">
-<div class="title">LAN Cable: Slipping Sealing Nut Over RJ45 Connector</div>
-<blockquote>
 <div class="imageblock">
 <div class="content">
 <img src="_images/image34.png" alt="image" width="243" height="234">
 </div>
+<div class="title">Figure 32. LAN Cable: Slipping Sealing Nut Over RJ45 Connector</div>
 </div>
-</blockquote>
-</div>
-<div class="paragraph">
+</li>
+<li>
 <p>Open the rubber sealing ring at its split, and put it on the cable.</p>
-</div>
-<div class="quoteblock">
-<div class="title">LAN Cable: Attaching Rubber Sealing Ring to Cable</div>
-<blockquote>
 <div class="imageblock">
 <div class="content">
 <img src="_images/image35.png" alt="image" width="381" height="178">
 </div>
+<div class="title">Figure 33. LAN Cable: Attaching Rubber Sealing Ring to Cable</div>
 </div>
-</blockquote>
-</div>
-<div class="paragraph">
+</li>
+<li>
 <p>Orient the support plastic with the wider side (with the thinner walls) towards the RJ45 connector. Put the support plastic on the cable (the split can expand slightly).</p>
-</div>
-<div class="quoteblock">
-<div class="title">LAN Cable: Attaching the Support Plastic to the Cable</div>
-<blockquote>
 <div class="imageblock">
 <div class="content">
 <img src="_images/image36.png" alt="image" width="501" height="439">
 </div>
+<div class="title">Figure 34. LAN Cable: Attaching the Support Plastic to the Cable</div>
 </div>
-</blockquote>
-</div>
-<div class="paragraph">
+</li>
+<li>
 <p>Gently push the RJ45 connector into the housing until it fits snugly in the cutout in the housing.</p>
-</div>
-<div class="quoteblock">
-<div class="title">LAN Cable: Inserting RJ45 into Housing Cutout</div>
-<blockquote>
 <div class="imageblock">
 <div class="content">
 <img src="_images/image37.png" alt="image" width="306" height="192">
 </div>
+<div class="title">Figure 35. LAN Cable: Inserting RJ45 into Housing Cutout</div>
 </div>
-</blockquote>
-</div>
-<div class="paragraph">
+</li>
+<li>
 <p>Insert the support plastic into the housing, followed by the rubber sealing ring. Seat the rubber sealing ring between the housing&#8217;s teeth as far in as it will go.</p>
-</div>
-<div class="quoteblock">
-<div class="title">LAN Cable: Inserting the Support Plastic and Rubber Ring into the Housing</div>
-<blockquote>
 <div class="imageblock">
 <div class="content">
 <img src="_images/image38.png" alt="image" width="488" height="279">
 </div>
+<div class="title">Figure 36. LAN Cable: Inserting the Support Plastic and Rubber Ring into the Housing</div>
 </div>
-</blockquote>
-</div>
-<div class="paragraph">
+</li>
+<li>
 <p>Tighten the sealing nut (torque 8-15 kgf.cm / 0.78-1.47 N.m.).</p>
-</div>
-<div class="quoteblock">
-<div class="title">LAN Cable: Completed Assembly</div>
-<blockquote>
 <div class="imageblock">
 <div class="content">
 <img src="_images/image39.png" alt="image" width="486" height="219">
 </div>
+<div class="title">Figure 37. LAN Cable: Completed Assembly</div>
 </div>
-</blockquote>
+</li>
+</ol>
 </div>
+</div>
+<div class="sect2">
+<h3 id="s_Connecting-System-Components"><a class="anchor" href="#s_Connecting-System-Components"></a>6.5. Connecting the Camera System, Illuminator, Power Supply and Network</h3>
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-warning" title="Warning"></i>
+</td>
+<td class="content">
 <div class="paragraph">
-<p>[#s_Connecting-System-Components]</p>
-</div>
-<div class="paragraph">
-<p>=== Connecting the Camera System, Illuminator, Power Supply and Network</p>
-</div>
-<div class="paragraph">
-<p>[WARNING]</p>
-</div>
-<div class="exampleblock">
-<div class="content">
-<div class="paragraph">
-<p>image::image40.png[image,width=33,height=29] Power undervoltage, overvoltage and/or incorrect polarity will damage the unit and will void the warranty.</p>
+<p><span class="image"><img src="_images/image40.png" alt="image" width="33" height="29"></span> Power undervoltage, overvoltage and/or incorrect polarity will damage the unit and will void the warranty.</p>
 </div>
 <div class="paragraph">
 <p>Stable power at the correct level must be supplied to each camera, even when under a heavy processing load.</p>
@@ -1353,23 +2052,21 @@ Check that there is conductivity from the shield wire (at the power supply end o
 <p><strong>If you are using an INEX power supply, see its User Guide for important information.</strong></p>
 </div>
 <div class="paragraph">
-<p>I<strong>MPORTANT: All network cable extensions and repeaters must be shielded.</strong></p>
+<p><strong>IMPORTANT: All network cable extensions and repeaters must be shielded.</strong></p>
 </div>
 <div class="paragraph">
 <p>The torques required to connect the cable connectors to the connectors on the Camera System are as follows: Power/signals cable: 3-4 kgf.cm / 0.29-0.39 N.m.<br>
 LAN cable: 5-8 kgf.cm / 0.49-0.78 N.m.</p>
 </div>
-<div class="exampleblock">
-<div class="content">
-<div class="quoteblock">
-<blockquote>
-
-</blockquote>
+</td>
+</tr>
+</table>
 </div>
 <div class="imageblock">
 <div class="content">
 <img src="_images/image23.png" alt="image" width="363" height="224">
 </div>
+<div class="title">Figure 38. Power/Signals Pinouts</div>
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
@@ -1388,7 +2085,7 @@ LAN cable: 5-8 kgf.cm / 0.49-0.78 N.m.</p>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Black</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">24 VDC –</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">24 VDC -</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">5</p></td>
@@ -1398,7 +2095,7 @@ LAN cable: 5-8 kgf.cm / 0.49-0.78 N.m.</p>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">White</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">OV Strobe –</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">OV Strobe -</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">8</p></td>
@@ -1408,7 +2105,7 @@ LAN cable: 5-8 kgf.cm / 0.49-0.78 N.m.</p>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">4</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Blue</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">LPR Strobe –</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LPR Strobe -</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
@@ -1437,97 +2134,101 @@ LAN cable: 5-8 kgf.cm / 0.49-0.78 N.m.</p>
 </tr>
 </tbody>
 </table>
-<div class="paragraph">
-<p>=== Connecting the AC Electricity</p>
 </div>
+<div class="sect2">
+<h3 id="_connecting_the_ac_electricity"><a class="anchor" href="#_connecting_the_ac_electricity"></a>6.6. Connecting the AC Electricity</h3>
 <div class="paragraph">
-<p>Connect a plug to the <strong>L</strong>ive, <strong>N</strong>eutral and Ground terminals of the power supply (see <a href="#f_Typical-Wiring-Diagram">[f_Typical-Wiring-Diagram]</a>).</p>
+<p>Connect a plug to the <strong>L</strong>ive, <strong>N</strong>eutral and Ground terminals of the power supply (see <a href="#f_Typical-Wiring-Diagram">Figure 15, &#8220;Typical Wiring Diagram&#8221;</a>).</p>
 </div>
 <div class="paragraph">
 <p>Plug the power supply into the AC electricity. If required, switch the power supply unit ON.</p>
 </div>
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-warning" title="Warning"></i>
+</td>
+<td class="content">
 <div class="paragraph">
-<p>[WARNING]</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="paragraph">
-<p>image::image40.png[image,width=33,height=29] If any power cables were lengthened, ensure that all components receive exactly 24 VDC.</p>
+<p><span class="image"><img src="_images/image40.png" alt="image" width="33" height="29"></span> If any power cables were lengthened, ensure that all components receive exactly 24 VDC.</p>
 </div>
 <div class="paragraph">
 <p>Power undervoltage, overvoltage and/or incorrect polarity will damage the unit and will void the warranty.</p>
 </div>
-<div class="exampleblock">
-<div class="content">
-<div class="paragraph">
-<p>[#ps_Reserve-IP-Addrs]</p>
+</td>
+</tr>
+</table>
 </div>
-<div class="paragraph">
-<p>== Reserving IP Addresses in your Network</p>
 </div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="ps_Reserve-IP-Addrs"><a class="anchor" href="#ps_Reserve-IP-Addrs"></a>7. Reserving IP Addresses in your Network</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p><strong><em>\{Zvulun: possible partial}</em></strong> The INEX cameras have been pre-configured with default IP addresses. You will probably need to change these addresses to conform to the requirements of your network. Be sure that you have IP addresses reserved for all components of your ALPR system (RoadView computer and cameras).</p>
 </div>
-<div class="paragraph">
-<p>[#ps_Recognize-IZ-Discovery]</p>
 </div>
-<div class="paragraph">
-<p>== Recognizing Devices with IZ Discovery</p>
 </div>
+<div class="sect1">
+<h2 id="ps_Recognize-IZ-Discovery"><a class="anchor" href="#ps_Recognize-IZ-Discovery"></a>8. Recognizing Devices with IZ Discovery</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p><strong><em>\{Zvulun: entire section could be a partial}</em></strong></p>
 </div>
-<div class="paragraph">
-<p>=== Installing and Using IZ Discovery</p>
-</div>
+<div class="sect2">
+<h3 id="_installing_and_using_iz_discovery"><a class="anchor" href="#_installing_and_using_iz_discovery"></a>8.1. Installing and Using IZ Discovery</h3>
 <div class="paragraph">
 <p>The IZ Discovery utility discovers all active devices connected to the network, and displays a list of their network parameters. These devices can include cameras and computers.</p>
 </div>
-<div class="paragraph">
-<p>[IMPORTANT]</p>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+If any device on your network is connected via wireless, IZ Discovery will not recognize the device. In addition, if the computer running IZ Discovery is connected via wireless, you will not see any devices displayed.
+</td>
+</tr>
+</table>
 </div>
-<div class="paragraph">
-<p>If any device on your network is connected via wireless, IZ Discovery will not recognize the device. In addition, if the computer running IZ Discovery is connected via wireless, you will not see any devices displayed.</p>
-</div>
-<div class="paragraph">
-<p>Download the IZ Discovery software components (see <a href="#s_Related-Documents">[s_Related-Documents]</a>)</p>
-</div>
-<div class="paragraph">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Download the IZ Discovery software components (see <a href="#s_Related-Documents">Section 1.2, &#8220;Recommended Reading/Related Documents&#8221;</a>)</p>
+</li>
+<li>
 <p>Run IZ Discovery</p>
-</div>
-<div class="paragraph">
+</li>
+<li>
 <p>When IZ Discovery first runs, you may see a Windows security warning. If so, click Run.</p>
-</div>
-<div class="paragraph">
+</li>
+<li>
 <p>If you see a message related to the Windows firewall, click Allow.</p>
-</div>
-<div class="paragraph">
-<p>IZ Discovery will start and display a list of devices on the network, according to their serial numbers (see <a href="#f_IZ-Discovery-Utility">[f_IZ-Discovery-Utility]</a>).</p>
-</div>
-<div class="paragraph">
-<p>Scroll down to find the device/camera you are interested in. You can double-click to view/edit a specific device&#8217;s IP address parameters (see <a href="#s_Changing-IP-Address">[s_Changing-IP-Address]</a>).</p>
-</div>
-<div class="paragraph">
+</li>
+<li>
+<p>IZ Discovery will start and display a list of devices on the network, according to their serial numbers (see <a href="#f_IZ-Discovery-Utility">Figure 39, &#8220;IZ Discovery Utility&#8221;</a>).</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Scroll down to find the device/camera you are interested in. You can double-click to view/edit a specific device&#8217;s IP address parameters (see <a href="#s_Changing-IP-Address">Section 8.2, &#8220;Changing a Device&#8217;s IP Address and Network Settings&#8221;</a>).</p>
+</li>
+<li>
 <p>Click Clear List to refresh the discovery process.</p>
-</div>
-<div class="paragraph">
-<p>[#f_IZ-Discovery-Utility]</p>
-</div>
-<div class="imageblock">
+<div id="f_IZ-Discovery-Utility" class="imageblock">
 <div class="content">
 <img src="_images/image41.PNG" alt="image" width="541" height="362">
 </div>
-<div class="title">Figure 13. IZ Discovery Utility</div>
+<div class="title">Figure 39. IZ Discovery Utility</div>
 </div>
-<div class="paragraph">
+</li>
+</ol>
+</div>
+</li>
+<li>
 <p>If IZ Discovery does not recognize a device:</p>
-</div>
 <div class="ulist">
 <ul>
 <li>
@@ -1538,32 +2239,30 @@ LAN cable: 5-8 kgf.cm / 0.49-0.78 N.m.</p>
 </li>
 </ul>
 </div>
-<div class="paragraph">
-<p>[#s_Changing-IP-Address]</p>
+</li>
+</ol>
 </div>
-<div class="paragraph">
-<p>=== Changing a Device&#8217;s IP Address and Network Settings</p>
 </div>
-<div class="quoteblock">
-<blockquote>
+<div class="sect2">
+<h3 id="s_Changing-IP-Address"><a class="anchor" href="#s_Changing-IP-Address"></a>8.2. Changing a Device&#8217;s IP Address and Network Settings</h3>
 <div class="imageblock">
 <div class="content">
 <img src="_images/image42.png" alt="image" width="227" height="230">
 </div>
-<div class="title">Figure 14. Changing Device&#8217;s Network Settings</div>
+<div class="title">Figure 40. Changing Device&#8217;s Network Settings</div>
 </div>
-</blockquote>
-</div>
-<div class="paragraph">
-<p>[Note]</p>
-</div>
-<div class="exampleblock">
-<div class="content">
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
 <div class="paragraph">
 <p>The device&#8217;s IP Address cannot be set to 10.10.2.xx or 10.10.3.xx</p>
 </div>
 <div class="paragraph">
-<p><strong>It is highly recommended to use a fixed IP address (not DHCP)</strong>. A fixed IP address enables you to access a device using the same URL every time, even after unexpected power outages (see <a href="#ps_Logging-In-to-Camera">[ps_Logging-In-to-Camera]</a>).</p>
+<p><strong>It is highly recommended to use a fixed IP address (not DHCP)</strong>. A fixed IP address enables you to access a device using the same URL every time, even after unexpected power outages (see <a href="#ps_Logging-In-to-Camera">Section 9.1, &#8220;Logging In to the Camera&#8221;</a>).</p>
 </div>
 <div class="paragraph">
 <p>A dynamic IP address may change upon device reboot. Before opening the device&#8217;s web interface, you will have to find the current IP address of the device using IZ Discovery.</p>
@@ -1571,7 +2270,9 @@ LAN cable: 5-8 kgf.cm / 0.49-0.78 N.m.</p>
 <div class="paragraph">
 <p>If you want to copy the IP address (for login to the device) you will need to uncheck the DHCP checkbox momentarily to make the address field accessible.</p>
 </div>
-</div>
+</td>
+</tr>
+</table>
 </div>
 <div class="paragraph">
 <p>To change the device&#8217;s mode (fixed or dynamic [DHCP]), or IP address:</p>
@@ -1607,19 +2308,21 @@ LAN cable: 5-8 kgf.cm / 0.49-0.78 N.m.</p>
 <p>The change should be reflected in the main dialog. This can take about a minute until the IP is obtained. If you do not see the change after this time, close IZ Discovery, and then reopen it.</p>
 </div>
 <div class="paragraph">
-<p>Verify that the IP address parameters have been changed to the ones you wanted. If not, you will have to log into the device (see <a href="#ps_Logging-In-to-Camera">[ps_Logging-In-to-Camera]</a>), and change the IP address (see <a href="#ps_Changing-Camera-IP">[ps_Changing-Camera-IP]</a>)</p>
+<p>Verify that the IP address parameters have been changed to the ones you wanted. If not, you will have to log into the device (see <a href="#ps_Logging-In-to-Camera">Section 9.1, &#8220;Logging In to the Camera&#8221;</a>), and change the IP address (see <a href="#ps_Changing-Camera-IP">Section 9.2, &#8220;Changing a Camera&#8217;s IP Address&#8221;</a>)</p>
 </div>
-<div class="paragraph">
-<p>== Configuring a Camera</p>
 </div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_configuring_a_camera"><a class="anchor" href="#_configuring_a_camera"></a>9. Configuring a Camera</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p><strong><em>\{Zvulun: entire section could be a partial}</em></strong></p>
 </div>
+<div class="sect2">
+<h3 id="ps_Logging-In-to-Camera"><a class="anchor" href="#ps_Logging-In-to-Camera"></a>9.1. Logging In to the Camera</h3>
 <div class="paragraph">
-<p>=== Logging In to the Camera[#ps_Logging-In-to-Camera]</p>
-</div>
-<div class="paragraph">
-<p>To view the camera&#8217;s home page (see <a href="#pf_Camera-Home-Page">[pf_Camera-Home-Page]</a>):</p>
+<p>To view the camera&#8217;s home page (see <a href="#pf_Camera-Home-Page">Figure 41, &#8220;Camera&#8217;s Home Page&#8221;</a>):</p>
 </div>
 <div class="ulist">
 <ul>
@@ -1628,14 +2331,11 @@ LAN cable: 5-8 kgf.cm / 0.49-0.78 N.m.</p>
 </li>
 </ul>
 </div>
-<div class="paragraph">
-<p>[#pf_Camera-Home-Page]</p>
-</div>
-<div class="imageblock">
+<div id="pf_Camera-Home-Page" class="imageblock">
 <div class="content">
 <img src="_images/image43.png" alt="image" width="528" height="230">
 </div>
-<div class="title">Figure 15. Camera&#8217;s Home Page</div>
+<div class="title">Figure 41. Camera&#8217;s Home Page</div>
 </div>
 <div class="paragraph">
 <p>Select the function you need from the links at the upper right:</p>
@@ -1643,23 +2343,23 @@ LAN cable: 5-8 kgf.cm / 0.49-0.78 N.m.</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Click the Live View link to see what the camera is currently viewing. You can also use controls such as zoom and focus (see <a href="#s_Calibrating-Cameras-RoadView">[s_Calibrating-Cameras-RoadView]</a>).</p>
+<p>Click the Live View link to see what the camera is currently viewing. You can also use controls such as zoom and focus (see <a href="#s_Calibrating-Cameras-RoadView">Section 10.2, &#8220;Calibrating the Cameras Using RoadView&#8221;</a>).</p>
 </li>
 </ul>
 </div>
-<div class="quoteblock">
-<blockquote>
-<div class="paragraph">
-<p>[Note]</p>
-</div>
-<div class="exampleblock">
-<div class="content">
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
 <div class="paragraph">
 <p>When using Live View for the first time, you may be prompted to download and install an ActiveX control (Smart Viewer).<br>
 If you do not have an internet connection to the network on which the camera is installed, wait 30 seconds, and you will be instructed on how to install the ActiveX control locally via the camera&#8217;s firmware.</p>
 </div>
 <div class="paragraph">
-<p>The stream of the Live View can also be accessed using an RTSP URL with the following format: <strong><em>\{Zvulun: be sure the at sign shows up in ascii doc}</em></strong></p>
+<p>The stream of the Live View can also be accessed using an RTSP URL with the following format:</p>
 </div>
 <div class="paragraph">
 <p>rtsp://[username:password]@&lt;Camera IP address&gt;/cam0_0<br>
@@ -1669,9 +2369,9 @@ where cam0_0 are camera-specific parameters (which in this case enable you to ac
 <p>To see the stream, use a video player such as the VLC player, located at:<br>
 <a href="https://www.videolan.org/vlc/index.html" class="bare">https://www.videolan.org/vlc/index.html</a></p>
 </div>
-</div>
-</div>
-</blockquote>
+</td>
+</tr>
+</table>
 </div>
 <div class="ulist">
 <ul>
@@ -1683,23 +2383,32 @@ where cam0_0 are camera-specific parameters (which in this case enable you to ac
 </li>
 </ul>
 </div>
-<div class="paragraph">
-<p>[IMPORTANT]</p>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+The Administrator user name (root) cannot be changed, and the Administrator password is encrypted. Therefore, if someone changes the Administrator password, there is no way to find out the password if it gets lost.
+</td>
+</tr>
+</table>
 </div>
-<div class="paragraph">
-<p>The Administrator user name (root) cannot be changed, and the Administrator password is encrypted. Therefore, if someone changes the Administrator password, there is no way to find out the password if it gets lost.</p>
 </div>
-<div class="paragraph">
-<p>[#ps_Changing-Camera-IP]</p>
-</div>
-<div class="paragraph">
-<p>=== Changing a Camera&#8217;s IP Address</p>
-</div>
-<div class="paragraph">
-<p>[Note]</p>
-</div>
-<div class="paragraph">
-<p><strong>It is highly recommended to use a fixed IP address (not DHCP)</strong>. A fixed IP address enables you to access the computer using the same URL every time, even after unexpected power outages.</p>
+<div class="sect2">
+<h3 id="ps_Changing-Camera-IP"><a class="anchor" href="#ps_Changing-Camera-IP"></a>9.2. Changing a Camera&#8217;s IP Address</h3>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<strong>It is highly recommended to use a fixed IP address (not DHCP)</strong>. A fixed IP address enables you to access the computer using the same URL every time, even after unexpected power outages.
+</td>
+</tr>
+</table>
 </div>
 <div class="paragraph">
 <p>In the Basic Setup group, click on IP Address:</p>
@@ -1708,34 +2417,43 @@ where cam0_0 are camera-specific parameters (which in this case enable you to ac
 <div class="content">
 <img src="_images/image44.png" alt="image" width="524" height="180">
 </div>
-<div class="title">Figure 16. Changing the Camera&#8217;s IP Address</div>
+<div class="title">Figure 42. Changing the Camera&#8217;s IP Address</div>
 </div>
 <div class="paragraph">
 <p>To change the IP address to a fixed one:</p>
 </div>
-<div class="paragraph">
-<p>[Note]</p>
-</div>
-<div class="paragraph">
-<p>The IP address must be unique within the entire ALPR system, and must be within the limits of standard IPv4 address numbering.</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+The IP address must be unique within the entire ALPR system, and must be within the limits of standard IPv4 address numbering.
+</td>
+</tr>
+</table>
 </div>
 <div class="paragraph">
 <p>Click the Static radio button.</p>
 </div>
 <div class="paragraph">
-<p>Enter the network address parameters (see <a href="#pt_IP-Address-Parameters">[pt_IP-Address-Parameters]</a>). <strong>All cameras must be on the same subnet as both the computer you will use to communicate with and configure the camera, and the INEX RoadView computer.</strong></p>
+<p>Enter the network address parameters (see <a href="#pt_IP-Address-Parameters">Table 5, &#8220;IP Address Parameters&#8221;</a>). <strong>All cameras must be on the same subnet as both the computer you will use to communicate with and configure the camera, and the INEX RoadView computer.</strong></p>
 </div>
-<div class="paragraph">
-<p>[IMPORTANT]</p>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+It is highly recommended to record the camera&#8217;s IP address and port number in a safe place. You will need them if the camera&#8217;s parameters are reset back to their defaults, and for configuring INEX ALPR software.
+</td>
+</tr>
+</table>
 </div>
-<div class="paragraph">
-<p>It is highly recommended to record the camera&#8217;s IP address and port number in a safe place. You will need them if the camera&#8217;s parameters are reset back to their defaults, and for configuring INEX ALPR software.</p>
-</div>
-<div class="paragraph">
-<p>[#pt_IP-Address-Parameters]</p>
-</div>
-<table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 3. IP Address Parameters</caption>
+<table id="pt_IP-Address-Parameters" class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 5. IP Address Parameters</caption>
 <colgroup>
 <col style="width: 28%;">
 <col style="width: 20%;">
@@ -1784,75 +2502,76 @@ where cam0_0 are camera-specific parameters (which in this case enable you to ac
 <div class="paragraph">
 <p>Click Apply.</p>
 </div>
-<div class="paragraph">
-<p>[IMPORTANT]</p>
-</div>
-</div>
-</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
 <div class="paragraph">
 <p>After selecting Apply, you will be requested to close your web browser so the updates can take effect. This will take 20 seconds or more, to allow the camera time to reboot.<br>
 - If you click the browser&#8217;s Back button, all values will be discarded.<br>
 - If you click the browser&#8217;s Refresh button, the application will load the previous values.</p>
 </div>
-<div class="exampleblock">
-<div class="content">
-<div class="paragraph">
-<p>In the IZ Discovery utility (see <a href="#ps_Recognize-IZ-Discovery">[ps_Recognize-IZ-Discovery]</a>), click the "Clear List" button, and verify that the camera can be recognized with the new IP address.</p>
+</td>
+</tr>
+</table>
 </div>
 <div class="paragraph">
-<p>=== Logging Out of the Camera</p>
+<p>In the IZ Discovery utility (see <a href="#ps_Recognize-IZ-Discovery">Section 8, &#8220;Recognizing Devices with IZ Discovery&#8221;</a>), click the "Clear List" button, and verify that the camera can be recognized with the new IP address.</p>
 </div>
+</div>
+<div class="sect2">
+<h3 id="_logging_out_of_the_camera"><a class="anchor" href="#_logging_out_of_the_camera"></a>9.3. Logging Out of the Camera</h3>
 <div class="paragraph">
 <p>Close all windows, and the browser window.</p>
 </div>
-<div class="paragraph">
-<p>[#s_Calibrating-Cameras]</p>
 </div>
-<div class="paragraph">
-<p>== Calibrating the Cameras</p>
 </div>
+</div>
+<div class="sect1">
+<h2 id="s_Calibrating-Cameras"><a class="anchor" href="#s_Calibrating-Cameras"></a>10. Calibrating the Cameras</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>There are two cameras in the Camera System. Both are calibrated in nearly the same way. The LPR camera is set to capture in black and white, and the Overview (OV) camera is set to capture in color.</p>
 </div>
 <div class="paragraph">
 <p>The OV camera can be used both to display an overview image, and to perform LPR recognition. You may even be able to improve read accuracy by changing the zoom to have one camera "see" closer than the other one.</p>
 </div>
+<div class="sect2">
+<h3 id="_preparing_a_vehiclelicense_plate"><a class="anchor" href="#_preparing_a_vehiclelicense_plate"></a>10.1. Preparing a Vehicle/License Plate</h3>
 <div class="paragraph">
-<p>=== Preparing a Vehicle/License Plate</p>
-</div>
-<div class="paragraph">
-<p>Move a vehicle next to, and at the middle of the capture line. (This is the position at which the vehicle sensor signals that the vehicle is present.) Ensure that the camera is aimed at the middle of the lane, and is at the required capture distance (see <a href="#s_Built-in-White-LEDs-IZA800GW ">[s_Built-in-White-LEDs-IZA800GW ]</a> and <a href="#ps_Plan-Installation">[ps_Plan-Installation]</a>).</p>
+<p>Move a vehicle next to, and at the middle of the capture line. (This is the position at which the vehicle sensor signals that the vehicle is present.) Ensure that the camera is aimed at the middle of the lane, and is at the required capture distance (see <a href="#s_Built-in-White-LEDs-IZA800GW">Section 3.4, &#8220;Built-in White LEDs (IZA800GW)&#8221;</a> and <a href="#ps_Plan-Installation">Section 5, &#8220;Planning Your Installation&#8221;</a>).</p>
 </div>
 <div class="paragraph">
 <p>Alternatively, in a lab, position a license plate at the expected distance and height.</p>
 </div>
-<div class="paragraph">
-<p>[#s_Calibrating-Cameras-RoadView]</p>
 </div>
-<div class="paragraph">
-<p>=== Calibrating the Cameras Using RoadView</p>
-</div>
+<div class="sect2">
+<h3 id="s_Calibrating-Cameras-RoadView"><a class="anchor" href="#s_Calibrating-Cameras-RoadView"></a>10.2. Calibrating the Cameras Using RoadView</h3>
 <div class="paragraph">
 <p>See the <strong><em>\{Zvulun: needs link; get from related docs table}</em></strong> RoadView ALPR User Guide for calibration instructions.</p>
 </div>
-<div class="paragraph">
-<p>[#s_Determining-IP-of-RoadView]</p>
 </div>
-<div class="paragraph">
-<p>== Determining the IP Address of the RoadView Computer with IZ Discovery</p>
 </div>
-<div class="paragraph">
-<p>See <a href="#ps_Recognize-IZ-Discovery">[ps_Recognize-IZ-Discovery]</a> .</p>
 </div>
+<div class="sect1">
+<h2 id="s_Determining-IP-of-RoadView"><a class="anchor" href="#s_Determining-IP-of-RoadView"></a>11. Determining the IP Address of the RoadView Computer with IZ Discovery</h2>
+<div class="sectionbody">
 <div class="paragraph">
-<p>== Using RoadView[#ps_Using-RoadView]</p>
+<p>See <a href="#ps_Recognize-IZ-Discovery">Section 8, &#8220;Recognizing Devices with IZ Discovery&#8221;</a> .</p>
 </div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="ps_Using-RoadView"><a class="anchor" href="#ps_Using-RoadView"></a>12. Using RoadView</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p><strong><em>\{Zvulun: entire section is potential partial}</em></strong></p>
 </div>
-<div class="paragraph">
-<p>=== Logging In</p>
-</div>
+<div class="sect2">
+<h3 id="_logging_in"><a class="anchor" href="#_logging_in"></a>12.1. Logging In</h3>
 <div class="paragraph">
 <p>Open a browser and type in the IP address of the RoadView computer; for example:<br>
 <a href="http://192.115.120.76:80/">http://192.115.120.76</a>/</p>
@@ -1860,22 +2579,18 @@ where cam0_0 are camera-specific parameters (which in this case enable you to ac
 <div class="paragraph">
 <p>You will see the login screen. Enter default username and password (root, root):</p>
 </div>
-<div class="quoteblock">
-<div class="title">Logging In to RoadView</div>
-<blockquote>
 <div class="imageblock">
 <div class="content">
 <img src="_images/image45.png" alt="image" width="209" height="143">
 </div>
-</div>
-</blockquote>
+<div class="title">Figure 43. Logging In to RoadView</div>
 </div>
 <div class="paragraph">
 <p>You should see the RoadView Journal tab. See the <strong><em>\{Zvulun: needs link}</em></strong> RoadView ALPR User Guide for instructions for configuring and using RoadView.</p>
 </div>
-<div class="paragraph">
-<p>=== Verifying the Installation</p>
 </div>
+<div class="sect2">
+<h3 id="_verifying_the_installation"><a class="anchor" href="#_verifying_the_installation"></a>12.2. Verifying the Installation</h3>
 <div class="ulist">
 <ul>
 <li>
@@ -1886,42 +2601,244 @@ where cam0_0 are camera-specific parameters (which in this case enable you to ac
 </li>
 </ul>
 </div>
-<div class="paragraph">
-<p>=== Logging Out</p>
 </div>
+<div class="sect2">
+<h3 id="_logging_out"><a class="anchor" href="#_logging_out"></a>12.3. Logging Out</h3>
 <div class="paragraph">
 <p>See the <strong><em>\{Zvulun: needs link from related docs table}</em></strong> RoadView ALPR User Guide for logout instructions, using the multi-line dropdown menu icon in the upper right corner of the screen.</p>
 </div>
-<div class="paragraph">
-<p>[#s_Troubleshooting-and-Maintenance]</p>
 </div>
-<div class="paragraph">
-<p>== Troubleshooting and Maintenance</p>
 </div>
+</div>
+<div class="sect1">
+<h2 id="s_Troubleshooting-and-Maintenance"><a class="anchor" href="#s_Troubleshooting-and-Maintenance"></a>13. Troubleshooting and Maintenance</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p><strong><em>\{Zvulun: entire section could be a partial}</em></strong></p>
 </div>
-<div class="paragraph">
-<p>=== Troubleshooting</p>
-</div>
+<div class="sect2">
+<h3 id="_troubleshooting"><a class="anchor" href="#_troubleshooting"></a>13.1. Troubleshooting</h3>
 <div class="paragraph">
 <p>See the <strong><em>\{Zvulun: needs link from related docs table}</em></strong> RoadView ALPR User Guide.</p>
 </div>
-<div class="paragraph">
-<p>=== Checking Mounting Screws</p>
 </div>
+<div class="sect2">
+<h3 id="_checking_mounting_screws"><a class="anchor" href="#_checking_mounting_screws"></a>13.2. Checking Mounting Screws</h3>
 <div class="paragraph">
 <p>It is recommended to check all mounting screws for proper tightness once every two years.</p>
 </div>
-<div class="paragraph">
-<p>=== Cleaning the ALPR Camera System</p>
 </div>
+<div class="sect2">
+<h3 id="_cleaning_the_alpr_camera_system"><a class="anchor" href="#_cleaning_the_alpr_camera_system"></a>13.3. Cleaning the ALPR Camera System</h3>
 <div class="paragraph">
 <p>Do not use solvents or strong abrasive detergent when cleaning the Camera System. Use a soft dry cloth to clean the ALPR Camera System&#8217;s front glass when it is dirty. If the dirt has hardened, remove it using mild soap and water, and then wipe the front window gently.</p>
 </div>
-<div class="paragraph">
-<p>== Appendix A - Document Change History</p>
 </div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_notices_safety_precautions_and_certifications"><a class="anchor" href="#_notices_safety_precautions_and_certifications"></a>14. Notices, Safety Precautions and Certifications</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_notice"><a class="anchor" href="#_notice"></a>14.1. Notice</h3>
+<div class="paragraph">
+<p>INEX Technologies reserves the right to improve and enhance its product offerings. Thus, the illustrations and descriptions presented in this manual may differ in some respect from the products you receive.</p>
+</div>
+<div class="paragraph">
+<p>Technical specifications are subject to change without notice.</p>
+</div>
+<div class="paragraph">
+<p>In addition, please note that some figures are not drawn to scale, in order to illustrate the addressed issue more effectively.</p>
+</div>
+<div class="paragraph">
+<p>All third-party trademarks are the property of their respective owners.</p>
+</div>
+<div class="paragraph">
+<p>INEX Technologies cannot be held liable for technical and editorial omissions or errors made in this document; nor for incidental or consequential damages resulting from the furnishing, performance or use of this document.</p>
+</div>
+<div class="paragraph">
+<p>Actions or circumstances that void the warranty are improper usage, improper handling without adequate electrostatic discharge (ESD) protection, defects resulting from natural disaster (fire, flood etc.) and unauthorized modifications or repair.</p>
+</div>
+<div class="paragraph">
+<p>Power undervoltage, overvoltage and/or incorrect polarity will damage the unit and will void the warranty.</p>
+</div>
+<div class="paragraph">
+<p>It is your responsibility to ensure that all wires connected to INEX Technologies' products have appropriate surge protection. Any damage due to electrical spikes (for example, lightning) is not covered by the warranty.</p>
+</div>
+<div class="paragraph">
+<p>No part of this document may be reproduced in any form without permission from INEX Technologies.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_safety_precautions"><a class="anchor" href="#_safety_precautions"></a>14.2. Safety Precautions</h3>
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-warning" title="Warning"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p><span class="image"><img src="../_images/TRIANGLE_CAUTION.png" alt="Warning Triangle" width="50"></span>
+<strong>BEWARE OF RISK OF ELECTRICAL SHOCK</strong></p>
+</div>
+<div class="paragraph">
+<p><strong>REFER SERVICING TO QUALIFIED SERVICE PERSONNEL</strong></p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>This product must be used in compliance with local laws and regulations.</p>
+</div>
+<div class="paragraph">
+<p>All network cable extensions and repeaters must be shielded.</p>
+</div>
+<div class="paragraph">
+<p>Power undervoltage, overvoltage and/or incorrect polarity will damage the unit and will void the warranty.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="ulist square">
+<ul class="square">
+<li>
+<p>Please read this guide carefully before installing the ALPR Camera System.</p>
+</li>
+<li>
+<p>Keep this guide for future reference.</p>
+</li>
+<li>
+<p>Do not disassemble the ALPR Camera System or external illuminator units. Repair or replacement of parts for this ALPR Camera System and its external illuminator units should be supplied by INEX Technologies, and installed by qualified service personnel.</p>
+</li>
+<li>
+<p>Handle and store the ALPR Camera System and external illuminator units with care.</p>
+</li>
+<li>
+<p>Never point the ALPR Camera System directly towards the sun.</p>
+</li>
+<li>
+<p>Do not allow water (e.g. rain) to enter the ALPR Camera System.</p>
+</li>
+<li>
+<p>Do not handle the Camera System or external illuminator units unless you have adequate electrostatic discharge (ESD) protection; otherwise, the warranty will be void.</p>
+</li>
+<li>
+<p>You must request that your INEX Technologies-certified service technician install lightning and electrical surge protection on all wiring connected to INEX Technologies' products. The warranty does not cover surge or lightning protection.</p>
+</li>
+<li>
+<p>Do not use the ALPR Camera System or external illuminator units outside of their temperature, humidity and power source ratings as noted in their respective technical specifications.</p>
+</li>
+<li>
+<p>To avoid heat accumulation/overheating, use sufficient ventilation in the product&#8217;s operating environment.</p>
+</li>
+<li>
+<p>Do not connect several devices to one power adapter since adapter overload may cause overheating or a fire hazard.</p>
+</li>
+<li>
+<p>Stop using the unit immediately if it emits smoke, or if you notice an abnormal smell or sound. In such cases, please contact us. Do not attempt to repair the unit by yourself!</p>
+</li>
+<li>
+<p>The use of any INEX Technologies' software products or any other software product referred to in this document with internet access shall be used wholly at your own risk. INEX Technologies does not take any responsibility for abnormal operation, privacy leakage or any other damages resulting from cyber attack, hacker attack, virus infection or any other internet security risks.</p>
+</li>
+<li>
+<p>Proper configuration of all passwords and other security settings is the responsibility of the installer and/or end-user.</p>
+</li>
+</ul>
+</div>
+<div class="ulist square">
+<ul class="square">
+<li>
+<p><strong class="underline">Eye Safety: The following precautions must be observed:</strong></p>
+<div class="ulist round">
+<ul class="round">
+<li>
+<p>Do not stare directly into the front of the Camera System while it is operating.</p>
+</li>
+<li>
+<p>IZA800G/GW - IEC62471 Group 1:</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<img src="../_images/EYE_SAFETY_GRP_1.png" alt="Eye Safety Group 1 Warning Label" width="250">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_legal_disclaimer"><a class="anchor" href="#_legal_disclaimer"></a>14.3. Legal Disclaimer</h3>
+<div class="paragraph">
+<p>TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE PRODUCT DESCRIBED, WITH ITS HARDWARE, SOFTWARE AND FIRMWARE, IS PROVIDED "AS IS", WITH ALL FAULTS AND ERRORS, AND OUR COMPANY MAKES NO WARRANTIES, EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION, MERCHANTABILITY, SATISFACTORY QUALITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT OF THIRD PARTY. IN NO EVENT WILL OUR COMPANY, ITS DIRECTORS, OFFICERS, EMPLOYEES, OR AGENTS BE LIABLE TO YOU FOR ANY SPECIAL, CONSEQUENTIAL, INCIDENTAL, OR INDIRECT DAMAGES, INCLUDING, AMONG OTHERS, DAMAGES FOR LOSS OF BUSINESS PROFITS, BUSINESS INTERRUPTION, OR LOSS OF DATA OR DOCUMENTATION, IN CONNECTION WITH THE USE OF THIS PRODUCT, EVEN IF OUR COMPANY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_regulatory_notices"><a class="anchor" href="#_regulatory_notices"></a>14.4. Regulatory Notices</h3>
+<div class="ulist square">
+<ul class="square">
+<li>
+<p><strong>FCC Conformance:</strong> This device complies with Part 15 of the FCC Rules. Operation is subject to the following two conditions: (1) This device may not cause harmful interference, and (2) this device must accept any interference received, including interference that may cause undesired operation.</p>
+</li>
+</ul>
+</div>
+<div class="ulist square">
+<ul class="square">
+<li>
+<p><span class="image"><img src="../_images/CE_LOGO.png" alt="CE Logo" width="50"></span> <span class="image"><img src="../_images/ROHS_LOGO.png" alt="ROHS Logo" width="70"></span> <strong>EU Conformity Statement:</strong> This product and - if applicable, the supplied accessories - are marked with "CE" and comply therefore with the applicable harmonized European standards listed under the EMC Directive 2014/30/EU, and the RoHS Directive 2002/95/EC.</p>
+</li>
+</ul>
+</div>
+<div class="ulist square">
+<ul class="square">
+<li>
+<p><strong>IP67 Ingress Protection:</strong> This product conforms to the IP67 standard</p>
+</li>
+</ul>
+</div>
+<div class="ulist square">
+<ul class="square">
+<li>
+<p><span class="image"><img src="../_images/ONVIF_LOGO.png" alt="ONVIF Logo" width="70"></span> <strong>ONVIF:</strong> This device is ONVIF compliant (Profile S)</p>
+</li>
+</ul>
+</div>
+<div class="ulist square">
+<ul class="square">
+<li>
+<p><span class="image"><img src="../_images/IK10_LOGO.png" alt="IK10 Logo" width="30"></span> <strong>IK10:</strong> This device has been tested and conforms to the IK10 impact standard (vandal-proof).</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_training"><a class="anchor" href="#_training"></a>14.5. Training</h3>
+<div class="paragraph">
+<p>This document does not take the place of training by INEX Technologies' certified specialists. Contact INEX Technologies to schedule training.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_support_2"><a class="anchor" href="#_support_2"></a>14.6. Support</h3>
+<div class="paragraph">
+<p>If you have any questions, please contact our support team via our <a href="http://www.inextechnologies.com" target="read-later">INEX Technologies Website</a>.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_appendix_a_document_change_history"><a class="anchor" href="#_appendix_a_document_change_history"></a>15. Appendix A - Document Change History</h2>
+<div class="sectionbody">
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 16%;">
@@ -2242,7 +3159,7 @@ where cam0_0 are camera-specific parameters (which in this case enable you to ac
 <td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
 <ul>
 <li>
-<p>Included {shortprodname2} in document: specification table and other relevant places</p>
+<p>Included IZA800GW in document: specification table and other relevant places</p>
 </li>
 <li>
 <p>Changed Windows requirement to version 10 and up only, not 8</p>
@@ -2251,7 +3168,7 @@ where cam0_0 are camera-specific parameters (which in this case enable you to ac
 <p>Calibration is now done via the RoadView ALPR software&#8217;s Calibration tab; text removed will be used in RoadView User Guide</p>
 </li>
 <li>
-<p>Added illustration of {shortprodname2} white LEDs</p>
+<p>Added illustration of IZA800GW white LEDs</p>
 </li>
 </ul>
 </div></div></td>
@@ -2291,9 +3208,6 @@ where cam0_0 are camera-specific parameters (which in this case enable you to ac
 </tr>
 </tbody>
 </table>
-</div>
-</div>
-</div>
 </div>
 </div>
 </article>
