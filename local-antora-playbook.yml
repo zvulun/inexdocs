@@ -4,7 +4,7 @@ site:
   start_page: Documents::index.adoc
 content:
   sources:
-  - url: ./inexsources-repo
+  - url: C:\inexsources-repo\
     branches: HEAD
     start_path: docs
     version: [Latest]
