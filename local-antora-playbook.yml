@@ -1,0 +1,29 @@
+site:
+  
+  title: Documents
+  start_page: Documents::index.adoc
+content:
+  sources:
+  - url: ./inexsources-repo
+    branches: HEAD
+    start_path: docs
+    version: [Latest]
+
+antora:
+  extensions:
+    - '@antora/lunr-extension'
+
+asciidoc:
+  attributes:
+    sectnums: all
+    sectnumlevels: 4
+    toclevels: 3
+    xrefstyle: full
+        
+
+ui:
+  bundle:
+    url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable
+    snapshot: true
+  supplemental_files: ./supplemental_ui
+  # - path: .nojekyll
