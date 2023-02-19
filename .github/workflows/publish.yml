@@ -2,7 +2,7 @@ name: Publish to GitHub Pages with Lunr Search Extension
 on:
   workflow_dispatch:
   push:
-    branches: [main]
+    branches: 'main'
 jobs:
   build:
     runs-on: ubuntu-latest
