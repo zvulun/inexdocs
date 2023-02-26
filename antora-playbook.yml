@@ -1,5 +1,6 @@
 site:
-  
+  #This comment can be changed, saved, added, committed and pushed
+  #to trigger github actions to generate the online site
   title: Documents
   start_page: Documents::index.adoc
 content:
