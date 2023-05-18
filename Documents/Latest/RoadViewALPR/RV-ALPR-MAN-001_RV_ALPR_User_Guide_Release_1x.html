@@ -362,8 +362,8 @@
 <div class="paragraph">
 <p><span class="white">RoadView</span></p>
 </div>
-<h2 id="_roadview_alpr_tbd" class="discrete">RoadView ALPR <strong><em>{TBD}</em></strong></h2>
 <h3 id="_user_guide" class="discrete">User Guide</h3>
+<h3 id="_release_1_x" class="discrete">Release 1.x</h3>
 <div class="paragraph">
 <p>Doc. No. RV-ALPR-MAN-001
 <br>
@@ -372,25 +372,3290 @@
 <div id="toc" class="toc">
 <div id="toctitle" class="title">Table of Contents</div>
 <ul class="sectlevel1">
-<li><a href="#_about_this_document">1. About this Document</a>
+<li><a href="#_about_this_document">1. About This Document</a>
 <ul class="sectlevel2">
 <li><a href="#_who_should_read_this_document">1.1. Who Should Read this Document</a></li>
+<li><a href="#s_Related-Documents">1.2. Recommended Reading/Related Documents</a></li>
+<li><a href="#_applicability">1.3. Applicability</a></li>
+<li><a href="#_support">1.4. Support</a></li>
 </ul>
+</li>
+<li><a href="#_glossary_of_terms">2. Glossary of Terms</a></li>
+<li><a href="#s_System-Requirements">3. System Requirements</a></li>
+<li><a href="#s_Quick-Overview-of-Steps">4. Quick Overview of Steps</a></li>
+<li><a href="#s_System-Overview">5. System Overview</a></li>
+<li><a href="#s_Preparation-for-Configuration">6. Preparation for Configuration</a>
+<ul class="sectlevel2">
+<li><a href="#s_Connecting-a-Computer-Laptop-to-the-Network">6.1. Connecting a Computer/Laptop to the Network</a></li>
+<li><a href="#s_Reserving-IP-Addresses-in-your-Network">6.2. Reserving IP Addresses in your Network</a></li>
+<li><a href="#s_Determining-the-IP-Addresses-of-the-Connected-Cameras">6.3. Determining the IP Addresses of the Connected Cameras</a></li>
+<li><a href="#s_Changing-the-IP-Addresses-of-the-Cameras">6.4. Changing the IP Addresses of the Cameras</a></li>
+<li><a href="#s_Determining-the-IP-Address-of-the-RoadView-Computer-with-IZ-Discovery">6.5. Determining the IP Address of the RoadView Computer with IZ Discovery</a></li>
+<li><a href="#s_Changing-the-RoadView-Computers-IP-Address-and-Network-Settings">6.6. Changing the RoadView Computer&#8217;s IP Address and Network Settings</a></li>
+</ul>
+</li>
+<li><a href="#s_Logging-In-and-Logging-Out">7. Logging In and Logging Out</a>
+<ul class="sectlevel2">
+<li><a href="#s_Logging-In">7.1. Logging In</a></li>
+<li><a href="#s_Logging-Out-Multi-line-Menu-Icon">7.2. Logging Out (Multi-line Menu Icon)</a></li>
+</ul>
+</li>
+<li><a href="#s_Trigger-Sources-and-Trigger-Modes-Overview">8. Trigger Sources and Trigger Modes Overview</a></li>
+<li><a href="#s_Settings-Tab">9. Settings Tab</a>
+<ul class="sectlevel2">
+<li><a href="#s_Software-Version-and-Camera-Information">9.1. Software Version and Camera Information</a></li>
+<li><a href="#s_Network-Settings">9.2. Network Settings</a></li>
+<li><a href="#s_FTP-SFTP-Settings">9.3. FTP/SFTP Settings</a></li>
+<li><a href="#s_Date-and-Time-Settings">9.4. Date and Time Settings</a></li>
+<li><a href="#s_HTTP-Integration">9.5. HTTP Integration</a></li>
+<li><a href="#s_Plate-Recognizer-Not-Used">9.6. Plate Recognizer (Not Used)</a></li>
+<li><a href="#s_IZCloud-Integration">9.7. IZCloud Integration</a></li>
+<li><a href="#s_AMANO-Integration">9.8. AMANO Integration</a></li>
+<li><a href="#s_TIBA-Integration">9.9. TIBA Integration</a></li>
+<li><a href="#s_Designa-Integration">9.10. Designa Integration</a></li>
+<li><a href="#s_Offline-Queue">9.11. Offline Queue</a></li>
+<li><a href="#s_Monitoring-IZMonitoring-Server-Integration">9.12. Monitoring (IZMonitoring Server Integration)</a></li>
+<li><a href="#s_ZAP-Integration">9.13. ZAP Integration</a></li>
+<li><a href="#s_Direct-Trigger">9.14. Direct Trigger</a></li>
+<li><a href="#s_INEX-IO-Controller">9.15. INEX I/O Controller</a></li>
+<li><a href="#s_ICP-Integration-Not-Currently-Used">9.16. ICP Integration (Not Currently Used)</a></li>
+<li><a href="#s_IRD-Integration-Not-Currently-Used">9.17. IRD Integration (Not Currently Used)</a></li>
+<li><a href="#s_Journal-Optional-Local-Storage">9.18. Journal (Optional Local Storage)</a></li>
+<li><a href="#s_Events-Post-Processing">9.19. Events Post Processing</a></li>
+<li><a href="#s_Trigger-Offset">9.20. Trigger Offset</a></li>
+<li><a href="#s_Detector-Configuration">9.21. Detector Configuration</a></li>
+<li><a href="#s_Lanes">9.22. Lanes</a></li>
+<li><a href="#s_Cameras">9.23. Cameras</a></li>
+</ul>
+</li>
+<li><a href="#s_Live-Journal-Tab">10. Live (Journal) Tab</a></li>
+<li><a href="#s_Search-Tab">11. Search Tab</a>
+<ul class="sectlevel2">
+<li><a href="#s_Search-Tab-Page-Controls">11.1. Search Tab: Page Controls</a></li>
+<li><a href="#s_Search-Tab-Filters">11.2. Search Tab: Filters</a></li>
+</ul>
+</li>
+<li><a href="#s_Calibration-Tab">12. Calibration Tab</a></li>
+<li><a href="#s_System-Info-Tab">13. System Info Tab</a>
+<ul class="sectlevel2">
+<li><a href="#s_System-Info-Tab-System-Info-Section">13.1. System Info Tab: System Info Section</a></li>
+<li><a href="#s_System-Info-Tab-Firmware-Section">13.2. System Info Tab: Firmware Section</a></li>
+<li><a href="#s_System-Info-Tab-Night-Mode-Section-for-Specific-Camera-Models-Only">13.3. System Info Tab: Night Mode Section (for Specific Camera Models Only)</a></li>
+<li><a href="#s_System-Info-Tab-LPR-LED">13.4. System Info Tab: LPR LED</a></li>
+</ul>
+</li>
+<li><a href="#s_Troubleshooting">14. Troubleshooting</a></li>
+<li><a href="#_appendix_a_document_change_history">15. Appendix A - Document Change History</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_about_this_document"><a class="anchor" href="#_about_this_document"></a>1. About This Document</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_who_should_read_this_document"><a class="anchor" href="#_who_should_read_this_document"></a>1.1. Who Should Read this Document</h3>
+<div class="paragraph">
+<p>This document is for:</p>
+</div>
+<div class="ulist square">
+<ul class="square">
+<li>
+<p><strong>Technical personnel</strong> who want to install, configure, maintain and use RoadView ALPR in their ALPR systems</p>
+</li>
+<li>
+<p><strong>Project managers</strong> who want to understand RoadView ALPR&#8217;s capabilities</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="s_Related-Documents"><a class="anchor" href="#s_Related-Documents"></a>1.2. Recommended Reading/Related Documents</h3>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 1. Related Documents</caption>
+<colgroup>
+<col style="width: 53%;">
+<col style="width: 47%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Doc. No.</th>
+<th class="tableblock halign-left valign-top">Title</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="DocList.html" class="xref page">RV-ALPRrrr-MAN-001</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">RoadView ALPR Release Notes (for Release rrr)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="DocList.html" class="xref page">RV-VDANLYTCS-TDSHEET</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">RoadView Video Analytics Technical Data Sheet</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../IZIO/DocList.html" class="xref page">IZIO-6060-MAN-001</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">IZIO Digital IO Controller Installation and User Guide</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../IZIO/DocList.html" class="xref page">IZIO-6060-TECH-002</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ADAM (IZIO) P2P Configuration</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><a href="../IZREMRELAY/DocList.html" class="xref page">IZREMRELAY-REV-A-TDSHEET</a></p>
+</div>
+<div class="paragraph">
+<p><a href="../IZREMRELAY/DocList.html" class="xref page">Supporting Documentation</a></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">IZ-REM-RELAY Remote (Web) Relays Series: Data Sheet and supporting documentation</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../IZDiscovery/DocList.html" class="xref page">IZ Discovery Utility</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">IZ Discovery Utility software components</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../ZAP-4-5/DocList.html" class="xref page">ZAP-450-SDK-002</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ZAP: INEX Technologies Application Protocol, Version 4.5</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../ZAP-4-5/DocList.html" class="xref page">API-HTTPM-ICD-00n_INEX_HTTP_API_Rx_y_v_W</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">INEX HTTP API for Major Version "M", Release "x.y"; document version W</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../IZMONSERVER/DocList.html" class="xref page">IZMSAPI-HTTP-ICD-041</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">IZMonitoring Server: Camera Monitoring API</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../IZMONSERVER/DocList.html" class="xref page">IZMSAPI-HTTP-ICD-042</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">IZMonitoring Server API</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../IZCentral/DocList.html" class="xref page">IZCENTRAL-CORE-MAN-001</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">IZCentral User Guide</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../EULA/DocList.html" class="xref page">EULA-400-DOC-001</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Software End User License Agreement (includes list of open source software)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../SLN-AmanoONE/DocList.html" class="xref page">RV-AMANO-MAN-001</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">INEX ALPR Installation for AMANO</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../SLN-IZCloudIntegration/DocList.html" class="xref page">RV-IZCLOUD-MAN-001</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">INEX IZCloud Integration</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../SLN-TIBA/DocList.html" class="xref page">RV-TIBA-MAN-001</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">INEX TIBA Integration</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_applicability"><a class="anchor" href="#_applicability"></a>1.3. Applicability</h3>
+<div class="paragraph">
+<p>This document is applicable to RoadView ALPR software, release 1.15.64 and above.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_support"><a class="anchor" href="#_support"></a>1.4. Support</h3>
+<div class="paragraph">
+<p>Contact our support team via our website: <a href="http://www.inextechnologies.com" class="bare">http://www.inextechnologies.com</a></p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_glossary_of_terms"><a class="anchor" href="#_glossary_of_terms"></a>2. Glossary of Terms</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 2. Glossary</caption>
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Term</th>
+<th class="tableblock halign-left valign-top">Explanation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ALPR</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Automatic License Plate Recognition</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DHCP</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dynamic Host Configuration Protocol. A DHCP server assigns a unique Internet Protocol (IP) address to each device connected to a network.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DPU</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DPU is a generic term for INEX/TECH Data Processing Units. RoadView software can run on INEX/TECH DPUs with graphic processors, or on ALPR All-in-one Camera Systems with built-in processors.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">IZ</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">INEX/ZAMIR (former company name; now called INEX Technologies, also called INEX/TECH)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">IZ ALPR system</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">An Automatic License Plate Recognition system utilizing cameras and RoadView software. The IZ ALPR system can capture LPR Events, and transmit them to other systems such as IZCentral.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">IZCentral</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Server software that communicates with one or more IZ ALPR systems. IZCentral provides a central repository for all LPR Events generated by the RoadView(s). IZCentral can also interface with many 3rd party systems via their proprietary protocols.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LPR Event</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The identified occurrence of a passing vehicle by the IZ ALPR System. An LPR Event includes metadata (location, lane identifiers, timestamp, the identified license plate number, recognition confidence, and more), plus a set of related images; typically, an Overview image, an LPR camera image and an image of the license plate. Also called a Vehicle Event or Event. An Event may include images from more than one camera in the same Lane.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">RoadView</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The software responsible for capturing LPR Events, and transmitting them to other systems.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">.NET</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Software framework that runs primarily on Microsoft Windows. See also WCF.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">NIC</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Network Interface Card</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">RTSP</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Real Time Streaming Protocol. A network protocol designed to control streaming media servers.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Trigger</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A command sent to an IZ ALPR system to create an LPR Event. Trigger sources can be from hardware signals, generated by software, or sent by a 3<sup>rd</sup> party system via various protocols.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">WCF</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Windows Communication Foundation. A Microsoft class library that is included with the .NET Framework. See also .NET.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ZAP</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Zamir Application Protocol - Proprietary INEX Technologies protocol for interfacing with an IZ ALPR system and IZCentral.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="s_System-Requirements"><a class="anchor" href="#s_System-Requirements"></a>3. System Requirements</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>You will need to provide a laptop computer to use for configuration. <u>If you will be using the laptop outdoors, the screen must be able to be seen in strong sunlight</u>.
+<br>
+Required software:</p>
+</div>
+<div class="ulist square">
+<ul class="square">
+<li>
+<p>Windows 10 or above - with .NET 4.5 enabled in "Windows Features"</p>
+</li>
+<li>
+<p>Internet Explorer browser version 11 or higher, or the latest version of Chrome</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>You can add an IE Tab extension to Chrome at this link (to enable access to the Flexwatch camera configuration application):<br>
+<a href="https://chrome.google.com/webstore/detail/ie-tab/hehijbfgiekmjfkfjpbkbammjbdenadd" class="bare">https://chrome.google.com/webstore/detail/ie-tab/hehijbfgiekmjfkfjpbkbammjbdenadd</a></p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="s_Quick-Overview-of-Steps"><a class="anchor" href="#s_Quick-Overview-of-Steps"></a>4. Quick Overview of Steps</h2>
+<div class="sectionbody">
+<div class="ulist square">
+<ul class="square">
+<li>
+<p>Reserve IP addresses for the components in your ALPR system - RoadView computer(s) and camera(s) - see <a href="#s_Reserving-IP-Addresses-in-your-Network">Section 6.2, &#8220;Reserving IP Addresses in your Network&#8221;</a> .</p>
+</li>
+<li>
+<p>Use IZ Discovery to find the initial IP Addresses of the cameras connected to your network - see <a href="#s_Determining-the-IP-Addresses-of-the-Connected-Cameras">Section 6.3, &#8220;Determining the IP Addresses of the Connected Cameras&#8221;</a> .</p>
+</li>
+<li>
+<p>Log into each camera, and change its IP address according to the requirements of your network. Use fixed addresses. Record these new addresses for use in RoadView configuration. See <a href="#s_Changing-the-IP-Addresses-of-the-Cameras">Section 6.4, &#8220;Changing the IP Addresses of the Cameras&#8221;</a> .</p>
+</li>
+<li>
+<p>Use IZ Discovery to find he IP address of the RoadView computer. Change the computer&#8217;s IP address according to the requirements of your network. See <a href="#s_Determining-the-IP-Address-of-the-RoadView-Computer-with-IZ-Discovery">Section 6.5, &#8220;Determining the IP Address of the RoadView Computer with IZ Discovery&#8221;</a> and <a href="#s_Changing-the-RoadView-Computers-IP-Address-and-Network-Settings">Section 6.6, &#8220;Changing the RoadView Computer&#8217;s IP Address and Network Settings&#8221;</a> .</p>
+</li>
+<li>
+<p>Review the different trigger sources and sequences, and triggering operational modes (see <a href="#s_Trigger-Sources-and-Trigger-Modes-Overview">Section 8, &#8220;Trigger Sources and Trigger Modes Overview&#8221;</a>)</p>
+</li>
+<li>
+<p>Log in to RoadView, and configure RoadView using the Settings tab, including adding the connected Lanes and cameras - see <a href="#s_Settings-Tab">Section 9, &#8220;Settings Tab&#8221;</a> .</p>
+</li>
+<li>
+<p>On the Calibration tab, adjust the zoom and focus to get a clear, sharp picture. Set the expected plate minimum and maximum width, capture zone and other parameters. See <a href="#s_Search-Tab">Section 11, &#8220;Search Tab&#8221;</a> .</p>
+</li>
+<li>
+<p>On the Live tab, verify that Events are being generated for each vehicle passing each camera, and that the recognition has sufficient accuracy and confidence. See <a href="#s_Live-Journal-Tab">Section 10, &#8220;Live (Journal) Tab&#8221;</a> .</p>
+</li>
+<li>
+<p>Use the Search tab to find records stored in the RoadView database. See <a href="#s_Search-Tab">Section 11, &#8220;Search Tab&#8221;</a> .</p>
 </li>
 </ul>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_about_this_document"><a class="anchor" href="#_about_this_document"></a>1. About this Document</h2>
+<h2 id="s_System-Overview"><a class="anchor" href="#s_System-Overview"></a>5. System Overview</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>RoadView is advanced ALPR software that reads license plates using sophisticated image recognition algorithms, and creates LPR Events. RoadView sends LPR Event data via HTTP, the proprietary INEX ZAP protocol or other protocols to other systems, typically IZCentral (see the IZCentral User Guide - see <a href="#s_Related-Documents">Section 1.2, &#8220;Recommended Reading/Related Documents&#8221;</a>). RoadView can be configured and monitored using a web-based GUI.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>RoadView can send Events to IZCentral or 3rd party systems using various different protocols. See <a href="#s_Trigger-Sources-and-Trigger-Modes-Overview">Section 8, &#8220;Trigger Sources and Trigger Modes Overview&#8221;</a> .</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="s_Preparation-for-Configuration"><a class="anchor" href="#s_Preparation-for-Configuration"></a>6. Preparation for Configuration</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_who_should_read_this_document"><a class="anchor" href="#_who_should_read_this_document"></a>1.1. Who Should Read this Document</h3>
+<h3 id="s_Connecting-a-Computer-Laptop-to-the-Network"><a class="anchor" href="#s_Connecting-a-Computer-Laptop-to-the-Network"></a>6.1. Connecting a Computer/Laptop to the Network</h3>
+<div class="imageblock">
+<div class="content">
+<img src="_images/image1.png" alt="image" width="312" height="195">
+</div>
+<div class="title">Figure 1. Connecting a Laptop</div>
+</div>
 <div class="paragraph">
-<p>This document is for:
-<strong><em>{TBD}</em></strong></p>
+<p>Connect your laptop to the same network switch the computer running RoadView is connected to.</p>
+</div>
+<div class="paragraph">
+<p></p>
 </div>
 </div>
+<div class="sect2">
+<h3 id="s_Reserving-IP-Addresses-in-your-Network"><a class="anchor" href="#s_Reserving-IP-Addresses-in-your-Network"></a>6.2. Reserving IP Addresses in your Network</h3>
+<div class="paragraph">
+<p>The INEX cameras have been pre-configured with default IP addresses. You will probably need to change these addresses to conform to the requirements of your network. Be sure that you have IP addresses reserved for all components of your ALPR system (RoadView computer and cameras).</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="s_Determining-the-IP-Addresses-of-the-Connected-Cameras"><a class="anchor" href="#s_Determining-the-IP-Addresses-of-the-Connected-Cameras"></a>6.3. Determining the IP Addresses of the Connected Cameras</h3>
+<div class="paragraph">
+<p>See your camera&#8217;s Installation Guide for an explanation of how to determine the initial IP addresses of cameras on your network (using IZ Discovery). You will need this information to log into the cameras, and to change the cameras' IP addresses.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="s_Changing-the-IP-Addresses-of-the-Cameras"><a class="anchor" href="#s_Changing-the-IP-Addresses-of-the-Cameras"></a>6.4. Changing the IP Addresses of the Cameras</h3>
+<div class="paragraph">
+<p>See your camera&#8217;s Installation Guide for an explanation of how to log in to a camera, and how to edit its IP address (fixed addresses are highly recommended). Record the new addresses; you will need them to configure the RoadView software.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="s_Determining-the-IP-Address-of-the-RoadView-Computer-with-IZ-Discovery"><a class="anchor" href="#s_Determining-the-IP-Address-of-the-RoadView-Computer-with-IZ-Discovery"></a>6.5. Determining the IP Address of the RoadView Computer with IZ Discovery</h3>
+<div class="paragraph">
+<p>The IZ Discovery utility discovers all active devices connected to the network, and displays a list of their network parameters. These devices can include cameras and computers.</p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>If any device on your network is connected via wireless, IZ Discovery will not recognize the device. In addition, if the computer running IZ Discovery is connected via wireless, you will not see any devices displayed.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Download the IZ Discovery software (see <a href="#s_Related-Documents">Section 1.2, &#8220;Recommended Reading/Related Documents&#8221;</a>)</p>
+</li>
+<li>
+<p>Run IZ Discovery</p>
+</li>
+<li>
+<p>When IZ Discovery first runs, you may see a Windows security warning. If so, click Run.</p>
+</li>
+<li>
+<p>If you see a message related to the Windows firewall, click Allow.</p>
+</li>
+<li>
+<p>IZ Discovery will start and display a list of devices on the network, according to their serial numbers (see <a href="#f_IZ-Discovery-Utility">Figure 2, &#8220;IZ Discovery Utility&#8221;</a>).</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Scroll down to find the device you are interested in. You can double-click to view/edit a specific device&#8217;s IP address parameters (see <a href="#s_Changing-the-RoadView-Computers-IP-Address-and-Network-Settings">Section 6.6, &#8220;Changing the RoadView Computer&#8217;s IP Address and Network Settings&#8221;</a>).</p>
+</li>
+<li>
+<p>Click Clear List to refresh the discovery process.</p>
+<div id="f_IZ-Discovery-Utility" class="imageblock">
+<div class="content">
+<img src="_images/image2.PNG" alt="image" width="723" height="485">
+</div>
+<div class="title">Figure 2. IZ Discovery Utility</div>
+</div>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>If IZ Discovery does not recognize a device:</p>
+<div class="ulist square">
+<ul class="square">
+<li>
+<p>Press the device&#8217;s reset button (if available)</p>
+</li>
+<li>
+<p>Reset the device by shutting off power/removing the LAN cable, waiting 5 seconds, and reapplying power</p>
+</li>
+<li>
+<p>Check the LAN cable connected between your laptop and the network, and the LAN cable connected between the device and the LAN switch. Replace the cable(s) and try to run IZ Discovery again.</p>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="s_Changing-the-RoadView-Computers-IP-Address-and-Network-Settings"><a class="anchor" href="#s_Changing-the-RoadView-Computers-IP-Address-and-Network-Settings"></a>6.6. Changing the RoadView Computer&#8217;s IP Address and Network Settings</h3>
+<div class="imageblock">
+<div class="content">
+<img src="_images/image3.png" alt="image" width="272" height="276">
+</div>
+<div class="title">Figure 3. Changing the Computer&#8217;s Network Settings</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>The device&#8217;s IP Address cannot be set to 10.10.2.xx or 10.10.3.xx</p>
+</div>
+<div class="paragraph">
+<p><strong>It is highly recommended to use a fixed IP address (not DHCP)</strong>. A fixed IP address enables you to access the computer using the same URL every time, even after unexpected power outages (see <a href="#s_Logging-In-and-Logging-Out">Section 7, &#8220;Logging In and Logging Out&#8221;</a>).</p>
+</div>
+<div class="paragraph">
+<p>A dynamic IP address may change upon device reboot. Before opening the web interface, you will have to find the current IP address of the device using IZ Discovery.</p>
+</div>
+<div class="paragraph">
+<p>If you want to copy the IP address (for login to the device) you will need to uncheck the DHCP checkbox momentarily to make the address field accessible.</p>
+</div>
+<div class="paragraph">
+<p>You can also change the IP address using the RoadView Settings tab (see <a href="#s_Network-Settings">Section 9.2, &#8220;Network Settings&#8221;</a>).</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>To change the device&#8217;s mode (fixed or dynamic [DHCP]), or IP address:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Select the relevant line in the list of devices and double-click on it.</p>
+</li>
+<li>
+<p>The Network Settings window appears</p>
+</li>
+<li>
+<p>To change the mode:</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Check or uncheck the DHCP box</p>
+</li>
+<li>
+<p>Click Save</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>To change the IP address:</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Verify that the address is not used by any other device on the network*</p>
+</li>
+<li>
+<p>Be sure to uncheck the DHCP box</p>
+</li>
+<li>
+<p>Enter the network address parameters</p>
+</li>
+<li>
+<p>Write down the new IP Address and click Save</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>The change should be reflected in the main dialog. This can take about a minute until the IP is obtained. If you do not see the change after this time, close IZ Discovery, and then reopen it.</p>
+</li>
+<li>
+<p>Verify that the IP address parameters have been changed to the ones you wanted. If not, you will have to log into the device (see <a href="#s_Logging-In-and-Logging-Out">Section 7, &#8220;Logging In and Logging Out&#8221;</a>) and change the IP address (see <a href="#s_Network-Settings">Section 9.2, &#8220;Network Settings&#8221;</a>).</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="s_Logging-In-and-Logging-Out"><a class="anchor" href="#s_Logging-In-and-Logging-Out"></a>7. Logging In and Logging Out</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="s_Logging-In"><a class="anchor" href="#s_Logging-In"></a>7.1. Logging In</h3>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Open a browser (latest version of Chrome or IE 11 or higher). Type in the IP address of the RoadView computer. For example:<br>
+<a href="http://192.115.120.76/" class="bare">http://192.115.120.76/</a></p>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>The RoadView GUI can now be accessed using https at the start of the URL. This enables secure communications with the RoadView GUI. However, due to the type of certification being used, you will see a security error message. Use the options on this warning screen to manually proceed to the RoadView GUI.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>In the login screen, enter the default username and password: (root, root):</p>
+<div class="imageblock">
+<div class="content">
+<img src="_images/image4.png" alt="image" width="209" height="143">
+</div>
+<div class="title">Figure 4. Logging In to the Computer</div>
+</div>
+</li>
+<li>
+<p>You should see the RoadView Live (Journal) tab (see <a href="#s_Live-Journal-Tab">Section 10, &#8220;Live (Journal) Tab&#8221;</a>). To configure RoadView, switch to the Settings tab (see <a href="#s_Settings-Tab">Section 9, &#8220;Settings Tab&#8221;</a>).</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="s_Logging-Out-Multi-line-Menu-Icon"><a class="anchor" href="#s_Logging-Out-Multi-line-Menu-Icon"></a>7.2. Logging Out (Multi-line Menu Icon)</h3>
+<div class="ulist square">
+<ul class="square">
+<li>
+<p>Click on the multi-line menu icon at the upper right of the RoadView screen</p>
+</li>
+<li>
+<p>Select "Logout"</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/image5.png" alt="image" width="136" height="113">
+</div>
+<div class="title">Figure 5. Logout (Multi-line Menu)</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="s_Trigger-Sources-and-Trigger-Modes-Overview"><a class="anchor" href="#s_Trigger-Sources-and-Trigger-Modes-Overview"></a>8. Trigger Sources and Trigger Modes Overview</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>A trigger is a command sent to an IZ ALPR system to create an Event. Triggers can originate from hardware signals, from video analytics or from software/3<sup>rd</sup> party system protocols.</p>
+</div>
+<div id="f_Trigger-Sources-and-Sequence" class="imageblock">
+<div class="content">
+<img src="_images/image6.png" alt="image" width="624" height="307">
+</div>
+<div class="title">Figure 6. Trigger Sources and Sequence</div>
+</div>
+<div class="paragraph">
+<p>The system constantly captures video frames and stores them in a buffer. However, the Triggering Mode determines if all, or only some of, these frames will be used for license plate recognition and Event building. Other parameters affect how many frames before (pre) and after (post) the trigger will be used:</p>
+</div>
+<div class="ulist square">
+<ul class="square">
+<li>
+<p>Protocol sections on the Settings tab (see <a href="#s_Settings-Tab">Section 9, &#8220;Settings Tab&#8221;</a>)</p>
+</li>
+<li>
+<p>Direct Trigger (see <a href="#s_Direct-Trigger">Section 9.14, &#8220;Direct Trigger&#8221;</a>)</p>
+</li>
+<li>
+<p>INEX I/O Controller (see <a href="#s_INEX-IO-Controller">Section 9.15, &#8220;INEX I/O Controller&#8221;</a>)</p>
+</li>
+<li>
+<p>Trigger Offset (see <a href="#s_Trigger-Offset">Section 9.20, &#8220;Trigger Offset&#8221;</a>)</p>
+</li>
+<li>
+<p>The number of Trigger Pre and Trigger Post frames (defined when a camera is configured - see <a href="#s_Cameras">Section 9.23, &#8220;Cameras&#8221;</a>)</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>DOT cameras take images of USDOT numbers, but do not perform LPR recognition. However, RoadView will generate Events even without LPR recognition.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>The Trigger Operational Modes (set in the Detector Configuration section of the Settings tab - see <a href="#s_Detector-Configuration">Section 9.21, &#8220;Detector Configuration&#8221;</a>) affect how Events are created (see <a href="#f_Trigger-Operational-Modes">Figure 7, &#8220;Trigger Operational Modes&#8221;</a>):</p>
+</div>
+<div id="f_Trigger-Operational-Modes" class="imageblock">
+<div class="content">
+<img src="_images/image7.png" alt="image" width="632" height="431">
+</div>
+<div class="title">Figure 7. Trigger Operational Modes</div>
+</div>
+<div class="ulist square">
+<ul class="square">
+<li>
+<p><u>NonTriggered</u> - Events are created and reported using LPR video analytics</p>
+</li>
+<li>
+<p><u>Triggered</u> - Events are created and reported when a trigger is received</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Triggered mode must be used for DOT (USDOT number image capture) cameras.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Hybrid - Events are continually created internally by LPR video analytics, but are only reported when a trigger is received. The Event closest in time to the trigger will be reported (sent to storage). See <a href="#s_Detector-Configuration">Section 9.21, &#8220;Detector Configuration&#8221;</a> where the Hybrid Pre/Post Time parameters are described.</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>In Hybrid mode, if no recognition was possible (no vehicle, no plate, unrecognizable plate, etc.), an Event will be created as it would be in Triggered mode. The Event will be created using frames captured at the time the Trigger was received, along with the Trigger Pre and Post frames, instead of using the frames from the NonTriggered video analytics.<br>
+See <a href="#s_Trigger-Sources-and-Trigger-Modes-Overview">Section 8, &#8220;Trigger Sources and Trigger Modes Overview&#8221;</a> and <a href="#s_Cameras">Section 9.23, &#8220;Cameras&#8221;</a> .</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><u>NonTriggered With Trigger</u> - NonTriggered Events are continually created and reported by LPR video analytics. In addition, Triggered Events are created and reported when a trigger is received.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Each type of Trigger Operational Mode has its own advantages:</p>
+</div>
+<div class="ulist square">
+<ul class="square">
+<li>
+<p><strong>Triggered types</strong> require external triggering hardware or software, and are more accurate. All vehicle images are recorded, even if the plate was not recognized. In addition, LPR Events can be generated on demand by third-party systems.</p>
+</li>
+<li>
+<p><strong>NonTriggered types</strong> do not require any external triggering hardware (such as inductive loops). However, they are less accurate.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="s_Settings-Tab"><a class="anchor" href="#s_Settings-Tab"></a>9. Settings Tab</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Use the Settings tab after the first installation or reinstallation of the IZ ALPR system, or when some fundamental parameters need updating. For example, if the Camera System or DPU was moved to a different location (time zone).</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/image8.png" alt="image" width="265" height="504">
+</div>
+<div class="title">Figure 8. Settings Tab</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>After clicking the Save button at the end of the Detector Configuration section, it will take several seconds before the Live tab can start displaying Events. Also, some defaults and/or available parameters may change, depending on the Detector Configuration "Mode" selected.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="sect2">
+<h3 id="s_Software-Version-and-Camera-Information"><a class="anchor" href="#s_Software-Version-and-Camera-Information"></a>9.1. Software Version and Camera Information</h3>
+<div class="paragraph">
+<p>The box at the upper right of the Settings screen shows:</p>
+</div>
+<div class="ulist square">
+<ul class="square">
+<li>
+<p>The RoadView software version</p>
+</li>
+<li>
+<p>The model, part number and serial number of the camera(s) RoadView is communicating with:</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/image9.png" alt="image" width="356" height="130">
+</div>
+<div class="title">Figure 9. Software Version and Camera Information Section</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="s_Network-Settings"><a class="anchor" href="#s_Network-Settings"></a>9.2. Network Settings</h3>
+<div class="imageblock">
+<div class="content">
+<img src="_images/image10.png" alt="image" width="416" height="180">
+</div>
+<div class="title">Figure 10. Network Settings Section</div>
+</div>
+<div class="ulist square">
+<ul class="square">
+<li>
+<p>If needed, set the RoadView computer&#8217;s IP address parameters.</p>
+</li>
+<li>
+<p><strong>Remember to click the Save button in this section; the change will be applied immediately.</strong></p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>The Network Settings refer to the <u>RoadView computer</u> (<u>Camera System or DPU)</u> - NOT the computer on which the browser displaying the GUI is running.</p>
+</div>
+<div class="paragraph">
+<p><strong><u>It is highly recommended to use a fixed IP address (not DHCP)</u></strong>. A fixed IP address enables you to access the computer using the same URL every time, even after unexpected power outages.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="s_FTP-SFTP-Settings"><a class="anchor" href="#s_FTP-SFTP-Settings"></a>9.3. FTP/SFTP Settings</h3>
+<div class="imageblock">
+<div class="content">
+<img src="_images/image11.png" alt="image" width="468" height="204">
+</div>
+<div class="title">Figure 11. FTP/SFTP Section</div>
+</div>
+<div class="ulist square">
+<ul class="square">
+<li>
+<p>Select the desired communication protocol - FTP, SFTP, or both<br>
+<strong>Be sure to click the Save button at the end of this section if you change these protocol selections, or if you enable or disable FTP or SFTP (check boxes).</strong></p>
+</li>
+<li>
+<p>Separate sections will appear for FTP and SFTP, enabling you to click a button to add user(s) who can connect to a RoadView computer via FTP/SFTP</p>
+<div class="ulist">
+<ul>
+<li>
+<p>FTP users are automatically added as SFTP users</p>
+</li>
+<li>
+<p>Deleting an SFTP user will automatically delete the user from FTP</p>
+</li>
+<li>
+<p>The Port is fixed; this is the port that the users' system will use to communicate with the RoadView computer</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/image12.png" alt="image" width="176" height="129">
+</div>
+<div class="title">Figure 12. Adding an SFTP User</div>
+</div>
+<div class="ulist square">
+<ul class="square">
+<li>
+<p>Each user that appears in the table can be edited or deleted; however, only the password can be edited. In order to rename a user, you will need to delete the existing user and re-enter it.</p>
+</li>
+<li>
+<p>Remember to click Save after changing the password.</p>
+</li>
+<li>
+<p>If a user is added, deleted or changed (except for a password change), the changes are saved automatically</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="s_Date-and-Time-Settings"><a class="anchor" href="#s_Date-and-Time-Settings"></a>9.4. Date and Time Settings</h3>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>The Date and Time Settings refer to the location of the {shortprodname} computer (Camera System or DPU) - NOT the computer on which the browser displaying the GUI is running.</p>
+</div>
+<div class="paragraph">
+<p>The Time Zone selections are organized by continent. For example, the "America/" prefix covers various cities and countries in North America (U.S. and Canada) and South America.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/image13.png" alt="image" width="490" height="180">
+</div>
+<div class="title">Figure 13. Date and Time Settings Section</div>
+</div>
+<div class="ulist square">
+<ul class="square">
+<li>
+<p>Set Time (Automatically/Manually)</p>
+<div class="ulist disc">
+<ul class="disc">
+<li>
+<p>If <strong>Automatic</strong>, the date and time will be updated from a central Network Time server. Select the appropriate server, and the interval at which you want RoadView to poll for the date and time (selected from the Polling Interval dropdown).</p>
+<div class="ulist circle">
+<ul class="circle">
+<li>
+<p>Click the "Update Now" button to update the date and time immediately.</p>
+</li>
+<li>
+<p>The icon (green check mark or red "x") indicates if the URL of the NTP server is correct, and the connection to it was successful.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>If <strong>Manual</strong>, click in the <strong>Date and Time</strong> box to display a calendar/time popup. You should also select a <strong>Time Zone</strong>; set it to the local time at the location in which the Camera System/DPU is installed (not the UTC default).</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="ulist square">
+<ul class="square">
+<li>
+<p><strong>Remember to click the Save button at the end of this section after making changes.</strong></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="s_HTTP-Integration"><a class="anchor" href="#s_HTTP-Integration"></a>9.5. HTTP Integration</h3>
+<div class="imageblock">
+<div class="content">
+<img src="_images/image14.png" alt="image" width="698" height="49">
+</div>
+<div class="title">Figure 14. HTTP Integration Section</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>RoadView can send Events to IZCentral or 3rd party systems using the INEX HTTP Protocol, INEX ZAP Protocol or other protocols. For details about the INEX HTTP protocol, see the appropriate INEX HTTP API Protocol document - see <a href="#s_Related-Documents">Section 1.2, &#8220;Recommended Reading/Related Documents&#8221;</a> .</p>
+</div>
+<div class="paragraph">
+<p>RoadView can send Events via HTTP, and act as both a ZAP Server and ZAP Client - all simultaneously.</p>
+</div>
+<div class="paragraph">
+<p>If you are using an IZMobileLPI system, contact INEX for details on how to set the HTTP URL parameter.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="ulist square">
+<ul class="square">
+<li>
+<p>Click Add HTTP Integration. Note that this feature enables you to use multiple HTTP channels (see <a href="#f_Adding-an-HTTP-Integration">Figure 15, &#8220;Adding an HTTP Integration&#8221;</a>).</p>
+</li>
+</ul>
+</div>
+<div id="f_Adding-an-HTTP-Integration" class="imageblock">
+<div class="content">
+<img src="_images/image15.png" alt="image" width="264" height="384">
+</div>
+<div class="title">Figure 15. Adding an HTTP Integration</div>
+</div>
+<div class="ulist square">
+<ul class="square">
+<li>
+<p><strong>HTTP URL</strong> - URL for an external system to listen on, in order to receive Events from RoadView via the INEX HTTP protocol (see the appropriate INEX HTTP API Protocol document - see <a href="#s_Related-Documents">Section 1.2, &#8220;Recommended Reading/Related Documents&#8221;</a>).</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>For an external system, "api" at the end of the URL is optional.</p>
+</div>
+<div class="paragraph">
+<p>For IZCentral, "api" is mandatory; also, IZCentral currently only works with HTTP API 1.3 (chosen from the Protocol Version dropdown).</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Be sure to use the correct format:
+<br>
+<a href="http://&lt;IP" class="bare">http://&lt;IP</a> address of IZCentral or
+<br>
+3<sup>rd</sup> party computer&gt;:&lt;port number&gt;/api<br>
+<br>
+For example (port is typically 5801):<br>
+<a href="http://195.163.2.73:5801/api" class="bare">http://195.163.2.73:5801/api</a></p>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>For secure communication, https can be used in the URL. In such a case, use the port registered for secure communication in IZCentral (for example, 11443). However, IZCentral must be configured to accept an encrypted connection (see the IZCentral User Guide for details - see <a href="#s_Related-Documents">Section 1.2, &#8220;Recommended Reading/Related Documents&#8221;</a>).</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="ulist square">
+<ul class="square">
+<li>
+<p><strong>Protocol Version</strong> - The appropriate HTTP API version to use for your application.</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>In INEX HTTP API version 1.5, the following items have not been implemented in RoadView:<br>
+camera_id and camera_name in the Upload Event command (images and lpr_results blocks)<br>
+See the HTTP API 1.5 document - see <a href="#s_Related-Documents">Section 1.2, &#8220;Recommended Reading/Related Documents&#8221;</a> .</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</li>
+</ul>
+</div>
+<div class="ulist square">
+<ul class="square">
+<li>
+<p><strong>Separated Images</strong> - If checked, then images are sent in separate messages after the Event message; if unchecked, images and the Event are sent together in the Event message.</p>
+</li>
+<li>
+<p><strong>Send Images Data</strong> (automatically checked for HTTP API 2.3 and above, as chosen from the Protocol Version dropdown) - If checked, then image data is sent as "data base64 encoded" inside the message; if unchecked, this field is not included in the message.</p>
+</li>
+<li>
+<p><strong>Offline Enabled</strong> - Used if you want to enable offline saving of Events and images via HTTP. If you try to send an Event, but do not have a connection to the server, then this event will be put in an offline queue, and sent again when connection with the server is restored. Note that if you enable offline capabilities, you must configure the offline queue parameters (see <a href="#s_Offline-Queue">Section 9.11, &#8220;Offline Queue&#8221;</a>).</p>
+</li>
+<li>
+<p><strong>Send Triggers</strong> (only enabled for HTTP API versions 1.3 to 1.6, as chosen from the Protocol Version dropdown) - If checked, then RoadView will send Trigger Received messages to the server. The meaning of this command is: The camera has received a trigger to create an Event. The Event is being processed, and will be available soon.</p>
+</li>
+<li>
+<p><strong>Keep Alive Interval</strong> (ms) - How often a status message is sent from RoadView to the server</p>
+</li>
+<li>
+<p><strong>Event/Images Timeout</strong> (ms) - If an Event or image message cannot be sent for this timeout period, then the event/image is put in the offline queue</p>
+</li>
+<li>
+<p><strong>Status Timeout</strong> (ms) - If a status message cannot be sent to the server for this amount of time, RoadView stops sending the message, and sends it again at the next Keep Alive Interval</p>
+</li>
+<li>
+<p><strong>Lane ID</strong> - the Lane for which Events and statuses will be sent ("All" or a specific Lane)</p>
+</li>
+<li>
+<p><strong>After clicking the Save button, adding/editing an integration can take several seconds</strong></p>
+</li>
+<li>
+<p><strong>Each integration (channel) that appears in the table can be edited or deleted</strong></p>
+</li>
+<li>
+<p><strong>If you delete an entry, you will be asked to verify the deletion.</strong></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="s_Plate-Recognizer-Not-Used"><a class="anchor" href="#s_Plate-Recognizer-Not-Used"></a>9.6. Plate Recognizer (Not Used)</h3>
+<div class="paragraph">
+<p>Not used; do not enable</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="s_IZCloud-Integration"><a class="anchor" href="#s_IZCloud-Integration"></a>9.7. IZCloud Integration</h3>
+<div class="paragraph">
+<p>See the IZCloud document (see <a href="#s_Related-Documents">Section 1.2, &#8220;Recommended Reading/Related Documents&#8221;</a>).</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="s_AMANO-Integration"><a class="anchor" href="#s_AMANO-Integration"></a>9.8. AMANO Integration</h3>
+<div class="paragraph">
+<p>See the AMANO document (see <a href="#s_Related-Documents">Section 1.2, &#8220;Recommended Reading/Related Documents&#8221;</a>).</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="s_TIBA-Integration"><a class="anchor" href="#s_TIBA-Integration"></a>9.9. TIBA Integration</h3>
+<div class="paragraph">
+<p>See the TIBA document (see <a href="#s_Related-Documents">Section 1.2, &#8220;Recommended Reading/Related Documents&#8221;</a>).</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="s_Designa-Integration"><a class="anchor" href="#s_Designa-Integration"></a>9.10. Designa Integration</h3>
+<div class="paragraph">
+<p>See separate document.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="s_Offline-Queue"><a class="anchor" href="#s_Offline-Queue"></a>9.11. Offline Queue</h3>
+<div class="imageblock">
+<div class="content">
+<img src="_images/image16.png" alt="image" width="528" height="158">
+</div>
+<div class="title">Figure 16. Offline Queue Section</div>
+</div>
+<div class="paragraph">
+<p>These parameters are currently used to configure offline Event storage for HTTP Integration (see <a href="#s_HTTP-Integration">Section 9.5, &#8220;HTTP Integration&#8221;</a>).</p>
+</div>
+<div class="ulist square">
+<ul class="square">
+<li>
+<p><strong>Send Offline Events Every</strong> - not currently used</p>
+</li>
+<li>
+<p><strong>Expiration Enabled</strong> - Enables the following parameters:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Offline Events Expire After</strong> - If an Event was added to the offline queue because there was no connection with client, and the connection with the client was not restored within this time, the Event will be removed from the offline queue.</p>
+</li>
+<li>
+<p><strong>Send Offline Events After</strong> - not currently used</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="s_Monitoring-IZMonitoring-Server-Integration"><a class="anchor" href="#s_Monitoring-IZMonitoring-Server-Integration"></a>9.12. Monitoring (IZMonitoring Server Integration)</h3>
+<div class="imageblock">
+<div class="content">
+<img src="_images/image17.png" alt="image" width="493" height="152">
+</div>
+<div class="title">Figure 17. Monitoring Section</div>
+</div>
+<div class="paragraph">
+<p>When Monitoring Integration (IZMonitoring Server Integration) is enabled, the following parameters appear:</p>
+</div>
+<div class="ulist square">
+<ul class="square">
+<li>
+<p><strong>URL</strong> - URL of the IZMonitoring Server</p>
+</li>
+<li>
+<p><strong>Keep Alive Timeout (seconds)</strong> - How often RoadView sends Keep Alive messages. If the Server does not receive another Keep Alive message before this time expires, the overall status (severity) of the product (camera) will be set to "Offline" automatically by the Server.</p>
+</li>
+<li>
+<p><strong>Status Timeout (seconds)</strong> - How often RoadView sends a full status message to the Server.</p>
+</li>
+<li>
+<p><strong>Disk Critical Threshold -</strong> When the percentage of used space on the disk (where the RoadView storage is located) is above this number, then a critical disk status is sent to the Server.</p>
+</li>
+<li>
+<p><strong>Remember to click the Save button at the end of the Detector Configuration section after making changes.</strong></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="s_ZAP-Integration"><a class="anchor" href="#s_ZAP-Integration"></a>9.13. ZAP Integration</h3>
+<div class="imageblock">
+<div class="content">
+<img src="_images/image18.png" alt="image" width="393" height="448">
+</div>
+<div class="title">Figure 18. ZAP Integration Section</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>RoadView can send Events to IZCentral or 3rd party systems using the INEX HTTP Protocol (see <a href="#s_HTTP-Integration">Section 9.5, &#8220;HTTP Integration&#8221;</a>) and/or the INEX ZAP Protocol (see <a href="#s_Related-Documents">Section 1.2, &#8220;Recommended Reading/Related Documents&#8221;</a>).</p>
+</div>
+<div class="paragraph">
+<p>RoadView can send Events via HTTP, and act as both a ZAP Server and ZAP Client - all simultaneously.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="ulist square">
+<ul class="square">
+<li>
+<p><strong>ZAP Server</strong> - Check the box to have RoadView act as a ZAP Server, to which ZAP Clients can connect (see the ZAP Protocol document for details - see <a href="#s_Related-Documents">Section 1.2, &#8220;Recommended Reading/Related Documents&#8221;</a>):</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Ports</strong> - Each Lane configured in RoadView will automatically have its own row in the table. Each Lane should have a different port number.</p>
+</li>
+<li>
+<p><strong>ZAP Version</strong> - ZAP communication protocol version. It is recommended to use version 4.4. The connected clients must use the same version.</p>
+</li>
+<li>
+<p><strong>Confidence Filter</strong> - the confidence level below which Events are not sent</p>
+</li>
+<li>
+<p><strong>Keep Time (seconds)</strong> - how long a Capture message is to be left in memory before it will be deleted (if a Keep message is not received)</p>
+</li>
+<li>
+<p><strong>Offline Enabled</strong> - check this box to enable the ZAP offline queue</p>
+</li>
+<li>
+<p><strong>FTP Enabled (for ZAP Server) -</strong> when a client is connected to RoadView via ZAP, images can be sent to the client via FTP if this checkbox is checked.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="ulist circle">
+<ul class="circle">
+<li>
+<p>FTP Server - the IP address of the FTP server</p>
+</li>
+<li>
+<p>FTP Port - the port on the FTP server listening for FTP messages</p>
+</li>
+<li>
+<p>FTP Folder - the folder path on the FTP server where the images will be stored</p>
+</li>
+<li>
+<p>FTP User - the username used to access the FTP server</p>
+</li>
+<li>
+<p>FTP Password - the password used to access the FTP server</p>
+</li>
+<li>
+<p>FTP Keep Alive Rate (seconds) - time (in seconds) between attempts to check that the connection with the FTP server is still alive</p>
+</li>
+</ul>
+</div>
+<div class="ulist square">
+<ul class="square">
+<li>
+<p><strong>ZAP Client</strong> - Check the box to have RoadView act as a ZAP Client, which will connect to a ZAP Server (see the ZAP Protocol document for details - see <a href="#s_Related-Documents">Section 1.2, &#8220;Recommended Reading/Related Documents&#8221;</a>).<br>
++<br>
+If you want RoadView to work with IZCentral, RoadView can only be working as a ZAP Client. In this mode, the RoadView ZAP Client port must match the IZCentral ZAP port (see the IZCentral documentation - see <a href="#s_Related-Documents">Section 1.2, &#8220;Recommended Reading/Related Documents&#8221;</a>).</p>
+</li>
+</ul>
+</div>
+<div class="ulist disk">
+<ul class="disk">
+<li>
+<p><strong>IP</strong> - The IP address of the ZAP Server (to which RoadView acting as a client should connect)</p>
+</li>
+<li>
+<p><strong>Port</strong> - The port number of the ZAP Server</p>
+</li>
+<li>
+<p><strong>ZAP Version</strong> - ZAP communication protocol version. It is recommended to use version 4.4. The server being connected to must use the same version.</p>
+</li>
+<li>
+<p><strong>Confidence Filter</strong> - the confidence level below which Events are not sent</p>
+</li>
+<li>
+<p><strong>Keep Time (seconds)</strong> - how long a Capture message is to be left in memory before it will be deleted (if a Keep message is not received)</p>
+</li>
+<li>
+<p><strong>Offline Enabled</strong> - check this box to enable the ZAP offline queue</p>
+</li>
+<li>
+<p><strong>FTP Enabled (for ZAP Client) -</strong> when RoadView is connected to a ZAP server, images can be sent to the server via FTP if this checkbox is checked. (See the FTP Server items for the definition of the additional FTP parameters.)</p>
+</li>
+</ul>
+</div>
+<div class="ulist square">
+<ul class="square">
+<li>
+<p><strong>Remember to click the Save button under the Detection Configuration section after changing these parameters.</strong></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="s_Direct-Trigger"><a class="anchor" href="#s_Direct-Trigger"></a>9.14. Direct Trigger</h3>
+<div class="quoteblock">
+<blockquote>
+<div class="imageblock">
+<div class="content">
+<img src="_images/image19.png" alt="image" width="287" height="43">
+</div>
+<div class="title">Figure 19. Direct Trigger Section</div>
+</div>
+</blockquote>
+</div>
+<div class="paragraph">
+<p>The Direct Trigger settings are used in these operational modes: Triggered, Hybrid or NonTriggered With Trigger (see <a href="#s_Trigger-Sources-and-Trigger-Modes-Overview">Section 8, &#8220;Trigger Sources and Trigger Modes Overview&#8221;</a>).</p>
+</div>
+<div class="paragraph">
+<p>This parameter is used for Camera System models with external trigger input wires, such as the IZA500G. See your Camera System&#8217;s Installation Guide for details.</p>
+</div>
+<div class="paragraph">
+<p>A loop controller can provide trigger information to RoadView. You can connect dry or wet contacts to the Camera System&#8217;s trigger inputs. The rise and fall of the voltage levels at these inputs sends a trigger to RoadView (see <a href="#s_Trigger-Sources-and-Trigger-Modes-Overview">Section 8, &#8220;Trigger Sources and Trigger Modes Overview&#8221;</a>).</p>
+</div>
+<div class="paragraph">
+<p>The "trigger time" used can be influenced by using the rising edge or falling edge of the pulse at the inputs to the Camera System. The Direct trigger mode options are (see <a href="#f_Trigger-Sources-and-Sequence">Figure 6, &#8220;Trigger Sources and Sequence&#8221;</a>):</p>
+</div>
+<div class="ulist square">
+<ul class="square">
+<li>
+<p>Disabled - Triggers will not be generated</p>
+</li>
+<li>
+<p>OnRise - A trigger is generated when the voltage level sensed on the trigger wires moves from low to high</p>
+</li>
+<li>
+<p>OnFall - A trigger is generated when the voltage level sensed on the trigger wires moves from high to low</p>
+</li>
+<li>
+<p><strong>Remember to click the Save button under the Detection Configuration section after changing these parameters.</strong></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="s_INEX-IO-Controller"><a class="anchor" href="#s_INEX-IO-Controller"></a>9.15. INEX I/O Controller</h3>
+<div class="quoteblock">
+<blockquote>
+
+</blockquote>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/image20.png" alt="image" width="363" height="107">
+</div>
+</div>
+<div class="paragraph">
+<p>The INEX I/O Controller settings are used in Triggered types of operational modes (for example Triggered, Hybrid or NonTriggered With Trigger). See <a href="#s_Trigger-Sources-and-Trigger-Modes-Overview">Section 8, &#8220;Trigger Sources and Trigger Modes Overview&#8221;</a> .</p>
+</div>
+<div class="paragraph">
+<p>These parameters are used if triggers are sent via the LAN using an INEX IZIO Digital I/O Controller. See the IZIO Installation and User Guide for instructions on how to install and configure the IZIO (especially its IP address). See <a href="#s_Related-Documents">Section 1.2, &#8220;Recommended Reading/Related Documents&#8221;</a> .</p>
+</div>
+<div class="paragraph">
+<p>The IZIO provides trigger information to RoadView. You can connect dry or wet contacts to the IZIO inputs. The rise and fall of the voltage levels at these inputs (such as pulses from loop controllers) are represented by a bit stream sent by the IZIO/ADAM to RoadView. A change in state of an IZIO input causes the generation of a trigger (see <a href="#s_Trigger-Sources-and-Trigger-Modes-Overview">Section 8, &#8220;Trigger Sources and Trigger Modes Overview&#8221;</a>).</p>
+</div>
+<div class="paragraph">
+<p>In Server mode, advanced P2P mode support was added (available via the IZIO/ADAM configuration application); this enables the IZIO/ADAM to send state changes to multiple RoadView instances. See the P2P document (see <a href="#s_Related-Documents">Section 1.2, &#8220;Recommended Reading/Related Documents&#8221;</a>).</p>
+</div>
+<div class="ulist square">
+<ul class="square">
+<li>
+<p><strong>Pulling or Server -</strong> how the digitized pulses are obtained by RoadView</p>
+</li>
+</ul>
+</div>
+<div class="ulist disk">
+<ul class="disk">
+<li>
+<p>Pulling - RoadView will request state changes from the IZIO, sampled every 20 ms</p>
+</li>
+<li>
+<p>Server - IZIO sends a notification of a state change to RoadView (sampling is not needed)</p>
+</li>
+</ul>
+</div>
+<div class="ulist square">
+<ul class="square">
+<li>
+<p><strong>Lane ID</strong> - The Lane ID as defined in the lower part of the Settings tab</p>
+</li>
+<li>
+<p><strong>IP Address</strong> - IZIO&#8217;s IP address (configured via the IZIO configuration software. See the IZIO Guide for details (see <a href="#s_Related-Documents">Section 1.2, &#8220;Recommended Reading/Related Documents&#8221;</a>).</p>
+</li>
+<li>
+<p><strong>Input</strong> - The input channel on the IZIO to be polled/sampled</p>
+</li>
+<li>
+<p><strong>Trigger mode</strong> - The "trigger time" used can be influenced by using the rising edge or falling edge of the pulse at the IO input of the IZIO/ADAM. The options are (see <a href="#f_Trigger-Sources-and-Sequence">Figure 6, &#8220;Trigger Sources and Sequence&#8221;</a>):</p>
+</li>
+</ul>
+</div>
+<div class="ulist disk">
+<ul class="disk">
+<li>
+<p>Disabled - Triggers will not be generated</p>
+</li>
+<li>
+<p>OnRise - A trigger is generated when the voltage level sensed on the trigger wires moves from low to high</p>
+</li>
+<li>
+<p>OnFall - A trigger is generated when the voltage level sensed on the trigger wires moves from high to low</p>
+</li>
+</ul>
+</div>
+<div class="ulist square">
+<ul class="square">
+<li>
+<p><strong>Remember to click the Save button under the Detection Configuration section after changing these parameters.</strong></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="s_ICP-Integration-Not-Currently-Used"><a class="anchor" href="#s_ICP-Integration-Not-Currently-Used"></a>9.16. ICP Integration (Not Currently Used)</h3>
+<div class="paragraph">
+<p>See separate document.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="s_IRD-Integration-Not-Currently-Used"><a class="anchor" href="#s_IRD-Integration-Not-Currently-Used"></a>9.17. IRD Integration (Not Currently Used)</h3>
+<div class="paragraph">
+<p>See separate document.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="s_Journal-Optional-Local-Storage"><a class="anchor" href="#s_Journal-Optional-Local-Storage"></a>9.18. Journal (Optional Local Storage)</h3>
+<div class="quoteblock">
+<blockquote>
+
+</blockquote>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/image21.png" alt="image" width="458" height="129">
+</div>
+</div>
+<div class="paragraph">
+<p>The Journal (Local Storage) parameters determine if and how Events are stored on the local RoadView computer disk (the parameters only appear if the disk is in use).</p>
+</div>
+<div class="paragraph">
+<p>The Journal data is stored at: /mnt/data/journal</p>
+</div>
+<div class="ulist square">
+<ul class="square">
+<li>
+<p><strong>Cleanup Interval</strong> - interval in milliseconds at which old Events are deleted in order to be within Max Count on Disk</p>
+</li>
+<li>
+<p><strong>Max Count on Disk</strong> - Maximum number of Events that can be stored on the RoadView computer&#8217;s disk; this parameter should be left at its default</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="s_Events-Post-Processing"><a class="anchor" href="#s_Events-Post-Processing"></a>9.19. Events Post Processing</h3>
+<div class="quoteblock">
+<blockquote>
+
+</blockquote>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/image22.png" alt="image" width="480" height="160">
+</div>
+</div>
+<div class="ulist square">
+<ul class="square">
+<li>
+<p><strong>Skip Empty Events</strong> - When an Event does not include a plate recognition, it is ignored.</p>
+</li>
+<li>
+<p><strong>Combining Enabled</strong> - used for combining Events with the same or similar recognition</p>
+</li>
+</ul>
+</div>
+<div class="ulist disk">
+<ul class="disk">
+<li>
+<p><strong>Send Timeout</strong> - if another Event is received with the same or similar recognition results within this timeout, the two Events are merged into one Event</p>
+</li>
+<li>
+<p><strong>Lev Distance</strong> - the maximum Levenshtein distance between the two plate reads for which the Events will be combined (see <a href="#s_Detector-Configuration">Section 9.21, &#8220;Detector Configuration&#8221;</a> for a more detailed explanation of Levenshtein distance).</p>
+</li>
+<li>
+<p><strong>Align to Height</strong> - when the LPR and OV images from the Events are merged, RoadView selects the images in which the plate patch is closest to this percentage of the total height of the LPR/OV image. For example, if the images are 1000 pixels high, and this parameter is set to 75%, then RoadView selects images in which the plate patch is closest (either above or below) a virtual line 750 pixels from the top of the image.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="s_Trigger-Offset"><a class="anchor" href="#s_Trigger-Offset"></a>9.20. Trigger Offset</h3>
+<div class="quoteblock">
+<blockquote>
+
+</blockquote>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/image23.png" alt="image" width="477" height="85">
+</div>
+</div>
+<div class="paragraph">
+<p>The Trigger Offset affects all triggers (in all modes - see <a href="#s_Trigger-Sources-and-Trigger-Modes-Overview">Section 8, &#8220;Trigger Sources and Trigger Modes Overview&#8221;</a>).</p>
+</div>
+<div class="paragraph">
+<p>When Trigger Offset is enabled, the following parameter(s) appear:</p>
+</div>
+<div class="ulist square">
+<ul class="square">
+<li>
+<p><strong>Offset</strong> (in milliseconds) - See <a href="#s_Trigger-Sources-and-Trigger-Modes-Overview">Section 8, &#8220;Trigger Sources and Trigger Modes Overview&#8221;</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The trigger command may arrive at a different time than actual trigger&#8217;s (physical) arrival time (see <a href="#f_Trigger-Sources-and-Sequence">Figure 6, &#8220;Trigger Sources and Sequence&#8221;</a>). For example, there is often a delay between the time a vehicle passes over an inductive loop, and the time the loop controller generates a pulse. This latency can be compensated for by an "offset".</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="s_Detector-Configuration"><a class="anchor" href="#s_Detector-Configuration"></a>9.21. Detector Configuration</h3>
+<div class="quoteblock">
+<blockquote>
+
+</blockquote>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/image24.png" alt="image" width="433" height="472">
+</div>
+</div>
+<div class="paragraph">
+<p>Plate recognition is done in 3 stages:</p>
+</div>
+<div class="ulist square">
+<ul class="square">
+<li>
+<p>The position of the license plate is determined in each incoming frame (from each camera)</p>
+</li>
+<li>
+<p>Characters from each license plate image are read and recognized</p>
+</li>
+<li>
+<p>All of the reads of each plate are grouped to create LPR Events</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The following parameters are used to configure these processes. <strong>Remember to click the Save button at the end of this section after changing these parameters:</strong></p>
+</div>
+<div class="ulist square">
+<ul class="square">
+<li>
+<p><strong>Mode</strong> - see <a href="#s_Trigger-Sources-and-Trigger-Modes-Overview">Section 8, &#8220;Trigger Sources and Trigger Modes Overview&#8221;</a> . Note that parameters may appear or be hidden, depending on the chosen Mode.</p>
+</li>
+<li>
+<p><strong>Region</strong> - Region for which characters on the plate will be recognized. Select from the following options:</p>
+</li>
+</ul>
+</div>
+<div class="ulist disk">
+<ul class="disk">
+<li>
+<p>Australia</p>
+</li>
+<li>
+<p>Canada/North America - same as North America LPR, with a different state recognition model that includes Canadian states.</p>
+</li>
+<li>
+<p>Europe</p>
+</li>
+<li>
+<p>Israel</p>
+</li>
+<li>
+<p>North America - general recognition that includes all U.S.A. states</p>
+</li>
+<li>
+<p>North America (OR) - same as North America, with the addition of syntax checking (against predefined patterns of characters) for Oregon state</p>
+</li>
+</ul>
+</div>
+<div class="ulist square">
+<ul class="square">
+<li>
+<p><strong>State</strong> - The State within the selected Region for which characters on the plate will be recognized. You can also select "ALL"; this indicates that the recognition engine will use a general model for this Region.</p>
+</li>
+<li>
+<p><strong>Skip stacked characters (only for Regions with stacked character plates)</strong> - When enabled, causes stacked characters to be excluded from the plate read.</p>
+</li>
+<li>
+<p><strong>Detector confidence threshold</strong> - The minimum Detector confidence that this rectangle is a license plate. If a read is at or above this threshold, the image is sent on for plate reading (plate character) processing.</p>
+</li>
+<li>
+<p><strong>Plate reader confidence threshold</strong> - The minimum Plate Reader confidence that the characters read are correct. If a read is at or above this threshold, an Event is created. If more than one camera is capturing images from a lane, the image with the highest confidence among the cameras is used.</p>
+</li>
+<li>
+<p><strong>Plate reader regexp filter</strong> - Only license plate reads meeting these regular expression filter criteria will have Events created for them. Typically, the default should be used (.* = allow all reads).</p>
+</li>
+<li>
+<p><strong>Min plate read count</strong> - To increase read accuracy, plates are read from more than one video frame. If the same plate read results match on at least this number of frames, then the Event will be created.<br>
+For slow-moving traffic, this parameter should be increased.<br>
+For faster traffic, you will only be able to set it to a small number of reads.</p>
+</li>
+<li>
+<p><strong>Wait before event emit, ms</strong> - (affects results in NonTriggered or Hybrid modes)<br>
+The minimum time from the first plate read until the time the Event will be built (emitted) - which can result in a greater number of frames used than the "Min plate read count" parameter. You may want to get LPR results with better confidence by increasing this number. RoadView will wait for more correct reads before the Event is built (see <a href="#f_Illustration-of-Wait-Before-Event-Emit">[f_Illustration-of-Wait-Before-Event-Emit]</a>).<br>
++<br>
+As a vehicle approaches a camera, waiting longer will usually (depending on road geometry) result in images of the plate getting larger and easier to read accurately.<br>
++<br>
+Note that in hybrid mode, it is recommended to set this parameter greater than 0. Setting this parameter to 0 will result in lower read confidence, since the trigger and the first read will occur close together.</p>
+<div id="f_Illustration-of-Wait-Before-Event-Emit" class="quoteblock">
+<blockquote>
+<div class="imageblock">
+<div class="content">
+<img src="_images/image25.png" alt="image" width="504" height="186">
+</div>
+<div class="title">Figure 20. Illustration of Wait Before Event Emit</div>
+</div>
+</blockquote>
+</div>
+</li>
+<li>
+<p><strong>LP forget interval, ms</strong> - RoadView may not have been able to read a plate over the course of several frames, which appear between two groups of frames with correct reads.<br>
++<br>
+If the size of this "hole" is large, then the vehicle has probably disappeared but then returned. This value controls whether or not to consider the two sequences of captures to be a single Event, or two separate Events.</p>
+<div class="quoteblock">
+<blockquote>
+<div class="imageblock">
+<div class="content">
+<img src="_images/image26.png" alt="image" width="507" height="97">
+</div>
+<div class="title">Figure 21. Illustration of LP Forget Interval</div>
+</div>
+</blockquote>
+</div>
+</li>
+<li>
+<p><strong>Max Levenshtein distance</strong> - Different reads of the same plate may not be identical due to shadows, sunlight, blurred images, etc. However, we want to minimize these effects by treating slightly different reads as the same result. We allow a maximum "distance" (number of changes required to match two strings) between plate reads in an Event. If the distance is less than or equal to this parameter, then the comparison is considered to be a valid match for the Event.</p>
+</li>
+<li>
+<p><strong>JPEG frame quality, 0-100 (0=no frame sent)</strong> - The Overview image JPEG frame quality used to send images to IZCentral or a 3rd party system<strong><em>.</em></strong></p>
+</li>
+<li>
+<p><strong>JPEG plate quality, 0-100 (0=no frame sent)</strong> - The LPR image JPEG frame quality used to send images to IZCentral or a 3rd party system<strong><em>.</em></strong></p>
+</li>
+<li>
+<p><strong>Include all images (for "Triggered" and "NonTriggered With Trigger" modes only)</strong> - Enables display in Live tab, and sending of all images (including pre- and post-trigger frames) - not only the "best" ones that were used for plate recognition</p>
+</li>
+<li>
+<p><strong>Image Resize</strong> - when enabled, and the Event confidence is equal or higher than the Resize Confidence parameter, then each LPR and OV image is resized according to the Image Width (and the height is resized proportionally).</p>
+</li>
+</ul>
+</div>
+<div class="ulist disk">
+<ul class="disk">
+<li>
+<p><strong>Image Width</strong> - the resize width</p>
+</li>
+<li>
+<p><strong>Resize Confidence</strong> - the Event confidence threshold for enabling resizing</p>
+</li>
+</ul>
+</div>
+<div class="ulist square">
+<ul class="square">
+<li>
+<p><strong>Two Line Plate -</strong> When enabled, invokes the capability to recognize two-line plates (in which the license plate number consists of two rows).</p>
+</li>
+</ul>
+</div>
+<div class="ulist disk">
+<ul class="disk">
+<li>
+<p><strong>Threshold</strong> - if the ratio of the width of the plate to its height is less than this threshold, then the plate very likely has two lines. The plate read will be the lower number added to the upper number.</p>
+</li>
+<li>
+<p><strong>Padding Width</strong> (%) - the percentage of the width of the plate to be removed from each side of the upper and lower images before putting the two numbers together. This eliminates empty space before the composite number is sent for recognition.</p>
+</li>
+<li>
+<p><strong>Padding Height</strong> (%) - the percentage of the height of the plate</p>
+</li>
+</ul>
+</div>
+<div class="ulist circle">
+<ul class="circle">
+<li>
+<p>This percentage is measured from the top, to determine where to crop the plate to determine how to extract the upper number&#8217;s image</p>
+</li>
+<li>
+<p>This same percentage is measured from the bottom, to determine where to crop the plate to determine how to extract the lower number&#8217;s image</p>
+</li>
+</ul>
+</div>
+<div class="ulist square">
+<ul class="square">
+<li>
+<p><strong>Vehicle Class Detection -</strong> enables/disables vehicle class detection (car, bus, etc.). This item can be shown on the Live tab using the multi-line menu at the upper right of the screen (see <a href="#s_Live-Journal-Tab">Section 10, &#8220;Live (Journal) Tab&#8221;</a>).</p>
+</li>
+<li>
+<p><strong>State recognition</strong> - Enables state recognition (an Overview camera must have been defined and configured)</p>
+</li>
+<li>
+<p><strong>Send default state</strong> <strong>(only if State recognition</strong> <strong>is enabled) -</strong> If no State was recognized, checking this box enables sending the Default State Value in the HTTP message for the Event as per the following additional parameters that appear: (If unchecked, no State field will be sent in the message.)</p>
+</li>
+</ul>
+</div>
+<div class="ulist disk">
+<ul class="disk">
+<li>
+<p><strong>Default state value</strong> - The default value to be sent in the HTTP message for the Event if no State was recognized.</p>
+</li>
+<li>
+<p><strong>State confidence threshold</strong> - The minimum confidence percentage for State recognition</p>
+</li>
+</ul>
+</div>
+<div class="ulist square">
+<ul class="square">
+<li>
+<p><strong>LPR Stub Enabled</strong> -If a plate was detected, but without a plate read, RoadView sends the text defined in the LPR Stub text box, along with the LPR Stub Confidence value:</p>
+</li>
+</ul>
+</div>
+<div class="ulist disk">
+<ul class="disk">
+<li>
+<p><strong>LPR Stub</strong> - for example, "NOREAD"</p>
+<div class="ulist">
+<ul>
+<li>
+<p>LPR Stub Confidence* - for example, 0</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="ulist square">
+<ul class="square">
+<li>
+<p><strong>Hybrid Pre Time (for Hybrid mode only)</strong> -Time in milliseconds before the trigger to search for the closest Event to the trigger (see <a href="#f_Illustration-of-Hybrid-Pre-Post-Time">[f_Illustration-of-Hybrid-Pre-Post-Time]</a>)</p>
+</li>
+<li>
+<p><strong>Hybrid Post Time (for Hybrid mode only)</strong> - Time in milliseconds after the trigger to search for the closest Event to the trigger (see <a href="#f_Illustration-of-Hybrid-Pre-Post-Time">[f_Illustration-of-Hybrid-Pre-Post-Time]</a>)</p>
+<div id="f_Illustration-of-Hybrid-Pre-Post-Time" class="quoteblock">
+<blockquote>
+
+</blockquote>
+</div>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/image27.png" alt="image" width="624" height="170">
+</div>
+</div>
+<div class="paragraph">
+<p>+</p>
+</div>
+<div class="ulist disk">
+<ul class="disk">
+<li>
+<p>Trigger 1 will be checked against the Hybrid Pre/Post time and use the closest Event - Event 1 or Event 2 (most likely). Note that Trigger 1 is closest to Event 2, even though it is closer to the best LPR frame in Event 1.</p>
+</li>
+<li>
+<p>Trigger 2 will use Event 2.</p>
+</li>
+<li>
+<p>Trigger 3 will wait for a new Event. If a new Event does not arrive within the Hybrid Post Time, a trigger Event will be created, without an LPR read, but with associated images and a timestamp.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="s_Lanes"><a class="anchor" href="#s_Lanes"></a>9.22. Lanes</h3>
+<div class="quoteblock">
+<blockquote>
+
+</blockquote>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/image28.png" alt="image" width="617" height="87">
+</div>
+</div>
+<div class="ulist square">
+<ul class="square">
+<li>
+<p>Actions:</p>
+</li>
+</ul>
+</div>
+<div class="ulist disk">
+<ul class="disk">
+<li>
+<p>Edit - edit the Lane&#8217;s parameters</p>
+</li>
+<li>
+<p>Delete - delete the Lane (a warning will be displayed)</p>
+</li>
+<li>
+<p>Trigger - send a software trigger immediately to RoadView (works in all modes except NonTriggered)</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Each Lane number must be unique in the overall IZ ALPR system.</p>
+</div>
+<div class="paragraph">
+<p>The images from all cameras capturing the same physical lane will be combined into a single Event.</p>
+</div>
+<div class="paragraph">
+<p>Each "Lane" is actually a virtual Lane. For example, if you have two Camera Systems capturing the same physical lane, you will need to create two different "Lanes", and associate each Camera System&#8217;s cameras with a different "Lane".</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>+</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="imageblock">
+<div class="content">
+<img src="_images/image29.png" alt="image" width="265" height="151">
+</div>
+<div class="title">Figure 22. Add/Edit Lane Dialog</div>
+</div>
+</blockquote>
+</div>
+<div class="paragraph">
+<p>+</p>
+</div>
+<div class="ulist square">
+<ul class="square">
+<li>
+<p><strong>ID</strong> (required) - The identification number of the lane to be captured by the cameras. This number will appear associated with Events in the Live tab (see <a href="#s_Live-Journal-Tab">Section 10, &#8220;Live (Journal) Tab&#8221;</a>).</p>
+</li>
+<li>
+<p><strong>Name</strong> (required) - The name of the Lane as it will appear in the GUI. This name will also be sent in HTTP and ZAP messages.</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>If you have upgraded from a previous RoadView version in which only Lane IDs were specified, Lane names will be automatically assigned the word "Lane" plus the Lane ID.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="ulist square">
+<ul class="square">
+<li>
+<p><strong>Avg Speed (for DOT cameras only)</strong> - The average vehicle speed expected in this Lane</p>
+</li>
+<li>
+<p><strong>Distance</strong> <strong>(for DOT cameras only)</strong> - The distance between the trigger device and the camera</p>
+</li>
+<li>
+<p><strong>Location (for ALPR cameras only)</strong> - Select one of the following options:</p>
+</li>
+</ul>
+</div>
+<div class="ulist disk">
+<ul class="disk">
+<li>
+<p><strong>Unknown</strong> -The camera&#8217;s position relative to vehicles is unknown.</p>
+</li>
+<li>
+<p><strong>Front</strong> -the camera in this Lane is capturing images from the front of vehicles</p>
+</li>
+<li>
+<p><strong>Rear</strong> - the camera in this Lane is capturing images from the rear of vehicles</p>
+</li>
+</ul>
+</div>
+<div class="ulist square">
+<ul class="square">
+<li>
+<p><strong>Ignore Opposite Direction</strong> - if enabled, then all Events for vehicles moving in the direction opposite to the direction arrow in the Calibration tab will be ignored (see <a href="#s_Calibration-Tab">Section 12, &#8220;Calibration Tab&#8221;</a>). Note that you can add a Direction column to the Live tab using the multi-line menu at the upper right of the screen (see <a href="#s_Live-Journal-Tab">Section 10, &#8220;Live (Journal) Tab&#8221;</a>).</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="s_Cameras"><a class="anchor" href="#s_Cameras"></a>9.23. Cameras</h3>
+<div class="quoteblock">
+<blockquote>
+
+</blockquote>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/image30.png" alt="image" width="695" height="112">
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>If you are using an IZMobileLPI system, contact INEX for details on how to set the camera parameters.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="ulist square">
+<ul class="square">
+<li>
+<p>Actions:</p>
+</li>
+</ul>
+</div>
+<div class="ulist disk">
+<ul class="disk">
+<li>
+<p>Edit - edit the camera&#8217;s parameters (see <a href="#f_Add-Edit-Camera-Dialog">[f_Add-Edit-Camera-Dialog]</a>)</p>
+</li>
+<li>
+<p>Delete - delete the camera (a warning will be displayed)</p>
+</li>
+</ul>
+</div>
+<div class="ulist square">
+<ul class="square">
+<li>
+<p><strong>Camera table headers:</strong> Camera ID, Lane ID, Name, URL, Type (as configured when the camera was added)</p>
+</li>
+<li>
+<p><strong>Image</strong> - Thumbnail image from a recent camera image</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-warning" title="Warning"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>If you add a camera, or edit a camera&#8217;s parameters and click the Save button in this dialog (even if you did not change the URL), you may see a warning icon in the Image column. The reappearance of the image indicates that the core software has restarted, and Events will resume being captured and displayed in the Live tab, with the following changes:</p>
+</div>
+<div class="paragraph">
+<p>+<br>
+- The Transaction ID will restart at 1 for that camera.<br>
++<br>
+- The history of previous Events for that camera will be cleared</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="ulist square">
+<ul class="square">
+<li>
+<p><strong>Add Camera</strong> (button at end of Cameras section):</p>
+<div id="f_Add-Edit-Camera-Dialog" class="quoteblock">
+<blockquote>
+<div class="imageblock">
+<div class="content">
+<img src="_images/image31.png" alt="image" width="230" height="272">
+</div>
+<div class="title">Figure 23. Add/Edit Camera Dialog</div>
+</div>
+</blockquote>
+</div>
+</li>
+</ul>
+</div>
+<div class="ulist disk">
+<ul class="disk">
+<li>
+<p><strong>Lane ID</strong> - The identification number of the lane being captured by the camera(s). Select a Lane number you defined (see <a href="#s_Lanes">Section 9.22, &#8220;Lanes&#8221;</a>). This number will appear associated with Events in the Live tab (see <a href="#s_Live-Journal-Tab">Section 10, &#8220;Live (Journal) Tab&#8221;</a>).</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>The images from all cameras capturing the same physical lane will be combined into a single Event.</p>
+</div>
+<div class="paragraph">
+<p>Using the same Lane ID for different cameras (even the LPR and OV cameras within the same Camera System) will combine the reads into one Event (see <a href="#s_Lanes">Section 9.22, &#8220;Lanes&#8221;</a>). You may even be able to improve read accuracy by changing the zoom to have one camera "see" closer than the other one.</p>
+</div>
+<div class="paragraph">
+<p>You could also position cameras to be in different positions (front/rear as in a toll plaza).</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="ulist disk">
+<ul class="disk">
+<li>
+<p><strong>Camera ID</strong> - For internal use; should be unique in the overall IZ ALPR system</p>
+</li>
+<li>
+<p><strong>Name</strong> - Camera name for internal use; should be unique in the overall IZ ALPR system</p>
+</li>
+<li>
+<p><strong>URL</strong> - RTSP or HTTP URL:</p>
+</li>
+</ul>
+</div>
+<div class="ulist circle">
+<ul class="circle">
+<li>
+<p>RTSP stream URL example:<br>
++<br>
+rtsp://&lt;camera IP address&gt;/cam0_0</p>
+</li>
+<li>
+<p>HTTP URL example:<br>
++<br>
+http:// &lt;camera IP address&gt;</p>
+</li>
+</ul>
+</div>
+<div class="ulist disk">
+<ul class="disk">
+<li>
+<p><strong>Type</strong> - Type of camera (LPR or View); used for integration with IZCentral</p>
+</li>
+<li>
+<p><strong>Trigger Pre</strong> (used in Triggered mode types only) - Number of frames to be included in the set of frames used to build an Event - before the trigger occurs (see <a href="#f_Trigger-Sources-and-Sequence">Figure 6, &#8220;Trigger Sources and Sequence&#8221;</a>).</p>
+</li>
+<li>
+<p><strong>Trigger Post</strong> (used in Triggered mode types only) - Number of frames to be included in the set of frames used to build an Event - after the trigger occurs (see <a href="#f_Trigger-Sources-and-Sequence">Figure 6, &#8220;Trigger Sources and Sequence&#8221;</a>).</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="s_Live-Journal-Tab"><a class="anchor" href="#s_Live-Journal-Tab"></a>10. Live (Journal) Tab</h2>
+<div class="sectionbody">
+<div class="quoteblock">
+<blockquote>
+
+</blockquote>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/image32.png" alt="image" width="554" height="243">
+</div>
+</div>
+<div class="paragraph">
+<p>The Live tab displays Events and other data about each Event.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>The Events displayed in the Live tab are being simultaneously sent via the protocols you selected in the Settings tab.</p>
+</div>
+<div class="paragraph">
+<p>You should see that Events are being generated for each vehicle passing each camera, with sufficient recognition accuracy and confidence. If not, see <a href="#s_Troubleshooting">Section 14, &#8220;Troubleshooting&#8221;</a> for troubleshooting tips.</p>
+</div>
+<div class="paragraph">
+<p>If you return to the Live tab from another tab, the large picture returns to the LPR (black and white) camera image.</p>
+</div>
+<div class="paragraph">
+<p>DOT (USDOT number image capture) cameras generate Events, but without LPR reads.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="ulist square">
+<ul class="square">
+<li>
+<p>Each row includes (additional items can be added from the multi-line menu icon &gt; Configure Journal selection - continue reading):</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Transaction (Event) ID. Note that each camera has its own Transaction ID sequence, so the same IDs may be used for different cameras.</p>
+</li>
+<li>
+<p>Lane Name - Lane name as configured for the camera(s) viewing this lane in the Settings tab - see <a href="#s_Lanes">Section 9.22, &#8220;Lanes&#8221;</a></p>
+</li>
+<li>
+<p>Date and time when the Event was recorded</p>
+</li>
+<li>
+<p>License Plate number (LPR)</p>
+</li>
+<li>
+<p>Recognition confidence, expressed as a percentage</p>
+</li>
+<li>
+<p>To add columns to the Live (and Search) tab displays:</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="ulist circle">
+<ul class="circle">
+<li>
+<p>Click on the multi-line menu icon at the upper right of the RoadView screen</p>
+</li>
+<li>
+<p>Select "Configure Journal"</p>
+<div class="quoteblock">
+<blockquote>
+<div class="imageblock">
+<div class="content">
+<img src="_images/image33.png" alt="image" width="136" height="113">
+</div>
+<div class="title">Figure 24. Configure Journal (Multi-line Menu)</div>
+</div>
+</blockquote>
+</div>
+</li>
+<li>
+<p>Select the additional columns to display, such as: State (state displayed on plate), State Confidence (confidence that the state has been recognized accurately), Class (vehicle class, such as car or truck), Class Confidence (confidence that the class has been recognized accurately) and Direction (direction vehicle was traveling - forward or backward - according to the direction arrow configured in the Calibration tab - see <a href="#s_Calibration-Tab">Section 12, &#8220;Calibration Tab&#8221;</a>). (These additional columns will also appear on the Search tab - see <a href="#s_Search-Tab">Section 11, &#8220;Search Tab&#8221;</a>)</p>
+</li>
+</ul>
+</div>
+<div class="ulist square">
+<ul class="square">
+<li>
+<p>Pause/Run mode:</p>
+</li>
+</ul>
+</div>
+<div class="ulist disk">
+<ul class="disk">
+<li>
+<p>Pause the grid display by clicking on a row, or by using the pause button in the middle of the controls under the large image (). You can also click on the large image to toggle between Pause and Run mode. This is useful if you want to examine a specific Event.</p>
+</li>
+<li>
+<p>You can also use these controls to move through the grid (next/previous Event, or start/end of Events).</p>
+</li>
+<li>
+<p>Start the display running in real-time again using the Run button () or by clicking on the large image. This will refresh the display, and resume displaying Events, starting from the 20 most recent Events.</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>RoadView is continually recording and saving (Journal) Events. The Events are added to the Live display (Running mode operation) until the display is paused. Even when you pause the Live display, RoadView continues to record Events - and can display up to a maximum of 20 recent Events.</p>
+</div>
+<div class="paragraph">
+<p>As you Pause/Run the Live grid, you may see momentary icons ( or ) appearing in the middle of the large image pane to indicate the mode.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="ulist square">
+<ul class="square">
+<li>
+<p>The text below the Pause/Run controls displays a summary of the Event&#8217;s information.</p>
+</li>
+<li>
+<p>The thumbnail images below the larger image pane display the overview and plate patch images from each camera. Click on one of the thumbnail images to display it in the larger image pane.</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>If both cameras in a Camera System were set to view the same lane, but one of the cameras (usually the color Overview camera) failed to capture the license plate properly, you will only see 3 thumbnails instead of 4.</p>
+</div>
+<div class="paragraph">
+<p>If you are using a camera with one sensor (such as the IZ600F), you will see 2 thumbnails - one for the LPR/OV image, and one for the plate patch.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="ulist square">
+<ul class="square">
+<li>
+<p>Zoom in on an area of interest in the large image (requires a mouse with a wheel):</p>
+</li>
+</ul>
+</div>
+<div class="ulist disk">
+<ul class="disk">
+<li>
+<p>Pause the grid</p>
+</li>
+<li>
+<p>Hover (do not click) over the area of interest; the cursor will change to a magnifying glass.</p>
+</li>
+<li>
+<p>Mouse wheel up a little at a time to enlarge the image</p>
+</li>
+<li>
+<p>As the image enlarges, you may need to readjust the cursor position to re-focus on the area of interest</p>
+</li>
+</ul>
+</div>
+<div class="ulist square">
+<ul class="square">
+<li>
+<p>To save images, right-click on the large image pane, and save the image</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="s_Search-Tab"><a class="anchor" href="#s_Search-Tab"></a>11. Search Tab</h2>
+<div class="sectionbody">
+<div class="quoteblock">
+<blockquote>
+
+</blockquote>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/image34.png" alt="image" width="645" height="307">
+</div>
+</div>
+<div class="paragraph">
+<p>The Search tab enables you to search for Event records stored in the RoadView database.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>The same columns that were added to the Live display (using the multi-line menu at the upper right of the screen) will also appear in the Search display (see <a href="#s_Live-Journal-Tab">Section 10, &#8220;Live (Journal) Tab&#8221;</a>).</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="sect2">
+<h3 id="s_Search-Tab-Page-Controls"><a class="anchor" href="#s_Search-Tab-Page-Controls"></a>11.1. Search Tab: Page Controls</h3>
+<div class="paragraph">
+<p>Page controls are located at the upper right of the records grid:</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+
+</blockquote>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/image35.png" alt="image" width="424" height="193">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="s_Search-Tab-Filters"><a class="anchor" href="#s_Search-Tab-Filters"></a>11.2. Search Tab: Filters</h3>
+<div class="paragraph">
+<p>Filter boxes are located at the top of each column; you can click on the question mark icons to show explanations of what you can enter in each filter box.</p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>After applying filters, remember that you will need to use the page controls to see all of the filtered records. For example, if there are 85 results, but you configured the grid to display 20 records per page, you must use the page controls to see the filtered records appearing on each page.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="ulist square">
+<ul class="square">
+<li>
+<p><strong>Numeric filters</strong> (Event ID, Confidences) - Enter a specific number (example '30'), a number and a '&gt;' symbol (example '&gt;30') or a number and a '&lt;' symbol (example '&lt;30')</p>
+</li>
+<li>
+<p><strong>Lane Name</strong> - Select All, or a specific lane</p>
+</li>
+<li>
+<p><strong>Time</strong> - Click in the filter box to display a date/time selection popup. Uncheck the check box to clear the filter (see <a href="#f_Search-Tab-Time-Filter-Selection-Popup">[f_Search-Tab-Time-Filter-Selection-Popup]</a>).</p>
+<div id="f_Search-Tab-Time-Filter-Selection-Popup" class="quoteblock">
+<blockquote>
+<div class="imageblock">
+<div class="content">
+<img src="_images/image36.png" alt="image" width="317" height="308">
+</div>
+<div class="title">Figure 25. Search Tab: Time Filter Selection Popup</div>
+</div>
+</blockquote>
+</div>
+<div class="ulist disk">
+<ul class="disk">
+<li>
+<p>Use the buttons at the top of the From/To sections to move between months</p>
+</li>
+<li>
+<p>Use the calendar grids to select dates</p>
+</li>
+<li>
+<p>Use the sliders to specify time</p>
+</li>
+<li>
+<p>Click the Now button to select the current time/date</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="ulist square">
+<ul class="square">
+<li>
+<p><strong>Text filters</strong> (LPR, State, Class) - Enter characters to find within the strings. For example, KZ will find <strong>KZ</strong>R3791 and J<strong>KZ</strong>0714.</p>
+</li>
+<li>
+<p><strong>Direction</strong> - Select All, Forward, (Unknown) or Backward</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="s_Calibration-Tab"><a class="anchor" href="#s_Calibration-Tab"></a>12. Calibration Tab</h2>
+<div class="sectionbody">
+<div class="quoteblock">
+<blockquote>
+
+</blockquote>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/image37.png" alt="image" width="624" height="313">
+</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>When you see a vehicle at a typical capture position on the video, click on the video to pause it.</p>
+</li>
+<li>
+<p>It is recommended to use the view called "Draw image by maintaining aspect ratio (two-headed arrow)". You select this view by clicking on the right-most button at the upper left of the screen: <strong><em>\\{Zvulun: inline graphic}</em></strong> image::image38.png[image,width=21,height=15]</p>
+</li>
+<li>
+<p>Select a camera from the dropdown list (LPR or OV).</p>
+</li>
+<li>
+<p>The Frame Width (horizontal) and Frame Height (vertical) are displayed at the lower left, and are set automatically according to the Camera&#8217;s hardware configuration. See your Camera&#8217;s Installation and Calibration Guide.</p>
+</li>
+<li>
+<p>The Frame Timestamp at the lower left displays the date and time that the image is being taken/was taken by the camera.</p>
+</li>
+<li>
+<p>Aim the camera using the mounting bracket&#8217;s adjustment hardware (see <a href="#f_Pan-Tilt-Roll-Angle-Adjustments">[f_Pan-Tilt-Roll-Angle-Adjustments]</a>).</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p><strong>Pan</strong>: Adjust the Pan so that the image of the license plate is in the horizontal middle of the Field of View.</p>
+</li>
+<li>
+<p><strong>Tilt:</strong> Adjust the Tilt so that the image of every expected plate position (depending on the vehicle type, such as passenger cars, jeeps, trucks, etc.) will be in the middle of the screen (from top to bottom).</p>
+</li>
+<li>
+<p><strong>Roll</strong>: Adjust the Roll so the license plate&#8217;s image is horizontally straight, parallel to the ground (not tilted to one side).</p>
+</li>
+</ol>
+</div>
+<div id="f_Pan-Tilt-Roll-Angle-Adjustments" class="quoteblock">
+<blockquote>
+<div class="imageblock">
+<div class="content">
+<img src="_images/image39.png" alt="image" width="311" height="186">
+</div>
+<div class="title">Figure 26. Pan/Tilt/Roll (Angle) Adjustments</div>
+</div>
+</blockquote>
+</div>
+</li>
+<li>
+<p>When the correct position is achieved, make a preliminary tightening of the mounting screws.</p>
+</li>
+<li>
+<p>Define the Region of Interest (<strong>ROI</strong>) by dragging on the corners (vertices) of the trapezoidal region. For optimum recognition accuracy, the ROI should be large enough to capture the region where plates could be found in images.</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>The following settings for the LPR and OV cameras are saved separately. For example, you may want a Region of Interest that is different for each camera.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>Define the <strong>Plate Width Min</strong>: Events will only be created for plate reads whose width is greater than or equal to this parameter. It is recommended to enter 150 in the <strong>Plate Width Min</strong> text box.<br>
+This parameter can also be configured by dragging the small circle on the horizontal line on the Calibration tab (expressed in pixels).<br>
+This parameter can be used to ignore small plate reads. For example, if the image was taken when a vehicle is too far away, the characters are too small to be read - even by a human.</p>
+</li>
+<li>
+<p>Define the <strong>Plate Width Max</strong>: Events will only be created for plate reads whose width is less than or equal to this parameter. It is recommended to enter approximately 350 in the <strong>Plate Width Max</strong> text box.<br>
++<br>
+This parameter can also be configured by dragging the large circle on the horizontal line on the Calibration tab (expressed in pixels).<br>
++<br>
+This parameter can be used to prevent false reads, such as large numbers on trucks.</p>
+</li>
+<li>
+<p>Use the zoom and focus buttons to adjust the view of the video until the width of the plate is 150 pixels, and its plate image is clear and sharp. (The surrounding items, such as the vehicle body, do not need to be as sharp as the plate.)</p>
+</li>
+</ol>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>There is a delay between a click of a zoom/focus button and when you see the effect on the screen. Be sure to wait until you see the change on the screen before clicking the button again. Clicking the button multiple times will cause you to "overshoot" the desired zoom/focus.</p>
+</div>
+<div class="paragraph">
+<p>As you adjust the zoom and focus, you may need to reposition the camera in order to get the image of the plate back to the desired position.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><strong>Direction (red arrow on video):</strong> drag the head of the arrow around to point to the angle at which you expect vehicles to be moving<strong>.</strong> (The vehicle&#8217;s direction is also sent to the IZCloud as part of an Event.) You can add a Direction column to the Live tab using the multi-line menu at the upper right of the screen (see <a href="#s_Live-Journal-Tab">Section 10, &#8220;Live (Journal) Tab&#8221;</a>).<br>
++<br>
+You can set the "Ignore Opposite Direction" parameter in the Lanes section to ignore all Events for vehicles moving in the direction opposite to the direction arrow in the Calibration tab (see <a href="#s_Lanes">Section 9.22, &#8220;Lanes&#8221;</a>).</p>
+</li>
+<li>
+<p>When you have finished, click the <strong>Save</strong> button. Wait several seconds for the display to refresh automatically, which indicates that the RoadView recognition software is running again with the updated parameters.</p>
+</li>
+<li>
+<p>When the correct position is achieved, make a final tightening of the mounting hardware.</p>
+</li>
+<li>
+<p>Repeat these steps for the other camera.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="s_System-Info-Tab"><a class="anchor" href="#s_System-Info-Tab"></a>13. System Info Tab</h2>
+<div class="sectionbody">
+<div class="quoteblock">
+<blockquote>
+<div class="imageblock">
+<div class="content">
+<img src="_images/image40.png" alt="image" width="316" height="308">
+</div>
+<div class="title">Figure 27. System Info Tab</div>
+</div>
+</blockquote>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Some System Info sections may not appear depending on your version of RoadView.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="sect2">
+<h3 id="s_System-Info-Tab-System-Info-Section"><a class="anchor" href="#s_System-Info-Tab-System-Info-Section"></a>13.1. System Info Tab: System Info Section</h3>
+<div class="paragraph">
+<p>This section provides the same information as in the upper right corner of the same Settings tab, namely the model, part number and serial number of the camera(s) RoadView is communicating with.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="s_System-Info-Tab-Firmware-Section"><a class="anchor" href="#s_System-Info-Tab-Firmware-Section"></a>13.2. System Info Tab: Firmware Section</h3>
+<div class="ulist square">
+<ul class="square">
+<li>
+<p>Firmware Version - the firmware version of the IZIC board (proprietary INEX electronics) in the Camera System/DPU</p>
+</li>
+<li>
+<p>New Firmware - enables you to update new firmware in the IZIC board</p>
+</li>
+</ul>
+</div>
+<div class="ulist disk">
+<ul class="disk">
+<li>
+<p>Choose File - click this button to browse for the firmware file</p>
+</li>
+<li>
+<p>Update Firmware - click this button to update the firmware using the file you chose</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="s_System-Info-Tab-Night-Mode-Section-for-Specific-Camera-Models-Only"><a class="anchor" href="#s_System-Info-Tab-Night-Mode-Section-for-Specific-Camera-Models-Only"></a>13.3. System Info Tab: Night Mode Section (for Specific Camera Models Only)</h3>
+<div class="paragraph">
+<p>These parameters affect how RoadView controls an external illuminator:</p>
+</div>
+<div class="ulist square">
+<ul class="square">
+<li>
+<p><strong>Night Mode</strong></p>
+</li>
+</ul>
+</div>
+<div class="ulist disk">
+<ul class="disk">
+<li>
+<p>Disable - never trigger the illuminator</p>
+</li>
+<li>
+<p>Enable - camera and external illuminator behavior are optimized for night-time recognition. Recommended use is for calibration.</p>
+</li>
+</ul>
+</div>
+<div class="ulist circle">
+<ul class="circle">
+<li>
+<p><strong>OV LED Intensity</strong> - Relative intensity of the built-in white LEDs, expressed as a percentage of the maximum possible intensity</p>
+</li>
+<li>
+<p><strong>Illuminator Intensity</strong> - (for IZS illuminators, synchronized with the Overview camera) Relative intensity of an external illuminator&#8217;s LEDs, expressed as a percentage of the maximum possible intensity</p>
+</li>
+</ul>
+</div>
+<div class="ulist disk">
+<ul class="disk">
+<li>
+<p>Auto - automatically senses day/night, in order to decide whether to trigger an external illuminator, according to the Camera System&#8217;s location (as defined by the Latitude and Longitude parameters). For the Auto mode, additional parameters appear:</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Latitude and Longitude are user-entered coordinates; determine them using Google maps, by clicking on the location where the Camera System will be installed (remember to put in a minus sign as needed)</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="ulist circle">
+<ul class="circle">
+<li>
+<p><strong>Latitude</strong> - latitude coordinate of Camera System&#8217;s location</p>
+</li>
+<li>
+<p><strong>Longitude</strong> - longitude coordinate of Camera System&#8217;s location</p>
+</li>
+<li>
+<p><strong>Post-Sunrise Offset</strong> - time after actual sunrise to be considered as the start of the day</p>
+</li>
+<li>
+<p><strong>Pre-Sunset Offset</strong> -time before actual sunset to be considered the end of the day</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="ulist square">
+<ul class="square">
+<li>
+<p><strong>Remember to click the Save button at the end of this section after making changes.</strong></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="s_System-Info-Tab-LPR-LED"><a class="anchor" href="#s_System-Info-Tab-LPR-LED"></a>13.4. System Info Tab: LPR LED</h3>
+<div class="paragraph">
+<p>These parameters enable you to control the camera&#8217;s built-in IR LEDs.</p>
+</div>
+<div class="ulist square">
+<ul class="square">
+<li>
+<p>Mode</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Off</strong> - LEDs off</p>
+</li>
+<li>
+<p><strong>Multi-flash</strong> - each frame is illuminated with a different light intensity</p>
+</li>
+<li>
+<p><strong>Anti-flickering</strong> - reduces the visible flickering of the built-in IR LED illumination by disabling multi-flash mode and adjusting flash frequency</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="ulist square">
+<ul class="square">
+<li>
+<p><strong>Intensity</strong> - light intensity in percent, where 0 is no light, and 100 is maximum light</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="s_Troubleshooting"><a class="anchor" href="#s_Troubleshooting"></a>14. Troubleshooting</h2>
+<div class="sectionbody">
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>For details about items in the following list related to hardware or configuration, see your camera&#8217;s Installation and Calibration Guide.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="quoteblock">
+<blockquote>
+
+</blockquote>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 35%;">
+<col style="width: 65%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Symptom</th>
+<th class="tableblock halign-left valign-top">Possible Solution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Thumbnails in Settings tab, in the Camera section at bottom have been replaced by red exclamation points and/or<br>
+The Live tab and Search tab are empty (no Events are detected)</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>Verify that each camera&#8217;s IP address in the Camera System (or connected to the DPU), and the RoadView computer&#8217;s IP address are all on the same subnet.</p>
+</li>
+<li>
+<p>Verify that stable power at the correct level is being supplied to the cameras, even when under a heavy processing load.</p>
+</li>
+<li>
+<p>Verify that the IP address(es) configured in RoadView match the IP addresses that you configured in the camera(s). See <a href="#s_Cameras">Section 9.23, &#8220;Cameras&#8221;</a> .</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Recognition rates are low</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>On the Calibration tab, increase the size of the Region of Interest (ROI) - it may be too small to capture plates with high confidence</p>
+</li>
+<li>
+<p>On the Calibration tab, try to reduce the Plate Width Min and increase the Plate Width Max</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Examine the video from the Camera on the Calibration tab:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>If all license plates are not fully visible, re-aim the Camera so that the Camera&#8217;s field of view fully covers the capture zone. For a more precise adjustment, verify that the license plate&#8217;s images are as close to the middle of the video display as possible.</p>
+</li>
+<li>
+<p>If the images are spotted, remove dirt and dust from the front window of the Camera System with a soft cloth and mild soap</p>
+</li>
+<li>
+<p>If the images are not sharp, adjust the zoom and focus of the camera</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_appendix_a_document_change_history"><a class="anchor" href="#_appendix_a_document_change_history"></a>15. Appendix A - Document Change History</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 16%;">
+<col style="width: 18%;">
+<col style="width: 66%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Version</th>
+<th class="tableblock halign-left valign-top">Date</th>
+<th class="tableblock halign-left valign-top">Change</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.00</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Aug. 25, 2020</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Initial version</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.10</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sep. 13, 2020</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Version for Release 1.7. Changes from Release 1.6 are:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Added new Setting parameter: JPEG frame quality, 0-100 (0=no frame sent)</p>
+</li>
+<li>
+<p>Added new Setting parameter: JPEG plate quality, 0-100</p>
+</li>
+<li>
+<p>New Detector option "Precise license plate detector"</p>
+</li>
+<li>
+<p>Cursor changes to magnifying glass when hovering over large Journal image</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.20</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dec. 6, 2020</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Version for Release 1.9. Changes from Release 1.7 are:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Added specific version number (1.9) to Applicability section.</p>
+</li>
+<li>
+<p>Improved camera images in typical system figures</p>
+</li>
+<li>
+<p>Updated Settings screen shots</p>
+</li>
+<li>
+<p>Added explanations of new parameters</p>
+</li>
+<li>
+<p>Removed all options from the Detector parameter except for Precise License Plate Detector</p>
+</li>
+<li>
+<p>Added new choices in GUI for different operational modes</p>
+</li>
+<li>
+<p>Added pictures to illustrate operational and triggering modes</p>
+</li>
+<li>
+<p>Changed thumbnail description at bottom of Settings tab to say "Thumbnail image from a recent camera image" instead of from a recent Event</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.25</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Jan. 11, 2021</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Updates for software version 1.9.13:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Updated Settings screen - new layout, and less Save buttons (each remaining Save button has a different functionality)</p>
+</li>
+<li>
+<p>New sections on Settings screen - software version and camera information, and Lanes section on Settings screen - a list of Lanes can be defined</p>
+</li>
+<li>
+<p>Camera Add/Edit dialog has changed since Lanes are defined in the new Lanes section</p>
+</li>
+<li>
+<p>New screen shot for IZ Discovery - First column changed from Product to Serial Number</p>
+</li>
+<li>
+<p>Added notes reminding user that some settings may be different for IZMobileLPI configuration</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.30</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mar. 3, 2021</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Updates for software version 1.9.25</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Support for new version of IZ Discovery utility; new IZ Discovery screen capture</p>
+</li>
+<li>
+<p>HTTP API 2.3 support (selectable from a new dropdown in the Settings screen), including triggering, was implemented - you can now trigger Events using the HTTP API protocol by sending the trigger from an external application to RoadView - see the HTTP API documentation. HTTP API 2.3 also supports the Communication options of Separated Images and Send Images Data.</p>
+</li>
+<li>
+<p>New screen capture taken for Settings screen and associated dialogs</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.31</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mar. 11, 2021</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>Improved quality of IZ Discovery screen shots</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.40</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Apr. 19, 2021</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>Removed cameras and IZODPU-G from Related Documents</p>
+</li>
+<li>
+<p>Updated HTTP API document file format in Related Documents</p>
+</li>
+<li>
+<p>Changed IZODPU-G to DPU where appropriate, since there are other DPUs that run RoadView software</p>
+</li>
+<li>
+<p>Changed screen shot of logging out, since multi-line menu icon at upper right now has an additional option</p>
+</li>
+<li>
+<p>Added new screen shots for Settings and Journal tabs</p>
+</li>
+<li>
+<p>Added screen shots and explanations for new parameters and new order on Settings tab</p>
+</li>
+<li>
+<p>Changed Applicability to 1.11.x</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.41</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Apr. 29, 2021</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>Added paragraph to legal disclaimer referring to internet security risks</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.45</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">May 27, 2021</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Updates for version 1.13.13 of the software:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Updated glossary</p>
+</li>
+<li>
+<p>Removed wiring diagrams (due to constant change)</p>
+</li>
+<li>
+<p>Made minor edits to IZ Discovery section</p>
+</li>
+<li>
+<p>Added new parameters to Detector Configuration: skip stacked characters, state recognition, send default state, default state value, state confidence threshold</p>
+</li>
+<li>
+<p>New calibration tab and parameters</p>
+</li>
+<li>
+<p>Updated explanation of Trigger 3 in Hybrid Pre/Post time</p>
+</li>
+<li>
+<p>Expanded troubleshooting table</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.46</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">June 1, 2021</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>Changed Journal Settings header to Journal (Optional Local Storage)</p>
+</li>
+<li>
+<p>Added text to Journal Settings text: (the parameters only appear if the disk is in use)</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.47</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">June 13, 2021</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Updates for latest production software release - 1.13.17:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>RoadView GUI can now be accessed using https at the start of the URL</p>
+</li>
+<li>
+<p>https can now be used in the HTTP Integration URL</p>
+</li>
+<li>
+<p>HTTP API 1.4 and 1.5 are now supported (and appear in the HTTP Integration Add/Edit dialog (Protocol Version dropdown)</p>
+</li>
+<li>
+<p>User can choose the Lane (or All Lanes) for which Events and statuses will be sent in the HTTP Integration Add/Edit dialog</p>
+</li>
+<li>
+<p>Plate Width Min and Plate Width Max were moved from Detector Configuration section in Settings tab to the Calibration tab</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.48</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">July 13, 2021</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>Changed name and filename of document, and name of software in document - to reflect new name for this version of RoadView which is "RoadView ALPR"</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.50</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Jan. 9, 2022</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Updates for latest production software release - 1.15.59; changes from 1.13.17 include:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>For new functionality and parameter changes, see the RoadView ALPR Release Notes</p>
+</li>
+<li>
+<p>Expanded Direct Trigger and INEX I/O Controller explanations</p>
+</li>
+<li>
+<p>Moved Trigger and mode diagrams to separate section earlier in document</p>
+</li>
+<li>
+<p>Updated Hybrid mode&#8217;s 3rd trigger explanation</p>
+</li>
+<li>
+<p>Expanded Lanes explanation - how to manage multiple cameras on the same physical lane</p>
+</li>
+<li>
+<p>Added Journal explanation - "You can also click on the large image to toggle between Pause and Run mode"</p>
+</li>
+<li>
+<p>Calibration tab description updated for new functionality</p>
+</li>
+<li>
+<p>Added section for new System Info tab</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.51</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Jan. 11, 2022</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>Corrected spelling and typographical errors</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.52</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Jan. 23, 2022</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>Added new parameters to Night Mode section on System Info tab; replaced screen shot</p>
+</li>
+<li>
+<p>Replaced screen shot of Software Version and Camera Information</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.60</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Oct. 27, 2022</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>Updates for latest production software release - 1.15.64.31</p>
+</li>
+<li>
+<p>Chrome added as a possible browser for running RoadView</p>
+</li>
+<li>
+<p>Screen shots updated/added to reflect new features</p>
+</li>
+<li>
+<p>Network Settings - DNS1/2 parameters added</p>
+</li>
+<li>
+<p>HTTP Integration - added the following parameters: Offline Enabled, Keep Alive Interval, Event/Images Timeout and Status Timeout; also, the Separated Images option now works with all protocol versions, not just 2.3 and above.</p>
+</li>
+<li>
+<p>New configuration section - Plate Recognizer</p>
+</li>
+<li>
+<p>IZCloud Integration - added Remote URL field to Lanes table; updated GPIO explanation to match Remote URL explanation</p>
+</li>
+<li>
+<p>New configuration section - Designa Integration</p>
+</li>
+<li>
+<p>New configuration section - Offline Queue</p>
+</li>
+<li>
+<p>ICP Integration - cannot be used in 1.15.64.31</p>
+</li>
+<li>
+<p>IRD Integration - cannot be used in 1.15.64.31</p>
+</li>
+<li>
+<p>New configuration section - Events Post-Processing</p>
+</li>
+<li>
+<p>Detector Configuration - new parameters: Image Resize, Two Line Plate, Vehicle Class Detection</p>
+</li>
+<li>
+<p>Lanes - new parameter: Ignore Opposite Direction</p>
+</li>
+<li>
+<p>Journal tab renamed to be "Live" tab; new columns can now be added: Class, Class Confidence and Direction</p>
+</li>
+<li>
+<p>New tab added: Search</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.61</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Oct. 30, 2022</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>Updated document change history to show that ICP and IRD integration cannot be used in 1.15.64.31.</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.65</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Feb. 7, 2023</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Updates for releases 1.15.64.32 to 1.15.64.48:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Changed format to only include details of core Settings sections; customer- and integration-specific sections will be described in separate documents</p>
+</li>
+<li>
+<p>Users can access the Flexwatch sensor configuration application by adding an IE Tab extension to Chrome</p>
+</li>
+<li>
+<p>New screen shot of Software Version and Camera Information on the Settings tab</p>
+</li>
+<li>
+<p>New screen shot for Adding an HTTP Integration to show new Send Triggers check box, plus explanation of Send Triggers (HTTP API Trigger Received command)</p>
+</li>
+<li>
+<p>Plate Recognizer Settings are not used.</p>
+</li>
+<li>
+<p>AMANO Integration section added in Settings tab; separate document referenced</p>
+</li>
+<li>
+<p>IZCloud Integration - separate document created and referenced</p>
+</li>
+<li>
+<p>INEX I/O Controller section: In Server mode, advanced P2P mode support was added (available via the IZIO/ADAM configuration application); enables IZIO/ADAM to send to multiple RoadView instances</p>
+</li>
+<li>
+<p>LPR LED section was added in System Info tab</p>
+</li>
+<li>
+<p>New screen shot of System Info tab</p>
+</li>
+<li>
+<p>The Configure Journal selection (available from the three-line menu) that enables you add columns to the Live data grid - also affects the Search data grid</p>
+</li>
+<li>
+<p>Support of RTSP protocol for cameras (can enter RTSP URL or HTTP URL when adding a camera); deleted phrase of: "(cam0_0 indicates that the primary stream should be used)"</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.66</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Feb. 21, 2023</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Updates for release 1.15.64.54:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>New screen shot for System Info; added note that some System Info sections may not appear depending on your version of RoadView</p>
+</li>
+<li>
+<p>TIBA Integration section added in Settings tab; separate document referenced</p>
+</li>
+<li>
+<p>New parameters added in ZAP Integration section for both Server and Client</p>
+</li>
+<li>
+<p>Added text explaining how to configure RoadView acting as a ZAP Client can communicate with IZCentral</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.67</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mar. 23, 2023</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>New screen shot for updated Date and Time section on Settings tab; the interval at which RoadView polls for the date and time is now selected from discrete values instead of a number of milliseconds</p>
+</li>
+<li>
+<p>Included missing State dropdown explanation in Detector Configuration section on Settings tab; added new "ALL" selection</p>
+</li>
+<li>
+<p>Due to the updated software version number, new screen shots were taken for the "Software Version and Camera Information" section on the Settings tab, and the complete System Info tab</p>
+</li>
+<li>
+<p>Updated some of the IZ Discovery wording to match other documents</p>
+</li>
+<li>
+<p>Clarified which browser to use when running RoadView</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.68</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Apr. 16, 2023</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>Preparation for online conversion: Put rectangle around screen shot pictures in PPT - instead of using Word borders</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.69</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Apr. 16, 2023</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>Added document reference to RoadView Video Analytics Data Sheet</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.70</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">May 17, 2023</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>Corrections discovered during conversion to online version (for example, cross-references)</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">---</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">---</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>From this point on, see the GitHub commit history comments</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 </article>
