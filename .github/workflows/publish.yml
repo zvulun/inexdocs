@@ -15,9 +15,9 @@ jobs:
       with:
         node-version: '16'
     - name: Install Antora
-      run: npm i antora --fetch @antora/lunr-extension
+      run: npm i antora @antora/lunr-extension
     - name: Generate Site
-      run: npx antora antora-playbook.yml
+      run: npx antora --fetch antora-playbook.yml
     - name: Publish to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
