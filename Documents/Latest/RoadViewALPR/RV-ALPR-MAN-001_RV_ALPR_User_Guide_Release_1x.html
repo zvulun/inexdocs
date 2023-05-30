@@ -2551,18 +2551,12 @@ http:// &lt;camera IP address&gt;</p>
 <p><strong>Lane Name</strong> - Select All, or a specific lane</p>
 </li>
 <li>
-<p><strong>Time</strong> - Click in the filter box to display a date/time selection popup. Uncheck the check box to clear the filter (see <a href="#f_Search-Tab-Time-Filter-Selection-Popup">[f_Search-Tab-Time-Filter-Selection-Popup]</a>).</p>
-</li>
-</ul>
-</div>
-<div class="imageblock">
+<p><strong>Time</strong> - Click in the filter box to display a date/time selection popup. Uncheck the check box to clear the filter (see <a href="#f_Search-Tab-Time-Filter-Selection-Popup">Figure 36, &#8220;Search Tab: Time Filter Selection Popup&#8221;</a>).</p>
+<div id="f_Search-Tab-Time-Filter-Selection-Popup" class="imageblock">
 <div class="content">
 <img src="_images/image36.png" alt="image" width="317" height="308">
 </div>
 <div class="title">Figure 36. Search Tab: Time Filter Selection Popup</div>
-</div>
-<div class="paragraph">
-<p>+</p>
 </div>
 <div class="ulist disc">
 <ul class="disc">
@@ -2580,8 +2574,7 @@ http:// &lt;camera IP address&gt;</p>
 </li>
 </ul>
 </div>
-<div class="ulist square">
-<ul class="square">
+</li>
 <li>
 <p><strong>Text filters</strong> (LPR, State, Class) - Enter characters to find within the strings. For example, KZ will find <strong><u>KZ</u></strong>R3791 and J<strong><u>KZ</u></strong>0714.</p>
 </li>
@@ -2620,7 +2613,7 @@ http:// &lt;camera IP address&gt;</p>
 <p>The Frame Timestamp at the lower left displays the date and time that the image is being taken/was taken by the camera.</p>
 </li>
 <li>
-<p>Aim the camera using the mounting bracket&#8217;s adjustment hardware (see <a href="#f_Pan-Tilt-Roll-Angle-Adjustments">[f_Pan-Tilt-Roll-Angle-Adjustments]</a>).</p>
+<p>Aim the camera using the mounting bracket&#8217;s adjustment hardware (see <a href="#f_Pan-Tilt-Roll-Angle-Adjustments">Figure 38, &#8220;Pan/Tilt/Roll (Angle) Adjustments&#8221;</a>).</p>
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
@@ -2634,17 +2627,13 @@ http:// &lt;camera IP address&gt;</p>
 </li>
 </ol>
 </div>
-</li>
-</ol>
-</div>
-<div class="imageblock">
+<div id="f_Pan-Tilt-Roll-Angle-Adjustments" class="imageblock">
 <div class="content">
 <img src="_images/image39.png" alt="image" width="311" height="186">
 </div>
 <div class="title">Figure 38. Pan/Tilt/Roll (Angle) Adjustments</div>
 </div>
-<div class="olist arabic">
-<ol class="arabic">
+</li>
 <li>
 <p>When the correct position is achieved, make a preliminary tightening of the mounting screws.</p>
 </li>
@@ -2671,17 +2660,16 @@ This parameter can also be configured by dragging the small circle on the horizo
 This parameter can be used to ignore small plate reads. For example, if the image was taken when a vehicle is too far away, the characters are too small to be read - even by a human.</p>
 </li>
 <li>
-<p>Define the <strong>Plate Width Max</strong>: Events will only be created for plate reads whose width is less than or equal to this parameter. It is recommended to enter approximately 350 in the <strong>Plate Width Max</strong> text box.<br>
-+<br>
-This parameter can also be configured by dragging the large circle on the horizontal line on the Calibration tab (expressed in pixels).<br>
-+<br>
-This parameter can be used to prevent false reads, such as large numbers on trucks.</p>
+<p>Define the <strong>Plate Width Max</strong>: Events will only be created for plate reads whose width is less than or equal to this parameter. It is recommended to enter approximately 350 in the <strong>Plate Width Max</strong> text box.<br></p>
+<div class="paragraph">
+<p>This parameter can also be configured by dragging the large circle on the horizontal line on the Calibration tab (expressed in pixels).<br></p>
+</div>
+<div class="paragraph">
+<p>This parameter can be used to prevent false reads, such as large numbers on trucks.</p>
+</div>
 </li>
 <li>
 <p>Use the zoom and focus buttons to adjust the view of the video until the width of the plate is 150 pixels, and its plate image is clear and sharp. (The surrounding items, such as the vehicle body, do not need to be as sharp as the plate.)</p>
-</li>
-</ol>
-</div>
 <div class="admonitionblock important">
 <table>
 <tr>
@@ -2699,12 +2687,12 @@ This parameter can be used to prevent false reads, such as large numbers on truc
 </tr>
 </table>
 </div>
-<div class="olist arabic">
-<ol class="arabic">
+</li>
 <li>
-<p><strong>Direction (red arrow on video):</strong> drag the head of the arrow around to point to the angle at which you expect vehicles to be moving<strong>.</strong> (The vehicle&#8217;s direction is also sent to the IZCloud as part of an Event.) You can add a Direction column to the Live tab using the multi-line menu at the upper right of the screen (see <a href="#s_Live-Journal-Tab">Section 10, &#8220;Live (Journal) Tab&#8221;</a>).<br>
-+<br>
-You can set the "Ignore Opposite Direction" parameter in the Lanes section to ignore all Events for vehicles moving in the direction opposite to the direction arrow in the Calibration tab (see <a href="#s_Lanes">Section 9.22, &#8220;Lanes&#8221;</a>).</p>
+<p><strong>Direction (red arrow on video):</strong> drag the head of the arrow around to point to the angle at which you expect vehicles to be moving<strong>.</strong> (The vehicle&#8217;s direction is also sent to the IZCloud as part of an Event.) You can add a Direction column to the Live tab using the multi-line menu at the upper right of the screen (see <a href="#s_Live-Journal-Tab">Section 10, &#8220;Live (Journal) Tab&#8221;</a>).<br></p>
+<div class="paragraph">
+<p>You can set the "Ignore Opposite Direction" parameter in the Lanes section to ignore all Events for vehicles moving in the direction opposite to the direction arrow in the Calibration tab (see <a href="#s_Lanes">Section 9.22, &#8220;Lanes&#8221;</a>).</p>
+</div>
 </li>
 <li>
 <p>When you have finished, click the <strong>Save</strong> button. Wait several seconds for the display to refresh automatically, which indicates that the RoadView recognition software is running again with the updated parameters.</p>
@@ -2757,9 +2745,6 @@ You can set the "Ignore Opposite Direction" parameter in the Lanes section to ig
 </li>
 <li>
 <p>New Firmware - enables you to update new firmware in the IZIC board</p>
-</li>
-</ul>
-</div>
 <div class="ulist disc">
 <ul class="disc">
 <li>
@@ -2767,6 +2752,9 @@ You can set the "Ignore Opposite Direction" parameter in the Lanes section to ig
 </li>
 <li>
 <p>Update Firmware - click this button to update the firmware using the file you chose</p>
+</li>
+</ul>
+</div>
 </li>
 </ul>
 </div>
@@ -2780,9 +2768,6 @@ You can set the "Ignore Opposite Direction" parameter in the Lanes section to ig
 <ul class="square">
 <li>
 <p><strong>Night Mode</strong></p>
-</li>
-</ul>
-</div>
 <div class="ulist disc">
 <ul class="disc">
 <li>
@@ -2790,9 +2775,6 @@ You can set the "Ignore Opposite Direction" parameter in the Lanes section to ig
 </li>
 <li>
 <p><u>Enable</u> - camera and external illuminator behavior are optimized for night-time recognition. Recommended use is for calibration.</p>
-</li>
-</ul>
-</div>
 <div class="ulist circle">
 <ul class="circle">
 <li>
@@ -2803,8 +2785,7 @@ You can set the "Ignore Opposite Direction" parameter in the Lanes section to ig
 </li>
 </ul>
 </div>
-<div class="ulist disc">
-<ul class="disc">
+</li>
 <li>
 <p><u>Auto</u> - automatically senses day/night, in order to decide whether to trigger an external illuminator, according to the Camera System&#8217;s location (as defined by the Latitude and Longitude parameters). For the Auto mode, additional parameters appear:</p>
 <div class="admonitionblock note">
@@ -2820,6 +2801,9 @@ You can set the "Ignore Opposite Direction" parameter in the Lanes section to ig
 </td>
 </tr>
 </table>
+</div>
+</li>
+</ul>
 </div>
 <div class="ulist circle">
 <ul class="circle">
@@ -2838,10 +2822,6 @@ You can set the "Ignore Opposite Direction" parameter in the Lanes section to ig
 </ul>
 </div>
 </li>
-</ul>
-</div>
-<div class="ulist square">
-<ul class="square">
 <li>
 <p><strong>Remember to click the Save button at the end of this section after making changes.</strong></p>
 </li>
@@ -2857,8 +2837,8 @@ You can set the "Ignore Opposite Direction" parameter in the Lanes section to ig
 <ul class="square">
 <li>
 <p>Mode</p>
-<div class="ulist">
-<ul>
+<div class="ulist disc">
+<ul class="disc">
 <li>
 <p><strong>Off</strong> - LEDs off</p>
 </li>
@@ -2871,10 +2851,6 @@ You can set the "Ignore Opposite Direction" parameter in the Lanes section to ig
 </ul>
 </div>
 </li>
-</ul>
-</div>
-<div class="ulist square">
-<ul class="square">
 <li>
 <p><strong>Intensity</strong> - light intensity in percent, where 0 is no light, and 100 is maximum light</p>
 </li>
