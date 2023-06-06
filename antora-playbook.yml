@@ -20,7 +20,10 @@ asciidoc:
     sectnumlevels: 4
     toclevels: 3
     xrefstyle: full
-        
+    short-compname: INEX@
+    med-compname: INEX/TECH@
+    long-compname: INEX Technologies@
+    long-possess-compname: INEX Technologies'@
 
 ui:
   bundle:
