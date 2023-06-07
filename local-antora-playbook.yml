@@ -19,10 +19,15 @@ asciidoc:
     sectnumlevels: 4
     toclevels: 3
     xrefstyle: full
-    short-compname: INEX@
-    med-compname: INEX/TECH@
-    long-compname: INEX Technologies@
-    long-possess-compname: INEX Technologies'@
+    compname-short: INEX@
+    compname-med: INEX/TECH@
+    compname-long: INEX Technologies@
+    compname-possess: INEX Technologies'@
+    software-server: IZCentral@
+    software-cloud: IZCloud@
+    software-discovery: IZ Discovery@
+    software-discovery-nospace: IZDiscovery@
+    software-ALPR: RoadView
 
 ui:
   bundle:
