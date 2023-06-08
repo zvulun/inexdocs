@@ -38,7 +38,11 @@ asciidoc:
     software-cloud: IZCloud@
     software-discovery: IZ Discovery@
     software-discovery-nospace: IZDiscovery@
-    software-ALPR: RoadView
+    software-ALPR: RoadView@
+    software-monitoring: IZMonitoring Server@
+    hw-iocontroller: IZIO@
+    hw-webrelay-single: IZ-REM-RELAY@
+    hw-webrelay-quad: IZ-REM-RELAY-4@
 
 ui:
   bundle:
