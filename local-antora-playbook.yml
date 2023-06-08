@@ -40,8 +40,9 @@ asciidoc:
     software-ALPR: RoadView@
     software-monitoring: IZMonitoring Server@
     hw-iocontroller: IZIO@
-    hw-webrelay-single: IZ-REM-RELAY@
     hw-webrelay-quad: IZ-REM-RELAY-4@
+    hw-webrelay-single: IZ-REM-RELAY@
+
 ui:
   bundle:
     url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable
