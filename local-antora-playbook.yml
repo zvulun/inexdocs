@@ -20,7 +20,7 @@ asciidoc:
     toclevels: 3
     xrefstyle: full
     #If you add an attribute to this playbook,
-    #be sure to add it to the local-antora-playbook file.
+    #be sure to add it to the (non-local) antora-playbook file.
     #Put attributes whose string values have letters in
     #common with other similar values in order of longest
     #value to shortest value. This will prevent the replacement
