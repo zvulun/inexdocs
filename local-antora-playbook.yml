@@ -19,16 +19,25 @@ asciidoc:
     sectnumlevels: 4
     toclevels: 3
     xrefstyle: full
-    compname-short: INEX@
-    compname-med: INEX/TECH@
-    compname-long: INEX Technologies@
+    #If you add an attribute to this playbook,
+    #be sure to add it to the local-antora-playbook file.
+    #Put attributes whose string values have letters in
+    #common with other similar values in order of longest
+    #value to shortest value. This will prevent the replacement
+    #macros from replacing the shorter strings that are within
+    #the longer strings.
+    #The @ at the end of each value indicates that
+    #these are soft-set attributes, which can
+    #be overridden in individual files if needed.
     compname-possess: INEX Technologies'@
+    compname-long: INEX Technologies@
+    compname-med: INEX/TECH@
+    compname-short: INEX@
     software-server: IZCentral@
     software-cloud: IZCloud@
     software-discovery: IZ Discovery@
     software-discovery-nospace: IZDiscovery@
     software-ALPR: RoadView
-
 ui:
   bundle:
     url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable
