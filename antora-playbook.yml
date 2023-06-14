@@ -30,6 +30,12 @@ asciidoc:
     #The @ at the end of each value indicates that
     #these are soft-set attributes, which can
     #be overridden in individual files if needed.
+
+    #if you add any attributes to this list
+    #be sure to add them to the text file used to
+    #replace strings with attributes, accessed by the
+    #zAsciiDocMultipleNameReplace macro
+
     compname-possess: INEX Technologies'@
     compname-long: INEX Technologies@
     compname-med: INEX/TECH@
@@ -43,6 +49,13 @@ asciidoc:
     hw-iocontroller: IZIO@
     hw-webrelay-quad: IZ-REM-RELAY-4@
     hw-webrelay-single: IZ-REM-RELAY@
+
+    #if you add any attributes to this list above
+    #be sure to add them to the text file used to
+    #replace strings with attributes, accessed by the
+    #zAsciiDocMultipleNameReplace macro
+
+
 
 
 ui:
