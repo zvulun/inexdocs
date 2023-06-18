@@ -43,6 +43,7 @@ asciidoc:
     software-cloud: IZCloud@
     software-discovery: IZ Discovery@
     software-discovery-nospace: IZDiscovery@
+    software-ALPR-long: RoadView ALPR@
     software-ALPR: RoadView@
     software-monitoring: IZMonitoring Server@
     hw-iocontroller: IZIO@
