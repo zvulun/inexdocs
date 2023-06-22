@@ -4,8 +4,8 @@
       <a class="navbar-item logo" href="{{siteRootPath}}/index.html"><img src="{{{uiRootPath}}}/img/inexlogo.png" alt="Logo" width="150"></a>
       <a class="navbar-item" href="{{siteRootPath}}/index.html">{{site.title}}</a>
       {{#if env.SITE_SEARCH_PROVIDER}}
-      <div align="middle" class="navbar-item search hide-for-print">
-        <div id="search-field" class="field">
+      <div class="navbar-item search hide-for-print">
+        <div align="middle" id="search-field" class="field">
           <input id="search-input" type="text" placeholder="Search the docs"{{#if page.home}} autofocus{{/if}}>
         </div>
       </div>
