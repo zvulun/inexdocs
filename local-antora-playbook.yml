@@ -22,15 +22,6 @@ asciidoc:
     #If you add an attribute to this playbook,
     #be sure to add it to the (non-local) antora-playbook file.
 
-    #the following attributes are used
-    #in ifeval statements to determine
-    #which xref link to use, depending
-    #on which document you are generating
-
-    :XRef-RVLoginLogout: RoadView ALPR@
-
-
-
     #Put attributes whose string values have letters in
     #common with other similar values in order of longest
     #value to shortest value. This will prevent the replacement
