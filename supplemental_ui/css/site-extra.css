@@ -26,4 +26,12 @@ table, th, td {
   border: 1px solid black !important;
 }
 
- 
+/* from ArchitectOnFire - how to center the search box*/
+.navbar-brand .navbar-item.search {
+    -webkit-box-flex: 1;
+    -ms-flex: auto;
+    flex: auto;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: center;
+}
