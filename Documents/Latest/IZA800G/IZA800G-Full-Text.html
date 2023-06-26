@@ -7,6 +7,7 @@
     <meta name="generator" content="Antora 3.1.3">
 <link rel="stylesheet" href="../../../_/css/site.css">
 <link rel="stylesheet" href="../../../_/css/site-extra.css">
+ <link rel="stylesheet" href="../../../_/css/site-extra.css">
     <script>var uiRootPath = '../../../_'</script>
   </head>
   <body class="article">
@@ -17,7 +18,7 @@
       <a class="navbar-item" href="../../../index.html">Documents</a>
       <div class="navbar-item search hide-for-print">
         <div id="search-field" class="field">
-          <input style="text-align: center;" id="search-input" type="text" placeholder="Search the docs"></p>
+          <input id="search-input" type="text" placeholder="Search the docs">
         </div>
       </div>
       <button class="navbar-burger" data-target="topbar-nav">
@@ -376,7 +377,6 @@
 <ul class="sectlevel2">
 <li><a href="#_who_should_read_this_document">1.1. Who Should Read this Document</a></li>
 <li><a href="#s_Related-Documents">1.2. Recommended Reading/Related Documents</a></li>
-<li><a href="#_support">1.3. Support</a></li>
 </ul>
 </li>
 <li><a href="#_quick_installation_overview">2. Quick Installation Overview</a></li>
@@ -425,13 +425,13 @@
 <li><a href="#ps_Recognize-IZ-Discovery">8. Recognizing Devices with IZ Discovery</a>
 <ul class="sectlevel2">
 <li><a href="#_installing_and_using_iz_discovery">8.1. Installing and Using IZ Discovery</a></li>
-<li><a href="#s_Changing-IP-Address">8.2. Changing a Device&#8217;s IP Address and Network Settings</a></li>
+<li><a href="#s_Changing-a-Device-s-IP-Address-and-Network-Settings">8.2. Changing a Device&#8217;s IP Address and Network Settings</a></li>
 </ul>
 </li>
-<li><a href="#_configuring_a_camera">9. Configuring a Camera</a>
+<li><a href="#ps_Configuring-a-Camera">9. Configuring a Camera</a>
 <ul class="sectlevel2">
-<li><a href="#ps_Logging-In-to-Camera">9.1. Logging In to the Camera</a></li>
-<li><a href="#ps_Changing-Camera-IP">9.2. Changing a Camera&#8217;s IP Address</a></li>
+<li><a href="#ps_Logging-In-to-the-Camera">9.1. Logging In to the Camera</a></li>
+<li><a href="#ps_Changing-a-Camera-s-IP-Address">9.2. Changing a Camera&#8217;s IP Address</a></li>
 <li><a href="#_logging_out_of_the_camera">9.3. Logging Out of the Camera</a></li>
 </ul>
 </li>
@@ -463,7 +463,7 @@
 <li><a href="#_legal_disclaimer">14.3. Legal Disclaimer</a></li>
 <li><a href="#_regulatory_notices">14.4. Regulatory Notices</a></li>
 <li><a href="#_training">14.5. Training</a></li>
-<li><a href="#_support_2">14.6. Support</a></li>
+<li><a href="#_support">14.6. Support</a></li>
 </ul>
 </li>
 <li><a href="#_appendix_a_document_change_history">15. Appendix A - Document Change History</a></li>
@@ -566,12 +566,6 @@
 </tbody>
 </table>
 </div>
-<div class="sect2">
-<h3 id="_support"><a class="anchor" href="#_support"></a>1.3. Support</h3>
-<div class="paragraph">
-<p>If you have any questions, please contact our support team via our <a href="http://www.inextechnologies.com" target="read-later">INEX Technologies Website</a>.</p>
-</div>
-</div>
 </div>
 </div>
 <div class="sect1">
@@ -598,7 +592,7 @@
 <p>Use IZ Discovery to find the initial IP Addresses of the cameras connected to your network - see <a href="#ps_Recognize-IZ-Discovery">Section 8, &#8220;Recognizing Devices with IZ Discovery&#8221;</a> .</p>
 </li>
 <li>
-<p>Log into each camera, and change its IP address according to the requirements of your network. Use fixed addresses. Record these new addresses for use in RoadView configuration - see <a href="#ps_Logging-In-to-Camera">Section 9.1, &#8220;Logging In to the Camera&#8221;</a> and <a href="#ps_Changing-Camera-IP">Section 9.2, &#8220;Changing a Camera&#8217;s IP Address&#8221;</a> .</p>
+<p>Log into each camera, and change its IP address according to the requirements of your network. Use fixed addresses. Record these new addresses for use in RoadView configuration - see <a href="#ps_Logging-In-to-the-Camera">Section 9.1, &#8220;Logging In to the Camera&#8221;</a> and <a href="#ps_Changing-a-Camera-s-IP-Address">Section 9.2, &#8220;Changing a Camera&#8217;s IP Address&#8221;</a> .</p>
 </li>
 <li>
 <p>Calibrate the cameras - see <a href="#s_Calibrating-Cameras">Section 10, &#8220;Calibrating the Cameras&#8221;</a> .</p>
@@ -2384,7 +2378,9 @@ LAN cable: 5-8 kgf.cm / 0.49-0.78 N.m.</p>
 <i class="fa icon-important" title="Important"></i>
 </td>
 <td class="content">
-If any device on your network is connected via wireless, IZ Discovery will not recognize the device. In addition, if the computer running IZ Discovery is connected via wireless, you will not see any devices displayed.
+<div class="paragraph">
+<p>If any device on your network is connected via wireless, IZ Discovery will not recognize the device. In addition, if the computer running IZ Discovery is connected via wireless, you will not see any devices displayed.</p>
+</div>
 </td>
 </tr>
 </table>
@@ -2392,7 +2388,7 @@ If any device on your network is connected via wireless, IZ Discovery will not r
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Download the IZ Discovery software components (see <a href="#s_Related-Documents">Section 1.2, &#8220;Recommended Reading/Related Documents&#8221;</a>)</p>
+<p>Download the IZ Discovery software (see <a href="#s_Related-Documents">Section 1.2, &#8220;Recommended Reading/Related Documents&#8221;</a>)</p>
 </li>
 <li>
 <p>Run IZ Discovery</p>
@@ -2408,13 +2404,13 @@ If any device on your network is connected via wireless, IZ Discovery will not r
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
-<p>Scroll down to find the device/camera you are interested in. You can double-click to view/edit a specific device&#8217;s IP address parameters (see <a href="#s_Changing-IP-Address">Section 8.2, &#8220;Changing a Device&#8217;s IP Address and Network Settings&#8221;</a>).</p>
+<p>Scroll down to find the device you are interested in. You can double-click to view/edit a specific device&#8217;s IP address parameters (see <a href="#s_Changing-a-Device-s-IP-Address-and-Network-Settings">Section 8.2, &#8220;Changing a Device&#8217;s IP Address and Network Settings&#8221;</a>).</p>
 </li>
 <li>
 <p>Click Clear List to refresh the discovery process.</p>
 <div id="f_IZ-Discovery-Utility" class="imageblock">
 <div class="content">
-<img src="_images/image41.PNG" alt="image" width="541" height="362">
+<img src="../_images/RoadViewALPR/RV-1_9-FIG-012b_IZDiscovery6020MainScreen.png" alt="IZ Disovery Main Screen" width="503" height="337">
 </div>
 <div class="title">Figure 39. IZ Discovery Utility</div>
 </div>
@@ -2427,10 +2423,13 @@ If any device on your network is connected via wireless, IZ Discovery will not r
 <div class="ulist">
 <ul>
 <li>
-<p>Reset the device by shutting off power, waiting 5 seconds, and reapply power</p>
+<p>Press the device&#8217;s reset button (if available)</p>
 </li>
 <li>
-<p>Check the LAN cable connected between your laptop and the network. Replace it with another cable and try to run IZ Discovery again</p>
+<p>Reset the device by shutting off power/removing the LAN cable, waiting 5 seconds, and reapplying power</p>
+</li>
+<li>
+<p>Check the LAN cable connected between your laptop and the network, and the LAN cable connected between the device and the LAN switch. Replace the cable(s) and try to run IZ Discovery again.</p>
 </li>
 </ul>
 </div>
@@ -2439,12 +2438,12 @@ If any device on your network is connected via wireless, IZ Discovery will not r
 </div>
 </div>
 <div class="sect2">
-<h3 id="s_Changing-IP-Address"><a class="anchor" href="#s_Changing-IP-Address"></a>8.2. Changing a Device&#8217;s IP Address and Network Settings</h3>
-<div class="imageblock">
+<h3 id="s_Changing-a-Device-s-IP-Address-and-Network-Settings"><a class="anchor" href="#s_Changing-a-Device-s-IP-Address-and-Network-Settings"></a>8.2. Changing a Device&#8217;s IP Address and Network Settings</h3>
+<div id="f_Changing-the-Device-s-Network-Settings" class="imageblock">
 <div class="content">
-<img src="_images/image42.png" alt="image" width="227" height="230">
+<img src="../_images/RoadViewALPR/RV-1_9-FIG-013b_ChangeIPUnCheckDHCP.png" alt="IZ Discovery Network Setting Dialog" width="226" height="230">
 </div>
-<div class="title">Figure 40. Changing Device&#8217;s Network Settings</div>
+<div class="title">Figure 40. Changing the Device&#8217;s Network Settings</div>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -2454,16 +2453,24 @@ If any device on your network is connected via wireless, IZ Discovery will not r
 </td>
 <td class="content">
 <div class="paragraph">
-<p>The device&#8217;s IP Address cannot be set to 10.10.2.xx or 10.10.3.xx</p>
+<p>The device&#8217;s IP Address <u>cannot</u> be set to 10.10.2.xx or 10.10.3.xx</p>
 </div>
 <div class="paragraph">
-<p><strong>It is highly recommended to use a fixed IP address (not DHCP)</strong>. A fixed IP address enables you to access a device using the same URL every time, even after unexpected power outages (see <a href="#ps_Logging-In-to-Camera">Section 9.1, &#8220;Logging In to the Camera&#8221;</a>).</p>
+<p><strong><u>It is highly recommended to use a fixed IP address (not DHCP)</u></strong>. A fixed IP address enables you to access the computer using the same URL every time, even after unexpected power outages (see
+<a href="#ps_Logging-In-to-the-Camera">Section 9.1, &#8220;Logging In to the Camera&#8221;</a>
+).</p>
 </div>
 <div class="paragraph">
-<p>A dynamic IP address may change upon device reboot. Before opening the device&#8217;s web interface, you will have to find the current IP address of the device using IZ Discovery.</p>
+<p>A dynamic IP address may change upon device reboot. Before opening the web interface, you will have to find the current IP address of the device using IZ Discovery.</p>
 </div>
 <div class="paragraph">
 <p>If you want to copy the IP address (for login to the device) you will need to uncheck the DHCP checkbox momentarily to make the address field accessible.</p>
+</div>
+<div class="paragraph">
+<p>Be sure to define IP addresses for each camera in the Camera System, plus the IP address of the onboard computer. It is recommended to use sequential IP addresses; for example: 192.168.5.64, 65, 66</p>
+</div>
+<div class="paragraph">
+<p>You can also log in to each camera&#8217;s configuration application to change its IP address (see <a href="#ps_Configuring-a-Camera">Section 9, &#8220;Configuring a Camera&#8221;</a>).</p>
 </div>
 </td>
 </tr>
@@ -2498,6 +2505,9 @@ If any device on your network is connected via wireless, IZ Discovery will not r
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
+<p><strong>Verify that the address is not used by any other device on the network</strong></p>
+</li>
+<li>
 <p>Be sure to uncheck the DHCP box</p>
 </li>
 <li>
@@ -2513,7 +2523,12 @@ If any device on your network is connected via wireless, IZ Discovery will not r
 <p>The change should be reflected in the main dialog. This can take about a minute until the IP is obtained. If you do not see the change after this time, close IZ Discovery, and then reopen it.</p>
 </li>
 <li>
-<p>Verify that the IP address parameters have been changed to the ones you wanted. If not, you will have to log into the device (see <a href="#ps_Logging-In-to-Camera">Section 9.1, &#8220;Logging In to the Camera&#8221;</a>), and change the IP address (see <a href="#ps_Changing-Camera-IP">Section 9.2, &#8220;Changing a Camera&#8217;s IP Address&#8221;</a>)</p>
+<p>Verify that the IP address parameters have been changed to the ones you wanted. If not, you will have to log into the device (see
+<a href="#ps_Logging-In-to-the-Camera">Section 9.1, &#8220;Logging In to the Camera&#8221;</a>
+)
+and change the IP address (see
+<a href="#ps_Changing-a-Camera-s-IP-Address">Section 9.2, &#8220;Changing a Camera&#8217;s IP Address&#8221;</a>
+).</p>
 </li>
 </ol>
 </div>
@@ -2521,13 +2536,13 @@ If any device on your network is connected via wireless, IZ Discovery will not r
 </div>
 </div>
 <div class="sect1">
-<h2 id="_configuring_a_camera"><a class="anchor" href="#_configuring_a_camera"></a>9. Configuring a Camera</h2>
+<h2 id="ps_Configuring-a-Camera"><a class="anchor" href="#ps_Configuring-a-Camera"></a>9. Configuring a Camera</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p><strong><em>\{Zvulun: entire section could be a partial}</em></strong></p>
 </div>
 <div class="sect2">
-<h3 id="ps_Logging-In-to-Camera"><a class="anchor" href="#ps_Logging-In-to-Camera"></a>9.1. Logging In to the Camera</h3>
+<h3 id="ps_Logging-In-to-the-Camera"><a class="anchor" href="#ps_Logging-In-to-the-Camera"></a>9.1. Logging In to the Camera</h3>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -2604,7 +2619,7 @@ The Administrator user name (root) cannot be changed, and the Administrator pass
 </div>
 </div>
 <div class="sect2">
-<h3 id="ps_Changing-Camera-IP"><a class="anchor" href="#ps_Changing-Camera-IP"></a>9.2. Changing a Camera&#8217;s IP Address</h3>
+<h3 id="ps_Changing-a-Camera-s-IP-Address"><a class="anchor" href="#ps_Changing-a-Camera-s-IP-Address"></a>9.2. Changing a Camera&#8217;s IP Address</h3>
 <div class="admonitionblock note">
 <table>
 <tr>
@@ -3003,7 +3018,7 @@ It is highly recommended to record the camera&#8217;s IP address and port number
 <p>TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE PRODUCT DESCRIBED, WITH ITS HARDWARE, SOFTWARE AND FIRMWARE, IS PROVIDED "AS IS", WITH ALL FAULTS AND ERRORS, AND OUR COMPANY MAKES NO WARRANTIES, EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION, MERCHANTABILITY, SATISFACTORY QUALITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT OF THIRD PARTY. IN NO EVENT WILL OUR COMPANY, ITS DIRECTORS, OFFICERS, EMPLOYEES, OR AGENTS BE LIABLE TO YOU FOR ANY SPECIAL, CONSEQUENTIAL, INCIDENTAL, OR INDIRECT DAMAGES, INCLUDING, AMONG OTHERS, DAMAGES FOR LOSS OF BUSINESS PROFITS, BUSINESS INTERRUPTION, OR LOSS OF DATA OR DOCUMENTATION, IN CONNECTION WITH THE USE OF THIS PRODUCT, EVEN IF OUR COMPANY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.</p>
 </div>
 <div class="paragraph">
-<p>THE USE OF ANY INEX TECHNOLOGIES' SOFTWARE PRODUCTS OR ANY OTHER SOFTWARE PRODUCTS REFERRED TO IN THIS DOCUMENT WITH INTERNET ACCESS SHALL BE USED WHOLLY AT YOUR OWN RISK. INEX TECHNOLOGIES DOES NOT TAKE ANY RESPONSIBILITY FOR ABNORMAL OPERATION, PRIVACY LEAKAGE OR ANY OTHER DAMAGES RESULTING FROM CYBER ATTACK, HACKER ATTACK, VIRUS INFECTION OR ANY OTHER INTERNET SECURITY RISKS.</p>
+<p>THE USE OF ANY INEX Technologies' SOFTWARE PRODUCTS OR ANY OTHER SOFTWARE PRODUCTS REFERRED TO IN THIS DOCUMENT WITH INTERNET ACCESS SHALL BE USED WHOLLY AT YOUR OWN RISK. INEX TECHNOLOGIES DOES NOT TAKE ANY RESPONSIBILITY FOR ABNORMAL OPERATION, PRIVACY LEAKAGE OR ANY OTHER DAMAGES RESULTING FROM CYBER ATTACK, HACKER ATTACK, VIRUS INFECTION OR ANY OTHER INTERNET SECURITY RISKS.</p>
 </div>
 <div class="paragraph">
 <p>For details, see the INEX Software End User License Agreement (see <a href="#s_Related-Documents">Section 1.2, &#8220;Recommended Reading/Related Documents&#8221;</a>).</p>
@@ -3054,7 +3069,7 @@ It is highly recommended to record the camera&#8217;s IP address and port number
 </div>
 </div>
 <div class="sect2">
-<h3 id="_support_2"><a class="anchor" href="#_support_2"></a>14.6. Support</h3>
+<h3 id="_support"><a class="anchor" href="#_support"></a>14.6. Support</h3>
 <div class="paragraph">
 <p>If you have any questions, please contact our support team via our <a href="http://www.inextechnologies.com" target="read-later">INEX Technologies Website</a>.</p>
 </div>
