@@ -53,6 +53,14 @@ asciidoc:
     illum-strobe: IZS@
     illum-non-strobe: IZL@
 
+
+    :eyesafetystandard-1: IEC62471 Group 1@
+    :recognitionpixels: 150@
+    :resolutionwidth: 1920@
+    :FOVplatewidths: 12.8@
+    :platewidthfeet: 1@
+    :capturelinefeet: 12@
+    :capturelinemeters: 3.7@
     #if you add any attributes to this list above
     #be sure to add them to the text file used to
     #replace strings with attributes, accessed by the
