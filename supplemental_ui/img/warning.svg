@@ -2,7 +2,7 @@
 <svg
    viewBox="0 0 512 512"
    version="1.1"
-   id="svg12"
+   id="svg4"
    sodipodi:docname="inkscape_triangle-exclamation-solid.svg"
    inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
@@ -11,45 +11,28 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
   <defs
-     id="defs16">
-    <filter
-       inkscape:label="Fill Background"
-       inkscape:menu="Fill and Transparency"
-       inkscape:menu-tooltip="Adds a colorizable opaque background"
-       style="color-interpolation-filters:sRGB;"
-       id="filter206"
-       x="0"
-       y="0"
-       width="1"
-       height="1">
-      <feFlood
-         result="result1"
-         flood-color="rgb(200,55,55)"
-         flood-opacity="1"
-         id="feFlood194" />
-      <feImage
-         xlink:href=""
-         result="result2"
-         id="feImage196" />
-      <feBlend
-         result="result4"
-         in2="result1"
-         mode="multiply"
-         id="feBlend198" />
-      <feMerge
-         result="result3"
-         id="feMerge204">
-        <feMergeNode
-           in="result1"
-           id="feMergeNode200" />
-        <feMergeNode
-           in="SourceGraphic"
-           id="feMergeNode202" />
-      </feMerge>
-    </filter>
+     id="defs8">
+    <linearGradient
+       id="linearGradient847"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="0"
+         id="stop845" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient847"
+       id="linearGradient849"
+       x1="0.036909979"
+       y1="256"
+       x2="512.00026"
+       y2="256"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.73855999,0,0,0.85061638,65.634016,4.770122)" />
   </defs>
   <sodipodi:namedview
-     id="namedview14"
+     id="namedview6"
      pagecolor="#ffffff"
      bordercolor="#000000"
      borderopacity="0.25"
@@ -58,25 +41,23 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      showgrid="false"
-     inkscape:zoom="1.5390625"
-     inkscape:cx="23.390863"
-     inkscape:cy="256"
+     inkscape:zoom="1.3435675"
+     inkscape:cx="221.42542"
+     inkscape:cy="256.03477"
      inkscape:window-width="1920"
      inkscape:window-height="986"
      inkscape:window-x="-11"
      inkscape:window-y="-11"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg12" />
+     inkscape:current-layer="svg4" />
   <!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-  <path
-     d="m 256,32 c 14.2,0 27.3,7.5 34.5,19.8 l 216,368 c 7.3,12.4 7.3,27.7 0.2,40.1 C 499.6,472.3 486.3,480 472,480 H 40 c -14.3,0 -27.6,-7.7 -34.7,-20.1 -7.1,-12.4 -7,-27.8 0.2,-40.1 l 216,-368 C 228.7,39.5 241.8,32 256,32 Z m 0,128 c -13.3,0 -24,10.7 -24,24 v 112 c 0,13.3 10.7,24 24,24 13.3,0 24,-10.7 24,-24 V 184 c 0,-13.3 -10.7,-24 -24,-24 z m 32,224 a 32,32 0 1 0 -64,0 32,32 0 1 0 64,0 z"
-     id="path10"
-     style="opacity:0.36;fill:#fcfcfc;fill-opacity:1;filter:url(#filter206)"
-     inkscape:highlight-color="#e2e2e2"
-     transform="matrix(0.6535285,0,0,0.74764322,101.37319,64.603332)" />
   <path
      fill="#000000"
      opacity="0.2"
-     d="m 248.20304,18.395943 c -137,0 -247.99999574,111.000007 -247.99999574,248.000007 0,137 110.99999574,248 247.99999574,248 137,0 248,-111 248,-248 0,-137 -111,-248.000007 -248,-248.000007 z"
-     id="path2283" />
+     d="m 252.75127,9.939086 c -137.00001,0 -248.0000105,111.000004 -248.0000105,247.999994 0,137 111.0000005,248 248.0000105,248 137,0 248,-111 248,-248 0,-136.99999 -111,-247.999994 -248,-247.999994 z"
+     id="path851" />
+  <path
+     d="m 254.70537,31.989847 c 10.48755,0 20.16269,6.379623 25.48032,16.842205 L 439.71464,361.85888 c 5.39149,10.54764 5.39149,23.56207 0.14771,34.10972 -5.24377,10.54764 -15.06661,17.09738 -25.62803,17.09738 H 95.176414 c -10.561408,0 -20.384256,-6.54974 -25.628032,-17.09738 -5.243776,-10.54765 -5.16992,-23.64715 0.147713,-34.10972 L 229.22505,48.832052 c 5.31764,-10.462582 14.99276,-16.842205 25.48032,-16.842205 z m 0,108.878893 c -9.82285,0 -17.72544,9.1016 -17.72544,20.4148 v 95.26903 c 0,11.31319 7.90259,20.41479 17.72544,20.41479 9.82285,0 17.72544,-9.1016 17.72544,-20.41479 v -95.26903 c 0,-11.3132 -7.90259,-20.4148 -17.72544,-20.4148 z m 23.63392,190.53807 a 23.63392,27.219725 0 1 0 -47.26784,0 23.63392,27.219725 0 1 0 47.26784,0 z"
+     id="path2"
+     style="display:inline;fill:url(#linearGradient849);fill-opacity:1;stroke-width:0.79261" />
 </svg>
