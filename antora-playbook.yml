@@ -53,14 +53,16 @@ asciidoc:
     hw-webrelay-single: IZ-REM-RELAY@
     illum-strobe: IZS@
     illum-non-strobe: IZL@
+    generic-camera-name: ALPR Camera System@
 
-    :eyesafetystandard-1: IEC62471 Group 1@
-    :recognitionpixels: 150@
-    :resolutionwidth: 1920@
-    :FOVplatewidths: 12.8@
-    :platewidthfeet: 1@
-    :capturelinefeet: 12@
-    :capturelinemeters: 3.7@
+
+    eyesafetystandard-1: IEC62471 Group 1@
+    recognitionpixels: 150@
+    resolutionwidth: 1920@
+    FOVplatewidths: 12.8@
+    platewidthfeet: 1@
+    capturelinefeet: 12@
+    capturelinemeters: 3.7@
 
     #if you add any attributes to this list above
     #be sure to add them to the text file used to
