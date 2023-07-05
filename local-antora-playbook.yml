@@ -22,6 +22,13 @@ asciidoc:
     #If you add an attribute to this playbook,
     #be sure to add it to the (non-local) antora-playbook file.
 
+    #These attributes are not for use in the
+    #zAsciiDocMultipleNameReplace macro; they are
+    #for reuse in the specification tables
+    #on rows that might change
+    lpr-analytics: Plate Recognition, State of Issue, Type
+    vehicle-analytics: Vehicle Detection, Classification, Color, Make; Vehicle Without Plate
+
     #Put attributes whose string values have letters in
     #common with other similar values in order of longest
     #value to shortest value. This will prevent the replacement
