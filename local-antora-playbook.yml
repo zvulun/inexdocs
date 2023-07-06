@@ -28,6 +28,7 @@ asciidoc:
     #on rows that might change
     lpr-analytics: Plate Recognition, State of Issue, Type
     vehicle-analytics: Vehicle Detection, Classification, Color, Make; Vehicle Without Plate
+    iza-weight: 9.0 lbs (4.1 kg)
 
     #Put attributes whose string values have letters in
     #common with other similar values in order of longest
