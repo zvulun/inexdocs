@@ -18,7 +18,7 @@ asciidoc:
     sectnums: all
     sectnumlevels: 4
     toclevels: 3
-    xrefstyle: full
+    xrefstyle: short
     #If you add an attribute to this playbook,
     #be sure to add it to the (non-local) antora-playbook file.
 
