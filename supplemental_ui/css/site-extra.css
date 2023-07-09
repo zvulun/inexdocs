@@ -22,12 +22,13 @@
 }
 
 /* this controls all the table borders  */
-table, th, td {
+/* table, th, td {
   border: 1px solid black !important;
 }
+*/
 
-/* From eskwayrd and mojavelinux
-/* this is the role used to center a table
+/* From eskwayrd and mojavelinux */
+/* this is the role used to center a table */
 
 .center {
     margin-left: auto;
