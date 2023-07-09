@@ -29,10 +29,10 @@ table, th, td {
 /* From eskwayrd and mojavelinux
 /* this is the role used to center a table
 
- .center-table {
+ .center {
     margin-left: auto;
     margin-right: auto;
-
+}
 
 /* from ArchitectOnFire - how to center the search box*/
 .navbar-brand .navbar-item.search {
