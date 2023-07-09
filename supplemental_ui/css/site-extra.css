@@ -26,6 +26,14 @@ table, th, td {
   border: 1px solid black !important;
 }
 
+/* From eskwayrd and mojavelinux
+/* this is the role used to center a table
+
+ .center {
+    margin-left: auto;
+    margin-right: auto;
+
+
 /* from ArchitectOnFire - how to center the search box*/
 .navbar-brand .navbar-item.search {
     -webkit-box-flex: 1;
