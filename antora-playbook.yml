@@ -59,6 +59,7 @@ asciidoc:
     hw-iocontroller: IZIO@
     hw-webrelay-quad: IZ-REM-RELAY-4@
     hw-webrelay-single: IZ-REM-RELAY@
+    hw-indoor-processor: IZIDPUG@
     illum-strobe: IZS@
     illum-non-strobe: IZL@
     generic-camera-name: ALPR Camera System@
