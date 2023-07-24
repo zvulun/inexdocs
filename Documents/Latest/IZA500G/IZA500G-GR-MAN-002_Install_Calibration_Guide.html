@@ -8,7 +8,6 @@
 <link rel="stylesheet" href="../../../_/css/site.css">
 <link rel="stylesheet" href="../../../_/css/site-extra.css">
  <link rel="stylesheet" href="../../../_/css/site-extra.css">
-    <script>var uiRootPath = '../../../_'</script>
   </head>
   <body class="article">
 <header class="header">
@@ -545,8 +544,12 @@
 <td class="tableblock halign-left valign-top"><p class="tableblock">IZ Discovery Utility software components</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../RoadViewALPR/DocList.html" class="xref page">RV-ALPR-MAN-001</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">RoadView ALPR User Guide</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../IZDiscovery/DocList.html" class="xref page">IZDISCOVERY-IZD-MAN-001</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">IZ Discovery User Guide</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../RoadViewALPR/DocList.html" class="xref page">RoadView documentation</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(Depends on version)</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../EULA/DocList.html" class="xref page">EULA-400-DOC-001</a></p></td>
@@ -777,7 +780,7 @@ illuminators project different light intensities in a sequence (also called mult
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-middle" rowspan="2"><p class="tableblock">Supported Analytics (see the <a href="../RoadViewALPR/DocList.html" class="xref page">Analytics Data Sheet</a> for details)</p></td>
+<td class="tableblock halign-left valign-middle" rowspan="2"><p class="tableblock">Supported Analytics</p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock">LPR Analytics</p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock">Plate Recognition, State of Issue, Type</p></td>
 </tr>
@@ -956,7 +959,7 @@ illuminators project different light intensities in a sequence (also called mult
 <td class="tableblock halign-left valign-middle"><p class="tableblock">RTSP Protocol</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-middle" rowspan="2"><p class="tableblock">Supported Protocols (for additional protocols, see the <a href="../RoadViewALPR/DocList.html" class="xref page"> RoadView ALPR User Guide</a>)</p></td>
+<td class="tableblock halign-left valign-middle" rowspan="2"><p class="tableblock">Supported Protocols (for additional protocols, see the <a href="../RoadViewALPR/DocList.html" class="xref page"> RoadView documentation</a>)</p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock">INEX HTTP API</p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock">LPR Events are reported via protocols such as the INEX HTTP API protocol. Each LPR Event includes metadata and associated images.</p></td>
 </tr>
@@ -1151,7 +1154,7 @@ illuminators project different light intensities in a sequence (also called mult
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-middle" rowspan="2"><p class="tableblock">Supported Analytics (see the <a href="../RoadViewALPR/DocList.html" class="xref page">Analytics Data Sheet</a> for details)</p></td>
+<td class="tableblock halign-left valign-middle" rowspan="2"><p class="tableblock">Supported Analytics</p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock">LPR Analytics</p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock">Plate Recognition, State of Issue, Type</p></td>
 </tr>
@@ -1285,7 +1288,7 @@ illuminators project different light intensities in a sequence (also called mult
 <td class="tableblock halign-left valign-middle"><p class="tableblock">RTSP Protocol</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-middle" rowspan="2"><p class="tableblock">Supported Protocols (for additional protocols, see the <a href="../RoadViewALPR/DocList.html" class="xref page"> RoadView ALPR User Guide</a>)</p></td>
+<td class="tableblock halign-left valign-middle" rowspan="2"><p class="tableblock">Supported Protocols (for additional protocols, see the <a href="../RoadViewALPR/DocList.html" class="xref page"> RoadView documentation</a>)</p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock">INEX HTTP API</p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock">LPR Events are reported via protocols such as the INEX HTTP API protocol. Each LPR Event includes metadata and associated images.</p></td>
 </tr>
@@ -2181,168 +2184,13 @@ guides. If you need to use an external illuminator, see the <a href="https://dri
 <div class="sect2">
 <h3 id="s_Installing-and-Using-IZ-Discovery"><a class="anchor" href="#s_Installing-and-Using-IZ-Discovery"></a>8.1. Installing and Using IZ Discovery</h3>
 <div class="paragraph">
-<p>The IZ Discovery utility discovers all active devices connected to the network, and displays a list of their network parameters. These devices can include cameras and computers.</p>
-</div>
-<div class="admonitionblock important">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-important" title="Important"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>If any device on your network is connected via wireless, IZ Discovery will not recognize the device. In addition, if the computer running IZ Discovery is connected via wireless, you will not see any devices displayed.</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Download the IZ Discovery software (see <a href="#s_Related-Documents">Section 1.2</a>)</p>
-</li>
-<li>
-<p>Run IZ Discovery</p>
-</li>
-<li>
-<p>When IZ Discovery first runs, you may see a Windows security warning. If so, click Run.</p>
-</li>
-<li>
-<p>If you see a message related to the Windows firewall, click Allow.</p>
-</li>
-<li>
-<p>IZ Discovery will start and display a list of devices on the network, according to their serial numbers (see <a href="#f_IZ-Discovery-Utility">Figure 20</a>).</p>
-<div class="olist loweralpha">
-<ol class="loweralpha" type="a">
-<li>
-<p>Scroll down to find the device you are interested in. You can double-click to view/edit a specific device&#8217;s IP address parameters (see <a href="#s_Changing-a-Device-s-IP-Address-and-Network-Settings">Section 8.2</a>).</p>
-</li>
-<li>
-<p>Click Clear List to refresh the discovery process.</p>
-<div id="f_IZ-Discovery-Utility" class="imageblock">
-<div class="content">
-<img src="../_images/IZDiscovery/RV-1_9-FIG-012b_IZDiscovery6020MainScreen.png" alt="IZ Disovery Main Screen" width="503" height="337">
-</div>
-<div class="title">Figure 20. IZ Discovery Utility</div>
-</div>
-</li>
-</ol>
-</div>
-</li>
-<li>
-<p>If IZ Discovery does not recognize a device:</p>
-<div class="ulist">
-<ul>
-<li>
-<p>Press the device&#8217;s reset button (if available)</p>
-</li>
-<li>
-<p>Reset the device by shutting off power/removing the LAN cable, waiting 5 seconds, and reapplying power</p>
-</li>
-<li>
-<p>Check the LAN cable connected between your laptop and the network, and the LAN cable connected between the device and the LAN switch. Replace the cable(s) and try to run IZ Discovery again.</p>
-</li>
-</ul>
-</div>
-</li>
-</ol>
+<p>See the IZ Discovery User Guide (see <a href="#s_Related-Documents">Section 1.2</a>).</p>
 </div>
 </div>
 <div class="sect2">
 <h3 id="s_Changing-a-Device-s-IP-Address-and-Network-Settings"><a class="anchor" href="#s_Changing-a-Device-s-IP-Address-and-Network-Settings"></a>8.2. Changing a Device&#8217;s IP Address and Network Settings</h3>
-<div id="f_Changing-the-Device-s-Network-Settings" class="imageblock">
-<div class="content">
-<img src="../_images/IZDiscovery/RV-1_9-FIG-013b_ChangeIPUnCheckDHCP.png" alt="IZ Discovery Network Setting Dialog" width="226" height="230">
-</div>
-<div class="title">Figure 21. Changing the Device&#8217;s Network Settings</div>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
 <div class="paragraph">
-<p>The device&#8217;s IP Address <u>cannot</u> be set to 10.10.2.xx or 10.10.3.xx</p>
-</div>
-<div class="paragraph">
-<p><strong><u>It is highly recommended to use a fixed IP address (not DHCP)</u></strong>. A fixed IP address enables you to access the computer using the same URL every time, even after unexpected power outages (see
-<a href="#s_Logging-In-to-the-Camera">Section 9.1</a>
-).</p>
-</div>
-<div class="paragraph">
-<p>A dynamic IP address may change upon device reboot. Before opening the web interface, you will have to find the current IP address of the device using IZ Discovery.</p>
-</div>
-<div class="paragraph">
-<p>If you want to copy the IP address (for login to the device) you will need to uncheck the DHCP checkbox momentarily to make the address field accessible.</p>
-</div>
-<div class="paragraph">
-<p>Be sure to define IP addresses for each camera in the Camera System, plus the IP address of the onboard computer. It is recommended to use sequential IP addresses; for example: 192.168.5.64, 65, 66</p>
-</div>
-<div class="paragraph">
-<p>You can also log in to each camera&#8217;s configuration application to change its IP address (see <a href="#s_Configuring-a-Camera">Section 9</a>).</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-<div class="paragraph">
-<p>To change the device&#8217;s mode (fixed or dynamic [DHCP]), or IP address:</p>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Select the relevant line in the list of devices and double-click on it.</p>
-</li>
-<li>
-<p>The Network Settings window appears</p>
-</li>
-<li>
-<p>To change the mode:</p>
-<div class="olist loweralpha">
-<ol class="loweralpha" type="a">
-<li>
-<p>Check or uncheck the DHCP box</p>
-</li>
-<li>
-<p>Click Save</p>
-</li>
-</ol>
-</div>
-</li>
-<li>
-<p>To change the IP address:</p>
-<div class="olist loweralpha">
-<ol class="loweralpha" type="a">
-<li>
-<p><strong>Verify that the address is not used by any other device on the network</strong></p>
-</li>
-<li>
-<p>Be sure to uncheck the DHCP box</p>
-</li>
-<li>
-<p>Enter the network address parameters</p>
-</li>
-<li>
-<p>Write down the new IP Address and click Save</p>
-</li>
-</ol>
-</div>
-</li>
-<li>
-<p>The change should be reflected in the main dialog. This can take about a minute until the IP is obtained. If you do not see the change after this time, close IZ Discovery, and then reopen it.</p>
-</li>
-<li>
-<p>Verify that the IP address parameters have been changed to the ones you wanted. If not, you will have to log into the device
-(see
-<a href="#s_Logging-In-to-the-Camera">Section 9.1</a>
-) and change the IP address (see
-<a href="#s_Changing-a-Camera-s-IP-Address">Section 9.2</a>
-).</p>
-</li>
-</ol>
+<p>See the IZ Discovery User Guide (see <a href="#s_Related-Documents">Section 1.2</a>).</p>
 </div>
 </div>
 </div>
@@ -2355,7 +2203,7 @@ guides. If you need to use an external illuminator, see the <a href="https://dri
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>To view the camera&#8217;s home page (see <a href="#f_Camera-s-Home-Page">Figure 22</a>):</p>
+<p>To view the camera&#8217;s home page (see <a href="#f_Camera-s-Home-Page">Figure 20</a>):</p>
 <div class="ulist">
 <ul>
 <li>
@@ -2366,7 +2214,7 @@ Enter the IP address of the camera into the address field of the browser.</p>
 <div class="content">
 <img src="../_images/IZA800G/image43.png" alt="image" width="528" height="230">
 </div>
-<div class="title">Figure 22. Camera&#8217;s Home Page</div>
+<div class="title">Figure 20. Camera&#8217;s Home Page</div>
 </div>
 </li>
 </ul>
@@ -2456,7 +2304,7 @@ where cam0_0 is a camera-specific parameter (which in this case enables you to a
 <div class="content">
 <img src="../_images/IZA800G/image44.png" alt="image" width="524" height="180">
 </div>
-<div class="title">Figure 23. Changing the Camera&#8217;s IP Address</div>
+<div class="title">Figure 21. Changing the Camera&#8217;s IP Address</div>
 </div>
 </li>
 <li>
@@ -2614,7 +2462,7 @@ where cam0_0 is a camera-specific parameter (which in this case enables you to a
 <h2 id="s_Determining-the-IP-Address-of-the-RoadView-Computer-with-IZ-Discovery"><a class="anchor" href="#s_Determining-the-IP-Address-of-the-RoadView-Computer-with-IZ-Discovery"></a>11. Determining the IP Address of the RoadView Computer with IZ Discovery</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>See <a href="#s_Recognizing-Devices-with-IZ-Discovery">Section 8</a>.</p>
+<p>See the IZ Discovery User Guide (see <a href="#s_Related-Documents">Section 1.2</a>).</p>
 </div>
 </div>
 </div>
@@ -2637,7 +2485,7 @@ For example:<br>
 <div class="content">
 <img src="../_images/RoadViewALPR/RoadViewLoginWindow.png" alt="image" width="209" height="143">
 </div>
-<div class="title">Figure 24. Logging In to RoadView</div>
+<div class="title">Figure 22. Logging In to RoadView</div>
 </div>
 </li>
 <li>
@@ -3423,6 +3271,20 @@ This device has been tested and conforms to the IK10 impact standard (vandal-pro
 <ul>
 <li>
 <p>Corrections discovered during conversion to online version (for example, cross-references)</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.71</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">July 24, 2023</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>Removed references to Video Analytics Data Sheet from Related Documents and spec. tables; made reference to RoadView documentation generic</p>
+</li>
+<li>
+<p>Added IZ Discovery User Guide to Related Documents; removed IZ Discovery sections and referred user to Related Documents</p>
 </li>
 </ul>
 </div></div></td>

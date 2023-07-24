@@ -8,7 +8,6 @@
 <link rel="stylesheet" href="../../../_/css/site.css">
 <link rel="stylesheet" href="../../../_/css/site-extra.css">
  <link rel="stylesheet" href="../../../_/css/site-extra.css">
-    <script>var uiRootPath = '../../../_'</script>
   </head>
   <body class="article">
 <header class="header">
@@ -501,10 +500,6 @@
 <td class="tableblock halign-left valign-top"><p class="tableblock">RoadView ALPR Release Notes (for Release rrr)</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="DocList.html" class="xref page">RV-VDANLYTCS-TDSHEET</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">RoadView Video Analytics Technical Data Sheet</p></td>
-</tr>
-<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../IZIO/DocList.html" class="xref page">IZIO-6060-MAN-001</a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">IZIO Digital IO Controller Installation and User Guide</p></td>
 </tr>
@@ -524,6 +519,10 @@
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../IZDiscovery/DocList.html" class="xref page">IZ Discovery Utility</a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">IZ Discovery Utility software components</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../IZDiscovery/DocList.html" class="xref page">IZDISCOVERY-IZD-MAN-001</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">IZ Discovery User Guide</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../ZAP-4-5/DocList.html" class="xref page">ZAP-450-SDK-002</a></p></td>
@@ -781,165 +780,13 @@
 <div class="sect2">
 <h3 id="s_Determining-the-IP-Address-of-the-RoadView-Computer-with-IZ-Discovery"><a class="anchor" href="#s_Determining-the-IP-Address-of-the-RoadView-Computer-with-IZ-Discovery"></a>6.5. Determining the IP Address of the RoadView Computer with IZ Discovery</h3>
 <div class="paragraph">
-<p>The IZ Discovery utility discovers all active devices connected to the network, and displays a list of their network parameters. These devices can include cameras and computers.</p>
-</div>
-<div class="admonitionblock important">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-important" title="Important"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>If any device on your network is connected via wireless, IZ Discovery will not recognize the device. In addition, if the computer running IZ Discovery is connected via wireless, you will not see any devices displayed.</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Download the IZ Discovery software (see <a href="#s_Related-Documents">Section 1.2</a>)</p>
-</li>
-<li>
-<p>Run IZ Discovery</p>
-</li>
-<li>
-<p>When IZ Discovery first runs, you may see a Windows security warning. If so, click Run.</p>
-</li>
-<li>
-<p>If you see a message related to the Windows firewall, click Allow.</p>
-</li>
-<li>
-<p>IZ Discovery will start and display a list of devices on the network, according to their serial numbers (see <a href="#f_IZ-Discovery-Utility">Figure 2</a>).</p>
-<div class="olist loweralpha">
-<ol class="loweralpha" type="a">
-<li>
-<p>Scroll down to find the device you are interested in. You can double-click to view/edit a specific device&#8217;s IP address parameters (see <a href="#s_Changing-a-Device-s-IP-Address-and-Network-Settings">Section 6.6</a>).</p>
-</li>
-<li>
-<p>Click Clear List to refresh the discovery process.</p>
-<div id="f_IZ-Discovery-Utility" class="imageblock">
-<div class="content">
-<img src="../_images/IZDiscovery/RV-1_9-FIG-012b_IZDiscovery6020MainScreen.png" alt="IZ Disovery Main Screen" width="503" height="337">
-</div>
-<div class="title">Figure 2. IZ Discovery Utility</div>
-</div>
-</li>
-</ol>
-</div>
-</li>
-<li>
-<p>If IZ Discovery does not recognize a device:</p>
-<div class="ulist">
-<ul>
-<li>
-<p>Press the device&#8217;s reset button (if available)</p>
-</li>
-<li>
-<p>Reset the device by shutting off power/removing the LAN cable, waiting 5 seconds, and reapplying power</p>
-</li>
-<li>
-<p>Check the LAN cable connected between your laptop and the network, and the LAN cable connected between the device and the LAN switch. Replace the cable(s) and try to run IZ Discovery again.</p>
-</li>
-</ul>
-</div>
-</li>
-</ol>
+<p>See the IZ Discovery User Guide (see <a href="#s_Related-Documents">Section 1.2</a>).</p>
 </div>
 </div>
 <div class="sect2">
 <h3 id="s_Changing-a-Device-s-IP-Address-and-Network-Settings"><a class="anchor" href="#s_Changing-a-Device-s-IP-Address-and-Network-Settings"></a>6.6. Changing a Device&#8217;s IP Address and Network Settings</h3>
-<div id="f_Changing-the-Device-s-Network-Settings" class="imageblock">
-<div class="content">
-<img src="../_images/IZDiscovery/RV-1_9-FIG-013b_ChangeIPUnCheckDHCP.png" alt="IZ Discovery Network Setting Dialog" width="226" height="230">
-</div>
-<div class="title">Figure 3. Changing the Device&#8217;s Network Settings</div>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
 <div class="paragraph">
-<p>The device&#8217;s IP Address <u>cannot</u> be set to 10.10.2.xx or 10.10.3.xx</p>
-</div>
-<div class="paragraph">
-<p><strong><u>It is highly recommended to use a fixed IP address (not DHCP)</u></strong>. A fixed IP address enables you to access the computer using the same URL every time, even after unexpected power outages (see
-<a href="#s_Logging-In-and-Logging-Out">Section 7</a>
-).</p>
-</div>
-<div class="paragraph">
-<p>A dynamic IP address may change upon device reboot. Before opening the web interface, you will have to find the current IP address of the device using IZ Discovery.</p>
-</div>
-<div class="paragraph">
-<p>If you want to copy the IP address (for login to the device) you will need to uncheck the DHCP checkbox momentarily to make the address field accessible.</p>
-</div>
-<div class="paragraph">
-<p>You can change the IP address using the RoadView Settings tab (see <a href="#s_Network-Settings">Section 9.2</a>).</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-<div class="paragraph">
-<p>To change the device&#8217;s mode (fixed or dynamic [DHCP]), or IP address:</p>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Select the relevant line in the list of devices and double-click on it.</p>
-</li>
-<li>
-<p>The Network Settings window appears</p>
-</li>
-<li>
-<p>To change the mode:</p>
-<div class="olist loweralpha">
-<ol class="loweralpha" type="a">
-<li>
-<p>Check or uncheck the DHCP box</p>
-</li>
-<li>
-<p>Click Save</p>
-</li>
-</ol>
-</div>
-</li>
-<li>
-<p>To change the IP address:</p>
-<div class="olist loweralpha">
-<ol class="loweralpha" type="a">
-<li>
-<p><strong>Verify that the address is not used by any other device on the network</strong></p>
-</li>
-<li>
-<p>Be sure to uncheck the DHCP box</p>
-</li>
-<li>
-<p>Enter the network address parameters</p>
-</li>
-<li>
-<p>Write down the new IP Address and click Save</p>
-</li>
-</ol>
-</div>
-</li>
-<li>
-<p>The change should be reflected in the main dialog. This can take about a minute until the IP is obtained. If you do not see the change after this time, close IZ Discovery, and then reopen it.</p>
-</li>
-<li>
-<p>Verify that the IP address parameters have been changed to the ones you wanted. If not, you will have to log into the device
-(see
-<a href="#s_Logging-In-and-Logging-Out">Section 7</a>
-) and change the IP address (see
-<a href="#s_Network-Settings">Section 9.2</a>
-).</p>
-</li>
-</ol>
+<p>See the IZ Discovery User Guide (see <a href="#s_Related-Documents">Section 1.2</a>).</p>
 </div>
 </div>
 </div>
@@ -975,7 +822,7 @@
 <div class="content">
 <img src="../_images/RoadViewALPR/RoadViewLoginWindow.png" alt="image" width="209" height="143">
 </div>
-<div class="title">Figure 4. Logging In to the Computer</div>
+<div class="title">Figure 2. Logging In to the Computer</div>
 </div>
 </li>
 <li>
@@ -1000,7 +847,7 @@
 <div class="content">
 <img src="_images/UserGuide/image5.png" alt="image" width="136" height="113">
 </div>
-<div class="title">Figure 5. Logout (Multi-line Menu)</div>
+<div class="title">Figure 3. Logout (Multi-line Menu)</div>
 </div>
 </div>
 </div>
@@ -1015,7 +862,7 @@
 <div class="content">
 <img src="_images/UserGuide/image6.png" alt="image" width="624" height="307">
 </div>
-<div class="title">Figure 6. Trigger Sources and Sequence</div>
+<div class="title">Figure 4. Trigger Sources and Sequence</div>
 </div>
 <div class="paragraph">
 <p>The system constantly captures video frames and stores them in a buffer. However, the Triggering Mode determines if all, or only some of, these frames will be used for license plate recognition and Event building. Other parameters affect how many frames before (pre) and after (post) the trigger will be used:</p>
@@ -1054,13 +901,13 @@
 </table>
 </div>
 <div class="paragraph">
-<p>The Trigger Operational Modes (set in the Detector Configuration section of the Settings tab - see <a href="#s_Detector-Configuration">Section 9.21</a>) affect how Events are created (see <a href="#f_Trigger-Operational-Modes">Figure 7</a>):</p>
+<p>The Trigger Operational Modes (set in the Detector Configuration section of the Settings tab - see <a href="#s_Detector-Configuration">Section 9.21</a>) affect how Events are created (see <a href="#f_Trigger-Operational-Modes">Figure 5</a>):</p>
 </div>
 <div id="f_Trigger-Operational-Modes" class="imageblock">
 <div class="content">
 <img src="_images/UserGuide/image7.png" alt="image" width="632" height="431">
 </div>
-<div class="title">Figure 7. Trigger Operational Modes</div>
+<div class="title">Figure 5. Trigger Operational Modes</div>
 </div>
 <div class="ulist">
 <ul>
@@ -1132,7 +979,7 @@ See <a href="#s_Trigger-Sources-and-Trigger-Modes-Overview">Section 8</a> and <a
 <div class="content">
 <img src="_images/UserGuide/image8.png" alt="image" width="265" height="504">
 </div>
-<div class="title">Figure 8. Settings Tab</div>
+<div class="title">Figure 6. Settings Tab</div>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -1167,7 +1014,7 @@ See <a href="#s_Trigger-Sources-and-Trigger-Modes-Overview">Section 8</a> and <a
 <div class="content">
 <img src="_images/UserGuide/image9.png" alt="image" width="356" height="130">
 </div>
-<div class="title">Figure 9. Software Version and Camera Information Section</div>
+<div class="title">Figure 7. Software Version and Camera Information Section</div>
 </div>
 </div>
 <div class="sect2">
@@ -1176,7 +1023,7 @@ See <a href="#s_Trigger-Sources-and-Trigger-Modes-Overview">Section 8</a> and <a
 <div class="content">
 <img src="_images/UserGuide/image10.png" alt="image" width="416" height="180">
 </div>
-<div class="title">Figure 10. Network Settings Section</div>
+<div class="title">Figure 8. Network Settings Section</div>
 </div>
 <div class="ulist">
 <ul>
@@ -1212,7 +1059,7 @@ See <a href="#s_Trigger-Sources-and-Trigger-Modes-Overview">Section 8</a> and <a
 <div class="content">
 <img src="_images/UserGuide/image11.png" alt="image" width="468" height="204">
 </div>
-<div class="title">Figure 11. FTP/SFTP Section</div>
+<div class="title">Figure 9. FTP/SFTP Section</div>
 </div>
 <div class="ulist">
 <ul>
@@ -1236,7 +1083,7 @@ Be sure to click the Save button at the end of this section if you change these 
 <div class="content">
 <img src="_images/UserGuide/image12.png" alt="image" width="176" height="129">
 </div>
-<div class="title">Figure 12. Adding an SFTP User</div>
+<div class="title">Figure 10. Adding an SFTP User</div>
 </div>
 </li>
 </ul>
@@ -1277,7 +1124,7 @@ Be sure to click the Save button at the end of this section if you change these 
 <div class="content">
 <img src="_images/UserGuide/image13.png" alt="image" width="490" height="180">
 </div>
-<div class="title">Figure 13. Date and Time Settings Section</div>
+<div class="title">Figure 11. Date and Time Settings Section</div>
 </div>
 <div class="ulist">
 <ul>
@@ -1316,7 +1163,7 @@ Be sure to click the Save button at the end of this section if you change these 
 <div class="content">
 <img src="_images/UserGuide/image14.png" alt="image" width="698" height="49">
 </div>
-<div class="title">Figure 14. HTTP Integration Section</div>
+<div class="title">Figure 12. HTTP Integration Section</div>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -1341,7 +1188,7 @@ Be sure to click the Save button at the end of this section if you change these 
 <div class="ulist">
 <ul>
 <li>
-<p>Click Add HTTP Integration. Note that this feature enables you to use multiple HTTP channels (see <a href="#f_Adding-an-HTTP-Integration">Figure 15</a>).</p>
+<p>Click Add HTTP Integration. Note that this feature enables you to use multiple HTTP channels (see <a href="#f_Adding-an-HTTP-Integration">Figure 13</a>).</p>
 </li>
 </ul>
 </div>
@@ -1349,7 +1196,7 @@ Be sure to click the Save button at the end of this section if you change these 
 <div class="content">
 <img src="_images/UserGuide/image15.png" alt="image" width="264" height="384">
 </div>
-<div class="title">Figure 15. Adding an HTTP Integration</div>
+<div class="title">Figure 13. Adding an HTTP Integration</div>
 </div>
 <div class="ulist">
 <ul>
@@ -1488,7 +1335,7 @@ See the HTTP API 1.5 document.</p>
 <div class="content">
 <img src="_images/UserGuide/image16.png" alt="image" width="528" height="158">
 </div>
-<div class="title">Figure 16. Offline Queue Section</div>
+<div class="title">Figure 14. Offline Queue Section</div>
 </div>
 <div class="paragraph">
 <p>These parameters are currently used to configure offline Event storage for HTTP Integration (see <a href="#s_HTTP-Integration">Section 9.5</a>)</p>
@@ -1520,7 +1367,7 @@ See the HTTP API 1.5 document.</p>
 <div class="content">
 <img src="_images/UserGuide/image17.png" alt="image" width="493" height="152">
 </div>
-<div class="title">Figure 17. Monitoring Section</div>
+<div class="title">Figure 15. Monitoring Section</div>
 </div>
 <div class="paragraph">
 <p>When Monitoring Integration (IZMonitoring Server Integration) is enabled, the following parameters appear:</p>
@@ -1551,7 +1398,7 @@ See the HTTP API 1.5 document.</p>
 <div class="content">
 <img src="_images/UserGuide/image18.png" alt="image" width="393" height="448">
 </div>
-<div class="title">Figure 18. ZAP Integration Section</div>
+<div class="title">Figure 16. ZAP Integration Section</div>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -1661,7 +1508,7 @@ If you want RoadView to work with IZCentral, RoadView can only be working as a Z
 <div class="content">
 <img src="_images/UserGuide/image19.png" alt="image" width="287" height="43">
 </div>
-<div class="title">Figure 19. Direct Trigger Section</div>
+<div class="title">Figure 17. Direct Trigger Section</div>
 </div>
 <div class="paragraph">
 <p>The Direct Trigger settings are used in these operational modes: Triggered, Hybrid or NonTriggered With Trigger (see <a href="#s_Trigger-Sources-and-Trigger-Modes-Overview">Section 8</a>).</p>
@@ -1673,7 +1520,7 @@ If you want RoadView to work with IZCentral, RoadView can only be working as a Z
 <p>A loop controller can provide trigger information to RoadView. You can connect dry or wet contacts to the Camera System&#8217;s trigger inputs. The rise and fall of the voltage levels at these inputs sends a trigger to RoadView (see <a href="#s_Trigger-Sources-and-Trigger-Modes-Overview">Section 8</a>).</p>
 </div>
 <div class="paragraph">
-<p>The "trigger time" used can be influenced by using the rising edge or falling edge of the pulse at the inputs to the Camera System. The Direct trigger mode options are (see <a href="#f_Trigger-Sources-and-Sequence">Figure 6</a>):</p>
+<p>The "trigger time" used can be influenced by using the rising edge or falling edge of the pulse at the inputs to the Camera System. The Direct trigger mode options are (see <a href="#f_Trigger-Sources-and-Sequence">Figure 4</a>):</p>
 </div>
 <div class="ulist">
 <ul>
@@ -1698,7 +1545,7 @@ If you want RoadView to work with IZCentral, RoadView can only be working as a Z
 <div class="content">
 <img src="_images/UserGuide/image20.png" alt="image" width="363" height="107">
 </div>
-<div class="title">Figure 20. INEX I/O Controller Section</div>
+<div class="title">Figure 18. INEX I/O Controller Section</div>
 </div>
 <div class="paragraph">
 <p>The INEX I/O Controller settings are used in Triggered types of operational modes (for example Triggered, Hybrid or NonTriggered With Trigger). See <a href="#s_Trigger-Sources-and-Trigger-Modes-Overview">Section 8</a>.</p>
@@ -1737,7 +1584,7 @@ If you want RoadView to work with IZCentral, RoadView can only be working as a Z
 <p><strong>Input</strong> - The input channel on the IZIO to be polled/sampled</p>
 </li>
 <li>
-<p><strong>Trigger mode</strong> - The "trigger time" used can be influenced by using the rising edge or falling edge of the pulse at the IO input of the IZIO/ADAM. The options are (see <a href="#f_Trigger-Sources-and-Sequence">Figure 6</a>):</p>
+<p><strong>Trigger mode</strong> - The "trigger time" used can be influenced by using the rising edge or falling edge of the pulse at the IO input of the IZIO/ADAM. The options are (see <a href="#f_Trigger-Sources-and-Sequence">Figure 4</a>):</p>
 <div class="ulist">
 <ul>
 <li>
@@ -1776,7 +1623,7 @@ If you want RoadView to work with IZCentral, RoadView can only be working as a Z
 <div class="content">
 <img src="_images/UserGuide/image21.png" alt="image" width="458" height="129">
 </div>
-<div class="title">Figure 21. Journal Section</div>
+<div class="title">Figure 19. Journal Section</div>
 </div>
 <div class="paragraph">
 <p>The Journal (Local Storage) parameters determine if and how Events are stored on the local RoadView computer disk (the parameters only appear if the disk is in use).</p>
@@ -1801,7 +1648,7 @@ If you want RoadView to work with IZCentral, RoadView can only be working as a Z
 <div class="content">
 <img src="_images/UserGuide/image22.png" alt="image" width="480" height="160">
 </div>
-<div class="title">Figure 22. Events Post-Processing Section</div>
+<div class="title">Figure 20. Events Post-Processing Section</div>
 </div>
 <div class="ulist">
 <ul>
@@ -1833,7 +1680,7 @@ If you want RoadView to work with IZCentral, RoadView can only be working as a Z
 <div class="content">
 <img src="_images/UserGuide/image23.png" alt="image" width="477" height="85">
 </div>
-<div class="title">Figure 23. Trigger Offset Section</div>
+<div class="title">Figure 21. Trigger Offset Section</div>
 </div>
 <div class="paragraph">
 <p>The Trigger Offset affects all triggers (in all modes - see <a href="#s_Trigger-Sources-and-Trigger-Modes-Overview">Section 8</a>).</p>
@@ -1849,7 +1696,7 @@ If you want RoadView to work with IZCentral, RoadView can only be working as a Z
 </ul>
 </div>
 <div class="paragraph">
-<p>The trigger command may arrive at a different time than actual trigger&#8217;s (physical) arrival time (see <a href="#f_Trigger-Sources-and-Sequence">Figure 6</a>). For example, there is often a delay between the time a vehicle passes over an inductive loop, and the time the loop controller generates a pulse. This latency can be compensated for by an "offset".</p>
+<p>The trigger command may arrive at a different time than actual trigger&#8217;s (physical) arrival time (see <a href="#f_Trigger-Sources-and-Sequence">Figure 4</a>). For example, there is often a delay between the time a vehicle passes over an inductive loop, and the time the loop controller generates a pulse. This latency can be compensated for by an "offset".</p>
 </div>
 </div>
 <div class="sect2">
@@ -1858,7 +1705,7 @@ If you want RoadView to work with IZCentral, RoadView can only be working as a Z
 <div class="content">
 <img src="_images/UserGuide/image24.png" alt="image" width="433" height="472">
 </div>
-<div class="title">Figure 24. Detector Configuration Section</div>
+<div class="title">Figure 22. Detector Configuration Section</div>
 </div>
 <div class="paragraph">
 <p>Plate recognition is done in 3 stages:</p>
@@ -1931,14 +1778,14 @@ For faster traffic, you will only be able to set it to a small number of reads.<
 </li>
 <li>
 <p><strong>Wait before event emit, ms</strong> - (affects results in NonTriggered or Hybrid modes)<br>
-The minimum time from the first plate read until the time the Event will be built (emitted) - which can result in a greater number of frames used than the "Min plate read count" parameter. You may want to get LPR results with better confidence by increasing this number. RoadView will wait for more correct reads before the Event is built (see <a href="#f_Illustration-of-Wait-Before-Event-Emit">Figure 25</a>).<br>
+The minimum time from the first plate read until the time the Event will be built (emitted) - which can result in a greater number of frames used than the "Min plate read count" parameter. You may want to get LPR results with better confidence by increasing this number. RoadView will wait for more correct reads before the Event is built (see <a href="#f_Illustration-of-Wait-Before-Event-Emit">Figure 23</a>).<br>
 As a vehicle approaches a camera, waiting longer will usually (depending on road geometry) result in images of the plate getting larger and easier to read accurately.<br>
 Note that in hybrid mode, it is recommended to set this parameter greater than 0. Setting this parameter to 0 will result in lower read confidence, since the trigger and the first read will occur close together.</p>
 <div id="f_Illustration-of-Wait-Before-Event-Emit" class="imageblock">
 <div class="content">
 <img src="_images/UserGuide/image25.png" alt="image" width="504" height="186">
 </div>
-<div class="title">Figure 25. Illustration of Wait Before Event Emit</div>
+<div class="title">Figure 23. Illustration of Wait Before Event Emit</div>
 </div>
 </li>
 <li>
@@ -1948,7 +1795,7 @@ If the size of this "hole" is large, then the vehicle has probably disappeared b
 <div class="content">
 <img src="_images/UserGuide/image26.png" alt="image" width="507" height="97">
 </div>
-<div class="title">Figure 26. Illustration of LP Forget Interval</div>
+<div class="title">Figure 24. Illustration of LP Forget Interval</div>
 </div>
 </li>
 <li>
@@ -2035,15 +1882,15 @@ If the size of this "hole" is large, then the vehicle has probably disappeared b
 </div>
 </li>
 <li>
-<p><strong>Hybrid Pre Time (for Hybrid mode only)</strong> -Time in milliseconds before the trigger to search for the closest Event to the trigger (see <a href="#f_Illustration-of-Hybrid-Pre-Post-Time">Figure 27</a>)</p>
+<p><strong>Hybrid Pre Time (for Hybrid mode only)</strong> -Time in milliseconds before the trigger to search for the closest Event to the trigger (see <a href="#f_Illustration-of-Hybrid-Pre-Post-Time">Figure 25</a>)</p>
 </li>
 <li>
-<p><strong>Hybrid Post Time (for Hybrid mode only)</strong> - Time in milliseconds after the trigger to search for the closest Event to the trigger (see <a href="#f_Illustration-of-Hybrid-Pre-Post-Time">Figure 27</a>)</p>
+<p><strong>Hybrid Post Time (for Hybrid mode only)</strong> - Time in milliseconds after the trigger to search for the closest Event to the trigger (see <a href="#f_Illustration-of-Hybrid-Pre-Post-Time">Figure 25</a>)</p>
 <div id="f_Illustration-of-Hybrid-Pre-Post-Time" class="imageblock">
 <div class="content">
 <img src="_images/UserGuide/image27.png" alt="image" width="624" height="170">
 </div>
-<div class="title">Figure 27. Illustration of Hybrid Pre/Post Time</div>
+<div class="title">Figure 25. Illustration of Hybrid Pre/Post Time</div>
 </div>
 <div class="ulist">
 <ul>
@@ -2068,7 +1915,7 @@ If the size of this "hole" is large, then the vehicle has probably disappeared b
 <div class="content">
 <img src="_images/UserGuide/image28.png" alt="image" width="617" height="87">
 </div>
-<div class="title">Figure 28. Lanes Section</div>
+<div class="title">Figure 26. Lanes Section</div>
 </div>
 <div class="ulist">
 <ul>
@@ -2108,7 +1955,7 @@ If the size of this "hole" is large, then the vehicle has probably disappeared b
 <div class="content">
 <img src="_images/UserGuide/image29.png" alt="image" width="265" height="151">
 </div>
-<div class="title">Figure 29. Add/Edit Lane Dialog</div>
+<div class="title">Figure 27. Add/Edit Lane Dialog</div>
 </div>
 </li>
 </ul>
@@ -2168,7 +2015,7 @@ If the size of this "hole" is large, then the vehicle has probably disappeared b
 <div class="content">
 <img src="_images/UserGuide/image30.png" alt="image" width="695" height="112">
 </div>
-<div class="title">Figure 30. Cameras Section</div>
+<div class="title">Figure 28. Cameras Section</div>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -2191,7 +2038,7 @@ If the size of this "hole" is large, then the vehicle has probably disappeared b
 <div class="ulist">
 <ul>
 <li>
-<p><u>Edit</u> - edit the camera&#8217;s parameters (see <a href="#f_Add-Edit-Camera-Dialog">Figure 31</a>)</p>
+<p><u>Edit</u> - edit the camera&#8217;s parameters (see <a href="#f_Add-Edit-Camera-Dialog">Figure 29</a>)</p>
 </li>
 <li>
 <p><u>Delete</u> - delete the camera (a warning will be displayed)</p>
@@ -2227,7 +2074,7 @@ If the size of this "hole" is large, then the vehicle has probably disappeared b
 <div class="content">
 <img src="_images/UserGuide/image31.png" alt="image" width="230" height="272">
 </div>
-<div class="title">Figure 31. Add/Edit Camera Dialog</div>
+<div class="title">Figure 29. Add/Edit Camera Dialog</div>
 </div>
 <div class="ulist">
 <ul>
@@ -2279,10 +2126,10 @@ http:// &lt;camera IP address&gt;</p>
 <p><strong>Type</strong> - Type of camera (LPR or View); used for integration with IZCentral</p>
 </li>
 <li>
-<p><strong>Trigger Pre</strong> (used in Triggered mode types only) - Number of frames to be included in the set of frames used to build an Event - <u>before</u> the trigger occurs (see <a href="#f_Trigger-Sources-and-Sequence">Figure 6</a>).</p>
+<p><strong>Trigger Pre</strong> (used in Triggered mode types only) - Number of frames to be included in the set of frames used to build an Event - <u>before</u> the trigger occurs (see <a href="#f_Trigger-Sources-and-Sequence">Figure 4</a>).</p>
 </li>
 <li>
-<p><strong>Trigger Post</strong> (used in Triggered mode types only) - Number of frames to be included in the set of frames used to build an Event - <u>after</u> the trigger occurs (see <a href="#f_Trigger-Sources-and-Sequence">Figure 6</a>)</p>
+<p><strong>Trigger Post</strong> (used in Triggered mode types only) - Number of frames to be included in the set of frames used to build an Event - <u>after</u> the trigger occurs (see <a href="#f_Trigger-Sources-and-Sequence">Figure 4</a>)</p>
 </li>
 </ul>
 </div>
@@ -2299,7 +2146,7 @@ http:// &lt;camera IP address&gt;</p>
 <div class="content">
 <img src="_images/UserGuide/image32.png" alt="image" width="554" height="243">
 </div>
-<div class="title">Figure 32. Live (Journal) Tab with Row Selected</div>
+<div class="title">Figure 30. Live (Journal) Tab with Row Selected</div>
 </div>
 <div class="paragraph">
 <p>The Live tab displays Events and other data about each Event.</p>
@@ -2361,7 +2208,7 @@ http:// &lt;camera IP address&gt;</p>
 <div class="content">
 <img src="_images/UserGuide/image33.png" alt="image" width="136" height="113">
 </div>
-<div class="title">Figure 33. Configure Journal (Multi-line Menu)</div>
+<div class="title">Figure 31. Configure Journal (Multi-line Menu)</div>
 </div>
 </li>
 <li>
@@ -2462,7 +2309,7 @@ http:// &lt;camera IP address&gt;</p>
 <div class="content">
 <img src="_images/UserGuide/image34.png" alt="image" width="645" height="307">
 </div>
-<div class="title">Figure 34. Search Tab</div>
+<div class="title">Figure 32. Search Tab</div>
 </div>
 <div class="paragraph">
 <p>The Search tab enables you to search for Event records stored in the RoadView database.</p>
@@ -2490,7 +2337,7 @@ http:// &lt;camera IP address&gt;</p>
 <div class="content">
 <img src="_images/UserGuide/image35.png" alt="image" width="424" height="193">
 </div>
-<div class="title">Figure 35. Search Tab: Page Controls</div>
+<div class="title">Figure 33. Search Tab: Page Controls</div>
 </div>
 </div>
 <div class="sect2">
@@ -2521,12 +2368,12 @@ http:// &lt;camera IP address&gt;</p>
 <p><strong>Lane Name</strong> - Select All, or a specific lane</p>
 </li>
 <li>
-<p><strong>Time</strong> - Click in the filter box to display a date/time selection popup. Uncheck the check box to clear the filter (see <a href="#f_Search-Tab-Time-Filter-Selection-Popup">Figure 36</a>).</p>
+<p><strong>Time</strong> - Click in the filter box to display a date/time selection popup. Uncheck the check box to clear the filter (see <a href="#f_Search-Tab-Time-Filter-Selection-Popup">Figure 34</a>).</p>
 <div id="f_Search-Tab-Time-Filter-Selection-Popup" class="imageblock">
 <div class="content">
 <img src="_images/UserGuide/image36.png" alt="image" width="317" height="308">
 </div>
-<div class="title">Figure 36. Search Tab: Time Filter Selection Popup</div>
+<div class="title">Figure 34. Search Tab: Time Filter Selection Popup</div>
 </div>
 <div class="ulist">
 <ul>
@@ -2563,7 +2410,7 @@ http:// &lt;camera IP address&gt;</p>
 <div class="content">
 <img src="_images/UserGuide/image37.png" alt="image" width="624" height="313">
 </div>
-<div class="title">Figure 37. Calibration Tab</div>
+<div class="title">Figure 35. Calibration Tab</div>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
@@ -2583,7 +2430,7 @@ http:// &lt;camera IP address&gt;</p>
 <p>The Frame Timestamp at the lower left displays the date and time that the image is being taken/was taken by the camera.</p>
 </li>
 <li>
-<p>Aim the camera using the mounting bracket&#8217;s adjustment hardware (see <a href="#f_Pan-Tilt-Roll-Angle-Adjustments">Figure 38</a>).</p>
+<p>Aim the camera using the mounting bracket&#8217;s adjustment hardware (see <a href="#f_Pan-Tilt-Roll-Angle-Adjustments">Figure 36</a>).</p>
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
@@ -2598,7 +2445,7 @@ http:// &lt;camera IP address&gt;</p>
 <div class="content">
 <img src="../_images/RoadViewALPR/PanTiltRoll.png" alt="image" width="311" height="186">
 </div>
-<div class="title">Figure 38. Pan/Tilt/Roll (Angle) Adjustments</div>
+<div class="title">Figure 36. Pan/Tilt/Roll (Angle) Adjustments</div>
 </div>
 </li>
 </ol>
@@ -2678,7 +2525,7 @@ You can set the "Ignore Opposite Direction" parameter in the Lanes section to ig
 <div class="content">
 <img src="_images/UserGuide/image40.png" alt="image" width="316" height="308">
 </div>
-<div class="title">Figure 39. System Info Tab</div>
+<div class="title">Figure 37. System Info Tab</div>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -3459,6 +3306,28 @@ The Live tab and Search tab are empty (no Events are detected)</p></td>
 <ul>
 <li>
 <p>Corrections discovered during conversion to online version (for example, cross-references)</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.71</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">July 20, 2023</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>Removed Video Analytics Data Sheet from Related Documents</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.72</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">July 23, 2023</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>Added IZ Discovery User Guide to Related Documents; removed IZ Discovery sections and referred user to Related Documents</p>
 </li>
 </ul>
 </div></div></td>
