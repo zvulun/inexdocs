@@ -459,8 +459,7 @@
 <li><a href="#s_Using-RoadView">12. Using RoadView</a>
 <ul class="sectlevel2">
 <li><a href="#s_Logging-In">12.1. Logging In</a></li>
-<li><a href="#s_Verifying-the-Installation">12.2. Verifying the Installation</a></li>
-<li><a href="#s_Logging-Out">12.3. Logging Out</a></li>
+<li><a href="#s_Logging-Out">12.2. Logging Out</a></li>
 </ul>
 </li>
 <li><a href="#s_Troubleshooting-and-Maintenance">13. Troubleshooting and Maintenance</a>
@@ -723,7 +722,7 @@ A computer running license plate recognition software is also built in.</p>
 </div>
 <div id="f_Underside-of-the-ALPR-Camera-System" class="imageblock">
 <div class="content">
-<img src="_images/UserGuide/image4.png" alt="image" width="624" height="236">
+<img src="../_images/IZA800G/image4.png" alt="image" width="624" height="236">
 </div>
 <div class="title">Figure 4. Underside of the ALPR Camera System</div>
 </div>
@@ -1318,6 +1317,12 @@ You can add an IE Tab extension to Chrome at this <a href="https://chrome.google
 </td>
 <td class="content">
 <div class="paragraph">
+<p>The maximum horizontal angle allowed is 30° (to the farthest point at the end of the capture line).</p>
+</div>
+<div class="paragraph">
+<p>The maximum vertical angle allowed is 30°.</p>
+</div>
+<div class="paragraph">
 <p>Installations that position the camera at significant angles in relation to the plates will reduce the line-of-sight distances specified.</p>
 </div>
 </td>
@@ -1330,6 +1335,9 @@ You can add an IE Tab extension to Chrome at this <a href="https://chrome.google
 </div>
 <div class="title">Figure 11. Horizontal Camera Angle (Pan Angle)</div>
 </div>
+<details>
+<summary class="title"><em>Click to show notes for Horizontal Angle</em></summary>
+<div class="content">
 <div class="admonitionblock note">
 <table>
 <tr>
@@ -1353,12 +1361,17 @@ You can add an IE Tab extension to Chrome at this <a href="https://chrome.google
 </tr>
 </table>
 </div>
+</div>
+</details>
 <div id="f_Vertical-Camera-Angle-Tilt-Angle-and-Line-of-Sight-Distance-from-Plate" class="imageblock">
 <div class="content">
 <img src="../_images/IZA800G/image14.png" alt="image" width="626" height="194">
 </div>
 <div class="title">Figure 12. Vertical Camera Angle (Tilt Angle) and Line-of-Sight Distance from Plate</div>
 </div>
+<details>
+<summary class="title"><em>Click to show notes for Vertical Angle</em></summary>
+<div class="content">
 <div class="admonitionblock note">
 <table>
 <tr>
@@ -1388,6 +1401,8 @@ You can add an IE Tab extension to Chrome at this <a href="https://chrome.google
 </tr>
 </table>
 </div>
+</div>
+</details>
 </div>
 <div class="sect2">
 <h3 id="s_Position-of-the-Sun-in-Relation-to-the-Camera-System"><a class="anchor" href="#s_Position-of-the-Sun-in-Relation-to-the-Camera-System"></a>5.3. Position of the Sun in Relation to the Camera</h3>
@@ -1871,7 +1886,7 @@ DIN rail/surface mount options<br></p>
 </colgroup>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="image"><img src="_images/UserGuide/image24.png" alt="image" width="181" height="352"></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="image"><img src="../_images/IZA800G/image24.png" alt="image" width="181" height="352"></span></p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 25%;">
@@ -2034,6 +2049,9 @@ OV Strobe (-)</p></td>
 </div>
 <div class="sect2">
 <h3 id="s_Constructing-the-LAN-Cable"><a class="anchor" href="#s_Constructing-the-LAN-Cable"></a>6.4. Constructing the LAN Cable</h3>
+<details>
+<summary class="title"><em>Click to show Important notes for LAN cable construction</em></summary>
+<div class="content">
 <div class="admonitionblock important">
 <table>
 <tr>
@@ -2054,6 +2072,8 @@ OV Strobe (-)</p></td>
 </tr>
 </table>
 </div>
+</div>
+</details>
 <div id="f_LAN-Cable-Extracting-the-Shield-Wire" class="imageblock">
 <div class="content">
 <img src="../_images/IZA800G/image32.png" alt="image" width="302" height="211">
@@ -2258,6 +2278,9 @@ Enter the IP address of the camera into the address field of the browser.</p>
 <ul>
 <li>
 <p>Click the Live View link to see what the camera is currently viewing. You can also use controls such as zoom and focus (see <a href="#s_Calibrating-the-Cameras-Using-RoadView">Section 10.2</a>).</p>
+<details>
+<summary class="title">Click to show notes for Live View</summary>
+<div class="content">
 <div class="admonitionblock note">
 <table>
 <tr>
@@ -2285,6 +2308,8 @@ where cam0_0 is a camera-specific parameter (which in this case enables you to a
 </tr>
 </table>
 </div>
+</div>
+</details>
 </li>
 <li>
 <p>If you need to change the IP address of the camera or other configuration parameters, click the Admin link.</p>
@@ -2527,20 +2552,7 @@ For example:<br>
 </div>
 </div>
 <div class="sect2">
-<h3 id="s_Verifying-the-Installation"><a class="anchor" href="#s_Verifying-the-Installation"></a>12.2. Verifying the Installation</h3>
-<div class="ulist">
-<ul>
-<li>
-<p>Using a license plate mounted in a lab, or by driving a vehicle through the lane, verify that an Event is generated with the correct plate read (recorded in the RoadView Live (Journal) tab - see the RoadView ALPR User Guide). See <a href="#s_Related-Documents">Section 1.2</a>.</p>
-</li>
-<li>
-<p>Once the lane is active, verify that Events are being generated for each vehicle passing each camera, and that the recognition has sufficient accuracy and confidence.</p>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect2">
-<h3 id="s_Logging-Out"><a class="anchor" href="#s_Logging-Out"></a>12.3. Logging Out</h3>
+<h3 id="s_Logging-Out"><a class="anchor" href="#s_Logging-Out"></a>12.2. Logging Out</h3>
 <div class="paragraph">
 <p>See the RoadView ALPR User Guide (see <a href="#s_Related-Documents">Section 1.2</a>) for logout instructions, using the multi-line dropdown menu icon in the upper right corner of the screen.</p>
 </div>
