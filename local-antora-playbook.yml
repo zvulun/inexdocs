@@ -33,7 +33,10 @@ asciidoc:
     #These attributes control substitutions in
     #parts of the text which are very similar, but
     #have small changes based on the product
-    #or type of document
+    #or type of document. They are just mentioned here
+    #but not set, so that the default will be unset
+    #and only the relevant one will be set
+    #at the start of the document
     #xref-type-RoadView:
     #xref-type-IZA800G:
     #xref-type-IZA500G:
