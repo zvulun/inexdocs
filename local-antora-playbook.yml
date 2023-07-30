@@ -34,13 +34,13 @@ asciidoc:
     #parts of the text which are very similar, but
     #have small changes based on the product
     #or type of document
-    xref-type-RoadView:
-    xref-type-IZA800G:
-    xref-type-IZA500G:
-    xref-type-IZ600F:
-    xref-type-IZIDPUG:
-    layout-type-full:
-    layout-type-datasheet:
+    #xref-type-RoadView:
+    #xref-type-IZA800G:
+    #xref-type-IZA500G:
+    #xref-type-IZ600F:
+    #xref-type-IZIDPUG:
+    #layout-type-full:
+    #layout-type-datasheet:
 
 
     #Put attributes whose string values have letters in
