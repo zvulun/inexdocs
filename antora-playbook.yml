@@ -31,15 +31,6 @@ asciidoc:
     vehicle-analytics: Vehicle Detection, Classification, Color, Make; Vehicle Without Plate
     iza-weight: 9.0 lbs (4.1 kg)
 
-    #Put attributes whose string values have letters in
-    #common with other similar values in order of longest
-    #value to shortest value. This will prevent the replacement
-    #macros from replacing the shorter strings that are within
-    #the longer strings.
-    #The @ at the end of each value indicates that
-    #these are soft-set attributes, which can
-    #be overridden in individual files if needed.
-
     #These attributes control substitutions in
     #parts of the text which are very similar, but
     #have small changes based on the product
@@ -53,6 +44,14 @@ asciidoc:
     layout-type-datasheet: false@
 
 
+    #Put attributes whose string values have letters in
+    #common with other similar values in order of longest
+    #value to shortest value. This will prevent the replacement
+    #macros from replacing the shorter strings that are within
+    #the longer strings.
+    #The @ at the end of each value indicates that
+    #these are soft-set attributes, which can
+    #be overridden in individual files if needed.
 
     #if you add any attributes to this list
     #be sure to add them to the text file used to

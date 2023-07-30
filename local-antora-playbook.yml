@@ -30,6 +30,19 @@ asciidoc:
     vehicle-analytics: Vehicle Detection, Classification, Color, Make; Vehicle Without Plate
     iza-weight: 9.0 lbs (4.1 kg)
 
+    #These attributes control substitutions in
+    #parts of the text which are very similar, but
+    #have small changes based on the product
+    #or type of document
+    xref-type-RoadView: false@
+    xref-type-IZA800G: false@
+    xref-type-IZA500G: false@
+    xref-type-IZ600F: false@
+    xref-type-IZIDPUG: false@
+    layout-type-full: false@
+    layout-type-datasheet: false@
+
+
     #Put attributes whose string values have letters in
     #common with other similar values in order of longest
     #value to shortest value. This will prevent the replacement
