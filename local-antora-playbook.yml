@@ -42,8 +42,8 @@ asciidoc:
     #xref-type-IZA500G:
     #xref-type-IZ600F:
     #xref-type-IZIDPUG:
-    #layout-type-full:
-    #layout-type-datasheet:
+    #layout-type-userguide:
+    #layout-type-technote:
 
 
     #Put attributes whose string values have letters in
