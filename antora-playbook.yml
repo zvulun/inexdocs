@@ -40,6 +40,20 @@ asciidoc:
     #these are soft-set attributes, which can
     #be overridden in individual files if needed.
 
+    #These attributes control substitutions in
+    #parts of the text which are very similar, but
+    #have small changes based on the product
+    #or type of document
+    xref-type-RoadView: false@
+    xref-type-IZA800G: false@
+    xref-type-IZA500G: false@
+    xref-type-IZ600F: false@
+    xref-type-IZIDPUG: false@
+    layout-type-full: false@
+    layout-type-datasheet: false@
+
+
+
     #if you add any attributes to this list
     #be sure to add them to the text file used to
     #replace strings with attributes, accessed by the
