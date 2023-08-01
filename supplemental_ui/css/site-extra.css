@@ -21,10 +21,6 @@
     align-items: flex-end;
 }
 
-.doc .text-right {
-    align-items: flex-end;
-}
-
 
 /* this controls all the table borders  */
 table, th, td {
