@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>IZA800G Installation Guide :: Documents</title>
+    <title>IZA500G/GR Installation Guide :: Documents</title>
     <meta name="generator" content="Antora 3.1.3">
 <link rel="stylesheet" href="../../../_/css/site.css">
 <link rel="stylesheet" href="../../../_/css/site-extra.css">
@@ -92,7 +92,7 @@
     <span class="nav-text">Cameras</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="DocList.html">IZA800G</a>
+    <a class="nav-link" href="../IZA800G/DocList.html">IZA800G</a>
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../IZA800GORT/DocList.html">IZA800GORT</a>
@@ -107,7 +107,7 @@
     <a class="nav-link" href="../IZA800GDOT/DocList.html">IZA800GDOT</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../IZA500G/DocList.html">IZA500G</a>
+    <a class="nav-link" href="DocList.html">IZA500G</a>
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../IZA500GR/DocList.html">IZA500GR</a>
@@ -355,7 +355,7 @@
 <nav class="breadcrumbs" aria-label="breadcrumbs">
   <ul>
     <li><a href="../index.html">Documents</a></li>
-    <li><a href="IZA800G-Installation-Guide.html">IZA800G Installation Guide</a></li>
+    <li><a href="IZA500G-GR-Installation-Guide.html">IZA500G/GR Installation Guide</a></li>
   </ul>
 </nav>
 </div>
@@ -364,16 +364,19 @@
   <div class="toc-menu"></div>
 </aside>
 <article class="doc">
-<h1 class="page">IZA800G Installation Guide</h1>
+<h1 class="page">IZA500G/GR Installation Guide</h1>
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p><a href="DocList.html" class="xref page">&#8592; Back to IZA800G Documents</a></p>
+<p><a href="DocList.html" class="xref page">&#8592; Back to IZA500G Documents</a></p>
+</div>
+<div class="paragraph">
+<p><a href="../IZA500GR/DocList.html" class="xref page">&#8592; Back to IZA500GR Documents</a></p>
 </div>
 <div class="paragraph">
 <p><span class="image"><img src="../_images/INEX_DataSheet_Logo_With_Line.png" alt="INEX Logo"></span></p>
 </div>
-<h2 id="_iza800g_alpr_all_in_one_ai_camera_system" class="discrete">IZA800G ALPR All-in-one AI Camera System</h2>
+<h2 id="_alpr_all_in_one_ai_camera_system" class="discrete">ALPR All-in-one AI Camera System</h2>
 <div class="paragraph">
 <p><span class="image"><img src="../_images/IZA500G/IZA500G-FIG-001e_FrontPagePhoto.png" alt="Picture of Camera" width="400"></span></p>
 </div>
@@ -415,9 +418,8 @@
 <li><a href="#s_Optimizing-Nighttime-Vehicle-Overview-Images-using-External-Illuminators">5.4. Optimizing Nighttime Vehicle Overview Images (using External Illuminators)</a>
 <ul class="sectlevel3">
 <li><a href="#s_Matching-Your-Camera-System-to-an-INEX-Illuminator">5.4.1. Matching Your Camera System to an INEX Illuminator</a></li>
-<li><a href="#s_Illuminator-Triggering-and-Pulse-Width">5.4.2. Illuminator Triggering and Pulse Width</a></li>
-<li><a href="#s_Illuminator-Mounting-and-Aiming">5.4.3. Illuminator Mounting and Aiming</a></li>
-<li><a href="#s_Verifying-Infrared-type-Illuminator-Operation">5.4.4. Verifying Infrared-type Illuminator Operation</a></li>
+<li><a href="#s_Illuminator-Mounting-and-Aiming">5.4.2. Illuminator Mounting and Aiming</a></li>
+<li><a href="#s_Verifying-Infrared-type-Illuminator-Operation">5.4.3. Verifying Infrared-type Illuminator Operation</a></li>
 </ul>
 </li>
 <li><a href="#s_Additional-Installation-Considerations">5.5. Additional Installation Considerations</a></li>
@@ -426,10 +428,9 @@
 <li><a href="#s_Mounting-the-Camera-System">6. Install Camera System(s) and Other Components</a></li>
 <li><a href="#s_Connect-Components-Wiring">7. Connect Components (Wiring)</a>
 <ul class="sectlevel2">
-<li><a href="#s_Constructing-the-Power-Signals-Cable">7.1. Constructing the Power/Signals Cable</a></li>
-<li><a href="#s_Constructing-the-LAN-Cable">7.2. Constructing the LAN Cable</a></li>
-<li><a href="#s_Typical-Wiring-Diagrams">7.3. Typical Wiring Diagrams</a></li>
-<li><a href="#s_Connecting-the-Camera-System-Illuminator-Power-Supply-and-Network">7.4. Connecting the Camera System, Illuminator, Power Supply and Network</a></li>
+<li><a href="#_lan_and_powersignals_cable_details">7.1. LAN and Power/Signals Cable Details</a></li>
+<li><a href="#s_Typical-Wiring-Diagrams">7.2. Typical Wiring Diagrams</a></li>
+<li><a href="#s_Connecting-the-Camera-System-Illuminator-Power-Supply-and-Network">7.3. Connecting the Camera System, Illuminator, Power Supply and Network</a></li>
 </ul>
 </li>
 <li><a href="#s_Power-Up-and-Set-Up-IP">8. Power Up and Set Up IP</a>
@@ -491,8 +492,8 @@
 <table id="t_Related-Documents" class="tableblock frame-all grid-all stretch">
 <caption class="title">Table 1. Related Documents</caption>
 <colgroup>
-<col style="width: 45%;">
-<col style="width: 55%;">
+<col style="width: 51%;">
+<col style="width: 49%;">
 </colgroup>
 <thead>
 <tr>
@@ -502,24 +503,20 @@
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="DocList.html" class="xref page">IZA800G-MAN-002a</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">IZA800G User Guide</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="DocList.html" class="xref page">IZA500G-GR-MAN-002b</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">IZA500G/GR User Guide</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="DocList.html" class="xref page">IZA800G-TECH-001</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">IZA800G Quick Start</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="DocList.html" class="xref page">IZA500G-GR-TECH-001</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">IZA500G/GR Quick Start Guide</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="DocList.html" class="xref page">IZA800G-xx-TDSHEET</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">IZA800G Technical Data Sheet</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="DocList.html" class="xref page">IZA500G-xx-TDSHEET</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">IZA500G Technical Data Sheet</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../IZCAB-A800-PAS/DocList.html" class="xref page">IZCABA800PAS-REV-x-TDSHEET</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Power/Signals Cable for IZA800G System Technical Data Sheet</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../IZCAB-A800-LAN/DocList.html" class="xref page">IZCABA800LAN-REV-x-TDSHEET</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">LAN Cable for IZA800G System Technical Data Sheet</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../IZA500GR/DocList.html" class="xref page">IZA500GR-xx-TDSHEET</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">IZA500GR Technical Data Sheet</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../MNT-ProdToMountMap/DocList.html" class="xref page">MOUNT-MAP-PRSNT-011</a></p></td>
@@ -546,8 +543,8 @@
 <td class="tableblock halign-left valign-top"><p class="tableblock">Software End User License Agreement (includes list of open source software)</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../IZS/DocList.html" class="xref page">IZS-MAN-002</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">IZS Strobe Illuminator Series User Guide</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../IZL/DocList.html" class="xref page">IZL-L-MAN-002</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">IZL Illuminator Series User Guide</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../IZPWR/DocList.html" class="xref page">IZPWRSRFC-REV-x-TDSHEET</a></p></td>
@@ -560,6 +557,10 @@
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../IZIO/DocList.html" class="xref page">IZIO-6060-MAN-001</a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">IZIO Digital I/O Controller Installation and User Guide</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../LOOP-DTCR-L/DocList.html" class="xref page">LOOP-DTCR-L-MAN-001</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LOOP-DTCR-L Loop Detector Installation and User Guide</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../NDAA/DocList.html" class="xref page">NDAA-NB-COC-001</a></p></td>
@@ -627,19 +628,13 @@
 <div class="sect2">
 <h3 id="s_Package-Contents"><a class="anchor" href="#s_Package-Contents"></a>4.1. Package Contents</h3>
 <div class="paragraph">
-<p>Carefully unpack the contents of the ALPR Camera System package.</p>
+<p>Carefully unpack the contents of the ALPR Camera System package. (For a detailed view of the cables, see <a href="#f_Cable-Details">Figure 9</a>.)</p>
 </div>
 <div id="f_Package-Contents" class="imageblock">
 <div class="content">
-<img src="../_images/IZA800G/image1.png" alt="image" width="460" height="345">
+<img src="../_images/IZA500G/image1.png" alt="image" width="288" height="355">
 </div>
 <div class="title">Figure 1. Package Contents</div>
-</div>
-<div id="f_Mounting-Adapter-Plate" class="imageblock">
-<div class="content">
-<img src="../_images/IZA800G/image2.png" alt="image" width="349" height="199">
-</div>
-<div class="title">Figure 2. Mounting Adapter Plate</div>
 </div>
 <div class="paragraph">
 <p>The package includes:</p>
@@ -647,16 +642,7 @@
 <div class="ulist">
 <ul>
 <li>
-<p>IZA800G ALPR All-in-one AI Camera System</p>
-</li>
-<li>
-<p>LAN cable or field-mountable cable connector</p>
-</li>
-<li>
-<p>Power/Signals cable or field-mountable cable connector</p>
-</li>
-<li>
-<p>Mounting adapter plate with screws: 3 - 18-8 stainless steel thread-locking socket head screws, 1/4"-20 thread size, 5/8" long; Allen heads; used to attach the mounting adapter plate to the housing</p>
+<p>IZA500G/GR ALPR All-in-one AI Camera System</p>
 </li>
 </ul>
 </div>
@@ -713,10 +699,10 @@ For documentation and part numbers, see <a href="#s_Related-Documents">Section 1
 <div class="ulist">
 <ul>
 <li>
-<p>Prefabricated Power/Signals and LAN cables</p>
+<p>IZIO Digital I/O Controller</p>
 </li>
 <li>
-<p>IZIO Digital I/O Controller</p>
+<p>Loop Detector</p>
 </li>
 <li>
 <p>External Illuminators</p>
@@ -732,16 +718,7 @@ For documentation and part numbers, see <a href="#s_Related-Documents">Section 1
 <p>An Allen wrench used to attach the mounting adapter plate to the housing (if applicable); size 3/16" (4.76 mm)</p>
 </li>
 <li>
-<p>8-wire cable for power/signals; recommended to use E119932-1/LL84201, 24 gauge (size of each wire); see <a href="#s_Constructing-the-Power-Signals-Cable">Section 7.1</a>.</p>
-</li>
-<li>
-<p>2 mm flat screwdriver for tightening the screw terminals of the power/signals connector (see <a href="#s_Constructing-the-Power-Signals-Cable">Section 7.1</a>).</p>
-</li>
-<li>
-<p>16 mm torque wrench for tightening the nuts of the power/signals connector, and for attaching the connector to the Camera System.</p>
-</li>
-<li>
-<p>Network (LAN) cabling (typically CAT 5e/6 cable) with metal-body RJ45 connectors. The total length of the cable should not exceed 328 feet (100 meters). <strong>See <a href="#s_Constructing-the-LAN-Cable">Section 7.2</a> for important LAN cable information.</strong></p>
+<p>Network (LAN) cabling (typically CAT 5e/6 cable) with metal-body RJ45 connectors. The total length of the cable should not exceed 328 feet (100 meters).</p>
 </li>
 <li>
 <p>Tools for building LAN cables (wire stripper, crimp tool, etc.) and RJ45 connectors with metal bodies.</p>
@@ -804,7 +781,7 @@ You can add an IE Tab extension to Chrome at this <a href="https://chrome.google
 <div class="content">
 <img src="../_images/IZA800G/image10.png" alt="image" width="634" height="194">
 </div>
-<div class="title">Figure 3. Field of View (Capture Line)</div>
+<div class="title">Figure 2. Field of View (Capture Line)</div>
 </div>
 <div class="paragraph">
 <p>Select your camera&#8217;s position so that license plates are always within the capture line and parallel to it, with the camera facing as straight at the plates as possible - as shown in the following diagrams:</p>
@@ -813,13 +790,13 @@ You can add an IE Tab extension to Chrome at this <a href="https://chrome.google
 <div class="content">
 <img src="../_images/IZA800G/image11.png" alt="image" width="247" height="411">
 </div>
-<div class="title">Figure 4. Plates Within Capture Line</div>
+<div class="title">Figure 3. Plates Within Capture Line</div>
 </div>
 <div id="f_Plates-Parallel-to-Capture-Line-Away-from-Road-Curves" class="imageblock">
 <div class="content">
 <img src="../_images/IZA800G/image12.png" alt="image" width="503" height="314">
 </div>
-<div class="title">Figure 5. Plates Parallel to Capture Line - Away from Road Curves</div>
+<div class="title">Figure 4. Plates Parallel to Capture Line - Away from Road Curves</div>
 </div>
 </div>
 <div class="sect2">
@@ -848,7 +825,7 @@ You can add an IE Tab extension to Chrome at this <a href="https://chrome.google
 <div class="content">
 <img src="../_images/IZA800G/image13.png" alt="image" width="310" height="332">
 </div>
-<div class="title">Figure 6. Horizontal Camera Angle (Pan Angle)</div>
+<div class="title">Figure 5. Horizontal Camera Angle (Pan Angle)</div>
 </div>
 <details>
 <summary class="title"><em>Click to show notes for Horizontal Angle</em></summary>
@@ -882,7 +859,7 @@ You can add an IE Tab extension to Chrome at this <a href="https://chrome.google
 <div class="content">
 <img src="../_images/IZA800G/image14.png" alt="image" width="626" height="194">
 </div>
-<div class="title">Figure 7. Vertical Camera Angle (Tilt Angle) and Line-of-Sight Distance from Plate</div>
+<div class="title">Figure 6. Vertical Camera Angle (Tilt Angle) and Line-of-Sight Distance from Plate</div>
 </div>
 <details>
 <summary class="title"><em>Click to show notes for Vertical Angle</em></summary>
@@ -947,7 +924,7 @@ You can add an IE Tab extension to Chrome at this <a href="https://chrome.google
 <div class="content">
 <img src="../_images/IZA800G/image15.png" alt="image" width="628" height="232">
 </div>
-<div class="title">Figure 8. Sun Behind Camera (on Same Axis as Line-of-Sight from Camera to Plate)</div>
+<div class="title">Figure 7. Sun Behind Camera (on Same Axis as Line-of-Sight from Camera to Plate)</div>
 </div>
 </div>
 <div class="sect2">
@@ -959,7 +936,7 @@ You can add an IE Tab extension to Chrome at this <a href="https://chrome.google
 <div class="content">
 <img src="../_images/IZA800G/image16.png" alt="image" width="136" height="121">
 </div>
-<div class="title">Figure 9. External Illuminator</div>
+<div class="title">Figure 8. External Illuminator</div>
 </div>
 <div class="sect3">
 <h4 id="s_Matching-Your-Camera-System-to-an-INEX-Illuminator"><a class="anchor" href="#s_Matching-Your-Camera-System-to-an-INEX-Illuminator"></a>5.4.1. Matching Your Camera System to an INEX Illuminator</h4>
@@ -980,12 +957,11 @@ See the appropriate Illuminator Series User Guide(s) for compatibility informati
 </table>
 </div>
 <div class="paragraph">
-<p><strong>The INEX IZA800G
+<p><strong>The INEX IZA500G/GR
 Camera Systems
 are typically used with the
-IZS
+IZL
 series
-strobe
 illuminators.</strong></p>
 </div>
 <div class="paragraph">
@@ -1017,13 +993,7 @@ being used, as follows:</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="s_Illuminator-Triggering-and-Pulse-Width"><a class="anchor" href="#s_Illuminator-Triggering-and-Pulse-Width"></a>5.4.2. Illuminator Triggering and Pulse Width</h4>
-<div class="paragraph">
-<p>You can trigger an illuminator from the OV camera by using appropriate wiring (see <a href="#s_Typical-Wiring-Diagrams">Section 7.3</a>). The pulse width and other parameters that affect illuminator operation are pre-configured according to your project&#8217;s requirements.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="s_Illuminator-Mounting-and-Aiming"><a class="anchor" href="#s_Illuminator-Mounting-and-Aiming"></a>5.4.3. Illuminator Mounting and Aiming</h4>
+<h4 id="s_Illuminator-Mounting-and-Aiming"><a class="anchor" href="#s_Illuminator-Mounting-and-Aiming"></a>5.4.2. Illuminator Mounting and Aiming</h4>
 <div class="paragraph">
 <p><strong>See the illuminator guides for further details about installation and mounting considerations (see <a href="#s_Related-Documents">Section 1</a>).</strong></p>
 </div>
@@ -1041,7 +1011,7 @@ Camera System(s)
 </div>
 </div>
 <div class="sect3">
-<h4 id="s_Verifying-Infrared-type-Illuminator-Operation"><a class="anchor" href="#s_Verifying-Infrared-type-Illuminator-Operation"></a>5.4.4. Verifying Infrared-type Illuminator Operation</h4>
+<h4 id="s_Verifying-Infrared-type-Illuminator-Operation"><a class="anchor" href="#s_Verifying-Infrared-type-Illuminator-Operation"></a>5.4.3. Verifying Infrared-type Illuminator Operation</h4>
 <div class="paragraph">
 <p>You can look at an infrared-type illuminator with a smartphone camera to see if it is working.</p>
 </div>
@@ -1096,13 +1066,10 @@ Camera System(s)
 <td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
 <ul>
 <li>
-<p>Power - Use a cable gauge sufficient to deliver 24 VDC at the Camera System</p>
+<p>Power - Use a cable gauge sufficient to deliver 12-24 VDC at the Camera System</p>
 </li>
 <li>
-<p>LAN - Use only CAT 5e/6 cable for any extensions added to the LAN cable. The total length of the cable should not exceed 328 feet (100 meters).</p>
-</li>
-<li>
-<p>In order to use the connector included with the Camera System, the outer diameter of the LAN cable must be in the range of 0.20" to 0.25" (5.0 to 6.5 mm).</p>
+<p>LAN - Use only CAT 5e/6 cable for any extensions added to the LAN cable. The total length of the cable (without a switch) should not exceed 328 feet (100 meters).</p>
 </li>
 </ul>
 </div></div></td>
@@ -1122,6 +1089,9 @@ Camera System(s)
 </li>
 <li>
 <p>Recessed plates</p>
+</li>
+<li>
+<p>Desired pre- or post-capture in relation to ticket issue (for parking)</p>
 </li>
 </ul>
 </div></div></td>
@@ -1159,10 +1129,13 @@ Camera System(s)
 <p>Bright light (sun/artificial) shining directly into Camera System&#8217;s front window</p>
 </li>
 <li>
+<p>Reflective surfaces too close to camera lens</p>
+</li>
+<li>
 <p>Weather - snow, heavy rain, dust storms</p>
 </li>
 <li>
-<p>Dirt on front window</p>
+<p>Dirt on front window (see <a href="#s_Troubleshooting-and-Maintenance">Section 12</a>)</p>
 </li>
 </ul>
 </div></div></td>
@@ -1172,7 +1145,7 @@ Camera System(s)
 <td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
 <ul>
 <li>
-<p>Typically gantry (can also be on wall/pole)</p>
+<p>Typically on wall/pole</p>
 </li>
 <li>
 <p>Additional construction if needed</p>
@@ -1218,371 +1191,35 @@ mounting hardware
 <h2 id="s_Connect-Components-Wiring"><a class="anchor" href="#s_Connect-Components-Wiring"></a>7. Connect Components (Wiring)</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="s_Constructing-the-Power-Signals-Cable"><a class="anchor" href="#s_Constructing-the-Power-Signals-Cable"></a>7.1. Constructing the Power/Signals Cable</h3>
-<div class="admonitionblock important">
+<h3 id="_lan_and_powersignals_cable_details"><a class="anchor" href="#_lan_and_powersignals_cable_details"></a>7.1. LAN and Power/Signals Cable Details</h3>
+<div class="admonitionblock caution">
 <table>
 <tr>
 <td class="icon">
-<i class="fa icon-important" title="Important"></i>
+<i class="fa icon-caution" title="Caution"></i>
 </td>
 <td class="content">
 <div class="paragraph">
-<p>At the end of this procedure, you will need to check that there is conductivity from the shield wire (at the power supply end of the cable) to the body of the connector that will be connected to the Camera System.</p>
+<p>KEEP THE TRIGGER WIRES ISOLATED. SHORTING THE TRIGGER WIRES MAY DAMAGE THE UNIT AND VOID THE WARRANTY.</p>
+</div>
+<div class="paragraph">
+<p><strong>NOTE:</strong> The trigger wires have the same functions and colors as shown here, but the label on the cable may be worded differently.</p>
 </div>
 </td>
 </tr>
 </table>
 </div>
-<div class="paragraph">
-<p>Use the cable type recommended in the Required Accessories section (see <a href="#s_Required-Accessories">Section 4.2</a>).</p>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Lay out the parts from the power connector package.</p>
-<div id="f_Power-Signals-Cable-Laying-Out-Connector-Parts" class="imageblock">
+<div id="f_Cable-Details" class="imageblock">
 <div class="content">
-<img src="../_images/IZA800G/image19.png" alt="image" width="494" height="203">
+<img src="../_images/IZA500G/image4.png" alt="image" width="411" height="280">
 </div>
-<div class="title">Figure 10. Power/Signals Cable: Laying Out Connector Parts</div>
-</div>
-</li>
-<li>
-<p>Thread the cable through the sealing nut and rubber seal.</p>
-<div id="f_Power-Signals-Cable-Threading-Cable-Through-Sealing-Nut-and-Rubber-Seal" class="imageblock">
-<div class="content">
-<img src="../_images/IZA800G/image20.jpg" alt="image" width="507" height="128">
-</div>
-<div class="title">Figure 11. Power/Signals Cable: Threading Cable Through Sealing Nut and Rubber Seal</div>
-</div>
-</li>
-<li>
-<p>Prepare the cable shielding:</p>
-<div class="olist loweralpha">
-<ol class="loweralpha" type="a">
-<li>
-<p>Thread the cable all the way through the clamp cage body. Strip off the outer insulation of the cable, leaving the individual insulated wires exposed to a length of 18mm. <strong>Be careful not to cut into the inner foil and plastic jackets (casings) surrounding the individual insulated wires.</strong></p>
-</li>
-<li>
-<p>Slit the foil jacket, and bend it back onto the outer insulation.</p>
-</li>
-<li>
-<p>Carefully cut away the plastic jacket enclosing the individual insulated wires.</p>
-</li>
-<li>
-<p>Wrap the shield wire (the one without insulation) 1-2 times around the foil jacket that you bent back.</p>
-<div id="f_Power-Signals-Cable-Stripping-Off-the-Outer-Insulation" class="imageblock">
-<div class="content">
-<img src="../_images/IZA800G/image21.png" alt="image" width="468" height="197">
-</div>
-<div class="title">Figure 12. Power/Signals Cable: Stripping Off the Outer Insulation</div>
-</div>
-</li>
-</ol>
-</div>
-</li>
-<li>
-<p>Peel the backing off of the conductive foil to expose the adhesive.</p>
-<div id="f_Power-Signals-Cable-Peeling-Backing-off-Conductive-Foil" class="imageblock">
-<div class="content">
-<img src="../_images/IZA800G/image22.png" alt="image" width="159" height="179">
-</div>
-<div class="title">Figure 13. Power/Signals Cable: Peeling Backing off Conductive Foil</div>
-</div>
-</li>
-<li>
-<p>Wrap the conductive foil around the point at which the outer insulation was stripped, to cover and make contact with the shield wire and foil jacket.</p>
-<div id="f_Power-Signals-Cable-Wrapping-Conductive-Foil-Around-Shield-Wire-and-Jacket" class="imageblock">
-<div class="content">
-<img src="../_images/IZA800G/image23.png" alt="image" width="307" height="194">
-</div>
-<div class="title">Figure 14. Power/Signals Cable: Wrapping Conductive Foil Around Shield Wire and Jacket</div>
-</div>
-</li>
-<li>
-<p>Strip off 5 mm from each individual wire. Insert each wire into its appropriate screw terminal, and tighten with a 2 mm flat screwdriver. The suggested wire colors and pinouts are shown in the following Figures. The notch between pins 1 and 2 on the face of the connector corresponds to the notch on the circular body of the screw terminals.</p>
-<div class="openblock">
-<div class="content">
-<table id="t_Power-Signals-Cable-Power-Signals-Pinouts" class="tableblock frame-none grid-none" style="width: 70%;">
-<caption class="title">Table 4. Power/Signals Cable Connector Pinout</caption>
-<colgroup>
-<col style="width: 33.3333%;">
-<col style="width: 66.6667%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="image"><img src="../_images/IZA800G/image24.png" alt="image" width="181" height="352"></span></p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 10%;">
-<col style="width: 55%;">
-<col style="width: 35%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">Pin</th>
-<th class="tableblock halign-left valign-top">Power/Trigger</th>
-<th class="tableblock halign-left valign-top">Wire Color</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">24 VDC (-) / GND</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Black</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Dry Trigger 5V(&#43;)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Brown</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Wet Trigger GND/<br>
-OV Strobe (-)</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">White</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">4</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Dry/Wet Trig Input</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Blue</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">5</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">24 VDC (&#43;)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Red</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">6</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">RS485 (A)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Orange</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">7</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">RS485 (B)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Yellow</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">8</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">OV Strobe (&#43;)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Green</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="image"><img src="../_images/GroundSymbol.png" alt="image" width="20" height="26"></span></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Shield<br>
-(Connector Body)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">---</p></td>
-</tr>
-</tbody>
-</table></div></td>
-</tr>
-</tbody>
-</table>
-<div id="f_Power-Signals-Cable-Attaching-the-Wires-to-the-Screw-Terminals" class="imageblock">
-<div class="content">
-<img src="../_images/IZA800G/image25.png" alt="image" width="173" height="213">
-</div>
-<div class="title">Figure 15. Power/Signals Cable: Attaching the Wires to the Screw Terminals</div>
-</div>
-</div>
-</div>
-</li>
-<li>
-<p>Insert the screw terminals body into the clamp cage housing. Note how the tabs on the screw terminals fit into the grooves in the clamp cage housing.</p>
-<div id="f_Power-Signals-Cable-Inserting-Screw-Terminals-Tabs-into-Clamp-Cage-Housing" class="imageblock">
-<div class="content">
-<img src="../_images/IZA800G/image26.png" alt="image" width="421" height="295">
-</div>
-<div class="title">Figure 16. Power/Signals Cable: Inserting Screw Terminals' Tabs into Clamp Cage Housing</div>
-</div>
-</li>
-<li>
-<p>Verify that the conductive foil is now making contact with the spring sleeve protrusions inside the clamp cage housing. Use a 16 mm torque wrench to tighten the nut that fastens the clamp cage housing to the screw terminals body (torque 4-6 kgf.cm / 0.39-0.59 N.m.).</p>
-<div id="f_Power-Signals-Cable-Foil-in-Contact-with-Spring-Inside-Clamp-Cage-Housing" class="imageblock">
-<div class="content">
-<img src="../_images/IZA800G/image27.png" alt="image" width="520" height="285">
-</div>
-<div class="title">Figure 17. Power/Signals Cable: Foil in Contact with Spring Inside Clamp Cage Housing</div>
-</div>
-</li>
-<li>
-<p>Slide the sealing nut along the cable, and insert it in between the clamp cage protrusions.</p>
-<div id="f_Power-Cable-Inserting-the-Sealing-Nut-into-the-Clamp-Cage" class="imageblock">
-<div class="content">
-<img src="../_images/IZA800G/image28.png" alt="image" width="202" height="254">
-</div>
-<div class="title">Figure 18. Power Cable: Inserting the Sealing Nut into the Clamp Cage</div>
-</div>
-</li>
-<li>
-<p>Using a 16 mm wrench, tighten the nut that seals the end of the clamp cage housing. (torque 4-6 kgf.cm / 0.39-0.59 N.m.). Verify that the sealing nut is in tight contact with the inner body of the nut (to provide insulation against moisture). The sealing nut may pucker a bit due to the pressure of the nut; this is normal.</p>
-<div id="f_Power-Cable-Tightening-the-Nut-to-Seal-the-Clamp-Cage" class="imageblock">
-<div class="content">
-<img src="../_images/IZA800G/image29.png" alt="image" width="445" height="201">
-</div>
-<div class="title">Figure 19. Power Cable: Tightening the Nut to Seal the Clamp Cage</div>
-</div>
-</li>
-<li>
-<p>The point in the cable at which you will be connecting the power wires (&#43;, - and ground) to the power supply may be in the middle of the cable. (This part of the cable is typically inside a connection box to seal all connections from moisture.)</p>
-<div class="olist loweralpha">
-<ol class="loweralpha" type="a">
-<li>
-<p>Strip off a portion of outer insulation of the cable at the end you will be connecting to the power supply. Remove enough insulation so the shield wire will be long enough to wrap several times around the foil jacket (see next steps) and come out of the cable to reach the power supply ground wire. <strong>Be careful not to cut into the inner foil and plastic jackets (casings) surrounding the individual insulated wires.</strong></p>
-</li>
-<li>
-<p>Slit the foil jacket, and bend it back onto the outer insulation. Leave enough foil exposed so the shield wire can be wrapped several times around the foil.</p>
-</li>
-<li>
-<p>Carefully cut away the plastic jacket enclosing the individual insulated wires.</p>
-</li>
-<li>
-<p>Wrap the shield wire (the one without insulation) several times around the foil jacket that you bent back. There must be a tight contact between the shield wire and the foil.</p>
-<div id="f_Power-Cable-Wrapping-the-Shield-Wire-at-Power-Supply-End" class="imageblock">
-<div class="content">
-<img src="../_images/IZA800G/image30.png" alt="image" width="478" height="194">
-</div>
-<div class="title">Figure 20. Power Cable: Wrapping the Shield Wire at Power Supply End</div>
-</div>
-</li>
-<li>
-<p>IMPORTANT: Check that there is conductivity from the shield wire (at the power supply end of the cable) to the body of the connector that will be connected to the camera.</p>
-</li>
-<li>
-<p>You can seal the shield wire wrapping on the cable with insulation tape or heat shrink tubing.</p>
-</li>
-</ol>
-</div>
-</li>
-<li>
-<p>Connect the shield wire to the ground wire of the power supply. You may need to extend the shield wire by soldering an additional wire on to it.</p>
-</li>
-<li>
-<p>Connect the (&#43;) and (-) wires from the cable to the power supply.</p>
-<div id="f_Power-Cable-Connecting-the-Cable-Wires-to-the-Power-Supply" class="imageblock">
-<div class="content">
-<img src="../_images/IZA800G/image31.png" alt="image" width="350" height="196">
-</div>
-<div class="title">Figure 21. Power Cable: Connecting the Cable Wires to the Power Supply</div>
-</div>
-</li>
-<li>
-<p>Connect the remaining signal wires (see <a href="#s_Connecting-the-Camera-System-Illuminator-Power-Supply-and-Network">Section 7.4</a>).</p>
-</li>
-</ol>
+<div class="title">Figure 9. Cable Details</div>
 </div>
 </div>
 <div class="sect2">
-<h3 id="s_Constructing-the-LAN-Cable"><a class="anchor" href="#s_Constructing-the-LAN-Cable"></a>7.2. Constructing the LAN Cable</h3>
-<details>
-<summary class="title"><em>Click to show Important notes for LAN cable construction</em></summary>
-<div class="content">
-<div class="admonitionblock important">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-important" title="Important"></i>
-</td>
-<td class="content">
+<h3 id="s_Typical-Wiring-Diagrams"><a class="anchor" href="#s_Typical-Wiring-Diagrams"></a>7.2. Typical Wiring Diagrams</h3>
 <div class="paragraph">
-<p>If you are building your own LAN cables, you must use RJ45 connectors with metal bodies. You must ensure that there is conductivity between the bodies of the connectors at each end of the cable. You can do this by extracting the cable&#8217;s shield wire before attaching the connector to the cable, and then soldering the shield wire to the body of the connector (see the following Figures).</p>
-</div>
-<div class="paragraph">
-<p>The outer diameter of the LAN cable must be in the range of 0.20" to 0.25" (5.0 to 6.5 mm).</p>
-</div>
-<div class="paragraph">
-<p>If you are using prefabricated CAT 5e/6 cables with metal-body RJ45 connectors, the shield wires have typically already been connected to each connector body. However, you must still check that there is conductivity between the bodies of the connectors at each end of the cable.</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-</div>
-</details>
-<div id="f_LAN-Cable-Extracting-the-Shield-Wire" class="imageblock">
-<div class="content">
-<img src="../_images/IZA800G/image32.png" alt="image" width="302" height="211">
-</div>
-<div class="title">Figure 22. LAN Cable: Extracting the Shield Wire</div>
-</div>
-<div id="f_LAN-Cable-Shield-Wire-Soldered-to-Connector-Body" class="imageblock">
-<div class="content">
-<img src="../_images/IZA800G/image33.png" alt="image" width="305" height="228">
-</div>
-<div class="title">Figure 23. LAN Cable: Shield Wire Soldered to Connector Body</div>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Lay out the parts from the network (LAN) connector package.</p>
-<div id="f_LAN-Cable-Connector-Parts" class="imageblock">
-<div class="content">
-<img src="../_images/IZA800G/image34.png" alt="image" width="437" height="178">
-</div>
-<div class="title">Figure 24. LAN Cable: Connector Parts</div>
-</div>
-</li>
-<li>
-<p>Slip the sealing nut over the RJ45 connector onto the LAN cable, with the inner threads in the direction of the RJ45 connector.</p>
-<div id="f_LAN-Cable-Slipping-Sealing-Nut-Over-RJ45-Connector" class="imageblock">
-<div class="content">
-<img src="../_images/IZA800G/image35.png" alt="image" width="243" height="234">
-</div>
-<div class="title">Figure 25. LAN Cable: Slipping Sealing Nut Over RJ45 Connector</div>
-</div>
-</li>
-<li>
-<p>Open the rubber sealing ring at its split, and put it on the cable.</p>
-<div id="f_LAN-Cable-Attaching-Rubber-Sealing-Ring-to-Cable" class="imageblock">
-<div class="content">
-<img src="../_images/IZA800G/image36.png" alt="image" width="381" height="178">
-</div>
-<div class="title">Figure 26. LAN Cable: Attaching Rubber Sealing Ring to Cable</div>
-</div>
-</li>
-<li>
-<p>Orient the support plastic with the wider side (with the thinner walls) towards the RJ45 connector. Put the support plastic on the cable (the split can expand slightly).</p>
-<div id="f_LAN-Cable-Attaching-the-Support-Plastic-to-the-Cable" class="imageblock">
-<div class="content">
-<img src="../_images/IZA800G/image37.png" alt="image" width="501" height="439">
-</div>
-<div class="title">Figure 27. LAN Cable: Attaching the Support Plastic to the Cable</div>
-</div>
-</li>
-<li>
-<p>Gently push the RJ45 connector into the housing until it fits snugly in the cutout in the housing.</p>
-<div id="f_LAN-Cable-Inserting-RJ45-into-Housing-Cutout" class="imageblock">
-<div class="content">
-<img src="../_images/IZA800G/image38.png" alt="image" width="306" height="192">
-</div>
-<div class="title">Figure 28. LAN Cable: Inserting RJ45 into Housing Cutout</div>
-</div>
-</li>
-<li>
-<p>Insert the support plastic into the housing, followed by the rubber sealing ring. Seat the rubber sealing ring between the housing&#8217;s teeth as far in as it will go.</p>
-<div id="f_LAN-Cable-Inserting-the-Support-Plastic-and-Rubber-Ring-into-the-Housing" class="imageblock">
-<div class="content">
-<img src="../_images/IZA800G/image39.png" alt="image" width="488" height="279">
-</div>
-<div class="title">Figure 29. LAN Cable: Inserting the Support Plastic and Rubber Ring into the Housing</div>
-</div>
-</li>
-<li>
-<p>Tighten the sealing nut (torque 8-15 kgf.cm / 0.78-1.47 N.m.).</p>
-</li>
-</ol>
-</div>
-<div id="f_LAN-Cable-Completed-Assembly" class="imageblock">
-<div class="content">
-<img src="../_images/IZA800G/image40.png" alt="image" width="486" height="219">
-</div>
-<div class="title">Figure 30. LAN Cable: Completed Assembly</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="s_Typical-Wiring-Diagrams"><a class="anchor" href="#s_Typical-Wiring-Diagrams"></a>7.3. Typical Wiring Diagrams</h3>
-<div class="paragraph">
-<p>Here are typical wiring diagrams for capturing license plate images. Note that the type and configuration of the power supply may be different than the one you are using at your site. See <a href="#t_Wiring-Diagram-Legend-Bill-of-Materials">Table 5</a> for a legend/bill of materials.</p>
+<p>Here are typical wiring diagrams for capturing license plate images. Note that the type and configuration of the power supply may be different than the one you are using at your site. See <a href="#t_Wiring-Diagram-Legend-Bill-of-Materials">Table 4</a> for a legend/bill of materials.</p>
 </div>
 <div class="admonitionblock important">
 <table>
@@ -1598,18 +1235,30 @@ OV Strobe (-)</p></td>
 </tr>
 </table>
 </div>
-<div id="f_Typical-Camera-System-with-Illuminator-Wiring-Diagram" class="imageblock">
+<div id="f_Typical-Camera-System-Wiring-Diagram" class="imageblock">
 <div class="content">
-<img src="../_images/IZA800G/image17.png" alt="image" width="530" height="324">
+<img src="../_images/IZA500G/image17.png" alt="image" width="624" height="203">
 </div>
-<div class="title">Figure 31. Typical Camera System with Illuminator Wiring Diagram</div>
+<div class="title">Figure 10. Typical Camera System Wiring Diagram</div>
+</div>
+<div id="f_Typical-Camera-System-with-Inductive-Loop-Wiring-Diagram" class="imageblock">
+<div class="content">
+<img src="../_images/IZA500G/image18.png" alt="image" width="624" height="279">
+</div>
+<div class="title">Figure 11. Typical Camera System with Inductive Loop Wiring Diagram</div>
+</div>
+<div id="f_Typical-Camera-System-with-I-O-Module-Wiring-Diagram" class="imageblock">
+<div class="content">
+<img src="../_images/IZA500G/image19.png" alt="image" width="624" height="468">
+</div>
+<div class="title">Figure 12. Typical Camera System with I/O Module Wiring Diagram</div>
 </div>
 <table id="t_Wiring-Diagram-Legend-Bill-of-Materials" class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 5. Wiring Diagram Legend/Bill of Materials</caption>
+<caption class="title">Table 4. Wiring Diagram Legend/Bill of Materials</caption>
 <colgroup>
-<col style="width: 12%;">
-<col style="width: 47%;">
-<col style="width: 41%;">
+<col style="width: 7%;">
+<col style="width: 54%;">
+<col style="width: 39%;">
 </colgroup>
 <thead>
 <tr>
@@ -1622,28 +1271,33 @@ OV Strobe (-)</p></td>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">A</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><strong>LAN Cable for IZA800G System</strong></p>
+<p><strong>LAN Cable</strong></p>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">INEX P/N: <a href="../IZCAB-A800-LAN/DocList.html" class="xref page">IZCAB-A800-LAN</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Supplied by integrator</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">B</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><strong>Power/Signals Cable for IZA800G System</strong></p>
+<p><strong>Power Supply for All Components:</strong><br>
+24 VDC, 50/75W or 100/120W; DIN rail or surface mount<br>
+<br>
+Can power 2 sets of components from a single power supply</p>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">INEX P/N: <a href="../IZCAB-A800-PAS/DocList.html" class="xref page">IZCAB-A800-PAS</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">C</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><strong>Power Supply:</strong> 24 VDC, 100/120W;<br>
-DIN rail/surface mount options<br></p>
+<p>For 1 set of components, use INEX P/N:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="../IZPWR/DocList.html" class="xref page">IZPWR50-24-TDK-DIN</a></p>
+</li>
+<li>
+<p><a href="../IZPWR/DocList.html" class="xref page">IZPWR75-24-MWL-DIN</a></p>
+</li>
+</ul>
 </div>
 <div class="paragraph">
-<p>Can power 2 cameras from a single power supply</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>INEX P/N:</p>
+<p>For 2 sets of components, use INEX P/N:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -1663,39 +1317,40 @@ DIN rail/surface mount options<br></p>
 </div></div></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">C</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><strong>Inductive Loop</strong></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Supplied by integrator</p></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">D</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><strong>Illuminator Power Cable</strong></p>
+<p><strong>Loop Detector Wiring Harness</strong></p>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Included; INEX P/N: <a href="../IZCAB-SPWR/DocList.html" class="xref page">IZCAB-SPWR-15F</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Included with Loop Detector</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">E</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><strong>Illuminator Signals Cable</strong></p>
+<p><strong>Gate</strong></p>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Included; INEX P/N: <a href="../IZCAB-SSIG/DocList.html" class="xref page">IZCAB-SSIG-15F</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">F</p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><strong>IZS Strobe Illuminator</strong></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">INEX P/N: See the <a href="../IZS/DocList.html" class="xref page">IZS Strobe Iluminator User Guide</a> for a table of Camera-to-Illuminator Typical Use Cases</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Supplied by integrator</p></td>
 </tr>
 </tbody>
 </table>
-<div id="f_Typical-Camera-System-Wiring-Diagram" class="imageblock">
-<div class="content">
-<img src="../_images/IZA800G/image18.png" alt="image" width="424" height="356">
-</div>
-<div class="title">Figure 32. Typical Camera System Wiring Diagram</div>
+<div class="paragraph">
+<p><strong>Note:</strong> For device configuration instructions, see the
+<a href="../LOOP-DTCR-L/DocList.html" class="xref page">LOOP-DTCR-L</a>
+and
+<a href="../IZIO/DocList.html" class="xref page">IZIO</a>
+guides. If you need to use an external illuminator, see the <a href="https://drive.google.com/drive/folders/1214eXbG17P4qrGLDIgJqrAq11xd15htt?usp=share_link">IZL Illuminator</a> guide for a table of Camera-to-Illuminator Typical Use Cases.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="s_Connecting-the-Camera-System-Illuminator-Power-Supply-and-Network"><a class="anchor" href="#s_Connecting-the-Camera-System-Illuminator-Power-Supply-and-Network"></a>7.4. Connecting the Camera System, Illuminator, Power Supply and Network</h3>
+<h3 id="s_Connecting-the-Camera-System-Illuminator-Power-Supply-and-Network"><a class="anchor" href="#s_Connecting-the-Camera-System-Illuminator-Power-Supply-and-Network"></a>7.3. Connecting the Camera System, Illuminator, Power Supply and Network</h3>
 <div class="paragraph">
-<p>See <a href="#f_Typical-Camera-System-with-Illuminator-Wiring-Diagram">Figure 31</a> and <a href="#f_Typical-Camera-System-Wiring-Diagram">Figure 32</a> for typical wiring diagrams.</p>
+<p>See <a href="#s_Typical-Wiring-Diagrams">Section 7.2</a> for typical wiring diagrams.</p>
 </div>
 <div class="admonitionblock warning">
 <table>
@@ -1722,10 +1377,35 @@ DIN rail/surface mount options<br></p>
 <div class="paragraph">
 <p>The Camera System is not compatible with some GigE switches; suggested switch type: 10/100 Mb</p>
 </div>
+</td>
+</tr>
+</table>
+</div>
 <div class="paragraph">
-<p>The torques required to connect the cable connectors to the connectors on the Camera System are as follows:<br>
-Power/signals cable: 3-4 kgf.cm / 0.29-0.39 N.m.<br>
-LAN cable: 5-8 kgf.cm / 0.49-0.78 N.m.</p>
+<p>As an example, you can connect the ALPR Camera System&#8217;s power cable to a surface-mounted power supply as follows:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Red</strong> - &#43;24 VDC (&#43;V); <strong>Black</strong> - -24 VDC (-V); <strong>Yellow</strong> - ground (FG)</p>
+</li>
+</ul>
+</div>
+<div id="f_Connecting-the-Camera-System-to-a-Surface-Mount-Power-Supply" class="imageblock">
+<div class="content">
+<img src="_images/UserGuide/image20.png" alt="image" width="271" height="169">
+</div>
+<div class="title">Figure 13. Connecting the Camera System to a Surface-Mount Power Supply</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>If you are using a DIN rail-mount power supply, you will need to cut off the rings at the ends of the power connections, and attach pins in their place.</p>
 </div>
 </td>
 </tr>
@@ -1740,7 +1420,7 @@ LAN cable: 5-8 kgf.cm / 0.49-0.78 N.m.</p>
 <div class="sect2">
 <h3 id="s_Connecting-the-AC-Electricity"><a class="anchor" href="#s_Connecting-the-AC-Electricity"></a>8.1. Connecting the AC Electricity</h3>
 <div class="paragraph">
-<p>Connect a plug to the <strong><u>L</u></strong>ive (&#43;V, <strong><u>N</u></strong>eutral (-V) and Ground (Shield) terminals of the power supply (see <a href="#f_Typical-Camera-System-with-Illuminator-Wiring-Diagram">Figure 31</a> and <a href="#f_Typical-Camera-System-Wiring-Diagram">Figure 32</a>).</p>
+<p>Connect a plug to the <strong><u>L</u></strong>ive (&#43;V, <strong><u>N</u></strong>eutral (-V) and Ground (Shield) terminals of the power supply (see <a href="#f_Typical-Camera-System-with-Illuminator-Wiring-Diagram">[f_Typical-Camera-System-with-Illuminator-Wiring-Diagram]</a> and <a href="#f_Typical-Camera-System-Wiring-Diagram">Figure 10</a>).</p>
 </div>
 <div class="paragraph">
 <p>Plug the power supply into the AC electricity. If required, switch the power supply unit ON.</p>
@@ -1791,7 +1471,7 @@ IP address.</p>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>To view the camera&#8217;s home page (see <a href="#f_Camera-s-Home-Page">Figure 33</a>):</p>
+<p>To view the camera&#8217;s home page (see <a href="#f_Camera-s-Home-Page">Figure 14</a>):</p>
 <div class="ulist">
 <ul>
 <li>
@@ -1802,7 +1482,7 @@ Enter the IP address of the camera into the address field of the browser.</p>
 <div class="content">
 <img src="../_images/IZA800G/image43.png" alt="image" width="528" height="230">
 </div>
-<div class="title">Figure 33. Camera&#8217;s Home Page</div>
+<div class="title">Figure 14. Camera&#8217;s Home Page</div>
 </div>
 </li>
 </ul>
@@ -1897,7 +1577,7 @@ where cam0_0 is a camera-specific parameter (which in this case enables you to a
 <div class="content">
 <img src="../_images/IZA800G/image44.png" alt="image" width="524" height="180">
 </div>
-<div class="title">Figure 34. Changing the Camera&#8217;s IP Address</div>
+<div class="title">Figure 15. Changing the Camera&#8217;s IP Address</div>
 </div>
 </li>
 <li>
@@ -1922,7 +1602,7 @@ where cam0_0 is a camera-specific parameter (which in this case enables you to a
 <p>Click the Static radio button.</p>
 </li>
 <li>
-<p>Enter the network address parameters (see <a href="#t_IP-Address-Parameters">Table 6</a>). <strong>All cameras must be on the same subnet as both the computer you will use to communicate with and configure the camera, and the INEX RoadView computer.</strong></p>
+<p>Enter the network address parameters (see <a href="#t_IP-Address-Parameters">Table 5</a>). <strong>All cameras must be on the same subnet as both the computer you will use to communicate with and configure the camera, and the INEX RoadView computer.</strong></p>
 </li>
 </ol>
 </div>
@@ -1943,7 +1623,7 @@ where cam0_0 is a camera-specific parameter (which in this case enables you to a
 </table>
 </div>
 <table id="t_IP-Address-Parameters" class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 6. IP Address Parameters</caption>
+<caption class="title">Table 5. IP Address Parameters</caption>
 <colgroup>
 <col style="width: 28%;">
 <col style="width: 20%;">
@@ -2044,7 +1724,7 @@ where cam0_0 is a camera-specific parameter (which in this case enables you to a
 <h3 id="s_Preparing-a-Vehicle-License-Plate"><a class="anchor" href="#s_Preparing-a-Vehicle-License-Plate"></a>10.1. Preparing a Vehicle/License Plate</h3>
 <div class="paragraph">
 <p>Move a vehicle next to, and at the middle of the capture line. (This is the position at which the vehicle sensor signals that the vehicle is present.) Ensure that the Camera System is aimed at the middle of the lane, and is at the required capture distance (see <a href="#s_Plan-Your-Site">Section 5</a>
-and the IZA800G User Guide - see <a href="#s_Related-Documents">Section 1</a>).</p>
+and the IZA500G/GR User Guide - see <a href="#s_Related-Documents">Section 1</a>).</p>
 </div>
 <div class="paragraph">
 <p>Alternatively, in a lab, position a license plate at the expected distance and height.</p>
@@ -2074,7 +1754,7 @@ For example:<br>
 <div class="content">
 <img src="../_images/RoadViewALPR/RoadViewLoginWindow.png" alt="image" width="209" height="143">
 </div>
-<div class="title">Figure 35. Logging In to RoadView</div>
+<div class="title">Figure 16. Logging In to RoadView</div>
 </div>
 </li>
 <li>
@@ -2217,7 +1897,7 @@ For example:<br>
 <p>Keep this guide for future reference.</p>
 </li>
 <li>
-<p>Do not disassemble the ALPR Camera System or external illuminator units.
+<p>Do not disassemble the ALPR Camera System.
 Repair or replacement of parts for this ALPR Camera System
 and its external illuminator units
 should be supplied by INEX Technologies, and installed by qualified service personnel.</p>
@@ -2265,7 +1945,7 @@ with care.</p>
 <p>Do not stare directly into the front of the ALPR Camera System while it is operating.</p>
 </li>
 <li>
-<p>IZA800G - IEC62471 Group 1:</p>
+<p>IZA500G/GR - IEC62471 Group 1:</p>
 </li>
 </ul>
 </div>
@@ -2326,7 +2006,7 @@ This device has been tested and conforms to the IK10 impact standard (vandal-pro
 <p></p>
 </div>
 <div class="paragraph">
-<p>Doc. No. IZA800G-MAN-002b</p>
+<p>Doc. No. IZA500G-GR-MAN-002b</p>
 </div>
 </div>
 </div>
