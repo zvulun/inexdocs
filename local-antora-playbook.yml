@@ -79,6 +79,7 @@ asciidoc:
     hw-loopdetect-p: LOOP-DTCR-P@
     illum-strobe: IZS@
     illum-non-strobe: IZL@
+    illum-VES: IZSVES@
     generic-camera-name: ALPR Camera System@
 
     eyesafetystandard-1: IEC62471 Group 1@
