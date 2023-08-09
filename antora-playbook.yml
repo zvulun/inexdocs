@@ -75,7 +75,9 @@ asciidoc:
     hw-iocontroller: IZIO@
     hw-webrelay-quad: IZ-REM-RELAY-4@
     hw-webrelay-single: IZ-REM-RELAY@
+    hw-gate-controller: IZIDPUGC@
     hw-indoor-processor: IZIDPUG@
+    hw-outdoor-processor: IZODPUG@
     hw-loopdetect-l: LOOP-DTCR-L@
     hw-loopdetect-p: LOOP-DTCR-P@
     illum-strobe: IZS@
