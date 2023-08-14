@@ -256,6 +256,9 @@
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../IZPANEL/DocList.html">IZPanel (Connection Panel)</a>
   </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../IZ4POE/DocList.html">IZ4POE (Gigabit 4-Port PoE&#43;&#43; Injector)</a>
+  </li>
 </ul>
   </li>
   <li class="nav-item" data-depth="1">
@@ -511,11 +514,11 @@
 <td class="tableblock halign-left valign-top"><p class="tableblock">IZA500G/GR Quick Start Guide</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="DocList.html" class="xref page">IZA500G-xx-TDSHEET</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="DocList.html" class="xref page">IZA500G-REV-xx-TDSHEET</a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">IZA500G Technical Data Sheet</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../IZA500GR/DocList.html" class="xref page">IZA500GR-xx-TDSHEET</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../IZA500GR/DocList.html" class="xref page">IZA500GR-REV-xx-TDSHEET</a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">IZA500GR Technical Data Sheet</p></td>
 </tr>
 <tr>
@@ -531,7 +534,7 @@
 <td class="tableblock halign-left valign-top"><p class="tableblock">IZ Discovery Utility software components</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../IZDiscovery/DocList.html" class="xref page">IZDISCOVERY-IZD-MAN-001</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../IZDiscovery/DocList.html" class="xref page">IZDISCOVERY-MAN-001</a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">IZ Discovery User Guide</p></td>
 </tr>
 <tr>
@@ -557,6 +560,10 @@
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../IZIO/DocList.html" class="xref page">IZIO-6060-MAN-001</a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">IZIO Digital I/O Controller Installation and User Guide</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../IZ4POE/DocList.html" class="xref page">IZ4POE-DIN-REV-xxx-TDSHEET</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">IZ4POE Gigabit 4-Port PoE++ Injector Technical Data Sheet</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../LOOP-DTCR-L/DocList.html" class="xref page">LOOP-DTCR-L-MAN-001</a></p></td>
@@ -681,8 +688,12 @@ For documentation and part numbers, see <a href="#s_Related-Documents">Section 1
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">24VDC power supply (voltage-adjustable)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">24 VDC (or 48 VDC for P48 models using DC input) power supply (voltage-adjustable)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">INEX/TECH model power supply. (If you use an external illuminator, it is recommended to use an illuminator power supply separate from the Camera System&#8217;s supply.)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PoE&#43;&#43; Injector</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Required for P48 models when using PoE+ power input</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Mounting Hardware (pan-tilt-roll bracket)</p></td>
@@ -1066,7 +1077,7 @@ Camera System(s)
 <td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
 <ul>
 <li>
-<p>Power - Use a cable gauge sufficient to deliver 12-24 VDC at the Camera System</p>
+<p>Power - Use a cable gauge sufficient to deliver the required voltage at the Camera System</p>
 </li>
 <li>
 <p>LAN - Use only CAT 5e/6 cable for any extensions added to the LAN cable. The total length of the cable (without a switch) should not exceed 328 feet (100 meters).</p>
@@ -1192,18 +1203,15 @@ mounting hardware
 <div class="sectionbody">
 <div class="sect2">
 <h3 id="_lan_and_powersignals_cable_details"><a class="anchor" href="#_lan_and_powersignals_cable_details"></a>7.1. LAN and Power/Signals Cable Details</h3>
-<div class="admonitionblock caution">
+<div class="admonitionblock note">
 <table>
 <tr>
 <td class="icon">
-<i class="fa icon-caution" title="Caution"></i>
+<i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
 <div class="paragraph">
-<p>KEEP THE TRIGGER WIRES ISOLATED. SHORTING THE TRIGGER WIRES MAY DAMAGE THE UNIT AND VOID THE WARRANTY.</p>
-</div>
-<div class="paragraph">
-<p><strong>NOTE:</strong> The trigger wires have the same functions and colors as shown here, but the label on the cable may be worded differently.</p>
+<p>The trigger wires have the same functions and colors as shown here, but the label on the cable may be worded differently.</p>
 </div>
 </td>
 </tr>
@@ -1211,7 +1219,7 @@ mounting hardware
 </div>
 <div id="f_Cable-Details" class="imageblock">
 <div class="content">
-<img src="../_images/IZA500G/image4.png" alt="image" width="411" height="280">
+<img src="../_images/IZA500G/image4.png" alt="image" width="542" height="370">
 </div>
 <div class="title">Figure 9. Cable Details</div>
 </div>
@@ -1241,24 +1249,30 @@ mounting hardware
 </div>
 <div class="title">Figure 10. Typical Camera System Wiring Diagram</div>
 </div>
+<div id="f_Camera-System-Wiring-Diagram-with-PoE-Plus-P48-Models" class="imageblock">
+<div class="content">
+<img src="../_images/IZA500G/image100.png" alt="image" width="624" height="203">
+</div>
+<div class="title">Figure 11. Typical Camera System Wiring Diagram with PoE&#43; (P48 Models)</div>
+</div>
 <div id="f_Typical-Camera-System-with-Inductive-Loop-Wiring-Diagram" class="imageblock">
 <div class="content">
 <img src="../_images/IZA500G/image18.png" alt="image" width="624" height="279">
 </div>
-<div class="title">Figure 11. Typical Camera System with Inductive Loop Wiring Diagram</div>
+<div class="title">Figure 12. Typical Camera System with Inductive Loop Wiring Diagram</div>
 </div>
 <div id="f_Typical-Camera-System-with-I-O-Module-Wiring-Diagram" class="imageblock">
 <div class="content">
 <img src="../_images/IZA500G/image19.png" alt="image" width="624" height="468">
 </div>
-<div class="title">Figure 12. Typical Camera System with I/O Module Wiring Diagram</div>
+<div class="title">Figure 13. Typical Camera System with I/O Module Wiring Diagram</div>
 </div>
 <table id="t_Wiring-Diagram-Legend-Bill-of-Materials" class="tableblock frame-all grid-all stretch">
 <caption class="title">Table 4. Wiring Diagram Legend/Bill of Materials</caption>
 <colgroup>
 <col style="width: 7%;">
-<col style="width: 54%;">
 <col style="width: 39%;">
+<col style="width: 54%;">
 </colgroup>
 <thead>
 <tr>
@@ -1278,42 +1292,14 @@ mounting hardware
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">B</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><strong>Power Supply for All Components:</strong><br>
-24 VDC, 50/75W or 100/120W; DIN rail or surface mount<br>
-<br>
-Can power 2 sets of components from a single power supply</p>
+<p><strong>Power Supply for Cameras</strong><br>
+24 VDC for standard models<br>
+48 VDC for P48 models</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>For 1 set of components, use INEX P/N:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="../IZPWR/DocList.html" class="xref page">IZPWR50-24-TDK-DIN</a></p>
-</li>
-<li>
-<p><a href="../IZPWR/DocList.html" class="xref page">IZPWR75-24-MWL-DIN</a></p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>For 2 sets of components, use INEX P/N:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="../IZPWR/DocList.html" class="xref page">IZPWR100-24-TDK-DIN</a></p>
-</li>
-<li>
-<p><a href="../IZPWR/DocList.html" class="xref page">IZPWR120-24-TDK-DIN</a></p>
-</li>
-<li>
-<p><a href="../IZPWR/DocList.html" class="xref page">IZPWR120-24-MWL-DIN</a></p>
-</li>
-<li>
-<p><a href="../IZPWR/DocList.html" class="xref page">IZPWR100-24-TDK</a></p>
-</li>
-</ul>
+<p>For 1 camera, use a 50/75W supply<br>
+For 2 cameras, use a 100/120W supply<br>
+For 4 cameras, use a 240W supply<br></p>
 </div></div></td>
 </tr>
 <tr>
@@ -1337,14 +1323,40 @@ Can power 2 sets of components from a single power supply</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Supplied by integrator</p></td>
 </tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">F</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><strong>Power Supply for IZ4POE<br>
+(PoE&#43; Injector)</strong><br>
+Requires 48 VDC</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>For 1 camera, use a 50W supply<br>
+For 2 cameras, use a 120W supply<br>
+For 4 cameras, use a 240W supply</p>
+</div></div></td>
+</tr>
 </tbody>
 </table>
 <div class="paragraph">
-<p><strong>Note:</strong> For device configuration instructions, see the
+<p><strong>Notes:</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>For device configuration instructions, see the
 <a href="../LOOP-DTCR-L/DocList.html" class="xref page">LOOP-DTCR-L</a>
 and
 <a href="../IZIO/DocList.html" class="xref page">IZIO</a>
-guides. If you need to use an external illuminator, see the <a href="https://drive.google.com/drive/folders/1214eXbG17P4qrGLDIgJqrAq11xd15htt?usp=share_link">IZL Illuminator</a> guide for a table of Camera-to-Illuminator Typical Use Cases.</p>
+guides.</p>
+</li>
+<li>
+<p>If you need to use an external illuminator, see the <a href="../IZL/DocList.html" class="xref page">IZL Illuminator Series User Guide</a>  for a table of Camera-to-Illuminator Typical Use Cases.</p>
+</li>
+<li>
+<p>The <a href="../IZ4POE/DocList.html" class="xref page">IZ4POE</a> is required for the PoE&#43; input power option.</p>
+</li>
+</ul>
 </div>
 </div>
 <div class="sect2">
@@ -1395,7 +1407,7 @@ guides. If you need to use an external illuminator, see the <a href="https://dri
 <div class="content">
 <img src="_images/UserGuide/image20.png" alt="image" width="271" height="169">
 </div>
-<div class="title">Figure 13. Connecting the Camera System to a Surface-Mount Power Supply</div>
+<div class="title">Figure 14. Connecting the Camera System to a Surface-Mount Power Supply</div>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -1405,7 +1417,7 @@ guides. If you need to use an external illuminator, see the <a href="https://dri
 </td>
 <td class="content">
 <div class="paragraph">
-<p>If you are using a DIN rail-mount power supply, you will need to cut off the rings at the ends of the power connections, and attach pins in their place.</p>
+<p>If you are using a DIN rail-mount power supply, you will need to cut off the rings at the ends of the Camera System&#8217;s power connections, and attach pins in their place.</p>
 </div>
 </td>
 </tr>
@@ -1471,7 +1483,7 @@ IP address.</p>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>To view the camera&#8217;s home page (see <a href="#f_Camera-s-Home-Page">Figure 14</a>):</p>
+<p>To view the camera&#8217;s home page (see <a href="#f_Camera-s-Home-Page">Figure 15</a>):</p>
 <div class="ulist">
 <ul>
 <li>
@@ -1482,7 +1494,7 @@ Enter the IP address of the camera into the address field of the browser.</p>
 <div class="content">
 <img src="../_images/IZA800G/image43.png" alt="image" width="528" height="230">
 </div>
-<div class="title">Figure 14. Camera&#8217;s Home Page</div>
+<div class="title">Figure 15. Camera&#8217;s Home Page</div>
 </div>
 </li>
 </ul>
@@ -1534,7 +1546,7 @@ where cam0_0 is a camera-specific parameter (which in this case enables you to a
 </div>
 </li>
 <li>
-<p>When prompted for a login, use the Administrator credentials of root, IZpass12.</p>
+<p>When prompted for a login, use the Administrator username/password credentials of root, IZpass12.</p>
 <div class="admonitionblock important">
 <table>
 <tr>
@@ -1577,7 +1589,7 @@ where cam0_0 is a camera-specific parameter (which in this case enables you to a
 <div class="content">
 <img src="../_images/IZA800G/image44.png" alt="image" width="524" height="180">
 </div>
-<div class="title">Figure 15. Changing the Camera&#8217;s IP Address</div>
+<div class="title">Figure 16. Changing the Camera&#8217;s IP Address</div>
 </div>
 </li>
 <li>
@@ -1754,7 +1766,7 @@ For example:<br>
 <div class="content">
 <img src="../_images/RoadViewALPR/RoadViewLoginWindow.png" alt="image" width="209" height="143">
 </div>
-<div class="title">Figure 16. Logging In to RoadView</div>
+<div class="title">Figure 17. Logging In to RoadView</div>
 </div>
 </li>
 <li>

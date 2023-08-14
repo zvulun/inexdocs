@@ -256,6 +256,9 @@
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../IZPANEL/DocList.html">IZPanel (Connection Panel)</a>
   </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../IZ4POE/DocList.html">IZ4POE (Gigabit 4-Port PoE&#43;&#43; Injector)</a>
+  </li>
 </ul>
   </li>
   <li class="nav-item" data-depth="1">
@@ -421,24 +424,19 @@ You can use <a href="../IZDiscovery/DocList.html" class="xref page">IZ Discovery
 <div class="paragraph">
 <p></p>
 </div>
-<div class="admonitionblock caution">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-caution" title="Caution"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>KEEP THE TRIGGER WIRES ISOLATED. SHORTING THE TRIGGER WIRES MAY DAMAGE THE UNIT AND VOID THE WARRANTY.</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
 <h3 id="f_Typical-Camera-System-Wiring-Diagram" class="discrete">Camera System Wiring Diagram</h3>
 <div class="imageblock">
 <div class="content">
 <img src="../_images/IZA500G/image17.png" alt="image" width="624" height="203">
+</div>
+</div>
+<div class="paragraph">
+<p><div class="pagebreak"> </div></p>
+</div>
+<h3 id="f_Camera-System-Wiring-Diagram-with-PoE-Plus-P48-Models" class="discrete">Camera System Wiring Diagram with PoE&#43; (P48 Models)</h3>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/IZA500G/image100.png" alt="image" width="624" height="203">
 </div>
 </div>
 <h3 id="f_Typical-Camera-System-with-Inductive-Loop-Wiring-Diagram" class="discrete">Camera System with Inductive Loop Wiring Diagram</h3>
@@ -457,8 +455,8 @@ You can use <a href="../IZDiscovery/DocList.html" class="xref page">IZ Discovery
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 7%;">
-<col style="width: 54%;">
 <col style="width: 39%;">
+<col style="width: 54%;">
 </colgroup>
 <thead>
 <tr>
@@ -478,42 +476,14 @@ You can use <a href="../IZDiscovery/DocList.html" class="xref page">IZ Discovery
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">B</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><strong>Power Supply for All Components:</strong><br>
-24 VDC, 50/75W or 100/120W; DIN rail or surface mount<br>
-<br>
-Can power 2 sets of components from a single power supply</p>
+<p><strong>Power Supply for Cameras</strong><br>
+24 VDC for standard models<br>
+48 VDC for P48 models</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>For 1 set of components, use INEX P/N:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="../IZPWR/DocList.html" class="xref page">IZPWR50-24-TDK-DIN</a></p>
-</li>
-<li>
-<p><a href="../IZPWR/DocList.html" class="xref page">IZPWR75-24-MWL-DIN</a></p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>For 2 sets of components, use INEX P/N:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="../IZPWR/DocList.html" class="xref page">IZPWR100-24-TDK-DIN</a></p>
-</li>
-<li>
-<p><a href="../IZPWR/DocList.html" class="xref page">IZPWR120-24-TDK-DIN</a></p>
-</li>
-<li>
-<p><a href="../IZPWR/DocList.html" class="xref page">IZPWR120-24-MWL-DIN</a></p>
-</li>
-<li>
-<p><a href="../IZPWR/DocList.html" class="xref page">IZPWR100-24-TDK</a></p>
-</li>
-</ul>
+<p>For 1 camera, use a 50/75W supply<br>
+For 2 cameras, use a 100/120W supply<br>
+For 4 cameras, use a 240W supply<br></p>
 </div></div></td>
 </tr>
 <tr>
@@ -537,14 +507,40 @@ Can power 2 sets of components from a single power supply</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Supplied by integrator</p></td>
 </tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">F</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><strong>Power Supply for IZ4POE<br>
+(PoE&#43; Injector)</strong><br>
+Requires 48 VDC</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>For 1 camera, use a 50W supply<br>
+For 2 cameras, use a 120W supply<br>
+For 4 cameras, use a 240W supply</p>
+</div></div></td>
+</tr>
 </tbody>
 </table>
 <div class="paragraph">
-<p><strong>Note:</strong> For device configuration instructions, see the
+<p><strong>Notes:</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>For device configuration instructions, see the
 <a href="../LOOP-DTCR-L/DocList.html" class="xref page">LOOP-DTCR-L</a>
 and
 <a href="../IZIO/DocList.html" class="xref page">IZIO</a>
-guides. If you need to use an external illuminator, see the <a href="https://drive.google.com/drive/folders/1214eXbG17P4qrGLDIgJqrAq11xd15htt?usp=share_link">IZL Illuminator</a> guide for a table of Camera-to-Illuminator Typical Use Cases.</p>
+guides.</p>
+</li>
+<li>
+<p>If you need to use an external illuminator, see the <a href="../IZL/DocList.html" class="xref page">IZL Illuminator Series User Guide</a>  for a table of Camera-to-Illuminator Typical Use Cases.</p>
+</li>
+<li>
+<p>The <a href="../IZ4POE/DocList.html" class="xref page">IZ4POE</a> is required for the PoE&#43; input power option.</p>
+</li>
+</ul>
 </div>
 <div class="paragraph">
 <p></p>
