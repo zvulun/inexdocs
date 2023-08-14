@@ -78,3 +78,12 @@ i.fa.icon-warning::before {
 i.fa.icon-caution::before {
     background: no-repeat url("../img/caution.svg");
 }
+
+/* This will hopefully insert a page break when */
+/* doing a Save as PDF from Chrome */
+/* Then add an empty DIV tag where you want */
+/* the page to break as follows */
+/* +++<div class="pagebreak"> </div>+++ */
+@media print {
+    .pagebreak { min-height: 1px; page-break-before: always; } /* page-break-after works, as well */
+}
