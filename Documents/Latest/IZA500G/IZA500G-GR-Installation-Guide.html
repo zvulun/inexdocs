@@ -212,19 +212,7 @@
     <span class="nav-text">Power Supplies</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../IZPWR/DocList.html">IZPWR50</a>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../IZPWR/DocList.html">IZPWR75</a>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../IZPWR/DocList.html">IZPWR100</a>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../IZPWR/DocList.html">IZPWR120</a>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../IZPWR/DocList.html">IZPWR240</a>
+    <a class="nav-link" href="../IZPWR/DocList.html">IZPWR (DIN Rail Mount)</a>
   </li>
 </ul>
   </li>
@@ -433,7 +421,6 @@
 <ul class="sectlevel2">
 <li><a href="#_lan_and_powersignals_cable_details">7.1. LAN and Power/Signals Cable Details</a></li>
 <li><a href="#s_Typical-Wiring-Diagrams">7.2. Typical Wiring Diagrams</a></li>
-<li><a href="#s_Connecting-the-Camera-System-Illuminator-Power-Supply-and-Network">7.3. Connecting the Camera System, Illuminator, Power Supply and Network</a></li>
 </ul>
 </li>
 <li><a href="#s_Power-Up-and-Set-Up-IP">8. Power Up and Set Up IP</a>
@@ -551,10 +538,6 @@
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../IZL/DocList.html" class="xref page">IZL-MAN-002</a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">IZL Illuminator Series User Guide</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../IZPWR/DocList.html" class="xref page">IZPWRSRFC-REV-x-TDSHEET</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">IZPWR Surface Mount Power Supplies Technical Data Sheet</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../IZPWR/DocList.html" class="xref page">IZPWRDIN-REV-x-TDSHEET</a></p></td>
@@ -1263,17 +1246,40 @@ mounting hardware
 <div class="sect2">
 <h3 id="s_Typical-Wiring-Diagrams"><a class="anchor" href="#s_Typical-Wiring-Diagrams"></a>7.2. Typical Wiring Diagrams</h3>
 <div class="paragraph">
-<p>Here are typical wiring diagrams for capturing license plate images. Note that the type and configuration of the power supply may be different than the one you are using at your site. See <a href="#t_Wiring-Diagram-Legend-Bill-of-Materials">Table 4</a> for a legend/bill of materials.</p>
+<p>See <a href="#t_Wiring-Diagram-Legend-Bill-of-Materials">Table 4</a> for a legend/bill of materials.</p>
 </div>
-<div class="admonitionblock important">
+<div class="admonitionblock warning">
 <table>
 <tr>
 <td class="icon">
-<i class="fa icon-important" title="Important"></i>
+<i class="fa icon-warning" title="Warning"></i>
 </td>
 <td class="content">
 <div class="paragraph">
-<p>All network cable extensions and repeaters must be shielded.</p>
+<p>Turn off/disconnect the external (AC) power supply before connecting cables.</p>
+</div>
+<div class="paragraph">
+<p><strong>If you are using an INEX power supply, see its User Guide (see <a href="#s_Related-Documents">Section 1</a>) for important information.</strong></p>
+</div>
+<div class="paragraph">
+<p>The Camera System is not compatible with some GigE switches; suggested switch type: 10/100 Mb</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p><div class="pagebreak"> </div></p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>If you are using a DIN rail-mount power supply, you will need to cut off the rings at the ends of the Camera System&#8217;s power connections, and attach pins in their place.</p>
 </div>
 </td>
 </tr>
@@ -1307,8 +1313,8 @@ mounting hardware
 <caption class="title">Table 4. Wiring Diagram Legend/Bill of Materials</caption>
 <colgroup>
 <col style="width: 7%;">
-<col style="width: 29%;">
-<col style="width: 64%;">
+<col style="width: 35%;">
+<col style="width: 58%;">
 </colgroup>
 <thead>
 <tr>
@@ -1333,9 +1339,9 @@ mounting hardware
 48 VDC for P48 models</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>For 1 camera, use a 50/75W supply<br>
-For 2 cameras, use a 100/120W supply<br>
-For 4 cameras, use a 240W supply<br></p>
+<p>For 1 camera, use a <a href="../IZPWR/DocList.html" class="xref page">50/75W supply</a><br>
+For 2 cameras, use a <a href="../IZPWR/DocList.html" class="xref page">100/120W supply</a><br>
+For 4 cameras, use a <a href="../IZPWR/DocList.html" class="xref page">240W supply</a><br></p>
 </div></div></td>
 </tr>
 <tr>
@@ -1367,9 +1373,9 @@ For 4 cameras, use a 240W supply<br></p>
 Requires 48 VDC</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>For 1 camera, use a 50W supply<br>
-For 2 cameras, use a 120W supply<br>
-For 4 cameras, use a 240W supply</p>
+<p>For 1 camera, use a <a href="../IZPWR/DocList.html" class="xref page">50W supply</a><br>
+For 2 cameras, use a <a href="../IZPWR/DocList.html" class="xref page">120W supply</a><br>
+For 4 cameras, use a <a href="../IZPWR/DocList.html" class="xref page">240W supply</a></p>
 </div></div></td>
 </tr>
 </tbody>
@@ -1391,71 +1397,6 @@ guides.</p>
 </li>
 </ul>
 </div>
-</div>
-<div class="sect2">
-<h3 id="s_Connecting-the-Camera-System-Illuminator-Power-Supply-and-Network"><a class="anchor" href="#s_Connecting-the-Camera-System-Illuminator-Power-Supply-and-Network"></a>7.3. Connecting the Camera System, Illuminator, Power Supply and Network</h3>
-<div class="paragraph">
-<p>See <a href="#s_Typical-Wiring-Diagrams">Section 7.2</a> for typical wiring diagrams.</p>
-</div>
-<div class="admonitionblock warning">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-warning" title="Warning"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>Power undervoltage, overvoltage and/or incorrect polarity will damage the unit and will void the warranty.</p>
-</div>
-<div class="paragraph">
-<p>Stable power at the correct level must be supplied to each Camera System, even when under a heavy processing load.</p>
-</div>
-<div class="paragraph">
-<p>Turn off/disconnect the external (AC) power supply before connecting cables.</p>
-</div>
-<div class="paragraph">
-<p><strong>If you are using an INEX power supply, see its User Guide (see <a href="#s_Related-Documents">Section 1</a>) for important information.</strong></p>
-</div>
-<div class="paragraph">
-<p><strong>IMPORTANT: All network cable extensions and repeaters must be shielded.</strong></p>
-</div>
-<div class="paragraph">
-<p>The Camera System is not compatible with some GigE switches; suggested switch type: 10/100 Mb</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-<div class="paragraph">
-<p>As an example, you can connect the ALPR Camera System&#8217;s power cable to a surface-mounted power supply as follows:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><strong>Red</strong> - &#43;24 VDC (&#43;V); <strong>Black</strong> - -24 VDC (-V); <strong>Yellow</strong> - ground (FG)</p>
-</li>
-</ul>
-</div>
-<div id="f_Connecting-the-Camera-System-to-a-Surface-Mount-Power-Supply" class="imageblock">
-<div class="content">
-<img src="_images/UserGuide/image20.png" alt="image" width="271" height="169">
-</div>
-<div class="title">Figure 14. Connecting the Camera System to a Surface-Mount Power Supply</div>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>If you are using a DIN rail-mount power supply, you will need to cut off the rings at the ends of the Camera System&#8217;s power connections, and attach pins in their place.</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
 <div class="paragraph">
 <p><div class="pagebreak"> </div></p>
 </div>
@@ -1467,12 +1408,6 @@ guides.</p>
 <div class="sectionbody">
 <div class="sect2">
 <h3 id="s_Connecting-the-AC-Electricity"><a class="anchor" href="#s_Connecting-the-AC-Electricity"></a>8.1. Connecting the AC Electricity</h3>
-<div class="paragraph">
-<p>Connect a plug to the <strong><u>L</u></strong>ive (&#43;V, <strong><u>N</u></strong>eutral (-V) and Ground (Shield) terminals of the power supply (see <a href="#f_Typical-Camera-System-with-Illuminator-Wiring-Diagram">[f_Typical-Camera-System-with-Illuminator-Wiring-Diagram]</a> and <a href="#f_Typical-Camera-System-Wiring-Diagram">Figure 10</a>).</p>
-</div>
-<div class="paragraph">
-<p>Plug the power supply into the AC electricity. If required, switch the power supply unit ON.</p>
-</div>
 <div class="admonitionblock warning">
 <table>
 <tr>
@@ -1486,9 +1421,18 @@ guides.</p>
 <div class="paragraph">
 <p>Power undervoltage, overvoltage and/or incorrect polarity will damage the unit and will void the warranty.</p>
 </div>
+<div class="paragraph">
+<p>Stable power at the correct level must be supplied to each Camera System, even when under a heavy processing load.</p>
+</div>
 </td>
 </tr>
 </table>
+</div>
+<div class="paragraph">
+<p>Connect a plug to the <strong><u>L</u></strong>ive (&#43;V), <strong><u>N</u></strong>eutral (-V) and Ground (Shield) terminals of the power supply (see <a href="#s_Typical-Wiring-Diagrams">Section 7.2</a>).</p>
+</div>
+<div class="paragraph">
+<p>Plug the power supply into the AC electricity. If required, switch the power supply unit ON.</p>
 </div>
 </div>
 <div class="sect2">
@@ -1522,7 +1466,7 @@ IP address.</p>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>To view the camera&#8217;s home page (see <a href="#f_Camera-s-Home-Page">Figure 15</a>):</p>
+<p>To view the camera&#8217;s home page (see <a href="#f_Camera-s-Home-Page">Figure 14</a>):</p>
 <div class="ulist">
 <ul>
 <li>
@@ -1533,7 +1477,7 @@ Enter the IP address of the camera into the address field of the browser.</p>
 <div class="content">
 <img src="../_images/IZA800G/image43.png" alt="image" width="528" height="230">
 </div>
-<div class="title">Figure 15. Camera&#8217;s Home Page</div>
+<div class="title">Figure 14. Camera&#8217;s Home Page</div>
 </div>
 </li>
 </ul>
@@ -1603,6 +1547,9 @@ where cam0_0 is a camera-specific parameter (which in this case enables you to a
 </li>
 </ol>
 </div>
+<div class="paragraph">
+<p><div class="pagebreak"> </div></p>
+</div>
 </div>
 <div class="sect2">
 <h3 id="s_Changing-a-Camera-s-IP-Address"><a class="anchor" href="#s_Changing-a-Camera-s-IP-Address"></a>9.2. Changing a Camera&#8217;s IP Address</h3>
@@ -1628,7 +1575,7 @@ where cam0_0 is a camera-specific parameter (which in this case enables you to a
 <div class="content">
 <img src="../_images/IZA800G/image44.png" alt="image" width="524" height="180">
 </div>
-<div class="title">Figure 16. Changing the Camera&#8217;s IP Address</div>
+<div class="title">Figure 15. Changing the Camera&#8217;s IP Address</div>
 </div>
 </li>
 <li>
@@ -1811,7 +1758,7 @@ For example:<br>
 <div class="content">
 <img src="../_images/RoadViewALPR/RoadViewLoginWindow.png" alt="image" width="209" height="143">
 </div>
-<div class="title">Figure 17. Logging In to RoadView</div>
+<div class="title">Figure 16. Logging In to RoadView</div>
 </div>
 </li>
 <li>
