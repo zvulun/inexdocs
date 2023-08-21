@@ -85,6 +85,7 @@ asciidoc:
     illum-strobe: IZS@
     illum-non-strobe: IZL@
     illum-VES: IZSVES@
+    system-VES: VES@
     generic-camera-name: ALPR Camera System@
 
 
