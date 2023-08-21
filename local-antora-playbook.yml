@@ -72,6 +72,8 @@ asciidoc:
     software-ALPR: RoadView@
     software-monitoring: IZMonitoring Server@
     hw-iocontroller: IZIO@
+    hw-poeinjector: IZ4POE@
+    hw-connection-panel: IZPANEL@
     hw-webrelay-quad: IZ-REM-RELAY-4@
     hw-webrelay-single: IZ-REM-RELAY@
     hw-gate-controller: IZIDPUGC@
@@ -79,7 +81,6 @@ asciidoc:
     hw-outdoor-processor: IZODPUG@
     hw-loopdetect-l: LOOP-DTCR-L@
     hw-loopdetect-p: LOOP-DTCR-P@
-    hw-poeinjector: IZ4POE@
     illum-strobe: IZS@
     illum-non-strobe: IZL@
     illum-VES: IZSVES@
