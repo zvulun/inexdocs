@@ -30,8 +30,8 @@ table, th, td {
 
 /* this is for tables without borders  */
 table.noborders table, table.noborders th, table.noborders td, table.noborders tr {
-    border: none !important
-    frame: none !important
+    border: none
+    frame: 0px
     }
 
 
