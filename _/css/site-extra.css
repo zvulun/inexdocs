@@ -22,10 +22,16 @@
 }
 
 
-/* this controls all the table borders  */
+/* this controls all the tables with borders  */
 table, th, td {
   border: 1px solid black !important;
 }
+
+
+/* this is for tables without borders  */
+table.noborders table, table.noborders th, table.noborders td, table.noborders tr {
+    border: none !important
+        }
 
 
 /* From eskwayrd and mojavelinux */
