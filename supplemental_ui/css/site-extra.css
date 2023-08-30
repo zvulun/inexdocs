@@ -31,7 +31,7 @@ table, th, td {
 /* this is for tables without borders  */
 table.noborders table, table.noborders th, table.noborders td, table.noborders tr {
     border-style: none !important
-    frame-style: none !important
+    frame-style: none
 }
 
 
