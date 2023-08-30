@@ -31,9 +31,7 @@ table, th, td {
 /* this is for tables without borders  */
 table.noborders table, table.noborders th, table.noborders td, table.noborders tr {
     border-style: none !important
-    .doc table.frame-all {
-    	border-width: 0px !important
-    }
+    border-width: 0px !important
 }
 
 
