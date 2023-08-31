@@ -30,11 +30,11 @@ table, th, td {
 
 /* this is for tables without borders  */
 table.noborders table, table.noborders th, table.noborders td, table.noborders tr {
-    border: 0px !important
-    border-style: hidden !important;
-    border-bottom: 0px !important;
+    border: 0px 0 0 !important
+    border-style: none !important;
+    /* border-bottom: 0px !important;
     border-top: 0px !important;
-    border-width: 0px !important
+    border-width: 0px !important */
 
 }
 
