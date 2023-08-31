@@ -31,15 +31,12 @@ table, th, td {
 /* this is for tables without borders  */
 table.noborders table, table.noborders th, table.noborders td, table.noborders tr {
     border-style: none !important;
-    border-bottom-width: 0 !important;
-    border-top-width: 0 !important;
-    border-width: 0 0px !important;
+    border-bottom-width: 0px;
+    border-top-width: 0px;
+    border-width: 0px;
 
 }
 
-table.noborders table {
-    border-width: 0 0px !important;
-}
 
 /* From eskwayrd and mojavelinux */
 /* this is the role used to center a table */
