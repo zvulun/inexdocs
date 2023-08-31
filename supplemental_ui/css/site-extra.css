@@ -37,7 +37,9 @@ table.noborders table, table.noborders th, table.noborders td, table.noborders t
 
 }
 
-
+table.noborders table {
+    border-width: 0 0px !important;
+}
 
 /* From eskwayrd and mojavelinux */
 /* this is the role used to center a table */
