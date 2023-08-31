@@ -34,7 +34,7 @@ table.noborders table, table.noborders th, table.noborders td, table.noborders t
 }
 
 table.noborders table {
-    frame-width: none !important
+    border: none !important
 }
 
 
