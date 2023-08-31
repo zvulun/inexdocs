@@ -30,12 +30,11 @@ table, th, td {
 
 /* this is for tables without borders  */
 table.noborders table, table.noborders th, table.noborders td, table.noborders tr {
-    border-style: none !important
+    border-style: none !important;
+    border: none !important;
+    color: white !important;
 }
 
-table.noborders table {
-    border: none !important
-}
 
 
 /* From eskwayrd and mojavelinux */
