@@ -29,10 +29,17 @@
 */
 
 /* this is for tables with borders  */
-table.withborders table, table.withborders th, table.withborders td, table.withborders tr {
+table.withborders table, table.withborders td, table.withborders tr {
     border: 1px solid black !important;
 
 }
+
+table.withborders th{
+    border: 1px solid black !important;
+    background: lightgrey !important;
+
+}
+
 
 
 /* From eskwayrd and mojavelinux */
