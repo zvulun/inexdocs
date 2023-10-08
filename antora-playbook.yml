@@ -46,7 +46,8 @@ asciidoc:
     #xref-type-IZIDPUG:
     #layout-type-userguide:
     #layout-type-technote:
-
+    #link-type-gdrive:
+    #link-type-site:
 
     #Put attributes whose string values have letters in
     #common with other similar values in order of longest
