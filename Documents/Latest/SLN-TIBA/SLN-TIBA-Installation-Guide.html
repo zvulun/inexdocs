@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>TIBA Installation Guide :: Documents</title>
+    <title>INEX ALPR for the TIBA Parking System :: Documents</title>
     <meta name="generator" content="Antora 3.1.3">
 <link rel="stylesheet" href="../../../_/css/site.css">
 <link rel="stylesheet" href="../../../_/css/site-extra.css">
@@ -373,7 +373,7 @@
 <nav class="breadcrumbs" aria-label="breadcrumbs">
   <ul>
     <li><a href="../index.html">Documents</a></li>
-    <li><a href="SLN-TIBA-Installation-Guide.html">TIBA Installation Guide</a></li>
+    <li><a href="SLN-TIBA-Installation-Guide.html">INEX ALPR for the TIBA Parking System</a></li>
   </ul>
 </nav>
 </div>
@@ -382,9 +382,17 @@
   <div class="toc-menu"></div>
 </aside>
 <article class="doc">
-<h1 class="page">TIBA Installation Guide</h1>
+<h1 class="page">INEX ALPR for the TIBA Parking System</h1>
 <div id="preamble">
 <div class="sectionbody">
+<div class="paragraph">
+<p><font size="+3"> <strong>Installation and Calibration Guide</strong></font></p>
+</div>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/SLN-TIBA/TIBA_LOGO.png" alt="image" width="150">
+</div>
+</div>
 <div class="paragraph">
 <p>
 </p>
@@ -395,8 +403,25 @@
 <div id="toc" class="toc">
 <div id="toctitle" class="title">Table of Contents</div>
 <ul class="sectlevel1">
-<li><a href="#s_Related-Documents">1. Related Documents</a></li>
-<li><a href="#_computer_requirements">2. Computer Requirements</a></li>
+<li><a href="#_background">1. Background</a></li>
+<li><a href="#_applicable_products">2. Applicable Products</a></li>
+<li><a href="#_you_will_need">3. You will Need</a></li>
+<li><a href="#_solution_bom">4. Solution BOM</a></li>
+<li><a href="#_lane_design">5. Lane Design</a></li>
+<li><a href="#_camera_wiring">6. Camera Wiring</a></li>
+<li><a href="#_use_iz_discovery_and_allocate_ip_addresses">7. Use IZ Discovery and Allocate IP Addresses</a>
+<ul class="sectlevel2">
+<li><a href="#_installing_and_using_iz_discovery">7.1. Installing and Using IZ Discovery</a></li>
+<li><a href="#s_Changing-a-Device-s-IP-Address-and-Network-Settings">7.2. Changing a Device&#8217;s IP Address and Network Settings</a></li>
+</ul>
+</li>
+<li><a href="#s_Configure-Microsoft-Edge">8. Configure Microsoft Edge</a>
+<ul class="sectlevel2">
+<li><a href="#_notice">8.1. Notice</a></li>
+<li><a href="#_software_precautions">8.2. Software Precautions</a></li>
+<li><a href="#_legal_disclaimer">8.3. Legal Disclaimer</a></li>
+</ul>
+</li>
 </ul>
 </div>
 </div>
@@ -405,111 +430,527 @@
 </div>
 </div>
 <div class="sect1">
-<h2 id="s_Related-Documents"><a class="anchor" href="#s_Related-Documents"></a>1. Related Documents</h2>
+<h2 id="_background"><a class="anchor" href="#_background"></a>1. Background</h2>
 <div class="sectionbody">
-<details>
-<summary class="title"><em>Click to show the Related Documents table</em></summary>
-<div class="content">
-<table id="t_Related-Documents" class="tableblock frame-all grid-all stretch withborders">
-<caption class="title">Table 1. Related Documents</caption>
-<colgroup>
-<col style="width: 51%;">
-<col style="width: 49%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">Doc. No.</th>
-<th class="tableblock halign-left valign-top">Title</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><a href="https://drive.google.com/drive/folders/1oi7em94DgmiI9FC4h9iM_3BrjlgxvUYU?usp=share_link" target="_blank" rel="noopener">IZA500G-GR-MAN-002b</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">IZA500G/GR Installation Guide</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><a href="https://drive.google.com/drive/folders/1oi7em94DgmiI9FC4h9iM_3BrjlgxvUYU?usp=share_link" target="_blank" rel="noopener">IZA500G-GR-MAN-002a</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">IZA500G/GR User Guide</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><a href="../MNT-ProdToMountMap/DocList.html" class="xref page">MOUNT-MAP-PRSNT-011</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Product-to-Mount Mapping</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><a href="../MNT-ProdToMountMap/DocList.html" class="xref page">Mounts</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Mounting Hardware documentation</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><a href="../IZDiscovery/DocList.html" class="xref page">IZ Discovery Utility</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">IZ Discovery Utility software components</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><a href="../IZDiscovery/DocList.html" class="xref page">IZDISCOVERY-MAN-001</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">IZ Discovery User Guide</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><a href="../RoadViewALPR/DocList.html" class="xref page">RoadView documentation</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">(Depends on version)</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><a href="../EULA/DocList.html" class="xref page">EULA-400-DOC-001</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Software End User License Agreement (includes list of open source software)</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><a href="../IZL/DocList.html" class="xref page">IZL-MAN-002</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">IZL Illuminator Series User Guide</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><a href="../IZPWR/DocList.html" class="xref page">IZPWRDIN-REV-x-TDSHEET</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">IZPWR DIN Rail Mount Power Supplies Technical Data Sheet</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><a href="../IZIO/DocList.html" class="xref page">IZIO-6060-MAN-001</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">IZIO Digital I/O Controller Installation and User Guide</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><a href="../IZ4POE/DocList.html" class="xref page">IZ4POE-DIN-REV-xxx-TDSHEET</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">IZ4POE Gigabit 4-Port PoE++ Injector Technical Data Sheet</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><a href="../LOOP-DTCR-L/DocList.html" class="xref page">LOOP-DTCR-L-MAN-001</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">LOOP-DTCR-L Loop Detector Installation and User Guide</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><a href="../NDAA/DocList.html" class="xref page">NDAA-NB-COC-001</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">NDAA Section 889 Certification of Compliance</p></td>
-</tr>
-</tbody>
-</table>
+<div class="paragraph">
+<p>This document describes how to install,
+configure and calibrate an INEX ALPR Camera for a single lane, to work with the TIBA Parking System.</p>
 </div>
-</details>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_computer_requirements"><a class="anchor" href="#_computer_requirements"></a>2. Computer Requirements</h2>
+<h2 id="_applicable_products"><a class="anchor" href="#_applicable_products"></a>2. Applicable Products</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong><em>\{why do we need this section if we have the BOM?}</em></strong>
+IZA500GR camera (Rev. F3)
+with built-in RoadView (RV) video analytics - ver <strong><em>{xxxx}</em></strong></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_you_will_need"><a class="anchor" href="#_you_will_need"></a>3. You will Need</h2>
 <div class="sectionbody">
 <div class="ulist">
 <ul>
 <li>
-<p>Windows 10 or later</p>
+<p>Computer running with Windows 10 or later</p>
 </li>
 <li>
 <p>Microsoft Edge browser</p>
 </li>
 </ul>
 </div>
-<div style="page-break-after: always;"></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_solution_bom"><a class="anchor" href="#_solution_bom"></a>4. Solution BOM</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Camera System:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>IZA500GR-DRW-P48 - for USA, Mexico, Canada</p>
+</li>
+<li>
+<p>IZA500GR-IRW-P48 - for Israel, EU, Taiwan, Australia, Vietnam, GCC, India, Singapore</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Power Supply for P48 models</p>
+<div class="ulist">
+<ul>
+<li>
+<p>IZPWR75&#43;IZ4POE - for a single camera via POE</p>
+</li>
+<li>
+<p>IZPWR120&#43;IZ4POE - for two cameras via POE</p>
+</li>
+<li>
+<p>IZPWR240&#43;IZ4POE - for four cameras via POE</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Camera Mounting hardware</p>
+<div class="ulist">
+<ul>
+<li>
+<p>IZMNTA-WE - wall mount</p>
+</li>
+<li>
+<p><strong><em>\{incorrect; IZMNTA-WE comes with
+removable pole mount}</em></strong> IZMNTA-WE&#43;MNT-PMA -  pole mount</p>
+</li>
+<li>
+<p>IZMNTA-UC - under-ceiling</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>IZCLOUD-APM - IZCloud Automatic License Plate Recognition (ALPR) Performance Monitoring</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_lane_design"><a class="anchor" href="#_lane_design"></a>5. Lane Design</h2>
+<div class="sectionbody">
+<div id="f_Rear-Capture" class="imageblock text-center">
+<div class="content">
+<img src="../_images/SLN-TIBA/IZA500G-FIG-097_AmanoLaneDesign.png" alt="image" width="800">
+</div>
+<div class="title">Figure 1. Typical Rear-Capture Design</div>
+</div>
+<div class="paragraph">
+<p><br></p>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<img src="../_images/SLN-TIBA/IZA500G-FIG-099_TIBAFrontLaneDesign.png" alt="image" width="800">
+</div>
+<div class="title">Figure 2. Typical Front-Capture Design</div>
+</div>
+<div class="paragraph">
+<p><br></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_camera_wiring"><a class="anchor" href="#_camera_wiring"></a>6. Camera Wiring</h2>
+<div class="sectionbody">
+<div class="imageblock text-center">
+<div class="content">
+<img src="../_images/SLN-TIBA/IZA500G-FIG-101_TIBA_Wiring.png" alt="image" width="800">
+</div>
+<div class="title">Figure 3. Camera Wiring</div>
+</div>
+<div class="paragraph">
+<p><br></p>
+</div>
+<table class="tableblock frame-all grid-all stretch withborders">
+<caption class="title">Table 1. Wiring Table</caption>
+<colgroup>
+<col style="width: 7%;">
+<col style="width: 35%;">
+<col style="width: 58%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Item</th>
+<th class="tableblock halign-left valign-top">Description</th>
+<th class="tableblock halign-left valign-top">Ordering Information</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><strong>LAN Cables</strong></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Supplied by integrator</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">B</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><strong>Power Supply for IZ4POE<br>
+(PoE&#43; Injector)</strong><br>
+Requires 48 VDC</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>For 1 camera, use a 75 W supply (IZPWR75)<br>
+For 2 cameras, use a 120 W supply (IZPWR120)<br>
+For 4 cameras, use a 240 W supply (IZPWR240)</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">C</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><strong>Inductive Loop</strong></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Supplied by integrator</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">D</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><strong>Gate</strong></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Supplied by integrator</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_use_iz_discovery_and_allocate_ip_addresses"><a class="anchor" href="#_use_iz_discovery_and_allocate_ip_addresses"></a>7. Use IZ Discovery and Allocate IP Addresses</h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Allocate 3 consecutive IP addresses for
+the onboard Jetson processor and the
+LPR and OV sensors.
+For example:<br></p>
+<div class="ulist">
+<ul>
+<li>
+<p>Processor - <a href="http://192.168.5.100/" class="bare">http://192.168.5.100/</a><br></p>
+</li>
+<li>
+<p>LPR Sensor - <a href="http://192.168.5.101/" class="bare">http://192.168.5.101/</a><br></p>
+</li>
+<li>
+<p>OV Sensor - <a href="http://192.168.5.102/" class="bare">http://192.168.5.102/</a><br></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Use IZ Discovery to find the
+Jetson processor and LPR/OV sensors, and to
+change their IP addresses to the ones
+you allocated</p>
+</li>
+</ol>
+</div>
+<div class="sect2">
+<h3 id="_installing_and_using_iz_discovery"><a class="anchor" href="#_installing_and_using_iz_discovery"></a>7.1. Installing and Using IZ Discovery</h3>
+<div class="paragraph">
+<p>The IZ Discovery utility discovers all active devices connected to the network, and displays a list of their network parameters. These devices can include cameras and computers.</p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>If any device on your network is connected via wireless, IZ Discovery will not recognize the device. In addition, if the computer running IZ Discovery is connected via wireless, you will not see any devices displayed.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Download the IZ Discovery software (<a href="https://drive.google.com/drive/folders/1s3pU0ZGS9QmaJ5KHYNnu1wWxeCLzpNQq?usp=share_link" target="_blank" rel="noopener">link</a>)</p>
+</li>
+<li>
+<p>Run IZ Discovery</p>
+</li>
+<li>
+<p>When IZ Discovery first runs, you may see a Windows security warning. If so, click Run.</p>
+</li>
+<li>
+<p>If you see a message related to the Windows firewall, click Allow.</p>
+</li>
+<li>
+<p>IZ Discovery will start and display a list of devices on the network, according to their serial numbers (see <a href="#f_IZ-Discovery-Utility">Figure 4</a>).</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Scroll down to find the device you are interested in. You can double-click to view/edit a specific device&#8217;s IP address parameters (see <a href="#s_Changing-a-Device-s-IP-Address-and-Network-Settings">Section 7.2</a>).</p>
+</li>
+<li>
+<p>Click Clear List to refresh the discovery process.</p>
+<div id="f_IZ-Discovery-Utility" class="imageblock">
+<div class="content">
+<img src="../_images/IZDiscovery/RV-1_9-FIG-012b_IZDiscovery6020MainScreen.png" alt="IZ Disovery Main Screen" width="503" height="337">
+</div>
+<div class="title">Figure 4. IZ Discovery Utility</div>
+</div>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>If IZ Discovery does not recognize a device:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Press the device&#8217;s reset button (if available)</p>
+</li>
+<li>
+<p>Reset the device by shutting off power/removing the LAN cable, waiting 5 seconds, and reapplying power</p>
+</li>
+<li>
+<p>Check the LAN cable connected between your laptop and the network, and the LAN cable connected between the device and the LAN switch. Replace the cable(s) and try to run IZ Discovery again.</p>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="s_Changing-a-Device-s-IP-Address-and-Network-Settings"><a class="anchor" href="#s_Changing-a-Device-s-IP-Address-and-Network-Settings"></a>7.2. Changing a Device&#8217;s IP Address and Network Settings</h3>
+<div id="f_Changing-the-Device-s-Network-Settings" class="imageblock">
+<div class="content">
+<img src="../_images/IZDiscovery/RV-1_9-FIG-013b_ChangeIPUnCheckDHCP.png" alt="IZ Discovery Network Setting Dialog" width="226" height="230">
+</div>
+<div class="title">Figure 5. Changing the Device&#8217;s Network Settings</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>The device&#8217;s IP Address <u>cannot</u> be set to 10.10.2.xx or 10.10.3.xx</p>
+</div>
+<div class="paragraph">
+<p><strong><u>It is highly recommended to use a fixed IP address (not DHCP)</u></strong>. A fixed IP address enables you to access the computer using the same URL every time, even after unexpected power outages.</p>
+</div>
+<div class="paragraph">
+<p>A dynamic IP address may change upon device reboot. Before opening the web interface, you will have to find the current IP address of the device using IZ Discovery.</p>
+</div>
+<div class="paragraph">
+<p>If you want to copy the IP address (for login to the device) you will need to uncheck the DHCP checkbox momentarily to make the address field accessible.</p>
+</div>
+<div class="paragraph">
+<p>For devices using RoadView software, you can change the IP address using the RoadView Settings tab.</p>
+</div>
+<div class="paragraph">
+<p>If your device is an INEX Camera System, be sure to define IP addresses for each camera (LPR and Overview), using each camera&#8217;s configuration application. It is recommended to use sequential IP addresses for the Camera System and its cameras; for example: 192.168.5.64, 65, 66</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>To change the device&#8217;s mode (fixed or dynamic [DHCP]), or IP address:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Select the relevant line in the list of devices and double-click on it.</p>
+</li>
+<li>
+<p>The Network Settings window appears</p>
+</li>
+<li>
+<p>To change the mode:</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Check or uncheck the DHCP box</p>
+</li>
+<li>
+<p>Click Save</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>To change the IP address:</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p><strong>Verify that the address is not used by any other device on the network</strong></p>
+</li>
+<li>
+<p>Be sure to uncheck the DHCP box</p>
+</li>
+<li>
+<p>Enter the network address parameters</p>
+</li>
+<li>
+<p>Write down the new IP Address and click Save</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>The change should be reflected in the main dialog. This can take about a minute until the IP is obtained. If you do not see the change after this time, close IZ Discovery, and then reopen it.</p>
+</li>
+<li>
+<p>Verify that the IP address parameters have been changed to the ones you wanted. If not, you will have to log into the device (or RoadView) and change the IP address.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="s_Configure-Microsoft-Edge"><a class="anchor" href="#s_Configure-Microsoft-Edge"></a>8. Configure Microsoft Edge</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong><em>\{Turn this into 2 partials, here
+and in JLT - before
+and after second screen - so second screen
+can have different IP addresses}</em></strong></p>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<img src="../_images/SLN-JLT/image-MSedge-settings-1.png" alt="image" width="800">
+</div>
+<div class="title">Figure 6. Microsoft Edge - Setting the Default Browser</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Open Edge and click the 3-dot menu at upper right</p>
+</li>
+<li>
+<p>Select Settings</p>
+</li>
+<li>
+<p>Menu at left - "Default Browser"</p>
+</li>
+<li>
+<p>Allow sites to be reloaded in Internet
+Explorer mode (IE); change from
+"Default" to "Allow"</p>
+</li>
+<li>
+<p>Click the Restart button; wait for restart</p>
+<div class="imageblock text-center">
+<div class="content">
+<img src="../_images/SLN-TIBA/image-TIBA-MSedge-settings-2.png" alt="image" width="800">
+</div>
+<div class="title">Figure 7. Microsoft Edge - Adding Pages to Internet Explorer Mode</div>
+</div>
+</li>
+<li>
+<p>Internet Explorer Compatibility</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Internet Explorer mode pages; click the Add button</p>
+</li>
+<li>
+<p>Add URLs for the onboard
+Jetson processor and the LPR and OV sensors.
+For example:<br>
+<a href="http://192.168.5.100/" class="bare">http://192.168.5.100/</a><br>
+<a href="http://192.168.5.101/" class="bare">http://192.168.5.101/</a><br>
+<a href="http://192.168.5.102/" class="bare">http://192.168.5.102/</a><br></p>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Addresses expire after 30 days and
+must be re-entered.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+<div class="sect2">
+<h3 id="_notice"><a class="anchor" href="#_notice"></a>8.1. Notice</h3>
+<div class="paragraph">
+<p>INEX Technologies reserves the right to improve and enhance its product offerings. Thus, the illustrations and descriptions presented in this manual may differ in some respect from the products you receive.</p>
+</div>
+<div class="paragraph">
+<p>Technical specifications are subject to change without notice.</p>
+</div>
+<div class="paragraph">
+<p>In addition, please note that some figures are not drawn to scale, in order to illustrate the addressed issue more effectively.</p>
+</div>
+<div class="paragraph">
+<p>All third-party trademarks are the property of their respective owners.</p>
+</div>
+<div class="paragraph">
+<p>INEX Technologies cannot be held liable for technical and editorial omissions or errors made in this document; nor for incidental or consequential damages resulting from the furnishing, performance or use of this document.</p>
+</div>
+<div class="paragraph">
+<p>Actions or circumstances that void the warranty are improper usage, improper handling without adequate electrostatic discharge (ESD) protection, defects resulting from natural disaster (fire, flood etc.) and unauthorized modifications or repair.</p>
+</div>
+<div class="paragraph">
+<p>Power undervoltage, overvoltage and/or incorrect polarity will damage the unit and will void the warranty.</p>
+</div>
+<div class="paragraph">
+<p>It is your responsibility to ensure that all wires connected to INEX Technologies' products have appropriate surge protection. Any damage due to electrical spikes (for example, lightning) is not covered by the warranty.</p>
+</div>
+<div class="paragraph">
+<p>No part of this document may be reproduced in any form without permission from INEX Technologies.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_software_precautions"><a class="anchor" href="#_software_precautions"></a>8.2. Software Precautions</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>The use of any INEX Technologies' software products or any other software product referred to in this document with internet access shall be used wholly at your own risk. INEX Technologies does not take any responsibility for abnormal operation, privacy leakage or any other damages resulting from cyber attack, hacker attack, virus infection or any other internet security risks.</p>
+</li>
+<li>
+<p>Proper configuration of all passwords and other security settings is the responsibility of the installer and/or end-user.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><div class="pagebreak"> </div></p>
+</div>
+<div class="paragraph">
+<p><strong><em>\{need to fix legal disclaimer - has reference to
+related docs as Asciidoc link at end}</em></strong></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_legal_disclaimer"><a class="anchor" href="#_legal_disclaimer"></a>8.3. Legal Disclaimer</h3>
+<div class="paragraph">
+<p>TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE PRODUCT DESCRIBED, WITH ITS HARDWARE, SOFTWARE AND FIRMWARE, IS PROVIDED "AS IS", WITH ALL FAULTS AND ERRORS, AND OUR COMPANY MAKES NO WARRANTIES, EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION, MERCHANTABILITY, SATISFACTORY QUALITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT OF THIRD PARTY. IN NO EVENT WILL OUR COMPANY, ITS DIRECTORS, OFFICERS, EMPLOYEES, OR AGENTS BE LIABLE TO YOU FOR ANY SPECIAL, CONSEQUENTIAL, INCIDENTAL, OR INDIRECT DAMAGES, INCLUDING, AMONG OTHERS, DAMAGES FOR LOSS OF BUSINESS PROFITS, BUSINESS INTERRUPTION, OR LOSS OF DATA OR DOCUMENTATION, IN CONNECTION WITH THE USE OF THIS PRODUCT, EVEN IF OUR COMPANY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.</p>
+</div>
+<div class="paragraph">
+<p>THE USE OF ANY INEX Technologies' SOFTWARE PRODUCTS OR ANY OTHER SOFTWARE PRODUCTS REFERRED TO IN THIS DOCUMENT WITH INTERNET ACCESS SHALL BE USED WHOLLY AT YOUR OWN RISK. INEX Technologies DOES NOT TAKE ANY RESPONSIBILITY FOR ABNORMAL OPERATION, PRIVACY LEAKAGE OR ANY OTHER DAMAGES RESULTING FROM CYBER ATTACK, HACKER ATTACK, VIRUS INFECTION OR ANY OTHER INTERNET SECURITY RISKS.</p>
+</div>
+<div class="paragraph">
+<p>For details, see the INEX Software End User License Agreement (see <a href="#s_Related-Documents">[s_Related-Documents]</a>).</p>
+</div>
 <div class="paragraph">
 <p></p>
 </div>
 <div class="paragraph">
-<p>&#169; INEX Technologies - All rights reserved. Specifications subject to change without notice. All third-party trademarks are the property of their respective owners.</p>
+<p>&#169; INEX Technologies - All rights reserved.</p>
 </div>
 <div class="paragraph">
 <p></p>
 </div>
 <div class="paragraph">
 <p>Doc. No. TIBA-MAN-002b</p>
+</div>
 </div>
 </div>
 </div>
