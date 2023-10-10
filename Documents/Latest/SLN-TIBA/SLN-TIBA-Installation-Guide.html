@@ -405,7 +405,7 @@
 <ul class="sectlevel1">
 <li><a href="#_background">1. Background</a></li>
 <li><a href="#_applicable_products">2. Applicable Products</a></li>
-<li><a href="#_you_will_need">3. You will Need</a></li>
+<li><a href="#_computer_and_software_requirements">3. Computer and Software Requirements</a></li>
 <li><a href="#_solution_bom">4. Solution BOM</a></li>
 <li><a href="#_lane_design">5. Lane Design</a></li>
 <li><a href="#_camera_wiring">6. Camera Wiring</a></li>
@@ -415,11 +415,37 @@
 <li><a href="#s_Changing-a-Device-s-IP-Address-and-Network-Settings">7.2. Changing a Device&#8217;s IP Address and Network Settings</a></li>
 </ul>
 </li>
-<li><a href="#s_Configure-Microsoft-Edge">8. Configure Microsoft Edge</a>
+<li><a href="#s_Configure-Microsoft-Edge">8. Configure Microsoft Edge</a></li>
+<li><a href="#_configure_lprov_camera_settings">9. Configure LPR/OV Camera Settings</a>
 <ul class="sectlevel2">
-<li><a href="#_notice">8.1. Notice</a></li>
-<li><a href="#_software_precautions">8.2. Software Precautions</a></li>
-<li><a href="#_legal_disclaimer">8.3. Legal Disclaimer</a></li>
+<li><a href="#s_Logging-In-to-the-Camera">9.1. Logging In to a Camera</a></li>
+<li><a href="#_configure_the_lpr_camera">9.2. Configure the LPR Camera</a>
+<ul class="sectlevel3">
+<li><a href="#_liveview_link_at_upper_right">9.2.1. LiveView (link at upper right)</a></li>
+<li><a href="#_admin_link_at_upper_right">9.2.2. Admin (link at upper right)</a></li>
+<li><a href="#_video_device_video_streams">9.2.3. Video &amp; Device &gt; Video Streams</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#_aim_and_calibrate">10. Aim and Calibrate</a>
+<ul class="sectlevel2">
+<li><a href="#s_Preparing-a-Vehicle-License-Plate">10.1. Preparing a Vehicle/License Plate</a></li>
+<li><a href="#s_Using-RoadView">10.2. Using RoadView</a>
+<ul class="sectlevel3">
+<li><a href="#s_Logging-In">10.2.1. Logging In</a></li>
+<li><a href="#s_Logging-Out">10.2.2. Logging Out</a></li>
+</ul>
+</li>
+<li><a href="#s_Calibrating-the-Cameras-Using-RoadView">10.3. Calibrating the Cameras Using RoadView</a></li>
+</ul>
+</li>
+<li><a href="#s_Verify-System-Operation">11. Verify System Operation</a></li>
+<li><a href="#_legal_notices">12. Legal Notices</a>
+<ul class="sectlevel2">
+<li><a href="#_notice">12.1. Notice</a></li>
+<li><a href="#_software_precautions">12.2. Software Precautions</a></li>
+<li><a href="#_legal_disclaimer">12.3. Legal Disclaimer</a></li>
 </ul>
 </li>
 </ul>
@@ -444,12 +470,12 @@ configure and calibrate an INEX ALPR Camera for a single lane, to work with the 
 <div class="paragraph">
 <p><strong><em>\{why do we need this section if we have the BOM?}</em></strong>
 IZA500GR camera (Rev. F3)
-with built-in RoadView (RV) video analytics - ver <strong><em>{xxxx}</em></strong></p>
+with built-in RoadView (RV) video analytics - ver 1.15.54</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_you_will_need"><a class="anchor" href="#_you_will_need"></a>3. You will Need</h2>
+<h2 id="_computer_and_software_requirements"><a class="anchor" href="#_computer_and_software_requirements"></a>3. Computer and Software Requirements</h2>
 <div class="sectionbody">
 <div class="ulist">
 <ul>
@@ -637,7 +663,7 @@ For example:<br></p>
 <p>Use IZ Discovery to find the
 Jetson processor and LPR/OV sensors, and to
 change their IP addresses to the ones
-you allocated</p>
+you allocated.</p>
 </li>
 </ol>
 </div>
@@ -806,12 +832,6 @@ you allocated</p>
 <div class="sect1">
 <h2 id="s_Configure-Microsoft-Edge"><a class="anchor" href="#s_Configure-Microsoft-Edge"></a>8. Configure Microsoft Edge</h2>
 <div class="sectionbody">
-<div class="paragraph">
-<p><strong><em>\{Turn this into 2 partials, here
-and in JLT - before
-and after second screen - so second screen
-can have different IP addresses}</em></strong></p>
-</div>
 <div class="imageblock text-center">
 <div class="content">
 <img src="../_images/SLN-JLT/image-MSedge-settings-1.png" alt="image" width="800">
@@ -851,12 +871,7 @@ Explorer mode (IE); change from
 <p>Internet Explorer mode pages; click the Add button</p>
 </li>
 <li>
-<p>Add URLs for the onboard
-Jetson processor and the LPR and OV sensors.
-For example:<br>
-<a href="http://192.168.5.100/" class="bare">http://192.168.5.100/</a><br>
-<a href="http://192.168.5.101/" class="bare">http://192.168.5.101/</a><br>
-<a href="http://192.168.5.102/" class="bare">http://192.168.5.102/</a><br></p>
+<p>Add URLs</p>
 <div class="admonitionblock important">
 <table>
 <tr>
@@ -865,7 +880,7 @@ For example:<br>
 </td>
 <td class="content">
 <div class="paragraph">
-<p>Addresses expire after 30 days and
+<p>URLs expire after 30 days and
 must be re-entered.</p>
 </div>
 </td>
@@ -878,8 +893,358 @@ must be re-entered.</p>
 </li>
 </ol>
 </div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_configure_lprov_camera_settings"><a class="anchor" href="#_configure_lprov_camera_settings"></a>9. Configure LPR/OV Camera Settings</h2>
+<div class="sectionbody">
 <div class="sect2">
-<h3 id="_notice"><a class="anchor" href="#_notice"></a>8.1. Notice</h3>
+<h3 id="s_Logging-In-to-the-Camera"><a class="anchor" href="#s_Logging-In-to-the-Camera"></a>9.1. Logging In to a Camera</h3>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>To view the camera&#8217;s home page (see <a href="#f_Camera-s-Home-Page">Figure 8</a>):</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Open MS Edge in Internet Explorer mode. Enter the IP address of the camera into the address field of the browser.<br></p>
+<div id="f_Camera-s-Home-Page" class="imageblock">
+<div class="content">
+<img src="../_images/IZA800G/image43.png" alt="image" width="528" height="230">
+</div>
+<div class="title">Figure 8. Camera&#8217;s Home Page</div>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Select the function you need from the links at the upper right:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Click the Live View link to see what the camera is currently viewing. You can also use controls such as zoom and focus (see <a href="#s_Calibrating-the-Cameras-Using-RoadView">Section 10.3</a>).</p>
+<details>
+<summary class="title">Click to show notes for Live View</summary>
+<div class="content">
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>When using Live View for the first time, you may be prompted to download and install an ActiveX control (Smart Viewer).<br>
+If you do not have an internet connection to the network on which the camera is installed, wait 30 seconds, and you will be instructed on how to install the ActiveX control locally via the camera&#8217;s firmware.</p>
+</div>
+<div class="paragraph">
+<p>The stream of the Live View can also be accessed using an RTSP URL with the following format
+:</p>
+</div>
+<div class="paragraph">
+<p>rtsp://[username:password]@&lt;Camera IP address&gt;/cam0_0<br>
+where cam0_0 is a camera-specific parameter (which in this case enables you to access the primary stream)</p>
+</div>
+<div class="paragraph">
+<p>To see the stream, use a video player such as the VLC player, located at:<br>
+<a href="https://www.videolan.org/vlc/index.html" target="_blank" rel="noopener">VLC</a></p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</details>
+</li>
+<li>
+<p>If you need to change the IP address of the camera or other configuration parameters, click the Admin link.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>When prompted for a login, use the Administrator username/password credentials of root, IZpass12.</p>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>The Administrator user name (root) cannot be changed, and the Administrator password is encrypted. Therefore, if someone changes the Administrator password, there is no way to find out the password if it gets lost.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_configure_the_lpr_camera"><a class="anchor" href="#_configure_the_lpr_camera"></a>9.2. Configure the LPR Camera</h3>
+<div class="sect3">
+<h4 id="_liveview_link_at_upper_right"><a class="anchor" href="#_liveview_link_at_upper_right"></a>9.2.1. LiveView (link at upper right)</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>The focus will be set automatically;
+can be fine-adjusted manually with buttons</p>
+</li>
+<li>
+<p>Use the buttons to Zoom in/out</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_admin_link_at_upper_right"><a class="anchor" href="#_admin_link_at_upper_right"></a>9.2.2. Admin (link at upper right)</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Enter username and password (root/IZpass12)</p>
+</li>
+<li>
+<p>Use the menu at the left to select the parameter
+category/sub-category/group.</p>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p><strong>After changing settings, remember to
+click the Apply button at the bottom of
+each parameter section.</strong></p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_video_device_video_streams"><a class="anchor" href="#_video_device_video_streams"></a>9.2.3. Video &amp; Device &gt; Video Streams</h4>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/SLN-TIBA/IZA500G-FIG-110_TIBALPRVideoStreams.png" alt="image" width="600">
+</div>
+</div>
+<div class="paragraph">
+<p>Set:<br></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Max Video Encoding (at bottom) = 2M x 30 fps</p>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p><strong>Change this parameter first.
+Changing this parameter will require a reset,
+which can change some of the other parameters.</strong></p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>Primary Stream Frame Rate = 15 fps</p>
+</li>
+<li>
+<p>Primary Stream Image Size = 1920 x 1080</p>
+</li>
+<li>
+<p>Primary Stream Encoding Standard = M-JPEG</p>
+</li>
+</ul>
+</div>
+<div class="sect4">
+<h5 id="_video_device_video_streams_camera_settings"><a class="anchor" href="#_video_device_video_streams_camera_settings"></a>9.2.3.1. Video &amp; Device &gt; Video Streams &gt; Camera Settings</h5>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/SLN-TIBA/IZA500G-FIG-112_TIBALPRCameraSettings.png" alt="image" width="600">
+</div>
+<div class="title">Figure 9. LPR Sensor - Video &amp; Device &gt; Video Streams</div>
+</div>
+<div class="paragraph">
+<p><strong><em>\{recheck this bullet - unclear - is this
+default day shown here?}</em></strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Click Default(Day) at the top of the parameter table
+<strong><em>\{(not shown here???}</em></strong></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Set:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Shutter Time Min = 1/500 - 1/32000</p>
+</li>
+<li>
+<p>Shutter Time Max = equal to Time Min</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>If the image is too dark at night, increase
+shutter Time Min/Max. However, higher (longer)
+shutter speeds may cause smearing at higher
+vehicle speeds.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>Max AGC gain = 1 - 36</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Use 36 for the lowest noise;
+however, if the image moves,
+increase this value (but the image will be less clear)</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>Day and Night Control = Black &amp; White</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong><em>\{put in headings, text and config screens from pinchas'
+rough draft}</em></strong></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_aim_and_calibrate"><a class="anchor" href="#_aim_and_calibrate"></a>10. Aim and Calibrate</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>There are two cameras (sensors) in the Camera System.
+Both are calibrated in nearly the same way.
+The LPR camera is set to capture in black and white,
+and the Overview (OV) camera is set to capture in color.</p>
+</div>
+<div class="paragraph">
+<p>The OV camera can be used both to display an overview image,
+and to perform LPR recognition.
+You may even be able to improve read accuracy by
+changing the zoom to have one camera "see" closer
+than the other one.</p>
+</div>
+<div class="sect2">
+<h3 id="s_Preparing-a-Vehicle-License-Plate"><a class="anchor" href="#s_Preparing-a-Vehicle-License-Plate"></a>10.1. Preparing a Vehicle/License Plate</h3>
+<div class="paragraph">
+<p>Move a vehicle next to, and at the middle of
+the capture line. (This is the position at
+which the vehicle sensor signals that the
+vehicle is present.) Ensure that the Camera System
+is aimed at the middle of the lane, and is at the
+required capture distance.</p>
+</div>
+<div class="paragraph">
+<p>Alternatively, in a lab, position a license plate
+at the expected distance and height.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="s_Using-RoadView"><a class="anchor" href="#s_Using-RoadView"></a>10.2. Using RoadView</h3>
+<div class="sect3">
+<h4 id="s_Logging-In"><a class="anchor" href="#s_Logging-In"></a>10.2.1. Logging In</h4>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Open a browser (latest version of Chrome or IE 11 or higher).
+Type in the IP address of the RoadView computer.
+For example:<br>
+<a href="http://192.115.120.76/">http://192.115.120.76/</a></p>
+</li>
+<li>
+<p>You will see the login screen. Enter the default username and password (root, root):</p>
+<div id="f_Logging-In-to-RoadView" class="imageblock">
+<div class="content">
+<img src="../_images/RoadViewALPR/RoadViewLoginWindow.png" alt="image" width="209" height="143">
+</div>
+<div class="title">Figure 10. Logging In to RoadView</div>
+</div>
+</li>
+<li>
+<p>You should see the RoadView Live (Journal) tab. See the RoadView ALPR User Guide for instructions for configuring and using RoadView (see <a href="#s_Related-Documents">[s_Related-Documents]</a>).</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect3">
+<h4 id="s_Logging-Out"><a class="anchor" href="#s_Logging-Out"></a>10.2.2. Logging Out</h4>
+<div class="paragraph">
+<p>See the RoadView ALPR User Guide (see <a href="#s_Related-Documents">[s_Related-Documents]</a>) for logout instructions, using the multi-line dropdown menu icon in the upper right corner of the screen.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="s_Calibrating-the-Cameras-Using-RoadView"><a class="anchor" href="#s_Calibrating-the-Cameras-Using-RoadView"></a>10.3. Calibrating the Cameras Using RoadView</h3>
+<div class="paragraph">
+<p><strong><em>\{put in Pinchas' rough draft and Max&#8217;s screens, etc.}</em></strong></p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="s_Verify-System-Operation"><a class="anchor" href="#s_Verify-System-Operation"></a>11. Verify System Operation</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Using a license plate mounted in a lab, or by driving a vehicle through the lane, verify that an Event is generated with the correct plate read (recorded in the RoadView Live (Journal) tab - see the RoadView ALPR User Guide). See <a href="#s_Related-Documents">[s_Related-Documents]</a>.</p>
+</li>
+<li>
+<p>Once the lane is active, verify that Events are being generated for each vehicle passing each camera, and that the recognition has sufficient accuracy and confidence.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_legal_notices"><a class="anchor" href="#_legal_notices"></a>12. Legal Notices</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_notice"><a class="anchor" href="#_notice"></a>12.1. Notice</h3>
 <div class="paragraph">
 <p>INEX Technologies reserves the right to improve and enhance its product offerings. Thus, the illustrations and descriptions presented in this manual may differ in some respect from the products you receive.</p>
 </div>
@@ -909,7 +1274,7 @@ must be re-entered.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_software_precautions"><a class="anchor" href="#_software_precautions"></a>8.2. Software Precautions</h3>
+<h3 id="_software_precautions"><a class="anchor" href="#_software_precautions"></a>12.2. Software Precautions</h3>
 <div class="ulist">
 <ul>
 <li>
@@ -923,13 +1288,9 @@ must be re-entered.</p>
 <div class="paragraph">
 <p><div class="pagebreak"> </div></p>
 </div>
-<div class="paragraph">
-<p><strong><em>\{need to fix legal disclaimer - has reference to
-related docs as Asciidoc link at end}</em></strong></p>
-</div>
 </div>
 <div class="sect2">
-<h3 id="_legal_disclaimer"><a class="anchor" href="#_legal_disclaimer"></a>8.3. Legal Disclaimer</h3>
+<h3 id="_legal_disclaimer"><a class="anchor" href="#_legal_disclaimer"></a>12.3. Legal Disclaimer</h3>
 <div class="paragraph">
 <p>TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE PRODUCT DESCRIBED, WITH ITS HARDWARE, SOFTWARE AND FIRMWARE, IS PROVIDED "AS IS", WITH ALL FAULTS AND ERRORS, AND OUR COMPANY MAKES NO WARRANTIES, EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION, MERCHANTABILITY, SATISFACTORY QUALITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT OF THIRD PARTY. IN NO EVENT WILL OUR COMPANY, ITS DIRECTORS, OFFICERS, EMPLOYEES, OR AGENTS BE LIABLE TO YOU FOR ANY SPECIAL, CONSEQUENTIAL, INCIDENTAL, OR INDIRECT DAMAGES, INCLUDING, AMONG OTHERS, DAMAGES FOR LOSS OF BUSINESS PROFITS, BUSINESS INTERRUPTION, OR LOSS OF DATA OR DOCUMENTATION, IN CONNECTION WITH THE USE OF THIS PRODUCT, EVEN IF OUR COMPANY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.</p>
 </div>
@@ -937,7 +1298,7 @@ related docs as Asciidoc link at end}</em></strong></p>
 <p>THE USE OF ANY INEX Technologies' SOFTWARE PRODUCTS OR ANY OTHER SOFTWARE PRODUCTS REFERRED TO IN THIS DOCUMENT WITH INTERNET ACCESS SHALL BE USED WHOLLY AT YOUR OWN RISK. INEX Technologies DOES NOT TAKE ANY RESPONSIBILITY FOR ABNORMAL OPERATION, PRIVACY LEAKAGE OR ANY OTHER DAMAGES RESULTING FROM CYBER ATTACK, HACKER ATTACK, VIRUS INFECTION OR ANY OTHER INTERNET SECURITY RISKS.</p>
 </div>
 <div class="paragraph">
-<p>For details, see the INEX Software End User License Agreement (see <a href="#s_Related-Documents">[s_Related-Documents]</a>).</p>
+<p>For details, see the INEX Software End User License Agreement.</p>
 </div>
 <div class="paragraph">
 <p></p>
