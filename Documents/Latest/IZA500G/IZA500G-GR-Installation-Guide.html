@@ -89,10 +89,10 @@
     <a class="nav-link" href="../SLN-SKIDATA/DocList.html">SKIDATA Integration</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../SLN-Tolling/DocList.html">Tolling</a>
+    <a class="nav-link" href="../SLN-TIBA/DocList.html">TIBA Integration</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../SLN-TIBA/DocList.html">TIBA Integration</a>
+    <a class="nav-link" href="../SLN-Tolling/DocList.html">Tolling</a>
   </li>
   <li class="nav-item" data-depth="2">
     <span class="nav-text"><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRYo3CcvmUnxSMgmPx3AAfGxi86WuCFMZorDF0hac1cmPbwJV3_eWnK30nKfjoYHrBJtNaEmTsmKx-a/pubhtml?gid=419264758&amp;single=true" target="_blank" rel="noopener">Solution Comparisons</a></span>
@@ -103,6 +103,15 @@
     <button class="nav-item-toggle"></button>
     <span class="nav-text">Cameras</span>
 <ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="DocList.html">IZA500G</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../IZA500GR/DocList.html">IZA500GR</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../IZ600F/DocList.html">IZ600F</a>
+  </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../IZA800G/DocList.html">IZA800G</a>
   </li>
@@ -117,15 +126,6 @@
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../IZA800GDOT/DocList.html">IZA800GDOT</a>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="DocList.html">IZA500G</a>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../IZA500GR/DocList.html">IZA500GR</a>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../IZ600F/DocList.html">IZ600F</a>
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../IZM600F/DocList.html">IZM600F (Mobile)</a>
@@ -1294,9 +1294,6 @@ mounting hardware
 <div class="paragraph">
 <p><strong>If you are using an INEX power supply, see its User Guide (see <a href="#s_Related-Documents">Section 1</a>) for important information.</strong></p>
 </div>
-<div class="paragraph">
-<p>The Camera System is not compatible with some GigE switches; suggested switch type: 10/100 Mb</p>
-</div>
 </td>
 </tr>
 </table>
@@ -1358,57 +1355,75 @@ mounting hardware
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">A</p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><strong>LAN Cable</strong></p>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">A</p></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>LAN Patch Cable</strong> - CAT6, max. length 3.3 ft (1 m) for connection to IZ4POE;<br>
+382 ft (100 m) for connection to IZIO</p>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Supplied by integrator</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Supplied by integrator</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">B</p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<td class="tableblock halign-left valign-middle"><p class="tableblock">B</p></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>LAN Cable</strong> - CAT6, shielded, 4 pairs, 22 AWG, max.
+length 328 ft (100 m),<br>
+OD 5.5-7.9 mm</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Supplied by integrator; 6.6 ft (2 m) included with camera</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">C</p></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>PAS (Power and Signals) Cable</strong> -<br>
+22 AWG, OD 3.0-7.3 mm</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Supplied by integrator; 6.6 ft (2 m) cable included with camera</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">D</p></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
 <p><strong>Power Supply for Cameras</strong><br>
-24 VDC for standard models<br>
+24 VDC for standard models/<br>
 48 VDC for P48 models</p>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>For 1 camera, use a <a href="../IZPWR/DocList.html" class="xref page">50/75W supply</a><br>
-For 2 cameras, use a <a href="../IZPWR/DocList.html" class="xref page">100/120W supply</a><br>
-For 4 cameras, use a <a href="../IZPWR/DocList.html" class="xref page">240W supply</a><br></p>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>For 1 camera, use a 50/75 W supply (IZPWR50/75)<br>
+For 2 cameras, use a 100/120 W supply (IZPWR100/120)<br>
+For 4 cameras, use a 240 W supply (IZPWR240)</p>
 </div></div></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">C</p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><strong>Inductive Loop</strong></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Supplied by integrator</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">D</p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><strong>Loop Detector Wiring Harness</strong></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Included with Loop Detector</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">E</p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<td class="tableblock halign-left valign-middle"><p class="tableblock">E</p></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
 <p><strong>Gate</strong></p>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Supplied by integrator</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Supplied by integrator</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">F</p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<td class="tableblock halign-left valign-middle"><p class="tableblock">F</p></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>Inductive Loop</strong></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Supplied by integrator</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">G</p></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>Loop Detector Wiring Harness</strong></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Included with Loop Detector</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">H</p></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
 <p><strong>Power Supply for IZ4POE<br>
-(PoE&#43; Injector)</strong><br>
+PoE&#43; Injector</strong><br>
 Requires 48 VDC</p>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>For 1 camera, use a <a href="../IZPWR/DocList.html" class="xref page">50W supply</a><br>
-For 2 cameras, use a <a href="../IZPWR/DocList.html" class="xref page">120W supply</a><br>
-For 4 cameras, use a <a href="../IZPWR/DocList.html" class="xref page">240W supply</a></p>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>For 1 camera, use a 75 W supply (IZPWR75-48)<br>
+For 2 cameras, use a 120 W supply (IZPWR120-48)<br>
+For 4 cameras, use a 240 W supply (IZPWR240-48)</p>
 </div></div></td>
 </tr>
 </tbody>
@@ -1429,9 +1444,6 @@ guides.</p>
 <p>The <a href="../IZ4POE/DocList.html" class="xref page">IZ4POE</a> is required for the PoE&#43; input power option.</p>
 </li>
 </ul>
-</div>
-<div class="paragraph">
-<p><div class="pagebreak"> </div></p>
 </div>
 </div>
 </div>
