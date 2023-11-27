@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Untitled :: Documents</title>
+    <title>IZ600F Quick Start Guide :: Documents</title>
     <meta name="generator" content="Antora 3.1.3">
 <link rel="stylesheet" href="../../../_/css/site.css">
 <link rel="stylesheet" href="../../../_/css/site-extra.css">
@@ -38,6 +38,7 @@
     <div class="panels">
 <div class="nav-panel-menu is-active" data-panel="menu">
   <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
     <h3 class="title"><a href="../index.html">Documents</a></h3>
 <ul class="nav-list">
   <li class="nav-item" data-depth="0">
@@ -69,6 +70,9 @@
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../SLN-DOOR-AC/DocList.html">Door Access Control</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../SLN-DriverFaceCapture/DocList.html">Driver Face Capture</a>
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../SLN-IZCloudIntegration/DocList.html">IZCloud Integration</a>
@@ -180,9 +184,6 @@
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../IZIDPUGOX/DocList.html">IZIDPUGOX</a>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../IZIDPUGC/DocList.html">IZIDPUGC</a>
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../IZODPUG/DocList.html">IZODPUG</a>
@@ -371,6 +372,10 @@
 <button class="nav-toggle"></button>
   <a href="../index.html" class="home-link"></a>
 <nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">Documents</a></li>
+    <li><a href="IZ600F-Quick-Start.html">IZ600F Quick Start Guide</a></li>
+  </ul>
 </nav>
 </div>
   <div class="content">
@@ -378,7 +383,185 @@
   <div class="toc-menu"></div>
 </aside>
 <article class="doc">
-
+<h1 class="page">IZ600F Quick Start Guide</h1>
+<div class="paragraph">
+<p>
+</p>
+</div>
+<div class="paragraph">
+<p>Click <a href="DocList.html" class="xref page">here</a> for full documentation and software.</p>
+</div>
+<div class="sidebarblock">
+<div class="content">
+You will need: Laptop with Windows 10 or above
+with Windows Feature NET 4.5 enabled.<br>
+Chrome or Microsoft Edge browser.<br>
+You can use <a href="../IZDiscovery/DocList.html" class="xref page">IZ Discovery</a>
+to find the desired camera and change its network
+settings.
+</div>
+</div>
+<h3 id="_checklist" class="discrete">Checklist</h3>
+<div class="ulist checklist">
+<ul class="checklist">
+<li>
+<p><i class="fa fa-check-square-o"></i> Prepare components and tools</p>
+</li>
+<li>
+<p><i class="fa fa-check-square-o"></i> Plan your site</p>
+</li>
+<li>
+<p><i class="fa fa-check-square-o"></i> Prepare cables</p>
+</li>
+<li>
+<p><i class="fa fa-check-square-o"></i> Install camera(s) and other components</p>
+</li>
+<li>
+<p><i class="fa fa-check-square-o"></i> Connect components (wiring)</p>
+</li>
+<li>
+<p><i class="fa fa-check-square-o"></i> Power up and set up IP</p>
+</li>
+<li>
+<p><i class="fa fa-check-square-o"></i> Configure
+camera settings</p>
+</li>
+<li>
+<p><i class="fa fa-check-square-o"></i> Aim and calibrate</p>
+</li>
+<li>
+<p><i class="fa fa-check-square-o"></i> Verify system operation</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><br></p>
+</div>
+<div style="page-break-after: always;"></div>
+<h3 id="_camera_with_poe_wiring_diagram" class="discrete">Camera with PoE Wiring Diagram</h3>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/IZ600F/IZ600F-30-FIG-046_NEWPOENoIllumQuickStart.png" alt="image" width="450">
+</div>
+</div>
+<h3 id="_camera_with_power_supply_wiring_diagram" class="discrete">Camera with Power Supply Wiring Diagram</h3>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/IZ600F/IZ600F-30-FIG-045_NEWPSNoIllumQuickStart.png" alt="image" width="450">
+</div>
+</div>
+<h3 id="_camera_with_illuminator_wiring_diagram" class="discrete">Camera with Illuminator Wiring Diagram</h3>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/IZ600F/IZ600F-30-FIG-047_IllumQuickStartWiring.png" alt="image" width="700">
+</div>
+</div>
+<div style="page-break-after: always;"></div>
+<h3 id="_camera_with_web_relay_for_gate_control_wiring_diagram" class="discrete">Camera with Web Relay for Gate Control Wiring Diagram</h3>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/IZ600F/IZ600F-30-FIG-048c_GatesQuickStartWiring.png" alt="image" width="500">
+</div>
+</div>
+<h3 id="_legend" class="discrete">Legend</h3>
+<table class="tableblock frame-all grid-all stretch withborders">
+<colgroup>
+<col style="width: 7%;">
+<col style="width: 52%;">
+<col style="width: 41%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Item</th>
+<th class="tableblock halign-left valign-top">Description</th>
+<th class="tableblock halign-left valign-top">Ordering Information</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">A</p></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>LAN Cables</strong></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Supplied by integrator</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">B</p></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>Waterproof Cap for Camera Network Connection</strong></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Included with camera</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">C</p></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>Power Supply for Camera:</strong> 12 VDC,
+50/75W; DIN rail<br>
+Can power 2 cameras from a single power supply<br>
+<br>
+Connect to camera with a male barrel
+connector 5.5 mm outer diameter,
+2.1 mm inner diameter,
+or cut off connector and connect
+directly to red/black wires</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">INEX P/N:
+<a href="../IZPWR/DocList.html" class="xref page">IZPWR75-12-MWL-DIN</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">D</p></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>Power Supply for IZIDPUG (Rev. B)</strong></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Included with IZIDPUG</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">E</p></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>Power Supply for Illuminator:</strong> 24 VDC, 100/120W or 240W; DIN rail</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>For IZL1, use INEX P/N:<br>
+<a href="../IZPWR/DocList.html" class="xref page">IZPWR120-24-MWL-DIN</a><br>
+For IZL2, use INEX P/N:<br>
+<a href="../IZPWR/DocList.html" class="xref page">IZPWR240-24-MWL-DIN</a></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">F</p></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>Power/Signals Cable for Illuminator</strong></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Included with illuminator</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">G</p></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>Gates</strong></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Supplied by integrator</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">H</p></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>IZL Illuminator</strong></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">INEX P/N: See the <a href="../IZL/DocList.html" class="xref page">IZL Illuminator User Guide</a> for a table of Camera-to-Illuminator Typical Use Cases</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p></p>
+</div>
+<div class="paragraph">
+<p>&#169; INEX Technologies - All rights reserved. Specifications subject to change without notice. All third-party trademarks are the property of their respective owners.</p>
+</div>
+<div class="paragraph">
+<p></p>
+</div>
+<div class="paragraph">
+<p>Doc. No. IZ600F-TECH-004</p>
+</div>
 </article>
   </div>
 </main>

@@ -38,6 +38,7 @@
     <div class="panels">
 <div class="nav-panel-menu is-active" data-panel="menu">
   <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
     <h3 class="title"><a href="../index.html">Documents</a></h3>
 <ul class="nav-list">
   <li class="nav-item" data-depth="0">
@@ -69,6 +70,9 @@
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../SLN-DOOR-AC/DocList.html">Door Access Control</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../SLN-DriverFaceCapture/DocList.html">Driver Face Capture</a>
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../SLN-IZCloudIntegration/DocList.html">IZCloud Integration</a>
@@ -180,9 +184,6 @@
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../IZIDPUGOX/DocList.html">IZIDPUGOX</a>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../IZIDPUGC/DocList.html">IZIDPUGC</a>
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../IZODPUG/DocList.html">IZODPUG</a>
@@ -914,10 +915,10 @@ It is recommended to use sequential IP addresses for the Camera System and its c
 <div class="ulist">
 <ul>
 <li>
-<p>Open MS Edge in Internet Explorer mode. Enter the IP address of the camera into the address field of the browser.<br></p>
+<p>Open a browser. Enter the IP address of the camera into the address field.<br></p>
 <div id="f_Camera-s-Home-Page" class="imageblock">
 <div class="content">
-<img src="../_images/IZA800G/image43.png" alt="image" width="528" height="230">
+<img src="../_images/IZA800G/image43.png" alt="image" width="500">
 </div>
 <div class="title">Figure 6. Camera&#8217;s Home Page</div>
 </div>
@@ -926,11 +927,12 @@ It is recommended to use sequential IP addresses for the Camera System and its c
 </div>
 </li>
 <li>
-<p>Select the function you need from the links at the upper right:</p>
+<p>Select the function you need from the links at the upper left:</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Click the Live View link to see what the camera is currently viewing. You can also use controls such as zoom and focus (see <a href="#s_Calibrating-the-Cameras-Using-RoadView">Section 14</a>).</p>
+<p>Click the Live button to see what the camera is currently viewing.
+You can also use the zoom and focus controls.</p>
 <details>
 <summary class="title">Click to show notes for Live View</summary>
 <div class="content">
@@ -963,17 +965,19 @@ where cam0_0 is a camera-specific parameter (which in this case enables you to a
 </div>
 </div>
 </details>
+<div style="page-break-after: always;"></div>
 </li>
 <li>
-<p>If you need to change the IP address of the camera or other configuration parameters, click the Admin link.</p>
+<p>If you need to change the camera&#8217;s IP address
+or other configuration parameters,
+click the Admin button. When prompted for a login,
+use the Administrator username/password credentials
+of root, IZpass12.</p>
 </li>
 </ul>
 </div>
 </li>
-<li>
-<p>When prompted for a login, use the Administrator username/password credentials of root, IZpass12.</p>
-<div class="paragraph">
-<p><br></p>
+</ol>
 </div>
 <div class="admonitionblock important">
 <table>
@@ -988,9 +992,6 @@ where cam0_0 is a camera-specific parameter (which in this case enables you to a
 </td>
 </tr>
 </table>
-</div>
-</li>
-</ol>
 </div>
 <div class="sect2">
 <h3 id="_live_view_link_at_upper_right"><a class="anchor" href="#_live_view_link_at_upper_right"></a>7.1. Live View (link at upper right)</h3>
@@ -1193,7 +1194,7 @@ at the expected distance and height.</p>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Open a Microsoft Edge browser in Internet Explorer mode.</p>
+<p>Open a browser.</p>
 </li>
 <li>
 <p>Type in the IP address of the RoadView computer.

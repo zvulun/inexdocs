@@ -38,6 +38,7 @@
     <div class="panels">
 <div class="nav-panel-menu is-active" data-panel="menu">
   <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
     <h3 class="title"><a href="../index.html">Documents</a></h3>
 <ul class="nav-list">
   <li class="nav-item" data-depth="0">
@@ -69,6 +70,9 @@
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../SLN-DOOR-AC/DocList.html">Door Access Control</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../SLN-DriverFaceCapture/DocList.html">Driver Face Capture</a>
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../SLN-IZCloudIntegration/DocList.html">IZCloud Integration</a>
@@ -180,9 +184,6 @@
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../IZIDPUGOX/DocList.html">IZIDPUGOX</a>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../IZIDPUGC/DocList.html">IZIDPUGC</a>
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../IZODPUG/DocList.html">IZODPUG</a>
@@ -627,7 +628,9 @@
 <p><i class="fa fa-check-square-o"></i> Power up and set up IP</p>
 </li>
 <li>
-<p><i class="fa fa-check-square-o"></i> Configure LPR/OV camera settings</p>
+<p><i class="fa fa-check-square-o"></i> Configure
+LPR/OV
+camera settings</p>
 </li>
 <li>
 <p><i class="fa fa-check-square-o"></i> Aim and calibrate</p>
@@ -776,8 +779,7 @@ For documentation and part numbers, see <a href="#s_Related-Documents">Section 1
 <p>Windows 10 or above - with .NET 4.5 enabled in "Windows Features"</p>
 </li>
 <li>
-<p>Internet Explorer browser version 11 or higher.<br>
-You can add an IE Tab extension to Chrome at this <a href="https://chrome.google.com/webstore/detail/ie-tab/hehijbfgiekmjfkfjpbkbammjbdenadd" target="_blank" rel="noopener">link</a> (to enable access to the camera configuration application - see <a href="#s_Logging-In-to-the-Camera">Section 10.1</a>).</p>
+<p>Chrome or Microsoft Edge browser</p>
 </li>
 </ul>
 </div>
@@ -1515,10 +1517,10 @@ IP address.</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Open MS Edge in Internet Explorer mode. Enter the IP address of the camera into the address field of the browser.<br></p>
+<p>Open a browser. Enter the IP address of the camera into the address field.<br></p>
 <div id="f_Camera-s-Home-Page" class="imageblock">
 <div class="content">
-<img src="../_images/IZA800G/image43.png" alt="image" width="528" height="230">
+<img src="../_images/IZA800G/image43.png" alt="image" width="500">
 </div>
 <div class="title">Figure 14. Camera&#8217;s Home Page</div>
 </div>
@@ -1527,11 +1529,12 @@ IP address.</p>
 </div>
 </li>
 <li>
-<p>Select the function you need from the links at the upper right:</p>
+<p>Select the function you need from the links at the upper left:</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Click the Live View link to see what the camera is currently viewing. You can also use controls such as zoom and focus (see <a href="#s_Calibrating-the-Cameras-Using-RoadView">Section 11.4</a>).</p>
+<p>Click the Live button to see what the camera is currently viewing.
+You can also use the zoom and focus controls.</p>
 <details>
 <summary class="title">Click to show notes for Live View</summary>
 <div class="content">
@@ -1564,17 +1567,19 @@ where cam0_0 is a camera-specific parameter (which in this case enables you to a
 </div>
 </div>
 </details>
+<div style="page-break-after: always;"></div>
 </li>
 <li>
-<p>If you need to change the IP address of the camera or other configuration parameters, click the Admin link.</p>
+<p>If you need to change the camera&#8217;s IP address
+or other configuration parameters,
+click the Admin button. When prompted for a login,
+use the Administrator username/password credentials
+of root, IZpass12.</p>
 </li>
 </ul>
 </div>
 </li>
-<li>
-<p>When prompted for a login, use the Administrator username/password credentials of root, IZpass12.</p>
-<div class="paragraph">
-<p><br></p>
+</ol>
 </div>
 <div class="admonitionblock important">
 <table>
@@ -1590,12 +1595,6 @@ where cam0_0 is a camera-specific parameter (which in this case enables you to a
 </tr>
 </table>
 </div>
-</li>
-</ol>
-</div>
-<div class="paragraph">
-<p><div class="pagebreak"> </div></p>
-</div>
 </div>
 <div class="sect2">
 <h3 id="s_Changing-a-Camera-s-IP-Address"><a class="anchor" href="#s_Changing-a-Camera-s-IP-Address"></a>10.2. Changing a Camera&#8217;s IP Address</h3>
@@ -1607,7 +1606,15 @@ where cam0_0 is a camera-specific parameter (which in this case enables you to a
 </td>
 <td class="content">
 <div class="paragraph">
-<p><strong><u>It is highly recommended to use a fixed IP address (not DHCP)</u></strong>. A fixed IP address enables you to access the camera using the same URL every time, even after unexpected power outages.</p>
+<p><strong><u>It is highly recommended to use a
+fixed IP address (not DHCP)</u></strong>.
+A fixed IP address enables you to access
+the camera using the same URL every time,
+even after unexpected power outages.</p>
+</div>
+<div class="paragraph">
+<p>You can also use IZ Discovery to change
+the camera&#8217;s IP address (see <a href="#s_Related-Documents">Section 1</a>).</p>
 </div>
 </td>
 </tr>
@@ -1616,10 +1623,10 @@ where cam0_0 is a camera-specific parameter (which in this case enables you to a
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>In the Basic Setup group, click on IP Address:</p>
+<p>In the Network group, click on IP Address:</p>
 <div id="f_Changing-the-Camera-s-IP-Address" class="imageblock">
 <div class="content">
-<img src="../_images/IZA800G/image44.png" alt="image" width="524" height="180">
+<img src="../_images/IZA800G/image44.png" alt="image" width="400">
 </div>
 <div class="title">Figure 15. Changing the Camera&#8217;s IP Address</div>
 </div>
@@ -1648,7 +1655,7 @@ system, and must be within the limits of standard IPv4 address numbering.</p>
 <p>Click the Static radio button.</p>
 </li>
 <li>
-<p>Enter the network address parameters (see <a href="#t_IP-Address-Parameters">Table 5</a>). <strong>All cameras must be on the same subnet as both the computer you will use to communicate with and configure the camera, and the INEX RoadView computer.</strong></p>
+<p>Enter the network address parameters (see <a href="#t_IP-Address-Parameters">[t_IP-Address-Parameters]</a>). <strong>All cameras must be on the same subnet as both the computer you will use to communicate with and configure the camera, and the INEX RoadView computer.</strong></p>
 </li>
 </ol>
 </div>
@@ -1671,53 +1678,6 @@ system, and must be within the limits of standard IPv4 address numbering.</p>
 <div class="paragraph">
 <p><div class="pagebreak"> </div></p>
 </div>
-<table id="t_IP-Address-Parameters" class="tableblock frame-all grid-all stretch withborders">
-<caption class="title">Table 5. IP Address Parameters</caption>
-<colgroup>
-<col style="width: 28%;">
-<col style="width: 20%;">
-<col style="width: 52%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">Sub-category &gt; Parameter Group</th>
-<th class="tableblock halign-left valign-top">Parameter</th>
-<th class="tableblock halign-left valign-top">Setting</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">IP Address</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Service (radio buttons)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Set to Static to be able to access the camera</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">IP Address</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">IP Address</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">According to the camera&#8217;s location and the organization of your network.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">IP Address</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">NetMask</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">According to the camera&#8217;s location and the organization of your network</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">IP Address</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">GateWay</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">According to the camera&#8217;s location and the organization of your network</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">IP Address</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">DNS 1</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">According to the camera&#8217;s location and the organization of your network</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">IP Address</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">DNS 2</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">According to the camera&#8217;s location and the organization of your network</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 </div>
 </li>
@@ -1741,7 +1701,7 @@ system, and must be within the limits of standard IPv4 address numbering.</p>
 </div>
 </li>
 <li>
-<p>In the IZ Discovery utility (see <a href="#s_Recognizing-Devices-with-IZ-Discovery">Section 9.3</a>), click the "Clear List" button, and verify that the camera can be recognized with the new IP address.</p>
+<p>In the IZ Discovery utility (see the IZ Discovery User Guide - see <a href="#s_Related-Documents">Section 1</a>), click the "Clear List" button, and verify that the camera can be recognized with the new IP address.</p>
 </li>
 </ol>
 </div>
@@ -1795,10 +1755,10 @@ and the IZA500G/GR User Guide - see <a href="#s_Related-Documents">Section 1</a>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Open a browser (latest version of Chrome or IE 11 or higher).
+<p>Open a browser (Chrome or Microsoft Edge).
 Type in the IP address of the RoadView computer.
 For example:<br>
-<a href="http://192.115.120.76/">http://192.115.120.76/</a></p>
+<a href="http://163.104.120.78/">http://163.104.120.78/</a></p>
 </li>
 <li>
 <p>You will see the login screen. Enter the default username and password (root, root):</p>
