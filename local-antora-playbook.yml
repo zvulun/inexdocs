@@ -67,6 +67,16 @@ asciidoc:
     compname-long: INEX Technologies@
     compname-med: INEX/TECH@
     compname-short: INEX@
+
+    camera-DOT: IZA800GDOT@
+    camera-ORT: IZA800GORT@
+    camera-VES: IZA800GVES@
+    camera-GRV: IZA800GRV@
+    camera-5G: IZA500G@
+    camera-5GR: IZA500GR@
+    camera-8G: IZA800G@
+    camera-6F: IZ600F@
+
     software-server: IZCentral@
     software-cloud: IZCloud@
     software-discovery: IZ Discovery@
@@ -79,7 +89,6 @@ asciidoc:
     hw-connection-panel: IZPanel@
     hw-webrelay-quad: IZ-REM-RELAY-4@
     hw-webrelay-single: IZ-REM-RELAY@
-    hw-gate-controller: IZIDPUGC@
     hw-indoor-processor: IZIDPUG@
     hw-outdoor-processor: IZODPUG@
     hw-loopdetect-l: LOOP-DTCR-L@
