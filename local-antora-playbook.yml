@@ -74,6 +74,7 @@ asciidoc:
     camera-GRV: IZA800GRV@
     camera-5G: IZA500G@
     camera-5GR: IZA500GR@
+    camera-DFC: IZA500G-DFC@
     camera-8G: IZA800G@
     camera-6F: IZ600F@
 
