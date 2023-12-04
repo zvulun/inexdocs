@@ -74,7 +74,7 @@ asciidoc:
     camera-GRV: IZA800GRV@
     camera-5G: IZA500G@
     camera-5GR: IZA500GR@
-    camera-DFC: IZA500G-DFC@
+    camera-DFC: IZA500GDFC@
     camera-8G: IZA800G@
     camera-6F: IZ600F@
 
@@ -95,10 +95,11 @@ asciidoc:
     hw-outdoor-processor: IZODPUG@
     hw-loopdetect-l: LOOP-DTCR-L@
     hw-loopdetect-p: LOOP-DTCR-P@
+
     illum-strobe: IZS@
     illum-non-strobe: IZL@
     illum-VES: IZSVES@
-    illum-DFC: IZS2-DFC@
+    illum-DFC: IZS2DFC@
     system-type: ALPR@
     generic-camera-name: ALPR Camera System@
 
