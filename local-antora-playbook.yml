@@ -102,6 +102,7 @@ asciidoc:
     generic-camera-name: ALPR Camera System@
 
     eyesafetystandard-1: IEC62471 Group 1@
+    eyesafetystandard-short-1: IEC62471@
 
     #if you add any attributes to this list above
     #be sure to add them to the text file used to
