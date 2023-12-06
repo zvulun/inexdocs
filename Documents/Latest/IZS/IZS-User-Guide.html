@@ -72,7 +72,7 @@
     <a class="nav-link" href="../SLN-DOOR-AC/DocList.html">Door Access Control</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../SLN-DriverFaceCapture/DocList.html">Driver Face Capture</a>
+    <a class="nav-link" href="../SLN-DriverFaceCapture/DocList.html">Driver Face Capture (DFC)</a>
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../SLN-IZCloudIntegration/DocList.html">IZCloud Integration</a>
@@ -389,13 +389,14 @@
 <h2 id="_strobe_illuminator_series" class="discrete">Strobe Illuminator Series</h2>
 <div class="imageblock">
 <div class="content">
-<img src="_images/IZS-S-FIG-002c_NoLabels_All_WithS3_At_Angle.png" alt="Picture of IZS Illuminators">
+<img src="../_images/IZS/IZS-S-FIG-002c_NoLabels_All_WithS3_At_Angle.png" alt="Picture of IZS Illuminators">
 </div>
 </div>
 <div class="paragraph">
 <p>
 </p>
 </div>
+<div style="page-break-after: always;"></div>
 <details>
 <summary class="title"><em>Click to show the Table of Contents</em></summary>
 <div class="content">
@@ -420,7 +421,7 @@
 <li><a href="#s_Planning-Your-Installation">5. Planning Your Installation</a>
 <ul class="sectlevel2">
 <li><a href="#s_Matching-an-Illuminator-to-Your-Camera-System">5.1. Matching an Illuminator to Your Camera System</a></li>
-<li><a href="#s_Triggering-and-Pulse-Width">5.2. Triggering and Pulse Width</a></li>
+<li><a href="#s_Triggering-and-Pulse-Width">5.2. Strobe Input and Pulse Width</a></li>
 <li><a href="#s_Configuring-Management-Software-to-Use-with-an-Illuminator">5.3. Configuring Management Software to Use with an Illuminator</a></li>
 <li><a href="#s_Verifying-Infrared-type-Operation">5.4. Verifying Infrared-type Operation</a></li>
 <li><a href="#s_Additional-Installation-Considerations">5.5. Additional Installation Considerations</a></li>
@@ -451,6 +452,7 @@
 </div>
 </div>
 </details>
+<div style="page-break-after: always;"></div>
 </div>
 </div>
 <div class="sect1">
@@ -528,6 +530,7 @@
 <div class="paragraph">
 <p>If you have any questions, please contact our support team via our <a href="http://www.inextechnologies.com" target="read-later">INEX Technologies Website</a>.</p>
 </div>
+<div style="page-break-after: always;"></div>
 </div>
 </div>
 </div>
@@ -595,6 +598,7 @@
 </div>
 <div class="title">Figure 4. S3 Model - Rear View</div>
 </div>
+<div style="page-break-after: always;"></div>
 </div>
 <div class="sect2">
 <h3 id="s_Package-Contents"><a class="anchor" href="#s_Package-Contents"></a>3.2. Package Contents</h3>
@@ -643,6 +647,7 @@
 </tr>
 </table>
 </div>
+<div style="page-break-after: always;"></div>
 </div>
 <div class="sect2">
 <h3 id="s_Dimensions-and-Specifications"><a class="anchor" href="#s_Dimensions-and-Specifications"></a>3.3. Dimensions and Specifications</h3>
@@ -664,6 +669,7 @@
 </div>
 <div class="title">Figure 8. S3 Illuminator Dimensions (in mm)</div>
 </div>
+<div style="page-break-after: always;"></div>
 <table id="t_Technical-Specifications-Rev-C" class="tableblock frame-all grid-all stretch withborders">
 <caption class="title">Table 2. Technical Specifications (Rev. C)</caption>
 <colgroup>
@@ -679,22 +685,38 @@
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-middle" rowspan="2"><p class="tableblock">LED Illumination</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">LEDs:<br>
-Type/Wavelength/Number</p></td>
+<td class="tableblock halign-left valign-middle" rowspan="6"><p class="tableblock">LED Illumination</p></td>
 <td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
-<p>High Power LEDs:<br>
-- overall operation invoked by
-built-in photocell which
+<p>Type</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>High power LEDs</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>Overall Operation</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>Invoked by built-in photocell which
 senses the ambient light level
-(pre-configured as per customer needs)<br>
-- flash activated by trigger input
-(3.3 - 24 VDC, opto-isolated)<br>
-(See Beam Angle specification
-for model number format)<br>
-WVLN = Wavelength/Type</p>
-</div>
-<div class="ulist">
+(pre-configured as per customer needs)</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>Flash Activation</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>Activated by
+strobe input (3.3 - 24 VDC, opto-isolated)</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>Wavelength (WVLN)</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="ulist">
 <ul>
 <li>
 <p>IR = Infrared</p>
@@ -709,11 +731,13 @@ WVLN = Wavelength/Type</p>
 <p>WL = Warm White (3000K)</p>
 </li>
 </ul>
-</div>
-<div class="paragraph">
-<p>N = Number of LEDs:</p>
-</div>
-<div class="ulist">
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>Number of LEDs (N)</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="ulist">
 <ul>
 <li>
 <p>1: 30 LEDs</p>
@@ -728,8 +752,10 @@ WVLN = Wavelength/Type</p>
 </div></div></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">Beam Angle (HxV),<br>
-degrees</p></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>Beam Angle (HxV),<br>
+degrees</p>
+</div></div></td>
 <td class="tableblock halign-left valign-middle"><div class="content"><div class="ulist">
 <ul>
 <li>
@@ -785,7 +811,8 @@ degrees</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-middle" rowspan="4"><p class="tableblock">Physical</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">Dimensions (W x H x D) - including outer pan/tilt adjustment bracket</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Dimensions<br>
+(W x H x D)*</p></td>
 <td class="tableblock halign-left valign-middle"><div class="content"><div class="ulist">
 <ul>
 <li>
@@ -801,7 +828,7 @@ degrees</p></td>
 </div></div></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">Unit Weight - including outer pan/tilt adjustment bracket</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Unit Weight*</p></td>
 <td class="tableblock halign-left valign-middle"><div class="content"><div class="ulist">
 <ul>
 <li>
@@ -825,7 +852,7 @@ degrees</p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock">Silver</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-middle" rowspan="5"><p class="tableblock">Interface</p></td>
+<td class="tableblock halign-left valign-middle" rowspan="4"><p class="tableblock">Interface</p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock">Configuration Communication Protocol</p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock">RS485</p></td>
 </tr>
@@ -840,10 +867,7 @@ degrees</p></td>
 <div class="ulist">
 <ul>
 <li>
-<p>Trigger (Strobe) Input - see next part of table</p>
-</li>
-<li>
-<p>Strobe Output (for optional triggering of additional strobe illuminator)</p>
+<p>Strobe Input - see next part of table</p>
 </li>
 <li>
 <p>RS485 connections for configuration communication</p>
@@ -852,20 +876,14 @@ degrees</p></td>
 </div></div></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">Digital Input (Trigger Input)</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">3.3 - 24VDC, opto-isolated<br>
-Pulse Width 0.03 - 1.6 ms</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">Digital Output (Strobe Output)</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Strobe Input</p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock">3.3 - 24VDC, opto-isolated<br>
 Pulse Width 0.03 - 1.6 ms</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-middle" rowspan="2"><p class="tableblock">Power</p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock">Input Voltage</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">24 VDC
-*</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">24 VDC**</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-middle"><p class="tableblock">Power Consumption (measured with 0.5 ms pulse width; 24 VDC input)</p></td>
@@ -948,12 +966,15 @@ Pulse Width 0.03 - 1.6 ms</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-middle"><p class="tableblock">Power Supply</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">Power Supply 24 VDC*</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Power Supply 24 VDC**</p></td>
 </tr>
 </tbody>
 </table>
 <div class="paragraph">
-<p>* It is recommended to use
+<p>* Including outer pan/tilt adjustment bracket</p>
+</div>
+<div class="paragraph">
+<p>** It is recommended to use
 an illuminator power supply separate
 from the camera’s supply.</p>
 </div>
@@ -988,10 +1009,12 @@ from the camera’s supply.</p>
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">24 VDC power supply (voltage-adjustable)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">INEX/TECH IZPWR 24 VDC power supply models. It is recommended to use an illuminator power supply separate from the Camera System&#8217;s supply.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">INEX/TECH IZPWR 24 VDC power supply models.
+It is recommended to use an illuminator power supply separate from the Camera System&#8217;s supply.</p></td>
 </tr>
 </tbody>
 </table>
+<div style="page-break-after: always;"></div>
 </div>
 </div>
 <div class="sect1">
@@ -1122,7 +1145,7 @@ IZS1-IR-30</p></td>
 </table>
 </div>
 <div class="sect2">
-<h3 id="s_Triggering-and-Pulse-Width"><a class="anchor" href="#s_Triggering-and-Pulse-Width"></a>5.2. Triggering and Pulse Width</h3>
+<h3 id="s_Triggering-and-Pulse-Width"><a class="anchor" href="#s_Triggering-and-Pulse-Width"></a>5.2. Strobe Input and Pulse Width</h3>
 <div class="paragraph">
 <p>The pulse width and other parameters that affect illuminator operation are pre-configured according to your project&#8217;s requirements.</p>
 </div>
@@ -1178,7 +1201,7 @@ IZS1-IR-30</p></td>
 <p>Power - Use a cable gauge sufficient to deliver 24 VDC at the illuminator, depending on the power supply used</p>
 </li>
 <li>
-<p>Signals - Use a cable gauge sufficient to deliver the required trigger and RS485 signals at the illuminator.</p>
+<p>Signals - Use a cable gauge sufficient to deliver the required strobe and RS485 signals at the illuminator.</p>
 </li>
 </ul>
 </div></div></td>
@@ -1229,7 +1252,7 @@ IZS1-IR-30</p></td>
 <p>Mounting hardware may be included in your package, or packed separately, depending on your site&#8217;s requirements. See the Mounting Hardware documentation (see <a href="#s_Related-Documents">Section 1</a>).</p>
 </li>
 <li>
-<p>Mount illuminators at an appropriate distance away from their associated camera(s), according to the objectiALPR of your project. Contact INEX for guidance/training about this subject.</p>
+<p>Mount illuminators at an appropriate distance away from their associated camera(s), according to the objectives of your project. Contact INEX for guidance/training about this subject.</p>
 </li>
 </ul>
 </div>
@@ -1242,6 +1265,7 @@ IZS1-IR-30</p></td>
 <div class="paragraph">
 <p>For instructions on how to adjust the pan and tilt, see the Mounting Hardware documentation (see <a href="#s_Related-Documents">Section 1</a>).</p>
 </div>
+<div style="page-break-after: always;"></div>
 </div>
 </div>
 </div>
@@ -1285,8 +1309,9 @@ IZS1-IR-30</p></td>
 </div>
 <div class="title">Figure 10. Power and Signals Cables: Wire Colors and Pinouts</div>
 </div>
+<div style="page-break-after: always;"></div>
 <div class="paragraph">
-<p>See the following Note:</p>
+<p>Here is a typical wiring diagram for capturing license plate images (the power supply type/configuration may be different at your site).</p>
 </div>
 <div class="admonitionblock important">
 <table>
@@ -1296,18 +1321,22 @@ IZS1-IR-30</p></td>
 </td>
 <td class="content">
 <div class="paragraph">
-<p>If you need to add length to the power or signals cables (see <a href="#s_Additional-Installation-Considerations">Section 5.5</a>), be sure that: the supplied voltage (24 VDC) reaches the illuminator, the trigger signal levels you need reach the illuminator, and the RS485 signal levels reach the illuminator</p>
+<p>If you need to add length to the power or signals
+cables
+(see <a href="#s_Additional-Installation-Considerations">Section 5.5</a>),
+be sure that: the supplied voltage (24 VDC)
+reaches the illuminator, the strobe signal
+levels you need reach the illuminator,
+and the RS485 signal levels reach the
+illuminator.</p>
 </div>
 </td>
 </tr>
 </table>
 </div>
-<div class="paragraph">
-<p>Here is a typical wiring diagram for capturing license plate images (the power supply type/configuration may be different at your site).</p>
-</div>
 <div id="f_Typical-Camera-with-Illuminator-Wiring-Diagram" class="imageblock">
 <div class="content">
-<img src="_images/UserGuide/image11.png" alt="image" width="507" height="316">
+<img src="../_images/IZS/IZS-S-FIG-013c_OV_Triggered_Wiring.png" alt="image" width="800">
 </div>
 <div class="title">Figure 11. Typical Camera with Illuminator Wiring Diagram</div>
 </div>
@@ -1378,6 +1407,7 @@ P/N: (See <a href="#t_Camera-to-Illuminator-Typical-Use-Cases">Table 4</a> for C
 </tr>
 </tbody>
 </table>
+<div style="page-break-after: always;"></div>
 </div>
 </div>
 <div class="sect1">
@@ -1408,6 +1438,7 @@ P/N: (See <a href="#t_Camera-to-Illuminator-Typical-Use-Cases">Table 4</a> for C
 <div class="paragraph">
 <p>Do not use solvents or strong abrasive detergent when cleaning the illuminator. Use a soft dry cloth to clean the front glass when it is dirty. If the dirt has hardened, remove it using mild soap and water, and then wipe the front window gently.</p>
 </div>
+<div style="page-break-after: always;"></div>
 </div>
 </div>
 </div>
@@ -1486,7 +1517,7 @@ P/N: (See <a href="#t_Camera-to-Illuminator-Typical-Use-Cases">Table 4</a> for C
 <div class="ulist">
 <ul>
 <li>
-<p>Please read this guide carefully before installing the ALPR Camera System.</p>
+<p>Please read this guide carefully before installing the illuminator.</p>
 </li>
 <li>
 <p>Keep this guide for future reference.</p>
@@ -1539,17 +1570,12 @@ precautions must be observed:</strong></p>
 <div class="ulist">
 <ul>
 <li>
-<p>Do not stare directly into the front of the ALPR Camera System while it is operating.</p>
+<p>Do not stare directly into the front of the illuminator while it is operating.</p>
 </li>
 </ul>
 </div>
 </li>
 </ul>
-</div>
-<div class="imageblock text-center">
-<div class="content">
-<img src="../_images/EYE_SAFETY_GRP_2.png" alt="Eye Safety Group 1 Warning Label" width="250">
-</div>
 </div>
 </div>
 <div class="sect2">
