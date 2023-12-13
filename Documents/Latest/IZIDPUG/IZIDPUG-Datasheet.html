@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>IZODPUG Datasheet :: Documents</title>
+    <title>IZIDPUG Datasheet :: Documents</title>
     <meta name="generator" content="Antora 3.1.3">
 <link rel="stylesheet" href="../../../_/css/site.css">
 <link rel="stylesheet" href="../../../_/css/site-extra.css">
@@ -180,13 +180,13 @@
     <span class="nav-text">Data Processing Units (DPUs)</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../IZIDPUG/DocList.html">IZIDPUG</a>
+    <a class="nav-link" href="DocList.html">IZIDPUG</a>
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../IZIDPUGOX/DocList.html">IZIDPUGOX</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="DocList.html">IZODPUG</a>
+    <a class="nav-link" href="../IZODPUG/DocList.html">IZODPUG</a>
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../IZVDPUG/DocList.html">IZVDPUG</a>
@@ -374,7 +374,7 @@
 <nav class="breadcrumbs" aria-label="breadcrumbs">
   <ul>
     <li><a href="../index.html">Documents</a></li>
-    <li><a href="IZODPUG-Datasheet.html">IZODPUG Datasheet</a></li>
+    <li><a href="IZIDPUG-Datasheet.html">IZIDPUG Datasheet</a></li>
   </ul>
 </nav>
 </div>
@@ -383,11 +383,13 @@
   <div class="toc-menu"></div>
 </aside>
 <article class="doc">
-<h1 class="page">IZODPUG Datasheet</h1>
-<h2 id="_outdoor_ai_data_processing_unit" class="discrete">Outdoor AI Data Processing Unit</h2>
-<h3 id="_rev_b1" class="discrete">Rev. B1</h3>
-<div class="paragraph">
-<p><span class="image"><img src="../_images/IZODPUG/IZODPUG-B1-FIG-042_FrontPage.png" alt="image" width="300"></span></p>
+<h1 class="page">IZIDPUG Datasheet</h1>
+<h2 id="_indoor_ai_data_processing_unit" class="discrete">Indoor AI Data Processing Unit</h2>
+<h3 id="_rev_b" class="discrete">Rev. B</h3>
+<div class="imageblock text-left">
+<div class="content">
+<img src="../_images/IZIDPUG/IZIDPUG-FIG-006_RevB_Front.png" alt="image" width="350">
+</div>
 </div>
 <div class="paragraph">
 <p>
@@ -400,7 +402,7 @@
 <p><i class="fa fa-check-square-o"></i> Designed for Parking, Car Wash, Access Control and Security</p>
 </li>
 <li>
-<p><i class="fa fa-check-square-o"></i> Supports up to 2 cameras – camera agnostic for maximum flexibility</p>
+<p><i class="fa fa-check-square-o"></i> Supports up to 8 cameras - camera agnostic for maximum flexibility</p>
 </li>
 <li>
 <p><i class="fa fa-check-square-o"></i> NVIDIA® Artificial Intelligence (AI) GPU processor for lightning fast processing</p>
@@ -412,13 +414,7 @@
 <p><i class="fa fa-check-square-o"></i> Integrated with IZCloud</p>
 </li>
 <li>
-<p><i class="fa fa-check-square-o"></i> PoE/PSE (Power Source Equipment) – provides power and Ethernet to cameras</p>
-</li>
-<li>
-<p><i class="fa fa-check-square-o"></i> Wide temperature range – operating from -4°F to +140°F (-20°C to +60°C)</p>
-</li>
-<li>
-<p><i class="fa fa-check-square-o"></i> IP67 (NEMA6P) ingress protection against extreme moisture</p>
+<p><i class="fa fa-check-square-o"></i> Wide temperature range - operating from 32°F to 113°F (0°C to 45°C)</p>
 </li>
 <li>
 <p><i class="fa fa-check-square-o"></i> NDAA Section 889 compliant for our national security</p>
@@ -444,191 +440,276 @@
 <h2 id="_specifications" class="discrete">Specifications</h2>
 <table class="tableblock frame-all grid-all stretch withborders">
 <colgroup>
-<col style="width: 24%;">
-<col style="width: 23%;">
-<col style="width: 53%;">
+<col style="width: 12%;">
+<col style="width: 15%;">
+<col style="width: 20%;">
+<col style="width: 16%;">
+<col style="width: 19%;">
+<col style="width: 18%;">
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-middle" colspan="2">Item</th>
-<th class="tableblock halign-left valign-middle">Specification</th>
+<th class="tableblock halign-left valign-middle" colspan="3">Item</th>
+<th class="tableblock halign-left valign-middle" colspan="3">Specification</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-middle" rowspan="2"><p class="tableblock">Supported Analytics</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">LPR Analytics</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">Plate Recognition, State of Issue, Type</p></td>
+<td class="tableblock halign-left valign-middle" colspan="2"><p class="tableblock">LPR Analytics</p></td>
+<td class="tableblock halign-left valign-middle" colspan="3"><p class="tableblock">Plate Recognition, State of Issue, Type</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">Vehicle Analytics</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">Vehicle Detection, Classification, Color, Make; Vehicle Without Plate</p></td>
+<td class="tableblock halign-left valign-middle" colspan="2"><p class="tableblock">Vehicle Analytics</p></td>
+<td class="tableblock halign-left valign-middle" colspan="3"><p class="tableblock">Vehicle Detection, Classification, Color, Make; Vehicle Without Plate</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-middle" rowspan="2"><p class="tableblock">Integrated Cameras</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">INEX Cameras</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">IZ600F, IZB600F</p></td>
+<td class="tableblock halign-left valign-middle" colspan="2"><p class="tableblock">INEX Cameras</p></td>
+<td class="tableblock halign-left valign-middle" colspan="3"><p class="tableblock">IZ600F, IZB600F</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">3rd Party Cameras</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">Any camera which supports the RTSP
+<td class="tableblock halign-left valign-middle" colspan="2"><p class="tableblock">3rd Party Cameras</p></td>
+<td class="tableblock halign-left valign-middle" colspan="3"><p class="tableblock">Any camera which supports the RTSP
 streaming protocol and H.264 encoding
 can be integrated with this
 AI Data Processing Unit</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Processing Power</p></td>
 <td class="tableblock halign-left valign-middle" colspan="2"><p class="tableblock">Processing Power (fps)</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">40</p></td>
+<td class="tableblock halign-left valign-middle" colspan="3"><p class="tableblock">40</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-middle" colspan="2"><p class="tableblock">Number of Cameras Supported</p></td>
+<td class="tableblock halign-left valign-middle" rowspan="4"><p class="tableblock">Number of Cameras Supported</p></td>
+<td class="tableblock halign-right valign-top" colspan="2"><p class="tableblock">Triggering Modes:</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>Triggered</strong></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>Non-Triggered</strong></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong>On-Demand</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">&lt; 20 mph (32 km/h)</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">8</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">4</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">4</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">20-40 mph (32-64 km/h)</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">8</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">2</p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock">2</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">40-80 mph (64-128 km/h)</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">8</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">1</p></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-middle" rowspan="3"><p class="tableblock">Video Input</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">Streaming Protocol</p></td>
-<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
-<p>RTSP</p>
-</div></div></td>
+<td class="tableblock halign-left valign-middle" colspan="2"><p class="tableblock">Streaming Protocol</p></td>
+<td class="tableblock halign-left valign-middle" colspan="3"><p class="tableblock">RTSP</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">Video Compression</p></td>
-<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
-<p>H.624</p>
-</div></div></td>
+<td class="tableblock halign-left valign-middle" colspan="2"><p class="tableblock">Video Compression</p></td>
+<td class="tableblock halign-left valign-middle" colspan="3"><p class="tableblock">H.624</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">Video Resolution</p></td>
-<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
-<p>Up to 3 MP</p>
-</div></div></td>
+<td class="tableblock halign-left valign-middle" colspan="2"><p class="tableblock">Video Resolution</p></td>
+<td class="tableblock halign-left valign-middle" colspan="3"><p class="tableblock">Up to 3 MP</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-middle" rowspan="2"><p class="tableblock">Supported Protocols (for additional protocols, see the <a href="../RoadViewALPR/DocList.html" class="xref page"> RoadView documentation</a>)</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">INEX HTTP API</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">LPR Events are reported via protocols such as the INEX HTTP API protocol. Each LPR Event includes metadata and associated images.</p></td>
+<td class="tableblock halign-left valign-middle" colspan="2"><p class="tableblock">INEX HTTP API</p></td>
+<td class="tableblock halign-left valign-middle" colspan="3"><p class="tableblock">LPR Events are reported via protocols such as the INEX HTTP API protocol. Each LPR Event includes metadata and associated images.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">INEX Discovery</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">The INEX Discovery Protocol is used by the IZ Discovery utility to find all devices connected to the LAN. IZ Discovery also enables display and editing of each device&#8217;s network settings.</p></td>
+<td class="tableblock halign-left valign-middle" colspan="2"><p class="tableblock">INEX Discovery</p></td>
+<td class="tableblock halign-left valign-middle" colspan="3"><p class="tableblock">The INEX Discovery Protocol is used by the IZ Discovery utility to find all devices connected to the LAN. IZ Discovery also enables display and editing of each device&#8217;s network settings.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-middle" rowspan="7"><p class="tableblock">AI Processor</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">GPU</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">NVIDIA Maxwell architecture with 128 CUDA® cores</p></td>
+<td class="tableblock halign-left valign-middle" rowspan="4"><p class="tableblock">AI Processor</p></td>
+<td class="tableblock halign-left valign-middle" colspan="2"><p class="tableblock">GPU</p></td>
+<td class="tableblock halign-left valign-middle" colspan="3"><p class="tableblock">NVIDIA Maxwell architecture with 128 CUDA® cores</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">CPU</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">Quad-core ARM Cortex-A57 MPCore processor</p></td>
+<td class="tableblock halign-left valign-middle" colspan="2"><p class="tableblock">CPU</p></td>
+<td class="tableblock halign-left valign-middle" colspan="3"><p class="tableblock">Quad-core ARM Cortex-A57 MPCore processor</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">RAM</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">4 GB 64-bit LPDDR4, 1600MHz 25.6 GB/s</p></td>
+<td class="tableblock halign-left valign-middle" colspan="2"><p class="tableblock">RAM</p></td>
+<td class="tableblock halign-left valign-middle" colspan="3"><p class="tableblock">4 GB 64-bit LPDDR4, 1600MHz 25.6 GB/s</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">System Storage</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">MicroSD, 64 Gb</p></td>
+<td class="tableblock halign-left valign-middle" colspan="2"><p class="tableblock">System and Data Storage</p></td>
+<td class="tableblock halign-left valign-middle" colspan="3"><p class="tableblock">250 Gb</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">Data Storage</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">SSD, 250 Gb</p></td>
+<td class="tableblock halign-left valign-middle" rowspan="6"><p class="tableblock">Environmental</p></td>
+<td class="tableblock halign-left valign-middle" colspan="2"><p class="tableblock">Operating Temperature</p></td>
+<td class="tableblock halign-left valign-middle" colspan="3"><p class="tableblock">32°F to 113°F (0°C to 45°C); 0.2-0.3m/s air flow; according to GB/T 2423-2008</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-middle" rowspan="2"><p class="tableblock">RTC Battery</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">Maintains real-time clock date and time for 4-6 hours</p></td>
+<td class="tableblock halign-left valign-middle" colspan="2"><p class="tableblock">Storage Temperature</p></td>
+<td class="tableblock halign-left valign-middle" colspan="3"><p class="tableblock">-13°F to &#43;176°F (-25°C to &#43;80°C)</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">Rechargeable; Full charge-up time: 12 hours</p></td>
+<td class="tableblock halign-left valign-middle" colspan="2"><p class="tableblock">Humidity</p></td>
+<td class="tableblock halign-left valign-middle" colspan="3"><p class="tableblock">10% - 90% RH, non-condensing</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-middle" rowspan="3"><p class="tableblock">Environmental</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">Ingress Protection</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">IP67 (NEMA6P)</p></td>
+<td class="tableblock halign-left valign-middle" colspan="2"><p class="tableblock">Vibration</p></td>
+<td class="tableblock halign-left valign-middle" colspan="3"><div class="content"><div class="paragraph">
+<p>1 Grms,10Hz~150Hz, 3 Axis;<br>
+according to GB/T 2423.10-2008</p>
+</div></div></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">Operating Temperature</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">-4°F to 140°F (-20°C to 60°C)</p></td>
+<td class="tableblock halign-left valign-middle" colspan="2"><p class="tableblock">ESD</p></td>
+<td class="tableblock halign-left valign-middle" colspan="3"><div class="content"><div class="paragraph">
+<p>Touch 4KV, Air 8KV;<br>
+according to IEC 61000-4-2, Level 3</p>
+</div></div></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">Humidity</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">0% - 90% RH, non-condensing</p></td>
+<td class="tableblock halign-left valign-middle" colspan="2"><p class="tableblock">TVS</p></td>
+<td class="tableblock halign-left valign-middle" colspan="3"><p class="tableblock">1 KV</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-middle" rowspan="3"><p class="tableblock">Certifications</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">EMC</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">FCC Class, CE</p></td>
+<td class="tableblock halign-left valign-middle" colspan="2"><p class="tableblock">EMC</p></td>
+<td class="tableblock halign-left valign-middle" colspan="3"><p class="tableblock">EN 55032:2015&#43;A11:2020,
+EN 55035:2017&#43;A11:2020,
+EN IEC 61000-3-2:2019,
+EN 61000-3-3:2013&#43;A1:2019</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">RoHS</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">RoHS</p></td>
+<td class="tableblock halign-left valign-middle" colspan="2"><p class="tableblock">RoHS</p></td>
+<td class="tableblock halign-left valign-middle" colspan="3"><p class="tableblock">EU RoHS Directive 2011/65/EU and its
+amendment directives 2015/863/EU (RoHS 2.0)</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">NDAA</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">NDAA Section 889 compliant</p></td>
+<td class="tableblock halign-left valign-middle" colspan="2"><p class="tableblock">NDAA</p></td>
+<td class="tableblock halign-left valign-middle" colspan="3"><p class="tableblock">NDAA Section 889 compliant</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-middle" rowspan="4"><p class="tableblock">Physical</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">Dimensions</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">(W x H x D) 5.9" x 3.5" x 10.2"<br>
-(150 x 90 x 260 mm)</p></td>
+<td class="tableblock halign-left valign-middle" rowspan="3"><p class="tableblock">Physical</p></td>
+<td class="tableblock halign-left valign-middle" colspan="2"><p class="tableblock">Dimensions (W x H x D)</p></td>
+<td class="tableblock halign-left valign-middle" colspan="3"><p class="tableblock">4.33" x 2.52" x 2.52"<br>
+(110 x 64 x 64 mm)</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">Weight</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">5.3 lbs (2.4 kg)</p></td>
+<td class="tableblock halign-left valign-middle" colspan="2"><p class="tableblock">Weight</p></td>
+<td class="tableblock halign-left valign-middle" colspan="3"><p class="tableblock">1.05 lbs (475 g)</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">Housing, Finish, Color</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">Die cast aluminum, powder coated, light gray</p></td>
+<td class="tableblock halign-left valign-middle" colspan="2"><p class="tableblock">Color</p></td>
+<td class="tableblock halign-left valign-middle" colspan="3"><p class="tableblock">Black</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">Torque</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">Recommended screw torque: 1.0N・m (10kgf・cm)</p></td>
+<td class="tableblock halign-left valign-middle" rowspan="12"><p class="tableblock">Intefaces</p></td>
+<td class="tableblock halign-left valign-middle" rowspan="7"><p class="tableblock">Front Panel</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">POWER</p></td>
+<td class="tableblock halign-left valign-middle" colspan="3"><p class="tableblock">Press button once for power on;<br>
+hold for hard reset (turns power off then
+on again)</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-middle" rowspan="2"><p class="tableblock">Interface</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">Ethernet</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">LAN – PG13.5 Gland; GigE Ethernet (10/100/1000M)</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">RECOVERY</p></td>
+<td class="tableblock halign-left valign-middle" colspan="3"><p class="tableblock">(Not for user)</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">Cameras</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">CAM1/CAM2 – PG13.5 Gland; PoE/PSE* 802.3af;<br>
-GigE Ethernet (10/100/1000M)</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">RESET</p></td>
+<td class="tableblock halign-left valign-middle" colspan="3"><p class="tableblock">Press button to reset the unit</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-middle" rowspan="2"><p class="tableblock">Power</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">Input</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">12-48 VDC</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">HDMI</p></td>
+<td class="tableblock halign-left valign-middle" colspan="3"><p class="tableblock">HDMI 2.0, Type A, 5V, 1A</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">Maximum Power Consumption</p></td>
-<td class="tableblock halign-left valign-middle"><div class="content"><div class="ulist">
+<td class="tableblock halign-left valign-middle"><p class="tableblock">USB 2.0</p></td>
+<td class="tableblock halign-left valign-middle" colspan="3"><p class="tableblock">USB 2.0, Type A, 5V, 1A</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">USB 3.0</p></td>
+<td class="tableblock halign-left valign-middle" colspan="3"><p class="tableblock">USB 3.0, Type A, 5V, 1A</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Micro USB</p></td>
+<td class="tableblock halign-left valign-middle" colspan="3"><p class="tableblock">Flashing port, 5V, 1A</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle" rowspan="2"><p class="tableblock">Left Panel</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">DC 12V</p></td>
+<td class="tableblock halign-left valign-middle" colspan="3"><p class="tableblock">Power interface; male barrel socket, 12 VDC input</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">LAN</p></td>
+<td class="tableblock halign-left valign-middle" colspan="3"><p class="tableblock">1 Gigabit Ethernet port</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle" rowspan="3"><p class="tableblock">Back Panel</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Power LED</p></td>
+<td class="tableblock halign-left valign-middle" colspan="3"><div class="content"><div class="paragraph">
+<p>Carrier board status indicator:</p>
+</div>
+<div class="ulist">
 <ul>
 <li>
-<p>15 Watts without PSE</p>
+<p>Yellow: Power on</p>
 </li>
 <li>
-<p>45 Watts with PSE maximum power</p>
+<p>White: System on</p>
+</li>
+<li>
+<p>Red: System error</p>
 </li>
 </ul>
 </div></div></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-middle" colspan="2" rowspan="2"><p class="tableblock">Accessories Available</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">Wall mount brackets</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Status LEDs</p></td>
+<td class="tableblock halign-left valign-middle" colspan="3"><div class="content"><div class="paragraph">
+<p>System status indicator:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Blue: System on</p>
+</li>
+<li>
+<p>Red: System off</p>
+</li>
+</ul>
+</div></div></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">Pole mount bracket</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Micro SD slot</p></td>
+<td class="tableblock halign-left valign-middle" colspan="3"><p class="tableblock">TF socket; for TF card 3.3 V, 1 A</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle" rowspan="2"><p class="tableblock">Power</p></td>
+<td class="tableblock halign-left valign-middle" colspan="2"><p class="tableblock">Input</p></td>
+<td class="tableblock halign-left valign-middle" colspan="3"><p class="tableblock">12 VDC</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle" colspan="2"><p class="tableblock">Typical Power Consumption</p></td>
+<td class="tableblock halign-left valign-middle" colspan="3"><div class="content"><div class="paragraph">
+<p>18 W</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Accessories</p></td>
+<td class="tableblock halign-left valign-middle" colspan="2"><p class="tableblock">Accesories Included</p></td>
+<td class="tableblock halign-left valign-middle" colspan="3"><p class="tableblock">12 VDC power adapter</p></td>
 </tr>
 </tbody>
 </table>
-<div class="paragraph">
-<p>* PoE/PSE available for CAM1 and CAM 2 only if 48 VDC power input is applied.</p>
-</div>
 <h2 id="_ordering_information" class="discrete">Ordering Information</h2>
 <table class="tableblock frame-all grid-all stretch withborders">
 <colgroup>
-<col style="width: 25%;">
-<col style="width: 75%;">
+<col style="width: 20%;">
+<col style="width: 80%;">
 </colgroup>
 <thead>
 <tr>
@@ -638,26 +719,34 @@ GigE Ethernet (10/100/1000M)</p></td>
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">IZODPUG-DC-PG</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">Outdoor AI Data Processing Unit</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">IZIDPUG-US</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Indoor AI Data Processing Unit;
+power supply input cable as per US outlet standard</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">IZIDPUG-EU</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Indoor AI Data Processing Unit;
+power supply input cable as per EU outlet standard</p></td>
 </tr>
 </tbody>
 </table>
+<div style="page-break-after: always;"></div>
 <h2 id="_standard_package_contents" class="discrete">Standard Package Contents</h2>
 <div class="ulist">
 <ul>
 <li>
-<p>IZODPUG, Outdoor AI Data Processing Unit</p>
+<p>IZIDPUG, Indoor AI Data Processing Unit</p>
+</li>
+<li>
+<p>12 VDC, 5A Power Supply with barrel connector;
+input cable as per US or EU outlet standard</p>
 </li>
 </ul>
-</div>
-<div class="paragraph">
-<p><div class="pagebreak"> </div></p>
 </div>
 <h2 id="_dimensions_mm" class="discrete">Dimensions (mm)</h2>
 <div class="imageblock">
 <div class="content">
-<img src="../_images/IZODPUG/IZODPUG-B1-FIG-045_Dimensions.png" alt="image">
+<img src="../_images/IZIDPUG/IZIDPUG-FIG-015_MountingDimensions.png" alt="image" width="600">
 </div>
 </div>
 <table class="tableblock frame-none grid-none stretch">
@@ -716,7 +805,7 @@ Wayne, NJ 07470<br>
 <p></p>
 </div>
 <div class="paragraph">
-<p>Doc. No. IZODPUG-REV-B1-TDSHEET</p>
+<p>Doc. No. IZIDPUG-REV-B-TDSHEET</p>
 </div>
 </article>
   </div>
