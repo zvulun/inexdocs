@@ -105,6 +105,7 @@ asciidoc:
 
 
     eyesafetystandard-1: IEC62471 Group 1@
+    eyesafetystandard-2: IEC62471 Group 2@
     eyesafetystandard-short-1: IEC62471@
 
     #if you add any attributes to this list above
