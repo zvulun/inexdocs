@@ -132,6 +132,9 @@
     <a class="nav-link" href="../IZA800GDOT/DocList.html">IZA800GDOT</a>
   </li>
   <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../IZLVC2MP/DocList.html">IZLVC2MP (LaneView 2 MP)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../IZM600F/DocList.html">IZM600F (Mobile)</a>
   </li>
   <li class="nav-item" data-depth="2">
@@ -282,25 +285,25 @@
     <span class="nav-text">Cables</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../IZ_COMPOSITE_CABLE/DocList.html">IZ_COMPOSITE_CABLE (VES Cable)</a>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../IZCAB-SVES/DocList.html">IZCAB-SVES (VES Illuminator)</a>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../IZCAB-AVES/DocList.html">IZCAB-AVES (VES Power/LAN)</a>
-  </li>
-  <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../IZCAB-A800-PAS/DocList.html">IZCAB-A800-PAS (IZA800G Power/Signals)</a>
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../IZCAB-A800-LAN/DocList.html">IZCAB-A800-LAN (IZA800G LAN)</a>
   </li>
   <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../IZCAB-SPWR/DocList.html">IZCAB-SPWR (IZS Illuminator Power)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../IZCAB-SSIG/DocList.html">IZCAB-SSIG (IZS Illuminator Signals)</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../IZCAB-SPWR/DocList.html">IZCAB-SPWR (IZS Illuminator Power)</a>
+    <a class="nav-link" href="../IZ_COMPOSITE_CABLE/DocList.html">IZ_COMPOSITE_CABLE (VES Cable)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../IZCAB-AVES/DocList.html">IZCAB-AVES (VES Power/LAN)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../IZCAB-SVES/DocList.html">IZCAB-SVES (VES Illuminator)</a>
   </li>
 </ul>
   </li>
@@ -437,11 +440,10 @@
 </ul>
 </li>
 <li><a href="#s_Connecting-the-Camera-System-Illuminator-Power-Supply-and-Network">7. Connecting the Camera System, Illuminator, Power Supply and Network</a></li>
-<li><a href="#s_Photocell-Trigger-and-Alarm-Behavior">8. Photocell, Trigger and Alarm Behavior</a>
+<li><a href="#s_Photocell-Trigger-and-Alarm-Behavior">8. Photocell and Alarm Behavior</a>
 <ul class="sectlevel2">
 <li><a href="#s_Photocell-Behavior">8.1. Photocell Behavior</a></li>
-<li><a href="#_trigger_behavior_input_signal">8.2. Trigger Behavior (Input Signal)</a></li>
-<li><a href="#_alarm_behavior_output_signal">8.3. Alarm Behavior (Output Signal)</a></li>
+<li><a href="#_alarm_behavior_output_signal">8.2. Alarm Behavior (Output Signal)</a></li>
 </ul>
 </li>
 <li><a href="#s_Configuring-Management-Software-to-Use-with-an-Illuminator">9. Configuring Management Software to Use with an Illuminator</a></li>
@@ -491,12 +493,8 @@
 <td class="tableblock halign-left valign-top"><p class="tableblock">IZ600F Installation Guide</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><a href="../IZA500G/DocList.html" class="xref page">IZA500G-MAN-002b</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">IZA500G Installation Guide</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><a href="../IZA500GR/DocList.html" class="xref page">IZA500GR-MAN-002b</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">IZA500GR Installation Guide</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><a href="../IZA500G/DocList.html" class="xref page">IZA500G-GR-MAN-002b</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">IZA500G/GR Installation Guide</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><a href="../MNT-ProdToMountMap/DocList.html" class="xref page">MOUNT-MAP-PRSNT-011</a></p></td>
@@ -651,10 +649,6 @@
 </div>
 <div class="title">Figure 4. L1 Illuminator Dimensions (in mm)</div>
 </div>
-<div class="paragraph">
-<p><br>
-</p>
-</div>
 <div id="f_L2-Illuminator-Dimensions-in-mm" class="imageblock">
 <div class="content">
 <img src="../_images/IZL/IZL-L-FIG-018b_DS_L2_New_Dimensions.png" alt="image" width="624">
@@ -691,7 +685,7 @@
 </div></div></td>
 <td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
 <p>Activated by
-built-in photocell (threshold 300 LUX) or trigger input</p>
+built-in photocell (threshold 300 LUX)</p>
 </div></div></td>
 </tr>
 <tr>
@@ -875,7 +869,7 @@ degrees</p>
 <td class="tableblock halign-left valign-middle"><p class="tableblock">Black, Gray or White</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-middle" rowspan="3"><p class="tableblock">Interface</p></td>
+<td class="tableblock halign-left valign-middle" rowspan="2"><p class="tableblock">Interface</p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock">Cables</p></td>
 <td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
 <p>Single outdoor cable - 16 ft (5 m) long:</p>
@@ -886,20 +880,12 @@ degrees</p>
 <p>Power</p>
 </li>
 <li>
-<p>Trigger Input (to disable photocell and turn LEDs ON, or to turn LEDs OFF and re-enable photocell, opto-isolated)</p>
-</li>
-<li>
 <p>Alarm Output (indicates if LEDs are ON)</p>
 </li>
+<li>
+<p>RS485 for configuration communication</p>
+</li>
 </ul>
-</div></div></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
-<p>Trigger Input</p>
-</div></div></td>
-<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
-<p>Opto-isolated: High: 3.3 - 24 VDC; Low: 0 - 3.3 VDC</p>
 </div></div></td>
 </tr>
 <tr>
@@ -1008,7 +994,6 @@ It is recommended to use an illuminator power supply separate from the Camera Sy
 </tr>
 </tbody>
 </table>
-<div style="page-break-after: always;"></div>
 </div>
 </div>
 <div class="sect1">
@@ -1016,23 +1001,15 @@ It is recommended to use an illuminator power supply separate from the Camera Sy
 <div class="sectionbody">
 <div class="sect2">
 <h3 id="s_Matching-an-Illuminator-to-Your-Camera-System"><a class="anchor" href="#s_Matching-an-Illuminator-to-Your-Camera-System"></a>5.1. Matching an Illuminator to Your Camera System</h3>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>The wavelength of an external illuminator must be compatible with the wavelength of the internal illuminators of the INEX camera. See the appropriate Camera Installation and Configuration Guide(s).</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-<div class="paragraph">
+<div class="ulist">
+<ul>
+<li>
+<p>The wavelength of an external illuminator
+must be compatible with the wavelength of the
+internal illuminators of the INEX camera.</p>
+</li>
+<li>
 <p>The number of illuminator LEDs and beam angle must match the distance rating of the camera being used, as follows:</p>
-</div>
 <div class="ulist">
 <ul>
 <li>
@@ -1043,63 +1020,19 @@ It is recommended to use an illuminator power supply separate from the Camera Sy
 </li>
 </ul>
 </div>
-<div class="paragraph">
-<p>See the appropriate Camera Installation and Configuration Guide(s) for an explanation of the model number codes (effective distances, and wavelengths/number of LEDs).</p>
+</li>
+</ul>
 </div>
-<table id="t_Camera-to-Illuminator-Typical-Use-Cases" class="tableblock frame-all grid-all stretch withborders">
-<caption class="title">Table 4. Camera-to-Illuminator Typical Use Cases</caption>
-<colgroup>
-<col style="width: 30%;">
-<col style="width: 19%;">
-<col style="width: 19%;">
-<col style="width: 15%;">
-<col style="width: 17%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">Camera</th>
-<th class="tableblock halign-left valign-top">Illuminator</th>
-<th class="tableblock halign-left valign-top">Strobe Signal</th>
-<th class="tableblock halign-left valign-top">Night Image</th>
-<th class="tableblock halign-left valign-top">Installation</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">IZ600F/IZB600F</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">IZL1/2-IR-XXX</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">N/A</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">B/W</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">Front</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">IZ600F/IZB600F</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">IZL1/2-WL-XX</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">N/A</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">Color</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">Rear</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">IZA500G/IZA500GR</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">IZL1/2-IR-XXX</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">N/A</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">B/W</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">Front</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">IZA500G/IZA500GR</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">IZL1/2-WL-XX</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">N/A</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">Color</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">Rear</p></td>
-</tr>
-</tbody>
-</table>
+<div class="paragraph">
+<p>See your camera&#8217;s Installation Guide for
+a table of Camera-to-Illuminator Recommended Setups.</p>
+</div>
+<div style="page-break-after: always;"></div>
 </div>
 <div class="sect2">
 <h3 id="s_Additional-Installation-Considerations"><a class="anchor" href="#s_Additional-Installation-Considerations"></a>5.2. Additional Installation Considerations</h3>
 <table id="t_Additional-Installation-Considerations" class="tableblock frame-all grid-all stretch withborders">
-<caption class="title">Table 5. Additional Installation Considerations</caption>
+<caption class="title">Table 4. Additional Installation Considerations</caption>
 <colgroup>
 <col style="width: 40%;">
 <col style="width: 60%;">
@@ -1137,9 +1070,6 @@ It is recommended to use an illuminator power supply separate from the Camera Sy
 <li>
 <p>Be sure you can deliver 12 VDC or 24 VDC at the illuminator, even after all of the extensions have been added. It is recommended to use an illuminator power supply separate from the camera&#8217;s supply.</p>
 </li>
-<li>
-<p>If you are using the trigger function, be sure you can deliver the required trigger signal levels at the illuminator</p>
-</li>
 </ul>
 </div></div></td>
 </tr>
@@ -1176,6 +1106,7 @@ It is recommended to use an illuminator power supply separate from the Camera Sy
 </div>
 <div class="title">Figure 6. Photocell Exposed to Ambient Light via Rear of Unit</div>
 </div>
+<div style="page-break-after: always;"></div>
 </div>
 </div>
 </div>
@@ -1203,6 +1134,7 @@ It is recommended to use an illuminator power supply separate from the Camera Sy
 <div class="paragraph">
 <p>For instructions on how to adjust the pan and tilt, see the Mounting Hardware documentation (see <a href="#s_Related-Documents">Section 1</a>).</p>
 </div>
+<div style="page-break-after: always;"></div>
 </div>
 </div>
 </div>
@@ -1240,10 +1172,174 @@ It is recommended to use an illuminator power supply separate from the Camera Sy
 </tr>
 </table>
 </div>
+<table class="tableblock frame-none grid-none withborders" style="width: 80%;">
+<caption class="title">Table 5. Power/Signals Pinout</caption>
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="image"><img src="../_images/IZL/IZL-L-FIG-032b_Cable_Pinouts.png" alt="image" width="181" height="352"></span></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><table class="tableblock frame-all grid-all stretch withborders">
+<colgroup>
+<col style="width: 10%;">
+<col style="width: 55%;">
+<col style="width: 35%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Pin</th>
+<th class="tableblock halign-left valign-top">Power/Signal</th>
+<th class="tableblock halign-left valign-top">Wire Color</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">12-24 VDC (&#43;) input</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Red</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">B</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">12-24 VDC (-) input</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Black</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alarm Output (&#43;)</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Yellow</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alarm Output (-)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Green</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">6</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">RS485 (A)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Blue</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">7</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">RS485 (B)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">White</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1,4,5,8</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Unused</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">N/A</p></td>
+</tr>
+</tbody>
+</table></div></td>
+</tr>
+</tbody>
+</table>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>If you need to add length to the power/signals cable, be sure that:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The desired voltage reaches the illuminator</p>
+</li>
+<li>
+<p>If used - the alarm signal levels you need can be sensed from the illuminator by your equipment</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>See <a href="#f_Typical-Wiring-Diagram">Figure 7</a> for a typical wiring diagram for capturing
+license plate images. Note that the type and
+configuration of the power supplies may be
+different than the ones you are using at your site.</p>
+</div>
+<div id="f_Typical-Wiring-Diagram" class="imageblock">
+<div class="content">
+<img src="../_images/IZ600F/IZ600F-30-FIG-047_IllumQuickStartWiring.png" alt="image" width="700">
+</div>
+<div class="title">Figure 7. Typical Wiring Diagram</div>
+</div>
+<table class="tableblock frame-all grid-all stretch withborders">
+<caption class="title">Table 6. Wiring Diagram Legend/Bill of Materials</caption>
+<colgroup>
+<col style="width: 7%;">
+<col style="width: 52%;">
+<col style="width: 41%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Item</th>
+<th class="tableblock halign-left valign-top">Description</th>
+<th class="tableblock halign-left valign-top">Ordering Information</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">A</p></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>LAN Cables</strong></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Supplied by integrator</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">B</p></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>Waterproof Cap for Camera Network Connection</strong></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Included with camera</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">D</p></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>Power Supply for IZIDPUG (Rev. B)</strong></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Included with IZIDPUG</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">E</p></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>Power Supply for Illuminator:</strong> 24 VDC, 100/120W or 240W; DIN rail</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>For IZL1, INEX P/N: <a href="../IZPWR/DocList.html" class="xref page">IZPWR120-24-MWL-DIN</a><br>
+For IZL2, INEX P/N: <a href="../IZPWR/DocList.html" class="xref page">IZPWR240-24-MWL-DIN</a></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">F</p></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>Power/Signals Cable for Illuminator</strong></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Included with illuminator</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">G</p></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>IZL Illuminator</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">INEX P/N: See your camera&#8217;s Installation
+Guide for a table of Camera-to-Illuminator
+Recommended Setups.</p></td>
+</tr>
+</tbody>
+</table>
+<div style="page-break-after: always;"></div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="s_Photocell-Trigger-and-Alarm-Behavior"><a class="anchor" href="#s_Photocell-Trigger-and-Alarm-Behavior"></a>8. Photocell, Trigger and Alarm Behavior</h2>
+<h2 id="s_Photocell-Trigger-and-Alarm-Behavior"><a class="anchor" href="#s_Photocell-Trigger-and-Alarm-Behavior"></a>8. Photocell and Alarm Behavior</h2>
 <div class="sectionbody">
 <div class="sect2">
 <h3 id="s_Photocell-Behavior"><a class="anchor" href="#s_Photocell-Behavior"></a>8.1. Photocell Behavior</h3>
@@ -1277,62 +1373,7 @@ samples the ambient light 10 times per second:</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_trigger_behavior_input_signal"><a class="anchor" href="#_trigger_behavior_input_signal"></a>8.2. Trigger Behavior (Input Signal)</h3>
-<div class="paragraph">
-<p>The levels for the trigger (photocoupler) input are High (3.3 VDC - 24 VDC) and Low (0 VDC - 3.2 VDC and below).</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>When the trigger input goes from Low to High:</p>
-<div class="ulist">
-<ul>
-<li>
-<p>The input must be held High for approximately 200-300 ms (milliseconds) for the illuminator to turn ON.</p>
-</li>
-<li>
-<p>The photocell&#8217;s effect on the illuminator will be disabled
-(see <a href="#s_Photocell-Behavior">Section 8.1</a>).</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>When the trigger input goes from High to Low:</p>
-<div class="ulist">
-<ul>
-<li>
-<p>The input must be held Low for approximately 200-300 ms
-for the illuminator to turn OFF.</p>
-</li>
-<li>
-<p>If the trigger stays Low, the photocell will resume
-sampling the ambient light, and take control of the
-illuminator to turn it ON or OFF
-accordingly (see <a href="#s_Photocell-Behavior">Section 8.1</a>).</p>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>Since a Low trigger signal returns illuminator control to the photocell, the illuminator cannot be forced OFF.</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-</li>
-</ul>
-</div>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_alarm_behavior_output_signal"><a class="anchor" href="#_alarm_behavior_output_signal"></a>8.3. Alarm Behavior (Output Signal)</h3>
+<h3 id="_alarm_behavior_output_signal"><a class="anchor" href="#_alarm_behavior_output_signal"></a>8.2. Alarm Behavior (Output Signal)</h3>
 <div class="paragraph">
 <p>The levels for the alarm output are High (12 VDC) and Low (0 VDC).</p>
 </div>
@@ -1395,11 +1436,6 @@ accordingly (see <a href="#s_Photocell-Behavior">Section 8.1</a>).</p>
 <p>Do not use solvents or strong abrasive detergent when cleaning the illuminator. Use a soft dry cloth to clean the front glass when it is dirty. If the dirt has hardened, remove it using mild soap and water, and then wipe the front window gently.</p>
 </div>
 <div style="page-break-after: always;"></div>
-<div class="paragraph">
-<p><strong><em>\{you will need to use p-illum-eye-safety.adoc to
-put in the desired eye safety stickers for IZL illuminators -
-will need an ifdef/endif}</em></strong></p>
-</div>
 </div>
 </div>
 </div>
@@ -1533,14 +1569,18 @@ precautions must be observed:</strong></p>
 <li>
 <p>Do not stare directly into the front of the illuminator while it is operating.</p>
 </li>
+<li>
+<p>IZL IR models - IEC62471 Group 1:
+<span class="image"><img src="../_images/EYE_SAFETY_GRP_1.png" alt="Eye Safety Group 1 Warning Label" width="250"></span></p>
+</li>
+<li>
+<p>IZL DR models - IEC62471 Group 3:
+<span class="image"><img src="../_images/EYE_SAFETY_GRP_3.png" alt="Eye Safety Group 3 Warning Label" width="250"></span></p>
+</li>
 </ul>
 </div>
 </li>
 </ul>
-</div>
-<div class="paragraph">
-<p><span class="image"><img src="../_images/EYE_SAFETY_GRP_1.png" alt="Eye Safety Group 1 Warning Label" width="250"></span>
-<span class="image"><img src="../_images/EYE_SAFETY_GRP_3.png" alt="Eye Safety Group 3 Warning Label" width="250"></span></p>
 </div>
 <div style="page-break-after: always;"></div>
 </div>
