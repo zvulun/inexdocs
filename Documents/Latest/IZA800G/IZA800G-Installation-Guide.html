@@ -270,7 +270,7 @@
     <a class="nav-link" href="../IZACR-QPR50/DocList.html">IZACR-QPR50 (Access Control Reader)</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../IZACP-2D-4D/DocList.html">IZACP-2D (Twp-Door Access Control Panel)</a>
+    <a class="nav-link" href="../IZACP-2D-4D/DocList.html">IZACP-2D (Two-Door Access Control Panel)</a>
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../IZACP-2D-4D/DocList.html">IZACP-4D (Four-Door Access Control Panel)</a>
@@ -364,7 +364,7 @@
   </div>
   <ul class="components">
     <li class="component is-current">
-      <a class="title" href="../index.html">Documents</a>
+      <div class="title"><a href="../index.html">Documents</a></div>
       <ul class="versions">
         <li class="version is-current is-latest">
           <a href="../index.html">Latest</a>
@@ -1048,14 +1048,57 @@ being used, as follows:</p>
 <p>The results of applying these guidelines can be found in the
 following table:</p>
 </div>
+<table id="t_Camera-to-Illuminator-Recommended-Setups" class="tableblock frame-all grid-all stretch withborders">
+<caption class="title">Table 3. Camera-to-Illuminator Recommended Setups</caption>
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 19%;">
+<col style="width: 19%;">
+<col style="width: 15%;">
+<col style="width: 17%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Camera</th>
+<th class="tableblock halign-left valign-top">Illuminator</th>
+<th class="tableblock halign-left valign-top">Strobe Signal</th>
+<th class="tableblock halign-left valign-top">Night Image</th>
+<th class="tableblock halign-left valign-top">Installation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">IZA800G-L/XL-xx</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">IZS2-WL-20</p></td>
+<td class="tableblock halign-left valign-middle" rowspan="2"><p class="tableblock">OV Strobe</p></td>
+<td class="tableblock halign-left valign-middle" rowspan="2"><p class="tableblock">Color</p></td>
+<td class="tableblock halign-left valign-middle" rowspan="2"><p class="tableblock">Rear</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">IZA800G-S-xx</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">IZS1-WL-H40<br>
+IZS1-WL-30</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">IZA800G-L/XL-xx</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">IZS2-IR-20</p></td>
+<td class="tableblock halign-left valign-middle" rowspan="2"><p class="tableblock">OV Strobe</p></td>
+<td class="tableblock halign-left valign-middle" rowspan="2"><p class="tableblock">B/W</p></td>
+<td class="tableblock halign-left valign-middle" rowspan="2"><p class="tableblock">Front</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">IZA800G-S-xx</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">IZS1-IR-H40<br>
+IZS1-IR-30</p></td>
+</tr>
+</tbody>
+</table>
+<div style="page-break-after: always;"></div>
 </div>
 <div class="sect3">
 <h4 id="s_Illuminator-Triggering-and-Pulse-Width"><a class="anchor" href="#s_Illuminator-Triggering-and-Pulse-Width"></a>5.4.2. Illuminator Triggering and Pulse Width</h4>
 <div class="paragraph">
 <p>You can trigger an illuminator from the OV camera by using appropriate wiring (see <a href="#s_Typical-Wiring-Diagrams">Section 8.1</a>). The pulse width and other parameters that affect illuminator operation are pre-configured according to your project&#8217;s requirements.</p>
-</div>
-<div class="paragraph">
-<p><div class="pagebreak"> </div></p>
 </div>
 </div>
 <div class="sect3">
@@ -1081,15 +1124,13 @@ Camera System(s)
 <div class="paragraph">
 <p>You can look at an infrared-type illuminator with a smartphone camera to see if it is working.</p>
 </div>
-<div class="paragraph">
-<p><div class="pagebreak"> </div></p>
-</div>
+<div style="page-break-after: always;"></div>
 </div>
 </div>
 <div class="sect2">
 <h3 id="s_Additional-Installation-Considerations"><a class="anchor" href="#s_Additional-Installation-Considerations"></a>5.5. Additional Installation Considerations</h3>
 <table id="t_Additional-Installation-Considerations" class="tableblock frame-all grid-all stretch withborders">
-<caption class="title">Table 3. Additional Installation Considerations</caption>
+<caption class="title">Table 4. Additional Installation Considerations</caption>
 <colgroup>
 <col style="width: 40%;">
 <col style="width: 60%;">
@@ -1240,7 +1281,7 @@ Camera System(s)
 </td>
 <td class="content">
 <div class="paragraph">
-<p>Prefabricated cables can be ordered from INEX. See <a href="#s_Related-Documents">Section 1</a> and <a href="#t_Wiring-Diagram-Legend-Bill-of-Materials">Table 5</a>.</p>
+<p>Prefabricated cables can be ordered from INEX. See <a href="#s_Related-Documents">Section 1</a> and <a href="#t_Wiring-Diagram-Legend-Bill-of-Materials">Table 6</a>.</p>
 </div>
 </td>
 </tr>
@@ -1334,7 +1375,7 @@ Camera System(s)
 <p><div class="pagebreak"> </div></p>
 </div>
 <table id="t_Power-Signals-Cable-Power-Signals-Pinouts" class="tableblock frame-none grid-none withborders" style="width: 70%;">
-<caption class="title">Table 4. Power/Signals Cable Connector Pinout</caption>
+<caption class="title">Table 5. Power/Signals Cable Connector Pinout</caption>
 <colgroup>
 <col style="width: 33.3333%;">
 <col style="width: 66.6667%;">
@@ -1529,7 +1570,7 @@ OV Strobe (-)</p></td>
 </td>
 <td class="content">
 <div class="paragraph">
-<p>Prefabricated cables can be ordered from INEX. See <a href="#s_Related-Documents">Section 1</a> and <a href="#t_Wiring-Diagram-Legend-Bill-of-Materials">Table 5</a>.</p>
+<p>Prefabricated cables can be ordered from INEX. See <a href="#s_Related-Documents">Section 1</a> and <a href="#t_Wiring-Diagram-Legend-Bill-of-Materials">Table 6</a>.</p>
 </div>
 </td>
 </tr>
@@ -1699,7 +1740,7 @@ mounting hardware
 <div class="sect2">
 <h3 id="s_Typical-Wiring-Diagrams"><a class="anchor" href="#s_Typical-Wiring-Diagrams"></a>8.1. Typical Wiring Diagrams</h3>
 <div class="paragraph">
-<p>See <a href="#t_Power-Signals-Cable-Power-Signals-Pinouts">Table 4</a> for the power/signals cable wire colors, and <a href="#t_Wiring-Diagram-Legend-Bill-of-Materials">Table 5</a> for a legend/bill of materials.</p>
+<p>See <a href="#t_Power-Signals-Cable-Power-Signals-Pinouts">Table 5</a> for the power/signals cable wire colors, and <a href="#t_Wiring-Diagram-Legend-Bill-of-Materials">Table 6</a> for a legend/bill of materials.</p>
 </div>
 <div class="admonitionblock warning">
 <table>
@@ -1747,7 +1788,7 @@ LAN cable: 5-8 kgf.cm / 0.49-0.78 N.m.</p>
 <div class="title">Figure 32. Typical Camera System Wiring Diagram</div>
 </div>
 <table id="t_Wiring-Diagram-Legend-Bill-of-Materials" class="tableblock frame-all grid-all stretch withborders">
-<caption class="title">Table 5. Wiring Diagram Legend/Bill of Materials</caption>
+<caption class="title">Table 6. Wiring Diagram Legend/Bill of Materials</caption>
 <colgroup>
 <col style="width: 7%;">
 <col style="width: 52%;">
@@ -1762,52 +1803,64 @@ LAN cable: 5-8 kgf.cm / 0.49-0.78 N.m.</p>
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">A</p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<td class="tableblock halign-left valign-middle"><p class="tableblock">A</p></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
 <p><strong>LAN Cable for IZA800G System</strong>*</p>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">INEX P/N: <a href="../IZCAB-A800-LAN/DocList.html" class="xref page">IZCAB-A800-LAN</a></p></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>INEX P/N: <a href="../IZCAB-A800-LAN/DocList.html" class="xref page">IZCAB-A800-LAN</a></p>
+</div></div></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">B</p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<td class="tableblock halign-left valign-middle"><p class="tableblock">B</p></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
 <p><strong>Power/Signals Cable for IZA800G System</strong>*</p>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">INEX P/N: <a href="../IZCAB-A800-PAS/DocList.html" class="xref page">IZCAB-A800-PAS</a></p></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>INEX P/N: <a href="../IZCAB-A800-PAS/DocList.html" class="xref page">IZCAB-A800-PAS</a></p>
+</div></div></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">C</p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<td class="tableblock halign-left valign-middle"><p class="tableblock">C</p></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
 <p><strong>Power Supply:</strong> 24 VDC, 100/120W; DIN rail mount<br></p>
 </div>
 <div class="paragraph">
 <p>Can power 2 cameras from a single power supply</p>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
 <p>INEX P/N: <a href="../IZPWR/DocList.html" class="xref page">IZPWR120-24-MWL-DIN</a></p>
 </div></div></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">D</p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<td class="tableblock halign-left valign-middle"><p class="tableblock">D</p></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
 <p><strong>Illuminator Power Cable</strong>*</p>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">INEX P/N: <a href="../IZCAB-SPWR/DocList.html" class="xref page">IZCAB-SPWR</a></p></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>INEX P/N: <a href="../IZCAB-SPWR/DocList.html" class="xref page">IZCAB-SPWR</a></p>
+</div></div></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">E</p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<td class="tableblock halign-left valign-middle"><p class="tableblock">E</p></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
 <p><strong>Illuminator Signals Cable</strong>*</p>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">INEX P/N: <a href="../IZCAB-SSIG/DocList.html" class="xref page">IZCAB-SSIG</a></p></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>INEX P/N: <a href="../IZCAB-SSIG/DocList.html" class="xref page">IZCAB-SSIG</a></p>
+</div></div></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">F</p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><strong>IZS Strobe Illuminator</strong></p>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">F</p></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong><a href="../IZS/DocList.html" class="xref page">IZS Strobe Illuminator</a></strong></p>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">INEX P/N: See the <a href="../IZS/DocList.html" class="xref page">IZS Strobe Illuminator User Guide</a>
-for a table of Camera-to-Illuminator Typical Use Cases</p></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>INEX P/N: See
+<a href="#t_Camera-to-Illuminator-Recommended-Setups">Table 3</a> for
+a table of Camera-to-Illuminator Recommended
+Setups.</p>
+</div></div></td>
 </tr>
 </tbody>
 </table>
