@@ -79,6 +79,11 @@ asciidoc:
     camera-6F: IZ600F@
     camera-B6F: IZB600F@
 
+    mount-black-arm: W3X@
+
+    kit-DFC-1L: IZA500DFC-1L@
+    software-DFC-1S: IZCLOUD-DFC-1S@
+    software-DFC-1C: IZCLOUD-DFC-1C@
 
     software-server: IZCentral@
     software-cloud: IZCloud@
