@@ -18,6 +18,8 @@ jobs:
       run: npm i antora @antora/lunr-extension
     - name: Generate Site
       run: npx antora --fetch antora-playbook.yml
+    - name: Recreate CNAME file
+      run: echo docs.inextechnologies.com > build/site/CNAME
     - name: Publish to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
