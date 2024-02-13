@@ -68,6 +68,12 @@ asciidoc:
     compname-med: INEX/TECH@
     compname-short: INEX@
 
+    ip-default-IZA-DPU: 192.168.5.245@
+    ip-default-IZA-LPR: 192.168.5.100@
+    ip-default-IZA-OV: 192.168.5.101@
+    ip-default-6F: DHCP@
+    ip-default-DPU: 192.168.5.245@
+
     camera-DOT: IZA800GDOT@
     camera-ORT: IZA800GORT@
     camera-VES: IZA800GVES@
