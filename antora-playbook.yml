@@ -97,6 +97,7 @@ asciidoc:
     software-discovery-nospace: IZDiscovery@
     software-ALPR-long: RoadView ALPR@
     software-ALPR: RoadView@
+    software-AUDIT: RoadAudit@
     software-monitoring: IZMonitoring Server@
     hw-iocontroller: IZIO@
     hw-poeinjector: IZ4POE@
