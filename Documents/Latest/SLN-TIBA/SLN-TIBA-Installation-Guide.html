@@ -479,8 +479,18 @@
 <li><a href="#s_Lanes">12.4. Lanes</a></li>
 <li><a href="#s_Cameras">12.5. Cameras</a></li>
 <li><a href="#s_TIBA-Integration">12.6. TIBA Integration</a></li>
-<li><a href="#_direct_trigger">12.7. Direct Trigger</a></li>
-<li><a href="#s_Trigger-Offset">12.8. Trigger Offset</a></li>
+<li><a href="#_direct_trigger">12.7. Direct Trigger</a>
+<ul class="sectlevel3">
+<li><a href="#_triggered_mode">12.7.1. Triggered Mode</a></li>
+<li><a href="#_non_triggered_mode">12.7.2. Non-triggered Mode</a></li>
+</ul>
+</li>
+<li><a href="#s_Trigger-Offset">12.8. Trigger Offset</a>
+<ul class="sectlevel3">
+<li><a href="#_triggered_mode_2">12.8.1. Triggered Mode</a></li>
+<li><a href="#_non_triggered_mode_2">12.8.2. Non-triggered Mode</a></li>
+</ul>
+</li>
 <li><a href="#s_Detector-Configuration">12.9. Detector Configuration</a></li>
 </ul>
 </li>
@@ -536,6 +546,21 @@ for a single lane, to work with the TIBA Parking System.</p>
 <p>Chrome or Microsoft Edge browser</p>
 </li>
 </ul>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>The minimum TIBA SmartPark version
+required is 9.3.3</p>
+</div>
+</td>
+</tr>
+</table>
 </div>
 </div>
 </div>
@@ -1077,6 +1102,21 @@ for reference.</p>
 </div>
 <div class="sect2">
 <h3 id="_lpr_camera_video_device_video_streams"><a class="anchor" href="#_lpr_camera_video_device_video_streams"></a>8.1. LPR Camera - Video &amp; Device &gt; Video Streams</h3>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>For Non-triggered mode, set the primary stream frame rate
+to 10 fps.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
 <div class="imageblock">
 <div class="content">
 <img src="../_images/SLN-TIBA/IZA500G-FIG-110_TIBALPRVideoStreams.png" alt="image" width="400">
@@ -1135,6 +1175,21 @@ for reference.</p>
 </div>
 <div class="sect2">
 <h3 id="_ov_camera_video_device_video_streams"><a class="anchor" href="#_ov_camera_video_device_video_streams"></a>9.1. OV Camera - Video &amp; Device &gt; Video Streams</h3>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>For Non-triggered mode, set the primary stream frame rate
+to 10 fps.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
 <div class="imageblock">
 <div class="content">
 <img src="../_images/SLN-TIBA/IZA500G-FIG-111_TIBAOVVideoStreams.png" alt="image" width="400">
@@ -1690,6 +1745,21 @@ Set as shown</p>
 </div>
 <div class="sect2">
 <h3 id="s_TIBA-Integration"><a class="anchor" href="#s_TIBA-Integration"></a>12.6. TIBA Integration</h3>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>The minimum TIBA SmartPark version
+required is 9.3.3</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
 <div class="paragraph">
 <p>Enable TIBA Integration and
 set the parameters as follows. <strong>Remember to click the Save button at the end of the
@@ -1701,28 +1771,88 @@ Detector Configuration section after making changes.</strong></p>
 </div>
 <div class="title">Figure 24. TIBA Integration</div>
 </div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>The required TIBA API token is hardcoded;
+it is not required to define it here.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
 <div class="ulist">
 <ul>
 <li>
-<p><strong>TIBA URL</strong> - the URL of the TIBA server</p>
+<p><strong>TIBA URL</strong></p>
+<div class="ulist">
+<ul>
+<li>
+<p>For TIBA Cloud, the URL of the
+TIBA server. For example:<br>
+<a href="https://yoursite.sp.tibaparking.net/" class="bare">https://yoursite.sp.tibaparking.net/</a><br></p>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>DO NOT enter the addition for the full path (/LprData/LPR/LPRevent)</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
 </li>
 <li>
-<p><strong>User Name</strong> - username to access the TIBA server</p>
+<p>For On Prem, the IP address of the
+SmartPark server and Services Hosting port
+as defined in the TIBA LPR settings. For example:<br>
+<a href="https://31.154.177.6:29811/" class="bare">https://31.154.177.6:29811/</a><br></p>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>DO NOT enter any addition for a full path.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</li>
+</ul>
+</div>
 </li>
 <li>
-<p><strong>Password</strong> - password to access the TIBA server</p>
+<p><strong>User Name</strong> - BasicAuth username to access the TIBA server</p>
 </li>
 <li>
-<p><strong>Camera Port</strong> - the HTTPS port on which RoadView
+<p><strong>Password</strong> - BasicAuth password to access the TIBA server</p>
+</li>
+<li>
+<p><strong>Camera Port</strong> - Not required, leave at default, for future
+expansion -
+the HTTPS port on which RoadView
 listens for capture and “open gate” commands</p>
 </li>
 <li>
-<p><strong>Auth Key</strong> - the key that should be in one of the
+<p><strong>Auth Key</strong> - Not required, for future expansion - the key that should be in one of the
 headers sent by the TIBA server, in the
 HTTP requests for capture and “open gate” commands</p>
 </li>
 <li>
-<p><strong>Auth Value</strong> - the value for the header with the key
+<p><strong>Auth Value</strong> - Not required, for future expansion - the value for the header with the key
 defined by Auth Key, that should match the value sent
 by the TIBA server, in the HTTP requests
 for capture and “open gate” commands</p>
@@ -1737,13 +1867,17 @@ was no recognition, the OV image is sent</p>
 <p><strong>Send OV Image</strong> - when enabled, the OV image
 is always sent as part of the Event</p>
 </li>
+</ul>
+</div>
+<div class="ulist">
+<ul>
 <li>
-<p><strong>Lane ID</strong> - this table is automatically populated
+<p><strong>Lane ID</strong> - Not used, for future expansion - this table is automatically populated
 with the number of lanes defined in the Lanes section
 at the bottom of the Settings tab</p>
 </li>
 <li>
-<p><strong>GPIO</strong> - set to 0</p>
+<p><strong>GPIO</strong> - Not used, leave at default (0)</p>
 </li>
 </ul>
 </div>
@@ -1751,8 +1885,10 @@ at the bottom of the Settings tab</p>
 </div>
 <div class="sect2">
 <h3 id="_direct_trigger"><a class="anchor" href="#_direct_trigger"></a>12.7. Direct Trigger</h3>
+<div class="sect3">
+<h4 id="_triggered_mode"><a class="anchor" href="#_triggered_mode"></a>12.7.1. Triggered Mode</h4>
 <div class="paragraph">
-<p>Set the Direct Trigger as follows:</p>
+<p>Set the Direct Trigger Mode as follows:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -1775,8 +1911,25 @@ Detector Configuration section after making changes.</p>
 <div class="title">Figure 25. Direct Trigger Section</div>
 </div>
 </div>
+<div class="sect3">
+<h4 id="_non_triggered_mode"><a class="anchor" href="#_non_triggered_mode"></a>12.7.2. Non-triggered Mode</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Set the Direct Trigger Mode to Disabled</p>
+</li>
+<li>
+<p>Remember to click the Save button at the end of the
+Detector Configuration section after making changes.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
 <div class="sect2">
 <h3 id="s_Trigger-Offset"><a class="anchor" href="#s_Trigger-Offset"></a>12.8. Trigger Offset</h3>
+<div class="sect3">
+<h4 id="_triggered_mode_2"><a class="anchor" href="#_triggered_mode_2"></a>12.8.1. Triggered Mode</h4>
 <div class="paragraph">
 <p>You can capture a vehicle
 (and create an Event) at a different
@@ -1815,7 +1968,22 @@ Detector Configuration section after making changes.</p>
 </div>
 <div class="title">Figure 27. Trigger Offset Section</div>
 </div>
+</div>
+<div class="sect3">
+<h4 id="_non_triggered_mode_2"><a class="anchor" href="#_non_triggered_mode_2"></a>12.8.2. Non-triggered Mode</h4>
+<div class="paragraph">
+<p>Disable (uncheck) the "Enabled" checkbox.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Remember to click the Save button at the end of the
+Detector Configuration section after making changes.</p>
+</li>
+</ul>
+</div>
 <div style="page-break-after: always;"></div>
+</div>
 </div>
 <div class="sect2">
 <h3 id="s_Detector-Configuration"><a class="anchor" href="#s_Detector-Configuration"></a>12.9. Detector Configuration</h3>
@@ -1848,6 +2016,9 @@ changing these parameters.</p>
 <ul>
 <li>
 <p><u>Triggered</u> - Events are created and reported when a trigger is received</p>
+</li>
+<li>
+<p><u>NonTriggered</u> - Events are created and reported by LPR video analytics</p>
 </li>
 </ul>
 </div>
@@ -2789,7 +2960,7 @@ The Live tab and Search tab are empty (no Events are detected)</p></td>
 <p></p>
 </div>
 <div class="paragraph">
-<p>Doc. No. TIBA-MAN-002b</p>
+<p>Doc. No. TIBA-MAN-002b Ver. 2024-02-26</p>
 </div>
 </div>
 </div>

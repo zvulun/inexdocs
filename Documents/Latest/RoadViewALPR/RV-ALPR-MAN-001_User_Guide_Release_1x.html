@@ -486,20 +486,22 @@
 <li><a href="#s_Search-Tab-Filters">13.2. Search Tab: Filters</a></li>
 </ul>
 </li>
-<li><a href="#s_Calibration-Tab">14. Calibration Tab</a></li>
-<li><a href="#s_System-Info-Tab">15. System Info Tab</a>
+<li><a href="#s_System-Status-Tab">14. System Status Tab</a></li>
+<li><a href="#s_Calibration-Tab">15. Calibration Tab</a></li>
+<li><a href="#s_System-Info-Tab">16. System Info Tab</a>
 <ul class="sectlevel2">
-<li><a href="#s_System-Info-Tab-System-Info-Section">15.1. System Info Tab: System Info Section</a></li>
-<li><a href="#s_System-Info-Tab-Firmware-Section">15.2. System Info Tab: Firmware Section</a></li>
-<li><a href="#s_System-Info-Tab-Night-Mode-Section-for-Specific-Camera-Models-Only">15.3. System Info Tab: Night Mode Section (for Specific Camera Models Only)</a></li>
-<li><a href="#s_System-Info-Tab-LPR-LED">15.4. System Info Tab: LPR LED</a></li>
+<li><a href="#s_System-Info-Tab-System-Info-Section">16.1. System Info Tab: System Info Section</a></li>
+<li><a href="#s_System-Info-Tab-Firmware-Section">16.2. System Info Tab: Firmware Section</a></li>
+<li><a href="#s_System-Info-Tab-Illuminator-Status-Section">16.3. System Info Tab: Illuminator Status Section</a></li>
+<li><a href="#s_System-Info-Tab-Night-Mode-Section-for-Specific-Camera-Models-Only">16.4. System Info Tab: Night Mode Section (for Specific Camera Models Only)</a></li>
+<li><a href="#s_System-Info-Tab-LPR-LED">16.5. System Info Tab: LPR LED</a></li>
 </ul>
 </li>
-<li><a href="#s_Troubleshooting">16. Troubleshooting</a></li>
-<li><a href="#_notice_and_legal_disclaimer">17. Notice and Legal Disclaimer</a>
+<li><a href="#s_Troubleshooting">17. Troubleshooting</a></li>
+<li><a href="#_notice_and_legal_disclaimer">18. Notice and Legal Disclaimer</a>
 <ul class="sectlevel2">
-<li><a href="#_notice">17.1. Notice</a></li>
-<li><a href="#_legal_disclaimer">17.2. Legal Disclaimer</a></li>
+<li><a href="#_notice">18.1. Notice</a></li>
+<li><a href="#_legal_disclaimer">18.2. Legal Disclaimer</a></li>
 </ul>
 </li>
 </ul>
@@ -743,7 +745,7 @@
 <p>Windows 10 or above - with .NET 4.5 enabled in "Windows Features"</p>
 </li>
 <li>
-<p>Internet Explorer browser version 11 or higher, or the latest version of Chrome</p>
+<p>Chrome or Edge browser</p>
 </li>
 </ul>
 </div>
@@ -776,7 +778,7 @@
 <p>Log in to RoadView, and configure RoadView using the Settings tab, including adding the connected Lanes and cameras - see <a href="#s_Settings-Tab">Section 11</a></p>
 </li>
 <li>
-<p>On the Calibration tab, adjust the zoom and focus to get a clear, sharp picture. Set the expected plate minimum and maximum width, capture zone and other parameters. See <a href="#s_Calibration-Tab">Section 14</a>.</p>
+<p>On the Calibration tab, adjust the zoom and focus to get a clear, sharp picture. Set the expected plate minimum and maximum width, capture zone and other parameters. See <a href="#s_Calibration-Tab">Section 15</a>.</p>
 </li>
 <li>
 <p>On the Live tab, verify that Events are being generated for each vehicle passing each camera, and that the recognition has sufficient accuracy and confidence. See <a href="#s_Live-Journal-Tab">Section 12</a>.</p>
@@ -1068,7 +1070,7 @@ See <a href="#s_Trigger-Sources-and-Trigger-Modes-Overview">Section 10</a> and <
 </div>
 <div id="f_Software-Version-and-Camera-Information-Section" class="imageblock">
 <div class="content">
-<img src="_images/UserGuide/image9.png" alt="image" width="356" height="130">
+<img src="_images/UserGuide/RV-1_15-FIG-100b_SettingsVersionSection.png" alt="image" width="356" height="130">
 </div>
 <div class="title">Figure 7. Software Version and Camera Information Section</div>
 </div>
@@ -1085,6 +1087,9 @@ See <a href="#s_Trigger-Sources-and-Trigger-Modes-Overview">Section 10</a> and <
 <ul>
 <li>
 <p>If needed, set the RoadView computer&#8217;s IP address parameters.</p>
+</li>
+<li>
+<p>The IP Address and Default Gateway must be on the same network.</p>
 </li>
 <li>
 <p>Remember to click the Save button in this section; the change will be applied immediately.</p>
@@ -1259,7 +1264,7 @@ Be sure to click the Save button at the end of this section if you change these 
 </div>
 <div id="f_Adding-an-HTTP-Integration" class="imageblock">
 <div class="content">
-<img src="_images/UserGuide/image15.png" alt="image" width="264" height="384">
+<img src="_images/UserGuide/RV-1_15-FIG-020b_Edit_HTTP_Integration.png" alt="image" width="300">
 </div>
 <div class="title">Figure 13. Adding an HTTP Integration</div>
 </div>
@@ -1341,10 +1346,30 @@ See the HTTP API 1.5 document.</p>
 <p><strong>Send Triggers</strong> (only enabled for HTTP API versions 1.3 to 1.6, as chosen from the Protocol Version dropdown) - If checked, then RoadView will send Trigger Received messages to the server. The meaning of this command is: The camera has received a trigger to create an Event. The Event is being processed, and will be available soon.</p>
 </li>
 <li>
+<p><strong>Send NT Triggers</strong> - <strong><em>\{Max: please explain; and
+does this parameter only appear for certain
+protocol versions?}</em></strong></p>
+</li>
+<li>
 <p><strong>Keep Alive Interval</strong> (ms) - How often a status message is sent from RoadView to the server</p>
 </li>
 <li>
 <p><strong>Event/Images Timeout</strong> (ms) - If an Event or image message cannot be sent for this timeout period, then the event/image is put in the offline queue</p>
+</li>
+<li>
+<p><strong>Trigger Enabled</strong> - <strong><em>\{Max?: I wrote this
+explanation from our last mtg, but it is not
+clear what DTS is: Trigger Enabled check box:
+DTS Changes - send trigger with recognition to
+another RV; the second RV will create a new event
+with the received recognition.}</em></strong></p>
+</li>
+<li>
+<p><strong>Trigger Lane ID</strong> - <strong><em>\{Max: what is this?}</em></strong></p>
+</li>
+<li>
+<p><strong>Status Enabled</strong> - When checked, <strong><em>\{Max: please
+explain}</em></strong></p>
 </li>
 <li>
 <p><strong>Status Timeout</strong> (ms) - If a status message cannot be sent to the server for this amount of time, RoadView stops sending the message, and sends it again at the next Keep Alive Interval</p>
@@ -2090,7 +2115,7 @@ If the size of this "hole" is large, then the vehicle has probably disappeared b
 </div>
 </li>
 <li>
-<p><strong>Ignore Opposite Direction</strong> - if enabled, then all Events for vehicles moving in the direction opposite to the direction arrow in the Calibration tab will be ignored (see <a href="#s_Calibration-Tab">Section 14</a>). Note that you can add a Direction column to the Live tab using the multi-line menu at the upper right of the screen (see <a href="#s_Live-Journal-Tab">Section 12</a>).</p>
+<p><strong>Ignore Opposite Direction</strong> - if enabled, then all Events for vehicles moving in the direction opposite to the direction arrow in the Calibration tab will be ignored (see <a href="#s_Calibration-Tab">Section 15</a>). Note that you can add a Direction column to the Live tab using the multi-line menu at the upper right of the screen (see <a href="#s_Live-Journal-Tab">Section 12</a>).</p>
 </li>
 </ul>
 </div>
@@ -2254,7 +2279,7 @@ http:// &lt;camera IP address&gt;</p>
 <p>The Events displayed in the Live tab are being simultaneously sent via the protocols you selected in the Settings tab.</p>
 </div>
 <div class="paragraph">
-<p>You should see that Events are being generated for each vehicle passing each camera, with sufficient recognition accuracy and confidence. If not, see <a href="#s_Troubleshooting">Section 16</a> for troubleshooting tips.</p>
+<p>You should see that Events are being generated for each vehicle passing each camera, with sufficient recognition accuracy and confidence. If not, see <a href="#s_Troubleshooting">Section 17</a> for troubleshooting tips.</p>
 </div>
 <div class="paragraph">
 <p>If you return to the Live tab from another tab, the large picture returns to the LPR (black and white) camera image.</p>
@@ -2304,7 +2329,7 @@ http:// &lt;camera IP address&gt;</p>
 </div>
 </li>
 <li>
-<p>Select the additional columns to display, such as: <u>State</u> (state displayed on plate), <u>State Confidence</u> (confidence that the state has been recognized accurately), <u>Class</u> (vehicle class, such as car or truck), <u>Class Confidence</u> (confidence that the class has been recognized accurately) and <u>Direction</u> (direction vehicle was traveling - forward or backward - according to the direction arrow configured in the Calibration tab - see <a href="#s_Calibration-Tab">Section 14</a>). (These additional columns will also appear on the Search tab - see <a href="#s_Search-Tab">Section 13</a>.)</p>
+<p>Select the additional columns to display, such as: <u>State</u> (state displayed on plate), <u>State Confidence</u> (confidence that the state has been recognized accurately), <u>Class</u> (vehicle class, such as car or truck), <u>Class Confidence</u> (confidence that the class has been recognized accurately) and <u>Direction</u> (direction vehicle was traveling - forward or backward - according to the direction arrow configured in the Calibration tab - see <a href="#s_Calibration-Tab">Section 15</a>). (These additional columns will also appear on the Search tab - see <a href="#s_Search-Tab">Section 13</a>.)</p>
 </li>
 </ul>
 </div>
@@ -2512,7 +2537,36 @@ http:// &lt;camera IP address&gt;</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="s_Calibration-Tab"><a class="anchor" href="#s_Calibration-Tab"></a>14. Calibration Tab</h2>
+<h2 id="s_System-Status-Tab"><a class="anchor" href="#s_System-Status-Tab"></a>14. System Status Tab</h2>
+<div class="sectionbody">
+<div id="f_System-Status-Tab" class="imageblock">
+<div class="content">
+<img src="_images/UserGuide/RV-1_15-FIG-205_SystemStatus.png" alt="image" width="400">
+</div>
+</div>
+<div class="paragraph">
+<p>This tab displays statuses of different RoadView
+components.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>In order to see the illuminator status information,
+you must enable its display on the System Info tab (see <a href="#s_System-Info-Tab">Section 16</a>).</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="s_Calibration-Tab"><a class="anchor" href="#s_Calibration-Tab"></a>15. Calibration Tab</h2>
 <div class="sectionbody">
 <div id="f_Calibration-Tab" class="imageblock">
 <div class="content">
@@ -2630,11 +2684,11 @@ You can set the "Ignore Opposite Direction" parameter in the Lanes section to ig
 </div>
 </div>
 <div class="sect1">
-<h2 id="s_System-Info-Tab"><a class="anchor" href="#s_System-Info-Tab"></a>15. System Info Tab</h2>
+<h2 id="s_System-Info-Tab"><a class="anchor" href="#s_System-Info-Tab"></a>16. System Info Tab</h2>
 <div class="sectionbody">
 <div id="f_System-Info-Tab" class="imageblock">
 <div class="content">
-<img src="_images/UserGuide/image40.png" alt="image" width="316" height="308">
+<img src="_images/UserGuide/RV-1_15-FIG-034d_SystemInfo.png" alt="image" width="400">
 </div>
 <div class="title">Figure 37. System Info Tab</div>
 </div>
@@ -2653,13 +2707,13 @@ You can set the "Ignore Opposite Direction" parameter in the Lanes section to ig
 </table>
 </div>
 <div class="sect2">
-<h3 id="s_System-Info-Tab-System-Info-Section"><a class="anchor" href="#s_System-Info-Tab-System-Info-Section"></a>15.1. System Info Tab: System Info Section</h3>
+<h3 id="s_System-Info-Tab-System-Info-Section"><a class="anchor" href="#s_System-Info-Tab-System-Info-Section"></a>16.1. System Info Tab: System Info Section</h3>
 <div class="paragraph">
 <p>This section provides the same information as in the upper right corner of the same Settings tab, namely the model, part number and serial number of the camera(s) RoadView is communicating with.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="s_System-Info-Tab-Firmware-Section"><a class="anchor" href="#s_System-Info-Tab-Firmware-Section"></a>15.2. System Info Tab: Firmware Section</h3>
+<h3 id="s_System-Info-Tab-Firmware-Section"><a class="anchor" href="#s_System-Info-Tab-Firmware-Section"></a>16.2. System Info Tab: Firmware Section</h3>
 <div class="ulist">
 <ul>
 <li>
@@ -2682,7 +2736,14 @@ You can set the "Ignore Opposite Direction" parameter in the Lanes section to ig
 </div>
 </div>
 <div class="sect2">
-<h3 id="s_System-Info-Tab-Night-Mode-Section-for-Specific-Camera-Models-Only"><a class="anchor" href="#s_System-Info-Tab-Night-Mode-Section-for-Specific-Camera-Models-Only"></a>15.3. System Info Tab: Night Mode Section (for Specific Camera Models Only)</h3>
+<h3 id="s_System-Info-Tab-Illuminator-Status-Section"><a class="anchor" href="#s_System-Info-Tab-Illuminator-Status-Section"></a>16.3. System Info Tab: Illuminator Status Section</h3>
+<div class="paragraph">
+<p>When enabled, illuminator status items are displayed
+on the System Status tab (see <a href="#s_System-Status-Tab">Section 14</a>).</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="s_System-Info-Tab-Night-Mode-Section-for-Specific-Camera-Models-Only"><a class="anchor" href="#s_System-Info-Tab-Night-Mode-Section-for-Specific-Camera-Models-Only"></a>16.4. System Info Tab: Night Mode Section (for Specific Camera Models Only)</h3>
 <div class="paragraph">
 <p>These parameters affect how RoadView controls an external illuminator:</p>
 </div>
@@ -2751,7 +2812,7 @@ You can set the "Ignore Opposite Direction" parameter in the Lanes section to ig
 </div>
 </div>
 <div class="sect2">
-<h3 id="s_System-Info-Tab-LPR-LED"><a class="anchor" href="#s_System-Info-Tab-LPR-LED"></a>15.4. System Info Tab: LPR LED</h3>
+<h3 id="s_System-Info-Tab-LPR-LED"><a class="anchor" href="#s_System-Info-Tab-LPR-LED"></a>16.5. System Info Tab: LPR LED</h3>
 <div class="paragraph">
 <p>These parameters enable you to control the camera&#8217;s built-in IR LEDs.</p>
 </div>
@@ -2785,7 +2846,7 @@ You can set the "Ignore Opposite Direction" parameter in the Lanes section to ig
 </div>
 </div>
 <div class="sect1">
-<h2 id="s_Troubleshooting"><a class="anchor" href="#s_Troubleshooting"></a>16. Troubleshooting</h2>
+<h2 id="s_Troubleshooting"><a class="anchor" href="#s_Troubleshooting"></a>17. Troubleshooting</h2>
 <div class="sectionbody">
 <div class="admonitionblock note">
 <table>
@@ -2868,10 +2929,10 @@ The Live tab and Search tab are empty (no Events are detected)</p></td>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_notice_and_legal_disclaimer"><a class="anchor" href="#_notice_and_legal_disclaimer"></a>17. Notice and Legal Disclaimer</h2>
+<h2 id="_notice_and_legal_disclaimer"><a class="anchor" href="#_notice_and_legal_disclaimer"></a>18. Notice and Legal Disclaimer</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_notice"><a class="anchor" href="#_notice"></a>17.1. Notice</h3>
+<h3 id="_notice"><a class="anchor" href="#_notice"></a>18.1. Notice</h3>
 <div class="paragraph">
 <p>INEX Technologies reserves the right to improve and enhance its product offerings. Thus, the illustrations and descriptions presented in this manual may differ in some respect from the products you receive.</p>
 </div>
@@ -2901,7 +2962,7 @@ The Live tab and Search tab are empty (no Events are detected)</p></td>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_legal_disclaimer"><a class="anchor" href="#_legal_disclaimer"></a>17.2. Legal Disclaimer</h3>
+<h3 id="_legal_disclaimer"><a class="anchor" href="#_legal_disclaimer"></a>18.2. Legal Disclaimer</h3>
 <div class="paragraph">
 <p>TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE PRODUCT DESCRIBED, WITH ITS HARDWARE, SOFTWARE AND FIRMWARE, IS PROVIDED "AS IS", WITH ALL FAULTS AND ERRORS, AND OUR COMPANY MAKES NO WARRANTIES, EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION, MERCHANTABILITY, SATISFACTORY QUALITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT OF THIRD PARTY. IN NO EVENT WILL OUR COMPANY, ITS DIRECTORS, OFFICERS, EMPLOYEES, OR AGENTS BE LIABLE TO YOU FOR ANY SPECIAL, CONSEQUENTIAL, INCIDENTAL, OR INDIRECT DAMAGES, INCLUDING, AMONG OTHERS, DAMAGES FOR LOSS OF BUSINESS PROFITS, BUSINESS INTERRUPTION, OR LOSS OF DATA OR DOCUMENTATION, IN CONNECTION WITH THE USE OF THIS PRODUCT, EVEN IF OUR COMPANY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.</p>
 </div>
