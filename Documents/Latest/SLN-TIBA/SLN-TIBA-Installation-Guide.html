@@ -450,7 +450,12 @@
 </li>
 <li><a href="#_lpr_camera_sensor_configuration">8. LPR Camera (Sensor) Configuration</a>
 <ul class="sectlevel2">
-<li><a href="#_lpr_camera_video_device_video_streams">8.1. LPR Camera - Video &amp; Device &gt; Video Streams</a></li>
+<li><a href="#_lpr_camera_video_device_video_streams">8.1. LPR Camera - Video &amp; Device &gt; Video Streams</a>
+<ul class="sectlevel3">
+<li><a href="#_triggered_mode">8.1.1. Triggered Mode</a></li>
+<li><a href="#_non_triggered_mode">8.1.2. Non-triggered Mode</a></li>
+</ul>
+</li>
 <li><a href="#_lpr_camera_video_device_video_streams_camera_settings">8.2. LPR Camera - Video &amp; Device &gt; Video Streams &gt; Camera Settings</a></li>
 <li><a href="#_lpr_camera_video_device_video_streams_primary_stream">8.3. LPR Camera - Video &amp; Device &gt; Video Streams &gt; Primary Stream</a></li>
 <li><a href="#_lpr_camera_system_access_level">8.4. LPR Camera - System &gt; Access Level</a></li>
@@ -458,7 +463,12 @@
 </li>
 <li><a href="#_ov_camera_sensor_configuration">9. OV Camera (Sensor) Configuration</a>
 <ul class="sectlevel2">
-<li><a href="#_ov_camera_video_device_video_streams">9.1. OV Camera - Video &amp; Device &gt; Video Streams</a></li>
+<li><a href="#_ov_camera_video_device_video_streams">9.1. OV Camera - Video &amp; Device &gt; Video Streams</a>
+<ul class="sectlevel3">
+<li><a href="#_triggered_mode_2">9.1.1. Triggered Mode</a></li>
+<li><a href="#_non_triggered_mode_2">9.1.2. Non-triggered Mode</a></li>
+</ul>
+</li>
 <li><a href="#_ov_camera_video_device_video_streams_camera_settings">9.2. OV Camera - Video &amp; Device &gt; Video Streams &gt; Camera Settings</a></li>
 <li><a href="#_ov_camera_video_device_video_streams_primary_stream">9.3. OV Camera - Video &amp; Device &gt; Video Streams &gt; Primary Stream</a></li>
 <li><a href="#_ov_camera_system_access_level">9.4. OV Camera - System &gt; Access Level</a></li>
@@ -481,14 +491,14 @@
 <li><a href="#s_TIBA-Integration">12.6. TIBA Integration</a></li>
 <li><a href="#_direct_trigger">12.7. Direct Trigger</a>
 <ul class="sectlevel3">
-<li><a href="#_triggered_mode">12.7.1. Triggered Mode</a></li>
-<li><a href="#_non_triggered_mode">12.7.2. Non-triggered Mode</a></li>
+<li><a href="#_triggered_mode_3">12.7.1. Triggered Mode</a></li>
+<li><a href="#_non_triggered_mode_3">12.7.2. Non-triggered Mode</a></li>
 </ul>
 </li>
 <li><a href="#s_Trigger-Offset">12.8. Trigger Offset</a>
 <ul class="sectlevel3">
-<li><a href="#_triggered_mode_2">12.8.1. Triggered Mode</a></li>
-<li><a href="#_non_triggered_mode_2">12.8.2. Non-triggered Mode</a></li>
+<li><a href="#_triggered_mode_4">12.8.1. Triggered Mode</a></li>
+<li><a href="#_non_triggered_mode_4">12.8.2. Non-triggered Mode</a></li>
 </ul>
 </li>
 <li><a href="#s_Detector-Configuration">12.9. Detector Configuration</a></li>
@@ -1102,31 +1112,29 @@ for reference.</p>
 </div>
 <div class="sect2">
 <h3 id="_lpr_camera_video_device_video_streams"><a class="anchor" href="#_lpr_camera_video_device_video_streams"></a>8.1. LPR Camera - Video &amp; Device &gt; Video Streams</h3>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>For Non-triggered mode, set the primary stream frame rate
-to 10 fps.</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
+<div class="sect3">
+<h4 id="_triggered_mode"><a class="anchor" href="#_triggered_mode"></a>8.1.1. Triggered Mode</h4>
 <div class="imageblock">
 <div class="content">
 <img src="../_images/SLN-TIBA/IZA500G-FIG-110_TIBALPRVideoStreams.png" alt="image" width="400">
 </div>
-<div class="title">Figure 7. LPR Camera - Video &amp; Device &gt; Video Streams</div>
+<div class="title">Figure 7. LPR Camera - Video &amp; Device &gt; Video Streams (Triggered Mode)</div>
 </div>
+</div>
+<div class="sect3">
+<h4 id="_non_triggered_mode"><a class="anchor" href="#_non_triggered_mode"></a>8.1.2. Non-triggered Mode</h4>
 <div class="paragraph">
-<p><br></p>
+<p>For Non-triggered mode, set the primary stream frame rate
+to 10 fps.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/SLN-TIBA/RV-TIBA-FIG-014_NonTriggered10FPS.png" alt="image" width="300">
+</div>
+<div class="title">Figure 8. LPR Camera - Video &amp; Device &gt; Video Streams (Non-triggered Mode)</div>
 </div>
 <div style="page-break-after: always;"></div>
+</div>
 </div>
 <div class="sect2">
 <h3 id="_lpr_camera_video_device_video_streams_camera_settings"><a class="anchor" href="#_lpr_camera_video_device_video_streams_camera_settings"></a>8.2. LPR Camera - Video &amp; Device &gt; Video Streams &gt; Camera Settings</h3>
@@ -1134,7 +1142,7 @@ to 10 fps.</p>
 <div class="content">
 <img src="../_images/SLN-TIBA/IZA500G-FIG-112_TIBALPRCameraSettings.png" alt="image" width="400">
 </div>
-<div class="title">Figure 8. LPR Camera - Video &amp; Device &gt; Video Streams &gt; Camera Settings</div>
+<div class="title">Figure 9. LPR Camera - Video &amp; Device &gt; Video Streams &gt; Camera Settings</div>
 </div>
 <div class="paragraph">
 <p><br></p>
@@ -1147,7 +1155,7 @@ to 10 fps.</p>
 <div class="content">
 <img src="../_images/SLN-TIBA/IZA500G-FIG-114_TIBALPRPrimaryStream.png" alt="image" width="600">
 </div>
-<div class="title">Figure 9. LPR Camera - Video &amp; Device &gt; Video Streams &gt; Primary Stream</div>
+<div class="title">Figure 10. LPR Camera - Video &amp; Device &gt; Video Streams &gt; Primary Stream</div>
 </div>
 <div class="paragraph">
 <p><br></p>
@@ -1159,7 +1167,7 @@ to 10 fps.</p>
 <div class="content">
 <img src="../_images/SLN-TIBA/IZA500G-FIG-116_TIBALPRAccessLevel.png" alt="image" width="600">
 </div>
-<div class="title">Figure 10. LPR Camera - System &gt; Access Level</div>
+<div class="title">Figure 11. LPR Camera - System &gt; Access Level</div>
 </div>
 <div style="page-break-after: always;"></div>
 </div>
@@ -1175,31 +1183,28 @@ for reference.</p>
 </div>
 <div class="sect2">
 <h3 id="_ov_camera_video_device_video_streams"><a class="anchor" href="#_ov_camera_video_device_video_streams"></a>9.1. OV Camera - Video &amp; Device &gt; Video Streams</h3>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>For Non-triggered mode, set the primary stream frame rate
-to 10 fps.</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
+<div class="sect3">
+<h4 id="_triggered_mode_2"><a class="anchor" href="#_triggered_mode_2"></a>9.1.1. Triggered Mode</h4>
 <div class="imageblock">
 <div class="content">
 <img src="../_images/SLN-TIBA/IZA500G-FIG-111_TIBAOVVideoStreams.png" alt="image" width="400">
 </div>
-<div class="title">Figure 11. OV Camera - Video &amp; Device &gt; Video Streams</div>
+<div class="title">Figure 12. OV Camera - Video &amp; Device &gt; Video Streams (Triggered Mode)</div>
 </div>
+</div>
+<div class="sect3">
+<h4 id="_non_triggered_mode_2"><a class="anchor" href="#_non_triggered_mode_2"></a>9.1.2. Non-triggered Mode</h4>
 <div class="paragraph">
-<p><br></p>
+<p>For Non-triggered mode, set the primary stream frame rate
+to 10 fps.</p>
 </div>
-<div style="page-break-after: always;"></div>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/SLN-TIBA/RV-TIBA-FIG-014_NonTriggered10FPS.png" alt="image" width="300">
+</div>
+<div class="title">Figure 13. OV Camera - Video &amp; Device &gt; Video Streams (Non-triggered Mode)</div>
+</div>
+</div>
 </div>
 <div class="sect2">
 <h3 id="_ov_camera_video_device_video_streams_camera_settings"><a class="anchor" href="#_ov_camera_video_device_video_streams_camera_settings"></a>9.2. OV Camera - Video &amp; Device &gt; Video Streams &gt; Camera Settings</h3>
@@ -1207,7 +1212,7 @@ to 10 fps.</p>
 <div class="content">
 <img src="../_images/SLN-TIBA/IZA500G-FIG-113_TIBAOVCameraSettings.png" alt="image" width="400">
 </div>
-<div class="title">Figure 12. OV Camera - Video &amp; Device &gt; Video Streams &gt; Camera Settings</div>
+<div class="title">Figure 14. OV Camera - Video &amp; Device &gt; Video Streams &gt; Camera Settings</div>
 </div>
 <div class="paragraph">
 <p><br></p>
@@ -1220,7 +1225,7 @@ to 10 fps.</p>
 <div class="content">
 <img src="../_images/SLN-TIBA/IZA500G-FIG-115_TIBAOVPrimaryStream.png" alt="image" width="600">
 </div>
-<div class="title">Figure 13. OV Camera - Video &amp; Device &gt; Video Streams &gt; Primary Stream</div>
+<div class="title">Figure 15. OV Camera - Video &amp; Device &gt; Video Streams &gt; Primary Stream</div>
 </div>
 <div class="paragraph">
 <p><br></p>
@@ -1232,7 +1237,7 @@ to 10 fps.</p>
 <div class="content">
 <img src="../_images/SLN-TIBA/IZA500G-FIG-117_TIBAOVAccessLevel.png" alt="image" width="600">
 </div>
-<div class="title">Figure 14. OV Camera - System &gt; Access Level</div>
+<div class="title">Figure 16. OV Camera - System &gt; Access Level</div>
 </div>
 <div style="page-break-after: always;"></div>
 </div>
@@ -1290,7 +1295,7 @@ and password (root, root):</p>
 <div class="content">
 <img src="../_images/SLN-TIBA/RV-TIBA-FIG-012_OldLoginNoResetPW.png" alt="image" width="209" height="143">
 </div>
-<div class="title">Figure 15. Logging In to RoadView</div>
+<div class="title">Figure 17. Logging In to RoadView</div>
 </div>
 </li>
 <li>
@@ -1317,7 +1322,7 @@ and password (root, root):</p>
 <div class="content">
 <img src="../RoadViewALPR/_images/UserGuide/image5.png" alt="image" width="136" height="113">
 </div>
-<div class="title">Figure 16. Logout (Multi-line Menu)</div>
+<div class="title">Figure 18. Logout (Multi-line Menu)</div>
 </div>
 </div>
 </div>
@@ -1375,7 +1380,7 @@ Detector Configuration "Mode" selected.</p>
 <div class="content">
 <img src="../_images/SLN-TIBA/RV-TIBA-FIG-001a_VersionAndCameraInfo.png" alt="image" width="400">
 </div>
-<div class="title">Figure 17. Software Version and Camera Information Section</div>
+<div class="title">Figure 19. Software Version and Camera Information Section</div>
 </div>
 <div style="page-break-after: always;"></div>
 </div>
@@ -1385,7 +1390,7 @@ Detector Configuration "Mode" selected.</p>
 <div class="content">
 <img src="../_images/SLN-TIBA/RV-TIBA-FIG-001b_Network.png" alt="image" width="600">
 </div>
-<div class="title">Figure 18. Network Settings Section</div>
+<div class="title">Figure 20. Network Settings Section</div>
 </div>
 <div class="ulist">
 <ul>
@@ -1451,7 +1456,7 @@ and countries in North America (U.S. and Canada) and South America.</p>
 <div class="content">
 <img src="../_images/SLN-TIBA/RV-TIBA-FIG-001d_Date_Time.png" alt="image" width="600">
 </div>
-<div class="title">Figure 19. Date and Time Settings Section</div>
+<div class="title">Figure 21. Date and Time Settings Section</div>
 </div>
 <div class="paragraph">
 <p><strong>Set Time (Automatically/Manually) -
@@ -1514,7 +1519,7 @@ end of this section after making changes.</p>
 <div class="content">
 <img src="../_images/SLN-TIBA/RV-TIBA-FIG-004b_Lanes.png" alt="image" width="800">
 </div>
-<div class="title">Figure 20. Lanes Section</div>
+<div class="title">Figure 22. Lanes Section</div>
 </div>
 <div class="ulist">
 <ul>
@@ -1560,7 +1565,7 @@ and associate each Camera System&#8217;s cameras with a different "Lane".</p>
 <div class="content">
 <img src="../_images/SLN-TIBA/RV-TIBA-FIG-007a_EditLaneDialog.png" alt="image" width="240">
 </div>
-<div class="title">Figure 21. Add/Edit Lane Dialog</div>
+<div class="title">Figure 23. Add/Edit Lane Dialog</div>
 </div>
 </li>
 </ul>
@@ -1610,7 +1615,7 @@ from the rear of vehicles</p>
 <div class="content">
 <img src="../_images/SLN-TIBA/RV-TIBA-FIG-004c_Cameras.png" alt="image" width="800">
 </div>
-<div class="title">Figure 22. Cameras Section</div>
+<div class="title">Figure 24. Cameras Section</div>
 </div>
 <div class="ulist">
 <ul>
@@ -1620,7 +1625,7 @@ from the rear of vehicles</p>
 <ul>
 <li>
 <p><u>Edit</u> - edit the camera&#8217;s parameters
-(see <a href="#f_Add-Edit-Camera-Dialog">Figure 23</a>)</p>
+(see <a href="#f_Add-Edit-Camera-Dialog">Figure 25</a>)</p>
 </li>
 <li>
 <p><u>Delete</u> - delete the camera
@@ -1666,7 +1671,7 @@ last Transaction ID.<br>
 <div class="content">
 <img src="../_images/SLN-TIBA/RV-TIBA-FIG-006a_EditCameraDialog.png" alt="image" width="300">
 </div>
-<div class="title">Figure 23. Add/Edit Camera Dialog</div>
+<div class="title">Figure 25. Add/Edit Camera Dialog</div>
 </div>
 <div class="ulist">
 <ul>
@@ -1769,7 +1774,7 @@ Detector Configuration section after making changes.</strong></p>
 <div class="content">
 <img src="../_images/SLN-TIBA/RV-TIBA-FIG-002b_TIBA_Integration.png" alt="image" width="550">
 </div>
-<div class="title">Figure 24. TIBA Integration</div>
+<div class="title">Figure 26. TIBA Integration</div>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -1814,7 +1819,7 @@ TIBA server. For example:<br>
 <li>
 <p>For On Prem, the IP address of the
 SmartPark server and Services Hosting port
-as defined in the TIBA LPR settings. For example (see <a href="#f_TIBA_LPR_Settings">Figure 25</a>):<br>
+as defined in the TIBA LPR settings. For example (see <a href="#f_TIBA_LPR_Settings">Figure 27</a>):<br>
 <a href="https://31.154.177.6:29811/" class="bare">https://31.154.177.6:29811/</a><br></p>
 <div class="admonitionblock important">
 <table>
@@ -1840,7 +1845,7 @@ as defined in the TIBA LPR settings. For example (see <a href="#f_TIBA_LPR_Setti
 <div class="content">
 <img src="../_images/SLN-TIBA/RV-TIBA-FIG-013_SmartPark_LPR_Settings.png" alt="image" width="300">
 </div>
-<div class="title">Figure 25. TIBA LPR Settings</div>
+<div class="title">Figure 27. TIBA LPR Settings</div>
 </div>
 <div class="ulist">
 <ul>
@@ -1896,7 +1901,7 @@ at the bottom of the Settings tab</p>
 <div class="sect2">
 <h3 id="_direct_trigger"><a class="anchor" href="#_direct_trigger"></a>12.7. Direct Trigger</h3>
 <div class="sect3">
-<h4 id="_triggered_mode"><a class="anchor" href="#_triggered_mode"></a>12.7.1. Triggered Mode</h4>
+<h4 id="_triggered_mode_3"><a class="anchor" href="#_triggered_mode_3"></a>12.7.1. Triggered Mode</h4>
 <div class="paragraph">
 <p>Set the Direct Trigger Mode as follows:</p>
 </div>
@@ -1918,11 +1923,11 @@ Detector Configuration section after making changes.</p>
 <div class="content">
 <img src="../_images/SLN-TIBA/RV-TIBA-FIG-003a_Direct_Trigger.png" alt="image" width="600">
 </div>
-<div class="title">Figure 26. Direct Trigger Section</div>
+<div class="title">Figure 28. Direct Trigger Section</div>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_non_triggered_mode"><a class="anchor" href="#_non_triggered_mode"></a>12.7.2. Non-triggered Mode</h4>
+<h4 id="_non_triggered_mode_3"><a class="anchor" href="#_non_triggered_mode_3"></a>12.7.2. Non-triggered Mode</h4>
 <div class="ulist">
 <ul>
 <li>
@@ -1943,10 +1948,10 @@ Detector Configuration section after making changes.</p>
 <div class="content">
 <img src="../_images/SLN-TIBA/RV-TIBA-FIG-003b_Trigger_Offset.png" alt="image" width="600">
 </div>
-<div class="title">Figure 27. Trigger Offset Section</div>
+<div class="title">Figure 29. Trigger Offset Section</div>
 </div>
 <div class="sect3">
-<h4 id="_triggered_mode_2"><a class="anchor" href="#_triggered_mode_2"></a>12.8.1. Triggered Mode</h4>
+<h4 id="_triggered_mode_4"><a class="anchor" href="#_triggered_mode_4"></a>12.8.1. Triggered Mode</h4>
 <div class="paragraph">
 <p>You can capture a vehicle
 (and create an Event) at a different
@@ -1965,7 +1970,7 @@ it is obstructed from view by the bar.</p>
 <div class="content">
 <img src="../_images/SLN-TIBA/RV-TIBA-FIG-003c_TriggerOffsetIllustrated.png" alt="image" width="400">
 </div>
-<div class="title">Figure 28. Trigger Offset Illustration</div>
+<div class="title">Figure 30. Trigger Offset Illustration</div>
 </div>
 <div class="ulist">
 <ul>
@@ -1981,7 +1986,7 @@ Detector Configuration section after making changes.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_non_triggered_mode_2"><a class="anchor" href="#_non_triggered_mode_2"></a>12.8.2. Non-triggered Mode</h4>
+<h4 id="_non_triggered_mode_4"><a class="anchor" href="#_non_triggered_mode_4"></a>12.8.2. Non-triggered Mode</h4>
 <div class="paragraph">
 <p>Disable (uncheck) the "Enabled" checkbox.</p>
 </div>
@@ -2014,7 +2019,7 @@ changing these parameters.</p>
 <div class="content">
 <img src="../_images/SLN-TIBA/RV-TIBA-FIG-004a_Detector_Configuration.png" alt="image" width="500">
 </div>
-<div class="title">Figure 29. Detector Configuration Section</div>
+<div class="title">Figure 31. Detector Configuration Section</div>
 </div>
 <div class="paragraph">
 <p>Explanations of frequently used parameters:</p>
@@ -2191,7 +2196,7 @@ by the Latitude and Longitude parameters). Additional parameters are:</p>
 <div class="content">
 <img src="../_images/SLN-TIBA/RV-TIBA-FIG-011a_CalibrationTab.png" alt="image" width="800">
 </div>
-<div class="title">Figure 30. Calibration Tab</div>
+<div class="title">Figure 32. Calibration Tab</div>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
@@ -2219,7 +2224,7 @@ and time that the image is being taken/was taken by the camera.</p>
 </li>
 <li>
 <p>Aim the camera using the mounting bracket&#8217;s adjustment
-hardware (see <a href="#f_Pan-Tilt-Roll-Angle-Adjustments">Figure 31</a>).</p>
+hardware (see <a href="#f_Pan-Tilt-Roll-Angle-Adjustments">Figure 33</a>).</p>
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
@@ -2241,7 +2246,7 @@ image is horizontally straight, parallel to the ground
 <div class="content">
 <img src="../_images/RoadViewALPR/PanTiltRoll.png" alt="image" width="311" height="186">
 </div>
-<div class="title">Figure 31. Pan/Tilt/Roll (Angle) Adjustments</div>
+<div class="title">Figure 33. Pan/Tilt/Roll (Angle) Adjustments</div>
 </div>
 </li>
 </ol>
@@ -2367,7 +2372,7 @@ tab.</p>
 <div class="content">
 <img src="../_images/SLN-TIBA/RV-TIBA-FIG-009a_LiveTab.png" alt="image" width="800">
 </div>
-<div class="title">Figure 32. Live (Journal) Tab</div>
+<div class="title">Figure 34. Live (Journal) Tab</div>
 </div>
 <div class="ulist">
 <ul>
@@ -2428,7 +2433,7 @@ Detector Configuration section after making changes.</p>
 <div class="content">
 <img src="../_images/SLN-TIBA/RV-TIBA-FIG-002a_IZCloud.png" alt="image" width="550">
 </div>
-<div class="title">Figure 33. RoadView Settings Tab - IZCloud Integration Section</div>
+<div class="title">Figure 35. RoadView Settings Tab - IZCloud Integration Section</div>
 </div>
 <div style="page-break-after: always;"></div>
 </div>
@@ -2449,7 +2454,7 @@ Detector Configuration section after making changes.</p>
 <div class="content">
 <img src="../_images/SLN-TIBA/IZCloud-BorderLogin.png" alt="image" width="400">
 </div>
-<div class="title">Figure 34. IZCloud Login</div>
+<div class="title">Figure 36. IZCloud Login</div>
 </div>
 </div>
 <div class="sect2">
@@ -2462,7 +2467,7 @@ then click the Logout button.</p>
 <div class="content">
 <img src="../_images/SLN-TIBA/IZCloud-BorderTIBA-Logout.png" alt="image" width="200">
 </div>
-<div class="title">Figure 35. IZCloud Logout</div>
+<div class="title">Figure 37. IZCloud Logout</div>
 </div>
 <div style="page-break-after: always;"></div>
 </div>
@@ -2476,7 +2481,7 @@ all Events generated by the system.</p>
 <div class="content">
 <img src="../_images/SLN-TIBA/IZCloud-BorderTIBA-Events.png" alt="image" width="800">
 </div>
-<div class="title">Figure 36. IZCloud Events</div>
+<div class="title">Figure 38. IZCloud Events</div>
 </div>
 <div class="paragraph">
 <p>Columns/Filters:</p>
@@ -2506,7 +2511,7 @@ clear the checkbox.<br></p>
 <div class="content">
 <img src="../_images/SLN-TIBA/IZCloud-BorderCalendar-Popup.png" alt="image" width="400">
 </div>
-<div class="title">Figure 37. IZCloud: Calendar Popup</div>
+<div class="title">Figure 39. IZCloud: Calendar Popup</div>
 </div>
 </li>
 </ul>
@@ -2518,7 +2523,7 @@ clear the checkbox.<br></p>
 <div class="content">
 <img src="../_images/SLN-TIBA/IZCloud-BorderSelect-Date-Range.png" alt="image" width="250">
 </div>
-<div class="title">Figure 38. IZCloud: Selecting a Data Range</div>
+<div class="title">Figure 40. IZCloud: Selecting a Data Range</div>
 </div>
 <div class="ulist">
 <ul>
@@ -2560,7 +2565,7 @@ camera status and read rate statistics.</p>
 <div class="content">
 <img src="../_images/SLN-TIBA/IZCloud-BorderTIBA-Maint-Cameras.png" alt="image" width="800">
 </div>
-<div class="title">Figure 39. IZCloud Cameras Page</div>
+<div class="title">Figure 41. IZCloud Cameras Page</div>
 </div>
 <div class="paragraph">
 <p>Columns/Filters:</p>
@@ -2606,7 +2611,7 @@ by the lane on that row (see <a href="#s_Last-Review">Section 16.6</a>).</p>
 <div class="content">
 <img src="../_images/SLN-TIBA/IZCloud-BorderTIBA-LastReview-Lane1.png" alt="image" width="800">
 </div>
-<div class="title">Figure 40. IZCloud Last Review Page</div>
+<div class="title">Figure 42. IZCloud Last Review Page</div>
 </div>
 <div class="paragraph">
 <p>Columns/Filters:</p>
@@ -2700,7 +2705,7 @@ analytical reports about ALPR performance.</p>
 <div class="content">
 <img src="../_images/SLN-TIBA/IZCloud-BorderTIBA-DashBrd-HoverBarChart.png" alt="image" width="800">
 </div>
-<div class="title">Figure 41. IZCloud Dashboard Page</div>
+<div class="title">Figure 43. IZCloud Dashboard Page</div>
 </div>
 <div class="paragraph">
 <p>Page Elements:</p>
@@ -2762,7 +2767,7 @@ is generated daily. Hover on a point to show details.</p>
 <div class="sect2">
 <h3 id="s_IZCloud-Lanes"><a class="anchor" href="#s_IZCloud-Lanes"></a>16.8. IZCloud Lanes</h3>
 <div class="paragraph">
-<p>The Lanes page enables you to (see <a href="#f_IZCloud-Lanes-Page">Figure 42</a>):</p>
+<p>The Lanes page enables you to (see <a href="#f_IZCloud-Lanes-Page">Figure 44</a>):</p>
 </div>
 <div class="ulist">
 <ul>
@@ -2804,7 +2809,7 @@ video stream from the camera.</p>
 <div class="content">
 <img src="../_images/SLN-TIBA/IZCloud-BorderTIBA-Lanes.png" alt="image" width="500">
 </div>
-<div class="title">Figure 42. IZCloud Lanes Page</div>
+<div class="title">Figure 44. IZCloud Lanes Page</div>
 </div>
 <div class="ulist">
 <ul>
@@ -2828,7 +2833,7 @@ with the updated read.<br></p>
 <div class="content">
 <img src="../_images/SLN-TIBA/IZCloud-BorderTIBA-Lanes-CorrectPlate.png" alt="image" width="400">
 </div>
-<div class="title">Figure 43. IZCloud Lanes - Correct Plate Read</div>
+<div class="title">Figure 45. IZCloud Lanes - Correct Plate Read</div>
 </div>
 <div style="page-break-after: always;"></div>
 </div>
@@ -2971,7 +2976,7 @@ The Live tab and Search tab are empty (no Events are detected)</p></td>
 <p></p>
 </div>
 <div class="paragraph">
-<p>Doc. No. TIBA-MAN-002b Ver. 2024-03-03</p>
+<p>Doc. No. TIBA-MAN-002b Ver. 2024-03-04</p>
 </div>
 </div>
 </div>
