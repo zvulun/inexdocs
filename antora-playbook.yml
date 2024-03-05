@@ -91,6 +91,7 @@ asciidoc:
     software-DFC-1S: IZCLOUD-DFC-1S@
     software-DFC-1C: IZCLOUD-DFC-1C@
 
+    software-protocol: ZAP@
     software-server: IZCentral@
     software-cloud: IZCloud@
     software-discovery: IZ Discovery@
