@@ -110,6 +110,7 @@ asciidoc:
     hw-loopdetect-l: LOOP-DTCR-L@
     hw-loopdetect-p: LOOP-DTCR-P@
 
+    illum-3rd-party: Raytec@
     illum-strobe: IZS@
     illum-non-strobe: IZL@
     illum-VES: IZSVES@
