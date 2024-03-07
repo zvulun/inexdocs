@@ -106,6 +106,7 @@ asciidoc:
     hw-webrelay-quad: IZ-REM-RELAY-4@
     hw-webrelay-single: IZ-REM-RELAY@
     hw-indoor-processor: IZIDPUG@
+    hw-advanced-processor: IZIDPUGOX@
     hw-outdoor-processor: IZODPUG@
     hw-loopdetect-l: LOOP-DTCR-L@
     hw-loopdetect-p: LOOP-DTCR-P@
