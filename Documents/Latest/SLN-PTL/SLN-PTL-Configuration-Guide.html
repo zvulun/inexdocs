@@ -436,7 +436,7 @@
 <ul class="sectlevel1">
 <li><a href="#_background">1. Background</a></li>
 <li><a href="#_computer_and_software_requirements">2. Computer and Software Requirements</a></li>
-<li><a href="#_use_iz_discovery_and_allocate_ip_addresses">3. Use IZ Discovery and Allocate IP Addresses</a>
+<li><a href="#_use_iz_discovery">3. Use IZ Discovery</a>
 <ul class="sectlevel2">
 <li><a href="#_installing_and_using_iz_discovery">3.1. Installing and Using IZ Discovery</a></li>
 <li><a href="#s_Changing-a-Device-s-IP-Address-and-Network-Settings">3.2. Changing a Device&#8217;s IP Address and Network Settings</a></li>
@@ -462,7 +462,7 @@
 </ul>
 </li>
 <li><a href="#_roadview_system_info_tab">7. RoadView - System Info Tab</a></li>
-<li><a href="#s_Calibrating-the-Cameras-Using-RoadView">8. Calibrating a Camera Using RoadView</a></li>
+<li><a href="#s_Calibrating-a-Camera-Using-RoadView">8. Calibrating a Camera Using RoadView</a></li>
 <li><a href="#s_Verify-System-Operation">9. Verify System Operation</a></li>
 <li><a href="#s_Troubleshooting">10. RoadView Troubleshooting</a></li>
 <li><a href="#_legal_notices">11. Legal Notices</a>
@@ -505,29 +505,13 @@ configure the INEX Motorola PTL system.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_use_iz_discovery_and_allocate_ip_addresses"><a class="anchor" href="#_use_iz_discovery_and_allocate_ip_addresses"></a>3. Use IZ Discovery and Allocate IP Addresses</h2>
+<h2 id="_use_iz_discovery"><a class="anchor" href="#_use_iz_discovery"></a>3. Use IZ Discovery</h2>
 <div class="sectionbody">
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Allocate an IP address for
-the IZIDPUGOX Data Processing Unit (DPU).
-For example:<br></p>
-<div class="ulist">
-<ul>
-<li>
-<p>Processor - <a href="http://192.168.5.100/" class="bare">http://192.168.5.100/</a><br></p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>Use IZ Discovery to find the
-processor, and to
-change its IP address to the one
-you allocated.</p>
-</li>
-</ol>
+<div class="paragraph">
+<p>The factory default IP address of the IZIDPUGOX
+Data Processing Unit (DPU) is on the sticker on the device;
+typically 192.168.5.110. If needed, use IZ Discovery to change its IP address
+to one you have allocated in your network.</p>
 </div>
 <div class="sect2">
 <h3 id="_installing_and_using_iz_discovery"><a class="anchor" href="#_installing_and_using_iz_discovery"></a>3.1. Installing and Using IZ Discovery</h3>
@@ -629,7 +613,7 @@ you allocated.</p>
 </div>
 <div class="paragraph">
 <p>If your device is an INEX Camera System, be sure to define IP addresses for each camera (LPR and Overview), using each camera&#8217;s configuration application.
-It is recommended to use sequential IP addresses for the Camera System and its cameras; for example: 192.168.5.100, 101, 102</p>
+It is recommended to use sequential IP addresses for the Camera System and its cameras; for example: 192.168.5.110, 192.168.5.111, 192.168.5.112</p>
 </div>
 </td>
 </tr>
@@ -720,7 +704,7 @@ at the expected distance and height.</p>
 <li>
 <p>Type in the IP address of the RoadView computer - the IZIDPUGOX.
 For example:<br>
-<a href="http://192.168.5.100/">http://192.168.5.100/</a></p>
+192.168.5.110</p>
 </li>
 <li>
 <p>You will see the login screen. Enter the default username
@@ -958,10 +942,6 @@ end of this section after making changes.</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Actions:</p>
-<div class="ulist">
-<ul>
-<li>
 <p><u>Edit</u> - edit the Lane&#8217;s parameters</p>
 </li>
 <li>
@@ -997,12 +977,9 @@ and associate each camera with a different "Lane".</p>
 </div>
 <div id="f_Add-Edit-Lane-Dialog" class="imageblock">
 <div class="content">
-<img src="../_images/SLN-TIBA/RV-TIBA-FIG-007a_EditLaneDialog.png" alt="image" width="150">
+<img src="../_images/SLN-PTL/RV-PTL-FIG-004a_EditLaneDialog.png" alt="image" width="300">
 </div>
 <div class="title">Figure 9. Add/Edit Lane Dialog</div>
-</div>
-</li>
-</ul>
 </div>
 </li>
 <li>
@@ -1054,19 +1031,12 @@ from the rear of vehicles</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Actions:</p>
-<div class="ulist">
-<ul>
-<li>
 <p><u>Edit</u> - edit the camera&#8217;s parameters
 (see <a href="#f_Add-Edit-Camera-Dialog">Figure 11</a>)</p>
 </li>
 <li>
 <p><u>Delete</u> - delete the camera
 (a warning will be displayed)</p>
-</li>
-</ul>
-</div>
 </li>
 <li>
 <p><strong>Camera table headers:</strong> Camera ID, Lane ID, Name, URL,
@@ -1090,8 +1060,8 @@ The reappearance of the image indicates that the
 core software has restarted, and Events will resume
 being captured and displayed in the Live tab, with the
 following changes:<br>
-- The Transaction ID will continue to increase from the
-last Transaction ID.<br>
+- The Event ID will continue to increase from the
+last Event ID.<br>
 - The history of previous Events for that camera will be cleared</p>
 </div>
 </td>
@@ -1107,6 +1077,10 @@ last Transaction ID.<br>
 </div>
 <div class="title">Figure 11. Add/Edit Camera Dialog</div>
 </div>
+</li>
+</ul>
+</div>
+<div style="page-break-after: always;"></div>
 <div class="ulist">
 <ul>
 <li>
@@ -1127,13 +1101,11 @@ lane will be combined into a single Event.</p>
 </div>
 <div class="paragraph">
 <p>Using the same Lane ID for different cameras
-will combine the reads into one Event (see <a href="#s_Lanes">Section 6.4</a>).
-You may even be able to improve read accuracy by changing
-the zoom to have one camera "see" closer than the other one.</p>
+will combine the reads into one Event (see <a href="#s_Lanes">Section 6.4</a>).</p>
 </div>
 <div class="paragraph">
-<p>You could also position cameras to be in different positions
-(front/rear).</p>
+<p>You can position multiple cameras to be in different positions
+for the same lane (front/rear).</p>
 </div>
 </td>
 </tr>
@@ -1147,9 +1119,6 @@ overall ALPR system</p>
 <li>
 <p><strong>Name</strong> - Camera name for internal use; should be unique
 in the overall ALPR system</p>
-</li>
-</ul>
-</div>
 </li>
 </ul>
 </div>
@@ -1202,7 +1171,7 @@ Detector Configuration section after making changes.</strong></p>
 <p><strong>Motorola Password</strong> - password to access the Motorola server</p>
 </li>
 <li>
-<p><strong>Camera Port</strong> - the HTTP port on which RoadView
+<p><strong>Camera Port</strong> - the HTTPS port on which RoadView
 listens for commands from the Motorola server</p>
 </li>
 <li>
@@ -1310,7 +1279,7 @@ changing these parameters.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="s_Calibrating-the-Cameras-Using-RoadView"><a class="anchor" href="#s_Calibrating-the-Cameras-Using-RoadView"></a>8. Calibrating a Camera Using RoadView</h2>
+<h2 id="s_Calibrating-a-Camera-Using-RoadView"><a class="anchor" href="#s_Calibrating-a-Camera-Using-RoadView"></a>8. Calibrating a Camera Using RoadView</h2>
 <div class="sectionbody">
 <div id="f_Calibration-Tab" class="imageblock">
 <div class="content">
@@ -1400,38 +1369,6 @@ that is different for each camera.</p>
 </div>
 </li>
 <li>
-<p>Use the zoom and focus buttons to adjust
-the view of the video until the width of the plate
-is withing the extent of the vertices, and
-its plate image is clear and sharp.
-(The surrounding items, such as the vehicle body,
-do not need to be as sharp as the plate.)</p>
-<div class="admonitionblock important">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-important" title="Important"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>There is a delay between a click of a zoom/focus button
-and when you see the effect on the screen.
-Be sure to wait until you see the change
-on the screen before clicking the button again.
-Clicking the button multiple times will cause you
-to "overshoot" the desired zoom/focus.</p>
-</div>
-<div class="paragraph">
-<p>As you adjust the zoom and focus,
-you may need to reposition the camera in order to
-get the image of the plate back to the desired position.</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-</li>
-<li>
 <p>Define the <strong>Plate Width Min</strong>: Events will only be created
 for plate reads whose width is greater than or equal
 to this parameter. Enter the desired value
@@ -1472,6 +1409,7 @@ tightening of the mounting hardware.</p>
 </li>
 </ol>
 </div>
+<div style="page-break-after: always;"></div>
 </div>
 </div>
 <div class="sect1">
@@ -1525,6 +1463,7 @@ Video link under the thumbnails</p>
 </li>
 </ul>
 </div>
+<div style="page-break-after: always;"></div>
 <div class="ulist">
 <ul>
 <li>
@@ -1597,9 +1536,6 @@ The Live tab and Search tab are empty (no Events are detected)</p></td>
 </li>
 <li>
 <p>If the images are spotted, remove dirt and dust from the front window of the camera with a soft cloth and mild soap</p>
-</li>
-<li>
-<p>If the images are not sharp, adjust the zoom and focus of each camera.</p>
 </li>
 </ul>
 </div></div></td>
