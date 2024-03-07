@@ -68,9 +68,9 @@ asciidoc:
     compname-med: INEX/TECH@
     compname-short: INEX@
 
-    ip-default-IZA-DPU: 192.168.5.245@
-    ip-default-IZA-LPR: 192.168.5.100@
-    ip-default-IZA-OV: 192.168.5.101@
+    ip-default-IZA-DPU: 192.168.5.110@
+    ip-default-IZA-LPR: 192.168.5.111@
+    ip-default-IZA-OV: 192.168.5.112@
     ip-default-6F: DHCP@
     ip-default-DPU: 192.168.5.245@
 
