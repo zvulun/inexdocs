@@ -448,10 +448,12 @@
 <li><a href="#s_Changing-a-Device-s-IP-Address-and-Network-Settings">8.6. Changing a Device&#8217;s IP Address and Network Settings</a></li>
 </ul>
 </li>
-<li><a href="#s_Logging-In-and-Logging-Out">9. Logging In and Logging Out</a>
+<li><a href="#s_Logging-In-and-Logging-Out">9. Logging In, Changing/Resetting Password and Logging Out</a>
 <ul class="sectlevel2">
-<li><a href="#s_Logging-In">9.1. Logging In</a></li>
-<li><a href="#s_Logging-Out-Multi-line-Menu-Icon">9.2. Logging Out (Multi-line Menu Icon)</a></li>
+<li><a href="#s_First-Time-Login">9.1. First-Time Login</a></li>
+<li><a href="#s_Changing-the-Password">9.2. Changing the Password (Multi-line Menu Icon)</a></li>
+<li><a href="#_resetting_the_password">9.3. Resetting the Password</a></li>
+<li><a href="#s_Logging-Out-Multi-line-Menu-Icon">9.4. Logging Out (Multi-line Menu Icon)</a></li>
 </ul>
 </li>
 <li><a href="#s_Trigger-Sources-and-Trigger-Modes-Overview">10. Trigger Sources and Trigger Modes Overview</a></li>
@@ -483,8 +485,9 @@
 <li><a href="#s_Journal-Optional-Local-Storage">11.19. Journal (Optional Local Storage)</a></li>
 <li><a href="#s_Events-Post-Processing">11.20. Events Post Processing</a>
 <ul class="sectlevel3">
-<li><a href="#s_Events-Post-Processing-Section-Combine-Enabled">11.20.1. Combine Enabled</a></li>
-<li><a href="#s_Events-Post-Processing-Section-SkipByDistance-Enabled">11.20.2. Skip By Distance Enabled</a></li>
+<li><a href="#s_Events-Post-Processing-Section-Skip-Empty-Events">11.20.1. Skip Empty Events</a></li>
+<li><a href="#s_Events-Post-Processing-Section-Combine-Enabled">11.20.2. Combine Enabled</a></li>
+<li><a href="#s_Events-Post-Processing-Section-SkipByDistance-Enabled">11.20.3. Skip By Distance Enabled</a></li>
 </ul>
 </li>
 <li><a href="#s_Trigger-Offset">11.21. Trigger Offset</a></li>
@@ -858,15 +861,15 @@
 </div>
 </div>
 <div class="sect1">
-<h2 id="s_Logging-In-and-Logging-Out"><a class="anchor" href="#s_Logging-In-and-Logging-Out"></a>9. Logging In and Logging Out</h2>
+<h2 id="s_Logging-In-and-Logging-Out"><a class="anchor" href="#s_Logging-In-and-Logging-Out"></a>9. Logging In, Changing/Resetting Password and Logging Out</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="s_Logging-In"><a class="anchor" href="#s_Logging-In"></a>9.1. Logging In</h3>
+<h3 id="s_First-Time-Login"><a class="anchor" href="#s_First-Time-Login"></a>9.1. First-Time Login</h3>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
 <p>Open a browser (latest version of Chrome or IE 11 or higher). Type in the IP address of the RoadView computer. For example:<br>
-<a href="http://192.115.120.76/" class="bare">http://192.115.120.76/</a></p>
+192.168.5.110</p>
 <div class="admonitionblock important">
 <table>
 <tr>
@@ -884,11 +887,11 @@
 </li>
 <li>
 <p>In the login screen, enter the default username and password: (root, root):</p>
-<div id="f_Logging-In-to-the-Computer" class="imageblock">
+<div id="f_Logging-In-to-RoadView" class="imageblock">
 <div class="content">
 <img src="../_images/RoadViewALPR/RoadViewLoginWindow.png" alt="image" width="209" height="143">
 </div>
-<div class="title">Figure 2. Logging In to the Computer</div>
+<div class="title">Figure 2. Logging In to RoadView</div>
 </div>
 </li>
 <li>
@@ -898,7 +901,81 @@
 </div>
 </div>
 <div class="sect2">
-<h3 id="s_Logging-Out-Multi-line-Menu-Icon"><a class="anchor" href="#s_Logging-Out-Multi-line-Menu-Icon"></a>9.2. Logging Out (Multi-line Menu Icon)</h3>
+<h3 id="s_Changing-the-Password"><a class="anchor" href="#s_Changing-the-Password"></a>9.2. Changing the Password (Multi-line Menu Icon)</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Click on the multi-line menu icon at the upper right of the RoadView screen</p>
+</li>
+<li>
+<p>Select "Change Password"</p>
+</li>
+</ul>
+</div>
+<div id="f_Change-Password-Multi-line-Menu" class="imageblock">
+<div class="content">
+<img src="_images/UserGuide/RV-1_15-FIG-021b_3_Line_ChangePW.png" alt="image" width="136" height="113">
+</div>
+<div class="title">Figure 3. Change Password (Multi-line Menu)</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Enter the new password and re-type it</p>
+</li>
+</ul>
+</div>
+<div id="f_Change-Password-Dialog" class="imageblock">
+<div class="content">
+<img src="_images/UserGuide/RV-1_15-FIG-021c_ChangePW_Popup.png" alt="image" width="300">
+</div>
+<div class="title">Figure 4. Change Password Dialog</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_resetting_the_password"><a class="anchor" href="#_resetting_the_password"></a>9.3. Resetting the Password</h3>
+<div class="paragraph">
+<p>If you forgot your password, you can reset it as follows:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Open a browser (latest version of Chrome or IE 11 or higher). Type in the IP address of the RoadView computer. For example:<br>
+192.168.5.110</p>
+</li>
+<li>
+<p>In the login screen, click on the Reset Password link
+(see <a href="#f_Logging-In-to-RoadView">Figure 2</a>).</p>
+</li>
+<li>
+<p>Using the dialog that appears, prepare an
+email with the <strong>Request</strong> code, and click Cancel.</p>
+<div id="f_Password-Reset-Dialog" class="imageblock">
+<div class="content">
+<img src="_images/UserGuide/RV-1_15-FIG-021d_RequestPWReset_Popup.png" alt="image" width="300">
+</div>
+</div>
+</li>
+<li>
+<p>When you get a <strong>Reset</strong> code back from INEX,
+repeat the previous steps to open the dialog again,
+enter the Reset Code in the text box, and click Next.</p>
+</li>
+<li>
+<p>You will the dialog used for changing
+a password (see <a href="#f_Change-Password-Dialog">Figure 4</a>)</p>
+</li>
+<li>
+<p>Enter the new password and re-type it</p>
+</li>
+<li>
+<p>Use the new password to log in to RoadView again</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="s_Logging-Out-Multi-line-Menu-Icon"><a class="anchor" href="#s_Logging-Out-Multi-line-Menu-Icon"></a>9.4. Logging Out (Multi-line Menu Icon)</h3>
 <div class="ulist">
 <ul>
 <li>
@@ -911,9 +988,9 @@
 </div>
 <div id="f_Logout-Multi-line-Menu" class="imageblock">
 <div class="content">
-<img src="_images/UserGuide/image5.png" alt="image" width="136" height="113">
+<img src="_images/UserGuide/RV-1_15-FIG-020a_Logging_Out.png" alt="image" width="136" height="113">
 </div>
-<div class="title">Figure 3. Logout (Multi-line Menu)</div>
+<div class="title">Figure 5. Logout (Multi-line Menu)</div>
 </div>
 <div class="paragraph">
 <p><div class="pagebreak"> </div></p>
@@ -931,7 +1008,7 @@
 <div class="content">
 <img src="_images/UserGuide/image6.png" alt="image" width="624" height="307">
 </div>
-<div class="title">Figure 4. Trigger Sources and Sequence</div>
+<div class="title">Figure 6. Trigger Sources and Sequence</div>
 </div>
 <div class="paragraph">
 <p>The system constantly captures video frames and stores them in a buffer. However, the Triggering Mode determines if all, or only some of, these frames will be used for license plate recognition and Event building. Other parameters affect how many frames before (pre) and after (post) the trigger will be used:</p>
@@ -970,13 +1047,13 @@
 </table>
 </div>
 <div class="paragraph">
-<p>The Trigger Operational Modes (set in the Detector Configuration section of the Settings tab - see <a href="#s_Detector-Configuration">Section 11.22</a>) affect how Events are created (see <a href="#f_Trigger-Operational-Modes">Figure 5</a>):</p>
+<p>The Trigger Operational Modes (set in the Detector Configuration section of the Settings tab - see <a href="#s_Detector-Configuration">Section 11.22</a>) affect how Events are created (see <a href="#f_Trigger-Operational-Modes">Figure 7</a>):</p>
 </div>
 <div id="f_Trigger-Operational-Modes" class="imageblock">
 <div class="content">
 <img src="_images/UserGuide/image7.png" alt="image" width="632" height="431">
 </div>
-<div class="title">Figure 5. Trigger Operational Modes</div>
+<div class="title">Figure 7. Trigger Operational Modes</div>
 </div>
 <div class="ulist">
 <ul>
@@ -1046,9 +1123,9 @@ See <a href="#s_Trigger-Sources-and-Trigger-Modes-Overview">Section 10</a> and <
 </div>
 <div id="f_Settings-Tab" class="imageblock">
 <div class="content">
-<img src="_images/UserGuide/image8.png" alt="image" width="265" height="504">
+<img src="_images/UserGuide/RV-1_15-FIG-003f_SettingsTab.png" alt="image" width="265" height="504">
 </div>
-<div class="title">Figure 6. Settings Tab</div>
+<div class="title">Figure 8. Settings Tab</div>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -1086,16 +1163,16 @@ See <a href="#s_Trigger-Sources-and-Trigger-Modes-Overview">Section 10</a> and <
 <div class="content">
 <img src="_images/UserGuide/RV-1_15-FIG-100b_SettingsVersionSection.png" alt="image" width="356" height="130">
 </div>
-<div class="title">Figure 7. Software Version and Camera Information Section</div>
+<div class="title">Figure 9. Software Version and Camera Information Section</div>
 </div>
 </div>
 <div class="sect2">
 <h3 id="s_Network-Settings"><a class="anchor" href="#s_Network-Settings"></a>11.2. Network Settings</h3>
 <div id="f_Network-Settings-Section" class="imageblock">
 <div class="content">
-<img src="_images/UserGuide/image10.png" alt="image" width="416" height="180">
+<img src="../_images/RoadViewALPR/RV-1_15-FIG-213_NewNetworkSettings.png" alt="image" width="416" height="180">
 </div>
-<div class="title">Figure 8. Network Settings Section</div>
+<div class="title">Figure 10. Network Settings Section</div>
 </div>
 <div class="ulist">
 <ul>
@@ -1137,7 +1214,7 @@ See <a href="#s_Trigger-Sources-and-Trigger-Modes-Overview">Section 10</a> and <
 <div class="content">
 <img src="_images/UserGuide/image11.png" alt="image" width="468" height="204">
 </div>
-<div class="title">Figure 9. FTP/SFTP Section</div>
+<div class="title">Figure 11. FTP/SFTP Section</div>
 </div>
 <div class="ulist">
 <ul>
@@ -1161,7 +1238,7 @@ Be sure to click the Save button at the end of this section if you change these 
 <div class="content">
 <img src="_images/UserGuide/image12.png" alt="image" width="176" height="129">
 </div>
-<div class="title">Figure 10. Adding an SFTP User</div>
+<div class="title">Figure 12. Adding an SFTP User</div>
 </div>
 </li>
 </ul>
@@ -1205,7 +1282,7 @@ Be sure to click the Save button at the end of this section if you change these 
 <div class="content">
 <img src="_images/UserGuide/image13.png" alt="image" width="490" height="180">
 </div>
-<div class="title">Figure 11. Date and Time Settings Section</div>
+<div class="title">Figure 13. Date and Time Settings Section</div>
 </div>
 <div class="ulist">
 <ul>
@@ -1247,7 +1324,7 @@ Be sure to click the Save button at the end of this section if you change these 
 <div class="content">
 <img src="_images/UserGuide/image14.png" alt="image" width="698" height="49">
 </div>
-<div class="title">Figure 12. HTTP Integration Section</div>
+<div class="title">Figure 14. HTTP Integration Section</div>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -1272,7 +1349,7 @@ Be sure to click the Save button at the end of this section if you change these 
 <div class="ulist">
 <ul>
 <li>
-<p>Click Add HTTP Integration. Note that this feature enables you to use multiple HTTP channels (see <a href="#f_Adding-an-HTTP-Integration">Figure 13</a>).</p>
+<p>Click Add HTTP Integration. Note that this feature enables you to use multiple HTTP channels (see <a href="#f_Adding-an-HTTP-Integration">Figure 15</a>).</p>
 </li>
 </ul>
 </div>
@@ -1280,7 +1357,7 @@ Be sure to click the Save button at the end of this section if you change these 
 <div class="content">
 <img src="_images/UserGuide/RV-1_15-FIG-020b_Edit_HTTP_Integration.png" alt="image" width="300">
 </div>
-<div class="title">Figure 13. Adding an HTTP Integration</div>
+<div class="title">Figure 15. Adding an HTTP Integration</div>
 </div>
 <div class="ulist">
 <ul>
@@ -1465,7 +1542,7 @@ Detector Configuration section after making changes.</p>
 <div class="content">
 <img src="_images/UserGuide/RV-1_15-FIG-207_Raytec_LEDs.png" alt="image" width="800">
 </div>
-<div class="title">Figure 14. Raytec LED Illuminators</div>
+<div class="title">Figure 16. Raytec LED Illuminators</div>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -1571,7 +1648,7 @@ Detector Configuration section after making changes.</p>
 <div class="content">
 <img src="_images/UserGuide/image16.png" alt="image" width="528" height="158">
 </div>
-<div class="title">Figure 15. Offline Queue Section</div>
+<div class="title">Figure 17. Offline Queue Section</div>
 </div>
 <div class="paragraph">
 <p>These parameters are currently used to configure offline Event storage for HTTP Integration (see <a href="#s_HTTP-Integration">Section 11.5</a>)</p>
@@ -1606,7 +1683,7 @@ Detector Configuration section after making changes.</p>
 <div class="content">
 <img src="_images/UserGuide/image17.png" alt="image" width="493" height="152">
 </div>
-<div class="title">Figure 16. Monitoring Section</div>
+<div class="title">Figure 18. Monitoring Section</div>
 </div>
 <div class="paragraph">
 <p>When Monitoring Integration (IZMonitoring Server Integration) is enabled, the following parameters appear:</p>
@@ -1640,7 +1717,7 @@ Detector Configuration section after making changes.</p>
 <div class="content">
 <img src="_images/UserGuide/RV-1_15-FIG-206_ZAP_Integration.png" alt="image" width="393">
 </div>
-<div class="title">Figure 17. ZAP Integration Section</div>
+<div class="title">Figure 19. ZAP Integration Section</div>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -1940,7 +2017,7 @@ the trigger timestamp?}</em></strong> Send all LPR and OV images</p>
 <div class="content">
 <img src="_images/UserGuide/image19.png" alt="image" width="287" height="43">
 </div>
-<div class="title">Figure 18. Direct Trigger Section</div>
+<div class="title">Figure 20. Direct Trigger Section</div>
 </div>
 <div class="paragraph">
 <p>The Direct Trigger settings are used in these operational modes: Triggered, Hybrid or NonTriggered With Trigger (see <a href="#s_Trigger-Sources-and-Trigger-Modes-Overview">Section 10</a>).</p>
@@ -1952,7 +2029,7 @@ the trigger timestamp?}</em></strong> Send all LPR and OV images</p>
 <p>A loop controller can provide trigger information to RoadView. You can connect dry or wet contacts to the Camera System&#8217;s trigger inputs. The rise and fall of the voltage levels at these inputs sends a trigger to RoadView (see <a href="#s_Trigger-Sources-and-Trigger-Modes-Overview">Section 10</a>).</p>
 </div>
 <div class="paragraph">
-<p>The "trigger time" used can be influenced by using the rising edge or falling edge of the pulse at the inputs to the Camera System. The Direct trigger mode options are (see <a href="#f_Trigger-Sources-and-Sequence">Figure 4</a>):</p>
+<p>The "trigger time" used can be influenced by using the rising edge or falling edge of the pulse at the inputs to the Camera System. The Direct trigger mode options are (see <a href="#f_Trigger-Sources-and-Sequence">Figure 6</a>):</p>
 </div>
 <div class="ulist">
 <ul>
@@ -1977,7 +2054,7 @@ the trigger timestamp?}</em></strong> Send all LPR and OV images</p>
 <div class="content">
 <img src="_images/UserGuide/image20.png" alt="image" width="363" height="107">
 </div>
-<div class="title">Figure 19. INEX I/O Controller Section</div>
+<div class="title">Figure 21. INEX I/O Controller Section</div>
 </div>
 <div class="paragraph">
 <p>The INEX I/O Controller settings are used in Triggered types of operational modes (for example Triggered, Hybrid or NonTriggered With Trigger). See <a href="#s_Trigger-Sources-and-Trigger-Modes-Overview">Section 10</a>.</p>
@@ -2016,7 +2093,7 @@ the trigger timestamp?}</em></strong> Send all LPR and OV images</p>
 <p><strong>Input</strong> - The input channel on the IZIO to be polled/sampled</p>
 </li>
 <li>
-<p><strong>Trigger mode</strong> - The "trigger time" used can be influenced by using the rising edge or falling edge of the pulse at the IO input of the IZIO/ADAM. The options are (see <a href="#f_Trigger-Sources-and-Sequence">Figure 4</a>):</p>
+<p><strong>Trigger mode</strong> - The "trigger time" used can be influenced by using the rising edge or falling edge of the pulse at the IO input of the IZIO/ADAM. The options are (see <a href="#f_Trigger-Sources-and-Sequence">Figure 6</a>):</p>
 <div class="ulist">
 <ul>
 <li>
@@ -2046,7 +2123,7 @@ the trigger timestamp?}</em></strong> Send all LPR and OV images</p>
 <div class="content">
 <img src="_images/UserGuide/image21.png" alt="image" width="458" height="129">
 </div>
-<div class="title">Figure 20. Journal Section</div>
+<div class="title">Figure 22. Journal Section</div>
 </div>
 <div class="paragraph">
 <p>The Journal (Local Storage) parameters determine if and how Events are stored on the local RoadView computer disk (the parameters only appear if the disk is in use).</p>
@@ -2064,24 +2141,56 @@ the trigger timestamp?}</em></strong> Send all LPR and OV images</p>
 </li>
 </ul>
 </div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p><strong><em>\{Max: Please explain again:}</em></strong>
+Journal setting can support up to 100k events -
+default is 10,000.</p>
+</div>
+<div class="paragraph">
+<p><strong><em>\{Max - please explain - why is the number
+of events per page the symptom?}</em></strong> If there is not enough free disk space to acccomodate
+the amount events requested, the system will
+delete old events and store new ones only.
+Symptom is the max event shown on upper right
+of search page in controls setting how many
+events per page to show. (see <a href="#s_Search-Tab-Page-Controls">Section 13.1</a>)</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
 </div>
 <div class="sect2">
 <h3 id="s_Events-Post-Processing"><a class="anchor" href="#s_Events-Post-Processing"></a>11.20. Events Post Processing</h3>
 <div class="sect3">
-<h4 id="s_Events-Post-Processing-Section-Combine-Enabled"><a class="anchor" href="#s_Events-Post-Processing-Section-Combine-Enabled"></a>11.20.1. Combine Enabled</h4>
+<h4 id="s_Events-Post-Processing-Section-Skip-Empty-Events"><a class="anchor" href="#s_Events-Post-Processing-Section-Skip-Empty-Events"></a>11.20.1. Skip Empty Events</h4>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Skip Empty Events</strong> - (see <a href="#f_Events-Post-Processing-Section-Combine-Enabled">Figure 23</a>) When an Event does not include a plate recognition,
+it is ignored. <strong><em>\{Max: I have a note that "Skip Event" was added - did you mean
+this Skip Empty Events parameter?}</em></strong></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="s_Events-Post-Processing-Section-Combine-Enabled"><a class="anchor" href="#s_Events-Post-Processing-Section-Combine-Enabled"></a>11.20.2. Combine Enabled</h4>
 <div id="f_Events-Post-Processing-Section-Combine-Enabled" class="imageblock">
 <div class="content">
 <img src="_images/UserGuide/RV-1_15-FIG-208_Events_Post_Combine.png" alt="image" width="480" height="160">
 </div>
-<div class="title">Figure 21. Events Post-Processing Section - Combine Enabled</div>
+<div class="title">Figure 23. Events Post-Processing Section - Combine Enabled</div>
 </div>
 <div class="ulist">
 <ul>
-<li>
-<p><strong>Skip Empty Events</strong> - When an Event does not include a plate recognition,
-it is ignored. <strong><em>\{Max: I have a note that "Skip Event" was added - did you mean
-this Skip Empty Events parameter?}</em></strong></p>
-</li>
 <li>
 <p><strong>Combine Enabled</strong> - used for combining Events with the same or similar recognition</p>
 <div class="ulist">
@@ -2111,12 +2220,12 @@ virtual line 750 pixels from the top of the image.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="s_Events-Post-Processing-Section-SkipByDistance-Enabled"><a class="anchor" href="#s_Events-Post-Processing-Section-SkipByDistance-Enabled"></a>11.20.2. Skip By Distance Enabled</h4>
+<h4 id="s_Events-Post-Processing-Section-SkipByDistance-Enabled"><a class="anchor" href="#s_Events-Post-Processing-Section-SkipByDistance-Enabled"></a>11.20.3. Skip By Distance Enabled</h4>
 <div id="f_Events-Post-Processing-Section-SkipByDistance-Enabled" class="imageblock">
 <div class="content">
 <img src="_images/UserGuide/RV-1_15-FIG-209_Events_Post_Skip.png" alt="image" width="480" height="160">
 </div>
-<div class="title">Figure 22. Events Post-Processing Section - Skip By Distance Enabled</div>
+<div class="title">Figure 24. Events Post-Processing Section - Skip By Distance Enabled</div>
 </div>
 <div class="ulist">
 <ul>
@@ -2151,7 +2260,7 @@ of Levenshtein distance.)</p>
 <div class="content">
 <img src="_images/UserGuide/image23.png" alt="image" width="477" height="85">
 </div>
-<div class="title">Figure 23. Trigger Offset Section</div>
+<div class="title">Figure 25. Trigger Offset Section</div>
 </div>
 <div class="paragraph">
 <p>The Trigger Offset affects all triggers (in all modes - see <a href="#s_Trigger-Sources-and-Trigger-Modes-Overview">Section 10</a>).</p>
@@ -2167,20 +2276,16 @@ of Levenshtein distance.)</p>
 </ul>
 </div>
 <div class="paragraph">
-<p>The trigger command may arrive at a different time than actual trigger&#8217;s (physical) arrival time (see <a href="#f_Trigger-Sources-and-Sequence">Figure 4</a>). For example, there is often a delay between the time a vehicle passes over an inductive loop, and the time the loop controller generates a pulse. This latency can be compensated for by an "offset".</p>
+<p>The trigger command may arrive at a different time than actual trigger&#8217;s (physical) arrival time (see <a href="#f_Trigger-Sources-and-Sequence">Figure 6</a>). For example, there is often a delay between the time a vehicle passes over an inductive loop, and the time the loop controller generates a pulse. This latency can be compensated for by an "offset".</p>
 </div>
 </div>
 <div class="sect2">
 <h3 id="s_Detector-Configuration"><a class="anchor" href="#s_Detector-Configuration"></a>11.22. Detector Configuration</h3>
-<div class="paragraph">
-<p><strong><em>\{Max/Zvulun: has new parameters and labels; check
-each box and see what additional parameters show up}</em></strong></p>
-</div>
 <div id="f_Detector-Configuration-Section" class="imageblock">
 <div class="content">
-<img src="_images/UserGuide/image24.png" alt="image" width="433" height="472">
+<img src="_images/UserGuide/RV-1_15-FIG-212_NewDetectorConfig.png" alt="image" width="433" height="472">
 </div>
-<div class="title">Figure 24. Detector Configuration Section</div>
+<div class="title">Figure 26. Detector Configuration Section</div>
 </div>
 <div class="paragraph">
 <p>Plate recognition is done in 3 stages:</p>
@@ -2253,14 +2358,14 @@ For faster traffic, you will only be able to set it to a small number of reads.<
 </li>
 <li>
 <p><strong>Wait before event emit, ms</strong> - (affects results in NonTriggered or Hybrid modes)<br>
-The minimum time from the first plate read until the time the Event will be built (emitted) - which can result in a greater number of frames used than the "Min plate read count" parameter. You may want to get LPR results with better confidence by increasing this number. RoadView will wait for more correct reads before the Event is built (see <a href="#f_Illustration-of-Wait-Before-Event-Emit">Figure 25</a>).<br>
+The minimum time from the first plate read until the time the Event will be built (emitted) - which can result in a greater number of frames used than the "Min plate read count" parameter. You may want to get LPR results with better confidence by increasing this number. RoadView will wait for more correct reads before the Event is built (see <a href="#f_Illustration-of-Wait-Before-Event-Emit">Figure 27</a>).<br>
 As a vehicle approaches a camera, waiting longer will usually (depending on road geometry) result in images of the plate getting larger and easier to read accurately.<br>
 Note that in hybrid mode, it is recommended to set this parameter greater than 0. Setting this parameter to 0 will result in lower read confidence, since the trigger and the first read will occur close together.</p>
 <div id="f_Illustration-of-Wait-Before-Event-Emit" class="imageblock">
 <div class="content">
 <img src="_images/UserGuide/image25.png" alt="image" width="504" height="186">
 </div>
-<div class="title">Figure 25. Illustration of Wait Before Event Emit</div>
+<div class="title">Figure 27. Illustration of Wait Before Event Emit</div>
 </div>
 </li>
 <li>
@@ -2270,20 +2375,33 @@ If the size of this "hole" is large, then the vehicle has probably disappeared b
 <div class="content">
 <img src="_images/UserGuide/image26.png" alt="image" width="507" height="97">
 </div>
-<div class="title">Figure 26. Illustration of LP Forget Interval</div>
+<div class="title">Figure 28. Illustration of LP Forget Interval</div>
 </div>
 </li>
 <li>
 <p><strong>Max Levenshtein distance</strong> - Different reads of the same plate may not be identical due to shadows, sunlight, blurred images, etc. However, we want to minimize these effects by treating slightly different reads as the same result. We allow a maximum "distance" (number of changes required to match two strings) between plate reads in an Event. If the distance is less than or equal to this parameter, then the comparison is considered to be a valid match for the Event.</p>
 </li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong><em>\{Max: please recheck these - the names have changed}</em></strong></p>
+</div>
+<div class="ulist">
+<ul>
 <li>
-<p><strong>JPEG frame quality, 0-100 (0=no frame sent)</strong> - The Overview image JPEG frame quality used to send images to IZCentral or a 3rd party system<strong><em>.</em></strong></p>
+<p><strong>LPR JPEG quality, 0-100 (0=no frame sent)</strong> - The LPR image JPEG frame quality used to send images to IZCentral or a 3rd party system<strong><em>.</em></strong></p>
 </li>
 <li>
-<p><strong>JPEG plate quality, 0-100 (0=no frame sent)</strong> - The LPR image JPEG frame quality used to send images to IZCentral or a 3rd party system<strong><em>.</em></strong></p>
+<p><strong>OV JPEG quality, 0-100 (0=no frame sent)</strong> - The Overview image JPEG frame quality used to send images to IZCentral or a 3rd party system<strong><em>.</em></strong></p>
+</li>
+<li>
+<p><strong>Plate JPEG quality, 0-100 (0=no frame sent)</strong> - The plate patch image JPEG frame quality used to send images to IZCentral or a 3rd party system<strong><em>.</em></strong></p>
 </li>
 <li>
 <p><strong>Include all images (for "Triggered" and "NonTriggered With Trigger" modes only)</strong> - Enables display in Live tab, and sending of <u>all</u> images (including pre- and post-trigger frames) - not only the "best" ones that were used for plate recognition</p>
+</li>
+<li>
+<p><strong>Include all LPR results</strong> - <strong><em>\{Max: what is this?}</em></strong></p>
 </li>
 <li>
 <p><strong>Image Resize</strong> - when enabled, and the Event confidence is equal or higher than the Resize Confidence parameter, then each LPR and OV image is resized according to the Image Width (and the height is resized proportionally).</p>
@@ -2351,21 +2469,21 @@ If the size of this "hole" is large, then the vehicle has probably disappeared b
 <p><strong>LPR Stub</strong> - for example, "NOREAD"</p>
 </li>
 <li>
-<p>LPR Stub Confidence - for example, 0</p>
+<p><strong>LPR Stub Confidence</strong> - for example, 0</p>
 </li>
 </ul>
 </div>
 </li>
 <li>
-<p><strong>Hybrid Pre Time (for Hybrid mode only)</strong> - Time in milliseconds before the trigger to search for the closest Event to the trigger (see <a href="#f_Illustration-of-Hybrid-Pre-Post-Time">Figure 27</a>)</p>
+<p><strong>Hybrid Pre Time (for Hybrid mode only)</strong> - Time in milliseconds before the trigger to search for the closest Event to the trigger (see <a href="#f_Illustration-of-Hybrid-Pre-Post-Time">Figure 29</a>)</p>
 </li>
 <li>
-<p><strong>Hybrid Post Time (for Hybrid mode only)</strong> - Time in milliseconds after the trigger to search for the closest Event to the trigger (see <a href="#f_Illustration-of-Hybrid-Pre-Post-Time">Figure 27</a>)</p>
+<p><strong>Hybrid Post Time (for Hybrid mode only)</strong> - Time in milliseconds after the trigger to search for the closest Event to the trigger (see <a href="#f_Illustration-of-Hybrid-Pre-Post-Time">Figure 29</a>)</p>
 <div id="f_Illustration-of-Hybrid-Pre-Post-Time" class="imageblock">
 <div class="content">
 <img src="_images/UserGuide/image27.png" alt="image" width="624" height="170">
 </div>
-<div class="title">Figure 27. Illustration of Hybrid Pre/Post Time</div>
+<div class="title">Figure 29. Illustration of Hybrid Pre/Post Time</div>
 </div>
 <div class="ulist">
 <ul>
@@ -2393,7 +2511,7 @@ If the size of this "hole" is large, then the vehicle has probably disappeared b
 <div class="content">
 <img src="_images/UserGuide/image28.png" alt="image" width="617" height="87">
 </div>
-<div class="title">Figure 28. Lanes Section</div>
+<div class="title">Figure 30. Lanes Section</div>
 </div>
 <div class="ulist">
 <ul>
@@ -2433,7 +2551,7 @@ If the size of this "hole" is large, then the vehicle has probably disappeared b
 <div class="content">
 <img src="_images/UserGuide/image29.png" alt="image" width="265" height="151">
 </div>
-<div class="title">Figure 29. Add/Edit Lane Dialog</div>
+<div class="title">Figure 31. Add/Edit Lane Dialog</div>
 </div>
 </li>
 </ul>
@@ -2522,7 +2640,7 @@ be automatically assigned the word "Lane" plus the Lane ID.</p>
 <div class="content">
 <img src="_images/UserGuide/image30.png" alt="image" width="695" height="112">
 </div>
-<div class="title">Figure 30. Cameras Section</div>
+<div class="title">Figure 32. Cameras Section</div>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -2545,7 +2663,7 @@ be automatically assigned the word "Lane" plus the Lane ID.</p>
 <div class="ulist">
 <ul>
 <li>
-<p><u>Edit</u> - edit the camera&#8217;s parameters (see <a href="#f_Add-Edit-Camera-Dialog">Figure 31</a>)</p>
+<p><u>Edit</u> - edit the camera&#8217;s parameters (see <a href="#f_Add-Edit-Camera-Dialog">Figure 33</a>)</p>
 </li>
 <li>
 <p><u>Delete</u> - delete the camera (a warning will be displayed)</p>
@@ -2581,7 +2699,7 @@ be automatically assigned the word "Lane" plus the Lane ID.</p>
 <div class="content">
 <img src="_images/UserGuide/image31.png" alt="image" width="230" height="272">
 </div>
-<div class="title">Figure 31. Add/Edit Camera Dialog</div>
+<div class="title">Figure 33. Add/Edit Camera Dialog</div>
 </div>
 <div class="ulist">
 <ul>
@@ -2624,7 +2742,7 @@ rtsp://&lt;camera IP address&gt;/cam0_0</p>
 </li>
 <li>
 <p>HTTP URL example:<br>
-http:// &lt;camera IP address&gt;</p>
+<a href="http://&lt;camera" class="bare">http://&lt;camera</a> IP address&gt;</p>
 </li>
 </ul>
 </div>
@@ -2638,10 +2756,10 @@ details?}</em></strong>
 camera images are also saved with the Event}</em></strong></p>
 </li>
 <li>
-<p><strong>Trigger Pre</strong> (used in Triggered mode types only) - Number of frames to be included in the set of frames used to build an Event - <u>before</u> the trigger occurs (see <a href="#f_Trigger-Sources-and-Sequence">Figure 4</a>).</p>
+<p><strong>Trigger Pre</strong> (used in Triggered mode types only) - Number of frames to be included in the set of frames used to build an Event - <u>before</u> the trigger occurs (see <a href="#f_Trigger-Sources-and-Sequence">Figure 6</a>).</p>
 </li>
 <li>
-<p><strong>Trigger Post</strong> (used in Triggered mode types only) - Number of frames to be included in the set of frames used to build an Event - <u>after</u> the trigger occurs (see <a href="#f_Trigger-Sources-and-Sequence">Figure 4</a>)</p>
+<p><strong>Trigger Post</strong> (used in Triggered mode types only) - Number of frames to be included in the set of frames used to build an Event - <u>after</u> the trigger occurs (see <a href="#f_Trigger-Sources-and-Sequence">Figure 6</a>)</p>
 </li>
 </ul>
 </div>
@@ -2661,7 +2779,7 @@ camera images are also saved with the Event}</em></strong></p>
 <div class="content">
 <img src="_images/UserGuide/RV-1_15-FIG-210_NewLiveTab.png" alt="image" width="554" height="243">
 </div>
-<div class="title">Figure 32. Live (Journal) Tab with Row Selected</div>
+<div class="title">Figure 34. Live (Journal) Tab with Row Selected</div>
 </div>
 <div class="paragraph">
 <p>The Live tab displays Events and other data about each Event.</p>
@@ -2721,9 +2839,9 @@ camera images are also saved with the Event}</em></strong></p>
 <p>Select "Configure Journal"</p>
 <div id="f_Configure-Journal-Multi-line-Menu" class="imageblock">
 <div class="content">
-<img src="_images/UserGuide/image33.png" alt="image" width="136" height="113">
+<img src="_images/UserGuide/RV-1_15-FIG-021a_ConfigureJournal.png" alt="image" width="136" height="113">
 </div>
-<div class="title">Figure 33. Configure Journal (Multi-line Menu)</div>
+<div class="title">Figure 35. Configure Journal (Multi-line Menu)</div>
 </div>
 </li>
 <li>
@@ -2740,13 +2858,22 @@ camera images are also saved with the Event}</em></strong></p>
 <div class="ulist">
 <ul>
 <li>
-<p>Pause the grid display by clicking on a row, or by using the pause button in the middle of the controls under the large image (). You can also click on the large image to toggle between Pause and Run mode. This is useful if you want to examine a specific Event.</p>
+<p>Pause the grid display by clicking on a row,
+or by using the pause button in the middle of
+the controls under the large image
+(<span class="image"><img src="_images/UserGuide/RV-Pause-Button.png" alt="image" width="10)"></span>).
+You can also click on the large image to toggle between Pause and Run mode. This is useful if you want to examine a specific Event.</p>
 </li>
 <li>
-<p>You can also use these controls to move through the grid (next/previous Event, or start/end of Events).</p>
+<p>You can also use these controls to move
+through the grid (next/previous Event, or
+start/end of Events).</p>
 </li>
 <li>
-<p>Start the display running in real-time again using the Run button () or by clicking on the large image. This will refresh the display, and resume displaying Events, starting from the 20 most recent Events.</p>
+<p>Start the display running in real-time again
+using the Run button
+(<span class="image"><img src="_images/UserGuide/RV-Run-Button.png" alt="image" width="20"></span>)
+or by clicking on the large image. This will refresh the display, and resume displaying Events, starting from the 20 most recent Events.</p>
 <div class="admonitionblock note">
 <table>
 <tr>
@@ -2758,7 +2885,11 @@ camera images are also saved with the Event}</em></strong></p>
 <p>RoadView is continually recording and saving (Journal) Events. The Events are added to the Live display (Running mode operation) until the display is paused. Even when you pause the Live display, RoadView continues to record Events - and can display up to a maximum of 20 recent Events.</p>
 </div>
 <div class="paragraph">
-<p>As you Pause/Run the Live grid, you may see momentary icons ( or ) appearing in the middle of the large image pane to indicate the mode.</p>
+<p>As you Pause/Run the Live grid,
+you may see momentary icons
+( <span class="image"><img src="_images/UserGuide/RV-Pause-Button.png" alt="image" width="10)"></span>
+<span class="image"><img src="_images/UserGuide/RV-Run-Button.png" alt="image" width="20"></span>) appearing in the middle of the
+large image pane to indicate the mode.</p>
 </div>
 </td>
 </tr>
@@ -2779,7 +2910,10 @@ camera images are also saved with the Event}</em></strong></p>
 <div class="ulist">
 <ul>
 <li>
-<p>The thumbnail images below the larger image pane display the overview and plate patch images from each camera. Click on one of the thumbnail images to display it in the larger image pane.</p>
+<p>The thumbnail images below the
+larger image pane display the overview, LPR
+and plate patch images from each camera.
+<strong><em>\{Max: which plate image is from which camera?}</em></strong></p>
 <div class="admonitionblock note">
 <table>
 <tr>
@@ -2788,7 +2922,13 @@ camera images are also saved with the Event}</em></strong></p>
 </td>
 <td class="content">
 <div class="paragraph">
-<p>If both cameras in a Camera System were set to view the same lane, but one of the cameras (usually the color Overview camera) failed to capture the license plate properly, you will only see 3 thumbnails instead of 4.</p>
+<p>If both cameras in a Camera System were set
+to view the same lane, but one of the
+cameras (usually the color Overview camera)
+failed to capture the license plate properly,
+you will see 3 thumbnails instead of 4.
+<strong><em>\{Max: or should we say only the LPR
+thumbnails - and only the LPR&#8217;s plate image?}</em></strong></p>
 </div>
 <div class="paragraph">
 <p>If you are using a camera with one sensor (such as the IZ600F), you will see 2 thumbnails - one for the LPR/OV image, and one for the plate patch.</p>
@@ -2796,6 +2936,27 @@ camera images are also saved with the Event}</em></strong></p>
 </td>
 </tr>
 </table>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>(For triggered modes) Images with a blue
+border are pre-trigger frames (see <a href="#f_Add-Edit-Camera-Dialog">Figure 33</a>)</p>
+</li>
+<li>
+<p>(For triggered modes) Images with an orange
+border are post-trigger frames (see <a href="#f_Add-Edit-Camera-Dialog">Figure 33</a>)</p>
+</li>
+<li>
+<p>Hover over a thumbnail to display date/time
+information for each camera or confidence
+for the plate patch images.</p>
+</li>
+<li>
+<p>Click on a thumbnail to display
+it in the larger image pane.</p>
+</li>
+</ul>
 </div>
 </li>
 <li>
@@ -2834,7 +2995,7 @@ camera images are also saved with the Event}</em></strong></p>
 <div class="content">
 <img src="_images/UserGuide/RV-1_15-FIG-211_NewSearchTab.png" alt="image" width="645" height="307">
 </div>
-<div class="title">Figure 34. Search Tab</div>
+<div class="title">Figure 36. Search Tab</div>
 </div>
 <div class="paragraph">
 <p>The Search tab enables you to search for Event records stored in the RoadView database.</p>
@@ -2856,13 +3017,14 @@ camera images are also saved with the Event}</em></strong></p>
 <div class="sect2">
 <h3 id="s_Search-Tab-Page-Controls"><a class="anchor" href="#s_Search-Tab-Page-Controls"></a>13.1. Search Tab: Page Controls</h3>
 <div class="paragraph">
-<p>Page controls are located at the upper right of the records grid:</p>
+<p>Page controls are located at the upper right
+of the records grid:</p>
 </div>
 <div id="f_Search-Tab-Page-Controls" class="imageblock">
 <div class="content">
 <img src="_images/UserGuide/image35.png" alt="image" width="424" height="193">
 </div>
-<div class="title">Figure 35. Search Tab: Page Controls</div>
+<div class="title">Figure 37. Search Tab: Page Controls</div>
 </div>
 <div class="paragraph">
 <p><div class="pagebreak"> </div></p>
@@ -2896,12 +3058,12 @@ camera images are also saved with the Event}</em></strong></p>
 <p><strong>Lane Name</strong> - Select All, or a specific lane</p>
 </li>
 <li>
-<p><strong>Time</strong> - Click in the filter box to display a date/time selection popup. Uncheck the check box to clear the filter (see <a href="#f_Search-Tab-Time-Filter-Selection-Popup">Figure 36</a>).</p>
+<p><strong>Time</strong> - Click in the filter box to display a date/time selection popup. Uncheck the check box to clear the filter (see <a href="#f_Search-Tab-Time-Filter-Selection-Popup">Figure 38</a>).</p>
 <div id="f_Search-Tab-Time-Filter-Selection-Popup" class="imageblock">
 <div class="content">
 <img src="_images/UserGuide/image36.png" alt="image" width="317" height="308">
 </div>
-<div class="title">Figure 36. Search Tab: Time Filter Selection Popup</div>
+<div class="title">Figure 38. Search Tab: Time Filter Selection Popup</div>
 </div>
 <div class="ulist">
 <ul>
@@ -2970,7 +3132,7 @@ you must enable its display on the System Info tab (see <a href="#s_System-Info-
 <div class="content">
 <img src="_images/UserGuide/image37.png" alt="image" width="624" height="313">
 </div>
-<div class="title">Figure 37. Calibration Tab</div>
+<div class="title">Figure 39. Calibration Tab</div>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
@@ -2990,7 +3152,7 @@ you must enable its display on the System Info tab (see <a href="#s_System-Info-
 <p>The Frame Timestamp at the lower left displays the date and time that the image is being taken/was taken by the camera.</p>
 </li>
 <li>
-<p>Aim the camera using the mounting bracket&#8217;s adjustment hardware (see <a href="#f_Pan-Tilt-Roll-Angle-Adjustments">Figure 38</a>).</p>
+<p>Aim the camera using the mounting bracket&#8217;s adjustment hardware (see <a href="#f_Pan-Tilt-Roll-Angle-Adjustments">Figure 40</a>).</p>
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
@@ -3005,7 +3167,7 @@ you must enable its display on the System Info tab (see <a href="#s_System-Info-
 <div class="content">
 <img src="../_images/RoadViewALPR/PanTiltRoll.png" alt="image" width="311" height="186">
 </div>
-<div class="title">Figure 38. Pan/Tilt/Roll (Angle) Adjustments</div>
+<div class="title">Figure 40. Pan/Tilt/Roll (Angle) Adjustments</div>
 </div>
 </li>
 </ol>
@@ -3062,7 +3224,13 @@ This parameter can be used to prevent false reads, such as large numbers on truc
 </div>
 </li>
 <li>
-<p><strong>Direction (red arrow on video):</strong> drag the head of the arrow around to point to the angle at which you expect vehicles to be moving<strong>.</strong> (The vehicle&#8217;s direction is also sent to the IZCloud as part of an Event.) You can add a Direction column to the Live tab using the multi-line menu at the upper right of the screen (see <a href="#s_Live-Journal-Tab">Section 12</a>).<br>
+<p><strong>Direction (red arrow on video):</strong> <strong><em>\{Max:
+I have a note for future use that says as follows;
+has this been implemented yet?:
+TEXT FOR FUTURE: This Direction is used in
+NonTriggered mode to provide more accurate
+video-based triggering.}</em></strong> drag the head of the arrow around to point to the angle at which you expect vehicles to be moving<strong>.</strong>
+(The vehicle&#8217;s direction is also sent to the IZCloud as part of an Event.) You can add a Direction column to the Live tab using the multi-line menu at the upper right of the screen (see <a href="#s_Live-Journal-Tab">Section 12</a>).<br>
 You can set the "Ignore Opposite Direction" parameter in the Lanes section to ignore all Events for vehicles moving in the direction opposite to the direction arrow in the Calibration tab (see <a href="#s_Lanes">Section 11.23</a>).</p>
 </li>
 <li>
@@ -3088,7 +3256,7 @@ You can set the "Ignore Opposite Direction" parameter in the Lanes section to ig
 <div class="content">
 <img src="_images/UserGuide/RV-1_15-FIG-034d_SystemInfo.png" alt="image" width="400">
 </div>
-<div class="title">Figure 39. System Info Tab</div>
+<div class="title">Figure 41. System Info Tab</div>
 </div>
 <div class="admonitionblock note">
 <table>
