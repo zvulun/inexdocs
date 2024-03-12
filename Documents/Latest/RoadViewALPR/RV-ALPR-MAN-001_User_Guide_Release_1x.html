@@ -1761,27 +1761,31 @@ in the RV system status page?}</em></strong></p>
 </li>
 <li>
 <p><u>Enable Auto Self-Triggering</u> -
-(Requires <strong><em>\{Max: is this offline in the ZAP section, or
-the offline queue settings section?}</em></strong> Offline to be enabled)<br>
-If enabled, RoadView will switch to Non-triggered mode if
-communication with ZAP is lost.
+(Requires Offline to be Enabled in the ZAP section)</p>
+<div class="paragraph">
+<p>If enabled, RoadView will switch to
+Non-triggered mode if a GetStatus message not received
+from the ZAP client or server.
 This enables some record/images of the Event to be saved
 even though triggers can&#8217;t be sent.
 After RoadView re-connects to ZAP,
 RoadView attempts to send all Events that were
 created offline back to ZAP.</p>
+</div>
 </li>
 <li>
 <p><u>Auto Self-Triggering Timeout</u> -
-How long (in ms) to wait (after the connection was lost
-with ZAP) before switching to
+How long (in ms) to wait (after the GetStatus message was
+not received from the ZAP client or server before switching to
 Self-Triggering mode</p>
 </li>
 </ul>
 </div>
 </li>
 <li>
-<p><strong>ZAP Version</strong> - ZAP communication protocol version. It is recommended to use version 4.4. The connected clients must use the same version.</p>
+<p><strong>ZAP Version</strong> - ZAP
+communication protocol version. It is recommended to use
+the latest version. The connected clients must use the same version.</p>
 </li>
 <li>
 <p><strong>Confidence Filter</strong> - the confidence level below which Events are not sent</p>
@@ -1833,6 +1837,15 @@ only send one of them <strong><em>\{Max: images?}</em></strong> to ZAP.</p>
 <p><strong>ZAP Client</strong> - Check the box to have RoadView act as a ZAP Client, which will connect to a ZAP Server (see the ZAP Protocol document for details).<br>
 <br>
 If you want RoadView to work with IZCentral, RoadView can only be working as a ZAP Client. In this mode, the RoadView ZAP Client port must match the IZCentral ZAP port (see the IZCentral documentation - see <a href="#s_Related-Documents">Section 1</a>)</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong><em>\{Max: other than the IP, can we simply use
+most of the same field explanations as
+as in the ZAP Server - but some are different
+for the client?}</em></strong></p>
+</div>
 <div class="ulist">
 <ul>
 <li>
@@ -1855,12 +1868,13 @@ If you want RoadView to work with IZCentral, RoadView can only be working as a Z
 </li>
 <li>
 <p><strong>FTP Enabled (for ZAP Client) -</strong> when RoadView is connected to a ZAP server, images can be sent to the server via FTP if this checkbox is checked. (See the FTP Server items for the definition of the additional FTP parameters.)</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Remember to click the Save button under the Detection Configuration section after changing these parameters.</strong></p>
 </li>
 </ul>
 </div>
-</li>
-<li>
-<p><strong>Remember to click the Save button under the Detection Configuration section after changing these parameters.</strong></p>
 </li>
 </ul>
 </div>
@@ -1873,7 +1887,8 @@ If you want RoadView to work with IZCentral, RoadView can only be working as a Z
 <div class="paragraph">
 <p>When an Event is generated in
 triggered or non-triggered mWodes, the system
-sends a set of images for that Event. The images sent
+sends a set of images for that Event. <strong><em>\{Max:
+how is this done per protocol - is this correct?}</em></strong> The images sent
 can be configured per protocol (such as ZAP and/or HTTP).</p>
 </div>
 <div class="paragraph">
@@ -2557,13 +2572,6 @@ If the size of this "hole" is large, then the vehicle has probably disappeared b
 </ul>
 </div>
 </li>
-</ul>
-</div>
-<div class="paragraph">
-<p><strong><em>\{Zvulun: need new screen shot - Now has Passageway: Unknown, Entry Exit}</em></strong></p>
-</div>
-<div class="ulist">
-<ul>
 <li>
 <p><strong>ID</strong> (required) - The identification number of the lane to be captured by the cameras. This number will appear associated with Events in the Live tab (see <a href="#s_Live-Journal-Tab">Section 12</a>).</p>
 </li>
@@ -2694,7 +2702,9 @@ be automatically assigned the word "Lane" plus the Lane ID.</p>
 </div>
 </li>
 <li>
-<p><strong>Add Camera</strong> (button at end of Cameras section):</p>
+<p><strong>Add Camera</strong> (button at end of Cameras section):
+<strong><em>\{Zvulun need to change URL in screen shot to new
+standard for LPR camera}</em></strong></p>
 <div id="f_Add-Edit-Camera-Dialog" class="imageblock">
 <div class="content">
 <img src="_images/UserGuide/image31.png" alt="image" width="230" height="272">
@@ -2742,7 +2752,7 @@ rtsp://&lt;camera IP address&gt;/cam0_0</p>
 </li>
 <li>
 <p>HTTP URL example:<br>
-<a href="http://&lt;camera" class="bare">http://&lt;camera</a> IP address&gt;</p>
+http://&lt;camera IP address&gt;</p>
 </li>
 </ul>
 </div>
@@ -2823,7 +2833,7 @@ camera images are also saved with the Event}</em></strong></p>
 <p><u>Date and time</u> when the Event was recorded</p>
 </li>
 <li>
-<p>License Plate number (LPR)</p>
+<p><u>License Plate number (LPR)</u></p>
 </li>
 <li>
 <p><u>Recognition confidence</u>, expressed as a percentage</p>
