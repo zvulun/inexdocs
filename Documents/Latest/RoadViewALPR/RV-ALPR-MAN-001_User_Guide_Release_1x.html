@@ -1343,7 +1343,8 @@ Be sure to click the Save button at the end of this section if you change these 
 <p>RoadView can send Events to IZCentral or 3<sup>rd</sup> party systems using the INEX HTTP Protocol, INEX ZAP Protocol or other protocols. For details about the INEX HTTP protocol, see the appropriate INEX HTTP API Protocol document - see <a href="#s_Related-Documents">Section 1</a>.</p>
 </div>
 <div class="paragraph">
-<p>RoadView can send Events via HTTP, and act as both a ZAP Server and ZAP Client - all simultaneously.</p>
+<p>RoadView can send Events via HTTP, and act as
+both a ZAP Server and ZAP Client - all simultaneously.</p>
 </div>
 <div class="paragraph">
 <p>If you are using an IZMobileLPI system, contact INEX for details on how to set the HTTP URL parameter.</p>
@@ -1414,22 +1415,6 @@ http://195.163.2.73:5801/api</p>
 </li>
 <li>
 <p><strong>Protocol Version</strong> - The appropriate HTTP API version to use for your application.</p>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>In INEX HTTP API version 1.5, the following items have not been implemented in RoadView:<br>
-camera_id and camera_name in the Upload Event command (images and lpr_results blocks)<br>
-See the HTTP API 1.5 document.</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
 </li>
 <li>
 <p><strong>Separated Images</strong> - If checked, then images are sent in separate messages after the Event message; if unchecked, images and the Event are sent together in the Event message.</p>
@@ -2038,7 +2023,9 @@ OV images are not sent.</p>
 </li>
 <li>
 <p><strong>All OV, all OV ROI, all LPR, all LPR ROI</strong> -
-Send all LPR and OV images, even if there was no plate recognition</p>
+Send all LPR and OV images, even if there was no plate
+recognition - plus all LPR and OV ROIs, if there was
+plate recognition</p>
 </li>
 </ul>
 </div>
@@ -2067,7 +2054,8 @@ timestamp closest to the trigger timestamp</p>
 <p><strong>1 OV, 1 OV ROI, 1 LPR, 1 LPR ROI</strong> - Images are not sent</p>
 </li>
 <li>
-<p><strong>All OV, all OV ROI, all LPR, all LPR ROI</strong> - Send all LPR and all OV images</p>
+<p><strong>All OV, all OV ROI, all LPR, all LPR ROI</strong> - Send all LPR
+and all OV images</p>
 </li>
 </ul>
 </div>
@@ -2086,10 +2074,16 @@ timestamp closest to the trigger timestamp</p>
 <p>The Direct Trigger settings are used in these operational modes: Triggered, Hybrid or NonTriggered With Trigger (see <a href="#s_Trigger-Sources-and-Trigger-Modes-Overview">Section 10</a>).</p>
 </div>
 <div class="paragraph">
-<p>This parameter is used for Camera System models with external trigger input wires, such as the IZA500G. See your Camera System&#8217;s Installation Guide for details.</p>
+<p>This parameter is used for Camera System models
+with external trigger input wires, such as the IZA500G.
+See your Camera System&#8217;s Installation Guide for details.</p>
 </div>
 <div class="paragraph">
-<p>A loop controller can provide trigger information to RoadView. You can connect dry or wet contacts to the Camera System&#8217;s trigger inputs. The rise and fall of the voltage levels at these inputs sends a trigger to RoadView (see <a href="#s_Trigger-Sources-and-Trigger-Modes-Overview">Section 10</a>).</p>
+<p>A loop controller can provide trigger information to RoadView.
+You can connect dry or wet contacts to the Camera System&#8217;s
+trigger inputs. The rise and fall of the voltage levels
+at these inputs sends a trigger to RoadView
+(see <a href="#s_Trigger-Sources-and-Trigger-Modes-Overview">Section 10</a>).</p>
 </div>
 <div class="paragraph">
 <p>The "trigger time" used can be influenced by using the rising edge or falling edge of the pulse at the inputs to the Camera System. The Direct trigger mode options are (see <a href="#f_Trigger-Sources-and-Sequence">Figure 6</a>):</p>
@@ -2190,10 +2184,28 @@ timestamp closest to the trigger timestamp</p>
 <div class="title">Figure 22. Journal Section</div>
 </div>
 <div class="paragraph">
-<p>The Journal (Local Storage) parameters determine if and how Events are stored on the local RoadView computer disk (the parameters only appear if the disk is in use).</p>
+<p>The Journal (Local Storage) parameters determine if and how
+Events are stored on the local RoadView computer disk
+(the parameters only appear if the disk is in use).</p>
 </div>
 <div class="paragraph">
 <p>The Journal data is stored at: /mnt/data/journal</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>If the local RoadView computer disk is not accessible,
+then the Journal will be stored at:<br>
+/home/izuser/jsoft/data/journal</p>
+</div>
+</td>
+</tr>
+</table>
 </div>
 <div class="ulist">
 <ul>
@@ -2306,6 +2318,7 @@ of Levenshtein distance.)</p>
 </li>
 </ul>
 </div>
+<div style="page-break-after: always;"></div>
 </div>
 </div>
 <div class="sect2">
@@ -2736,9 +2749,13 @@ right of the screen (see <a href="#s_Live-Journal-Tab">Section 12</a>).</p>
 </td>
 <td class="content">
 <div class="paragraph">
-<p>If you add a camera, or edit a camera&#8217;s parameters and click the Save button in this dialog (even if you did not change the URL), you may see a warning icon in the Image column. The reappearance of the image indicates that the core software has restarted, and Events will resume being captured and displayed in the Live tab, with the following changes:<br>
-- The Transaction ID will restart at 1 for that camera.<br>
-- The history of previous Events for that camera will be cleared</p>
+<p>If you add a camera, or edit a camera&#8217;s parameters and
+click the Save button in the Camera Add/Edit dialog
+(even if you did not change the URL),
+you may see a warning icon in the Image column.
+The reappearance of the image indicates that the core software
+has restarted, and Events will resume being captured and
+displayed in the Live tab.</p>
 </div>
 </td>
 </tr>
@@ -2866,7 +2883,8 @@ Event - <u>after</u> the trigger occurs
 <p>You should see that Events are being generated for each vehicle passing each camera, with sufficient recognition accuracy and confidence. If not, see <a href="#s_Troubleshooting">Section 17</a> for troubleshooting tips.</p>
 </div>
 <div class="paragraph">
-<p>If you return to the Live tab from another tab, the large picture returns to the LPR (black and white) camera image.</p>
+<p>If you return to the Live tab from another tab, the large
+picture returns to the OV (color) camera image.</p>
 </div>
 <div class="paragraph">
 <p>DOT (USDOT number image capture) cameras generate Events, but without LPR reads.</p>
@@ -2878,11 +2896,16 @@ Event - <u>after</u> the trigger occurs
 <div class="ulist">
 <ul>
 <li>
-<p>Each row includes (additional items can be added from the multi-line menu icon &gt; Configure Journal selection - see <a href="#s_Live-Journal-Tab">Section 12</a>):</p>
+<p>Each row includes (additional items
+can be added from the multi-line menu icon
+&gt; Configure Journal selection -
+see <a href="#s_Live-Journal-Tab">Section 12</a>):</p>
 <div class="ulist">
 <ul>
 <li>
-<p><u>Transaction (Event) ID</u>. Note that each camera has its own Transaction ID sequence, so the same IDs may be used for different cameras.</p>
+<p><u>Transaction (Event) ID</u>. Note that
+each Event has a unique ID, regardless of which camera
+it came from.</p>
 </li>
 <li>
 <p><u>Lane Name</u> - Lane name as configured for the camera(s) viewing this lane in the Settings tab - see <a href="#s_Lanes">Section 11.23</a></p>
@@ -2904,7 +2927,7 @@ Event - <u>after</u> the trigger occurs
 <p>Click on the multi-line menu icon at the upper right of the RoadView screen</p>
 </li>
 <li>
-<p>Select "Configure Journal"</p>
+<p>Select "Configure Journal" (see <a href="#f_Configure-Journal-Multi-line-Menu">Figure 35</a>)</p>
 <div id="f_Configure-Journal-Multi-line-Menu" class="imageblock">
 <div class="content">
 <img src="_images/UserGuide/RV-1_15-FIG-021a_ConfigureJournal.png" alt="image" width="80">
@@ -3597,7 +3620,7 @@ the front window of the camera with a soft cloth and mild soap</p>
 <p></p>
 </div>
 <div class="paragraph">
-<p>Doc. No. RV-ALPR-MAN-001 Ver. 2024-03-16</p>
+<p>Doc. No. RV-ALPR-MAN-001 Ver. 2024-03-18</p>
 </div>
 </div>
 </div>
