@@ -1,5 +1,5 @@
 site:
-  #This comment can be changed,  saved, added, committed and pushed
+  #This comment can be changed, saved, added, committed and pushed
   #to trigger github actions to generate your online site
   title: Documents
   start_page: Documents::index.adoc
@@ -63,10 +63,10 @@ asciidoc:
     #replace strings with attributes, accessed by the
     #zAsciiDocMultipleNameReplace macro
 
-    compname-possess: INEX Technologies'@
-    compname-long: INEX Technologies@
+    compname-possess: Inex Technologies'@
+    compname-long: Inex Technologies@
     compname-med: INEX/TECH@
-    compname-short: INEX@
+    compname-short: Inex@
 
     ip-default-IZA-DPU: 192.168.5.110@
     ip-default-IZA-LPR: 192.168.5.111@
