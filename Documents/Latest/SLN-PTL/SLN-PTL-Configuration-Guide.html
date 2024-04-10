@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>INEX Solution for the Motorola PTL System :: Documents</title>
+    <title>Inex Solution for the Motorola PTL System :: Documents</title>
     <meta name="generator" content="Antora 3.1.3">
 <link rel="stylesheet" href="../../../_/css/site.css">
 <link rel="stylesheet" href="../../../_/css/site-extra.css">
@@ -413,7 +413,7 @@
 <nav class="breadcrumbs" aria-label="breadcrumbs">
   <ul>
     <li><a href="../index.html">Documents</a></li>
-    <li><a href="SLN-PTL-Configuration-Guide.html">INEX Solution for the Motorola PTL System</a></li>
+    <li><a href="SLN-PTL-Configuration-Guide.html">Inex Solution for the Motorola PTL System</a></li>
   </ul>
 </nav>
 </div>
@@ -422,7 +422,7 @@
   <div class="toc-menu"></div>
 </aside>
 <article class="doc">
-<h1 class="page">INEX Solution for the Motorola PTL System</h1>
+<h1 class="page">Inex Solution for the Motorola PTL System</h1>
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
@@ -444,41 +444,45 @@
 <div id="toctitle" class="title">Table of Contents</div>
 <ul class="sectlevel1">
 <li><a href="#_background">1. Background</a></li>
-<li><a href="#_computer_and_software_requirements">2. Computer and Software Requirements</a></li>
-<li><a href="#_use_iz_discovery">3. Use IZ Discovery</a>
+<li><a href="#_configuringcontrolling_parameters_via_the_gui_and_api">2. Configuring/Controlling Parameters via the GUI and API</a></li>
+<li><a href="#_computer_and_software_requirements">3. Computer and Software Requirements</a></li>
+<li><a href="#_use_iz_discovery">4. Use IZ Discovery</a>
 <ul class="sectlevel2">
-<li><a href="#_installing_and_using_iz_discovery">3.1. Installing and Using IZ Discovery</a></li>
-<li><a href="#s_Changing-a-Device-s-IP-Address-and-Network-Settings">3.2. Changing a Device&#8217;s IP Address and Network Settings</a></li>
+<li><a href="#_installing_and_using_iz_discovery">4.1. Installing and Using IZ Discovery</a></li>
+<li><a href="#s_Changing-a-Device-s-IP-Address-and-Network-Settings">4.2. Changing a Device&#8217;s IP Address and Network Settings</a></li>
 </ul>
 </li>
-<li><a href="#_prepare_to_aim_and_calibrate">4. Prepare to Aim and Calibrate</a></li>
-<li><a href="#s_Using-RoadView">5. Log In to RoadView</a>
+<li><a href="#_prepare_to_aim_and_calibrate">5. Prepare to Aim and Calibrate</a></li>
+<li><a href="#s_Using-RoadView">6. Log In to RoadView</a>
 <ul class="sectlevel2">
-<li><a href="#_logging_in">5.1. Logging In</a></li>
-<li><a href="#_logging_out_multi_line_menu_icon">5.2. Logging Out (Multi-line Menu Icon)</a></li>
+<li><a href="#_logging_in">6.1. Logging In</a></li>
+<li><a href="#s_Changing-the-Password">6.2. Changing the Password (Multi-line Menu Icon)</a></li>
+<li><a href="#_logging_out_multi_line_menu_icon">6.3. Logging Out (Multi-line Menu Icon)</a></li>
 </ul>
 </li>
-<li><a href="#s_Configure-RoadView-Settings-Tab">6. Configure RoadView - Settings Tab</a>
+<li><a href="#s_Configure-RoadView-Settings-Tab">7. Configure RoadView - Settings Tab</a>
 <ul class="sectlevel2">
-<li><a href="#s_Software-Version-and-DPU-Information">6.1. Software Version and DPU Information</a></li>
-<li><a href="#s_Network-Settings">6.2. Network Settings</a></li>
-<li><a href="#s_Date-and-Time-Settings">6.3. Date and Time Settings</a></li>
-<li><a href="#s_Lanes">6.4. Lanes</a></li>
-<li><a href="#s_Cameras">6.5. Cameras</a></li>
-<li><a href="#s_Motorola-Integration">6.6. Motorola Integration</a></li>
-<li><a href="#s_Journal">6.7. Journal</a></li>
-<li><a href="#s_Detector-Configuration">6.8. Detector Configuration</a></li>
+<li><a href="#s_Software-Version-and-DPU-Information">7.1. Software Version and DPU Information</a></li>
+<li><a href="#s_Network-Settings">7.2. Network Settings</a></li>
+<li><a href="#s_Date-and-Time-Settings">7.3. Date and Time Settings</a></li>
+<li><a href="#s_Web-Protocols">7.4. Web Protocols</a></li>
+<li><a href="#s_HTTP-Integrations-Security">7.5. HTTP Integrations Security</a></li>
+<li><a href="#s_Lanes">7.6. Lanes</a></li>
+<li><a href="#s_Cameras">7.7. Cameras</a></li>
+<li><a href="#s_Motorola-Integration">7.8. Motorola Integration</a></li>
+<li><a href="#s_Journal">7.9. Journal</a></li>
+<li><a href="#s_Detector-Configuration">7.10. Detector Configuration</a></li>
 </ul>
 </li>
-<li><a href="#_roadview_system_info_tab">7. RoadView - System Info Tab</a></li>
-<li><a href="#s_Calibrating-a-Camera-Using-RoadView">8. Calibrating a Camera Using RoadView</a></li>
-<li><a href="#s_Verify-System-Operation">9. Verify System Operation</a></li>
-<li><a href="#s_Troubleshooting">10. RoadView Troubleshooting</a></li>
-<li><a href="#_legal_notices">11. Legal Notices</a>
+<li><a href="#_roadview_system_info_tab">8. RoadView - System Info Tab</a></li>
+<li><a href="#s_Calibrating-a-Camera-Using-RoadView">9. Calibrating a Camera Using RoadView</a></li>
+<li><a href="#s_Verify-System-Operation">10. Verify System Operation</a></li>
+<li><a href="#s_Troubleshooting">11. RoadView Troubleshooting</a></li>
+<li><a href="#_legal_notices">12. Legal Notices</a>
 <ul class="sectlevel2">
-<li><a href="#_notice">11.1. Notice</a></li>
-<li><a href="#_software_precautions">11.2. Software Precautions</a></li>
-<li><a href="#_legal_disclaimer">11.3. Legal Disclaimer</a></li>
+<li><a href="#_notice">12.1. Notice</a></li>
+<li><a href="#_software_precautions">12.2. Software Precautions</a></li>
+<li><a href="#_legal_disclaimer">12.3. Legal Disclaimer</a></li>
 </ul>
 </li>
 </ul>
@@ -492,13 +496,180 @@
 <h2 id="_background"><a class="anchor" href="#_background"></a>1. Background</h2>
 <div class="sectionbody">
 <div class="paragraph">
+<p>RoadView is advanced ALPR software that reads
+license plates using sophisticated image recognition algorithms,
+and creates LPR Events. RoadView sends LPR Event data
+via HTTP or other protocols to other systems.</p>
+</div>
+<div class="paragraph">
+<p>The PTL system records Events for vehicles
+that commit a traffic violation, which are not on a list of
+authorized vehicles (White List).</p>
+</div>
+<div class="paragraph">
 <p>This document describes how to
-configure the INEX Motorola PTL system.</p>
+configure the Inex Motorola PTL system.</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_computer_and_software_requirements"><a class="anchor" href="#_computer_and_software_requirements"></a>2. Computer and Software Requirements</h2>
+<h2 id="_configuringcontrolling_parameters_via_the_gui_and_api"><a class="anchor" href="#_configuringcontrolling_parameters_via_the_gui_and_api"></a>2. Configuring/Controlling Parameters via the GUI and API</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>RoadView can be configured using both
+a web-based GUI and an API. Some parameters can only be
+configured/controlled
+via the API,  others only via the GUI, and some
+via both (see <a href="#t_GUI-API-Control">Table 1</a>).
+See the  API document for further details.</p>
+</div>
+<table id="t_GUI-API-Control" class="tableblock frame-all grid-all stretch withborders">
+<caption class="title">Table 1. GUI/API Parameter Control</caption>
+<colgroup>
+<col style="width: 15%;">
+<col style="width: 30%;">
+<col style="width: 10%;">
+<col style="width: 10%;">
+<col style="width: 10%;">
+<col style="width: 25%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Description</th>
+<th class="tableblock halign-left valign-top">API Cntrl</th>
+<th class="tableblock halign-left valign-top">GUI Cntrl</th>
+<th class="tableblock halign-left valign-top">Local Storage</th>
+<th class="tableblock halign-left valign-top">Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Site GUID</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Unique GUID of the RoadView (RV) site</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">no</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">RV config file</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">"enforceSite" in API</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Motorola Server URL</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Motorola Server URL</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">RV config file</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">"avivServiceAddress" in API. "Motorola URL" in GUI.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Motorola Server Username and Domain</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Motorola Server username and domain</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">no</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">RV config file</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">"Motorola Username" in GUI. Format: domain/username</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Motorola Server Password</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Motorola Server password</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">no</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">RV config file</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">"Motorola Password" in GUI.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Time to Save Events</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">How long RV stores logs in database and events in offline queue</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">RV config file</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">"time2SaveEvent" in API. "Log Store Days" in GUI.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Keep Alive Interval</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">How often RV sends Keep Alive messages to the Motorola Server. In seconds.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">no</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">RV config file</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">"Keep Alive Interval" in GUI.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Amazon Bucket Credentials</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Credentials for access to the bucket where RoadView sends images and video.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">no</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">RV config file</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">"s3" in API</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Activity Days</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">"Default system activity times, according to the day of the week."</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">no</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">RV config file</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">"activityDays" in API.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Activity Times</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Special activity times, according to by specific dates; overrides Activity Days settings.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">no</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">RV config file</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">"activityTimes" in API</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Stop Enforce Now</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">When the value is 1, then immediately stop "enforcement" on the site.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">no</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">RV config file</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">"stopEnforceNow" in API</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Start Enforce Now</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">When the value is 1, then immediately start "enforcement" on the site. "Enforcement" means processing of Events, and sending records of traffic violations for unauthorized vehicles (not on the White List) to the server.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">no</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">RV config file</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">"startEnforceNow" in API</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Stop Enforce Times</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Scheduled days and times to stop enforcement for this site.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">no</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">RV config file</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">"stopEnforceTimes" in API</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Send White List Events</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">When the value is 1, the system sends all Events. When the value is 0, then the system only records an vent for any vehicle that commits a traffic violation, and is not on the list of authorized vehicles.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">no</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">RV config file</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">"sendWhiteListEvents" in API</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Camera Recording Time</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">How much time before and after the Event to record video</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">RV config file</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">"camerasRecLength"; "timeBeforeRec"; "timeAfterRec" in API. "Video Pre/Post Time" in GUI in Camera section.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">White List</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">An array containing all the plate numbers belonging to the White List (of authorized vehicles)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">no</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Separate encrypted file on disk</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">"updateWhiteList" POST message in API</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_computer_and_software_requirements"><a class="anchor" href="#_computer_and_software_requirements"></a>3. Computer and Software Requirements</h2>
 <div class="sectionbody">
 <div class="ulist">
 <ul>
@@ -514,7 +685,7 @@ configure the INEX Motorola PTL system.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_use_iz_discovery"><a class="anchor" href="#_use_iz_discovery"></a>3. Use IZ Discovery</h2>
+<h2 id="_use_iz_discovery"><a class="anchor" href="#_use_iz_discovery"></a>4. Use IZ Discovery</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>The factory default IP address of the IZIDPUGOX
@@ -523,7 +694,7 @@ typically 192.168.5.110. If needed, use IZ Discovery to change its IP address
 to one you have allocated in your network.</p>
 </div>
 <div class="sect2">
-<h3 id="_installing_and_using_iz_discovery"><a class="anchor" href="#_installing_and_using_iz_discovery"></a>3.1. Installing and Using IZ Discovery</h3>
+<h3 id="_installing_and_using_iz_discovery"><a class="anchor" href="#_installing_and_using_iz_discovery"></a>4.1. Installing and Using IZ Discovery</h3>
 <div class="paragraph">
 <p>The IZ Discovery utility discovers all active devices connected to the network, and displays a list of their network parameters. These devices can include cameras and computers.</p>
 </div>
@@ -560,7 +731,7 @@ to one you have allocated in your network.</p>
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
-<p>Scroll down to find the device you are interested in. You can double-click to view/edit a specific device&#8217;s IP address parameters (see <a href="#s_Changing-a-Device-s-IP-Address-and-Network-Settings">Section 3.2</a>).</p>
+<p>Scroll down to find the device you are interested in. You can double-click to view/edit a specific device&#8217;s IP address parameters (see <a href="#s_Changing-a-Device-s-IP-Address-and-Network-Settings">Section 4.2</a>).</p>
 </li>
 <li>
 <p>Click Clear List to refresh the discovery process.</p>
@@ -594,7 +765,7 @@ to one you have allocated in your network.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="s_Changing-a-Device-s-IP-Address-and-Network-Settings"><a class="anchor" href="#s_Changing-a-Device-s-IP-Address-and-Network-Settings"></a>3.2. Changing a Device&#8217;s IP Address and Network Settings</h3>
+<h3 id="s_Changing-a-Device-s-IP-Address-and-Network-Settings"><a class="anchor" href="#s_Changing-a-Device-s-IP-Address-and-Network-Settings"></a>4.2. Changing a Device&#8217;s IP Address and Network Settings</h3>
 <div id="f_Changing-the-Device-s-Network-Settings" class="imageblock">
 <div class="content">
 <img src="../_images/IZDiscovery/RV-1_9-FIG-013b_ChangeIPUnCheckDHCP.png" alt="IZ Discovery Network Setting Dialog" width="226" height="230">
@@ -680,7 +851,7 @@ to one you have allocated in your network.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_prepare_to_aim_and_calibrate"><a class="anchor" href="#_prepare_to_aim_and_calibrate"></a>4. Prepare to Aim and Calibrate</h2>
+<h2 id="_prepare_to_aim_and_calibrate"><a class="anchor" href="#_prepare_to_aim_and_calibrate"></a>5. Prepare to Aim and Calibrate</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Move a vehicle next to, and at the middle of
@@ -697,19 +868,47 @@ at the expected distance and height.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="s_Using-RoadView"><a class="anchor" href="#s_Using-RoadView"></a>5. Log In to RoadView</h2>
+<h2 id="s_Using-RoadView"><a class="anchor" href="#s_Using-RoadView"></a>6. Log In to RoadView</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_logging_in"><a class="anchor" href="#_logging_in"></a>5.1. Logging In</h3>
+<h3 id="_logging_in"><a class="anchor" href="#_logging_in"></a>6.1. Logging In</h3>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
 <p>Open a browser.</p>
 </li>
 <li>
-<p>Type in the IP address of the RoadView computer - the IZIDPUGOX.
-For example:<br>
-192.168.5.110</p>
+<p>Type in the IP address of the RoadView computer - the IZIDPUGOX.<br></p>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>You must put "https://" before the IP address.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>For example:<br>
+https://192.168.5.110<br>
+<br>
+If you see a browser security warning message:</p>
+</div>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Click Advanced<br></p>
+</li>
+<li>
+<p>Click the "Continue" link<br></p>
+</li>
+</ol>
+</div>
 </li>
 <li>
 <p>You will see the login screen. Enter the default username
@@ -723,13 +922,45 @@ and password (root, root):</p>
 </li>
 <li>
 <p>You should see the RoadView Live (Journal) tab
-(see <a href="#s_Verify-System-Operation">Section 9</a>).</p>
+(see <a href="#s_Verify-System-Operation">Section 10</a>).</p>
 </li>
 </ol>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_logging_out_multi_line_menu_icon"><a class="anchor" href="#_logging_out_multi_line_menu_icon"></a>5.2. Logging Out (Multi-line Menu Icon)</h3>
+<h3 id="s_Changing-the-Password"><a class="anchor" href="#s_Changing-the-Password"></a>6.2. Changing the Password (Multi-line Menu Icon)</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Click on the multi-line menu icon at the upper right of the RoadView screen</p>
+</li>
+<li>
+<p>Select "Change Password"</p>
+</li>
+</ul>
+</div>
+<div id="f_Change-Password-Multi-line-Menu" class="imageblock">
+<div class="content">
+<img src="../_images/RoadViewALPR/RV-1_15-FIG-021b_3_Line_ChangePW.png" alt="image" width="80">
+</div>
+<div class="title">Figure 4. Change Password (Multi-line Menu)</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Enter the new password and re-type it</p>
+</li>
+</ul>
+</div>
+<div id="f_Change-Password-Dialog" class="imageblock">
+<div class="content">
+<img src="../_images/RoadViewALPR/RV-1_15-FIG-021c_ChangePW_Popup.png" alt="image" width="230">
+</div>
+<div class="title">Figure 5. Change Password Dialog</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_logging_out_multi_line_menu_icon"><a class="anchor" href="#_logging_out_multi_line_menu_icon"></a>6.3. Logging Out (Multi-line Menu Icon)</h3>
 <div class="ulist">
 <ul>
 <li>
@@ -742,16 +973,16 @@ and password (root, root):</p>
 </div>
 <div id="f_Logout-Multi-line-Menu" class="imageblock">
 <div class="content">
-<img src="../RoadViewALPR/_images/UserGuide/image5.png" alt="image" width="136" height="113">
+<img src="../_images/RoadViewALPR/RV-1_15-FIG-020a_Logging_Out.png" alt="image" width="80">
 </div>
-<div class="title">Figure 4. Logout (Multi-line Menu)</div>
+<div class="title">Figure 6. Logout (Multi-line Menu)</div>
 </div>
 <div style="page-break-after: always;"></div>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="s_Configure-RoadView-Settings-Tab"><a class="anchor" href="#s_Configure-RoadView-Settings-Tab"></a>6. Configure RoadView - Settings Tab</h2>
+<h2 id="s_Configure-RoadView-Settings-Tab"><a class="anchor" href="#s_Configure-RoadView-Settings-Tab"></a>7. Configure RoadView - Settings Tab</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Use the Settings tab after the first installation or
@@ -785,7 +1016,7 @@ Detector Configuration "Mode" selected.</p>
 </table>
 </div>
 <div class="sect2">
-<h3 id="s_Software-Version-and-DPU-Information"><a class="anchor" href="#s_Software-Version-and-DPU-Information"></a>6.1. Software Version and DPU Information</h3>
+<h3 id="s_Software-Version-and-DPU-Information"><a class="anchor" href="#s_Software-Version-and-DPU-Information"></a>7.1. Software Version and DPU Information</h3>
 <div class="paragraph">
 <p>The box at the upper right of the Settings screen shows:</p>
 </div>
@@ -803,17 +1034,17 @@ Detector Configuration "Mode" selected.</p>
 <div class="content">
 <img src="../_images/SLN-PTL/RV-PTL-FIG-001_VersionAndCameraInfo.png" alt="image" width="400">
 </div>
-<div class="title">Figure 5. Software Version and DPU Information Section</div>
+<div class="title">Figure 7. Software Version and DPU Information Section</div>
 </div>
 <div style="page-break-after: always;"></div>
 </div>
 <div class="sect2">
-<h3 id="s_Network-Settings"><a class="anchor" href="#s_Network-Settings"></a>6.2. Network Settings</h3>
+<h3 id="s_Network-Settings"><a class="anchor" href="#s_Network-Settings"></a>7.2. Network Settings</h3>
 <div id="f_Network-Settings-Section" class="imageblock">
 <div class="content">
 <img src="../_images/SLN-PTL/RV-PTL-FIG-002_Network.png" alt="image" width="600">
 </div>
-<div class="title">Figure 6. Network Settings Section</div>
+<div class="title">Figure 8. Network Settings Section</div>
 </div>
 <div class="ulist">
 <ul>
@@ -852,7 +1083,7 @@ even after unexpected power outages.</p>
 <div style="page-break-after: always;"></div>
 </div>
 <div class="sect2">
-<h3 id="s_Date-and-Time-Settings"><a class="anchor" href="#s_Date-and-Time-Settings"></a>6.3. Date and Time Settings</h3>
+<h3 id="s_Date-and-Time-Settings"><a class="anchor" href="#s_Date-and-Time-Settings"></a>7.3. Date and Time Settings</h3>
 <div class="admonitionblock important">
 <table>
 <tr>
@@ -879,7 +1110,7 @@ and countries in North America (U.S. and Canada) and South America.</p>
 <div class="content">
 <img src="../_images/SLN-PTL/RV-PTL-FIG-003_Date_Time.png" alt="image" width="600">
 </div>
-<div class="title">Figure 7. Date and Time Settings Section</div>
+<div class="title">Figure 9. Date and Time Settings Section</div>
 </div>
 <div class="paragraph">
 <p><strong>Set Time (Automatically/Manually) -
@@ -934,7 +1165,51 @@ end of this section after making changes.</p>
 <div style="page-break-after: always;"></div>
 </div>
 <div class="sect2">
-<h3 id="s_Lanes"><a class="anchor" href="#s_Lanes"></a>6.4. Lanes</h3>
+<h3 id="s_Web-Protocols"><a class="anchor" href="#s_Web-Protocols"></a>7.4. Web Protocols</h3>
+<div id="f_Web-Protocols-Section" class="imageblock">
+<div class="content">
+<img src="../_images/SLN-PTL/RV-PTL-FIG-016_Web_Protocols.png" alt="image" width="600">
+</div>
+<div class="title">Figure 10. Web Protocols Section</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The parameters should already have been set for you;
+verify the settings look as they appear here.</p>
+</li>
+<li>
+<p>If you need to change the settings, remember to
+click the Save button at the end of this section.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="s_HTTP-Integrations-Security"><a class="anchor" href="#s_HTTP-Integrations-Security"></a>7.5. HTTP Integrations Security</h3>
+<div id="f_HTTP-Integrations-Security-Section" class="imageblock">
+<div class="content">
+<img src="../_images/SLN-PTL/RV-PTL-FIG-017_HTTP_Integrtns_Security.png" alt="image" width="600">
+</div>
+<div class="title">Figure 11. HTTP Integrations Security Section</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The parameters should already have been set for you;
+verify the settings look as they appear here.</p>
+</li>
+<li>
+<p>If you need to change the settings, remember to
+click the Save button at the end of the Detector
+Configuration section.</p>
+</li>
+</ul>
+</div>
+<div style="page-break-after: always;"></div>
+</div>
+<div class="sect2">
+<h3 id="s_Lanes"><a class="anchor" href="#s_Lanes"></a>7.6. Lanes</h3>
 <div class="paragraph">
 <p>Use this section to add and configure Lanes.</p>
 </div>
@@ -942,7 +1217,7 @@ end of this section after making changes.</p>
 <div class="content">
 <img src="../_images/SLN-PTL/RV-PTL-FIG-004_Lanes.png" alt="image" width="800">
 </div>
-<div class="title">Figure 8. Lanes Section</div>
+<div class="title">Figure 12. Lanes Section</div>
 </div>
 <div class="ulist">
 <ul>
@@ -984,7 +1259,7 @@ and associate each camera with a different "Lane".</p>
 <div class="content">
 <img src="../_images/SLN-PTL/RV-PTL-FIG-004a_EditLaneDialog.png" alt="image" width="300">
 </div>
-<div class="title">Figure 9. Add/Edit Lane Dialog</div>
+<div class="title">Figure 13. Add/Edit Lane Dialog</div>
 </div>
 </li>
 <li>
@@ -1026,18 +1301,18 @@ from the rear of vehicles</p>
 <div style="page-break-after: always;"></div>
 </div>
 <div class="sect2">
-<h3 id="s_Cameras"><a class="anchor" href="#s_Cameras"></a>6.5. Cameras</h3>
+<h3 id="s_Cameras"><a class="anchor" href="#s_Cameras"></a>7.7. Cameras</h3>
 <div id="f_Cameras-Section" class="imageblock">
 <div class="content">
 <img src="../_images/SLN-PTL/RV-PTL-FIG-005_Cameras.png" alt="image" width="800">
 </div>
-<div class="title">Figure 10. Cameras Section</div>
+<div class="title">Figure 14. Cameras Section</div>
 </div>
 <div class="ulist">
 <ul>
 <li>
 <p><u>Edit</u> - edit the camera&#8217;s parameters
-(see <a href="#f_Add-Edit-Camera-Dialog">Figure 11</a>)</p>
+(see <a href="#f_Add-Edit-Camera-Dialog">Figure 15</a>)</p>
 </li>
 <li>
 <p><u>Delete</u> - delete the camera
@@ -1080,7 +1355,7 @@ last Event ID.<br>
 <div class="content">
 <img src="../_images/SLN-PTL/RV-PTL-FIG-006_EditCameraDialog.png" alt="image" width="300">
 </div>
-<div class="title">Figure 11. Add/Edit Camera Dialog</div>
+<div class="title">Figure 15. Add/Edit Camera Dialog</div>
 </div>
 </li>
 </ul>
@@ -1091,7 +1366,7 @@ last Event ID.<br>
 <li>
 <p><strong>Lane ID</strong> - The identification number of the
 lane being captured by the camera(s).
-Select a Lane number you defined (see <a href="#s_Lanes">Section 6.4</a>).
+Select a Lane number you defined (see <a href="#s_Lanes">Section 7.6</a>).
 This number will appear associated with Events in the Live tab.</p>
 <div class="admonitionblock note">
 <table>
@@ -1106,7 +1381,7 @@ lane will be combined into a single Event.</p>
 </div>
 <div class="paragraph">
 <p>Using the same Lane ID for different cameras
-will combine the reads into one Event (see <a href="#s_Lanes">Section 6.4</a>).</p>
+will combine the reads into one Event (see <a href="#s_Lanes">Section 7.6</a>).</p>
 </div>
 <div class="paragraph">
 <p>You can position multiple cameras to be in different positions
@@ -1152,7 +1427,7 @@ to record video; set as shown</p>
 <div style="page-break-after: always;"></div>
 </div>
 <div class="sect2">
-<h3 id="s_Motorola-Integration"><a class="anchor" href="#s_Motorola-Integration"></a>6.6. Motorola Integration</h3>
+<h3 id="s_Motorola-Integration"><a class="anchor" href="#s_Motorola-Integration"></a>7.8. Motorola Integration</h3>
 <div class="paragraph">
 <p>Enable Motorola Integration and
 set the parameters as follows. <strong>Remember to click the Save button at the end of the
@@ -1162,7 +1437,7 @@ Detector Configuration section after making changes.</strong></p>
 <div class="content">
 <img src="../_images/SLN-PTL/RV-PTL-FIG-007_Motorola_Integration.png" alt="image" width="550">
 </div>
-<div class="title">Figure 12. Motorola Integration Section</div>
+<div class="title">Figure 16. Motorola Integration Section</div>
 </div>
 <div class="ulist">
 <ul>
@@ -1170,7 +1445,9 @@ Detector Configuration section after making changes.</strong></p>
 <p><strong>Motorola URL</strong> - URL of the Motorola server</p>
 </li>
 <li>
-<p><strong>Motorola User Name</strong> - username to access the Motorola server</p>
+<p><strong>Motorola User Name</strong> - domain and username
+(in the form domain/username) to access the Motorola
+server</p>
 </li>
 <li>
 <p><strong>Motorola Password</strong> - password to access the Motorola server</p>
@@ -1198,12 +1475,12 @@ always be enabled</u></p>
 <div style="page-break-after: always;"></div>
 </div>
 <div class="sect2">
-<h3 id="s_Journal"><a class="anchor" href="#s_Journal"></a>6.7. Journal</h3>
+<h3 id="s_Journal"><a class="anchor" href="#s_Journal"></a>7.9. Journal</h3>
 <div id="f_Journal-Settings" class="imageblock">
 <div class="content">
 <img src="../_images/SLN-PTL/RV-PTL-FIG-009_Journal_Settings.png" alt="image" width="500">
 </div>
-<div class="title">Figure 13. Journal Settings Section</div>
+<div class="title">Figure 17. Journal Settings Section</div>
 </div>
 <div class="ulist">
 <ul>
@@ -1218,7 +1495,7 @@ Detector Configuration section after making changes.</strong></p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="s_Detector-Configuration"><a class="anchor" href="#s_Detector-Configuration"></a>6.8. Detector Configuration</h3>
+<h3 id="s_Detector-Configuration"><a class="anchor" href="#s_Detector-Configuration"></a>7.10. Detector Configuration</h3>
 <div class="ulist">
 <ul>
 <li>
@@ -1235,7 +1512,7 @@ changing these parameters.</p>
 <div class="content">
 <img src="../_images/SLN-PTL/RV-PTL-FIG-010_Detector_Configuration.png" alt="image" width="400">
 </div>
-<div class="title">Figure 14. Detector Configuration Section</div>
+<div class="title">Figure 18. Detector Configuration Section</div>
 </div>
 <div class="paragraph">
 <p>Explanations of frequently used parameters:</p>
@@ -1269,7 +1546,7 @@ changing these parameters.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_roadview_system_info_tab"><a class="anchor" href="#_roadview_system_info_tab"></a>7. RoadView - System Info Tab</h2>
+<h2 id="_roadview_system_info_tab"><a class="anchor" href="#_roadview_system_info_tab"></a>8. RoadView - System Info Tab</h2>
 <div class="sectionbody">
 <div class="ulist">
 <ul>
@@ -1287,13 +1564,13 @@ changing these parameters.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="s_Calibrating-a-Camera-Using-RoadView"><a class="anchor" href="#s_Calibrating-a-Camera-Using-RoadView"></a>8. Calibrating a Camera Using RoadView</h2>
+<h2 id="s_Calibrating-a-Camera-Using-RoadView"><a class="anchor" href="#s_Calibrating-a-Camera-Using-RoadView"></a>9. Calibrating a Camera Using RoadView</h2>
 <div class="sectionbody">
 <div id="f_Calibration-Tab" class="imageblock">
 <div class="content">
 <img src="../_images/SLN-PTL/RV-PTL-FIG-012_CalibrationTab.png" alt="image" width="800">
 </div>
-<div class="title">Figure 15. Calibration Tab</div>
+<div class="title">Figure 19. Calibration Tab</div>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
@@ -1321,7 +1598,7 @@ and time that the image is being taken/was taken by the camera.</p>
 </li>
 <li>
 <p>Aim the camera using the mounting bracket&#8217;s adjustment
-hardware (see <a href="#f_Pan-Tilt-Roll-Angle-Adjustments">Figure 16</a>).</p>
+hardware (see <a href="#f_Pan-Tilt-Roll-Angle-Adjustments">Figure 20</a>).</p>
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
@@ -1343,7 +1620,7 @@ image is horizontally straight, parallel to the ground
 <div class="content">
 <img src="../_images/RoadViewALPR/PanTiltRoll.png" alt="image" width="311" height="186">
 </div>
-<div class="title">Figure 16. Pan/Tilt/Roll (Angle) Adjustments</div>
+<div class="title">Figure 20. Pan/Tilt/Roll (Angle) Adjustments</div>
 </div>
 </li>
 </ol>
@@ -1421,7 +1698,7 @@ tightening of the mounting hardware.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="s_Verify-System-Operation"><a class="anchor" href="#s_Verify-System-Operation"></a>9. Verify System Operation</h2>
+<h2 id="s_Verify-System-Operation"><a class="anchor" href="#s_Verify-System-Operation"></a>10. Verify System Operation</h2>
 <div class="sectionbody">
 <div class="ulist">
 <ul>
@@ -1438,7 +1715,7 @@ tab.</p>
 <div class="content">
 <img src="../_images/SLN-PTL/RV-PTL-FIG-013_LiveTab.png" alt="image" width="800">
 </div>
-<div class="title">Figure 17. Live (Journal) Tab</div>
+<div class="title">Figure 21. Live (Journal) Tab</div>
 </div>
 <div class="ulist">
 <ul>
@@ -1457,7 +1734,7 @@ RoadView database.</p>
 <div class="content">
 <img src="../_images/SLN-PTL/RV-PTL-FIG-014_SearchTab.png" alt="image" width="800">
 </div>
-<div class="title">Figure 18. Search Tab</div>
+<div class="title">Figure 22. Search Tab</div>
 </div>
 <div class="ulist">
 <ul>
@@ -1484,16 +1761,16 @@ of different system components</p>
 <div class="content">
 <img src="../_images/SLN-PTL/RV-PTL-FIG-015_SystemStatusTab.png" alt="image" width="400">
 </div>
-<div class="title">Figure 19. System Status Tab</div>
+<div class="title">Figure 23. System Status Tab</div>
 </div>
 <div style="page-break-after: always;"></div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="s_Troubleshooting"><a class="anchor" href="#s_Troubleshooting"></a>10. RoadView Troubleshooting</h2>
+<h2 id="s_Troubleshooting"><a class="anchor" href="#s_Troubleshooting"></a>11. RoadView Troubleshooting</h2>
 <div class="sectionbody">
 <table id="t_Troubleshooting" class="tableblock frame-all grid-all stretch withborders">
-<caption class="title">Table 1. RoadView Troubleshooting</caption>
+<caption class="title">Table 2. RoadView Troubleshooting</caption>
 <colgroup>
 <col style="width: 35%;">
 <col style="width: 65%;">
@@ -1517,7 +1794,7 @@ The Live tab and Search tab are empty (no Events are detected)</p></td>
 <p>Verify that stable power at the correct level is being supplied to the cameras, even when under a heavy processing load.</p>
 </li>
 <li>
-<p>Verify that the IP address(es) configured in RoadView match the IP addresses that you configured in the camera(s). See <a href="#s_Cameras">Section 6.5</a>.</p>
+<p>Verify that the IP address(es) configured in RoadView match the IP addresses that you configured in the camera(s). See <a href="#s_Cameras">Section 7.7</a>.</p>
 </li>
 </ul>
 </div></div></td>
@@ -1554,12 +1831,12 @@ The Live tab and Search tab are empty (no Events are detected)</p></td>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_legal_notices"><a class="anchor" href="#_legal_notices"></a>11. Legal Notices</h2>
+<h2 id="_legal_notices"><a class="anchor" href="#_legal_notices"></a>12. Legal Notices</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_notice"><a class="anchor" href="#_notice"></a>11.1. Notice</h3>
+<h3 id="_notice"><a class="anchor" href="#_notice"></a>12.1. Notice</h3>
 <div class="paragraph">
-<p>INEX Technologies reserves the right to improve and enhance its product offerings. Thus, the illustrations and descriptions presented in this manual may differ in some respect from the products you receive.</p>
+<p>Inex Technologies reserves the right to improve and enhance its product offerings. Thus, the illustrations and descriptions presented in this manual may differ in some respect from the products you receive.</p>
 </div>
 <div class="paragraph">
 <p>Technical specifications are subject to change without notice.</p>
@@ -1571,7 +1848,7 @@ The Live tab and Search tab are empty (no Events are detected)</p></td>
 <p>All third-party trademarks are the property of their respective owners.</p>
 </div>
 <div class="paragraph">
-<p>INEX Technologies cannot be held liable for technical and editorial omissions or errors made in this document; nor for incidental or consequential damages resulting from the furnishing, performance or use of this document.</p>
+<p>Inex Technologies cannot be held liable for technical and editorial omissions or errors made in this document; nor for incidental or consequential damages resulting from the furnishing, performance or use of this document.</p>
 </div>
 <div class="paragraph">
 <p>Actions or circumstances that void the warranty are improper usage, improper handling without adequate electrostatic discharge (ESD) protection, defects resulting from natural disaster (fire, flood etc.) and unauthorized modifications or repair.</p>
@@ -1580,18 +1857,18 @@ The Live tab and Search tab are empty (no Events are detected)</p></td>
 <p>Power undervoltage, overvoltage and/or incorrect polarity will damage the unit and will void the warranty.</p>
 </div>
 <div class="paragraph">
-<p>It is your responsibility to ensure that all wires connected to INEX Technologies' products have appropriate surge protection. Any damage due to electrical spikes (for example, lightning) is not covered by the warranty.</p>
+<p>It is your responsibility to ensure that all wires connected to Inex Technologies' products have appropriate surge protection. Any damage due to electrical spikes (for example, lightning) is not covered by the warranty.</p>
 </div>
 <div class="paragraph">
-<p>No part of this document may be reproduced in any form without permission from INEX Technologies.</p>
+<p>No part of this document may be reproduced in any form without permission from Inex Technologies.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_software_precautions"><a class="anchor" href="#_software_precautions"></a>11.2. Software Precautions</h3>
+<h3 id="_software_precautions"><a class="anchor" href="#_software_precautions"></a>12.2. Software Precautions</h3>
 <div class="ulist">
 <ul>
 <li>
-<p>The use of any INEX Technologies' software products or any other software product referred to in this document with internet access shall be used wholly at your own risk. INEX Technologies does not take any responsibility for abnormal operation, privacy leakage or any other damages resulting from cyber attack, hacker attack, virus infection or any other internet security risks.</p>
+<p>The use of any Inex Technologies' software products or any other software product referred to in this document with internet access shall be used wholly at your own risk. Inex Technologies does not take any responsibility for abnormal operation, privacy leakage or any other damages resulting from cyber attack, hacker attack, virus infection or any other internet security risks.</p>
 </li>
 <li>
 <p>Proper configuration of all passwords and other security settings is the responsibility of the installer and/or end-user.</p>
@@ -1603,27 +1880,27 @@ The Live tab and Search tab are empty (no Events are detected)</p></td>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_legal_disclaimer"><a class="anchor" href="#_legal_disclaimer"></a>11.3. Legal Disclaimer</h3>
+<h3 id="_legal_disclaimer"><a class="anchor" href="#_legal_disclaimer"></a>12.3. Legal Disclaimer</h3>
 <div class="paragraph">
 <p>TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE PRODUCT DESCRIBED, WITH ITS HARDWARE, SOFTWARE AND FIRMWARE, IS PROVIDED "AS IS", WITH ALL FAULTS AND ERRORS, AND OUR COMPANY MAKES NO WARRANTIES, EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION, MERCHANTABILITY, SATISFACTORY QUALITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT OF THIRD PARTY. IN NO EVENT WILL OUR COMPANY, ITS DIRECTORS, OFFICERS, EMPLOYEES, OR AGENTS BE LIABLE TO YOU FOR ANY SPECIAL, CONSEQUENTIAL, INCIDENTAL, OR INDIRECT DAMAGES, INCLUDING, AMONG OTHERS, DAMAGES FOR LOSS OF BUSINESS PROFITS, BUSINESS INTERRUPTION, OR LOSS OF DATA OR DOCUMENTATION, IN CONNECTION WITH THE USE OF THIS PRODUCT, EVEN IF OUR COMPANY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.</p>
 </div>
 <div class="paragraph">
-<p>THE USE OF ANY INEX Technologies' SOFTWARE PRODUCTS OR ANY OTHER SOFTWARE PRODUCTS REFERRED TO IN THIS DOCUMENT WITH INTERNET ACCESS SHALL BE USED WHOLLY AT YOUR OWN RISK. INEX Technologies DOES NOT TAKE ANY RESPONSIBILITY FOR ABNORMAL OPERATION, PRIVACY LEAKAGE OR ANY OTHER DAMAGES RESULTING FROM CYBER ATTACK, HACKER ATTACK, VIRUS INFECTION OR ANY OTHER INTERNET SECURITY RISKS.</p>
+<p>THE USE OF ANY Inex Technologies' SOFTWARE PRODUCTS OR ANY OTHER SOFTWARE PRODUCTS REFERRED TO IN THIS DOCUMENT WITH INTERNET ACCESS SHALL BE USED WHOLLY AT YOUR OWN RISK. Inex Technologies DOES NOT TAKE ANY RESPONSIBILITY FOR ABNORMAL OPERATION, PRIVACY LEAKAGE OR ANY OTHER DAMAGES RESULTING FROM CYBER ATTACK, HACKER ATTACK, VIRUS INFECTION OR ANY OTHER INTERNET SECURITY RISKS.</p>
 </div>
 <div class="paragraph">
-<p>For details, see the INEX Software End User License Agreement.</p>
-</div>
-<div class="paragraph">
-<p></p>
-</div>
-<div class="paragraph">
-<p>&#169; INEX Technologies - All rights reserved.</p>
+<p>For details, see the Inex Software End User License Agreement.</p>
 </div>
 <div class="paragraph">
 <p></p>
 </div>
 <div class="paragraph">
-<p>Doc. No. PTL-MAN-002b Ver. 2024-04-03</p>
+<p>&#169; Inex Technologies - All rights reserved.</p>
+</div>
+<div class="paragraph">
+<p></p>
+</div>
+<div class="paragraph">
+<p>Doc. No. PTL-MAN-002b Ver. 2024-04-10</p>
 </div>
 </div>
 </div>
