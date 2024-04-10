@@ -503,7 +503,7 @@ via HTTP or other protocols to other systems.</p>
 </div>
 <div class="paragraph">
 <p>The PTL system records Events for vehicles
-that commit a traffic violation, which are not on a list of
+that are in the lane, and compares them with a list of
 authorized vehicles (White List).</p>
 </div>
 <div class="paragraph">
@@ -518,9 +518,8 @@ configure the Inex Motorola PTL system.</p>
 <div class="paragraph">
 <p>RoadView can be configured using both
 a web-based GUI and an API. Some parameters can only be
-configured/controlled
-via the API,  others only via the GUI, and some
-via both (see <a href="#t_GUI-API-Control">Table 1</a>).
+configured/controlled via the API,  others only via the GUI,
+and some via both (see <a href="#t_GUI-API-Control">Table 1</a>).
 See the  API document for further details.</p>
 </div>
 <table id="t_GUI-API-Control" class="tableblock frame-all grid-all stretch withborders">
@@ -578,7 +577,7 @@ See the  API document for further details.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Time to Save Events</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">How long RV stores logs in database and events in offline queue</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">How long RV stores logs in a database and Events in an offline queue</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">yes</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">yes</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">RV config file</p></td>
@@ -602,7 +601,7 @@ See the  API document for further details.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Activity Days</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">"Default system activity times, according to the day of the week."</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Default system activity ("enforcement") times, according to the day of the week.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">yes</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">no</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">RV config file</p></td>
@@ -610,7 +609,9 @@ See the  API document for further details.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Activity Times</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Special activity times, according to by specific dates; overrides Activity Days settings.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Special activity times, according to
+specific dates. Enables "enforcement" (system activity)
+regardless of Activity Days settings.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">yes</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">no</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">RV config file</p></td>
@@ -618,7 +619,8 @@ See the  API document for further details.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Stop Enforce Now</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">When the value is 1, then immediately stop "enforcement" on the site.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">When the value is 1, then
+immediately stop enforcement on the site.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">yes</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">no</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">RV config file</p></td>
@@ -626,7 +628,8 @@ See the  API document for further details.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Start Enforce Now</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">When the value is 1, then immediately start "enforcement" on the site. "Enforcement" means processing of Events, and sending records of traffic violations for unauthorized vehicles (not on the White List) to the server.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">When the value is 1,
+then immediately start enforcement on the site.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">yes</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">no</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">RV config file</p></td>
@@ -642,7 +645,11 @@ See the  API document for further details.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Send White List Events</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">When the value is 1, the system sends all Events. When the value is 0, then the system only records an vent for any vehicle that commits a traffic violation, and is not on the list of authorized vehicles.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">When the value is 1,
+the system sends all Events, whether or not the
+vehicle is on the White List (of authorized vehicles).
+When the value is 0, then the system only sends Events for
+vehicles not on the White List (unauthorized vehicle).</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">yes</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">no</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">RV config file</p></td>
@@ -1486,7 +1493,8 @@ always be enabled</u></p>
 <div class="ulist">
 <ul>
 <li>
-<p>Check the Enabled checkbox</p>
+<p>Check the Enabled checkbox - <u>should
+always be enabled</u></p>
 </li>
 <li>
 <p><strong>Remember to click the Save button at the end of the
