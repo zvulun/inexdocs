@@ -452,9 +452,11 @@
 <li><a href="#_columnsfilters">6.1. Columns/Filters</a></li>
 <li><a href="#s_Clicking-on-Event-Row-Elements">6.2. Clicking on Event Row Elements</a></li>
 <li><a href="#_add_to_list_button">6.3. Add To List Button</a></li>
+<li><a href="#s_Parking-Lot-Summary-Statistics">6.4. Parking Lot Summary Statistics</a></li>
+<li><a href="#s_Parking-Transaction-Details">6.5. Parking Transaction Details</a></li>
 </ul>
 </li>
-<li><a href="#_access_lists_watch_lists">7. Access Lists (Watch Lists)</a>
+<li><a href="#s_Access-Lists-Watch-Lists">7. Access Lists (Watch Lists)</a>
 <ul class="sectlevel2">
 <li><a href="#_watch_lists">7.1. Watch Lists</a></li>
 <li><a href="#_guests_list">7.2. Guests List</a></li>
@@ -464,13 +466,14 @@
 </ul>
 </li>
 <li><a href="#_dashboard">8. Dashboard</a></li>
-<li><a href="#s_Gates">9. Gates (Live Video And Additional Actions)</a></li>
-<li><a href="#s_Maintenance-Cameras">10. Maintenance-Cameras</a></li>
-<li><a href="#_legal_notices">11. Legal Notices</a>
+<li><a href="#s_Reports">9. Reports</a></li>
+<li><a href="#s_Gates">10. Gates (Live Video And Additional Actions)</a></li>
+<li><a href="#s_Maintenance-Cameras">11. Maintenance-Cameras</a></li>
+<li><a href="#_legal_notices">12. Legal Notices</a>
 <ul class="sectlevel2">
-<li><a href="#_notice">11.1. Notice</a></li>
-<li><a href="#_software_precautions">11.2. Software Precautions</a></li>
-<li><a href="#_legal_disclaimer">11.3. Legal Disclaimer</a></li>
+<li><a href="#_notice">12.1. Notice</a></li>
+<li><a href="#_software_precautions">12.2. Software Precautions</a></li>
+<li><a href="#_legal_disclaimer">12.3. Legal Disclaimer</a></li>
 </ul>
 </li>
 </ul>
@@ -773,7 +776,7 @@ clear the checkbox.<br></p>
 <ul>
 <li>
 <p><strong>Description</strong> - Description entered when adding
-a plate/person to a list (see <a href="#f_Add-Vendor">Figure 13</a> for an example)</p>
+a plate/person to a list (see <a href="#f_Add-Vendor">Figure 15</a> for an example)</p>
 </li>
 <li>
 <p><strong>Gate</strong> - Select All, or a specific gate</p>
@@ -845,7 +848,7 @@ images of the Event
 </li>
 <li>
 <p>Open - Gate opened manually using Emergency Open button
-on Gates page; see <a href="#s_Gates">Section 9</a></p>
+on Gates page; see <a href="#s_Gates">Section 10</a></p>
 </li>
 <li>
 <p>Admit - Unused<br></p>
@@ -921,12 +924,68 @@ between images (see <a href="#f_Image-Details">Figure 9</a>)</p>
 <div class="paragraph">
 <p>See <a href="#s_Vendors-List">Section 7.3</a> and <a href="#s_Visitors-List">Section 7.4</a></p>
 </div>
+</div>
+<div class="sect2">
+<h3 id="s_Parking-Lot-Summary-Statistics"><a class="anchor" href="#s_Parking-Lot-Summary-Statistics"></a>6.4. Parking Lot Summary Statistics</h3>
+<div class="paragraph">
+<p>Using Event data, IZCloud can be configured
+to provide parking lot summary statistics.
+These can include the number of parking spaces
+occupied, the types of customers that have entered
+the lot, etc.</p>
+</div>
+<div id="f_Parking-Lots" class="imageblock">
+<div class="content">
+<img src="../_images/IZCloud/IZCloud-CAMP-ParkingLotsFromKinneyLake.png" alt="image" width="800">
+</div>
+<div class="title">Figure 10. Parking Lot Summary Statistics</div>
+</div>
+<div style="page-break-after: always;"></div>
+</div>
+<div class="sect2">
+<h3 id="s_Parking-Transaction-Details"><a class="anchor" href="#s_Parking-Transaction-Details"></a>6.5. Parking Transaction Details</h3>
+<div class="paragraph">
+<p>Using Event data, IZCloud can be configured
+to provide parking transaction details. A parking (access)
+transaction consists of an entry and exit by a vehicle.</p>
+</div>
+<div id="f_Parking-Transactions" class="imageblock">
+<div class="content">
+<img src="../_images/IZCloud/IZCloud-CAMP-TransactionsFromKinneyLake.png" alt="image" width="800">
+</div>
+<div class="title">Figure 11. Parking Transaction Details</div>
+</div>
+<div class="paragraph">
+<p>Transactions can be of the following types:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Open</strong> - Vehicle has entered, but not yet exited</p>
+</li>
+<li>
+<p><strong>Closed</strong> - Vehicle has entered and exited; can be billed</p>
+</li>
+<li>
+<p><strong>Attention</strong> - Non-standard behavior, such as having
+only an exit record, or in the lot for too long (configurable)</p>
+</li>
+<li>
+<p><strong>Closed Manually</strong> - Transaction closed by operator (for example,
+if the exit gate is not working)</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>You can also open a pane to view the details of each transaction,
+including images of the plate reads.</p>
+</div>
 <div style="page-break-after: always;"></div>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_access_lists_watch_lists"><a class="anchor" href="#_access_lists_watch_lists"></a>7. Access Lists (Watch Lists)</h2>
+<h2 id="s_Access-Lists-Watch-Lists"><a class="anchor" href="#s_Access-Lists-Watch-Lists"></a>7. Access Lists (Watch Lists)</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Access Lists are lists of plates which can be matched to
@@ -951,7 +1010,7 @@ including the Guests list.</p>
 <div class="content">
 <img src="../_images/IZCloud/IZCloud-CAMP-WatchLists.png" alt="image" width="800">
 </div>
-<div class="title">Figure 10. Watch Lists</div>
+<div class="title">Figure 12. Watch Lists</div>
 </div>
 <div style="page-break-after: always;"></div>
 </div>
@@ -965,7 +1024,7 @@ that made reservations via an online reservation system.</p>
 <div class="content">
 <img src="../_images/IZCloud/IZCloud-CAMP-GuestsList.png" alt="image" width="800">
 </div>
-<div class="title">Figure 11. Guests List</div>
+<div class="title">Figure 13. Guests List</div>
 </div>
 <div class="paragraph">
 <p>Columns/Filters:</p>
@@ -1006,7 +1065,7 @@ You can add, edit or delete vendors on this list.</p>
 <div class="content">
 <img src="../_images/IZCloud/IZCloud-CAMP-VendorsList.png" alt="image" width="800">
 </div>
-<div class="title">Figure 12. Vendors List</div>
+<div class="title">Figure 14. Vendors List</div>
 </div>
 <div class="paragraph">
 <p>Columns/Filters:</p>
@@ -1050,7 +1109,7 @@ the vendor&#8217;s description</p>
 <li>
 <p><strong>Add to Vendors
 <span class="image"><img src="../_images/IZCloud/IZCloud-CAMP-AddToVendorsButton.png" alt="image" width="70"></span>
-(upper right)</strong> - Adds a vendor to the list (see <a href="#f_Add-Vendor">Figure 13</a>)</p>
+(upper right)</strong> - Adds a vendor to the list (see <a href="#f_Add-Vendor">Figure 15</a>)</p>
 <div class="ulist">
 <ul>
 <li>
@@ -1077,7 +1136,7 @@ and use the time controls to select time ranges.</p>
 <div class="content">
 <img src="../_images/IZCloud/IZCloud-CAMP-AddVendor.png" alt="image" width="400">
 </div>
-<div class="title">Figure 13. Add Vendor</div>
+<div class="title">Figure 15. Add Vendor</div>
 </div>
 <div style="page-break-after: always;"></div>
 </div>
@@ -1091,7 +1150,7 @@ You can add, edit or delete visitors on this list.</p>
 <div class="content">
 <img src="../_images/IZCloud/IZCloud-CAMP-VisitorsList.png" alt="image" width="800">
 </div>
-<div class="title">Figure 14. Visitors List</div>
+<div class="title">Figure 16. Visitors List</div>
 </div>
 <div class="paragraph">
 <p>Columns/Filters:</p>
@@ -1159,7 +1218,7 @@ vehicle is allowed to enter the site</p>
 <li>
 <p><strong>Add to Visitors
 <span class="image"><img src="../_images/IZCloud/IZCloud-CAMP-AddToVisitorsButton.png" alt="image" width="70"></span>
-(upper right)</strong> - Adds a visitor to the list (see <a href="#f_Add-Visitor">Figure 15</a>)</p>
+(upper right)</strong> - Adds a visitor to the list (see <a href="#f_Add-Visitor">Figure 17</a>)</p>
 <div class="ulist">
 <ul>
 <li>
@@ -1195,7 +1254,7 @@ and use the time controls to select time ranges.</p>
 <div class="content">
 <img src="../_images/IZCloud/IZCloud-CAMP-AddVisitor.png" alt="image" width="400">
 </div>
-<div class="title">Figure 15. Add Visitor</div>
+<div class="title">Figure 17. Add Visitor</div>
 </div>
 <div style="page-break-after: always;"></div>
 </div>
@@ -1209,7 +1268,7 @@ from all lists.</p>
 <div class="content">
 <img src="../_images/IZCloud/IZCloud-CAMP-SearchLists.png" alt="image" width="800">
 </div>
-<div class="title">Figure 16. Search Watch Lists</div>
+<div class="title">Figure 18. Search Watch Lists</div>
 </div>
 <div class="paragraph">
 <p>Columns/Filters:</p>
@@ -1319,10 +1378,38 @@ checkout date</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="s_Gates"><a class="anchor" href="#s_Gates"></a>9. Gates (Live Video And Additional Actions)</h2>
+<h2 id="s_Reports"><a class="anchor" href="#s_Reports"></a>9. Reports</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>The Gates page enables you to (see <a href="#f_IZCloud-Gates-Page">Figure 17</a>):</p>
+<p>IZCloud can be configured to provide a variety
+of reports based on <a href="#s_IZCloud-Reservations">Section 5</a>, <a href="#s_IZCloud-Events">Section 6</a>
+and <a href="#s_Access-Lists-Watch-Lists">Section 7</a> data. For example:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Residents/Subscribers on Premises</p>
+</li>
+<li>
+<p>Guests on Premises</p>
+</li>
+<li>
+<p>Guests Overstayed</p>
+</li>
+<li>
+<p>Unmatched/Suspected - a vehicle not matched to any access (watch) list for more
+than a configurable number of times is considered suspected</p>
+</li>
+</ul>
+</div>
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="s_Gates"><a class="anchor" href="#s_Gates"></a>10. Gates (Live Video And Additional Actions)</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The Gates page enables you to (see <a href="#f_IZCloud-Gates-Page">Figure 19</a>):</p>
 </div>
 <div class="ulist">
 <ul>
@@ -1346,11 +1433,12 @@ checkout date</p>
 </li>
 </ul>
 </div>
+<div style="page-break-after: always;"></div>
 <div id="f_IZCloud-Gates-Page" class="imageblock">
 <div class="content">
 <img src="../_images/IZCloud/IZCloud-CAMP-Gates.png" alt="image" width="500">
 </div>
-<div class="title">Figure 17. Gates Page</div>
+<div class="title">Figure 19. Gates Page</div>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -1371,7 +1459,7 @@ video stream from the camera.</p>
 </div>
 <div class="paragraph">
 <p>Plate images and video are displayed for
-lanes with online/operational cameras (see <a href="#s_Maintenance-Cameras">Section 10</a>).</p>
+lanes with online/operational cameras (see <a href="#s_Maintenance-Cameras">Section 11</a>).</p>
 </div>
 </td>
 </tr>
@@ -1417,7 +1505,7 @@ updated read.<br></p>
 <div class="content">
 <img src="../_images/IZCloud/IZCloud-CAMP-CorrectPlate.png" alt="image" width="400">
 </div>
-<div class="title">Figure 18. Gates: Correct Plate Read</div>
+<div class="title">Figure 20. Gates: Correct Plate Read</div>
 </div>
 </li>
 <li>
@@ -1437,13 +1525,13 @@ plate is not already on a list</p>
 <div class="content">
 <img src="../_images/IZCloud/IZCloud-CAMP-AddToReservation.png" alt="image" width="600">
 </div>
-<div class="title">Figure 19. Gates: Add to Reservation</div>
+<div class="title">Figure 21. Gates: Add to Reservation</div>
 </div>
 <div style="page-break-after: always;"></div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="s_Maintenance-Cameras"><a class="anchor" href="#s_Maintenance-Cameras"></a>10. Maintenance-Cameras</h2>
+<h2 id="s_Maintenance-Cameras"><a class="anchor" href="#s_Maintenance-Cameras"></a>11. Maintenance-Cameras</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>This page enables you to view camera status.</p>
@@ -1455,7 +1543,7 @@ plate is not already on a list</p>
 <div class="content">
 <img src="../_images/IZCloud/IZCloud-CAMP-MaintenanceCameras.png" alt="image" width="800">
 </div>
-<div class="title">Figure 20. Maintenance: Cameras</div>
+<div class="title">Figure 22. Maintenance: Cameras</div>
 </div>
 <div class="ulist">
 <ul>
@@ -1496,10 +1584,10 @@ an Event. Used for testing/calibration.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_legal_notices"><a class="anchor" href="#_legal_notices"></a>11. Legal Notices</h2>
+<h2 id="_legal_notices"><a class="anchor" href="#_legal_notices"></a>12. Legal Notices</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_notice"><a class="anchor" href="#_notice"></a>11.1. Notice</h3>
+<h3 id="_notice"><a class="anchor" href="#_notice"></a>12.1. Notice</h3>
 <div class="paragraph">
 <p>Inex Technologies reserves the right to improve and enhance its product offerings. Thus, the illustrations and descriptions presented in this manual may differ in some respect from the products you receive.</p>
 </div>
@@ -1529,7 +1617,7 @@ an Event. Used for testing/calibration.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_software_precautions"><a class="anchor" href="#_software_precautions"></a>11.2. Software Precautions</h3>
+<h3 id="_software_precautions"><a class="anchor" href="#_software_precautions"></a>12.2. Software Precautions</h3>
 <div class="ulist">
 <ul>
 <li>
@@ -1545,7 +1633,7 @@ an Event. Used for testing/calibration.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_legal_disclaimer"><a class="anchor" href="#_legal_disclaimer"></a>11.3. Legal Disclaimer</h3>
+<h3 id="_legal_disclaimer"><a class="anchor" href="#_legal_disclaimer"></a>12.3. Legal Disclaimer</h3>
 <div class="paragraph">
 <p>TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE PRODUCT DESCRIBED, WITH ITS HARDWARE, SOFTWARE AND FIRMWARE, IS PROVIDED "AS IS", WITH ALL FAULTS AND ERRORS, AND OUR COMPANY MAKES NO WARRANTIES, EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION, MERCHANTABILITY, SATISFACTORY QUALITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT OF THIRD PARTY. IN NO EVENT WILL OUR COMPANY, ITS DIRECTORS, OFFICERS, EMPLOYEES, OR AGENTS BE LIABLE TO YOU FOR ANY SPECIAL, CONSEQUENTIAL, INCIDENTAL, OR INDIRECT DAMAGES, INCLUDING, AMONG OTHERS, DAMAGES FOR LOSS OF BUSINESS PROFITS, BUSINESS INTERRUPTION, OR LOSS OF DATA OR DOCUMENTATION, IN CONNECTION WITH THE USE OF THIS PRODUCT, EVEN IF OUR COMPANY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.</p>
 </div>
@@ -1565,7 +1653,7 @@ an Event. Used for testing/calibration.</p>
 <p></p>
 </div>
 <div class="paragraph">
-<p>Doc. No. IZCLOUD-CAMP-MAN-002a</p>
+<p>Doc. No. IZCLOUD-CAMP-MAN-002a Ver. 2024-04-14</p>
 </div>
 </div>
 </div>
