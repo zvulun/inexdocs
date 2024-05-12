@@ -75,6 +75,9 @@
     <a class="nav-link" href="../SLN-DriverFaceCapture/DocList.html">Driver Face Capture (DFC)</a>
   </li>
   <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../SLN-GKSYS/DocList.html">GateKeeper Systems (GKSYS) Integration</a>
+  </li>
+  <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../SLN-IZCloudIntegration/DocList.html">IZCloud Integration</a>
   </li>
   <li class="nav-item" data-depth="2">
@@ -478,31 +481,32 @@
 <li><a href="#s_IZCloud-Integration">11.8. IZCloud Integration</a></li>
 <li><a href="#s_Raytec-LED-Illuminators">11.9. Raytec LED Illuminators</a></li>
 <li><a href="#s_AMANO-Integration">11.10. AMANO Integration</a></li>
-<li><a href="#s_TIBA-Integration">11.11. TIBA Integration</a></li>
-<li><a href="#s_Designa-Integration">11.12. Designa Integration</a></li>
-<li><a href="#s_Offline-Queue">11.13. Offline Queue</a></li>
-<li><a href="#s_Monitoring-IZMonitoring-Server-Integration">11.14. Monitoring (IZMonitoring Server Integration)</a></li>
-<li><a href="#s_ZAP-Integration">11.15. ZAP Integration</a></li>
-<li><a href="#s_ZAP-Images-Selection">11.16. ZAP Integration - Images Selection</a>
+<li><a href="#s_GKSYS-Integration">11.11. GKSYS (GateKeeper) Integration</a></li>
+<li><a href="#s_TIBA-Integration">11.12. TIBA Integration</a></li>
+<li><a href="#s_Designa-Integration">11.13. Designa Integration</a></li>
+<li><a href="#s_Offline-Queue">11.14. Offline Queue</a></li>
+<li><a href="#s_Monitoring-IZMonitoring-Server-Integration">11.15. Monitoring (IZMonitoring Server Integration)</a></li>
+<li><a href="#s_ZAP-Integration">11.16. ZAP Integration</a></li>
+<li><a href="#s_ZAP-Images-Selection">11.17. ZAP Integration - Images Selection</a>
 <ul class="sectlevel3">
-<li><a href="#_license_plate_found">11.16.1. License Plate Found</a></li>
-<li><a href="#_license_plate_not_found">11.16.2. License Plate Not Found</a></li>
+<li><a href="#_license_plate_found">11.17.1. License Plate Found</a></li>
+<li><a href="#_license_plate_not_found">11.17.2. License Plate Not Found</a></li>
 </ul>
 </li>
-<li><a href="#s_Direct-Trigger">11.17. Direct Trigger</a></li>
-<li><a href="#s_INEX-I-O-Controller">11.18. Inex I/O Controller</a></li>
-<li><a href="#s_Journal-Optional-Local-Storage">11.19. Journal (Optional Local Storage)</a></li>
-<li><a href="#s_Events-Post-Processing">11.20. Events Post Processing</a>
+<li><a href="#s_Direct-Trigger">11.18. Direct Trigger</a></li>
+<li><a href="#s_INEX-I-O-Controller">11.19. Inex I/O Controller</a></li>
+<li><a href="#s_Journal-Optional-Local-Storage">11.20. Journal (Optional Local Storage)</a></li>
+<li><a href="#s_Events-Post-Processing">11.21. Events Post Processing</a>
 <ul class="sectlevel3">
-<li><a href="#s_Events-Post-Processing-Section-Skip-Empty-Events">11.20.1. Skip Empty Events</a></li>
-<li><a href="#s_Events-Post-Processing-Section-Combine-Enabled">11.20.2. Combine Enabled</a></li>
-<li><a href="#s_Events-Post-Processing-Section-SkipByDistance-Enabled">11.20.3. Skip By Distance Enabled</a></li>
+<li><a href="#s_Events-Post-Processing-Section-Skip-Empty-Events">11.21.1. Skip Empty Events</a></li>
+<li><a href="#s_Events-Post-Processing-Section-Combine-Enabled">11.21.2. Combine Enabled</a></li>
+<li><a href="#s_Events-Post-Processing-Section-SkipByDistance-Enabled">11.21.3. Skip By Distance Enabled</a></li>
 </ul>
 </li>
-<li><a href="#s_Trigger-Offset">11.21. Trigger Offset</a></li>
-<li><a href="#s_Detector-Configuration">11.22. Detector Configuration</a></li>
-<li><a href="#s_Lanes">11.23. Lanes</a></li>
-<li><a href="#s_Cameras">11.24. Cameras</a></li>
+<li><a href="#s_Trigger-Offset">11.22. Trigger Offset</a></li>
+<li><a href="#s_Detector-Configuration">11.23. Detector Configuration</a></li>
+<li><a href="#s_Lanes">11.24. Lanes</a></li>
+<li><a href="#s_Cameras">11.25. Cameras</a></li>
 </ul>
 </li>
 <li><a href="#s_Live-Journal-Tab">12. Live (Journal) Tab</a></li>
@@ -620,8 +624,12 @@
 <td class="tableblock halign-left valign-top"><p class="tableblock">Inex IZCloud Integration</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><a href="../SLN-TIBA/DocList.html" class="xref page">RV-TIBA-MAN-001</a></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><a href="../SLN-TIBA/DocList.html" class="xref page">TIBA-MAN-002b</a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Inex TIBA Integration</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><a href="../SLN-GKSYS/DocList.html" class="xref page">GKSYS-MAN-002b</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Inex GKSYS Integration</p></td>
 </tr>
 </tbody>
 </table>
@@ -636,7 +644,8 @@
 <h2 id="s_Applicability"><a class="anchor" href="#s_Applicability"></a>2. Applicability</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>This document is applicable to RoadView ALPR software, release 1.15.64 and above.</p>
+<p>This document is applicable to RoadView ALPR
+software, release 1.15.120 and above.</p>
 </div>
 </div>
 </div>
@@ -1029,16 +1038,16 @@ a password (see <a href="#f_Change-Password-Dialog">Figure 4</a>)</p>
 <p>Protocol sections on the Settings tab (see <a href="#s_Settings-Tab">Section 11</a>)</p>
 </li>
 <li>
-<p>Direct Trigger (see <a href="#s_Direct-Trigger">Section 11.17</a>)</p>
+<p>Direct Trigger (see <a href="#s_Direct-Trigger">Section 11.18</a>)</p>
 </li>
 <li>
-<p>Inex I/O Controller (see <a href="#s_INEX-I-O-Controller">Section 11.18</a>)</p>
+<p>Inex I/O Controller (see <a href="#s_INEX-I-O-Controller">Section 11.19</a>)</p>
 </li>
 <li>
-<p>Trigger Offset (see <a href="#s_Trigger-Offset">Section 11.21</a>)</p>
+<p>Trigger Offset (see <a href="#s_Trigger-Offset">Section 11.22</a>)</p>
 </li>
 <li>
-<p>The number of Trigger Pre and Trigger Post frames (defined when a camera is configured - see <a href="#s_Cameras">Section 11.24</a>)</p>
+<p>The number of Trigger Pre and Trigger Post frames (defined when a camera is configured - see <a href="#s_Cameras">Section 11.25</a>)</p>
 </li>
 </ul>
 </div>
@@ -1057,7 +1066,7 @@ a password (see <a href="#f_Change-Password-Dialog">Figure 4</a>)</p>
 </table>
 </div>
 <div class="paragraph">
-<p>The Trigger Operational Modes (set in the Detector Configuration section of the Settings tab - see <a href="#s_Detector-Configuration">Section 11.22</a>) affect how Events are created (see <a href="#f_Trigger-Operational-Modes">Figure 8</a>):</p>
+<p>The Trigger Operational Modes (set in the Detector Configuration section of the Settings tab - see <a href="#s_Detector-Configuration">Section 11.23</a>) affect how Events are created (see <a href="#f_Trigger-Operational-Modes">Figure 8</a>):</p>
 </div>
 <div id="f_Trigger-Operational-Modes" class="imageblock">
 <div class="content">
@@ -1088,7 +1097,7 @@ a password (see <a href="#f_Change-Password-Dialog">Figure 4</a>)</p>
 </div>
 </li>
 <li>
-<p><u>Hybrid</u> - Events are continually created internally by LPR video analytics, but are only reported when a trigger is received. The Event closest in time to the trigger will be reported (sent to storage). See <a href="#s_Detector-Configuration">Section 11.22</a> where the Hybrid Pre/Post Time parameters are described.</p>
+<p><u>Hybrid</u> - Events are continually created internally by LPR video analytics, but are only reported when a trigger is received. The Event closest in time to the trigger will be reported (sent to storage). See <a href="#s_Detector-Configuration">Section 11.23</a> where the Hybrid Pre/Post Time parameters are described.</p>
 <div class="admonitionblock note">
 <table>
 <tr>
@@ -1098,7 +1107,7 @@ a password (see <a href="#f_Change-Password-Dialog">Figure 4</a>)</p>
 <td class="content">
 <div class="paragraph">
 <p>In Hybrid mode, if no recognition was possible (no vehicle, no plate, unrecognizable plate, etc.), an Event will be created as it would be in Triggered mode. The Event will be created using frames captured at the time the Trigger was received, along with the Trigger Pre and Post frames, instead of using the frames from the NonTriggered video analytics.<br>
-See <a href="#s_Trigger-Sources-and-Trigger-Modes-Overview">Section 10</a> and <a href="#s_Cameras">Section 11.24</a>.</p>
+See <a href="#s_Trigger-Sources-and-Trigger-Modes-Overview">Section 10</a> and <a href="#s_Cameras">Section 11.25</a>.</p>
 </div>
 </td>
 </tr>
@@ -1433,7 +1442,7 @@ http://195.163.2.73:5801/api</p>
 <p><strong>Send Images Data</strong> (automatically checked for HTTP API 2.3 and above, as chosen from the Protocol Version dropdown) - If checked, then image data is sent as "data base64 encoded" inside the message; if unchecked, this field is not included in the message.</p>
 </li>
 <li>
-<p><strong>Offline Enabled -</strong> Used if you want to enable offline saving of Events and images via HTTP. If you try to send an Event, but do not have a connection to the server, then this event will be put in an offline queue, and sent again when connection with the server is restored. Note that if you enable offline capabilities, you must configure the offline queue parameters (see <a href="#s_Offline-Queue">Section 11.13</a>).</p>
+<p><strong>Offline Enabled -</strong> Used if you want to enable offline saving of Events and images via HTTP. If you try to send an Event, but do not have a connection to the server, then this event will be put in an offline queue, and sent again when connection with the server is restored. Note that if you enable offline capabilities, you must configure the offline queue parameters (see <a href="#s_Offline-Queue">Section 11.14</a>).</p>
 </li>
 <li>
 <p><strong>Send Triggers</strong> (only enabled for HTTP API
@@ -1518,7 +1527,7 @@ a direct integration with a 3<sup>rd</sup> party system.</p>
 <div class="paragraph">
 <p>This feature can only be enabled on the
 <u>exit</u> camera
-(see <a href="#f_Add-Edit-Lane-Dialog">Figure 32</a> in <a href="#s_Lanes">Section 11.23</a>).</p>
+(see <a href="#f_Add-Edit-Lane-Dialog">Figure 32</a> in <a href="#s_Lanes">Section 11.24</a>).</p>
 </div>
 </td>
 </tr>
@@ -1601,7 +1610,7 @@ be used; acceptable range is 20-100</p>
 RoadView to wait after receiving a
 signal from an Inex I/O Controller (IZIO)
 before turning the illuminator
-ON or OFF (see <a href="#s_INEX-I-O-Controller">Section 11.18</a>).
+ON or OFF (see <a href="#s_INEX-I-O-Controller">Section 11.19</a>).
 Controller signal output can be configured
 to turn the illuminator ON or OFF, according to
 the signal received from the controller; see the
@@ -1653,19 +1662,25 @@ Detector Configuration section after making changes.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="s_TIBA-Integration"><a class="anchor" href="#s_TIBA-Integration"></a>11.11. TIBA Integration</h3>
+<h3 id="s_GKSYS-Integration"><a class="anchor" href="#s_GKSYS-Integration"></a>11.11. GKSYS (GateKeeper) Integration</h3>
+<div class="paragraph">
+<p>See the GKSYS document (see <a href="#s_Related-Documents">Section 1</a>).</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="s_TIBA-Integration"><a class="anchor" href="#s_TIBA-Integration"></a>11.12. TIBA Integration</h3>
 <div class="paragraph">
 <p>See the TIBA document (see <a href="#s_Related-Documents">Section 1</a>).</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="s_Designa-Integration"><a class="anchor" href="#s_Designa-Integration"></a>11.12. Designa Integration</h3>
+<h3 id="s_Designa-Integration"><a class="anchor" href="#s_Designa-Integration"></a>11.13. Designa Integration</h3>
 <div class="paragraph">
 <p>See separate document.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="s_Offline-Queue"><a class="anchor" href="#s_Offline-Queue"></a>11.13. Offline Queue</h3>
+<h3 id="s_Offline-Queue"><a class="anchor" href="#s_Offline-Queue"></a>11.14. Offline Queue</h3>
 <div id="f_Offline-Queue-Section" class="imageblock">
 <div class="content">
 <img src="_images/UserGuide/image16.png" alt="image" width="528" height="158">
@@ -1700,7 +1715,7 @@ Detector Configuration section after making changes.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="s_Monitoring-IZMonitoring-Server-Integration"><a class="anchor" href="#s_Monitoring-IZMonitoring-Server-Integration"></a>11.14. Monitoring (IZMonitoring Server Integration)</h3>
+<h3 id="s_Monitoring-IZMonitoring-Server-Integration"><a class="anchor" href="#s_Monitoring-IZMonitoring-Server-Integration"></a>11.15. Monitoring (IZMonitoring Server Integration)</h3>
 <div id="f_Monitoring-Section" class="imageblock">
 <div class="content">
 <img src="_images/UserGuide/image17.png" alt="image" width="493" height="152">
@@ -1734,10 +1749,10 @@ Detector Configuration section after making changes.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="s_ZAP-Integration"><a class="anchor" href="#s_ZAP-Integration"></a>11.15. ZAP Integration</h3>
+<h3 id="s_ZAP-Integration"><a class="anchor" href="#s_ZAP-Integration"></a>11.16. ZAP Integration</h3>
 <div id="f_ZAP-Integration-Section" class="imageblock">
 <div class="content">
-<img src="_images/UserGuide/RV-1_15-FIG-206_ZAP_Integration.png" alt="image" width="393">
+<img src="_images/UserGuide/RV-1_15-FIG-206a_ZAP_Integration.png" alt="image" width="393">
 </div>
 <div class="title">Figure 20. ZAP Integration Section</div>
 </div>
@@ -1775,7 +1790,7 @@ will automatically have its own row in the table.</p>
 <li>
 <p><u>Port</u> - Each Lane should have
 a different port number. This field is automatically
-populated when a new Lane is added (see <a href="#s_Lanes">Section 11.23</a>), but can be edited.
+populated when a new Lane is added (see <a href="#s_Lanes">Section 11.24</a>), but can be edited.
 These are the TCP ports that RoadView is listening
 on for connection from a 3<sup>rd</sup> party application.</p>
 </li>
@@ -1820,14 +1835,25 @@ the latest version. The connected clients must use the same version.</p>
 <p><strong>Keep Time (seconds)</strong> - How long a Capture message is to be left in memory before it will be deleted (if a Keep message is not received)</p>
 </li>
 <li>
+<p><strong>Keep Alive Enabled</strong> - Send a GetStatus message every Keep Alive Rate (see
+Keep Alive Rate parameter)</p>
+</li>
+<li>
+<p><strong>Keep Alive Rate (milliseconds)</strong> - The interval at which GetStatus messages
+are sent (see Keep Alive Enabled parameter)</p>
+</li>
+<li>
 <p><strong>Send One LP</strong> - If LPR results are found from multiple images
 of the same Event, RoadView will only send one of them via the ZAP protocol.</p>
 </li>
 <li>
-<p><strong>Images Selection</strong> - see <a href="#s_ZAP-Images-Selection">Section 11.16</a></p>
+<p><strong>Images Selection</strong> - see <a href="#s_ZAP-Images-Selection">Section 11.17</a></p>
 </li>
 <li>
 <p><strong>Offline Enabled</strong> - Check this box to enable the ZAP offline queue</p>
+</li>
+<li>
+<p><strong>Offline Send Rate</strong> - How often offline Events are sent from the offline queue</p>
 </li>
 <li>
 <p><strong>FTP Enabled (for ZAP Server)</strong> - When a client is connected to RoadView via ZAP, images can be sent to the client via FTP if this checkbox is checked.</p>
@@ -1851,16 +1877,23 @@ of the same Event, RoadView will only send one of them via the ZAP protocol.</p>
 <li>
 <p><u>FTP Keep Alive Rate (seconds)</u> - The time (in seconds) between attempts to check that the connection with the FTP server is still alive</p>
 </li>
-</ul>
-</div>
+<li>
+<p><u>Always FTP Paths</u> - Always include FTP paths
+to images in Event messages and EventImages messages</p>
 </li>
 </ul>
 </div>
 </li>
+<li>
+<p><strong>HTTP Paths</strong> - (appears if "FTP Enabled" is not checked)
+If this parameter is enabled, RoadView sends an HTTP URL of each image via
+ZAP, instead of the path on the FTP server or the path
+on the local drive. You can use these URLs to retrieve and display images
+from RoadView.</p>
+</li>
 </ul>
 </div>
-<div class="ulist">
-<ul>
+</li>
 <li>
 <p><strong>ZAP Client</strong> - Check the box to have RoadView act as a ZAP Client, which will connect to a ZAP Server (see the ZAP Protocol document for details).<br>
 <br>
@@ -1887,7 +1920,25 @@ sent</p>
 <p><strong>Keep Time (seconds)</strong> - How long a Capture message is to be left in memory before it will be deleted (if a Keep message is not received)</p>
 </li>
 <li>
+<p><strong>Keep Alive Enabled</strong> - Send a GetStatus message every Keep Alive Rate (see
+Keep Alive Rate parameter)</p>
+</li>
+<li>
+<p><strong>Keep Alive Rate (milliseconds)</strong> - The interval at which GetStatus messages
+are sent (see Keep Alive Enabled parameter)</p>
+</li>
+<li>
+<p><strong>Send One LP</strong> - If LPR results are found from multiple images
+of the same Event, RoadView will only send one of them via the ZAP protocol.</p>
+</li>
+<li>
+<p><strong>Images Selection</strong> - see <a href="#s_ZAP-Images-Selection">Section 11.17</a></p>
+</li>
+<li>
 <p><strong>Offline Enabled</strong> - Check this box to enable the ZAP offline queue</p>
+</li>
+<li>
+<p><strong>Offline Send Rate</strong> - How often offline Events are sent from the offline queue</p>
 </li>
 <li>
 <p><strong>FTP Enabled (for ZAP Client)</strong> - When
@@ -1896,6 +1947,9 @@ images can be sent to the server via FTP if this checkbox is checked.
 (See the FTP Server items for the definition of the additional FTP
 parameters.)</p>
 </li>
+<li>
+<p><strong>HTTP Paths</strong> - (See the FTP Server items for the definition of this parameter.)</p>
+</li>
 </ul>
 </div>
 </li>
@@ -1903,7 +1957,7 @@ parameters.)</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="s_ZAP-Images-Selection"><a class="anchor" href="#s_ZAP-Images-Selection"></a>11.16. ZAP Integration - Images Selection</h3>
+<h3 id="s_ZAP-Images-Selection"><a class="anchor" href="#s_ZAP-Images-Selection"></a>11.17. ZAP Integration - Images Selection</h3>
 <div class="paragraph">
 <p>When an Event is generated in
 triggered or non-triggered modes, the system
@@ -1949,7 +2003,7 @@ of the license plate</p>
 </ul>
 </div>
 <div class="sect3">
-<h4 id="_license_plate_found"><a class="anchor" href="#_license_plate_found"></a>11.16.1. License Plate Found</h4>
+<h4 id="_license_plate_found"><a class="anchor" href="#_license_plate_found"></a>11.17.1. License Plate Found</h4>
 <div class="ulist">
 <ul>
 <li>
@@ -2049,7 +2103,7 @@ plate recognition</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_license_plate_not_found"><a class="anchor" href="#_license_plate_not_found"></a>11.16.2. License Plate Not Found</h4>
+<h4 id="_license_plate_not_found"><a class="anchor" href="#_license_plate_not_found"></a>11.17.2. License Plate Not Found</h4>
 <div class="ulist">
 <ul>
 <li>
@@ -2081,7 +2135,7 @@ and all OV images</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="s_Direct-Trigger"><a class="anchor" href="#s_Direct-Trigger"></a>11.17. Direct Trigger</h3>
+<h3 id="s_Direct-Trigger"><a class="anchor" href="#s_Direct-Trigger"></a>11.18. Direct Trigger</h3>
 <div id="f_Direct-Trigger-Section" class="imageblock">
 <div class="content">
 <img src="_images/UserGuide/image19.png" alt="image" width="287" height="43">
@@ -2125,7 +2179,7 @@ at these inputs sends a trigger to RoadView
 <div style="page-break-after: always;"></div>
 </div>
 <div class="sect2">
-<h3 id="s_INEX-I-O-Controller"><a class="anchor" href="#s_INEX-I-O-Controller"></a>11.18. Inex I/O Controller</h3>
+<h3 id="s_INEX-I-O-Controller"><a class="anchor" href="#s_INEX-I-O-Controller"></a>11.19. Inex I/O Controller</h3>
 <div id="f_INEX-I-O-Controller-Section" class="imageblock">
 <div class="content">
 <img src="_images/UserGuide/image20.png" alt="image" width="363" height="107">
@@ -2194,7 +2248,7 @@ at these inputs sends a trigger to RoadView
 </div>
 </div>
 <div class="sect2">
-<h3 id="s_Journal-Optional-Local-Storage"><a class="anchor" href="#s_Journal-Optional-Local-Storage"></a>11.19. Journal (Optional Local Storage)</h3>
+<h3 id="s_Journal-Optional-Local-Storage"><a class="anchor" href="#s_Journal-Optional-Local-Storage"></a>11.20. Journal (Optional Local Storage)</h3>
 <div id="f_Journal-Section" class="imageblock">
 <div class="content">
 <img src="_images/UserGuide/image21.png" alt="image" width="458" height="129">
@@ -2257,9 +2311,9 @@ old Events and store new Events only.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="s_Events-Post-Processing"><a class="anchor" href="#s_Events-Post-Processing"></a>11.20. Events Post Processing</h3>
+<h3 id="s_Events-Post-Processing"><a class="anchor" href="#s_Events-Post-Processing"></a>11.21. Events Post Processing</h3>
 <div class="sect3">
-<h4 id="s_Events-Post-Processing-Section-Skip-Empty-Events"><a class="anchor" href="#s_Events-Post-Processing-Section-Skip-Empty-Events"></a>11.20.1. Skip Empty Events</h4>
+<h4 id="s_Events-Post-Processing-Section-Skip-Empty-Events"><a class="anchor" href="#s_Events-Post-Processing-Section-Skip-Empty-Events"></a>11.21.1. Skip Empty Events</h4>
 <div class="ulist">
 <ul>
 <li>
@@ -2270,7 +2324,7 @@ it is ignored.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="s_Events-Post-Processing-Section-Combine-Enabled"><a class="anchor" href="#s_Events-Post-Processing-Section-Combine-Enabled"></a>11.20.2. Combine Enabled</h4>
+<h4 id="s_Events-Post-Processing-Section-Combine-Enabled"><a class="anchor" href="#s_Events-Post-Processing-Section-Combine-Enabled"></a>11.21.2. Combine Enabled</h4>
 <div id="f_Events-Post-Processing-Section-Combine-Enabled" class="imageblock">
 <div class="content">
 <img src="_images/UserGuide/RV-1_15-FIG-208_Events_Post_Combine.png" alt="image" width="480" height="160">
@@ -2289,7 +2343,7 @@ it is ignored.</p>
 <li>
 <p><strong>Combine Lev Distance</strong> - The maximum Levenshtein distance between
 the two plate reads for which the Events will be combined
-(see <a href="#s_Detector-Configuration">Section 11.22</a> for a more detailed explanation
+(see <a href="#s_Detector-Configuration">Section 11.23</a> for a more detailed explanation
 of Levenshtein distance).</p>
 </li>
 <li>
@@ -2308,7 +2362,7 @@ virtual line 750 pixels from the top of the image.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="s_Events-Post-Processing-Section-SkipByDistance-Enabled"><a class="anchor" href="#s_Events-Post-Processing-Section-SkipByDistance-Enabled"></a>11.20.3. Skip By Distance Enabled</h4>
+<h4 id="s_Events-Post-Processing-Section-SkipByDistance-Enabled"><a class="anchor" href="#s_Events-Post-Processing-Section-SkipByDistance-Enabled"></a>11.21.3. Skip By Distance Enabled</h4>
 <div id="f_Events-Post-Processing-Section-SkipByDistance-Enabled" class="imageblock">
 <div class="content">
 <img src="_images/UserGuide/RV-1_15-FIG-209_Events_Post_Skip.png" alt="image" width="480" height="160">
@@ -2328,7 +2382,7 @@ for the skip to occur. This timeout is renewed after the skip.</p>
 <li>
 <p><strong>Skip Lev Distance</strong> - If the Levenshtein difference between
 similar LPR reads from the same lane is less than or equal to the Skip Lev Distance,
-then the new Event will be skipped. (See <a href="#s_Detector-Configuration">Section 11.22</a> for a more detailed explanation
+then the new Event will be skipped. (See <a href="#s_Detector-Configuration">Section 11.23</a> for a more detailed explanation
 of Levenshtein distance.)</p>
 </li>
 </ul>
@@ -2340,7 +2394,7 @@ of Levenshtein distance.)</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="s_Trigger-Offset"><a class="anchor" href="#s_Trigger-Offset"></a>11.21. Trigger Offset</h3>
+<h3 id="s_Trigger-Offset"><a class="anchor" href="#s_Trigger-Offset"></a>11.22. Trigger Offset</h3>
 <div id="f_Trigger-Offset-Section" class="imageblock">
 <div class="content">
 <img src="_images/UserGuide/image23.png" alt="image" width="477" height="85">
@@ -2366,7 +2420,7 @@ of Levenshtein distance.)</p>
 <div style="page-break-after: always;"></div>
 </div>
 <div class="sect2">
-<h3 id="s_Detector-Configuration"><a class="anchor" href="#s_Detector-Configuration"></a>11.22. Detector Configuration</h3>
+<h3 id="s_Detector-Configuration"><a class="anchor" href="#s_Detector-Configuration"></a>11.23. Detector Configuration</h3>
 <div id="f_Detector-Configuration-Section" class="imageblock">
 <div class="content">
 <img src="_images/UserGuide/RV-1_15-FIG-212_NewDetectorConfig.png" alt="image" width="433" height="472">
@@ -2589,7 +2643,7 @@ just the ones with the best confidence)</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="s_Lanes"><a class="anchor" href="#s_Lanes"></a>11.23. Lanes</h3>
+<h3 id="s_Lanes"><a class="anchor" href="#s_Lanes"></a>11.24. Lanes</h3>
 <div id="f_Lanes-Section" class="imageblock">
 <div class="content">
 <img src="_images/UserGuide/image28.png" alt="image" width="617" height="87">
@@ -2718,7 +2772,7 @@ right of the screen (see <a href="#s_Live-Journal-Tab">Section 12</a>).</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="s_Cameras"><a class="anchor" href="#s_Cameras"></a>11.24. Cameras</h3>
+<h3 id="s_Cameras"><a class="anchor" href="#s_Cameras"></a>11.25. Cameras</h3>
 <div id="f_Cameras-Section" class="imageblock">
 <div class="content">
 <img src="_images/UserGuide/RV-1_15-FIG-215_Cameras.png" alt="image" width="695" height="112">
@@ -2795,7 +2849,7 @@ displayed in the Live tab.</p>
 <div class="ulist">
 <ul>
 <li>
-<p><strong>Lane ID</strong> - The identification number of the lane being captured by the camera(s). Select a Lane number you defined (see <a href="#s_Lanes">Section 11.23</a>). This number will appear associated with Events in the Live tab (see <a href="#s_Live-Journal-Tab">Section 12</a>).</p>
+<p><strong>Lane ID</strong> - The identification number of the lane being captured by the camera(s). Select a Lane number you defined (see <a href="#s_Lanes">Section 11.24</a>). This number will appear associated with Events in the Live tab (see <a href="#s_Live-Journal-Tab">Section 12</a>).</p>
 <div class="admonitionblock note">
 <table>
 <tr>
@@ -2807,7 +2861,7 @@ displayed in the Live tab.</p>
 <p>The images from all cameras capturing the same physical lane will be combined into a single Event.</p>
 </div>
 <div class="paragraph">
-<p>Using the same Lane ID for different cameras (even the LPR and OV cameras within the same Camera System) will combine the reads into one Event (see <a href="#s_Lanes">Section 11.23</a>). You may even be able to improve read accuracy by changing the zoom to have one camera "see" closer than the other one.</p>
+<p>Using the same Lane ID for different cameras (even the LPR and OV cameras within the same Camera System) will combine the reads into one Event (see <a href="#s_Lanes">Section 11.24</a>). You may even be able to improve read accuracy by changing the zoom to have one camera "see" closer than the other one.</p>
 </div>
 <div class="paragraph">
 <p>You could also position cameras to be in different positions (front/rear as in a toll plaza).</p>
@@ -2926,7 +2980,7 @@ each Event has a unique ID, regardless of which camera
 it came from.</p>
 </li>
 <li>
-<p><u>Lane Name</u> - Lane name as configured for the camera(s) viewing this lane in the Settings tab - see <a href="#s_Lanes">Section 11.23</a></p>
+<p><u>Lane Name</u> - Lane name as configured for the camera(s) viewing this lane in the Settings tab - see <a href="#s_Lanes">Section 11.24</a></p>
 </li>
 <li>
 <p><u>Date and time</u> when the Event was recorded</p>
@@ -3318,7 +3372,7 @@ of an Event.) You can add a Direction column to the Live and Search tabs
 using the multi-line menu at the upper right of the screen (see <a href="#s_Live-Journal-Tab">Section 12</a>).<br>
 You can set the "Ignore Opposite Direction" parameter in the Lanes section
 to ignore all Events for vehicles moving in the direction opposite to the
-direction arrow (see <a href="#s_Lanes">Section 11.23</a>).</p>
+direction arrow (see <a href="#s_Lanes">Section 11.24</a>).</p>
 </li>
 <li>
 <p>When you have finished, click the <strong>Save</strong> button. Wait several seconds for the display to refresh automatically, which indicates that the RoadView recognition software is running again with the updated parameters.</p>
@@ -3542,7 +3596,7 @@ The Live tab and Search tab are empty (no Events are detected)</p></td>
 <p>Verify that stable power at the correct level is being supplied to the cameras, even when under a heavy processing load.</p>
 </li>
 <li>
-<p>Verify that the IP address(es) configured in RoadView match the IP addresses that you configured in the camera(s). See <a href="#s_Cameras">Section 11.24</a>.</p>
+<p>Verify that the IP address(es) configured in RoadView match the IP addresses that you configured in the camera(s). See <a href="#s_Cameras">Section 11.25</a>.</p>
 </li>
 </ul>
 </div></div></td>
@@ -3639,7 +3693,7 @@ the front window of the camera with a soft cloth and mild soap</p>
 <p></p>
 </div>
 <div class="paragraph">
-<p>Doc. No. RV-ALPR-MAN-001 Ver. 2024-05-06</p>
+<p>Doc. No. RV-ALPR-MAN-001 Ver. 2024-05-12</p>
 </div>
 </div>
 </div>

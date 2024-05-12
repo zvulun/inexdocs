@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Inex ALPR for the TIBA Parking System :: Documents</title>
+    <title>Inex ALPR for the GateKeeper System (GKSYS) :: Documents</title>
     <meta name="generator" content="Antora 3.1.3">
 <link rel="stylesheet" href="../../../_/css/site.css">
 <link rel="stylesheet" href="../../../_/css/site-extra.css">
@@ -75,7 +75,7 @@
     <a class="nav-link" href="../SLN-DriverFaceCapture/DocList.html">Driver Face Capture (DFC)</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../SLN-GKSYS/DocList.html">GateKeeper Systems (GKSYS) Integration</a>
+    <a class="nav-link" href="DocList.html">GateKeeper Systems (GKSYS) Integration</a>
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../SLN-IZCloudIntegration/DocList.html">IZCloud Integration</a>
@@ -108,7 +108,7 @@
     <a class="nav-link" href="../SLN-SKIDATA/DocList.html">SKIDATA Integration</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="DocList.html">TIBA Integration</a>
+    <a class="nav-link" href="../SLN-TIBA/DocList.html">TIBA Integration</a>
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../SLN-Tolling/DocList.html">Tolling</a>
@@ -416,7 +416,7 @@
 <nav class="breadcrumbs" aria-label="breadcrumbs">
   <ul>
     <li><a href="../index.html">Documents</a></li>
-    <li><a href="SLN-TIBA-Installation-Guide.html">Inex ALPR for the TIBA Parking System</a></li>
+    <li><a href="SLN-GKSYS-Installation-Guide.html">Inex ALPR for the GateKeeper System (GKSYS)</a></li>
   </ul>
 </nav>
 </div>
@@ -425,7 +425,7 @@
   <div class="toc-menu"></div>
 </aside>
 <article class="doc">
-<h1 class="page">Inex ALPR for the TIBA Parking System</h1>
+<h1 class="page">Inex ALPR for the GateKeeper System (GKSYS)</h1>
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
@@ -433,7 +433,7 @@
 </div>
 <div class="imageblock text-left">
 <div class="content">
-<img src="../_images/SLN-TIBA/TIBA_LOGO.png" alt="image" width="150">
+<img src="../_images/SLN-GKSYS/GKSYS_LOGO.png" alt="image" width="150">
 </div>
 </div>
 <div class="paragraph">
@@ -448,7 +448,7 @@
 <ul class="sectlevel1">
 <li><a href="#_background">1. Background</a></li>
 <li><a href="#_computer_and_software_requirements">2. Computer and Software Requirements</a></li>
-<li><a href="#_solution_bom">3. Solution BOM</a></li>
+<li><a href="#_solution_bom_is_this_list_of_modelscountries_still_correct_for_gksys">3. Solution BOM <strong><em>\{is this list of models/countries still correct for GKSYS??}</em></strong></a></li>
 <li><a href="#_lane_design">4. Lane Design</a></li>
 <li><a href="#_camera_wiring">5. Camera Wiring</a></li>
 <li><a href="#_use_iz_discovery">6. Use IZ Discovery</a>
@@ -503,7 +503,7 @@
 <li><a href="#s_Date-and-Time-Settings">12.3. Date and Time Settings</a></li>
 <li><a href="#s_Lanes">12.4. Lanes</a></li>
 <li><a href="#s_Cameras">12.5. Cameras</a></li>
-<li><a href="#s_TIBA-Integration">12.6. TIBA Integration</a></li>
+<li><a href="#s_TIBA-Integration">12.6. GKSYS Integration</a></li>
 <li><a href="#_direct_trigger">12.7. Direct Trigger</a>
 <ul class="sectlevel3">
 <li><a href="#_triggered_mode_3">12.7.1. Triggered Mode</a></li>
@@ -553,9 +553,17 @@
 <h2 id="_background"><a class="anchor" href="#_background"></a>1. Background</h2>
 <div class="sectionbody">
 <div class="paragraph">
+<p><strong><em>\{should we put the instructions in for
+connection to the Cisco client - and if so, at
+what point in this doc? - see emails describing how
+this is done. Also, where will the user get the Cisco
+Anyconnect installer software - from "your system
+manager? From Inex?}</em></strong></p>
+</div>
+<div class="paragraph">
 <p>This document describes how to install,
 configure and calibrate an Inex ALPR Camera
-for a single lane, to work with the TIBA Parking System.</p>
+for a <strong><em>\{single lane is correct?}</em></strong> single lane, to work with the GKSYS CVM System.</p>
 </div>
 </div>
 </div>
@@ -580,8 +588,8 @@ for a single lane, to work with the TIBA Parking System.</p>
 </td>
 <td class="content">
 <div class="paragraph">
-<p>The minimum TIBA SmartPark version
-required is 9.3.3</p>
+<p><strong><em>\{is this necessary?}</em></strong> The minimum GKSYS <strong><em>\{correct product name?}</em></strong> CVM version
+required is <strong><em>\{is there such a version to put in here?}</em></strong></p>
 </div>
 </td>
 </tr>
@@ -590,7 +598,7 @@ required is 9.3.3</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_solution_bom"><a class="anchor" href="#_solution_bom"></a>3. Solution BOM</h2>
+<h2 id="_solution_bom_is_this_list_of_modelscountries_still_correct_for_gksys"><a class="anchor" href="#_solution_bom_is_this_list_of_modelscountries_still_correct_for_gksys"></a>3. Solution BOM <strong><em>\{is this list of models/countries still correct for GKSYS??}</em></strong></h2>
 <div class="sectionbody">
 <div class="ulist">
 <ul>
@@ -605,7 +613,7 @@ required is 9.3.3</p>
 <p>IZA500GR-IRW-P48 - for Israel, EU, Taiwan, Australia, Vietnam, GCC, India, Singapore</p>
 </li>
 <li>
-<p>RoadView Advanced ALPR Software, version 1.15.64.97</p>
+<p>RoadView Advanced ALPR Software, version 1.15.120</p>
 </li>
 </ul>
 </div>
@@ -643,7 +651,7 @@ required is 9.3.3</p>
 </div>
 </li>
 <li>
-<p>IZCLOUD-APM - IZCloud Automatic License Plate Recognition (ALPR) Performance Monitoring</p>
+<p><strong><em>\{is IZCloud relevant?}</em></strong> IZCLOUD-APM - IZCloud Automatic License Plate Recognition (ALPR) Performance Monitoring</p>
 </li>
 </ul>
 </div>
@@ -672,16 +680,19 @@ required is 9.3.3</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-middle" colspan="2"><p class="tableblock">Max Vehicle Speed</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">Up to 80 mph (129 km/h)</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong><em>\{should be 40 based on IZA500G/GR comparison ppt?}</em></strong> Up to 80 mph (129 km/h)</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-middle" colspan="2"><p class="tableblock">LPR Capture Distance (D)<br>
 (for U.S.A. plates;<br>
 measured from camera to plate)</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">5-70 ft (1.5-21 m); 8 ft (2.4 m) recommended</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><strong><em>\{change according to IZA500G/GR comparison PPT?}</em></strong> 5-70 ft (1.5-21 m); 8 ft (2.4 m) recommended</p></td>
 </tr>
 </tbody>
 </table>
+<div class="paragraph">
+<p><strong><em>\{are these pics correct or do they need changing?}</em></strong></p>
+</div>
 <div id="f_Rear-Capture" class="imageblock text-center">
 <div class="content">
 <img src="../_images/SLN-TIBA/IZA500G-FIG-097_AmanoLaneDesign.png" alt="image" width="800">
@@ -705,6 +716,9 @@ measured from camera to plate)</p></td>
 <div class="sect1">
 <h2 id="_camera_wiring"><a class="anchor" href="#_camera_wiring"></a>5. Camera Wiring</h2>
 <div class="sectionbody">
+<div class="paragraph">
+<p><strong><em>\{need correct picture}</em></strong></p>
+</div>
 <div class="imageblock text-center">
 <div class="content">
 <img src="../_images/SLN-TIBA/IZA500G-FIG-101_TIBA_Wiring.png" alt="image" width="800">
@@ -1098,6 +1112,10 @@ each parameter section.</strong></p>
 <h2 id="_lpr_camera_sensor_configuration"><a class="anchor" href="#_lpr_camera_sensor_configuration"></a>8. LPR Camera (Sensor) Configuration</h2>
 <div class="sectionbody">
 <div class="paragraph">
+<p><strong><em>\{need settings for the GKSYS project -
+these were taken from TIBA}</em></strong></p>
+</div>
+<div class="paragraph">
 <p>The camera(s) are pre-configured;
 this section displays typical settings
 for reference.</p>
@@ -1282,7 +1300,7 @@ For example:<br>
 </li>
 <li>
 <p>You will see the login screen. Enter the default username
-and password (root, root):</p>
+and password (root, root): <strong><em>\{change to dialog with reset password link}</em></strong></p>
 <div id="f_Logging-In-to-RoadView" class="imageblock">
 <div class="content">
 <img src="../_images/SLN-TIBA/RV-TIBA-FIG-012_OldLoginNoResetPW.png" alt="image" width="209" height="143">
@@ -1306,7 +1324,7 @@ and password (root, root):</p>
 <p>Click on the multi-line menu icon at the upper right of the RoadView screen</p>
 </li>
 <li>
-<p>Select "Logout"</p>
+<p>Select "Logout" <strong><em>\{need picture with Change Password option}</em></strong></p>
 </li>
 </ul>
 </div>
@@ -1322,6 +1340,10 @@ and password (root, root):</p>
 <div class="sect1">
 <h2 id="s_Configure-RoadView-Settings-Tab"><a class="anchor" href="#s_Configure-RoadView-Settings-Tab"></a>12. Configure RoadView - Settings Tab</h2>
 <div class="sectionbody">
+<div class="paragraph">
+<p><strong><em>\{review all of these screens to see if they are
+correct for GKSYS}</em></strong></p>
+</div>
 <div class="paragraph">
 <p>Use the Settings tab after the first installation or
 re-installation of the ALPR system, or when some
@@ -1364,7 +1386,10 @@ Detector Configuration "Mode" selected.</p>
 <p>The RoadView software version (verify that the version is correct)</p>
 </li>
 <li>
-<p>The model, part number and serial number of the camera(s) RoadView is communicating with:</p>
+<p>The model, part number and serial number of the camera(s) RoadView is communicating with:
+<strong><em>\{need new picture showing 1.15.120; also, is
+it a problem if the main RV user guide shows
+an IZA500G (not GR) in its examples?}</em></strong></p>
 </li>
 </ul>
 </div>
@@ -1443,6 +1468,10 @@ and countries in North America (U.S. and Canada) and South America.</p>
 </td>
 </tr>
 </table>
+</div>
+<div class="paragraph">
+<p><strong><em>\{change location to a u.s. location
+like new york - not Israel?}</em></strong></p>
 </div>
 <div id="f_Date-and-Time-Settings-Section" class="imageblock">
 <div class="content">
@@ -1741,7 +1770,7 @@ Set as shown</p>
 <div style="page-break-after: always;"></div>
 </div>
 <div class="sect2">
-<h3 id="s_TIBA-Integration"><a class="anchor" href="#s_TIBA-Integration"></a>12.6. TIBA Integration</h3>
+<h3 id="s_TIBA-Integration"><a class="anchor" href="#s_TIBA-Integration"></a>12.6. GKSYS Integration</h3>
 <div class="admonitionblock important">
 <table>
 <tr>
@@ -1750,7 +1779,7 @@ Set as shown</p>
 </td>
 <td class="content">
 <div class="paragraph">
-<p>The minimum TIBA SmartPark version
+<p><strong><em>\{is this relevant?}</em></strong> The minimum GKSYS CVM version
 required is 9.3.3</p>
 </div>
 </td>
@@ -1758,133 +1787,41 @@ required is 9.3.3</p>
 </table>
 </div>
 <div class="paragraph">
-<p>Enable TIBA Integration and
+<p>Enable GKSYS Integration and
 set the parameters as follows. <strong>Remember to click the Save button at the end of the
 Detector Configuration section after making changes.</strong></p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="../_images/SLN-TIBA/RV-TIBA-FIG-002b_TIBA_Integration.png" alt="image" width="550">
+<img src="../_images/SLN-GKSYS/RV-GKSYS-FIG-002_GKSYS_Integration.png" alt="image" width="550">
 </div>
-<div class="title">Figure 26. TIBA Integration</div>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>The required TIBA API token is hardcoded;
-it is not required to define it here.</p>
-</div>
-</td>
-</tr>
-</table>
+<div class="title">Figure 26. GKSYS Integration</div>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p><strong>TIBA URL</strong></p>
-<div class="ulist">
-<ul>
-<li>
-<p>For TIBA Cloud, the URL of the
-TIBA server. For example:<br>
-https://yoursite.sp.tibaparking.net/<br></p>
-<div class="admonitionblock important">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-important" title="Important"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>DO NOT enter the addition for the full path (/LprData/LPR/LPRevent)</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
+<p><strong>GKSYS URL</strong> - The URL of the GKSYS
+endpoint; this must be a full URL, not just the server and
+port. For example:<br>
+https://198.132.128.24:8892/api/LicensePlateStatus</p>
 </li>
 <li>
-<p>For On Prem, the IP address of the
-SmartPark server and Services Hosting port
-as defined in the TIBA LPR settings. For example (see <a href="#f_TIBA_LPR_Settings">Figure 27</a>):<br>
-https://31.154.177.6:29811/<br></p>
-<div class="admonitionblock important">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-important" title="Important"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>DO NOT enter any addition for a full path.</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-</li>
-</ul>
-</div>
-</li>
-</ul>
-</div>
-<div id="f_TIBA_LPR_Settings" class="imageblock text-middle">
-<div class="content">
-<img src="../_images/SLN-TIBA/RV-TIBA-FIG-013_SmartPark_LPR_Settings.png" alt="image" width="300">
-</div>
-<div class="title">Figure 27. TIBA LPR Settings</div>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><strong>User Name</strong> - BasicAuth username to access the TIBA server</p>
+<p><strong>Auth Code</strong> - Authorization code of the GKSYS endpoint</p>
 </li>
 <li>
-<p><strong>Password</strong> - BasicAuth password to access the TIBA server</p>
-</li>
-<li>
-<p><strong>Camera Port</strong> - Not required, leave at default, for future
-expansion -
-the HTTPS port on which RoadView
-listens for capture and “open gate” commands</p>
-</li>
-<li>
-<p><strong>Auth Key</strong> - Not required, for future expansion - the key that should be in one of the
-headers sent by the TIBA server, in the
-HTTP requests for capture and “open gate” commands</p>
-</li>
-<li>
-<p><strong>Auth Value</strong> - Not required, for future expansion - the value for the header with the key
-defined by Auth Key, that should match the value sent
-by the TIBA server, in the HTTP requests
-for capture and “open gate” commands</p>
-</li>
-<li>
-<p><strong>Send Plate Image</strong> - when enabled, if the Plate image
-is found and there was recognition, the Plate
-image is sent as part of the Event; if there
-was no recognition, the OV image is sent</p>
-</li>
-<li>
-<p><strong>Send OV Image</strong> - when enabled, the OV image
-is always sent as part of the Event</p>
-</li>
-</ul>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><strong>Lane ID</strong> - Not used, for future expansion - this table is automatically populated
+<p><strong>Lane ID</strong> - The Lane associated with the GPIO.
+This table is automatically populated
 with the number of lanes defined in the Lanes section
-at the bottom of the Settings tab</p>
+at the bottom of the Settings tab (see <a href="#s_Lanes">Section 12.4</a>).</p>
 </li>
 <li>
-<p><strong>GPIO</strong> - Not used, leave at default (0)</p>
+<p><strong>GPIO</strong> - The nn number that identifies the GPIOnn
+pin on the NVIDIA Jetson processor&#8217;s I/O module.
+When RoadView sends a validation request (to see if the
+plate read matches to the GKSYS list of expected
+plate reads), a signal is sent to this pin when GKSYS
+responds that a gate should be opened.
+See the NVIDIA Jetson documentation for further information.</p>
 </li>
 </ul>
 </div>
@@ -1915,7 +1852,7 @@ Detector Configuration section after making changes.</p>
 <div class="content">
 <img src="../_images/SLN-TIBA/RV-TIBA-FIG-003a_Direct_Trigger.png" alt="image" width="600">
 </div>
-<div class="title">Figure 28. Direct Trigger Section</div>
+<div class="title">Figure 27. Direct Trigger Section</div>
 </div>
 </div>
 <div class="sect3">
@@ -1940,7 +1877,7 @@ Detector Configuration section after making changes.</p>
 <div class="content">
 <img src="../_images/SLN-TIBA/RV-TIBA-FIG-003b_Trigger_Offset.png" alt="image" width="600">
 </div>
-<div class="title">Figure 29. Trigger Offset Section</div>
+<div class="title">Figure 28. Trigger Offset Section</div>
 </div>
 <div class="sect3">
 <h4 id="_triggered_mode_4"><a class="anchor" href="#_triggered_mode_4"></a>12.8.1. Triggered Mode</h4>
@@ -1962,7 +1899,7 @@ it is obstructed from view by the bar.</p>
 <div class="content">
 <img src="../_images/SLN-TIBA/RV-TIBA-FIG-003c_TriggerOffsetIllustrated.png" alt="image" width="400">
 </div>
-<div class="title">Figure 30. Trigger Offset Illustration</div>
+<div class="title">Figure 29. Trigger Offset Illustration</div>
 </div>
 <div class="ulist">
 <ul>
@@ -1995,6 +1932,10 @@ Detector Configuration section after making changes.</p>
 </div>
 <div class="sect2">
 <h3 id="s_Detector-Configuration"><a class="anchor" href="#s_Detector-Configuration"></a>12.9. Detector Configuration</h3>
+<div class="paragraph">
+<p><strong><em>\{take a new screen shot with the Detector
+Configuration setting for GKSYS}</em></strong></p>
+</div>
 <div class="ulist">
 <ul>
 <li>
@@ -2011,7 +1952,7 @@ changing these parameters.</p>
 <div class="content">
 <img src="../_images/SLN-TIBA/RV-TIBA-FIG-004a_Detector_Configuration.png" alt="image" width="500">
 </div>
-<div class="title">Figure 31. Detector Configuration Section</div>
+<div class="title">Figure 30. Detector Configuration Section</div>
 </div>
 <div class="paragraph">
 <p>Explanations of frequently used parameters:</p>
@@ -2093,6 +2034,9 @@ changing these parameters.</p>
 <div class="sect1">
 <h2 id="_configure_roadview_system_info_tab"><a class="anchor" href="#_configure_roadview_system_info_tab"></a>13. Configure RoadView - System Info Tab</h2>
 <div class="sectionbody">
+<div class="paragraph">
+<p><strong><em>\{need new screen shot for GKSYS}</em></strong></p>
+</div>
 <div class="ulist">
 <ul>
 <li>
@@ -2188,7 +2132,7 @@ by the Latitude and Longitude parameters). Additional parameters are:</p>
 <div class="content">
 <img src="../_images/SLN-TIBA/RV-TIBA-FIG-011a_CalibrationTab.png" alt="image" width="800">
 </div>
-<div class="title">Figure 32. Calibration Tab</div>
+<div class="title">Figure 31. Calibration Tab</div>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
@@ -2216,7 +2160,7 @@ and time that the image is being taken/was taken by the camera.</p>
 </li>
 <li>
 <p>Aim the camera using the mounting bracket&#8217;s adjustment
-hardware (see <a href="#f_Pan-Tilt-Roll-Angle-Adjustments">Figure 33</a>).</p>
+hardware (see <a href="#f_Pan-Tilt-Roll-Angle-Adjustments">Figure 32</a>).</p>
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
@@ -2238,7 +2182,7 @@ image is horizontally straight, parallel to the ground
 <div class="content">
 <img src="../_images/RoadViewALPR/PanTiltRoll.png" alt="image" width="311" height="186">
 </div>
-<div class="title">Figure 33. Pan/Tilt/Roll (Angle) Adjustments</div>
+<div class="title">Figure 32. Pan/Tilt/Roll (Angle) Adjustments</div>
 </div>
 </li>
 </ol>
@@ -2349,6 +2293,10 @@ tightening of the mounting hardware.</p>
 <div class="sect1">
 <h2 id="s_Verify-System-Operation"><a class="anchor" href="#s_Verify-System-Operation"></a>15. Verify System Operation</h2>
 <div class="sectionbody">
+<div class="paragraph">
+<p><strong><em>\{use a screen shot from the actual
+GKSYS site}</em></strong></p>
+</div>
 <div class="ulist">
 <ul>
 <li>
@@ -2364,7 +2312,7 @@ tab.</p>
 <div class="content">
 <img src="../_images/SLN-TIBA/RV-TIBA-FIG-009a_LiveTab.png" alt="image" width="800">
 </div>
-<div class="title">Figure 34. Live (Journal) Tab</div>
+<div class="title">Figure 33. Live (Journal) Tab</div>
 </div>
 <div class="ulist">
 <ul>
@@ -2385,6 +2333,11 @@ RoadView database.</p>
 <div class="sect1">
 <h2 id="s_IZCloud-Integration"><a class="anchor" href="#s_IZCloud-Integration"></a>16. IZCloud Automatic License Plate Recognition (ALPR) Performance Monitoring</h2>
 <div class="sectionbody">
+<div class="paragraph">
+<p><strong><em>\{Is IZCloud relevant for GKSYS? and if so,
+is the version of the IZCloud screens shown here
+correct for GKSYS - these are the screens from TIBA}</em></strong></p>
+</div>
 <div class="paragraph">
 <p>IZCloud ALPR Performance Monitoring software (IZCloud-APM)
 is an advanced SaaS (Software as a Service) application.
@@ -2425,7 +2378,7 @@ Detector Configuration section after making changes.</p>
 <div class="content">
 <img src="../_images/SLN-TIBA/RV-TIBA-FIG-002a_IZCloud.png" alt="image" width="550">
 </div>
-<div class="title">Figure 35. RoadView Settings Tab - IZCloud Integration Section</div>
+<div class="title">Figure 34. RoadView Settings Tab - IZCloud Integration Section</div>
 </div>
 <div style="page-break-after: always;"></div>
 </div>
@@ -2446,7 +2399,7 @@ Detector Configuration section after making changes.</p>
 <div class="content">
 <img src="../_images/SLN-TIBA/IZCloud-BorderLogin.png" alt="image" width="400">
 </div>
-<div class="title">Figure 36. IZCloud Login</div>
+<div class="title">Figure 35. IZCloud Login</div>
 </div>
 </div>
 <div class="sect2">
@@ -2459,7 +2412,7 @@ then click the Logout button.</p>
 <div class="content">
 <img src="../_images/SLN-TIBA/IZCloud-BorderTIBA-Logout.png" alt="image" width="200">
 </div>
-<div class="title">Figure 37. IZCloud Logout</div>
+<div class="title">Figure 36. IZCloud Logout</div>
 </div>
 <div style="page-break-after: always;"></div>
 </div>
@@ -2473,7 +2426,7 @@ all Events generated by the system.</p>
 <div class="content">
 <img src="../_images/SLN-TIBA/IZCloud-BorderTIBA-Events.png" alt="image" width="800">
 </div>
-<div class="title">Figure 38. IZCloud Events</div>
+<div class="title">Figure 37. IZCloud Events</div>
 </div>
 <div class="paragraph">
 <p>Columns/Filters:</p>
@@ -2486,10 +2439,10 @@ all Events generated by the system.</p>
 <ul>
 <li>
 <p>Click in the text box to display a calendar
-popup (see <a href="#f_IZCLoud-Calendar-Popup">Figure 39</a>)</p>
+popup (see <a href="#f_IZCLoud-Calendar-Popup">Figure 38</a>)</p>
 </li>
 <li>
-<p>Click once to select a start date (see <a href="#f_IZCLoud-Selecting-a-Date-Range">Figure 40</a>)</p>
+<p>Click once to select a start date (see <a href="#f_IZCLoud-Selecting-a-Date-Range">Figure 39</a>)</p>
 </li>
 <li>
 <p>Click again to select an end date
@@ -2503,7 +2456,7 @@ clear the checkbox.<br></p>
 <div class="content">
 <img src="../_images/SLN-TIBA/IZCloud-BorderCalendar-Popup.png" alt="image" width="400">
 </div>
-<div class="title">Figure 39. IZCloud: Calendar Popup</div>
+<div class="title">Figure 38. IZCloud: Calendar Popup</div>
 </div>
 </li>
 </ul>
@@ -2515,7 +2468,7 @@ clear the checkbox.<br></p>
 <div class="content">
 <img src="../_images/SLN-TIBA/IZCloud-BorderSelect-Date-Range.png" alt="image" width="250">
 </div>
-<div class="title">Figure 40. IZCloud: Selecting a Data Range</div>
+<div class="title">Figure 39. IZCloud: Selecting a Data Range</div>
 </div>
 <div class="ulist">
 <ul>
@@ -2557,7 +2510,7 @@ camera status and read rate statistics.</p>
 <div class="content">
 <img src="../_images/SLN-TIBA/IZCloud-BorderTIBA-Maint-Cameras.png" alt="image" width="800">
 </div>
-<div class="title">Figure 41. IZCloud Cameras Page</div>
+<div class="title">Figure 40. IZCloud Cameras Page</div>
 </div>
 <div class="paragraph">
 <p>Columns/Filters:</p>
@@ -2603,7 +2556,7 @@ by the lane on that row (see <a href="#s_Last-Review">Section 16.6</a>).</p>
 <div class="content">
 <img src="../_images/SLN-TIBA/IZCloud-BorderTIBA-LastReview-Lane1.png" alt="image" width="800">
 </div>
-<div class="title">Figure 42. IZCloud Last Review Page</div>
+<div class="title">Figure 41. IZCloud Last Review Page</div>
 </div>
 <div class="paragraph">
 <p>Columns/Filters:</p>
@@ -2697,7 +2650,7 @@ analytical reports about ALPR performance.</p>
 <div class="content">
 <img src="../_images/SLN-TIBA/IZCloud-BorderTIBA-DashBrd-HoverBarChart.png" alt="image" width="800">
 </div>
-<div class="title">Figure 43. IZCloud Dashboard Page</div>
+<div class="title">Figure 42. IZCloud Dashboard Page</div>
 </div>
 <div class="paragraph">
 <p>Page Elements:</p>
@@ -2759,7 +2712,7 @@ is generated daily. Hover on a point to show details.</p>
 <div class="sect2">
 <h3 id="s_IZCloud-Lanes"><a class="anchor" href="#s_IZCloud-Lanes"></a>16.8. IZCloud Lanes</h3>
 <div class="paragraph">
-<p>The Lanes page enables you to (see <a href="#f_IZCloud-Lanes-Page">Figure 44</a>):</p>
+<p>The Lanes page enables you to (see <a href="#f_IZCloud-Lanes-Page">Figure 43</a>):</p>
 </div>
 <div class="ulist">
 <ul>
@@ -2801,7 +2754,7 @@ video stream from the camera.</p>
 <div class="content">
 <img src="../_images/SLN-TIBA/IZCloud-BorderTIBA-Lanes.png" alt="image" width="500">
 </div>
-<div class="title">Figure 44. IZCloud Lanes Page</div>
+<div class="title">Figure 43. IZCloud Lanes Page</div>
 </div>
 <div class="ulist">
 <ul>
@@ -2825,7 +2778,7 @@ with the updated read.<br></p>
 <div class="content">
 <img src="../_images/SLN-TIBA/IZCloud-BorderTIBA-Lanes-CorrectPlate.png" alt="image" width="400">
 </div>
-<div class="title">Figure 45. IZCloud Lanes - Correct Plate Read</div>
+<div class="title">Figure 44. IZCloud Lanes - Correct Plate Read</div>
 </div>
 <div style="page-break-after: always;"></div>
 </div>
@@ -2834,6 +2787,9 @@ with the updated read.<br></p>
 <div class="sect1">
 <h2 id="s_Troubleshooting"><a class="anchor" href="#s_Troubleshooting"></a>17. RoadView Troubleshooting</h2>
 <div class="sectionbody">
+<div class="paragraph">
+<p><strong><em>\{recheck this table to see if it is relevant for GKSYS}</em></strong></p>
+</div>
 <table id="t_Troubleshooting" class="tableblock frame-all grid-all stretch withborders">
 <caption class="title">Table 2. RoadView Troubleshooting</caption>
 <colgroup>
@@ -2968,7 +2924,7 @@ The Live tab and Search tab are empty (no Events are detected)</p></td>
 <p></p>
 </div>
 <div class="paragraph">
-<p>Doc. No. TIBA-MAN-002b Ver. 2024-05-12</p>
+<p>Doc. No. GKSYS-MAN-002b Ver. 2024-05-12</p>
 </div>
 </div>
 </div>
