@@ -102,6 +102,10 @@ asciidoc:
     software-monitoring: IZMonitoring Server@
     hw-iocontroller: IZIO@
     hw-poeinjector: IZ4POE@
+    hw-1poeinjector: IZ1POE@
+    hw-2poeinjector: IZ2POE@
+    hw-4poeinjector: IZ4POE@
+    hw-poeports: 1/2/4@
     hw-connection-panel: IZPanel@
     hw-webrelay-quad: IZ-REM-RELAY-4@
     hw-webrelay-single: IZ-REM-RELAY@
