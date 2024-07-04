@@ -508,25 +508,12 @@
 <li><a href="#_configure_roadview_system_info_tab">13. Configure RoadView - System Info Tab</a></li>
 <li><a href="#s_Calibrating-the-Cameras-Using-RoadView">14. Calibrating the Cameras Using RoadView</a></li>
 <li><a href="#s_Verify-System-Operation">15. Verify System Operation</a></li>
-<li><a href="#s_IZCloud-Integration">16. IZCloud Automatic License Plate Recognition (ALPR) Performance Monitoring</a>
+<li><a href="#s_Troubleshooting">16. RoadView Troubleshooting</a></li>
+<li><a href="#_legal_notices">17. Legal Notices</a>
 <ul class="sectlevel2">
-<li><a href="#_configuring_izcloud_integration_in_roadview">16.1. Configuring IZCloud Integration in RoadView</a></li>
-<li><a href="#_logging_in_to_izcloud">16.2. Logging In to IZCloud</a></li>
-<li><a href="#_logging_out_of_izcloud">16.3. Logging Out of IZCloud</a></li>
-<li><a href="#s_IZCloud-Whitelist">16.4. IZCloud Access Control Lists - Whitelists and Blacklists</a></li>
-<li><a href="#s_IZCloud-Events">16.5. IZCloud Events</a></li>
-<li><a href="#s_IZCloud-Cameras">16.6. IZCloud Maintenance - Cameras</a></li>
-<li><a href="#s_Last-Review">16.7. IZCloud Maintenance - Last Review</a></li>
-<li><a href="#s_Dashboard">16.8. IZCloud Maintenance - Dashboard</a></li>
-<li><a href="#s_IZCloud-Lanes">16.9. IZCloud Lanes</a></li>
-</ul>
-</li>
-<li><a href="#s_Troubleshooting">17. RoadView Troubleshooting</a></li>
-<li><a href="#_legal_notices">18. Legal Notices</a>
-<ul class="sectlevel2">
-<li><a href="#_notice">18.1. Notice</a></li>
-<li><a href="#_software_precautions">18.2. Software Precautions</a></li>
-<li><a href="#_legal_disclaimer">18.3. Legal Disclaimer</a></li>
+<li><a href="#_notice">17.1. Notice</a></li>
+<li><a href="#_software_precautions">17.2. Software Precautions</a></li>
+<li><a href="#_legal_disclaimer">17.3. Legal Disclaimer</a></li>
 </ul>
 </li>
 </ul>
@@ -540,9 +527,11 @@
 <h2 id="_background"><a class="anchor" href="#_background"></a>1. Background</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p><strong><em>\{Pinchas: there is not much
-installation; how do you want this divided
-into installation and user guides?}</em></strong></p>
+<p><strong><em>\{Pinchas: does the LPR Camera Settings screen
+have the color-related buttons at the bottom, or was
+this just because I used both screens for LPR and OV;
+also are the LPR / OV camera settings screens
+identical except for the day &amp; night control setting?}</em></strong></p>
 </div>
 <div class="paragraph">
 <p>This document describes how to install,
@@ -1069,12 +1058,6 @@ each parameter section.</strong></p>
 <h2 id="_lpr_camera_sensor_configuration"><a class="anchor" href="#_lpr_camera_sensor_configuration"></a>8. LPR Camera (Sensor) Configuration</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p><strong><em>\{GET SCREENS/CAMERA URLS from Pinchas
-to use as standard for all solutions using
-IZA500GR Cameras: 30 FPS AT TOP;
-5 in the primary stream}</em></strong></p>
-</div>
-<div class="paragraph">
 <p>The camera(s) are usually pre-configured;
 this section displays typical settings
 for reference.</p>
@@ -1120,7 +1103,12 @@ for reference.</p>
 <div class="paragraph">
 <p>Before changing the Camera Setup parameters, be sure to click
 the Default(Day) link at the top of
-the table.</p>
+the table.<br>
+Set the Shutter Time Max parameter
+according to the camera-to-plate distance
+as follows:<br>
+40 ft (12.2 m) - 1/500; 20 ft (6.0 m) - 1/1000;
+15 ft (4.6 m) - 1/2000; 10 ft (3.0 m) - 1/4000</p>
 </div>
 </td>
 </tr>
@@ -1181,7 +1169,12 @@ for reference.</p>
 <div class="paragraph">
 <p>Before changing the Camera Setup parameters, be sure to click
 the Default(Day) link at the top of
-the table.</p>
+the table.<br>
+Set the Shutter Time Max parameter
+according to the camera-to-plate distance
+as follows:<br>
+40 ft (12.2 m) - 1/500; 20 ft (6.0 m) - 1/1000;
+15 ft (4.6 m) - 1/2000; 10 ft (3.0 m) - 1/4000</p>
 </div>
 </td>
 </tr>
@@ -2170,540 +2163,7 @@ RoadView database.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="s_IZCloud-Integration"><a class="anchor" href="#s_IZCloud-Integration"></a>16. IZCloud Automatic License Plate Recognition (ALPR) Performance Monitoring</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>IZCloud ALPR Performance Monitoring software (IZCloud-APM)
-is an advanced SaaS (Software as a Service) application.
-You can:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Monitor real-time Events seamlessly</p>
-</li>
-<li>
-<p>Quickly and accurately search for license plates</p>
-</li>
-<li>
-<p>Benefit from daily analytical reports, which provide
-insights into ALPR performance</p>
-</li>
-</ul>
-</div>
-<div class="sect2">
-<h3 id="_configuring_izcloud_integration_in_roadview"><a class="anchor" href="#_configuring_izcloud_integration_in_roadview"></a>16.1. Configuring IZCloud Integration in RoadView</h3>
-<div class="ulist">
-<ul>
-<li>
-<p>Log in to RoadView (see <a href="#s_Using-RoadView">Section 11</a>).</p>
-</li>
-<li>
-<p>On the Settings tab, enable IZCloud Integration and
-set the parameters as follows:</p>
-</li>
-<li>
-<p>Remember to click the Save button at the end of the
-Detector Configuration section after making changes.</p>
-</li>
-</ul>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="../_images/SLN-GKSYS/RV-GKSYS-FIG-216_IZCloudIntegration.png" alt="image" width="550">
-</div>
-<div class="title">Figure 28. RoadView Settings Tab - IZCloud Integration Section</div>
-</div>
-<div style="page-break-after: always;"></div>
-</div>
-<div class="sect2">
-<h3 id="_logging_in_to_izcloud"><a class="anchor" href="#_logging_in_to_izcloud"></a>16.2. Logging In to IZCloud</h3>
-<div class="ulist">
-<ul>
-<li>
-<p>Type the URL of your IZCloud TIBA site
-(provided by Inex) into your browser&#8217;s address line</p>
-</li>
-<li>
-<p>Enter your username and password (provided by Inex).</p>
-</li>
-</ul>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="../_images/SLN-TIBA/IZCloud-BorderLogin.png" alt="image" width="400">
-</div>
-<div class="title">Figure 29. IZCloud Login</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_logging_out_of_izcloud"><a class="anchor" href="#_logging_out_of_izcloud"></a>16.3. Logging Out of IZCloud</h3>
-<div class="paragraph">
-<p>Click on your username at the upper-right of the screen,
-then click the Logout button.</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="../_images/SLN-GKSYS/RV-GKSYS-FIG-215_IZCloudLogout.png" alt="image" width="200">
-</div>
-<div class="title">Figure 30. IZCloud Logout</div>
-</div>
-<div style="page-break-after: always;"></div>
-</div>
-<div class="sect2">
-<h3 id="s_IZCloud-Whitelist"><a class="anchor" href="#s_IZCloud-Whitelist"></a>16.4. IZCloud Access Control Lists - Whitelists and Blacklists</h3>
-<div class="paragraph">
-<p>These are lists of plates which can be matched to
-when a vehicle arrives at the site.</p>
-</div>
-<div class="paragraph">
-<p>For example, select "Whitelist" from the Access Lists menu
-<span class="image"><img src="../_images/SLN-GKSYS/RV-GKSYS-FIG-220_IZCloudAccessMenu.png" alt="image" width="100"></span></p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="../_images/SLN-GKSYS/RV-GKSYS-FIG-219_IZCloudWhiteList.png" alt="image" width="800">
-</div>
-<div class="title">Figure 31. IZCloud Whitelist Page</div>
-</div>
-<div class="paragraph">
-<p>Columns/Filters:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><strong>Name</strong> - Enter characters
-to find within the names of the vehicle
-owners that will be granted access.</p>
-</li>
-<li>
-<p><strong>Address</strong> - Enter characters
-to find within the addresses of the vehicle
-owners</p>
-</li>
-<li>
-<p><strong>Phone</strong> - Enter characters
-to find within the phone numbers of the vehicle
-owners</p>
-</li>
-<li>
-<p><strong>Lot</strong> - Unused</p>
-</li>
-<li>
-<p><strong>Plate</strong> - Enter characters
-to find within the license plates of the vehicle
-owners. Multiple license plates separated by commas
-can be added to an owner by clicking the
-Edit button (pencil icon).</p>
-</li>
-<li>
-<p><strong>Start Time</strong> - Starting date/time that the owner&#8217;s
-vehicle is allowed to enter the site.
-Start times can be entered by clicking the
-Edit button (pencil icon).</p>
-</li>
-<li>
-<p><strong>End Time</strong> - Ending date/time that the owner&#8217;s
-vehicle is allowed to enter the site.
-End times can be entered by clicking the
-Edit button (pencil icon).</p>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect2">
-<h3 id="s_IZCloud-Events"><a class="anchor" href="#s_IZCloud-Events"></a>16.5. IZCloud Events</h3>
-<div class="paragraph">
-<p>The Events page enables you to view and filter
-all Events generated by the system.</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="../_images/SLN-GKSYS/RV-GKSYS-FIG-214_IZCloudEvents.png" alt="image" width="800">
-</div>
-<div class="title">Figure 32. IZCloud Events</div>
-</div>
-<div class="paragraph">
-<p>Columns/Filters:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><strong>TimeStamp</strong></p>
-<div class="ulist">
-<ul>
-<li>
-<p>Click in the text box to display a calendar
-popup (see <a href="#f_IZCLoud-Calendar-Popup">Figure 33</a>)</p>
-</li>
-<li>
-<p>Click once to select a start date (see <a href="#f_IZCLoud-Selecting-a-Date-Range">Figure 34</a>)</p>
-</li>
-<li>
-<p>Click again to select an end date
-(even if the same date)</p>
-</li>
-<li>
-<p>After selecting a range, the filter&#8217;s checkbox
-will be selected. To clear the filter,
-clear the checkbox.<br></p>
-<div id="f_IZCLoud-Calendar-Popup" class="imageblock">
-<div class="content">
-<img src="../_images/SLN-TIBA/IZCloud-BorderCalendar-Popup.png" alt="image" width="400">
-</div>
-<div class="title">Figure 33. IZCloud: Calendar Popup</div>
-</div>
-</li>
-</ul>
-</div>
-</li>
-</ul>
-</div>
-<div id="f_IZCLoud-Selecting-a-Date-Range" class="imageblock text-center">
-<div class="content">
-<img src="../_images/SLN-TIBA/IZCloud-BorderSelect-Date-Range.png" alt="image" width="250">
-</div>
-<div class="title">Figure 34. IZCloud: Selecting a Data Range</div>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><strong>Gate (Lane)</strong> - Select All, or a specific lane</p>
-</li>
-<li>
-<p><strong>List</strong> - List that plate was found on</p>
-</li>
-<li>
-<p><strong>Plate</strong> - Enter characters to find
-within the strings. For example,
-KZ will find <u>KZ</u>R3791 and J<u>KZ</u>0714</p>
-</li>
-<li>
-<p><strong>Plate Image</strong> - click on an image
-to display plate, LPR and Overview
-images of the Event</p>
-</li>
-<li>
-<p><strong>Action</strong> - Action taken for the vehicle (access
-granted or denied)</p>
-<div class="ulist">
-<ul>
-<li>
-<p>Granted - an Uber or Lyft vehicle that
-has been authorized to pick up a passenger
-at this time, or that is on the
-IZCloud Whitelist (see <a href="#s_IZCloud-Whitelist">Section 16.4</a>).</p>
-</li>
-<li>
-<p>Denied - an Uber or Lyft vehicle that
-has not been authorized to pick up a passenger
-at this time, or that is on the IZCloud
-Blacklist.</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p><strong>Owner</strong> - The vehicle owner name; Enter characters
-to find within the names</p>
-</li>
-</ul>
-</div>
-<div style="page-break-after: always;"></div>
-</div>
-<div class="sect2">
-<h3 id="s_IZCloud-Cameras"><a class="anchor" href="#s_IZCloud-Cameras"></a>16.6. IZCloud Maintenance - Cameras</h3>
-<div class="paragraph">
-<p>The Cameras page enables you to view
-camera status and read rate statistics.</p>
-</div>
-<div class="paragraph">
-<p>Select "Cameras" from the Maintenance menu
-<span class="image"><img src="../_images/SLN-TIBA/IZCloud-BorderTIBA-Maint-Menu.png" alt="image" width="100"></span></p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="../_images/SLN-GKSYS/RV-GKSYS-FIG-209_IZCloudCameras.png" alt="image" width="800">
-</div>
-<div class="title">Figure 35. IZCloud Cameras Page</div>
-</div>
-<div class="paragraph">
-<p>Columns/Filters:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><strong>Name</strong> - Enter characters
-to find within the names of the lanes</p>
-</li>
-<li>
-<p><strong>Location</strong> - Unused</p>
-</li>
-<li>
-<p><strong>Lot</strong> - Parking lot location of each lane;
-use the dropdown to select a lot</p>
-</li>
-<li>
-<p><strong>Status</strong> - Camera status (online or offline)</p>
-</li>
-<li>
-<p><strong>Read Rate</strong> - with no read mistakes</p>
-</li>
-<li>
-<p><strong>Read Rate N-1</strong> - with up to 1 read mistake</p>
-</li>
-<li>
-<p><strong>Read Rate N-2</strong> - with up to 2 read mistakes</p>
-</li>
-<li>
-<p><strong>Actions</strong> - select Last Review from the dropdown
-to display the Last Review page, filtered
-by the lane on that row (see <a href="#s_Last-Review">Section 16.7</a>).</p>
-</li>
-</ul>
-</div>
-<div style="page-break-after: always;"></div>
-</div>
-<div class="sect2">
-<h3 id="s_Last-Review"><a class="anchor" href="#s_Last-Review"></a>16.7. IZCloud Maintenance - Last Review</h3>
-<div class="paragraph">
-<p>Select "Last Review" from the Maintenance menu
-<span class="image"><img src="../_images/SLN-TIBA/IZCloud-BorderTIBA-Maint-Menu.png" alt="image" width="100"></span></p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="../_images/SLN-GKSYS/RV-GKSYS-FIG-210_IZCloudLastReview.png" alt="image" width="800">
-</div>
-<div class="title">Figure 36. IZCloud Last Review Page</div>
-</div>
-<div class="paragraph">
-<p>Columns/Filters:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><strong>TimeStamp</strong> - same as in <a href="#s_IZCloud-Events">Section 16.5</a></p>
-</li>
-<li>
-<p><strong>Gate</strong> - same as in <a href="#s_IZCloud-Events">Section 16.5</a></p>
-</li>
-<li>
-<p><strong>Plate</strong> - Plate read; filter works as in
-<a href="#s_IZCloud-Events">Section 16.5</a></p>
-</li>
-<li>
-<p><strong>Plate Review</strong> - True read; filter works as in
-<a href="#s_IZCloud-Events">Section 16.5</a></p>
-</li>
-<li>
-<p><strong>Plate Image</strong> - same as in <a href="#s_IZCloud-Events">Section 16.5</a></p>
-</li>
-<li>
-<p><strong>Read Status</strong> - use the dropdown to
-filter the display</p>
-<div class="ulist">
-<ul>
-<li>
-<p><strong>Correct</strong> - automatic read matches
-the true read</p>
-</li>
-<li>
-<p><strong>N-1 Read</strong> - an automatic read with up to 1
-mistake</p>
-</li>
-<li>
-<p><strong>N-2 Read</strong> - an automatic read with up to 2
-mistakes</p>
-</li>
-<li>
-<p><strong>False Read</strong> - there are more than 2 mistakes
-in the automatic read</p>
-</li>
-<li>
-<p><strong>False Reject</strong> - an automatic read that was not generated
-for a qualified Event</p>
-</li>
-<li>
-<p><strong>Non-Qualified</strong> - cannot be read
-by a human; examples include:</p>
-<div class="ulist">
-<ul>
-<li>
-<p>Missing plate</p>
-</li>
-<li>
-<p>Partial image of plate</p>
-</li>
-<li>
-<p>Bent or broken plate</p>
-</li>
-<li>
-<p>Multiple plates</p>
-</li>
-<li>
-<p>Obstructed characters
-(by dirt, snow, trailer ball, etc.)</p>
-</li>
-</ul>
-</div>
-</li>
-</ul>
-</div>
-</li>
-</ul>
-</div>
-<div style="page-break-after: always;"></div>
-</div>
-<div class="sect2">
-<h3 id="s_Dashboard"><a class="anchor" href="#s_Dashboard"></a>16.8. IZCloud Maintenance - Dashboard</h3>
-<div class="paragraph">
-<p>The Dashboard page enables you to see daily
-analytical reports about ALPR performance.</p>
-</div>
-<div class="paragraph">
-<p>Select "Dashboard" from the Maintenance menu
-<span class="image"><img src="../_images/SLN-TIBA/IZCloud-BorderTIBA-Maint-Menu.png" alt="image" width="100"></span></p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="../_images/SLN-GKSYS/RV-GKSYS-FIG-211_IZCloudDashboard.png" alt="image" width="800">
-</div>
-<div class="title">Figure 37. IZCloud Dashboard Page</div>
-</div>
-<div class="paragraph">
-<p>Page Elements:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><strong>Total Lanes</strong> - Total number of lanes in the system</p>
-</li>
-<li>
-<p><strong>Operational Lanes</strong> - Lanes with
-cameras operating properly</p>
-</li>
-<li>
-<p><strong>Require Maintenance</strong> - Lanes with cameras
-that are operating but need maintenance/have warnings
-(for future use)</p>
-</li>
-<li>
-<p><strong>Inoperational Lanes</strong> - Lanes with
-cameras not operating</p>
-</li>
-</ul>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><strong>Statistic Graphs</strong>
-These graphs show data from "reviewed reads".
-"Reviewed reads" are the Qualifed (human-readable) plate reads
-(out of the total reads for a certain day) that were reviewed.</p>
-<div class="ulist">
-<ul>
-<li>
-<p><strong>Read Rate Bar Chart</strong> (for online/operational cameras):</p>
-<div class="ulist">
-<ul>
-<li>
-<p>Hover over a bar to show details for the previous day&#8217;s
-review.</p>
-</li>
-<li>
-<p>Click to jump to the Last Review
-page for that lane (see <a href="#s_Last-Review">Section 16.7</a>).</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p><strong>Historical Average Read Rate</strong> - Each data point
-is generated daily. Hover on a point to show details.</p>
-</li>
-</ul>
-</div>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect2">
-<h3 id="s_IZCloud-Lanes"><a class="anchor" href="#s_IZCloud-Lanes"></a>16.9. IZCloud Lanes</h3>
-<div class="paragraph">
-<p>The Lanes page enables you to (see <a href="#f_IZCloud-Lanes-Page">Figure 38</a>):</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>View live video</p>
-</li>
-<li>
-<p>View the license plate read for the current Event</p>
-</li>
-<li>
-<p>Correct the plate read</p>
-</li>
-<li>
-<p>Open the lane&#8217;s gate in an emergency</p>
-</li>
-</ul>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>Plate images and video are displayed for
-lanes with online/operational cameras.</p>
-</div>
-<div class="paragraph">
-<p>Live video is only displayed if your site&#8217;s
-security policy allows transmitting the outbound
-video stream from the camera.</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-<div id="f_IZCloud-Lanes-Page" class="imageblock">
-<div class="content">
-<img src="../_images/SLN-GKSYS/RV-GKSYS-FIG-212_IZCloudLanes.png" alt="image" width="500">
-</div>
-<div class="title">Figure 38. IZCloud Lanes Page</div>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Click on the license plate
-image to display plate, LPR and Overview
-images of the Event</p>
-</li>
-<li>
-<p>Click the Emergency Open button to
-open the lane&#8217;s gate in an emergency</p>
-</li>
-<li>
-<p>Click the Correct Plate Read button
-to correct the read. A new Event is created
-with the updated read.<br></p>
-</li>
-</ul>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="../_images/SLN-GKSYS/RV-GKSYS-FIG-213_IZCloudCorrectPlate.png" alt="image" width="400">
-</div>
-<div class="title">Figure 39. IZCloud Lanes - Correct Plate Read</div>
-</div>
-<div style="page-break-after: always;"></div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="s_Troubleshooting"><a class="anchor" href="#s_Troubleshooting"></a>17. RoadView Troubleshooting</h2>
+<h2 id="s_Troubleshooting"><a class="anchor" href="#s_Troubleshooting"></a>16. RoadView Troubleshooting</h2>
 <div class="sectionbody">
 <table id="t_Troubleshooting" class="tableblock frame-all grid-all stretch withborders">
 <caption class="title">Table 2. RoadView Troubleshooting</caption>
@@ -2770,10 +2230,10 @@ The Live tab and Search tab are empty (no Events are detected)</p></td>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_legal_notices"><a class="anchor" href="#_legal_notices"></a>18. Legal Notices</h2>
+<h2 id="_legal_notices"><a class="anchor" href="#_legal_notices"></a>17. Legal Notices</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_notice"><a class="anchor" href="#_notice"></a>18.1. Notice</h3>
+<h3 id="_notice"><a class="anchor" href="#_notice"></a>17.1. Notice</h3>
 <div class="paragraph">
 <p>Inex Technologies reserves the right to improve and enhance its product offerings. Thus, the illustrations and descriptions presented in this manual may differ in some respect from the products you receive.</p>
 </div>
@@ -2803,7 +2263,7 @@ The Live tab and Search tab are empty (no Events are detected)</p></td>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_software_precautions"><a class="anchor" href="#_software_precautions"></a>18.2. Software Precautions</h3>
+<h3 id="_software_precautions"><a class="anchor" href="#_software_precautions"></a>17.2. Software Precautions</h3>
 <div class="ulist">
 <ul>
 <li>
@@ -2819,7 +2279,7 @@ The Live tab and Search tab are empty (no Events are detected)</p></td>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_legal_disclaimer"><a class="anchor" href="#_legal_disclaimer"></a>18.3. Legal Disclaimer</h3>
+<h3 id="_legal_disclaimer"><a class="anchor" href="#_legal_disclaimer"></a>17.3. Legal Disclaimer</h3>
 <div class="paragraph">
 <p>TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE PRODUCT DESCRIBED, WITH ITS HARDWARE, SOFTWARE AND FIRMWARE, IS PROVIDED "AS IS", WITH ALL FAULTS AND ERRORS, AND OUR COMPANY MAKES NO WARRANTIES, EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION, MERCHANTABILITY, SATISFACTORY QUALITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT OF THIRD PARTY. IN NO EVENT WILL OUR COMPANY, ITS DIRECTORS, OFFICERS, EMPLOYEES, OR AGENTS BE LIABLE TO YOU FOR ANY SPECIAL, CONSEQUENTIAL, INCIDENTAL, OR INDIRECT DAMAGES, INCLUDING, AMONG OTHERS, DAMAGES FOR LOSS OF BUSINESS PROFITS, BUSINESS INTERRUPTION, OR LOSS OF DATA OR DOCUMENTATION, IN CONNECTION WITH THE USE OF THIS PRODUCT, EVEN IF OUR COMPANY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.</p>
 </div>
