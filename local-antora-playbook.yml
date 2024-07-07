@@ -101,7 +101,7 @@ asciidoc:
     software-AUDIT: RoadAudit@
     software-monitoring: IZMonitoring Server@
     hw-iocontroller: IZIO@
-    hw-poeinjector: IZ4POE@
+    hw-poeinjector: IZxPOE@
     hw-1poeinjector: IZ1POE@
     hw-2poeinjector: IZ2POE@
     hw-4poeinjector: IZ4POE@
