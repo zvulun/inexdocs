@@ -465,9 +465,7 @@
 <li><a href="#s_IZCloud-Whitelist">3.4. IZCloud Access Control Lists - Whitelists and Blacklists</a></li>
 <li><a href="#s_IZCloud-Events">3.5. IZCloud Events</a></li>
 <li><a href="#s_IZCloud-Cameras">3.6. IZCloud Maintenance - Cameras</a></li>
-<li><a href="#s_Last-Review">3.7. IZCloud Maintenance - Last Review</a></li>
-<li><a href="#s_Dashboard">3.8. IZCloud Maintenance - Dashboard</a></li>
-<li><a href="#s_IZCloud-Lanes">3.9. IZCloud Lanes</a></li>
+<li><a href="#s_IZCloud-Lanes">3.7. IZCloud Lanes</a></li>
 </ul>
 </li>
 <li><a href="#_legal_notices">4. Legal Notices</a>
@@ -488,11 +486,38 @@
 <h2 id="_background"><a class="anchor" href="#_background"></a>1. Background</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p><strong><em>\{rewrite/improve}</em></strong>
+<p><strong><em>\{rewrite/improve:
+What it does - opens gate uber/lyft or whitelist -
+look in cloud - what do you need to set it;
+show in cloud; how to find each one; add to whitelist/blacklist
+if blacklist there will be alert - }</em></strong>
 This document describes how to use the
 IZCloud Automatic License Plate Recognition (ALPR) Performance Monitoring application
 to work with the
 GKSYS CVM System.</p>
+</div>
+<div class="paragraph">
+<p>IZCloud opens a gate for an Uber or Lyft vehicle
+that has been authorized to pick up a passenger
+at this time, or that is on the
+IZCloud Whitelist.</p>
+</div>
+<div class="paragraph">
+<p>Vehicles on a Blacklist generate an alert; alerts</p>
+</div>
+<div class="paragraph">
+<p><strong><em>\{if blacklist - get alert
+ask Andrey; also list of events}</em></strong></p>
+</div>
+<div class="paragraph">
+<p>You can perform the following actions:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Search for</p>
+</li>
+</ul>
 </div>
 </div>
 </div>
@@ -565,7 +590,7 @@ Detector Configuration section after making changes.</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Type the URL of your IZCloud TIBA site
+<p>Type the URL of your IZCloud GKSYS site
 (provided by Inex) into your browser&#8217;s address line</p>
 </li>
 <li>
@@ -601,7 +626,7 @@ then click the Logout button.</p>
 when a vehicle arrives at the site.</p>
 </div>
 <div class="paragraph">
-<p>For example, select "Whitelist" from the Access Lists menu
+<p>For example, select "Watch Lists" from the Access Lists menu
 <span class="image"><img src="../_images/SLN-GKSYS/RV-GKSYS-FIG-220_IZCloudAccessMenu.png" alt="image" width="100"></span></p>
 </div>
 <div class="imageblock">
@@ -763,7 +788,7 @@ camera status and read rate statistics.</p>
 </div>
 <div class="paragraph">
 <p>Select "Cameras" from the Maintenance menu
-<span class="image"><img src="../_images/SLN-TIBA/IZCloud-BorderTIBA-Maint-Menu.png" alt="image" width="100"></span></p>
+<span class="image"><img src="../_images/SLN-GKSYS/RV-GKSYS-FIG-221_IZCloudMaintMenu.png" alt="image" width="100"></span></p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -790,191 +815,14 @@ use the dropdown to select a lot</p>
 <li>
 <p><strong>Status</strong> - Camera status (online or offline)</p>
 </li>
-<li>
-<p><strong>Read Rate</strong> - with no read mistakes</p>
-</li>
-<li>
-<p><strong>Read Rate N-1</strong> - with up to 1 read mistake</p>
-</li>
-<li>
-<p><strong>Read Rate N-2</strong> - with up to 2 read mistakes</p>
-</li>
-<li>
-<p><strong>Actions</strong> - select Last Review from the dropdown
-to display the Last Review page, filtered
-by the lane on that row (see <a href="#s_Last-Review">Section 3.7</a>).</p>
-</li>
 </ul>
 </div>
 <div style="page-break-after: always;"></div>
 </div>
 <div class="sect2">
-<h3 id="s_Last-Review"><a class="anchor" href="#s_Last-Review"></a>3.7. IZCloud Maintenance - Last Review</h3>
+<h3 id="s_IZCloud-Lanes"><a class="anchor" href="#s_IZCloud-Lanes"></a>3.7. IZCloud Lanes</h3>
 <div class="paragraph">
-<p>Select "Last Review" from the Maintenance menu
-<span class="image"><img src="../_images/SLN-TIBA/IZCloud-BorderTIBA-Maint-Menu.png" alt="image" width="100"></span></p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="../_images/SLN-GKSYS/RV-GKSYS-FIG-210_IZCloudLastReview.png" alt="image" width="800">
-</div>
-<div class="title">Figure 9. IZCloud Last Review Page</div>
-</div>
-<div class="paragraph">
-<p>Columns/Filters:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><strong>TimeStamp</strong> - same as in <a href="#s_IZCloud-Events">Section 3.5</a></p>
-</li>
-<li>
-<p><strong>Gate</strong> - same as in <a href="#s_IZCloud-Events">Section 3.5</a></p>
-</li>
-<li>
-<p><strong>Plate</strong> - Plate read; filter works as in
-<a href="#s_IZCloud-Events">Section 3.5</a></p>
-</li>
-<li>
-<p><strong>Plate Review</strong> - True read; filter works as in
-<a href="#s_IZCloud-Events">Section 3.5</a></p>
-</li>
-<li>
-<p><strong>Plate Image</strong> - same as in <a href="#s_IZCloud-Events">Section 3.5</a></p>
-</li>
-<li>
-<p><strong>Read Status</strong> - use the dropdown to
-filter the display</p>
-<div class="ulist">
-<ul>
-<li>
-<p><strong>Correct</strong> - automatic read matches
-the true read</p>
-</li>
-<li>
-<p><strong>N-1 Read</strong> - an automatic read with up to 1
-mistake</p>
-</li>
-<li>
-<p><strong>N-2 Read</strong> - an automatic read with up to 2
-mistakes</p>
-</li>
-<li>
-<p><strong>False Read</strong> - there are more than 2 mistakes
-in the automatic read</p>
-</li>
-<li>
-<p><strong>False Reject</strong> - an automatic read that was not generated
-for a qualified Event</p>
-</li>
-<li>
-<p><strong>Non-Qualified</strong> - cannot be read
-by a human; examples include:</p>
-<div class="ulist">
-<ul>
-<li>
-<p>Missing plate</p>
-</li>
-<li>
-<p>Partial image of plate</p>
-</li>
-<li>
-<p>Bent or broken plate</p>
-</li>
-<li>
-<p>Multiple plates</p>
-</li>
-<li>
-<p>Obstructed characters
-(by dirt, snow, trailer ball, etc.)</p>
-</li>
-</ul>
-</div>
-</li>
-</ul>
-</div>
-</li>
-</ul>
-</div>
-<div style="page-break-after: always;"></div>
-</div>
-<div class="sect2">
-<h3 id="s_Dashboard"><a class="anchor" href="#s_Dashboard"></a>3.8. IZCloud Maintenance - Dashboard</h3>
-<div class="paragraph">
-<p>The Dashboard page enables you to see daily
-analytical reports about ALPR performance.</p>
-</div>
-<div class="paragraph">
-<p>Select "Dashboard" from the Maintenance menu
-<span class="image"><img src="../_images/SLN-TIBA/IZCloud-BorderTIBA-Maint-Menu.png" alt="image" width="100"></span></p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="../_images/SLN-GKSYS/RV-GKSYS-FIG-211_IZCloudDashboard.png" alt="image" width="800">
-</div>
-<div class="title">Figure 10. IZCloud Dashboard Page</div>
-</div>
-<div class="paragraph">
-<p>Page Elements:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><strong>Total Lanes</strong> - Total number of lanes in the system</p>
-</li>
-<li>
-<p><strong>Operational Lanes</strong> - Lanes with
-cameras operating properly</p>
-</li>
-<li>
-<p><strong>Require Maintenance</strong> - Lanes with cameras
-that are operating but need maintenance/have warnings
-(for future use)</p>
-</li>
-<li>
-<p><strong>Inoperational Lanes</strong> - Lanes with
-cameras not operating</p>
-</li>
-</ul>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><strong>Statistic Graphs</strong>
-These graphs show data from "reviewed reads".
-"Reviewed reads" are the Qualifed (human-readable) plate reads
-(out of the total reads for a certain day) that were reviewed.</p>
-<div class="ulist">
-<ul>
-<li>
-<p><strong>Read Rate Bar Chart</strong> (for online/operational cameras):</p>
-<div class="ulist">
-<ul>
-<li>
-<p>Hover over a bar to show details for the previous day&#8217;s
-review.</p>
-</li>
-<li>
-<p>Click to jump to the Last Review
-page for that lane (see <a href="#s_Last-Review">Section 3.7</a>).</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p><strong>Historical Average Read Rate</strong> - Each data point
-is generated daily. Hover on a point to show details.</p>
-</li>
-</ul>
-</div>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect2">
-<h3 id="s_IZCloud-Lanes"><a class="anchor" href="#s_IZCloud-Lanes"></a>3.9. IZCloud Lanes</h3>
-<div class="paragraph">
-<p>The Lanes page enables you to (see <a href="#f_IZCloud-Lanes-Page">Figure 11</a>):</p>
+<p>The Lanes page enables you to (see <a href="#f_IZCloud-Lanes-Page">Figure 9</a>):</p>
 </div>
 <div class="ulist">
 <ul>
@@ -1016,7 +864,7 @@ video stream from the camera.</p>
 <div class="content">
 <img src="../_images/SLN-GKSYS/RV-GKSYS-FIG-212_IZCloudLanes.png" alt="image" width="500">
 </div>
-<div class="title">Figure 11. IZCloud Lanes Page</div>
+<div class="title">Figure 9. IZCloud Lanes Page</div>
 </div>
 <div class="ulist">
 <ul>
@@ -1040,7 +888,7 @@ with the updated read.<br></p>
 <div class="content">
 <img src="../_images/SLN-GKSYS/RV-GKSYS-FIG-213_IZCloudCorrectPlate.png" alt="image" width="400">
 </div>
-<div class="title">Figure 12. IZCloud Lanes - Correct Plate Read</div>
+<div class="title">Figure 10. IZCloud Lanes - Correct Plate Read</div>
 </div>
 <div style="page-break-after: always;"></div>
 </div>
@@ -1116,7 +964,7 @@ with the updated read.<br></p>
 <p></p>
 </div>
 <div class="paragraph">
-<p>Doc. No. GKSYS-MAN-002b Ver. 2024-07-04</p>
+<p>Doc. No. GKSYS-MAN-002a Ver. 2024-07-07</p>
 </div>
 </div>
 </div>
