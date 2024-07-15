@@ -494,9 +494,10 @@
 <li><a href="#s_Date-and-Time-Settings">12.3. Date and Time Settings</a></li>
 <li><a href="#s_Lanes">12.4. Lanes</a></li>
 <li><a href="#s_Cameras">12.5. Cameras</a></li>
-<li><a href="#s_TIBA-Integration">12.6. GKSYS Integration</a></li>
-<li><a href="#s_Trigger-Offset">12.7. Trigger Offset</a></li>
-<li><a href="#s_Detector-Configuration">12.8. Detector Configuration</a></li>
+<li><a href="#s_IZCloud-Integration">12.6. IZCloud Integration</a></li>
+<li><a href="#s_GSKYS-Integration">12.7. GKSYS Integration</a></li>
+<li><a href="#s_Trigger-Offset">12.8. Trigger Offset</a></li>
+<li><a href="#s_Detector-Configuration">12.9. Detector Configuration</a></li>
 </ul>
 </li>
 <li><a href="#_configure_roadview_system_info_tab">13. Configure RoadView - System Info Tab</a></li>
@@ -520,13 +521,6 @@
 <div class="sect1">
 <h2 id="_background"><a class="anchor" href="#_background"></a>1. Background</h2>
 <div class="sectionbody">
-<div class="paragraph">
-<p><strong><em>\{Pinchas: does the LPR Camera Settings screen
-have the color-related buttons at the bottom, or was
-this just because I used both screens for LPR and OV;
-also are the LPR / OV camera settings screens
-identical except for the day &amp; night control setting?}</em></strong></p>
-</div>
 <div class="paragraph">
 <p>This document describes how to install,
 configure and calibrate an Inex ALPR Camera
@@ -1150,6 +1144,7 @@ for reference.</p>
 <div class="paragraph">
 <p>Follow the same steps as in <a href="#s_LPR-Camera-Stream-Setup">Section 8.1</a>.</p>
 </div>
+<div style="page-break-after: always;"></div>
 </div>
 <div class="sect2">
 <h3 id="_ov_camera_video_audio_camera_setup"><a class="anchor" href="#_ov_camera_video_audio_camera_setup"></a>9.2. OV Camera - Video &amp; Audio &gt; Camera Setup</h3>
@@ -1503,7 +1498,7 @@ immediately to RoadView</p>
 </div>
 <div class="paragraph">
 <p>The images from all cameras capturing the same physical lane
-will be combined into a single Event.</p>
+will be combined into one Event.</p>
 </div>
 <div class="paragraph">
 <p>Each "Lane" is actually a virtual Lane. For example,
@@ -1703,7 +1698,22 @@ Set as shown</p>
 <div style="page-break-after: always;"></div>
 </div>
 <div class="sect2">
-<h3 id="s_TIBA-Integration"><a class="anchor" href="#s_TIBA-Integration"></a>12.6. GKSYS Integration</h3>
+<h3 id="s_IZCloud-Integration"><a class="anchor" href="#s_IZCloud-Integration"></a>12.6. IZCloud Integration</h3>
+<div class="paragraph">
+<p>Enable IZCloud Integration and
+set the parameters as follows. <strong>Remember to click the Save button at the end of the
+Detector Configuration section after making changes.</strong></p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/SLN-GKSYS/RV-GKSYS-FIG-216_IZCloudIntegration.png" alt="image" width="550">
+</div>
+<div class="title">Figure 22. IZCloud Integration Section</div>
+</div>
+<div style="page-break-after: always;"></div>
+</div>
+<div class="sect2">
+<h3 id="s_GSKYS-Integration"><a class="anchor" href="#s_GSKYS-Integration"></a>12.7. GKSYS Integration</h3>
 <div class="paragraph">
 <p>Enable GKSYS Integration and
 set the parameters as follows. <strong>Remember to click the Save button at the end of the
@@ -1713,7 +1723,7 @@ Detector Configuration section after making changes.</strong></p>
 <div class="content">
 <img src="../_images/SLN-GKSYS/RV-GKSYS-FIG-002_GKSYS_Integration.png" alt="image" width="550">
 </div>
-<div class="title">Figure 22. GKSYS Integration</div>
+<div class="title">Figure 23. GKSYS Integration Section</div>
 </div>
 <div class="ulist">
 <ul>
@@ -1744,15 +1754,14 @@ See the NVIDIA Jetson documentation for further information.</p>
 </ul>
 </div>
 <div style="page-break-after: always;"></div>
-<div style="page-break-after: always;"></div>
 </div>
 <div class="sect2">
-<h3 id="s_Trigger-Offset"><a class="anchor" href="#s_Trigger-Offset"></a>12.7. Trigger Offset</h3>
+<h3 id="s_Trigger-Offset"><a class="anchor" href="#s_Trigger-Offset"></a>12.8. Trigger Offset</h3>
 <div id="f_Trigger-Offset-Section" class="imageblock">
 <div class="content">
 <img src="../_images/SLN-GKSYS/RV-GKSYS-FIG-003b_Trigger_Offset.png" alt="image" width="300">
 </div>
-<div class="title">Figure 23. Trigger Offset Section</div>
+<div class="title">Figure 24. Trigger Offset Section</div>
 </div>
 <div class="ulist">
 <ul>
@@ -1765,19 +1774,15 @@ Detector Configuration section after making changes.</p>
 </li>
 </ul>
 </div>
-<div style="page-break-after: always;"></div>
 </div>
 <div class="sect2">
-<h3 id="s_Detector-Configuration"><a class="anchor" href="#s_Detector-Configuration"></a>12.8. Detector Configuration</h3>
+<h3 id="s_Detector-Configuration"><a class="anchor" href="#s_Detector-Configuration"></a>12.9. Detector Configuration</h3>
 <div class="ulist">
 <ul>
 <li>
-<p>Set the parameters as shown here</p>
-</li>
-<li>
-<p>Remember to click the Save button
-at the end of this section after
-changing these parameters.</p>
+<p>Set the parameters as shown here. <strong>Remember to click the Save button
+at the end of this section after changing
+these parameters.</strong></p>
 </li>
 </ul>
 </div>
@@ -1785,8 +1790,9 @@ changing these parameters.</p>
 <div class="content">
 <img src="../_images/SLN-GKSYS/RV-GKSYS-FIG-004a_Detector_Configuration.png" alt="image" width="500">
 </div>
-<div class="title">Figure 24. Detector Configuration Section</div>
+<div class="title">Figure 25. Detector Configuration Section</div>
 </div>
+<div style="page-break-after: always;"></div>
 <div class="paragraph">
 <p>Explanations of frequently used parameters:</p>
 </div>
@@ -1962,7 +1968,7 @@ by the Latitude and Longitude parameters). Additional parameters are:</p>
 <div class="content">
 <img src="../_images/SLN-GKSYS/RV-GKSYS-FIG-011a_CalibrationTab.png" alt="image" width="800">
 </div>
-<div class="title">Figure 25. Calibration Tab</div>
+<div class="title">Figure 26. Calibration Tab</div>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
@@ -1990,7 +1996,7 @@ and time that the image is being taken/was taken by the camera.</p>
 </li>
 <li>
 <p>Aim the camera using the mounting bracket&#8217;s adjustment
-hardware (see <a href="#f_Pan-Tilt-Roll-Angle-Adjustments">Figure 26</a>).</p>
+hardware (see <a href="#f_Pan-Tilt-Roll-Angle-Adjustments">Figure 27</a>).</p>
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
@@ -2012,7 +2018,7 @@ image is horizontally straight, parallel to the ground
 <div class="content">
 <img src="../_images/RoadViewALPR/PanTiltRoll.png" alt="image" width="311" height="186">
 </div>
-<div class="title">Figure 26. Pan/Tilt/Roll (Angle) Adjustments</div>
+<div class="title">Figure 27. Pan/Tilt/Roll (Angle) Adjustments</div>
 </div>
 </li>
 </ol>
@@ -2138,7 +2144,7 @@ tab.</p>
 <div class="content">
 <img src="../_images/SLN-GKSYS/RV-GKSYS-FIG-009a_LiveTab.png" alt="image" width="800">
 </div>
-<div class="title">Figure 27. Live (Journal) Tab</div>
+<div class="title">Figure 28. Live (Journal) Tab</div>
 </div>
 <div class="ulist">
 <ul>
@@ -2293,7 +2299,7 @@ The Live tab and Search tab are empty (no Events are detected)</p></td>
 <p></p>
 </div>
 <div class="paragraph">
-<p>Doc. No. GKSYS-MAN-002b Ver. 2024-07-08</p>
+<p>Doc. No. GKSYS-MAN-002b Ver. 2024-07-15</p>
 </div>
 </div>
 </div>
