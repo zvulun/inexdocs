@@ -86,6 +86,9 @@ asciidoc:
     camera-B6F: IZB600F@
 
     mount-black-arm: MNT-W3X@
+    mount-wall-extend: IZMNTA-WE@
+    mount-under-ceiling: IZMNTA-UC@
+    mount-pole-adapter: MNT-PMA@
 
     kit-DFC-1L: IZA500DFC-1L@
     software-DFC-1S: IZCLOUD-DFC-1S@
@@ -94,6 +97,7 @@ asciidoc:
     software-protocol: ZAP@
     software-server: IZCentral@
     software-cloud: IZCloud@
+    software-cloud-APM: IZCLOUD-APM@
     software-discovery: IZ Discovery@
     software-discovery-nospace: IZDiscovery@
     software-ALPR-long: RoadView ALPR@
@@ -101,6 +105,12 @@ asciidoc:
     software-AUDIT: RoadAudit@
     software-monitoring: IZMonitoring Server@
     hw-iocontroller: IZIO@
+
+    hw-pwrsupply: IZPWR@
+    hw-pwrsupply-75: IZPWR75@
+    hw-pwrsupply-120: IZPWR120@
+    hw-pwrsupply-240: IZPWR240@
+
     hw-poeinjector: IZxPOE@
     hw-1poeinjector: IZ1POE@
     hw-2poeinjector: IZ2POE@
