@@ -506,10 +506,11 @@
 <li><a href="#s_Events-Post-Processing-Section-SkipByDistance-Enabled">11.21.3. Skip By Distance Enabled</a></li>
 </ul>
 </li>
-<li><a href="#s_Trigger-Offset">11.22. Trigger Offset</a></li>
-<li><a href="#s_Detector-Configuration">11.23. Detector Configuration</a></li>
-<li><a href="#s_Lanes">11.24. Lanes</a></li>
-<li><a href="#s_Cameras">11.25. Cameras</a></li>
+<li><a href="#s_Use-Validation">11.22. Use Validation</a></li>
+<li><a href="#s_Trigger-Offset">11.23. Trigger Offset</a></li>
+<li><a href="#s_Detector-Configuration">11.24. Detector Configuration</a></li>
+<li><a href="#s_Lanes">11.25. Lanes</a></li>
+<li><a href="#s_Cameras">11.26. Cameras</a></li>
 </ul>
 </li>
 <li><a href="#s_Live-Journal-Tab">12. Live (Journal) Tab</a></li>
@@ -530,11 +531,12 @@
 <li><a href="#s_System-Info-Tab-LPR-LED">16.5. System Info Tab: LPR LED</a></li>
 </ul>
 </li>
-<li><a href="#s_Troubleshooting">17. Troubleshooting</a></li>
-<li><a href="#_notice_and_legal_disclaimer">18. Notice and Legal Disclaimer</a>
+<li><a href="#s_Access-Lists-Tab">17. Access Lists Tab</a></li>
+<li><a href="#s_Troubleshooting">18. Troubleshooting</a></li>
+<li><a href="#_notice_and_legal_disclaimer">19. Notice and Legal Disclaimer</a>
 <ul class="sectlevel2">
-<li><a href="#_notice">18.1. Notice</a></li>
-<li><a href="#_legal_disclaimer">18.2. Legal Disclaimer</a></li>
+<li><a href="#_notice">19.1. Notice</a></li>
+<li><a href="#_legal_disclaimer">19.2. Legal Disclaimer</a></li>
 </ul>
 </li>
 </ul>
@@ -627,12 +629,24 @@
 <td class="tableblock halign-left valign-top"><p class="tableblock">Inex IZCloud Integration</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><a href="../SLN-TIBA/DocList.html" class="xref page">TIBA-MAN-002b</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Inex TIBA Integration</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><a href="../IZCloud/DocList.html" class="xref page">IZCLOUD-CAMP-MAN-002a</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">IZCloud for Campgrounds User Guide</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><a href="../SLN-GKSYS/DocList.html" class="xref page">GKSYS-MAN-002a</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Inex GKSYS User Guide</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><a href="../SLN-GKSYS/DocList.html" class="xref page">GKSYS-MAN-002b</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Inex GKSYS Integration</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Inex GKSYS Installation and Calibration Guide</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><a href="../SLN-TIBA/DocList.html" class="xref page">TIBA-MAN-002a</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Inex TIBA User Guide</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><a href="../SLN-TIBA/DocList.html" class="xref page">TIBA-MAN-002b</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Inex TIBA Installation and Calibration Guide</p></td>
 </tr>
 </tbody>
 </table>
@@ -753,7 +767,17 @@ software, release 1.15.120 and above.</p>
 <h2 id="s_System-Overview"><a class="anchor" href="#s_System-Overview"></a>5. System Overview</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>RoadView is advanced ALPR software that reads license plates using sophisticated image recognition algorithms, and creates LPR Events. RoadView sends LPR Event data via HTTP, the proprietary Inex ZAP protocol or other protocols to other systems, typically IZCentral (see the IZCentral User Guide - see <a href="#s_Related-Documents">Section 1</a>). RoadView can be configured and monitored using a web-based GUI.</p>
+<p>RoadView is advanced ALPR software
+that reads license plates using
+sophisticated image recognition algorithms,
+and creates LPR Events. RoadView
+sends LPR Event data via HTTP,
+the proprietary Inex
+ZAP protocol
+or other protocols to other systems,
+typically IZCentral
+(see the IZCentral User Guide
+- see <a href="#s_Related-Documents">Section 1</a>). RoadView can be configured and monitored using a web-based GUI.</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -1047,10 +1071,10 @@ a password (see <a href="#f_Change-Password-Dialog">Figure 4</a>)</p>
 <p>Inex I/O Controller (see <a href="#s_INEX-I-O-Controller">Section 11.19</a>)</p>
 </li>
 <li>
-<p>Trigger Offset (see <a href="#s_Trigger-Offset">Section 11.22</a>)</p>
+<p>Trigger Offset (see <a href="#s_Trigger-Offset">Section 11.23</a>)</p>
 </li>
 <li>
-<p>The number of Trigger Pre and Trigger Post frames (defined when a camera is configured - see <a href="#s_Cameras">Section 11.25</a>)</p>
+<p>The number of Trigger Pre and Trigger Post frames (defined when a camera is configured - see <a href="#s_Cameras">Section 11.26</a>)</p>
 </li>
 </ul>
 </div>
@@ -1069,7 +1093,8 @@ a password (see <a href="#f_Change-Password-Dialog">Figure 4</a>)</p>
 </table>
 </div>
 <div class="paragraph">
-<p>The Trigger Operational Modes (set in the Detector Configuration section of the Settings tab - see <a href="#s_Detector-Configuration">Section 11.23</a>) affect how Events are created (see <a href="#f_Trigger-Operational-Modes">Figure 8</a>):</p>
+<p>The Trigger Operational Modes (set in the Detector Configuration section
+of the Settings tab - see <a href="#s_Detector-Configuration">Section 11.24</a>) affect how Events are created (see <a href="#f_Trigger-Operational-Modes">Figure 8</a>):</p>
 </div>
 <div id="f_Trigger-Operational-Modes" class="imageblock">
 <div class="content">
@@ -1100,7 +1125,7 @@ a password (see <a href="#f_Change-Password-Dialog">Figure 4</a>)</p>
 </div>
 </li>
 <li>
-<p><u>Hybrid</u> - Events are continually created internally by LPR video analytics, but are only reported when a trigger is received. The Event closest in time to the trigger will be reported (sent to storage). See <a href="#s_Detector-Configuration">Section 11.23</a> where the Hybrid Pre/Post Time parameters are described.</p>
+<p><u>Hybrid</u> - Events are continually created internally by LPR video analytics, but are only reported when a trigger is received. The Event closest in time to the trigger will be reported (sent to storage). See <a href="#s_Detector-Configuration">Section 11.24</a> where the Hybrid Pre/Post Time parameters are described.</p>
 <div class="admonitionblock note">
 <table>
 <tr>
@@ -1110,7 +1135,7 @@ a password (see <a href="#f_Change-Password-Dialog">Figure 4</a>)</p>
 <td class="content">
 <div class="paragraph">
 <p>In Hybrid mode, if no recognition was possible (no vehicle, no plate, unrecognizable plate, etc.), an Event will be created as it would be in Triggered mode. The Event will be created using frames captured at the time the Trigger was received, along with the Trigger Pre and Post frames, instead of using the frames from the NonTriggered video analytics.<br>
-See <a href="#s_Trigger-Sources-and-Trigger-Modes-Overview">Section 10</a> and <a href="#s_Cameras">Section 11.25</a>.</p>
+See <a href="#s_Trigger-Sources-and-Trigger-Modes-Overview">Section 10</a> and <a href="#s_Cameras">Section 11.26</a>.</p>
 </div>
 </td>
 </tr>
@@ -1189,7 +1214,7 @@ See <a href="#s_Trigger-Sources-and-Trigger-Modes-Overview">Section 10</a> and <
 </div>
 <div id="f_Software-Version-and-Camera-Information-Section" class="imageblock">
 <div class="content">
-<img src="_images/UserGuide/RV-1_15-FIG-100b_SettingsVersionSection.png" alt="image" width="356" height="130">
+<img src="../_images/RoadViewALPR/RV-1_15-FIG-100c_SettingsVersionSection.png" alt="image" width="356" height="130">
 </div>
 <div class="title">Figure 10. Software Version and Camera Information Section</div>
 </div>
@@ -1530,7 +1555,7 @@ a direct integration with a 3<sup>rd</sup> party system.</p>
 <div class="paragraph">
 <p>This feature can only be enabled on the
 <u>exit</u> camera
-(see <a href="#f_Add-Edit-Lane-Dialog">Figure 32</a> in <a href="#s_Lanes">Section 11.24</a>).</p>
+(see <a href="#f_Add-Edit-Lane-Dialog">Figure 33</a> in <a href="#s_Lanes">Section 11.25</a>).</p>
 </div>
 </td>
 </tr>
@@ -1568,6 +1593,21 @@ Detector Configuration section after making changes.</p>
 <h3 id="s_IZCloud-Integration"><a class="anchor" href="#s_IZCloud-Integration"></a>11.8. IZCloud Integration</h3>
 <div class="paragraph">
 <p>See the IZCloud document (see <a href="#s_Related-Documents">Section 1</a>).</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>If IZCloud Integration is enabled, the Access Lists tab
+becomes visible. See <a href="#s_Access-Lists-Tab">Section 17</a>.</p>
+</div>
+</td>
+</tr>
+</table>
 </div>
 </div>
 <div class="sect2">
@@ -1793,7 +1833,7 @@ will automatically have its own row in the table.</p>
 <li>
 <p><u>Port</u> - Each Lane should have
 a different port number. This field is automatically
-populated when a new Lane is added (see <a href="#s_Lanes">Section 11.24</a>), but can be edited.
+populated when a new Lane is added (see <a href="#s_Lanes">Section 11.25</a>), but can be edited.
 These are the TCP ports that RoadView is listening
 on for connection from a 3<sup>rd</sup> party application.</p>
 </li>
@@ -2346,7 +2386,7 @@ it is ignored.</p>
 <li>
 <p><strong>Combine Lev Distance</strong> - The maximum Levenshtein distance between
 the two plate reads for which the Events will be combined
-(see <a href="#s_Detector-Configuration">Section 11.23</a> for a more detailed explanation
+(see <a href="#s_Detector-Configuration">Section 11.24</a> for a more detailed explanation
 of Levenshtein distance).</p>
 </li>
 <li>
@@ -2385,7 +2425,7 @@ for the skip to occur. This timeout is renewed after the skip.</p>
 <li>
 <p><strong>Skip Lev Distance</strong> - If the Levenshtein difference between
 similar LPR reads from the same lane is less than or equal to the Skip Lev Distance,
-then the new Event will be skipped. (See <a href="#s_Detector-Configuration">Section 11.23</a> for a more detailed explanation
+then the new Event will be skipped. (See <a href="#s_Detector-Configuration">Section 11.24</a> for a more detailed explanation
 of Levenshtein distance.)</p>
 </li>
 </ul>
@@ -2397,12 +2437,94 @@ of Levenshtein distance.)</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="s_Trigger-Offset"><a class="anchor" href="#s_Trigger-Offset"></a>11.22. Trigger Offset</h3>
+<h3 id="s_Use-Validation"><a class="anchor" href="#s_Use-Validation"></a>11.22. Use Validation</h3>
+<div id="f_Use-Validation-Section" class="imageblock">
+<div class="content">
+<img src="../_images/RoadViewALPR/RV-1_15-FIG-217_UseValidation.png" alt="image" width="477" height="85">
+</div>
+<div class="title">Figure 26. Use Validation Section</div>
+</div>
+<div class="paragraph">
+<p>Use Validation provides additional functionality to improve read accuracy,
+readjust confidence and accommodate custom site needs.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>LPR Threshold</strong> - The LPR read confidence level above which further validation will be applied.</p>
+</li>
+<li>
+<p><strong>State Threshold</strong> - The State read confidence level above which further validation will be applied.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The conditions required for further validation to be applied are:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The confidence of the LPR and State initial reads must BOTH be
+above the Use Validation thresholds.</p>
+</li>
+<li>
+<p>The Region selected in the Detector Configuration section (see <a href="#s_Detector-Configuration">Section 11.24</a>)
+must be supported in the list of validation criteria patterns, or "plate type" (set by Inex).</p>
+</li>
+<li>
+<p>The LPR and State reads must both match to one of the validation criteria patterns.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>If all of the conditions are met:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The "plate type" (internal Inex designation) can be identified</p>
+</li>
+<li>
+<p>Any actions associated with this "plate type" can be applied to the read
+(for example, removal of a trailing character)</p>
+</li>
+<li>
+<p>An abbreviation of the "plate type" will be attached to the Event so
+it can be displayed on the Live (Journal) and Search tabs
+(see <a href="#s_Live-Journal-Tab">Section 12</a> and <a href="#f_Configure-Journal-Multi-line-Menu">Figure 37</a>). For
+example, "BTR" indicates a B-type truck in certain states.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>If one of the conditions is not met:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The initial LPR and State confidences will be reduced as follows and
+reapplied to the Event:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>LPR confidence will be reduced by 10%</p>
+</li>
+<li>
+<p>State confidence will be reduced by 50%</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="s_Trigger-Offset"><a class="anchor" href="#s_Trigger-Offset"></a>11.23. Trigger Offset</h3>
 <div id="f_Trigger-Offset-Section" class="imageblock">
 <div class="content">
 <img src="_images/UserGuide/image23.png" alt="image" width="477" height="85">
 </div>
-<div class="title">Figure 26. Trigger Offset Section</div>
+<div class="title">Figure 27. Trigger Offset Section</div>
 </div>
 <div class="paragraph">
 <p>The Trigger Offset affects all triggers (in all modes - see <a href="#s_Trigger-Sources-and-Trigger-Modes-Overview">Section 10</a>).</p>
@@ -2423,12 +2545,12 @@ of Levenshtein distance.)</p>
 <div style="page-break-after: always;"></div>
 </div>
 <div class="sect2">
-<h3 id="s_Detector-Configuration"><a class="anchor" href="#s_Detector-Configuration"></a>11.23. Detector Configuration</h3>
+<h3 id="s_Detector-Configuration"><a class="anchor" href="#s_Detector-Configuration"></a>11.24. Detector Configuration</h3>
 <div id="f_Detector-Configuration-Section" class="imageblock">
 <div class="content">
 <img src="_images/UserGuide/RV-1_15-FIG-212_NewDetectorConfig.png" alt="image" width="433" height="472">
 </div>
-<div class="title">Figure 27. Detector Configuration Section</div>
+<div class="title">Figure 28. Detector Configuration Section</div>
 </div>
 <div class="paragraph">
 <p>Plate recognition is done in 3 stages:</p>
@@ -2501,14 +2623,14 @@ For faster traffic, you will only be able to set it to a small number of reads.<
 </li>
 <li>
 <p><strong>Wait before event emit, ms</strong> - (affects results in NonTriggered or Hybrid modes)<br>
-The minimum time from the first plate read until the time the Event will be built (emitted) - which can result in a greater number of frames used than the "Min plate read count" parameter. You may want to get LPR results with better confidence by increasing this number. RoadView will wait for more correct reads before the Event is built (see <a href="#f_Illustration-of-Wait-Before-Event-Emit">Figure 28</a>).<br>
+The minimum time from the first plate read until the time the Event will be built (emitted) - which can result in a greater number of frames used than the "Min plate read count" parameter. You may want to get LPR results with better confidence by increasing this number. RoadView will wait for more correct reads before the Event is built (see <a href="#f_Illustration-of-Wait-Before-Event-Emit">Figure 29</a>).<br>
 As a vehicle approaches a camera, waiting longer will usually (depending on road geometry) result in images of the plate getting larger and easier to read accurately.<br>
 Note that in hybrid mode, it is recommended to set this parameter greater than 0. Setting this parameter to 0 will result in lower read confidence, since the trigger and the first read will occur close together.</p>
 <div id="f_Illustration-of-Wait-Before-Event-Emit" class="imageblock">
 <div class="content">
 <img src="_images/UserGuide/image25.png" alt="image" width="504" height="186">
 </div>
-<div class="title">Figure 28. Illustration of Wait Before Event Emit</div>
+<div class="title">Figure 29. Illustration of Wait Before Event Emit</div>
 </div>
 </li>
 <li>
@@ -2518,7 +2640,7 @@ If the size of this "hole" is large, then the vehicle has probably disappeared b
 <div class="content">
 <img src="_images/UserGuide/image26.png" alt="image" width="507" height="97">
 </div>
-<div class="title">Figure 29. Illustration of LP Forget Interval</div>
+<div class="title">Figure 30. Illustration of LP Forget Interval</div>
 </div>
 </li>
 <li>
@@ -2615,15 +2737,15 @@ just the ones with the best confidence)</p>
 </div>
 </li>
 <li>
-<p><strong>Hybrid Pre Time (for Hybrid mode only)</strong> - Time in milliseconds before the trigger to search for the closest Event to the trigger (see <a href="#f_Illustration-of-Hybrid-Pre-Post-Time">Figure 30</a>)</p>
+<p><strong>Hybrid Pre Time (for Hybrid mode only)</strong> - Time in milliseconds before the trigger to search for the closest Event to the trigger (see <a href="#f_Illustration-of-Hybrid-Pre-Post-Time">Figure 31</a>)</p>
 </li>
 <li>
-<p><strong>Hybrid Post Time (for Hybrid mode only)</strong> - Time in milliseconds after the trigger to search for the closest Event to the trigger (see <a href="#f_Illustration-of-Hybrid-Pre-Post-Time">Figure 30</a>)</p>
+<p><strong>Hybrid Post Time (for Hybrid mode only)</strong> - Time in milliseconds after the trigger to search for the closest Event to the trigger (see <a href="#f_Illustration-of-Hybrid-Pre-Post-Time">Figure 31</a>)</p>
 <div id="f_Illustration-of-Hybrid-Pre-Post-Time" class="imageblock">
 <div class="content">
 <img src="_images/UserGuide/image27.png" alt="image" width="624" height="170">
 </div>
-<div class="title">Figure 30. Illustration of Hybrid Pre/Post Time</div>
+<div class="title">Figure 31. Illustration of Hybrid Pre/Post Time</div>
 </div>
 <div class="ulist">
 <ul>
@@ -2646,12 +2768,12 @@ just the ones with the best confidence)</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="s_Lanes"><a class="anchor" href="#s_Lanes"></a>11.24. Lanes</h3>
+<h3 id="s_Lanes"><a class="anchor" href="#s_Lanes"></a>11.25. Lanes</h3>
 <div id="f_Lanes-Section" class="imageblock">
 <div class="content">
 <img src="_images/UserGuide/image28.png" alt="image" width="617" height="87">
 </div>
-<div class="title">Figure 31. Lanes Section</div>
+<div class="title">Figure 32. Lanes Section</div>
 </div>
 <div class="ulist">
 <ul>
@@ -2691,7 +2813,7 @@ just the ones with the best confidence)</p>
 <div class="content">
 <img src="_images/UserGuide/image29.png" alt="image" width="265" height="151">
 </div>
-<div class="title">Figure 32. Add/Edit Lane Dialog</div>
+<div class="title">Figure 33. Add/Edit Lane Dialog</div>
 </div>
 </li>
 </ul>
@@ -2775,12 +2897,12 @@ right of the screen (see <a href="#s_Live-Journal-Tab">Section 12</a>).</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="s_Cameras"><a class="anchor" href="#s_Cameras"></a>11.25. Cameras</h3>
+<h3 id="s_Cameras"><a class="anchor" href="#s_Cameras"></a>11.26. Cameras</h3>
 <div id="f_Cameras-Section" class="imageblock">
 <div class="content">
 <img src="_images/UserGuide/RV-1_15-FIG-215_Cameras.png" alt="image" width="695" height="112">
 </div>
-<div class="title">Figure 33. Cameras Section</div>
+<div class="title">Figure 34. Cameras Section</div>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -2803,7 +2925,7 @@ right of the screen (see <a href="#s_Live-Journal-Tab">Section 12</a>).</p>
 <div class="ulist">
 <ul>
 <li>
-<p><u>Edit</u> - Edit the camera&#8217;s parameters (see <a href="#f_Add-Edit-Camera-Dialog">Figure 34</a>)</p>
+<p><u>Edit</u> - Edit the camera&#8217;s parameters (see <a href="#f_Add-Edit-Camera-Dialog">Figure 35</a>)</p>
 </li>
 <li>
 <p><u>Delete</u> - Delete the camera (a warning will be displayed)</p>
@@ -2846,13 +2968,13 @@ displayed in the Live tab.</p>
 <div class="content">
 <img src="_images/UserGuide/RV-1_15-FIG-216_EditCamera.png" alt="image" width="230" height="272">
 </div>
-<div class="title">Figure 34. Add/Edit Camera Dialog</div>
+<div class="title">Figure 35. Add/Edit Camera Dialog</div>
 </div>
 <div style="page-break-after: always;"></div>
 <div class="ulist">
 <ul>
 <li>
-<p><strong>Lane ID</strong> - The identification number of the lane being captured by the camera(s). Select a Lane number you defined (see <a href="#s_Lanes">Section 11.24</a>). This number will appear associated with Events in the Live tab (see <a href="#s_Live-Journal-Tab">Section 12</a>).</p>
+<p><strong>Lane ID</strong> - The identification number of the lane being captured by the camera(s). Select a Lane number you defined (see <a href="#s_Lanes">Section 11.25</a>). This number will appear associated with Events in the Live tab (see <a href="#s_Live-Journal-Tab">Section 12</a>).</p>
 <div class="admonitionblock note">
 <table>
 <tr>
@@ -2864,7 +2986,7 @@ displayed in the Live tab.</p>
 <p>The images from all cameras capturing the same physical lane will be combined into a single Event.</p>
 </div>
 <div class="paragraph">
-<p>Using the same Lane ID for different cameras (even the LPR and OV cameras within the same Camera System) will combine the reads into one Event (see <a href="#s_Lanes">Section 11.24</a>). You may even be able to improve read accuracy by changing the zoom to have one camera "see" closer than the other one.</p>
+<p>Using the same Lane ID for different cameras (even the LPR and OV cameras within the same Camera System) will combine the reads into one Event (see <a href="#s_Lanes">Section 11.25</a>). You may even be able to improve read accuracy by changing the zoom to have one camera "see" closer than the other one.</p>
 </div>
 <div class="paragraph">
 <p>You could also position cameras to be in different positions (front/rear as in a toll plaza).</p>
@@ -2939,7 +3061,7 @@ Event - <u>after</u> the trigger occurs
 <div class="content">
 <img src="_images/UserGuide/RV-1_15-FIG-210_NewLiveTab.png" alt="image" width="554" height="243">
 </div>
-<div class="title">Figure 35. Live (Journal) Tab with Row Selected</div>
+<div class="title">Figure 36. Live (Journal) Tab with Row Selected</div>
 </div>
 <div class="paragraph">
 <p>The Live tab displays Events and other data about each Event.</p>
@@ -2955,7 +3077,7 @@ Event - <u>after</u> the trigger occurs
 <p>The Events displayed in the Live tab are being simultaneously sent via the protocols you selected in the Settings tab.</p>
 </div>
 <div class="paragraph">
-<p>You should see that Events are being generated for each vehicle passing each camera, with sufficient recognition accuracy and confidence. If not, see <a href="#s_Troubleshooting">Section 17</a> for troubleshooting tips.</p>
+<p>You should see that Events are being generated for each vehicle passing each camera, with sufficient recognition accuracy and confidence. If not, see <a href="#s_Troubleshooting">Section 18</a> for troubleshooting tips.</p>
 </div>
 <div class="paragraph">
 <p>If you return to the Live tab from another tab, the large
@@ -2983,7 +3105,7 @@ each Event has a unique ID, regardless of which camera
 it came from.</p>
 </li>
 <li>
-<p><u>Lane Name</u> - Lane name as configured for the camera(s) viewing this lane in the Settings tab - see <a href="#s_Lanes">Section 11.24</a></p>
+<p><u>Lane Name</u> - Lane name as configured for the camera(s) viewing this lane in the Settings tab - see <a href="#s_Lanes">Section 11.25</a></p>
 </li>
 <li>
 <p><u>Date and time</u> when the Event was recorded</p>
@@ -3002,12 +3124,12 @@ it came from.</p>
 <p>Click on the multi-line menu icon at the upper right of the RoadView screen</p>
 </li>
 <li>
-<p>Select "Configure Journal" (see <a href="#f_Configure-Journal-Multi-line-Menu">Figure 36</a>)</p>
+<p>Select "Configure Journal" (see <a href="#f_Configure-Journal-Multi-line-Menu">Figure 37</a>)</p>
 <div id="f_Configure-Journal-Multi-line-Menu" class="imageblock">
 <div class="content">
 <img src="_images/UserGuide/RV-1_15-FIG-021a_ConfigureJournal.png" alt="image" width="80">
 </div>
-<div class="title">Figure 36. Configure Journal (Multi-line Menu)</div>
+<div class="title">Figure 37. Configure Journal (Multi-line Menu)</div>
 </div>
 </li>
 <li>
@@ -3076,11 +3198,11 @@ and plate patch (third row) images from each camera.</p>
 <ul>
 <li>
 <p>(For triggered modes) Images with a blue
-border are pre-trigger frames (see <a href="#f_Add-Edit-Camera-Dialog">Figure 34</a>)</p>
+border are pre-trigger frames (see <a href="#f_Add-Edit-Camera-Dialog">Figure 35</a>)</p>
 </li>
 <li>
 <p>(For triggered modes) Images with an orange
-border are post-trigger frames (see <a href="#f_Add-Edit-Camera-Dialog">Figure 34</a>)</p>
+border are post-trigger frames (see <a href="#f_Add-Edit-Camera-Dialog">Figure 35</a>)</p>
 </li>
 <li>
 <p>Hover over a thumbnail to display date/time
@@ -3135,7 +3257,7 @@ it in the larger image pane.</p>
 <div class="content">
 <img src="_images/UserGuide/RV-1_15-FIG-211_NewSearchTab.png" alt="image" width="645" height="307">
 </div>
-<div class="title">Figure 37. Search Tab</div>
+<div class="title">Figure 38. Search Tab</div>
 </div>
 <div class="paragraph">
 <p>The Search tab enables you to search for Event records stored in the RoadView database.</p>
@@ -3164,7 +3286,7 @@ of the records grid:</p>
 <div class="content">
 <img src="_images/UserGuide/image35.png" alt="image" width="424" height="193">
 </div>
-<div class="title">Figure 38. Search Tab: Page Controls</div>
+<div class="title">Figure 39. Search Tab: Page Controls</div>
 </div>
 <div class="paragraph">
 <p><div class="pagebreak"> </div></p>
@@ -3198,12 +3320,12 @@ of the records grid:</p>
 <p><strong>Lane Name</strong> - Select All, or a specific lane</p>
 </li>
 <li>
-<p><strong>Time</strong> - Click in the filter box to display a date/time selection popup. Uncheck the check box to clear the filter (see <a href="#f_Search-Tab-Time-Filter-Selection-Popup">Figure 39</a>).</p>
+<p><strong>Time</strong> - Click in the filter box to display a date/time selection popup. Uncheck the check box to clear the filter (see <a href="#f_Search-Tab-Time-Filter-Selection-Popup">Figure 40</a>).</p>
 <div id="f_Search-Tab-Time-Filter-Selection-Popup" class="imageblock">
 <div class="content">
 <img src="_images/UserGuide/image36.png" alt="image" width="317" height="308">
 </div>
-<div class="title">Figure 39. Search Tab: Time Filter Selection Popup</div>
+<div class="title">Figure 40. Search Tab: Time Filter Selection Popup</div>
 </div>
 <div class="ulist">
 <ul>
@@ -3241,9 +3363,9 @@ of the records grid:</p>
 <div class="sectionbody">
 <div id="f_System-Status-Tab" class="imageblock">
 <div class="content">
-<img src="_images/UserGuide/RV-1_15-FIG-205_SystemStatus.png" alt="image" width="400">
+<img src="../_images/RoadViewALPR/RV-1_15-FIG-205b_SystemStatus.png" alt="image" width="400">
 </div>
-<div class="title">Figure 40. System Status Tab</div>
+<div class="title">Figure 41. System Status Tab</div>
 </div>
 <div class="paragraph">
 <p>This tab displays statuses of different RoadView
@@ -3274,15 +3396,21 @@ you must enable its display on the System Info tab (see <a href="#s_System-Info-
 <div class="content">
 <img src="_images/UserGuide/image37.png" alt="image" width="624" height="313">
 </div>
-<div class="title">Figure 41. Calibration Tab</div>
+<div class="title">Figure 42. Calibration Tab</div>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>When you see a vehicle at a typical capture position on the video, click on the video to pause it.</p>
+<p>When you see a vehicle at a typical plate capture position on the video, click on the video to pause it.
+(If you have physical access to the site, move a vehicle to this position.)</p>
 </li>
 <li>
-<p>It is recommended to use the view called "Draw image by maintaining aspect ratio (two-headed arrow)". You select this view by clicking on the right-most button at the upper left of the screen: <span class="image"><img src="_images/UserGuide/image38.png" alt="image" width="18" height="11"></span></p>
+<p>It is recommended to use the view called
+"Draw image by maintaining aspect ratio
+(two-headed arrow)".
+You select this view by clicking on the
+right-most button at the upper left of the
+screen: <span class="image"><img src="_images/UserGuide/image38.png" alt="image" width="18" height="11"></span></p>
 </li>
 <li>
 <p>Select a camera from the dropdown list (LPR or OV).</p>
@@ -3294,14 +3422,14 @@ you must enable its display on the System Info tab (see <a href="#s_System-Info-
 <p>The Frame Timestamp at the lower left displays the date and time that the image is being taken/was taken by the camera.</p>
 </li>
 <li>
-<p>Aim the camera using the mounting bracket&#8217;s adjustment hardware (see <a href="#f_Pan-Tilt-Roll-Angle-Adjustments">Figure 42</a>).</p>
+<p>Aim the camera using the mounting bracket&#8217;s adjustment hardware (see <a href="#f_Pan-Tilt-Roll-Angle-Adjustments">Figure 43</a>).</p>
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
 <p><strong>Pan</strong>: Adjust the Pan so that the image of the license plate is in the horizontal middle of the Field of View.</p>
 </li>
 <li>
-<p><strong>Tilt:</strong> Adjust the Tilt so that the image of every expected plate position (depending on the vehicle type, such as passenger cars, jeeps, trucks, etc.) will be in the middle of the screen (from top to bottom).</p>
+<p><strong>Tilt:</strong> Adjust the Tilt so that the image of every expected plate position (depending on the vehicle type, such as passenger cars, jeeps, trucks, etc.) will be in the lower third of the screen (from top to bottom).</p>
 </li>
 <li>
 <p><strong>Roll</strong>: Adjust the Roll so the license plate&#8217;s image is horizontally straight, parallel to the ground (not tilted to one side).</p>
@@ -3309,7 +3437,7 @@ you must enable its display on the System Info tab (see <a href="#s_System-Info-
 <div class="content">
 <img src="../_images/RoadViewALPR/PanTiltRoll.png" alt="image" width="311" height="186">
 </div>
-<div class="title">Figure 42. Pan/Tilt/Roll (Angle) Adjustments</div>
+<div class="title">Figure 43. Pan/Tilt/Roll (Angle) Adjustments</div>
 </div>
 </li>
 </ol>
@@ -3336,17 +3464,8 @@ you must enable its display on the System Info tab (see <a href="#s_System-Info-
 </div>
 </li>
 <li>
-<p>Define the <strong>Plate Width Min</strong>: Events will only be created for plate reads whose width is greater than or equal to this parameter. It is recommended to enter 150 in the <strong>Plate Width Min</strong> text box.<br>
-This parameter can also be configured by dragging the small circle on the horizontal line on the Calibration tab (expressed in pixels).<br>
-This parameter can be used to ignore small plate reads. For example, if the image was taken when a vehicle is too far away, the characters are too small to be read - even by a human.</p>
-</li>
-<li>
-<p>Define the <strong>Plate Width Max</strong>: Events will only be created for plate reads whose width is less than or equal to this parameter. It is recommended to enter approximately 350 in the <strong>Plate Width Max</strong> text box.<br>
-This parameter can also be configured by dragging the large circle on the horizontal line on the Calibration tab (expressed in pixels).<br>
-This parameter can be used to prevent false reads, such as large numbers on trucks.</p>
-</li>
-<li>
-<p>Use the zoom and focus buttons to adjust the view of the video until the width of the plate is 150 pixels, and its plate image is clear and sharp. (The surrounding items, such as the vehicle body, do not need to be as sharp as the plate.)</p>
+<p>Use the zoom and focus buttons to adjust the view of the video
+until the width of the plate is 150 pixels, and the plate image is clear and sharp. (The surrounding items, such as the vehicle body, do not need to be as sharp as the plate.)</p>
 <div class="admonitionblock important">
 <table>
 <tr>
@@ -3364,6 +3483,24 @@ This parameter can be used to prevent false reads, such as large numbers on truc
 </tr>
 </table>
 </div>
+</li>
+<li>
+<p>Define the <strong>Plate Width Min</strong>: Events will only be created for
+plate reads whose width is greater than or equal to this parameter.
+It is recommended to enter 90
+in the <strong>Plate Width Min</strong> text box; this will enable the camera
+to read the plate even before the trigger line.<br>
+This parameter can also be configured by dragging the small circle on the horizontal line on the Calibration tab (expressed in pixels).<br>
+This parameter can be used to ignore small plate reads. For example, if the image was taken when a vehicle is too far away, the characters are too small to be read - even by a human.</p>
+</li>
+<li>
+<p>Define the <strong>Plate Width Max</strong>: Events will only be created for plate
+reads whose width is less than or equal to this parameter. It is
+recommended to enter 350 in the <strong>Plate Width Max</strong> text
+box; this will enable the camera to read the plate
+even after the trigger line.<br>
+This parameter can also be configured by dragging the large circle on the horizontal line on the Calibration tab (expressed in pixels).<br>
+This parameter can be used to prevent false reads, such as large numbers on trucks.</p>
 <div style="page-break-after: always;"></div>
 </li>
 <li>
@@ -3375,10 +3512,14 @@ of an Event.) You can add a Direction column to the Live and Search tabs
 using the multi-line menu at the upper right of the screen (see <a href="#s_Live-Journal-Tab">Section 12</a>).<br>
 You can set the "Ignore Opposite Direction" parameter in the Lanes section
 to ignore all Events for vehicles moving in the direction opposite to the
-direction arrow (see <a href="#s_Lanes">Section 11.24</a>).</p>
+direction arrow (see <a href="#s_Lanes">Section 11.25</a>).</p>
 </li>
 <li>
-<p>When you have finished, click the <strong>Save</strong> button. Wait several seconds for the display to refresh automatically, which indicates that the RoadView recognition software is running again with the updated parameters.</p>
+<p>When you have finished, click the <strong>Save</strong> button.
+Wait several seconds for the display to refresh
+automatically, which indicates that the
+RoadView recognition software
+is running again with the updated parameters.</p>
 </li>
 <li>
 <p>When the correct position is achieved, make a final tightening of the mounting hardware.</p>
@@ -3398,9 +3539,9 @@ direction arrow (see <a href="#s_Lanes">Section 11.24</a>).</p>
 <div class="sectionbody">
 <div id="f_System-Info-Tab" class="imageblock">
 <div class="content">
-<img src="_images/UserGuide/RV-1_15-FIG-034d_SystemInfo.png" alt="image" width="400">
+<img src="../_images/RoadViewALPR/RV-1_15-FIG-034e_SystemInfo.png" alt="image" width="400">
 </div>
-<div class="title">Figure 43. System Info Tab</div>
+<div class="title">Figure 44. System Info Tab</div>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -3557,7 +3698,78 @@ items are sent via ZAP.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="s_Troubleshooting"><a class="anchor" href="#s_Troubleshooting"></a>17. Troubleshooting</h2>
+<h2 id="s_Access-Lists-Tab"><a class="anchor" href="#s_Access-Lists-Tab"></a>17. Access Lists Tab</h2>
+<div class="sectionbody">
+<div id="f_Access-Lists-Tab" class="imageblock">
+<div class="content">
+<img src="../_images/RoadViewALPR/RV-1_15-FIG-218_AccessLists.png" alt="image" width="800">
+</div>
+<div class="title">Figure 45. Access Lists Tab</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>The Access Lists tab only becomes visible when IZCloud
+Integration is enabled. See <a href="#s_IZCloud-Integration">Section 11.8</a>.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>When RoadView starts or when IZCloud access lists are updated,
+RoadView downloads the latest access lists and stores them on disk.
+This enables RoadView to continue sending signals to open gates
+for authorized vehicles, even if the connection to IZCloud
+has been lost.</p>
+</div>
+<div class="paragraph">
+<p>IZCloud can have several different access lists to grant or deny
+access (such as Whitelist and Blacklist).
+See <a href="#s_Related-Documents">Section 1</a> for IZCloud documentation.</p>
+</div>
+<div class="paragraph">
+<p>These lists are applied to all IZCloud
+physical lanes. However, each vehicle owner&#8217;s
+access to the site can be limited to
+certain areas. A "lane" on the RoadView
+Access Lists tab represents a camera
+viewing an area of a site that the vehicle owner has
+access to. For this reason, each "lane" can have its own set of "lists" (for example, lane 1 and lane 2
+can each have their own "Grant" list.</p>
+</div>
+<div class="paragraph">
+<p>To display a list, select a Lane and List from the dropdowns.
+Due to a site&#8217;s business scenarios, plates can
+appear more than once in a list.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The Update Time at the top of the tab is the
+last time that RoadView received an update
+from IZCloud.</p>
+</li>
+<li>
+<p>The Plate is the plate stored in the list.</p>
+</li>
+<li>
+<p>The Start and End times are the times
+configured in IZCloud for which
+the vehicle will be acted upon (to grant or deny access).</p>
+</li>
+</ul>
+</div>
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="s_Troubleshooting"><a class="anchor" href="#s_Troubleshooting"></a>18. Troubleshooting</h2>
 <div class="sectionbody">
 <div class="admonitionblock note">
 <table>
@@ -3599,7 +3811,7 @@ The Live tab and Search tab are empty (no Events are detected)</p></td>
 <p>Verify that stable power at the correct level is being supplied to the cameras, even when under a heavy processing load.</p>
 </li>
 <li>
-<p>Verify that the IP address(es) configured in RoadView match the IP addresses that you configured in the camera(s). See <a href="#s_Cameras">Section 11.25</a>.</p>
+<p>Verify that the IP address(es) configured in RoadView match the IP addresses that you configured in the camera(s). See <a href="#s_Cameras">Section 11.26</a>.</p>
 </li>
 </ul>
 </div></div></td>
@@ -3643,10 +3855,10 @@ the front window of the camera with a soft cloth and mild soap</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_notice_and_legal_disclaimer"><a class="anchor" href="#_notice_and_legal_disclaimer"></a>18. Notice and Legal Disclaimer</h2>
+<h2 id="_notice_and_legal_disclaimer"><a class="anchor" href="#_notice_and_legal_disclaimer"></a>19. Notice and Legal Disclaimer</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_notice"><a class="anchor" href="#_notice"></a>18.1. Notice</h3>
+<h3 id="_notice"><a class="anchor" href="#_notice"></a>19.1. Notice</h3>
 <div class="paragraph">
 <p>Inex Technologies reserves the right to improve and enhance its product offerings. Thus, the illustrations and descriptions presented in this manual may differ in some respect from the products you receive.</p>
 </div>
@@ -3676,7 +3888,7 @@ the front window of the camera with a soft cloth and mild soap</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_legal_disclaimer"><a class="anchor" href="#_legal_disclaimer"></a>18.2. Legal Disclaimer</h3>
+<h3 id="_legal_disclaimer"><a class="anchor" href="#_legal_disclaimer"></a>19.2. Legal Disclaimer</h3>
 <div class="paragraph">
 <p>TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE PRODUCT DESCRIBED, WITH ITS HARDWARE, SOFTWARE AND FIRMWARE, IS PROVIDED "AS IS", WITH ALL FAULTS AND ERRORS, AND OUR COMPANY MAKES NO WARRANTIES, EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION, MERCHANTABILITY, SATISFACTORY QUALITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT OF THIRD PARTY. IN NO EVENT WILL OUR COMPANY, ITS DIRECTORS, OFFICERS, EMPLOYEES, OR AGENTS BE LIABLE TO YOU FOR ANY SPECIAL, CONSEQUENTIAL, INCIDENTAL, OR INDIRECT DAMAGES, INCLUDING, AMONG OTHERS, DAMAGES FOR LOSS OF BUSINESS PROFITS, BUSINESS INTERRUPTION, OR LOSS OF DATA OR DOCUMENTATION, IN CONNECTION WITH THE USE OF THIS PRODUCT, EVEN IF OUR COMPANY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.</p>
 </div>
@@ -3696,7 +3908,7 @@ the front window of the camera with a soft cloth and mild soap</p>
 <p></p>
 </div>
 <div class="paragraph">
-<p>Doc. No. RV-ALPR-MAN-001 Ver. 2024-07-16</p>
+<p>Doc. No. RV-ALPR-MAN-001 Ver. 2024-07-28</p>
 </div>
 </div>
 </div>

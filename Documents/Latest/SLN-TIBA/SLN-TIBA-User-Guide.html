@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Inex ALPR for the GateKeeper System (GKSYS) :: Documents</title>
+    <title>Inex ALPR for the TIBA Parking System :: Documents</title>
     <meta name="generator" content="Antora 3.1.3">
 <link rel="stylesheet" href="../../../_/css/site.css">
 <link rel="stylesheet" href="../../../_/css/site-extra.css">
@@ -419,7 +419,7 @@
 <nav class="breadcrumbs" aria-label="breadcrumbs">
   <ul>
     <li><a href="../index.html">Documents</a></li>
-    <li><a href="SLN-NEWTIBA-User-Guide.html">Inex ALPR for the GateKeeper System (GKSYS)</a></li>
+    <li><a href="SLN-TIBA-User-Guide.html">Inex ALPR for the TIBA Parking System</a></li>
   </ul>
 </nav>
 </div>
@@ -428,7 +428,7 @@
   <div class="toc-menu"></div>
 </aside>
 <article class="doc">
-<h1 class="page">Inex ALPR for the GateKeeper System (GKSYS)</h1>
+<h1 class="page">Inex ALPR for the TIBA Parking System</h1>
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
@@ -436,7 +436,7 @@
 </div>
 <div class="imageblock text-left">
 <div class="content">
-<img src="../_images/SLN-GKSYS/GKSYS_LOGO.png" alt="image" width="150">
+<img src="../_images/SLN-TIBA/TIBA_LOGO.png" alt="image" width="150">
 </div>
 </div>
 <div class="paragraph">
@@ -458,22 +458,15 @@
 <li><a href="#_logging_out">4.2. Logging Out</a></li>
 </ul>
 </li>
-<li><a href="#s_IZCloud-Access-Control-Lists">5. IZCloud Access Control Lists</a>
+<li><a href="#s_IZCloud-Events">5. Events</a></li>
+<li><a href="#s_IZCloud-Cameras">6. Maintenance - Cameras</a></li>
+<li><a href="#s_IZCloud-Guard">7. Guard</a></li>
+<li><a href="#s_IZCloud-Lanes">8. Lanes</a></li>
+<li><a href="#_legal_notices">9. Legal Notices</a>
 <ul class="sectlevel2">
-<li><a href="#s_IZCloud-Whitelist">5.1. Whitelist</a></li>
-<li><a href="#s_IZCloud-Blacklist">5.2. Blacklist</a></li>
-</ul>
-</li>
-<li><a href="#_events">6. Events</a></li>
-<li><a href="#s_Alerts-Alarms">7. Alerts/Alarms</a></li>
-<li><a href="#s_IZCloud-Cameras">8. Maintenance - Cameras</a></li>
-<li><a href="#s_IZCloud-Guard">9. Guard</a></li>
-<li><a href="#s_IZCloud-Lanes">10. Lanes</a></li>
-<li><a href="#_legal_notices">11. Legal Notices</a>
-<ul class="sectlevel2">
-<li><a href="#_notice">11.1. Notice</a></li>
-<li><a href="#_software_precautions">11.2. Software Precautions</a></li>
-<li><a href="#_legal_disclaimer">11.3. Legal Disclaimer</a></li>
+<li><a href="#_notice">9.1. Notice</a></li>
+<li><a href="#_software_precautions">9.2. Software Precautions</a></li>
+<li><a href="#_legal_disclaimer">9.3. Legal Disclaimer</a></li>
 </ul>
 </li>
 </ul>
@@ -494,16 +487,7 @@ is an advanced SaaS (Software as a Service) application.</p>
 <p>This document describes how to use the
 IZCloud Automatic License Plate Recognition (ALPR) Performance Monitoring application
 to work with the
-GKSYS CVM System.
-IZCloud opens a gate for an Uber or Lyft vehicle
-that has been authorized to pick up a passenger
-at this time, or that is on a
-Whitelist.</p>
-</div>
-<div class="paragraph">
-<p>If a vehicle on a Blacklist attempts to pass the gate,
-an alert (alarm) is displayed. A list of
-alarms can be viewed and searched.</p>
+TIBA SmartPark System.</p>
 </div>
 <div class="paragraph">
 <p>You can perform many useful actions, including:</p>
@@ -519,10 +503,8 @@ individual plates/owners from a
 list of Events</p>
 </li>
 <li>
-<p>Add/remove vehicles from Whitelists/Blacklists</p>
-</li>
-<li>
-<p>Search for and process Blacklist alarms</p>
+<p>Benefit from daily analytical reports, which provide
+insights into ALPR performance</p>
 </li>
 </ul>
 </div>
@@ -547,7 +529,7 @@ list of Events</p>
 <h2 id="_installation_and_calibration_instructions"><a class="anchor" href="#_installation_and_calibration_instructions"></a>3. Installation and Calibration Instructions</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>For installation and calibration instructions, see the <a href="../SLN-GKSYS/DocList.html" class="xref page">GKSYS Installation Guide</a>.</p>
+<p>For installation and calibration instructions, see the <a href="DocList.html" class="xref page">TIBA Installation Guide</a>.</p>
 </div>
 <div style="page-break-after: always;"></div>
 </div>
@@ -560,7 +542,7 @@ list of Events</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Type the URL of your IZCloud GKSYS site
+<p>Type the URL of your IZCloud TIBA site
 (provided by Inex) into your browser&#8217;s address line</p>
 </li>
 <li>
@@ -583,7 +565,7 @@ then click the Logout button.</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="../_images/SLN-GKSYS/RV-GKSYS-FIG-215_IZCloudLogout.png" alt="image" width="200">
+<img src="../_images/SLN-TIBA/IZCLOUD-TIBA-FIG-021_US_Logout.png" alt="image" width="200">
 </div>
 <div class="title">Figure 2. IZCloud Logout</div>
 </div>
@@ -592,101 +574,7 @@ then click the Logout button.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="s_IZCloud-Access-Control-Lists"><a class="anchor" href="#s_IZCloud-Access-Control-Lists"></a>5. IZCloud Access Control Lists</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>These are lists of plates which can be matched to
-when a vehicle arrives at the site.</p>
-</div>
-<div class="paragraph">
-<p>For example, select "Watch Lists" from the Access Lists menu
-<span class="image"><img src="../_images/SLN-GKSYS/RV-GKSYS-FIG-220_IZCloudAccessMenu.png" alt="image" width="100"></span></p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="../_images/SLN-GKSYS/RV-GKSYS-FIG-222_IZCloudWatchLists.png" alt="image" width="800">
-</div>
-<div class="title">Figure 3. Access Lists (Watch Lists) Page</div>
-</div>
-<div style="page-break-after: always;"></div>
-<div class="sect2">
-<h3 id="s_IZCloud-Whitelist"><a class="anchor" href="#s_IZCloud-Whitelist"></a>5.1. Whitelist</h3>
-<div class="paragraph">
-<p>Vehicles on a Whitelist will be allowed to pass through
-the gate.</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="../_images/SLN-GKSYS/RV-GKSYS-FIG-219_IZCloudWhiteList.png" alt="image" width="800">
-</div>
-<div class="title">Figure 4. Whitelist Page</div>
-</div>
-<div class="paragraph">
-<p>Columns/Filters:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><strong>Name</strong> - Enter characters
-to find within the names of the vehicle
-owners that will be granted access.</p>
-</li>
-<li>
-<p><strong>Address</strong> - Enter characters
-to find within the addresses of the vehicle
-owners</p>
-</li>
-<li>
-<p><strong>Phone</strong> - Enter characters
-to find within the phone numbers of the vehicle
-owners</p>
-</li>
-<li>
-<p><strong>Lot</strong> - Unused</p>
-</li>
-<li>
-<p><strong>Plate</strong> - Enter characters
-to find within the license plates of the vehicle
-owners. Multiple license plates separated by commas
-can be added to an owner by clicking the
-Edit button (pencil icon).</p>
-</li>
-<li>
-<p><strong>Start Time</strong> - Starting date/time that the owner&#8217;s
-vehicle is allowed to enter the site.
-Start times can be entered by clicking the
-Edit button (pencil icon).</p>
-</li>
-<li>
-<p><strong>End Time</strong> - Ending date/time that the owner&#8217;s
-vehicle is allowed to enter the site.
-End times can be entered by clicking the
-Edit button (pencil icon).</p>
-</li>
-</ul>
-</div>
-<div style="page-break-after: always;"></div>
-</div>
-<div class="sect2">
-<h3 id="s_IZCloud-Blacklist"><a class="anchor" href="#s_IZCloud-Blacklist"></a>5.2. Blacklist</h3>
-<div class="paragraph">
-<p>Vehicles on a Blacklist that approach the gate will
-generate an alert/alarm (see <a href="#s_Alerts-Alarms">Section 7</a>) and the gate
-will not be opened. You can add or remove
-vehicles from a Blacklist.</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="../_images/SLN-GKSYS/RV-GKSYS-FIG-219b_IZCloudBlackList.png" alt="image" width="800">
-</div>
-<div class="title">Figure 5. Blacklist Page</div>
-</div>
-<div style="page-break-after: always;"></div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_events"><a class="anchor" href="#_events"></a>6. Events</h2>
+<h2 id="s_IZCloud-Events"><a class="anchor" href="#s_IZCloud-Events"></a>5. Events</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>The Events page enables you to view and filter
@@ -694,9 +582,9 @@ all Events generated by the system.</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="../_images/SLN-GKSYS/RV-GKSYS-FIG-214_IZCloudEvents.png" alt="image" width="800">
+<img src="../_images/SLN-TIBA/IZCLOUD-TIBA-FIG-020_US_Events.png" alt="image" width="800">
 </div>
-<div class="title">Figure 6. Events Page</div>
+<div class="title">Figure 3. Events Page</div>
 </div>
 <div class="paragraph">
 <p>Columns/Filters:</p>
@@ -709,10 +597,10 @@ all Events generated by the system.</p>
 <ul>
 <li>
 <p>Click in the text box to display a calendar
-popup (see <a href="#f_IZCLoud-Calendar-Popup">Figure 7</a>)</p>
+popup (see <a href="#f_IZCLoud-Calendar-Popup">Figure 4</a>)</p>
 </li>
 <li>
-<p>Click once to select a start date (see <a href="#f_IZCLoud-Selecting-a-Date-Range">Figure 8</a>)</p>
+<p>Click once to select a start date (see <a href="#f_IZCLoud-Selecting-a-Date-Range">Figure 5</a>)</p>
 </li>
 <li>
 <p>Click again to select an end date
@@ -726,7 +614,7 @@ clear the checkbox.<br></p>
 <div class="content">
 <img src="../_images/SLN-TIBA/IZCloud-BorderCalendar-Popup.png" alt="image" width="400">
 </div>
-<div class="title">Figure 7. IZCloud: Calendar Popup</div>
+<div class="title">Figure 4. Calendar Popup</div>
 </div>
 </li>
 </ul>
@@ -738,15 +626,18 @@ clear the checkbox.<br></p>
 <div class="content">
 <img src="../_images/SLN-TIBA/IZCloud-BorderSelect-Date-Range.png" alt="image" width="250">
 </div>
-<div class="title">Figure 8. IZCloud: Selecting a Data Range</div>
+<div class="title">Figure 5. Selecting a Data Range</div>
 </div>
 <div class="ulist">
 <ul>
 <li>
+<p><strong>Description</strong> - Unused</p>
+</li>
+<li>
 <p><strong>Gate (Lane)</strong> - Select All, or a specific lane</p>
 </li>
 <li>
-<p><strong>List</strong> - List that plate was found on</p>
+<p><strong>EventType</strong> - Unused</p>
 </li>
 <li>
 <p><strong>Plate</strong> - Enter characters to find
@@ -754,49 +645,24 @@ within the strings. For example,
 KZ will find <u>KZ</u>R3791 and J<u>KZ</u>0714</p>
 </li>
 <li>
+<p><strong>Matched Plate</strong> - Unused</p>
+</li>
+<li>
 <p><strong>Plate Image</strong> - click on an image
 to display plate, LPR and Overview
 images of the Event</p>
 </li>
 <li>
-<p><strong>Action</strong> - Action taken for the vehicle (access
-granted or denied)</p>
-<div class="ulist">
-<ul>
-<li>
-<p>Granted - an Uber or Lyft vehicle that
-has been authorized to pick up a passenger
-at this time, or that is on the
-IZCloud Whitelist (see <a href="#s_IZCloud-Whitelist">Section 5.1</a>).</p>
+<p><strong>Action</strong> - Unused</p>
 </li>
 <li>
-<p>Denied - an Uber or Lyft vehicle that
-has not been authorized to pick up a passenger
-at this time, or that is on the IZCloud
-Blacklist.</p>
-</li>
-</ul>
-</div>
+<p><strong>Visiting</strong> - Unused</p>
 </li>
 <li>
-<p><strong>Owner</strong> - The vehicle owner name; Enter characters
-to find within the names</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>Alarm Icons:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><strong>Triangle Near Event</strong> - A triangle warning
-icon appear to the left of any Event
-that has generated an alarm (see <a href="#s_Alerts-Alarms">Section 7</a>).</p>
+<p><strong>Resident</strong> - Unused</p>
 </li>
 <li>
-<p><strong>Number of Outstanding Alarms</strong> - Displayed next to
-the Alarms button at the upper right of the display.</p>
+<p><strong>Vehicle Token</strong> - Unused</p>
 </li>
 </ul>
 </div>
@@ -804,60 +670,7 @@ the Alarms button at the upper right of the display.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="s_Alerts-Alarms"><a class="anchor" href="#s_Alerts-Alarms"></a>7. Alerts/Alarms</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>If a vehicle on a Blacklist attempts to pass the gate,
-an alert (alarm) popup is displayed:</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="../_images/SLN-GKSYS/RV-GKSYS-FIG-225_SecurityAlertPopup.png" alt="image" width="550">
-</div>
-<div class="title">Figure 9. Alert Popup</div>
-</div>
-<div class="paragraph">
-<p>You can:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><strong>Hide</strong> the Alarm - Closes the popup, but maintains
-the Alarm as active (displayed in the Alarms list)</p>
-</li>
-<li>
-<p><strong>Dismiss</strong> the Alarm - The alarm will be treated as
-read/resolved.</p>
-<div class="ulist">
-<ul>
-<li>
-<p>The icon next to the Event that caused
-the alarm will be grayed out (see <a href="#s_IZCloud-Events">[s_IZCloud-Events]</a>).</p>
-</li>
-<li>
-<p>The alarm will be removed from the Alarms list.</p>
-</li>
-</ul>
-</div>
-</li>
-</ul>
-</div>
-<div style="page-break-after: always;"></div>
-<div class="paragraph">
-<p>To see a list of alarms, click the Alarms button on
-the Events page (see <a href="#s_IZCloud-Events">[s_IZCloud-Events]</a>).</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="../_images/SLN-GKSYS/RV-GKSYS-FIG-224_IZCloudAlarmsList.png" alt="image" width="800">
-</div>
-<div class="title">Figure 10. Alarms List</div>
-</div>
-<div style="page-break-after: always;"></div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="s_IZCloud-Cameras"><a class="anchor" href="#s_IZCloud-Cameras"></a>8. Maintenance - Cameras</h2>
+<h2 id="s_IZCloud-Cameras"><a class="anchor" href="#s_IZCloud-Cameras"></a>6. Maintenance - Cameras</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>The Cameras page enables you to view
@@ -871,7 +684,7 @@ camera status.</p>
 <div class="content">
 <img src="../_images/SLN-GKSYS/RV-GKSYS-FIG-209_IZCloudCameras.png" alt="image" width="800">
 </div>
-<div class="title">Figure 11. Cameras Page</div>
+<div class="title">Figure 6. Cameras Page</div>
 </div>
 <div class="paragraph">
 <p>Columns/Filters:</p>
@@ -898,7 +711,7 @@ use the dropdown to select a lot</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="s_IZCloud-Guard"><a class="anchor" href="#s_IZCloud-Guard"></a>9. Guard</h2>
+<h2 id="s_IZCloud-Guard"><a class="anchor" href="#s_IZCloud-Guard"></a>7. Guard</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Currently unused.</p>
@@ -906,10 +719,10 @@ use the dropdown to select a lot</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="s_IZCloud-Lanes"><a class="anchor" href="#s_IZCloud-Lanes"></a>10. Lanes</h2>
+<h2 id="s_IZCloud-Lanes"><a class="anchor" href="#s_IZCloud-Lanes"></a>8. Lanes</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>The Lanes page enables you to (see <a href="#f_IZCloud-Lanes-Page">Figure 12</a>):</p>
+<p>The Lanes page enables you to (see <a href="#f_IZCloud-Lanes-Page">Figure 7</a>):</p>
 </div>
 <div class="ulist">
 <ul>
@@ -939,7 +752,7 @@ use the dropdown to select a lot</p>
 <td class="content">
 <div class="paragraph">
 <p>Plate images and video are displayed for
-lanes with online/operational cameras (see <a href="#s_IZCloud-Cameras">Section 8</a>).</p>
+lanes with online/operational cameras (see <a href="#s_IZCloud-Cameras">Section 6</a>).</p>
 </div>
 <div class="paragraph">
 <p>Live video is only displayed if your site&#8217;s
@@ -954,7 +767,7 @@ video stream from the camera.</p>
 <div class="content">
 <img src="../_images/SLN-GKSYS/RV-GKSYS-FIG-212_IZCloudLanes.png" alt="image" width="500">
 </div>
-<div class="title">Figure 12. Lanes Page</div>
+<div class="title">Figure 7. Lanes Page</div>
 </div>
 <div class="ulist">
 <ul>
@@ -982,16 +795,16 @@ with the updated read.<br></p>
 <div class="content">
 <img src="../_images/SLN-GKSYS/RV-GKSYS-FIG-213_IZCloudCorrectPlate.png" alt="image" width="400">
 </div>
-<div class="title">Figure 13. Lanes - Correct Plate Read</div>
+<div class="title">Figure 8. Lanes - Correct Plate Read</div>
 </div>
 <div style="page-break-after: always;"></div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_legal_notices"><a class="anchor" href="#_legal_notices"></a>11. Legal Notices</h2>
+<h2 id="_legal_notices"><a class="anchor" href="#_legal_notices"></a>9. Legal Notices</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_notice"><a class="anchor" href="#_notice"></a>11.1. Notice</h3>
+<h3 id="_notice"><a class="anchor" href="#_notice"></a>9.1. Notice</h3>
 <div class="paragraph">
 <p>Inex Technologies reserves the right to improve and enhance its product offerings. Thus, the illustrations and descriptions presented in this manual may differ in some respect from the products you receive.</p>
 </div>
@@ -1021,7 +834,7 @@ with the updated read.<br></p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_software_precautions"><a class="anchor" href="#_software_precautions"></a>11.2. Software Precautions</h3>
+<h3 id="_software_precautions"><a class="anchor" href="#_software_precautions"></a>9.2. Software Precautions</h3>
 <div class="ulist">
 <ul>
 <li>
@@ -1037,7 +850,7 @@ with the updated read.<br></p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_legal_disclaimer"><a class="anchor" href="#_legal_disclaimer"></a>11.3. Legal Disclaimer</h3>
+<h3 id="_legal_disclaimer"><a class="anchor" href="#_legal_disclaimer"></a>9.3. Legal Disclaimer</h3>
 <div class="paragraph">
 <p>TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE PRODUCT DESCRIBED, WITH ITS HARDWARE, SOFTWARE AND FIRMWARE, IS PROVIDED "AS IS", WITH ALL FAULTS AND ERRORS, AND OUR COMPANY MAKES NO WARRANTIES, EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION, MERCHANTABILITY, SATISFACTORY QUALITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT OF THIRD PARTY. IN NO EVENT WILL OUR COMPANY, ITS DIRECTORS, OFFICERS, EMPLOYEES, OR AGENTS BE LIABLE TO YOU FOR ANY SPECIAL, CONSEQUENTIAL, INCIDENTAL, OR INDIRECT DAMAGES, INCLUDING, AMONG OTHERS, DAMAGES FOR LOSS OF BUSINESS PROFITS, BUSINESS INTERRUPTION, OR LOSS OF DATA OR DOCUMENTATION, IN CONNECTION WITH THE USE OF THIS PRODUCT, EVEN IF OUR COMPANY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.</p>
 </div>
@@ -1057,7 +870,7 @@ with the updated read.<br></p>
 <p></p>
 </div>
 <div class="paragraph">
-<p>Doc. No. GKSYS-MAN-002a Ver. 2024-07-16</p>
+<p>Doc. No. TIBA-MAN-002a Ver. 2024-07-28</p>
 </div>
 </div>
 </div>
