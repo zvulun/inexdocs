@@ -2469,7 +2469,7 @@ above the Use Validation thresholds.</p>
 </li>
 <li>
 <p>The Region selected in the Detector Configuration section (see <a href="#s_Detector-Configuration">Section 11.24</a>)
-must be supported in the list of validation criteria patterns, or "plate type" (set by Inex).</p>
+must be supported in the list of validation criteria patterns, called "plate types" (set by Inex).</p>
 </li>
 <li>
 <p>The LPR and State reads must both match to one of the validation criteria patterns.</p>
@@ -2497,12 +2497,39 @@ example, "BTR" indicates a B-type truck in certain states.</p>
 </ul>
 </div>
 <div class="paragraph">
-<p>If one of the conditions is not met:</p>
+<p>Exceptions:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>The initial LPR and State confidences will be reduced as follows and
+<p>If the Region selected in the Detector Configuration section
+is not supported in the list of validation criteria patterns,
+then no further validation is performed, and the initial LPR
+and State confidences are left as they were.</p>
+</li>
+<li>
+<p>If the Region selected in the Detector Configuration section
+is supported, but either the LPR or State confidences are below the
+Use Validation thresholds, then the initial
+LPR and State confidences will be reduced as follows and
+reapplied to the Event:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>LPR confidence will be reduced by 10%</p>
+</li>
+<li>
+<p>State confidence will be reduced by 50%</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>The validation list should contain all LPR&#43;State
+variations. If the Region is supported, and the LPR/State confidences
+are above the thresholds, but there was no match with one of the validation patterns,
+this indicates an error in the LPR or State read. The initial
+LPR and State confidences will be reduced as follows and
 reapplied to the Event:</p>
 <div class="ulist">
 <ul>
@@ -2517,7 +2544,6 @@ reapplied to the Event:</p>
 </li>
 </ul>
 </div>
-<div style="page-break-after: always;"></div>
 </div>
 <div class="sect2">
 <h3 id="s_Trigger-Offset"><a class="anchor" href="#s_Trigger-Offset"></a>11.23. Trigger Offset</h3>
@@ -2660,7 +2686,7 @@ to send and store OV images after recognition is performed</p>
 to send and store plate patch images after recognition is performed</p>
 </li>
 <li>
-<p><strong>Include all images (for "Triggered" and "NonTriggered With Trigger" modes only)</strong> - Enables display in Live tab, and sending of <u>all</u> images (including pre- and post-trigger frames) - not only the "best" ones that were used for plate recognition</p>
+<p><strong>Include all images</strong> - Enables display in Live tab, and sending of <u>all</u> images (including pre- and post-trigger frames) - not only the "best" ones that were used for plate recognition</p>
 </li>
 <li>
 <p><strong>Include all LPR results</strong> - include all plate reads in the Event (not
@@ -3134,7 +3160,8 @@ it came from.</p>
 </div>
 </li>
 <li>
-<p>Select the additional columns to display, such as: <u>State</u> (state displayed on plate), <u>State Confidence</u> (confidence that the state has been recognized accurately), <u>Class</u> (vehicle class, such as car or truck), <u>Class Confidence</u> (confidence that the class has been recognized accurately) and <u>Direction</u> (direction vehicle was traveling - forward or backward - according to the direction arrow configured in the Calibration tab - see <a href="#s_Calibration-Tab">Section 15</a>). (These additional columns will also appear on the Search tab - see <a href="#s_Search-Tab">Section 13</a>.)</p>
+<p>Select the additional columns to display, such as: <u>State</u> (state displayed on plate), <u>State Confidence</u> (confidence that the state has been recognized accurately), <u>Class</u> (vehicle class, such as car or truck), <u>Class Confidence</u> (confidence that the class has been recognized accurately), <u>Plate Type</u> (determined by the Use Validation feature - see <a href="#s_Use-Validation">Section 11.22</a>)
+and <u>Direction</u> (direction vehicle was traveling - forward or backward - according to the direction arrow configured in the Calibration tab - see <a href="#s_Calibration-Tab">Section 15</a>). (These additional columns will also appear on the Search tab - see <a href="#s_Search-Tab">Section 13</a>.)</p>
 </li>
 </ul>
 </div>
@@ -3659,10 +3686,10 @@ items are sent via ZAP.</p>
 </ul>
 </div>
 </li>
-<li>
-<p><strong>Remember to click the Save button at the end of this section after making changes.</strong></p>
-</li>
 </ul>
+</div>
+<div class="paragraph">
+<p><strong>Remember to click the Save button at the end of this section after making changes.</strong></p>
 </div>
 <div style="page-break-after: always;"></div>
 </div>
@@ -3693,6 +3720,9 @@ items are sent via ZAP.</p>
 <p><strong>Intensity</strong> - light intensity in percent, where 0 is no light, and 100 is maximum light</p>
 </li>
 </ul>
+</div>
+<div class="paragraph">
+<p><strong>Remember to click the Save button at the end of this section after making changes.</strong></p>
 </div>
 <div style="page-break-after: always;"></div>
 </div>
@@ -3915,7 +3945,7 @@ the front window of the camera with a soft cloth and mild soap</p>
 <p></p>
 </div>
 <div class="paragraph">
-<p>Doc. No. RV-ALPR-MAN-001 Ver. 2024-07-28</p>
+<p>Doc. No. RV-ALPR-MAN-001 Ver. 2024-07-29</p>
 </div>
 </div>
 </div>
