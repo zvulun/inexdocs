@@ -459,14 +459,18 @@
 </ul>
 </li>
 <li><a href="#s_IZCloud-Events">5. Events</a></li>
-<li><a href="#s_IZCloud-Cameras">6. Maintenance - Cameras</a></li>
-<li><a href="#s_IZCloud-Guard">7. Guard</a></li>
-<li><a href="#s_IZCloud-Lanes">8. Lanes</a></li>
-<li><a href="#_legal_notices">9. Legal Notices</a>
+<li><a href="#s_IZCloud-Cameras">6. Maintenance - Cameras</a>
 <ul class="sectlevel2">
-<li><a href="#_notice">9.1. Notice</a></li>
-<li><a href="#_software_precautions">9.2. Software Precautions</a></li>
-<li><a href="#_legal_disclaimer">9.3. Legal Disclaimer</a></li>
+<li><a href="#s_Last-Review">6.1. Maintenance - Last Review</a></li>
+<li><a href="#s_Dashboard">6.2. Maintenance - Dashboard</a></li>
+</ul>
+</li>
+<li><a href="#s_IZCloud-Lanes">7. Lanes</a></li>
+<li><a href="#_legal_notices">8. Legal Notices</a>
+<ul class="sectlevel2">
+<li><a href="#_notice">8.1. Notice</a></li>
+<li><a href="#_software_precautions">8.2. Software Precautions</a></li>
+<li><a href="#_legal_disclaimer">8.3. Legal Disclaimer</a></li>
 </ul>
 </li>
 </ul>
@@ -673,16 +677,16 @@ images of the Event</p>
 <h2 id="s_IZCloud-Cameras"><a class="anchor" href="#s_IZCloud-Cameras"></a>6. Maintenance - Cameras</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>The Cameras page enables you to view
-camera status.</p>
+<p>he Cameras page enables you to view
+camera statuses and read rate statistics.</p>
 </div>
 <div class="paragraph">
 <p>Select "Cameras" from the Maintenance menu
-<span class="image"><img src="../_images/SLN-GKSYS/RV-GKSYS-FIG-221_IZCloudMaintMenu.png" alt="image" width="100"></span></p>
+<span class="image"><img src="../_images/SLN-TIBA/IZCloud-BorderTIBA-Maint-Menu.png" alt="image" width="100"></span></p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="../_images/SLN-GKSYS/RV-GKSYS-FIG-209_IZCloudCameras.png" alt="image" width="800">
+<img src="../_images/SLN-TIBA/IZCLOUD-TIBA-FIG-022_US_Cameras.png" alt="image" width="800">
 </div>
 <div class="title">Figure 6. Cameras Page</div>
 </div>
@@ -705,24 +709,214 @@ use the dropdown to select a lot</p>
 <li>
 <p><strong>Status</strong> - Camera status (online or offline)</p>
 </li>
+<li>
+<p><strong>Read Rate</strong> - with no read mistakes</p>
+</li>
+<li>
+<p><strong>Read Rate N-1</strong> - with up to 1 read mistake</p>
+</li>
+<li>
+<p><strong>Read Rate N-2</strong> - with up to 2 read mistakes</p>
+</li>
+<li>
+<p><strong>Actions</strong> - select Last Review from the dropdown
+to display the Last Review page, filtered
+by the lane on that row (see <a href="#s_Last-Review">Section 6.1</a>).</p>
+</li>
+</ul>
+</div>
+<div style="page-break-after: always;"></div>
+<div class="sect2">
+<h3 id="s_Last-Review"><a class="anchor" href="#s_Last-Review"></a>6.1. Maintenance - Last Review</h3>
+<div class="paragraph">
+<p>The Last Review page enables you to see results from the most
+recent automatic review.</p>
+</div>
+<div class="paragraph">
+<p>Select "Last Review" from the Maintenance menu
+<span class="image"><img src="../_images/SLN-TIBA/IZCloud-BorderTIBA-Maint-Menu.png" alt="image" width="100"></span></p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/SLN-TIBA/IZCLOUD-TIBA-FIG-023_US_LastReview.png" alt="image" width="800">
+</div>
+<div class="title">Figure 7. Last Review Page</div>
+</div>
+<div class="paragraph">
+<p>Columns/Filters:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>TimeStamp</strong> - same as in <a href="#s_IZCloud-Events">Section 5</a></p>
+</li>
+<li>
+<p><strong>Gate</strong> - same as in <a href="#s_IZCloud-Events">Section 5</a></p>
+</li>
+<li>
+<p><strong>Plate</strong> - Plate read; filter works as in
+<a href="#s_IZCloud-Events">Section 5</a></p>
+</li>
+<li>
+<p><strong>Plate Review</strong> - True read; filter works as in
+<a href="#s_IZCloud-Events">Section 5</a></p>
+</li>
+<li>
+<p><strong>Plate Image</strong> - same as in <a href="#s_IZCloud-Events">Section 5</a></p>
+</li>
+<li>
+<p><strong>Read Status</strong> - use the dropdown to
+filter the display</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Correct</strong> - automatic read matches
+the true read</p>
+</li>
+<li>
+<p><strong>N-1 Read</strong> - an automatic read with up to 1
+mistake</p>
+</li>
+<li>
+<p><strong>N-2 Read</strong> - an automatic read with up to 2
+mistakes</p>
+</li>
+<li>
+<p><strong>False Read</strong> - there are more than 2 mistakes
+in the automatic read</p>
+</li>
+<li>
+<p><strong>False Reject</strong> - an automatic read that was not generated
+for a qualified Event</p>
+</li>
+<li>
+<p><strong>Non-Qualified</strong> - cannot be read
+by a human; examples include:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Missing plate</p>
+</li>
+<li>
+<p>Partial image of plate</p>
+</li>
+<li>
+<p>Bent or broken plate</p>
+</li>
+<li>
+<p>Multiple plates</p>
+</li>
+<li>
+<p>Obstructed characters
+(by dirt, snow, trailer ball, etc.)</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>To see a list of other past reviews, click the SelectReviewProject button
+at the upper right.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/SLN-TIBA/IZCLOUD-TIBA-FIG-024_US_01SelectReviewProject.png" alt="image" width="700">
+</div>
+<div class="title">Figure 8. SelectReviewProject Dialog</div>
+</div>
+<div class="paragraph">
+<p>Click on the desired review; the review date is displayed next to the
+"Last Review" heading at the upper left (see <a href="#f_Past-Review-Selected">Figure 9</a>).</p>
+</div>
+<div id="f_Past-Review-Selected" class="imageblock">
+<div class="content">
+<img src="../_images/SLN-TIBA/IZCLOUD-TIBA-FIG-025_US_02SelectedReviewProject.png" alt="image" width="800">
+</div>
+<div class="title">Figure 9. Past Review Selected</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="s_Dashboard"><a class="anchor" href="#s_Dashboard"></a>6.2. Maintenance - Dashboard</h3>
+<div class="paragraph">
+<p>The Dashboard page enables you to see daily
+analytical reports about ALPR performance.</p>
+</div>
+<div class="paragraph">
+<p>Select "Dashboard" from the Maintenance menu
+<span class="image"><img src="../_images/SLN-TIBA/IZCloud-BorderTIBA-Maint-Menu.png" alt="image" width="100"></span></p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/SLN-TIBA/IZCLOUD-TIBA-FIG-026_US_Dashboard.png" alt="image" width="800">
+</div>
+<div class="title">Figure 10. Dashboard Page</div>
+</div>
+<div class="paragraph">
+<p>Page Elements:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Total Lanes</strong> - Total number of lanes in the system</p>
+</li>
+<li>
+<p><strong>Operational Lanes</strong> - Lanes with
+cameras operating properly</p>
+</li>
+<li>
+<p><strong>Require Maintenance</strong> - Lanes with cameras
+that are operating but need maintenance/have warnings
+(for future use)</p>
+</li>
+<li>
+<p><strong>Inoperational Lanes</strong> - Lanes with
+cameras not operating</p>
+</li>
+<li>
+<p><strong>Statistic Graphs</strong>
+These graphs show data from "reviewed reads".
+"Reviewed reads" are the Qualifed (human-readable) plate reads
+(out of the total reads for a certain day) that were reviewed.
+The maximum total reads in a review sample is typically set to 1000.</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Read Rate Bar Chart</strong> (for online/operational cameras):</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Hover over a bar to show details for the previous day&#8217;s
+review.</p>
+</li>
+<li>
+<p>Click to jump to the Last Review
+page for that lane (see <a href="#s_Last-Review">Section 6.1</a>).</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>Historical Average Read Rate</strong> - Each data point
+is generated daily. Hover on a point to show details.</p>
+</li>
+</ul>
+</div>
+</li>
 </ul>
 </div>
 <div style="page-break-after: always;"></div>
 </div>
 </div>
-<div class="sect1">
-<h2 id="s_IZCloud-Guard"><a class="anchor" href="#s_IZCloud-Guard"></a>7. Guard</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>Currently unused.</p>
-</div>
-</div>
 </div>
 <div class="sect1">
-<h2 id="s_IZCloud-Lanes"><a class="anchor" href="#s_IZCloud-Lanes"></a>8. Lanes</h2>
+<h2 id="s_IZCloud-Lanes"><a class="anchor" href="#s_IZCloud-Lanes"></a>7. Lanes</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>The Lanes page enables you to (see <a href="#f_IZCloud-Lanes-Page">Figure 7</a>):</p>
+<p>The Lanes page enables you to (see <a href="#f_IZCloud-Lanes-Page">Figure 11</a>):</p>
 </div>
 <div class="ulist">
 <ul>
@@ -734,9 +928,6 @@ use the dropdown to select a lot</p>
 </li>
 <li>
 <p>Correct the plate read</p>
-</li>
-<li>
-<p>Add the license plate to an Access list</p>
 </li>
 <li>
 <p>Open the lane&#8217;s gate in an emergency</p>
@@ -765,9 +956,9 @@ video stream from the camera.</p>
 </div>
 <div id="f_IZCloud-Lanes-Page" class="imageblock">
 <div class="content">
-<img src="../_images/SLN-GKSYS/RV-GKSYS-FIG-212_IZCloudLanes.png" alt="image" width="500">
+<img src="../_images/SLN-TIBA/IZCLOUD-TIBA-FIG-027_US_Lanes.png" alt="image" width="500">
 </div>
-<div class="title">Figure 7. Lanes Page</div>
+<div class="title">Figure 11. Lanes Page</div>
 </div>
 <div class="ulist">
 <ul>
@@ -787,24 +978,24 @@ only active if plate is not already on a list</p>
 <li>
 <p>Click the Correct Plate Read button
 to correct the read. A new Event is created
-with the updated read.<br></p>
+with the updated read (see <a href="#f_Correct-Plate-Read">Figure 12</a>).<br></p>
 </li>
 </ul>
 </div>
-<div class="imageblock">
+<div id="f_Correct-Plate-Read" class="imageblock">
 <div class="content">
-<img src="../_images/SLN-GKSYS/RV-GKSYS-FIG-213_IZCloudCorrectPlate.png" alt="image" width="400">
+<img src="../_images/SLN-TIBA/IZCLOUD-TIBA-FIG-028_US_CorrectPlateRead.png" alt="image" width="400">
 </div>
-<div class="title">Figure 8. Lanes - Correct Plate Read</div>
+<div class="title">Figure 12. Lanes - Correct Plate Read</div>
 </div>
 <div style="page-break-after: always;"></div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_legal_notices"><a class="anchor" href="#_legal_notices"></a>9. Legal Notices</h2>
+<h2 id="_legal_notices"><a class="anchor" href="#_legal_notices"></a>8. Legal Notices</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_notice"><a class="anchor" href="#_notice"></a>9.1. Notice</h3>
+<h3 id="_notice"><a class="anchor" href="#_notice"></a>8.1. Notice</h3>
 <div class="paragraph">
 <p>Inex Technologies reserves the right to improve and enhance its product offerings. Thus, the illustrations and descriptions presented in this manual may differ in some respect from the products you receive.</p>
 </div>
@@ -834,7 +1025,7 @@ with the updated read.<br></p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_software_precautions"><a class="anchor" href="#_software_precautions"></a>9.2. Software Precautions</h3>
+<h3 id="_software_precautions"><a class="anchor" href="#_software_precautions"></a>8.2. Software Precautions</h3>
 <div class="ulist">
 <ul>
 <li>
@@ -850,7 +1041,7 @@ with the updated read.<br></p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_legal_disclaimer"><a class="anchor" href="#_legal_disclaimer"></a>9.3. Legal Disclaimer</h3>
+<h3 id="_legal_disclaimer"><a class="anchor" href="#_legal_disclaimer"></a>8.3. Legal Disclaimer</h3>
 <div class="paragraph">
 <p>TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE PRODUCT DESCRIBED, WITH ITS HARDWARE, SOFTWARE AND FIRMWARE, IS PROVIDED "AS IS", WITH ALL FAULTS AND ERRORS, AND OUR COMPANY MAKES NO WARRANTIES, EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION, MERCHANTABILITY, SATISFACTORY QUALITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT OF THIRD PARTY. IN NO EVENT WILL OUR COMPANY, ITS DIRECTORS, OFFICERS, EMPLOYEES, OR AGENTS BE LIABLE TO YOU FOR ANY SPECIAL, CONSEQUENTIAL, INCIDENTAL, OR INDIRECT DAMAGES, INCLUDING, AMONG OTHERS, DAMAGES FOR LOSS OF BUSINESS PROFITS, BUSINESS INTERRUPTION, OR LOSS OF DATA OR DOCUMENTATION, IN CONNECTION WITH THE USE OF THIS PRODUCT, EVEN IF OUR COMPANY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.</p>
 </div>
