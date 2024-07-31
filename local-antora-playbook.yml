@@ -122,6 +122,7 @@ asciidoc:
     hw-indoor-processor: IZIDPUG@
     hw-advanced-processor: IZIDPUGOX@
     hw-outdoor-processor: IZODPUG@
+    hw-outdoor-proc-WAN: IZODPUG4G@
     hw-loopdetect-l: LOOP-DTCR-L@
     hw-loopdetect-p: LOOP-DTCR-P@
 

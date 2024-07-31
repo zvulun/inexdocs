@@ -1,5 +1,5 @@
 site:
-  #This comment can be changed, saved, added, committed and pushed
+  #This comment can be changed,  saved, added, committed and pushed
   #to trigger github actions to generate your online site
   title: Documents
   start_page: Documents::index.adoc
@@ -123,6 +123,7 @@ asciidoc:
     hw-indoor-processor: IZIDPUG@
     hw-advanced-processor: IZIDPUGOX@
     hw-outdoor-processor: IZODPUG@
+    hw-outdoor-proc-WAN: IZODPUG4G@
     hw-loopdetect-l: LOOP-DTCR-L@
     hw-loopdetect-p: LOOP-DTCR-P@
 
