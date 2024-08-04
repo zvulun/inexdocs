@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Product-to-Mount Mapping :: Documents</title>
+    <title>Inex IZCloud Integration :: Documents</title>
     <meta name="generator" content="Antora 3.1.3">
 <link rel="stylesheet" href="../../../_/css/site.css">
 <link rel="stylesheet" href="../../../_/css/site-extra.css">
@@ -81,7 +81,7 @@
     <a class="nav-link" href="../SLN-Handheld-LPI/DocList.html">Handheld LPI System</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../SLN-IZCloudIntegration/DocList.html">IZCloud Integration</a>
+    <a class="nav-link" href="DocList.html">IZCloud Integration</a>
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../SLN-JLT/DocList.html">Jerusalem Light Train</a>
@@ -186,7 +186,7 @@
     <span class="nav-text">Camera Mounts</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="DocList.html">Product-to-Mount Summary/Mapping</a>
+    <a class="nav-link" href="../MNT-ProdToMountMap/DocList.html">Product-to-Mount Summary/Mapping</a>
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../MNT-IZMNTA-UC/DocList.html">IZMNTA-UC (Under-Ceiling for Parking)</a>
@@ -422,7 +422,7 @@
 <nav class="breadcrumbs" aria-label="breadcrumbs">
   <ul>
     <li><a href="../index.html">Documents</a></li>
-    <li><a href="MOUNT-MAP-PRSNT-011_ProductToMountMapping.html">Product-to-Mount Mapping</a></li>
+    <li><a href="SLN-IZCloudIntegration-Installation-Guide.html">Inex IZCloud Integration</a></li>
   </ul>
 </nav>
 </div>
@@ -431,85 +431,285 @@
   <div class="toc-menu"></div>
 </aside>
 <article class="doc">
-<h1 class="page">Product-to-Mount Mapping</h1>
+<h1 class="page">Inex IZCloud Integration</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p><font size="+3"> <strong>Configuration Guide</strong></font></p>
+</div>
+<div class="paragraph">
+<p>
+</p>
+</div>
+<details>
+<summary class="title"><em>Click to show the Table of Contents</em></summary>
+<div class="content">
+<div id="toc" class="toc">
+<div id="toctitle" class="title">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#s_Related-Documents">1. Recommended Reading/Related Documents</a></li>
+<li><a href="#_background">2. Background</a></li>
+<li><a href="#_prepare_to_aim_and_calibrate">3. Prepare to Aim and Calibrate</a></li>
+<li><a href="#s_Using-RoadView">4. Log In to RoadView</a>
+<ul class="sectlevel2">
+<li><a href="#_logging_in">4.1. Logging In</a></li>
+<li><a href="#_logging_out_multi_line_menu_icon">4.2. Logging Out (Multi-line Menu Icon)</a></li>
+</ul>
+</li>
+<li><a href="#s_Configure-RoadView-Settings-Tab">5. Configure RoadView - Settings Tab</a>
+<ul class="sectlevel2">
+<li><a href="#s_IZCloud-Integration">5.1. IZCloud Integration</a></li>
+</ul>
+</li>
+<li><a href="#_legal_notices">6. Legal Notices</a>
+<ul class="sectlevel2">
+<li><a href="#_notice">6.1. Notice</a></li>
+<li><a href="#_software_precautions">6.2. Software Precautions</a></li>
+<li><a href="#_legal_disclaimer">6.3. Legal Disclaimer</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</details>
+</div>
+</div>
+<div class="sect1">
+<h2 id="s_Related-Documents"><a class="anchor" href="#s_Related-Documents"></a>1. Recommended Reading/Related Documents</h2>
+<div class="sectionbody">
+<details>
+<summary class="title"><em>Click to show the Related Documents table</em></summary>
+<div class="content">
+<table id="t_Related-Documents" class="tableblock frame-all grid-all stretch withborders">
+<caption class="title">Table 1. Related Documents</caption>
+<colgroup>
+<col style="width: 51%;">
+<col style="width: 49%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Doc. No.</th>
+<th class="tableblock halign-left valign-top">Title</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><a href="../RoadViewALPR/DocList.html" class="xref page">RoadView Documentation</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">RoadView Documentation</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><a href="../IZREMRELAY/DocList.html" class="xref page">IZ-REM-RELAY-4 Datasheet</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">IZ-REM-RELAY-4 Datasheet</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><a href="../IZREMRELAY/DocList.html" class="xref page">IZ-REM-RELAY-4 Supporting Documentation</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">IZ-REM-RELAY-4 Quad-Relay Remote (WEB) Relay: Supporting Documentation</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_background"><a class="anchor" href="#_background"></a>2. Background</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong><em>\{get from original doc?}</em></strong> This document describes how to configure the RoadView
+settings for the Inex IZCloud Integration.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_prepare_to_aim_and_calibrate"><a class="anchor" href="#_prepare_to_aim_and_calibrate"></a>3. Prepare to Aim and Calibrate</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>There are two cameras (sensors) in the Camera System.
+Both are calibrated in nearly the same way.
+The LPR camera is set to capture in black and white,
+and the Overview (OV) camera is set to capture in color.</p>
+</div>
+<div class="paragraph">
+<p>The OV camera can be used both to display an overview image,
+and to perform LPR recognition.
+You may even be able to improve read accuracy by
+changing the zoom to have one camera "see" closer
+than the other one.</p>
+</div>
+<div class="paragraph">
+<p>Move a vehicle next to, and at the middle of
+the capture line. (This is the position at
+which the vehicle detector signals that the
+vehicle is present.) Ensure that the Camera System
+is aimed at the middle of the lane, and is at the
+required capture distance.</p>
+</div>
+<div class="paragraph">
+<p>Alternatively, in a lab, position a license plate
+at the expected distance and height.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="s_Using-RoadView"><a class="anchor" href="#s_Using-RoadView"></a>4. Log In to RoadView</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_logging_in"><a class="anchor" href="#_logging_in"></a>4.1. Logging In</h3>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Open a browser.</p>
+</li>
+<li>
+<p>Type in the IP address of the RoadView computer.
+For example:<br>
+192.168.5.110</p>
+</li>
+<li>
+<p>You will see the login screen. Enter the default username
+and password (root, root):</p>
+<div id="f_Logging-In-to-RoadView" class="imageblock">
+<div class="content">
+<img src="../_images/RoadViewALPR/RoadViewLoginWindow.png" alt="image" width="209" height="143">
+</div>
+<div class="title">Figure 1. Logging In to RoadView</div>
+</div>
+</li>
+<li>
+<p>You should see the RoadView Live (Journal) tab.</p>
+</li>
+</ol>
+</div>
+<div style="page-break-after: always;"></div>
+</div>
+<div class="sect2">
+<h3 id="_logging_out_multi_line_menu_icon"><a class="anchor" href="#_logging_out_multi_line_menu_icon"></a>4.2. Logging Out (Multi-line Menu Icon)</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Click on the multi-line menu icon at the upper right of the RoadView screen</p>
+</li>
+<li>
+<p>Select "Logout"</p>
+</li>
+</ul>
+</div>
+<div id="f_Logout-Multi-line-Menu" class="imageblock">
+<div class="content">
+<img src="../_images/RoadViewALPR/RV-1_15-FIG-020a_Logging_Out.png" alt="image" width="120">
+</div>
+<div class="title">Figure 2. Logout (Multi-line Menu)</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="s_Configure-RoadView-Settings-Tab"><a class="anchor" href="#s_Configure-RoadView-Settings-Tab"></a>5. Configure RoadView - Settings Tab</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="s_IZCloud-Integration"><a class="anchor" href="#s_IZCloud-Integration"></a>5.1. IZCloud Integration</h3>
+<div class="paragraph">
+<p>Enable IZCloud Integration and
+set the parameters as follows. <strong>Remember to click the Save button at the end of the
+Detector Configuration section after making changes.</strong></p>
+</div>
 <div class="imageblock">
 <div class="content">
-<img src="_images/Slide1.jpg" alt="Slide1">
+<img src="../_images/SLN-GKSYS/RV-GKSYS-FIG-216_IZCloudIntegration.png" alt="image" width="550">
+</div>
+<div class="title">Figure 3. IZCloud Integration Section</div>
+</div>
+<div style="page-break-after: always;"></div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>GPIO</strong> - The nn number that identifies the GPIOnn
+pin on the NVIDIA Jetson processor&#8217;s I/O module.
+When RoadView sends a validation request (to see if the
+plate read has a match with the IZCloud Integration list of expected
+plate reads), a signal is sent to this pin when IZCloud Integration
+responds that a gate should be opened.
+See the NVIDIA Jetson documentation for further information.</p>
+</li>
+</ul>
+</div>
+<div style="page-break-after: always;"></div>
 </div>
 </div>
-<div class="imageblock">
-<div class="content">
-<img src="_images/Slide252.jpg" alt="Slide252">
+</div>
+<div class="sect1">
+<h2 id="_legal_notices"><a class="anchor" href="#_legal_notices"></a>6. Legal Notices</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_notice"><a class="anchor" href="#_notice"></a>6.1. Notice</h3>
+<div class="paragraph">
+<p>Inex Technologies reserves the right to improve and enhance its product offerings. Thus, the illustrations and descriptions presented in this manual may differ in some respect from the products you receive.</p>
+</div>
+<div class="paragraph">
+<p>Technical specifications are subject to change without notice.</p>
+</div>
+<div class="paragraph">
+<p>In addition, please note that some figures are not drawn to scale, in order to illustrate the addressed issue more effectively.</p>
+</div>
+<div class="paragraph">
+<p>All third-party trademarks are the property of their respective owners.</p>
+</div>
+<div class="paragraph">
+<p>Inex Technologies cannot be held liable for technical and editorial omissions or errors made in this document; nor for incidental or consequential damages resulting from the furnishing, performance or use of this document.</p>
+</div>
+<div class="paragraph">
+<p>Actions or circumstances that void the warranty are improper usage, improper handling without adequate electrostatic discharge (ESD) protection, defects resulting from natural disaster (fire, flood etc.) and unauthorized modifications or repair.</p>
+</div>
+<div class="paragraph">
+<p>Power undervoltage, overvoltage and/or incorrect polarity will damage the unit and will void the warranty.</p>
+</div>
+<div class="paragraph">
+<p>It is your responsibility to ensure that all wires connected to Inex Technologies' products have appropriate surge protection. Any damage due to electrical spikes (for example, lightning) is not covered by the warranty.</p>
+</div>
+<div class="paragraph">
+<p>No part of this document may be reproduced in any form without permission from Inex Technologies.</p>
 </div>
 </div>
-<div class="imageblock">
-<div class="content">
-<img src="_images/Slide276.jpg" alt="Slide276">
+<div class="sect2">
+<h3 id="_software_precautions"><a class="anchor" href="#_software_precautions"></a>6.2. Software Precautions</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>The use of any Inex Technologies' software products or any other software product referred to in this document with internet access shall be used wholly at your own risk. Inex Technologies does not take any responsibility for abnormal operation, privacy leakage or any other damages resulting from cyber attack, hacker attack, virus infection or any other internet security risks.</p>
+</li>
+<li>
+<p>Proper configuration of all passwords and other security settings is the responsibility of the installer and/or end-user.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><div class="pagebreak"> </div></p>
 </div>
 </div>
-<div class="imageblock">
-<div class="content">
-<img src="_images/Slide285.jpg" alt="Slide285">
+<div class="sect2">
+<h3 id="_legal_disclaimer"><a class="anchor" href="#_legal_disclaimer"></a>6.3. Legal Disclaimer</h3>
+<div class="paragraph">
+<p>TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE PRODUCT DESCRIBED, WITH ITS HARDWARE, SOFTWARE AND FIRMWARE, IS PROVIDED "AS IS", WITH ALL FAULTS AND ERRORS, AND OUR COMPANY MAKES NO WARRANTIES, EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION, MERCHANTABILITY, SATISFACTORY QUALITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT OF THIRD PARTY. IN NO EVENT WILL OUR COMPANY, ITS DIRECTORS, OFFICERS, EMPLOYEES, OR AGENTS BE LIABLE TO YOU FOR ANY SPECIAL, CONSEQUENTIAL, INCIDENTAL, OR INDIRECT DAMAGES, INCLUDING, AMONG OTHERS, DAMAGES FOR LOSS OF BUSINESS PROFITS, BUSINESS INTERRUPTION, OR LOSS OF DATA OR DOCUMENTATION, IN CONNECTION WITH THE USE OF THIS PRODUCT, EVEN IF OUR COMPANY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.</p>
+</div>
+<div class="paragraph">
+<p>THE USE OF ANY Inex Technologies' SOFTWARE PRODUCTS OR ANY OTHER SOFTWARE PRODUCTS REFERRED TO IN THIS DOCUMENT WITH INTERNET ACCESS SHALL BE USED WHOLLY AT YOUR OWN RISK. Inex Technologies DOES NOT TAKE ANY RESPONSIBILITY FOR ABNORMAL OPERATION, PRIVACY LEAKAGE OR ANY OTHER DAMAGES RESULTING FROM CYBER ATTACK, HACKER ATTACK, VIRUS INFECTION OR ANY OTHER INTERNET SECURITY RISKS.</p>
+</div>
+<div class="paragraph">
+<p>For details, see the Inex Software End User License Agreement.</p>
+</div>
+<div class="paragraph">
+<p></p>
+</div>
+<div class="paragraph">
+<p>&#169; Inex Technologies, LLC - All rights reserved.</p>
+</div>
+<div class="paragraph">
+<p></p>
+</div>
+<div class="paragraph">
+<p>Doc. No. RV-IZCLOUD-MAN-001 Ver. 2024-08-04</p>
 </div>
 </div>
-<div class="imageblock">
-<div class="content">
-<img src="_images/Slide275.jpg" alt="Slide275">
-</div>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="_images/Slide287.jpg" alt="Slide287">
-</div>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="_images/Slide286.jpg" alt="Slide286">
-</div>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="_images/Slide284.jpg" alt="Slide284">
-</div>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="_images/Slide279.jpg" alt="Slide279">
-</div>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="_images/Slide280.jpg" alt="Slide280">
-</div>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="_images/Slide281.jpg" alt="Slide281">
-</div>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="_images/Slide282.jpg" alt="Slide282">
-</div>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="_images/Slide283.jpg" alt="Slide283">
-</div>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="_images/Slide288.jpg" alt="Slide288">
-</div>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="_images/Slide278.jpg" alt="Slide278">
-</div>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="_images/Slide37.jpg" alt="Slide37">
 </div>
 </div>
 </article>
