@@ -76,6 +76,7 @@ asciidoc:
 
     camera-DOT: IZA800GDOT@
     camera-ORT: IZA800GORT@
+    camera-OLDORT: IZA800ORT@
     camera-VES: IZA800GVES@
     camera-GRV: IZA800GRV@
     camera-5G: IZA500G@
