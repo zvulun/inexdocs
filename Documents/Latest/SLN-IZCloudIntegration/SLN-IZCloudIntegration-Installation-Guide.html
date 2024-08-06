@@ -219,7 +219,7 @@
     <a class="nav-link" href="../IZIDPUGOX/DocList.html">IZIDPUGOX</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../IZODPUG/DocList.html">IZODPUG</a>
+    <a class="nav-link" href="../IZODPUG/DocList.html">IZODPUG/4G</a>
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../IZVDPUG/DocList.html">IZVDPUG</a>
@@ -432,8 +432,6 @@
 </aside>
 <article class="doc">
 <h1 class="page">Inex IZCloud Integration</h1>
-<div id="preamble">
-<div class="sectionbody">
 <div class="paragraph">
 <p><font size="+3"> <strong>Configuration Guide</strong></font></p>
 </div>
@@ -444,39 +442,10 @@
 <details>
 <summary class="title"><em>Click to show the Table of Contents</em></summary>
 <div class="content">
-<div id="toc" class="toc">
-<div id="toctitle" class="title">Table of Contents</div>
-<ul class="sectlevel1">
-<li><a href="#s_Related-Documents">1. Recommended Reading/Related Documents</a></li>
-<li><a href="#_background">2. Background</a></li>
-<li><a href="#_prepare_to_aim_and_calibrate">3. Prepare to Aim and Calibrate</a></li>
-<li><a href="#s_Using-RoadView">4. Log In to RoadView</a>
-<ul class="sectlevel2">
-<li><a href="#_logging_in">4.1. Logging In</a></li>
-<li><a href="#_logging_out_multi_line_menu_icon">4.2. Logging Out (Multi-line Menu Icon)</a></li>
-</ul>
-</li>
-<li><a href="#s_Configure-RoadView-Settings-Tab">5. Configure RoadView - Settings Tab</a>
-<ul class="sectlevel2">
-<li><a href="#s_IZCloud-Integration">5.1. IZCloud Integration</a></li>
-</ul>
-</li>
-<li><a href="#_legal_notices">6. Legal Notices</a>
-<ul class="sectlevel2">
-<li><a href="#_notice">6.1. Notice</a></li>
-<li><a href="#_software_precautions">6.2. Software Precautions</a></li>
-<li><a href="#_legal_disclaimer">6.3. Legal Disclaimer</a></li>
-</ul>
-</li>
-</ul>
-</div>
+<!-- toc disabled -->
 </div>
 </details>
-</div>
-</div>
-<div class="sect1">
-<h2 id="s_Related-Documents"><a class="anchor" href="#s_Related-Documents"></a>1. Recommended Reading/Related Documents</h2>
-<div class="sectionbody">
+<h2 id="s_Related-Documents" class="discrete">Recommended Reading/Related Documents</h2>
 <details>
 <summary class="title"><em>Click to show the Related Documents table</em></summary>
 <div class="content">
@@ -509,139 +478,279 @@
 </table>
 </div>
 </details>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_background"><a class="anchor" href="#_background"></a>2. Background</h2>
-<div class="sectionbody">
+<h2 id="_background" class="discrete">Background</h2>
 <div class="paragraph">
-<p><strong><em>\{get from original doc?}</em></strong> This document describes how to configure the RoadView
-settings for the Inex IZCloud Integration.</p>
+<p>This document describes how to configure Inex camera(s)
+to work with IZCloud.</p>
 </div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_prepare_to_aim_and_calibrate"><a class="anchor" href="#_prepare_to_aim_and_calibrate"></a>3. Prepare to Aim and Calibrate</h2>
-<div class="sectionbody">
+<h2 id="_applicable_product" class="discrete">Applicable Product</h2>
 <div class="paragraph">
-<p>There are two cameras (sensors) in the Camera System.
-Both are calibrated in nearly the same way.
-The LPR camera is set to capture in black and white,
-and the Overview (OV) camera is set to capture in color.</p>
+<p>A IZCloud-integrated Inex camera running
+with the latest RoadView release.</p>
 </div>
-<div class="paragraph">
-<p>The OV camera can be used both to display an overview image,
-and to perform LPR recognition.
-You may even be able to improve read accuracy by
-changing the zoom to have one camera "see" closer
-than the other one.</p>
-</div>
-<div class="paragraph">
-<p>Move a vehicle next to, and at the middle of
-the capture line. (This is the position at
-which the vehicle detector signals that the
-vehicle is present.) Ensure that the Camera System
-is aimed at the middle of the lane, and is at the
-required capture distance.</p>
-</div>
-<div class="paragraph">
-<p>Alternatively, in a lab, position a license plate
-at the expected distance and height.</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="s_Using-RoadView"><a class="anchor" href="#s_Using-RoadView"></a>4. Log In to RoadView</h2>
-<div class="sectionbody">
-<div class="sect2">
-<h3 id="_logging_in"><a class="anchor" href="#_logging_in"></a>4.1. Logging In</h3>
-<div class="olist arabic">
-<ol class="arabic">
+<h2 id="_you_will_need" class="discrete">You Will Need</h2>
+<div class="ulist">
+<ul>
 <li>
-<p>Open a browser.</p>
+<p>Computer with Windows 10 or above - with .NET 4.5 enabled in "Windows Features"</p>
 </li>
 <li>
-<p>Type in the IP address of the RoadView computer.
+<p>Chrome or Edge browser</p>
+</li>
+</ul>
+</div>
+<h2 id="_purchasing_an_izcloud_subscription" class="discrete">Purchasing an IZCloud Subscription</h2>
+<div class="paragraph">
+<p>Contact Inex to purchase an
+IZCloud subscription. If needed, Inex
+will provide further instructions on how to configure
+the IZCloud Integration in RoadView</p>
+</div>
+<h2 id="_configuring_izcloud_in_roadview" class="discrete">Configuring IZCloud  in RoadView</h2>
+<div class="ulist">
+<ul>
+<li>
+<p>Open a browser with the the IP address of the RoadView computer
+address you configured (usually running on the camera).<br>
 For example:<br>
 192.168.5.110</p>
 </li>
 <li>
-<p>You will see the login screen. Enter the default username
-and password (root, root):</p>
-<div id="f_Logging-In-to-RoadView" class="imageblock">
-<div class="content">
-<img src="../_images/RoadViewALPR/RoadViewLoginWindow.png" alt="image" width="209" height="143">
-</div>
-<div class="title">Figure 1. Logging In to RoadView</div>
-</div>
+<p>Enter the default username/password = root/root</p>
 </li>
 <li>
 <p>You should see the RoadView Live (Journal) tab.</p>
 </li>
-</ol>
-</div>
-<div style="page-break-after: always;"></div>
-</div>
-<div class="sect2">
-<h3 id="_logging_out_multi_line_menu_icon"><a class="anchor" href="#_logging_out_multi_line_menu_icon"></a>4.2. Logging Out (Multi-line Menu Icon)</h3>
-<div class="ulist">
-<ul>
 <li>
-<p>Click on the multi-line menu icon at the upper right of the RoadView screen</p>
+<p>CLick on the Settings tab at the top of the screen</p>
 </li>
 <li>
-<p>Select "Logout"</p>
+<p>Scroll down to the IZCloud Integration section</p>
 </li>
-</ul>
-</div>
-<div id="f_Logout-Multi-line-Menu" class="imageblock">
-<div class="content">
-<img src="../_images/RoadViewALPR/RV-1_15-FIG-020a_Logging_Out.png" alt="image" width="120">
-</div>
-<div class="title">Figure 2. Logout (Multi-line Menu)</div>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="s_Configure-RoadView-Settings-Tab"><a class="anchor" href="#s_Configure-RoadView-Settings-Tab"></a>5. Configure RoadView - Settings Tab</h2>
-<div class="sectionbody">
-<div class="sect2">
-<h3 id="s_IZCloud-Integration"><a class="anchor" href="#s_IZCloud-Integration"></a>5.1. IZCloud Integration</h3>
-<div class="paragraph">
+<li>
 <p>Enable IZCloud Integration and
 set the parameters as follows. <strong>Remember to click the Save button at the end of the
 Detector Configuration section after making changes.</strong></p>
+</li>
+</ul>
+</div>
+<div id="f_IZCloud-Integration" class="paragraph">
+<div class="title">Settings Tab - IZCloud Integration Section</div>
+<p><strong><em>\{check the URL - use a different image as in
+GDocs}</em></strong></p>
 </div>
 <div class="imageblock">
 <div class="content">
 <img src="../_images/SLN-GKSYS/RV-GKSYS-FIG-216_IZCloudIntegration.png" alt="image" width="550">
 </div>
-<div class="title">Figure 3. IZCloud Integration Section</div>
 </div>
-<div style="page-break-after: always;"></div>
+<div class="paragraph">
+<p>The IZCloud server has different Vehicle
+Lists containing registered plate reads. These
+lists can be entered in IZCloud manually,
+or via integration with a 3rd party access control
+system. These lists are used in some cases as
+explained in the following items:</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>When IZCloud Integration is enabled,
+an additional tab (Access Lists) will appear,
+depending on the RoadView version you
+are using (see <a href="#s_Related-Documents">Recommended Reading/Related Documents</a>).</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
 <div class="ulist">
 <ul>
 <li>
-<p><strong>GPIO</strong> - The nn number that identifies the GPIOnn
+<p><strong>URL</strong> - the URL of the IZCloud account</p>
+</li>
+<li>
+<p><strong>Tenant ID</strong> - ID of the relevant IZCloud account</p>
+</li>
+<li>
+<p><strong>User Name</strong> - IZCloud account user name
+Password - IZCloud account password
+Ambiguity Chars - If an exact match to a plate
+cannot be done, Ambiguity
+(also called Normalization) is enabled.
+The characters in a plate read that could be mistaken
+for other characters will be changed to their
+associated ambiguity value during the plate-to-list
+matching process.<br>
+Note that the list is bi-directional.
+For example, in addition to "8" being used
+instead of "B", "B" will be used instead of "8".</p>
+</li>
+<li>
+<p><strong>Push Video to Server</strong> - When enabled, RoadView
+sends images to the IZCloud server.
+You will also see an additional parameter:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Send Camera Image Timeout - how often images are sent to the
+IZCloud server</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>Min Width for Fuzzy Match</strong> - If the number of
+characters in the LPR plate read is less than this
+value, then fuzzy matching will <u>not</u>
+be used to match this plate to the Vehicle List.
+Only exact or Ambiguity matching will be used.</p>
+</li>
+<li>
+<p><strong>Match On</strong></p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Exact</strong> - an attempt is made to make an exact
+match, and an Ambiguity match - until all
+characters in the plate read match exactly
+to an item in the Vehicle List.</p>
+</li>
+<li>
+<p><strong>N-1</strong> - an attempt is made to make an exact
+match, and an Ambiguity match - until all
+characters in the plate read match to an
+item in the Vehicle List –
+except for <u>one</u> wrong character.</p>
+</li>
+<li>
+<p><strong>N-2</strong> - an attempt is made to make an exact
+match, and an Ambiguity match - until all
+characters in the plate read match to an
+item in the Vehicle List –
+except for <u>two</u> wrong characters.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>Lanes</strong></p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Lane ID</strong> - this table is automatically
+populated with the number of lanes defined in
+the Lanes section at the bottom of the Settings
+tab</p>
+</li>
+<li>
+<p><strong>GPIO</strong> - The <u><b>nn</u></b> number
+that identifies the GPIO<u><b>nn</u></b>
 pin on the NVIDIA Jetson processor&#8217;s I/O module.
-When RoadView sends a validation request (to see if the
-plate read has a match with the IZCloud Integration list of expected
-plate reads), a signal is sent to this pin when IZCloud Integration
-responds that a gate should be opened.
-See the NVIDIA Jetson documentation for further information.</p>
+A signal is sent to this pin when a RoadView
+plate read has a match with an IZCloud
+Vehicle List (expected plate reads). This is
+typically used to open a gate. See the NVIDIA Jetson
+documentation for further information.</p>
+</li>
+<li>
+<p><strong>EXIT</strong> - When enabled, all vehicles are
+allowed to pass through the device connected
+to the GPIO. This option is typically used for
+exit gates.</p>
+</li>
+<li>
+<p><strong>Remote URL</strong> - A request is sent to this URL
+when there is a match with an IZCloud
+Vehicle List (expected plate reads).
+This is typically used to open a gate
+via a web relay. The request is sent in a special
+format (see the Web Relay documentation
+referenced in <a href="#s_Related-Documents">Recommended Reading/Related Documents</a>).</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>In addition to the GPIO and Remote URL
+signals/requests, a signal is also sent to the
+camera; this signal can be used to open a gate
+via a relay (depends on the capabilities of the
+camera model).</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Wiegand Controller (Converter) Enabled</strong></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>For each plate in a Vehicle List, a Wiegand code
+can be added to use if there is an LPR match.
+(IZCloud also stores a Sentinel
+(No Match) Wiegand code if no plate match
+is found for any plate.)</p>
+</div>
+<div class="paragraph">
+<p>If there is a plate match, the Wiegand code
+will be used. Some cameras have the capability
+to send this code directly to an access control
+panel or device.</p>
+</div>
+<div class="paragraph">
+<p>However, if the access control panel is too
+far from the camera to be connected physically,
+or if the camera does not have Wiegand capabilities,
+then this option should be enabled.
+The Wiegand code will be sent via network to a
+Wiegand converter, which will then send the code
+to the access control panel or device.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>WIC IP</strong> - The IP address of the Wiegand
+converter assigned to the Lane</p>
+</li>
+<li>
+<p><strong>WIC Port</strong> - The port on the Wiegand converter
+used by RoadView to communicate with the
+Wiegand converter; 1001 is the default port
+on the Wiegand converter.</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Remember to click the Save button at the end
+of the Detector Configuration section after
+making changes.</strong></p>
+</li>
+</ul>
+</div>
 </li>
 </ul>
 </div>
 <div style="page-break-after: always;"></div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_legal_notices"><a class="anchor" href="#_legal_notices"></a>6. Legal Notices</h2>
-<div class="sectionbody">
-<div class="sect2">
-<h3 id="_notice"><a class="anchor" href="#_notice"></a>6.1. Notice</h3>
+<h2 id="_legal_notices" class="discrete">Legal Notices</h2>
+<h3 id="_notice" class="discrete">Notice</h3>
 <div class="paragraph">
 <p>Inex Technologies reserves the right to improve and enhance its product offerings. Thus, the illustrations and descriptions presented in this manual may differ in some respect from the products you receive.</p>
 </div>
@@ -669,9 +778,7 @@ See the NVIDIA Jetson documentation for further information.</p>
 <div class="paragraph">
 <p>No part of this document may be reproduced in any form without permission from Inex Technologies.</p>
 </div>
-</div>
-<div class="sect2">
-<h3 id="_software_precautions"><a class="anchor" href="#_software_precautions"></a>6.2. Software Precautions</h3>
+<h3 id="_software_precautions" class="discrete">Software Precautions</h3>
 <div class="ulist">
 <ul>
 <li>
@@ -685,9 +792,7 @@ See the NVIDIA Jetson documentation for further information.</p>
 <div class="paragraph">
 <p><div class="pagebreak"> </div></p>
 </div>
-</div>
-<div class="sect2">
-<h3 id="_legal_disclaimer"><a class="anchor" href="#_legal_disclaimer"></a>6.3. Legal Disclaimer</h3>
+<h3 id="_legal_disclaimer" class="discrete">Legal Disclaimer</h3>
 <div class="paragraph">
 <p>TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE PRODUCT DESCRIBED, WITH ITS HARDWARE, SOFTWARE AND FIRMWARE, IS PROVIDED "AS IS", WITH ALL FAULTS AND ERRORS, AND OUR COMPANY MAKES NO WARRANTIES, EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION, MERCHANTABILITY, SATISFACTORY QUALITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT OF THIRD PARTY. IN NO EVENT WILL OUR COMPANY, ITS DIRECTORS, OFFICERS, EMPLOYEES, OR AGENTS BE LIABLE TO YOU FOR ANY SPECIAL, CONSEQUENTIAL, INCIDENTAL, OR INDIRECT DAMAGES, INCLUDING, AMONG OTHERS, DAMAGES FOR LOSS OF BUSINESS PROFITS, BUSINESS INTERRUPTION, OR LOSS OF DATA OR DOCUMENTATION, IN CONNECTION WITH THE USE OF THIS PRODUCT, EVEN IF OUR COMPANY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.</p>
 </div>
@@ -707,10 +812,7 @@ See the NVIDIA Jetson documentation for further information.</p>
 <p></p>
 </div>
 <div class="paragraph">
-<p>Doc. No. RV-IZCLOUD-MAN-001 Ver. 2024-08-04</p>
-</div>
-</div>
-</div>
+<p>Doc. No. RV-IZCLOUD-MAN-001 Ver. 2024-08-06</p>
 </div>
 </article>
   </div>
